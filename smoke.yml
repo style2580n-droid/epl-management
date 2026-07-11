@@ -1,0 +1,28 @@
+name: Smoke Test (수동 실행)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - name: Probe all sources
+        env:
+          FOOTBALL_DATA_API_KEY1: ${{ secrets.FOOTBALL_DATA_API_KEY1 }}
+          FOOTBALL_DATA_API_KEY2: ${{ secrets.FOOTBALL_DATA_API_KEY2 }}
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
+          API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
+          API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
+        run: python smoke_test.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: smoke-report
+          path: reports/smoke_report.md
