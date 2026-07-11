@@ -1,0 +1,830 @@
+{
+    "BL1": {
+        "name": "Bundesliga",
+        "country": "Germany",
+        "season": {
+            "start": "2026-08-28",
+            "end": "2027-05-22",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 5,
+                "team": "FC Bayern München",
+                "played": 34,
+                "points": 89,
+                "gd": 86
+            },
+            {
+                "position": 2,
+                "team_id": 4,
+                "team": "Borussia Dortmund",
+                "played": 34,
+                "points": 73,
+                "gd": 36
+            },
+            {
+                "position": 3,
+                "team_id": 721,
+                "team": "RB Leipzig",
+                "played": 34,
+                "points": 65,
+                "gd": 19
+            },
+            {
+                "position": 4,
+                "team_id": 10,
+                "team": "VfB Stuttgart",
+                "played": 34,
+                "points": 62,
+                "gd": 22
+            },
+            {
+                "position": 5,
+                "team_id": 2,
+                "team": "TSG 1899 Hoffenheim",
+                "played": 34,
+                "points": 61,
+                "gd": 13
+            },
+            {
+                "position": 6,
+                "team_id": 3,
+                "team": "Bayer 04 Leverkusen",
+                "played": 34,
+                "points": 59,
+                "gd": 21
+            },
+            {
+                "position": 7,
+                "team_id": 17,
+                "team": "SC Freiburg",
+                "played": 34,
+                "points": 47,
+                "gd": -6
+            },
+            {
+                "position": 8,
+                "team_id": 19,
+                "team": "Eintracht Frankfurt",
+                "played": 34,
+                "points": 44,
+                "gd": -4
+            },
+            {
+                "position": 9,
+                "team_id": 16,
+                "team": "FC Augsburg",
+                "played": 34,
+                "points": 43,
+                "gd": -16
+            },
+            {
+                "position": 10,
+                "team_id": 15,
+                "team": "1. FSV Mainz 05",
+                "played": 34,
+                "points": 40,
+                "gd": -9
+            },
+            {
+                "position": 11,
+                "team_id": 28,
+                "team": "1. FC Union Berlin",
+                "played": 34,
+                "points": 39,
+                "gd": -14
+            },
+            {
+                "position": 12,
+                "team_id": 18,
+                "team": "Borussia Mönchengladbach",
+                "played": 34,
+                "points": 38,
+                "gd": -11
+            },
+            {
+                "position": 13,
+                "team_id": 7,
+                "team": "Hamburger SV",
+                "played": 34,
+                "points": 38,
+                "gd": -14
+            },
+            {
+                "position": 14,
+                "team_id": 1,
+                "team": "1. FC Köln",
+                "played": 34,
+                "points": 32,
+                "gd": -14
+            },
+            {
+                "position": 15,
+                "team_id": 12,
+                "team": "SV Werder Bremen",
+                "played": 34,
+                "points": 32,
+                "gd": -23
+            },
+            {
+                "position": 16,
+                "team_id": 11,
+                "team": "VfL Wolfsburg",
+                "played": 34,
+                "points": 29,
+                "gd": -24
+            },
+            {
+                "position": 17,
+                "team_id": 44,
+                "team": "1. FC Heidenheim 1846",
+                "played": 34,
+                "points": 26,
+                "gd": -31
+            },
+            {
+                "position": 18,
+                "team_id": 20,
+                "team": "FC St. Pauli 1910",
+                "played": 34,
+                "points": 26,
+                "gd": -31
+            }
+        ],
+        "collected_at": "2026-07-11T14:29:22.167942+00:00"
+    },
+    "FL1": {
+        "name": "Ligue 1",
+        "country": "France",
+        "season": {
+            "start": "2026-08-22",
+            "end": "2027-05-29",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 519,
+                "team": "AJ Auxerre",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 532,
+                "team": "Angers SCO",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 548,
+                "team": "AS Monaco FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 531,
+                "team": "ES Troyes AC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 525,
+                "team": "FC Lorient",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 533,
+                "team": "Le Havre AC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 535,
+                "team": "Le Mans FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 521,
+                "team": "Lille OSC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 522,
+                "team": "OGC Nice",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 523,
+                "team": "Olympique Lyonnais",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 516,
+                "team": "Olympique de Marseille",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1045,
+                "team": "Paris FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 524,
+                "team": "Paris Saint-Germain FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 576,
+                "team": "RC Strasbourg Alsace",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 546,
+                "team": "Racing Club de Lens",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 512,
+                "team": "Stade Brestois 29",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 529,
+                "team": "Stade Rennais FC 1901",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 511,
+                "team": "Toulouse FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            }
+        ],
+        "collected_at": "2026-07-11T14:30:15.286331+00:00"
+    },
+    "PD": {
+        "name": "Primera Division",
+        "country": "Spain",
+        "season": {
+            "start": "2026-08-16",
+            "end": "2027-05-30",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 81,
+                "team": "FC Barcelona",
+                "played": 38,
+                "points": 94,
+                "gd": 59
+            },
+            {
+                "position": 2,
+                "team_id": 86,
+                "team": "Real Madrid CF",
+                "played": 38,
+                "points": 86,
+                "gd": 42
+            },
+            {
+                "position": 3,
+                "team_id": 94,
+                "team": "Villarreal CF",
+                "played": 38,
+                "points": 72,
+                "gd": 26
+            },
+            {
+                "position": 4,
+                "team_id": 78,
+                "team": "Club Atlético de Madrid",
+                "played": 38,
+                "points": 69,
+                "gd": 18
+            },
+            {
+                "position": 5,
+                "team_id": 90,
+                "team": "Real Betis Balompié",
+                "played": 38,
+                "points": 60,
+                "gd": 11
+            },
+            {
+                "position": 6,
+                "team_id": 558,
+                "team": "RC Celta de Vigo",
+                "played": 38,
+                "points": 54,
+                "gd": 5
+            },
+            {
+                "position": 7,
+                "team_id": 82,
+                "team": "Getafe CF",
+                "played": 38,
+                "points": 51,
+                "gd": -6
+            },
+            {
+                "position": 8,
+                "team_id": 87,
+                "team": "Rayo Vallecano de Madrid",
+                "played": 38,
+                "points": 50,
+                "gd": -3
+            },
+            {
+                "position": 9,
+                "team_id": 95,
+                "team": "Valencia CF",
+                "played": 38,
+                "points": 49,
+                "gd": -9
+            },
+            {
+                "position": 10,
+                "team_id": 92,
+                "team": "Real Sociedad de Fútbol",
+                "played": 38,
+                "points": 46,
+                "gd": -2
+            },
+            {
+                "position": 11,
+                "team_id": 80,
+                "team": "RCD Espanyol de Barcelona",
+                "played": 38,
+                "points": 46,
+                "gd": -12
+            },
+            {
+                "position": 12,
+                "team_id": 77,
+                "team": "Athletic Club",
+                "played": 38,
+                "points": 45,
+                "gd": -15
+            },
+            {
+                "position": 13,
+                "team_id": 559,
+                "team": "Sevilla FC",
+                "played": 38,
+                "points": 43,
+                "gd": -14
+            },
+            {
+                "position": 14,
+                "team_id": 263,
+                "team": "Deportivo Alavés",
+                "played": 38,
+                "points": 43,
+                "gd": -12
+            },
+            {
+                "position": 15,
+                "team_id": 285,
+                "team": "Elche CF",
+                "played": 38,
+                "points": 43,
+                "gd": -8
+            },
+            {
+                "position": 16,
+                "team_id": 88,
+                "team": "Levante UD",
+                "played": 38,
+                "points": 42,
+                "gd": -14
+            },
+            {
+                "position": 17,
+                "team_id": 79,
+                "team": "CA Osasuna",
+                "played": 38,
+                "points": 42,
+                "gd": -6
+            },
+            {
+                "position": 18,
+                "team_id": 89,
+                "team": "RCD Mallorca",
+                "played": 38,
+                "points": 42,
+                "gd": -10
+            },
+            {
+                "position": 19,
+                "team_id": 298,
+                "team": "Girona FC",
+                "played": 38,
+                "points": 41,
+                "gd": -16
+            },
+            {
+                "position": 20,
+                "team_id": 1048,
+                "team": "Real Oviedo",
+                "played": 38,
+                "points": 29,
+                "gd": -34
+            }
+        ],
+        "collected_at": "2026-07-11T14:28:32.606693+00:00"
+    },
+    "PL": {
+        "name": "Premier League",
+        "country": "England",
+        "season": {
+            "start": "2026-08-21",
+            "end": "2027-05-30",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 1044,
+                "team": "AFC Bournemouth",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 57,
+                "team": "Arsenal FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 58,
+                "team": "Aston Villa FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 402,
+                "team": "Brentford FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 397,
+                "team": "Brighton & Hove Albion FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 61,
+                "team": "Chelsea FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1076,
+                "team": "Coventry City FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 354,
+                "team": "Crystal Palace FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 62,
+                "team": "Everton FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 63,
+                "team": "Fulham FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 322,
+                "team": "Hull City AFC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 349,
+                "team": "Ipswich Town FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 341,
+                "team": "Leeds United FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 64,
+                "team": "Liverpool FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 65,
+                "team": "Manchester City FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 66,
+                "team": "Manchester United FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 67,
+                "team": "Newcastle United FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 351,
+                "team": "Nottingham Forest FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 71,
+                "team": "Sunderland AFC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 73,
+                "team": "Tottenham Hotspur FC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            }
+        ],
+        "collected_at": "2026-07-11T14:28:32.405318+00:00"
+    },
+    "SA": {
+        "name": "Serie A",
+        "country": "Italy",
+        "season": {
+            "start": "2026-08-23",
+            "end": "2027-05-30",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 108,
+                "team": "FC Internazionale Milano",
+                "played": 38,
+                "points": 87,
+                "gd": 54
+            },
+            {
+                "position": 2,
+                "team_id": 113,
+                "team": "SSC Napoli",
+                "played": 38,
+                "points": 76,
+                "gd": 22
+            },
+            {
+                "position": 3,
+                "team_id": 100,
+                "team": "AS Roma",
+                "played": 38,
+                "points": 73,
+                "gd": 28
+            },
+            {
+                "position": 4,
+                "team_id": 7397,
+                "team": "Como 1907",
+                "played": 38,
+                "points": 71,
+                "gd": 36
+            },
+            {
+                "position": 5,
+                "team_id": 98,
+                "team": "AC Milan",
+                "played": 38,
+                "points": 70,
+                "gd": 18
+            },
+            {
+                "position": 6,
+                "team_id": 109,
+                "team": "Juventus FC",
+                "played": 38,
+                "points": 69,
+                "gd": 27
+            },
+            {
+                "position": 7,
+                "team_id": 102,
+                "team": "Atalanta BC",
+                "played": 38,
+                "points": 59,
+                "gd": 15
+            },
+            {
+                "position": 8,
+                "team_id": 103,
+                "team": "Bologna FC 1909",
+                "played": 38,
+                "points": 56,
+                "gd": 3
+            },
+            {
+                "position": 9,
+                "team_id": 110,
+                "team": "SS Lazio",
+                "played": 38,
+                "points": 54,
+                "gd": 1
+            },
+            {
+                "position": 10,
+                "team_id": 115,
+                "team": "Udinese Calcio",
+                "played": 38,
+                "points": 50,
+                "gd": -3
+            },
+            {
+                "position": 11,
+                "team_id": 471,
+                "team": "US Sassuolo Calcio",
+                "played": 38,
+                "points": 49,
+                "gd": -4
+            },
+            {
+                "position": 12,
+                "team_id": 586,
+                "team": "Torino FC",
+                "played": 38,
+                "points": 45,
+                "gd": -19
+            },
+            {
+                "position": 13,
+                "team_id": 112,
+                "team": "Parma Calcio 1913",
+                "played": 38,
+                "points": 45,
+                "gd": -18
+            },
+            {
+                "position": 14,
+                "team_id": 104,
+                "team": "Cagliari Calcio",
+                "played": 38,
+                "points": 43,
+                "gd": -13
+            },
+            {
+                "position": 15,
+                "team_id": 99,
+                "team": "ACF Fiorentina",
+                "played": 38,
+                "points": 42,
+                "gd": -9
+            },
+            {
+                "position": 16,
+                "team_id": 107,
+                "team": "Genoa CFC",
+                "played": 38,
+                "points": 41,
+                "gd": -10
+            },
+            {
+                "position": 17,
+                "team_id": 5890,
+                "team": "US Lecce",
+                "played": 38,
+                "points": 38,
+                "gd": -22
+            },
+            {
+                "position": 18,
+                "team_id": 457,
+                "team": "US Cremonese",
+                "played": 38,
+                "points": 34,
+                "gd": -25
+            },
+            {
+                "position": 19,
+                "team_id": 450,
+                "team": "Hellas Verona FC",
+                "played": 38,
+                "points": 21,
+                "gd": -36
+            },
+            {
+                "position": 20,
+                "team_id": 487,
+                "team": "AC Pisa 1909",
+                "played": 38,
+                "points": 18,
+                "gd": -45
+            }
+        ],
+        "collected_at": "2026-07-11T14:29:22.955379+00:00"
+    }
+}
