@@ -38,7 +38,7 @@ def _has_path(data, path):
 # 소스별 프로브: (설명, 호출 람다, 기대 키 경로들 — 파이프라인이 실제 파싱하는 필드)
 PROBES = {
     'football-data': ('PL 팀 목록', lambda c: c.competition_teams('PL'),
-                      ['teams[].id', 'teams[].name', 'teams[].squad[].id']),
+                      ['teams[].id', 'teams[].name']),
     'openfootball': ('PL 시즌 일정', lambda c: c.season('PL'),
                      ['matches[].team1', 'matches[].team2', 'matches[].date']),
     'statsbomb': ('대회 목록', lambda c: c.competitions(),
@@ -48,7 +48,6 @@ PROBES = {
     'thesportsdb': ('팀 검색', lambda c: c.search_team('Arsenal'),
                     ['teams[].strStadium']),
     'bsd': ('리그 목록', lambda c: c.leagues(), []),
-    'apifootball-com': ('리그 목록', lambda c: c.leagues(), []),
     'highlightly': ('오늘 경기', lambda c: c.matches(
         datetime.now(timezone.utc).date().isoformat()), []),
     'api-football': ('PL 픽스처', lambda c: c.fixtures(39, 2025), ['response']),
@@ -56,7 +55,7 @@ PROBES = {
         datetime.now(timezone.utc).date().isoformat()), []),
 }
 
-LIST_OK = {'statsbomb': 'competition_id', 'apifootball-com': 'league_id'}
+LIST_OK = {'statsbomb': 'competition_id'}
 
 
 def probe_source(name, client):

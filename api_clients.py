@@ -18,11 +18,16 @@ import os
 from incremental_fetcher import IncrementalFetcher
 
 
-def _env_keys(*names):
-    """여러 환경변수에서 키 목록 수집 (KEY, KEY1, KEY2 ... 중복 제거)."""
+def _env_keys(base, max_suffix=9):
+    """BASE, BASE1, BASE2 ... BASE{max_suffix}까지 자동 탐지해 키 목록 수집
+    (중복 제거). 계정을 늘려 BASE3, BASE4 ...를 추가로 등록해도 코드 수정
+    없이 자동 인식된다."""
     keys = []
-    for n in names:
-        v = os.getenv(n, '')
+    v = os.getenv(base, '')
+    if v and v not in keys:
+        keys.append(v)
+    for i in range(1, max_suffix + 1):
+        v = os.getenv(f'{base}{i}', '')
         if v and v not in keys:
             keys.append(v)
     return keys
@@ -46,10 +51,8 @@ class FootballDataClient(BaseClient):
     name = 'football-data'
 
     def __init__(self):
-        # 다중 계정 지원: KEY / KEY1 / KEY2 라운드로빈 → 실질 분당 한도 x키수
-        self.keys = _env_keys('FOOTBALL_DATA_API_KEY',
-                              'FOOTBALL_DATA_API_KEY1',
-                              'FOOTBALL_DATA_API_KEY2')
+        # 다중 계정 지원: KEY / KEY1 / KEY2 / KEY3 ... 라운드로빈 → 실질 분당 한도 x키수
+        self.keys = _env_keys('FOOTBALL_DATA_API_KEY')
         self.enabled = bool(self.keys)
         self._i = 0
         super().__init__('https://api.football-data.org/v4',
@@ -174,8 +177,7 @@ class APIFootballClient(BaseClient):
     QUOTA_FILE = 'data/af_quota.json'
 
     def __init__(self):
-        self.keys = _env_keys('API_FOOTBALL_KEY', 'API_FOOTBALL_KEY1',
-                              'API_FOOTBALL_KEY2')
+        self.keys = _env_keys('API_FOOTBALL_KEY')
         self.enabled = bool(self.keys)
         super().__init__('https://v3.football.api-sports.io',
                          headers={'x-apisports-key': self.keys[0] if self.keys else ''})
@@ -276,7 +278,7 @@ class HighlightlyClient(BaseClient):
         key = os.getenv('HIGHLIGHTLY_KEY', '')
         self.enabled = bool(key)
         super().__init__('https://soccer.highlightly.net',
-                         headers={'x-api-key': key})
+                         headers={'x-rapidapi-key': key})
 
     def matches(self, date_str, league_id=None):
         params = {'date': date_str}
@@ -323,7 +325,7 @@ class OpenFootballClient(BaseClient):
             'FL1': 'france/2025-26/1-ligue1.json'}
 
     def __init__(self):
-        super().__init__('https://raw.githubusercontent.com/openfootball/football.json/master')
+        super().__init__('https://openfootball.github.io')
 
     def season(self, league_code):
         path = self.REPO.get(league_code)
