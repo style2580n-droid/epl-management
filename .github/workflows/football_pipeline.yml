@@ -13,11 +13,14 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ---------------------------------------------------------------
+  # 1단계: 리그별 Matrix 병렬 수집 (이적/리그/구단) — 새 틀 3.2
+  # ---------------------------------------------------------------
   collect-by-league:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      max-parallel: 2
+      max-parallel: 2          # football-data.org 분당 10회 제한 준수
       matrix:
         league: [PL, PD, BL1, SA, FL1]
     steps:
@@ -25,7 +28,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-          cache: 'pip'
+          cache: 'pip'          # Persistent Caching (새 틀 3.2)
       - run: pip install -r requirements.txt
 
       - name: Restore pipeline state cache
@@ -55,6 +58,9 @@ jobs:
           path: data/
           retention-days: 3
 
+  # ---------------------------------------------------------------
+  # 2단계: 리그 무관 소스 수집 (FPL 선수 / BSD 이벤트)
+  # ---------------------------------------------------------------
   collect-global:
     runs-on: ubuntu-latest
     steps:
@@ -86,6 +92,9 @@ jobs:
           path: data/
           retention-days: 3
 
+  # ---------------------------------------------------------------
+  # 3단계: 병합 → 지표 연산 → 리포트 → 커밋
+  # ---------------------------------------------------------------
   report:
     needs: [collect-by-league, collect-global]
     runs-on: ubuntu-latest
@@ -107,6 +116,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           python merge_artifacts.py artifacts/ data/
+          # xG 계수가 없으면 StatsBomb Open으로 최초 1회 학습 (이후 커밋된 계수 재사용)
           test -f data/models/xg_coefficients.json || python train_xg.py
           python impact_engine.py
           python db.py
@@ -117,6 +127,7 @@ jobs:
           python transfer_impact.py
           python report_generator.py
           python retention.py
+          python app_export.py
 
       - name: Commit results
         run: |
@@ -126,6 +137,9 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: datacenter run $(date -u +%Y-%m-%d)"
           git push
 
+  # ---------------------------------------------------------------
+  # 4번 업그레이드: 어느 단계든 실패하면 Issue 자동 생성 (조용한 실패 방지)
+  # ---------------------------------------------------------------
   notify-failure:
     needs: [collect-by-league, collect-global, report]
     if: ${{ failure() }}
