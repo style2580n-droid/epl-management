@@ -1,0 +1,61 @@
+{
+  "_comment": "축구API 데이터지원범위 총정리(2026.07) 5장 매핑 — 무료 기준. primary 실패 시 backup 순서로 폴백",
+  "schedule_standings": {
+    "primary": "football-data",
+    "backup": ["api-football", "apifootball-com"],
+    "open_data": "openfootball"
+  },
+  "live_events": {
+    "primary": "apifootball-com",
+    "backup": ["api-football", "highlightly", "sportdevs"]
+  },
+  "lineups": {
+    "primary": "api-football",
+    "backup": ["highlightly", "bsd"],
+    "open_data": "statsbomb (과거)"
+  },
+  "team_match_stats": {
+    "primary": "highlightly",
+    "backup": ["api-football", "bsd"],
+    "open_data": "football-data-couk (기본통계 CSV)"
+  },
+  "player_season_stats": {
+    "primary": "api-football",
+    "backup": ["sportdb", "thesportsdb(메타)"]
+  },
+  "player_match_stats": {
+    "primary": "fpl (EPL) + api-football",
+    "backup": ["bsd", "highlightly"],
+    "open_data": "statsbomb (과거)"
+  },
+  "xg_team": {
+    "primary": "highlightly",
+    "backup": ["bsd (8리그)", "sportmonks-free (2리그 검증용)"]
+  },
+  "xg_shot_coords": {
+    "primary": "bsd (3500+경기 한정)",
+    "open_data": "statsbomb (모델 학습용)"
+  },
+  "event_full_coords": {
+    "primary": null,
+    "_note": "무료 API 없음 — StatsBomb Open(과거시즌)으로 모델 구축 후 BSD 슛좌표로 부분 적용 (무료 한계선)",
+    "open_data": "statsbomb"
+  },
+  "transfers_injuries": {
+    "primary": "api-football",
+    "backup": ["bsd", "sportdb"],
+    "_note": "이적 감지는 자체 스쿼드 diff(football-data)가 메인, API-Football은 부상 보강"
+  },
+  "team_strength_index": {
+    "primary": "clubelo (무인증)",
+    "open_data": "fivethirtyeight-spi (아카이브)"
+  },
+  "images_logos": {
+    "primary": "thesportsdb"
+  },
+  "_excluded_by_policy": {
+    "paid": ["TheStatsAPI", "Sportmonks Premium", "GoalServe", "Opta", "StatsBomb Ent.", "SkillCorner"],
+    "ip_block_risk": ["FotMob", "WhoScored", "Sofascore", "soccerdata", "FBR API"],
+    "_note": "유료 및 스크래핑(IP차단 위험) 소스는 사용자 방침(무료 기준)에 따라 핵심 파이프라인에서 배제"
+  }
+}
