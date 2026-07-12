@@ -14,7 +14,52 @@ import json
 import os
 import re
 import sqlite3
+import time
 from collections import defaultdict
+
+import requests
+
+NAME_CACHE_PATH = 'data/master/name_translations.json'
+
+
+def _load_name_cache():
+    if os.path.exists(NAME_CACHE_PATH):
+        try:
+            with open(NAME_CACHE_PATH, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def _save_name_cache(cache):
+    os.makedirs(os.path.dirname(NAME_CACHE_PATH), exist_ok=True)
+    with open(NAME_CACHE_PATH, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
+
+
+def _translate_name(name, cache):
+    """영문 선수명 -> 한글. 캐시에 있으면 재사용, 없으면 구글 번역 무료
+    엔드포인트로 조회(키 불필요, 실패하면 영문 그대로 반환)."""
+    if not name:
+        return name
+    if name in cache:
+        return cache[name]
+    try:
+        resp = requests.get(
+            'https://translate.googleapis.com/translate_a/single',
+            params={'client': 'gtx', 'sl': 'en', 'tl': 'ko', 'dt': 't',
+                    'q': name},
+            timeout=5)
+        data = resp.json()
+        ko = ''.join(seg[0] for seg in data[0]) if data and data[0] else name
+        ko = ko.strip() or name
+    except Exception:
+        ko = name  # 실패 시 영문 이름 그대로 사용 (예외 없이 넘어감)
+    else:
+        time.sleep(0.05)  # API 과다 호출 방지 (신규 항목만 지연, 캐시 히트는 즉시)
+    cache[name] = ko
+    return ko
 
 DB_PATH = 'data/football.db'
 METRICS_DIR = 'data/metrics'
@@ -169,13 +214,14 @@ def build_matches():
             continue
         hg, ag = r['home_goals'], r['away_goals']
         recent_form[home_kr].append({
-            'opp': away_kr, 'res': 'W' if hg > ag else 'D' if hg == ag else 'L',
+            'opp': away_kr, 'r': 'W' if hg > ag else 'D' if hg == ag else 'L',
             'gf': hg, 'ga': ag, 'date': r['date']})
         recent_form[away_kr].append({
-            'opp': home_kr, 'res': 'W' if ag > hg else 'D' if hg == ag else 'L',
+            'opp': home_kr, 'r': 'W' if ag > hg else 'D' if hg == ag else 'L',
             'gf': ag, 'ga': hg, 'date': r['date']})
-        live_results[f'{home_kr}__{away_kr}'] = {
-            'home': hg, 'away': ag, 'date': r['date'], 'source': 'pipeline'}
+        live_results[f'{home_kr}_{away_kr}'] = {
+            'home': hg, 'away': ag, 'date': r['date'], 'source': 'pipeline',
+            'fetched': 0}
 
     for kr in recent_form:
         recent_form[kr] = recent_form[kr][-10:]  # 최근 10경기만 보관
@@ -221,7 +267,7 @@ def _game_record(stats):
     }
 
 
-def build_squads():
+def build_squads(name_cache):
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     players_rows = conn.execute(
@@ -258,7 +304,8 @@ def build_squads():
     for name, (kr, bucket) in player_team.items():
         games = games_by_player.get(name, [])
         squads[kr][bucket].append({
-            'name': name,
+            'name': _translate_name(name, name_cache),
+            'nameEn': name,
             'pos': {'gk': 'GK', 'df': 'DF', 'mf': 'MF', 'fw': 'FW'}[bucket],
             'games': games,
         })
@@ -267,14 +314,15 @@ def build_squads():
 
 
 # ============================================================ 4) STATIC_LEADERBOARD
-def build_leaderboard():
+def build_leaderboard(name_cache):
     season_players = _load_json(f'{METRICS_DIR}/season_players.json', {})
     scorers, assists = {}, {}
     for name, obj in season_players.items():
         team_kr = to_kr(obj.get('team')) if obj.get('team') else None
-        key = f'{name}|{team_kr}' if team_kr else None
-        if not key:
+        if not team_kr:
             continue
+        ko_name = _translate_name(name, name_cache)
+        key = f'{ko_name}|{team_kr}'
         totals = obj.get('totals', {})
         if totals.get('goals'):
             scorers[key] = int(totals['goals'])
@@ -285,11 +333,11 @@ def build_leaderboard():
 
 
 # ============================================================ JS 렌더링
-def render_js():
+def render_js(name_cache):
     elo, adv = build_team_blocks()
     recent_form, live_results = build_matches()
-    squads = build_squads()
-    leaderboard = build_leaderboard()
+    squads = build_squads(name_cache)
+    leaderboard = build_leaderboard(name_cache)
 
     lines = ['// 자동 생성 파일 — app_export.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}',
@@ -310,10 +358,13 @@ def render_js():
 
 def main():
     os.makedirs('reports', exist_ok=True)
-    js = render_js()
+    name_cache = _load_name_cache()
+    js = render_js(name_cache)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
-    print(f'[app_export] {OUT_PATH} 생성 완료 ({len(js)} bytes)')
+    _save_name_cache(name_cache)
+    print(f'[app_export] {OUT_PATH} 생성 완료 ({len(js)} bytes), '
+          f'이름 캐시 {len(name_cache)}건')
 
 
 if __name__ == '__main__':
