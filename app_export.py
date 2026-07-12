@@ -274,7 +274,17 @@ def build_squads(name_cache):
         'SELECT p.name, p.position, t.name AS team '
         'FROM players p LEFT JOIN teams t ON p.team_id = t.team_id'
     ).fetchall()
+    team_coach_rows = conn.execute(
+        'SELECT name, coach FROM teams WHERE coach IS NOT NULL AND coach != ""'
+    ).fetchall()
     conn.close()
+
+    # 팀 한글명 -> 감독명
+    coach_by_team = {}
+    for row in team_coach_rows:
+        kr = to_kr(row['name'])
+        if kr and row['coach']:
+            coach_by_team[kr] = row['coach']
 
     # 선수명 -> (팀 한글명, 포지션버킷)
     player_team = {}
@@ -296,7 +306,7 @@ def build_squads(name_cache):
 
     squads = {}
     for kr in TEAM_NAME_MAP:
-        squads[kr] = {'coach': '', 'formation': '4-3-3', 'league': 'PL',
+        squads[kr] = {'coach': coach_by_team.get(kr, ''), 'formation': '4-3-3', 'league': 'PL',
                       'gk': [], 'df': [], 'mf': [], 'fw': [],
                       'xi': [], 'injured': [], 'keyOut': [],
                       'ppda': 12.0, 'fieldTilt': 50, 'setPieceXg': 0.30}
