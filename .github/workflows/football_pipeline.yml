@@ -88,6 +88,13 @@ jobs:
           CATEGORY=injury python collectors.py
           CATEGORY=lineup python collectors.py
 
+      - name: Collect current coaches (API-Football /coachs)
+        env:
+          API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
+          API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
+        run: |
+          python collect_coaches.py
+
       - uses: actions/upload-artifact@v4
         with:
           name: data-global
