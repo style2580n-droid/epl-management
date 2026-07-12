@@ -80,6 +80,8 @@ def main():
               f'(league_id={PL_LEAGUE_ID} 확인 필요할 수 있음)')
         return
     print(f'[collect_coaches] BSD에서 팀 {len(team_rows)}개 조회 성공')
+    print(f'[collect_coaches] 원본 데이터 확인용(첫 3개): '
+          f'{json.dumps(team_rows[:3], ensure_ascii=False)}')
 
     # BSD team_id -> 앱 표준 한글 팀명
     team_id_to_kr = {}
@@ -90,6 +92,9 @@ def main():
     print(f'[collect_coaches] 한글 팀명 매칭: {len(team_id_to_kr)}/{len(team_rows)}')
 
     managers = _fetch_all_managers(client)
+    if managers:
+        print(f'[collect_coaches] managers 원본 확인용(첫 2개): '
+              f'{json.dumps(managers[:2], ensure_ascii=False)}')
 
     coaches = {}
     for m in managers:
