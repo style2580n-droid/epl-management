@@ -431,6 +431,43 @@ def build_transfers(name_cache):
     return out
 
 
+# ============================================================ 6) SCHEDULE / H2H
+# collect_fixtures.py가 만들어둔 파일을 그대로 읽어 전달한다(자체 계산 없음).
+def build_schedule():
+    return _load_json('data/master/schedule.json', [])
+
+
+def build_h2h():
+    """두 팀의 과거 맞대결 기록을 matches 테이블(이미 매일 수집 중인 데이터)에서
+    직접 계산한다. 프론트엔드(EPL_index.html getH2H)가 기대하는 키 형식
+    "팀A|||팀B"(가나다순 정렬)에 맞춰 최신순으로 최대 10경기씩 담는다."""
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    rows = conn.execute(
+        "SELECT * FROM matches WHERE status='FINISHED' "
+        "AND home_goals IS NOT NULL ORDER BY date"
+    ).fetchall()
+    conn.close()
+
+    h2h = {}
+    for r in rows:
+        home_kr, away_kr = to_kr(r['home']), to_kr(r['away'])
+        if not (home_kr and away_kr):
+            continue
+        key = '|||'.join(sorted([home_kr, away_kr]))
+        h2h.setdefault(key, []).append({
+            'home': home_kr, 'away': away_kr,
+            'homeGoals': r['home_goals'], 'awayGoals': r['away_goals'],
+            'date': r['date'],
+        })
+
+    out = {}
+    for key, games in h2h.items():
+        games_sorted = sorted(games, key=lambda g: g['date'] or '', reverse=True)
+        out[key] = games_sorted[:10]
+    return out
+
+
 # ============================================================ JS 렌더링
 def render_js(name_cache):
     elo, adv = build_team_blocks()
@@ -438,6 +475,8 @@ def render_js(name_cache):
     squads = build_squads(name_cache)
     leaderboard = build_leaderboard(name_cache)
     transfers = build_transfers(name_cache)
+    schedule = build_schedule()
+    h2h = build_h2h()
 
     lines = ['// 자동 생성 파일 — app_export.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}',
@@ -449,11 +488,13 @@ def render_js(name_cache):
     lines.append('const PIPELINE_STATIC_LEADERBOARD = ' + _js(leaderboard) + ';')
     lines.append('const PIPELINE_LIVE_RESULTS = ' + _js(live_results) + ';')
     lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
+    lines.append('const PIPELINE_SCHEDULE = ' + _js(schedule) + ';')
+    lines.append('const PIPELINE_H2H = ' + _js(h2h) + ';')
     lines.append('')
-    lines.append('// 앱에 반영하려면: 위 7개 PIPELINE_* 객체 내용을 앱 파일의 '
+    lines.append('// 앱에 반영하려면: 위 9개 PIPELINE_* 객체 내용을 앱 파일의 '
                  'ELO/ADVANCED_STATS/RECENT_FORM/SQUADS/STATIC_LEADERBOARD/'
-                 '_liveResults/TRANSFERS 각각에 Object.assign으로 병합하거나, '
-                 '해당 const 선언을 통째로 교체하세요.')
+                 '_liveResults/TRANSFERS/SCHEDULE/H2H 각각에 Object.assign으로 '
+                 '병합하거나, 해당 const 선언을 통째로 교체하세요.')
     return '\n'.join(lines)
 
 
