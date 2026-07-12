@@ -85,6 +85,10 @@ def _find_pl_teams(client, league_id, season_id=None):
 
 
 _TEAM_PARAM_NAME = None  # 'team' 또는 'team_id' — 첫 성공 시 확정해 재사용(추측 금지)
+_MAX_PAGES = 5  # 안전 상한: 팀당 최대 1000건(200*5). 필터가 안 먹혀 전체
+                 # 리그 데이터가 오는 경우 무한정 페이지 넘기는 것을 방지.
+                 # ⚠️ 24분 넘게 걸린 원인 진단을 위해 상한을 크게 낮춤 —
+                 # 실제로 팀당 경기가 1000건을 넘길 일은 없으므로 안전.
 
 
 def _fetch_all_team_matches(client, team_id):
@@ -94,38 +98,63 @@ def _fetch_all_team_matches(client, team_id):
     HTTP 404). 실제로는 /events/를 팀 파라미터로 필터링하는 구조다.
     문서에 그 파라미터명이 명시돼 있지 않으므로, collect_coaches의
     teams 필터 탐색과 동일하게 후보(team/team_id)를 실제로 호출해
-    이 팀의 경기가 맞게 나오는지(home/away에 team_id 포함) 검증한
-    뒤 확정한다. 한 번 확정되면 이후 팀들은 그 파라미터를 재사용."""
+    이 팀의 경기가 맞게 나오는지(home/away에 team_id 포함) 검증한다.
+    ⚠️ 검증은 반드시 '첫 페이지만 받은 시점'에 한다 — 필터가 안 먹히면
+    3년+400일치 전체 리그 경기가 오는데, 그걸 끝까지 다 모은 뒤에야
+    검증하면 페이지네이션이 사실상 멈추지 않는다. 한 번 확정되면
+    이후 팀들은 그 파라미터를 재사용하고 검증도 건너뛴다."""
     global _TEAM_PARAM_NAME
     candidates = [_TEAM_PARAM_NAME] if _TEAM_PARAM_NAME else ['team', 'team_id']
 
     for param_name in candidates:
-        all_rows = []
-        offset = 0
-        while True:
-            params = {param_name: team_id, 'date_from': DATE_FROM,
-                       'date_to': DATE_TO, 'limit': PAGE_LIMIT, 'offset': offset}
-            data = _unwrap(client.events(**params))
+        print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" 시도 중...',
+              flush=True)
+        first = _unwrap(client.events(**{
+            param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+            'limit': PAGE_LIMIT, 'offset': 0}))
+        if not first:
+            print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" 응답 없음',
+                  flush=True)
+            continue
+        first_rows = first.get('results', [])
+        print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" '
+              f'1페이지 {len(first_rows)}건, count={first.get("count")}', flush=True)
+        if not first_rows:
+            continue
+        if not any(ev.get('home_team_id') == team_id or ev.get('away_team_id') == team_id
+                   for ev in first_rows):
+            print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" '
+                  f'검증 실패(이 팀 경기 아님) → 다음 후보', flush=True)
+            continue
+
+        if _TEAM_PARAM_NAME is None:
+            _TEAM_PARAM_NAME = param_name
+            print(f'[collect_fixtures] events 팀 필터 파라미터 확정: "{param_name}"',
+                  flush=True)
+
+        all_rows = list(first_rows)
+        total = first.get('count')
+        offset = PAGE_LIMIT
+        pages = 1
+        while (total is None or offset < total) and len(first_rows) >= PAGE_LIMIT \
+                and pages < _MAX_PAGES:
+            data = _unwrap(client.events(**{
+                param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+                'limit': PAGE_LIMIT, 'offset': offset}))
             if not data:
-                all_rows = []
                 break
             rows = data.get('results', [])
             if not rows:
                 break
             all_rows.extend(rows)
-            total = data.get('count')
             offset += PAGE_LIMIT
-            if total is None or offset >= total or len(rows) < PAGE_LIMIT:
+            pages += 1
+            if len(rows) < PAGE_LIMIT:
                 break
-        # 검증: 실제로 이 팀이 home/away 어느 쪽으로든 들어있는 경기가
-        # 맞는지 확인 — 필터가 안 먹혀서 전체 리그 경기가 다 온 경우를 방지.
-        if all_rows and any(
-                ev.get('home_team_id') == team_id or ev.get('away_team_id') == team_id
-                for ev in all_rows):
-            if _TEAM_PARAM_NAME is None:
-                _TEAM_PARAM_NAME = param_name
-                print(f'[collect_fixtures] events 팀 필터 파라미터 확정: "{param_name}"')
-            return all_rows
+        if pages >= _MAX_PAGES:
+            print(f'[collect_fixtures] 경고: team_id={team_id} 페이지 상한'
+                  f'({_MAX_PAGES}) 도달 — 데이터 일부만 수집됐을 수 있음', flush=True)
+        return all_rows
     return []
 
 
@@ -147,30 +176,32 @@ def _kst_date_time(iso_str):
 def main():
     client = BSDClient()
     if not client.enabled:
-        print('[collect_fixtures] BSD_API_KEY 미등록 → 스킵')
+        print('[collect_fixtures] BSD_API_KEY 미등록 → 스킵', flush=True)
         return
 
     league_id, season_id = _find_pl_league_id(client)
     if not league_id:
-        print('[collect_fixtures] Premier League 리그를 못 찾음 → 중단')
+        print('[collect_fixtures] Premier League 리그를 못 찾음 → 중단', flush=True)
         return
-    print(f'[collect_fixtures] league_id={league_id}, season_id={season_id}')
+    print(f'[collect_fixtures] league_id={league_id}, season_id={season_id}', flush=True)
 
     team_id_to_kr = _find_pl_teams(client, league_id, season_id)
     if not team_id_to_kr:
-        print('[collect_fixtures] EPL 팀 목록을 못 찾음 → 중단')
+        print('[collect_fixtures] EPL 팀 목록을 못 찾음 → 중단', flush=True)
         return
-    print(f'[collect_fixtures] 팀 {len(team_id_to_kr)}개 매칭')
+    print(f'[collect_fixtures] 팀 {len(team_id_to_kr)}개 매칭', flush=True)
 
     events_by_id = {}
-    for team_id in team_id_to_kr:
+    for i, team_id in enumerate(team_id_to_kr, 1):
+        print(f'[collect_fixtures] ({i}/{len(team_id_to_kr)}) '
+              f'{team_id_to_kr[team_id]} 조회 중...', flush=True)
         rows = _fetch_all_team_matches(client, team_id)
         for ev in rows:
             eid = ev.get('id')
             if eid is not None:
                 events_by_id[eid] = ev
 
-    print(f'[collect_fixtures] 고유 경기 {len(events_by_id)}건 수집')
+    print(f'[collect_fixtures] 고유 경기 {len(events_by_id)}건 수집', flush=True)
 
     schedule = []
     h2h_raw = {}  # "팀A|||팀B"(정렬됨) -> [record, ...]
@@ -209,14 +240,14 @@ def main():
         h2h_raw[key] = h2h_raw[key][:10]  # 최근 10경기만 보관
 
     print(f'[collect_fixtures] 향후 일정 {len(schedule)}건, '
-          f'상대전적 매치업 {len(h2h_raw)}쌍')
+          f'상대전적 매치업 {len(h2h_raw)}쌍', flush=True)
 
     os.makedirs(os.path.dirname(SCHEDULE_OUT), exist_ok=True)
     with open(SCHEDULE_OUT, 'w', encoding='utf-8') as f:
         json.dump(schedule, f, ensure_ascii=False, indent=1)
     with open(H2H_OUT, 'w', encoding='utf-8') as f:
         json.dump(h2h_raw, f, ensure_ascii=False, indent=1)
-    print('[collect_fixtures] 완료')
+    print('[collect_fixtures] 완료', flush=True)
 
 
 if __name__ == '__main__':
