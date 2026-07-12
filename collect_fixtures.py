@@ -37,32 +37,42 @@ def _unwrap(resp):
 
 
 def _find_pl_league_id(client):
+    """리그 목록에서 country=England / name에 'Premier League'가 들어간
+    항목을 직접 찾아 (league_id, current_season_id) 튜플로 반환한다.
+    collect_coaches._find_pl_league_id와 동일한 방식."""
     offset = 0
     while True:
         data = _unwrap(client.leagues(limit=PAGE_LIMIT, offset=offset))
         if not data:
-            return None
+            return None, None
         results = data.get('results', [])
         for lg in results:
             name = (lg.get('name') or '')
             country = (lg.get('country') or '')
             if 'premier league' in name.lower() and country.lower() == 'england':
-                return lg.get('id')
+                season = lg.get('current_season') or {}
+                return lg.get('id'), season.get('id')
         total = data.get('count', len(results))
         offset += PAGE_LIMIT
         if offset >= total or not results:
-            return None
+            return None, None
 
 
-def _find_pl_teams(client, league_id):
+def _find_pl_teams(client, league_id, season_id=None):
     """/api/v2/teams/ 필터 파라미터 후보를 시도해 실제로 우리 20개 구단과
-    매칭되는 조합만 채택 (추측이 아니라 결과 검증)."""
+    매칭되는 조합만 채택 (추측이 아니라 결과 검증).
+    collect_coaches._find_pl_teams와 동일한 후보 목록을 사용해, 감독이
+    찾아지는 필터 조합이면 일정도 반드시 찾아지도록 일관성을 맞춘다."""
     candidates = [
-        {'league_id': league_id},
         {'league': league_id},
+        {'league_id': league_id},
         {'competition': league_id},
+        {'league': league_id, 'season': season_id} if season_id else None,
+        {'country': 'England'},
     ]
     for params in candidates:
+        if not params:
+            continue
         data = _unwrap(client.teams(**params))
         if not data:
             continue
@@ -124,13 +134,13 @@ def main():
         print('[collect_fixtures] BSD_API_KEY 미등록 → 스킵')
         return
 
-    league_id = _find_pl_league_id(client)
+    league_id, season_id = _find_pl_league_id(client)
     if not league_id:
         print('[collect_fixtures] Premier League 리그를 못 찾음 → 중단')
         return
-    print(f'[collect_fixtures] league_id={league_id}')
+    print(f'[collect_fixtures] league_id={league_id}, season_id={season_id}')
 
-    team_id_to_kr = _find_pl_teams(client, league_id)
+    team_id_to_kr = _find_pl_teams(client, league_id, season_id)
     if not team_id_to_kr:
         print('[collect_fixtures] EPL 팀 목록을 못 찾음 → 중단')
         return
