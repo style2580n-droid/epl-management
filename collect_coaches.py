@@ -1,30 +1,33 @@
 # -*- coding: utf-8 -*-
 """
-API-Football의 전용 감독(coach) 엔드포인트로 EPL 20개 구단의
-'현재' 감독을 직접 조회해 data/master/coaches.json에 저장한다.
+BSD(Bzzoiro Sports Data)의 팀/감독 엔드포인트로 EPL 20개 구단의 '현재'
+감독을 조회해 data/master/coaches.json에 저장한다.
 
-기존 teams.coach(football-data.org)나 lineups.coach(경기 라인업 발표 후에만
-존재)와 달리, 이 스크립트는 시즌 진행 여부와 무관하게 지금 바로 감독 이름을
-가져올 수 있다. app_export.py가 이 파일을 최우선 감독 소스로 사용한다.
+API-Football은 무료 플랜이 2022~2024 시즌까지만 허용해 2026-27 시즌
+데이터에 접근이 안 됐다(429/plan 오류로 확인됨). BSD는 시즌 제한이 없고
+이미 BSD_API_KEY가 파이프라인에 등록되어 있어 이걸로 대체한다.
 
-실행: API_FOOTBALL_KEY(1/2) 환경변수 필요. 없으면 조용히 스킵(예외 없음).
+동작:
+  1) GET /api/v2/teams/?league_id=17 로 EPL 20개 구단의 BSD team_id 확보
+     (17 = BSD의 Premier League league_id)
+  2) GET /api/v2/managers/ 를 페이지네이션하며 전체 감독 목록 확보
+  3) 각 감독의 current_team_id가 1)의 팀 id와 일치하면 그 팀의 현재 감독으로 채택
+
+실행: BSD_API_KEY 환경변수 필요. 없으면 조용히 스킵(예외 없음).
 """
 import json
 import os
 
-from api_clients import APIFootballClient
+from api_clients import BSDClient
 from app_export import to_kr
 
 OUT_PATH = 'data/master/coaches.json'
-PL_LEAGUE_ID = 39          # API-Football 리그 ID: Premier League
-# 무료 플랜은 최신 시즌을 아직 안 줄 수 있어 여러 시즌을 순서대로 시도한다.
-SEASON_CANDIDATES = [
-    int(os.getenv('AF_SEASON', '2026')), 2026, 2025, 2024,
-]
+PL_LEAGUE_ID = 17          # BSD 리그 ID: Premier League
+PAGE_LIMIT = 200           # BSD 페이지당 최대 개수
 
 
 def _unwrap(resp):
-    """APIFootballClient.get()이 (data, changed) 튜플이나 data 단독,
+    """BaseClient.get()이 (data, changed) 튜플이나 data 단독,
     또는 실패 시 None을 반환하는 모든 경우를 방어적으로 처리."""
     if resp is None:
         return None
@@ -33,69 +36,73 @@ def _unwrap(resp):
     return resp
 
 
-def _fetch_teams(client):
-    """시즌 후보를 순서대로 시도해 팀 목록을 반환. 실패 시 에러 내용도 출력."""
-    tried = []
-    for season in dict.fromkeys(SEASON_CANDIDATES):  # 순서 유지 + 중복 제거
-        tried.append(season)
-        raw = client.teams(PL_LEAGUE_ID, season)
-        data = _unwrap(raw)
+def _fetch_all_managers(client):
+    """/api/v2/managers/ 를 offset 페이지네이션하며 전부 수집."""
+    all_results = []
+    offset = 0
+    while True:
+        data = _unwrap(client.managers(limit=PAGE_LIMIT, offset=offset))
         if not data:
-            print(f'[collect_coaches] {season} 시즌: 응답 자체가 없음 '
-                  f'(네트워크 실패 또는 쿼터 소진)')
-            continue
+            print(f'[collect_coaches] managers 조회 실패 (offset={offset})')
+            break
         errors = data.get('errors')
         if errors:
-            print(f'[collect_coaches] {season} 시즌: API 오류 응답 → {errors}')
-        team_list = data.get('response', [])
-        if team_list:
-            print(f'[collect_coaches] {season} 시즌으로 팀 {len(team_list)}개 조회 성공')
-            return team_list, season
-        print(f'[collect_coaches] {season} 시즌: response 비어있음 '
-              f'(results={data.get("results")})')
-    print(f'[collect_coaches] 시도한 시즌 전부 실패: {tried}')
-    return [], None
-
-
-def _current_coach_name(coach_entries):
-    """/coachs 응답의 career 배열에서 'end'가 없는(현재 재임 중) 항목을
-    가진 인물을 우선 선택. 없으면 첫 번째 결과로 폴백."""
-    for person in coach_entries or []:
-        career = person.get('career') or []
-        if any(c.get('end') is None for c in career):
-            return person.get('name')
-    if coach_entries:
-        return coach_entries[0].get('name')
-    return None
+            print(f'[collect_coaches] managers API 오류 → {errors}')
+            break
+        results = data.get('results', [])
+        all_results.extend(results)
+        total = data.get('count', len(all_results))
+        offset += PAGE_LIMIT
+        if offset >= total or not results:
+            break
+    print(f'[collect_coaches] managers 총 {len(all_results)}명 수집')
+    return all_results
 
 
 def main():
-    client = APIFootballClient()
+    client = BSDClient()
     if not client.enabled:
-        print('[collect_coaches] API_FOOTBALL_KEY 미등록 → 스킵')
+        print('[collect_coaches] BSD_API_KEY 미등록 → 스킵')
         return
 
-    team_list, used_season = _fetch_teams(client)
-    if not team_list:
-        print('[collect_coaches] 모든 시즌 시도 실패 → coaches.json 생성 안 함 '
-              '(API-Football 무료 플랜이 이 리그/시즌 조합을 지원 안 할 수 있음)')
+    teams_data = _unwrap(client.teams(league_id=PL_LEAGUE_ID))
+    if not teams_data:
+        print('[collect_coaches] BSD 팀 목록 조회 실패 (응답 없음)')
         return
+    errors = teams_data.get('errors')
+    if errors:
+        print(f'[collect_coaches] BSD 팀 목록 API 오류 → {errors}')
+        return
+
+    team_rows = teams_data.get('results', [])
+    if not team_rows:
+        print(f'[collect_coaches] BSD 팀 목록이 비어있음 '
+              f'(league_id={PL_LEAGUE_ID} 확인 필요할 수 있음)')
+        return
+    print(f'[collect_coaches] BSD에서 팀 {len(team_rows)}개 조회 성공')
+
+    # BSD team_id -> 앱 표준 한글 팀명
+    team_id_to_kr = {}
+    for t in team_rows:
+        kr = to_kr(t.get('name') or t.get('short_name'))
+        if kr and t.get('id'):
+            team_id_to_kr[t['id']] = kr
+    print(f'[collect_coaches] 한글 팀명 매칭: {len(team_id_to_kr)}/{len(team_rows)}')
+
+    managers = _fetch_all_managers(client)
 
     coaches = {}
-    for entry in team_list:
-        team = entry.get('team', {})
-        team_id, team_name = team.get('id'), team.get('name')
-        kr = to_kr(team_name)
-        if not team_id or not kr:
-            continue
-        coach_data = _unwrap(client.coach(team_id))
-        entries = (coach_data or {}).get('response', [])
-        name = _current_coach_name(entries)
-        if name:
-            coaches[kr] = name
-            print(f'[collect_coaches] {kr}: {name}')
+    for m in managers:
+        team_id = m.get('current_team_id')
+        kr = team_id_to_kr.get(team_id)
+        if kr and m.get('name'):
+            coaches[kr] = m['name']
+
+    for kr in team_id_to_kr.values():
+        if kr not in coaches:
+            print(f'[collect_coaches] {kr}: 매칭되는 감독 없음')
         else:
-            print(f'[collect_coaches] {kr}: 감독 정보 없음 (team_id={team_id})')
+            print(f'[collect_coaches] {kr}: {coaches[kr]}')
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:

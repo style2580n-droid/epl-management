@@ -94,6 +94,14 @@ class BSDClient(BaseClient):
     def event_detail(self, event_id):
         return self.get(f'events/{event_id}/')
 
+    def teams(self, **params):
+        """팀 목록. league_id, country, name 등으로 필터 가능."""
+        return self.get('teams/', params=params)
+
+    def managers(self, **params):
+        """감독 목록(현재 소속팀 current_team_id 포함). limit/offset로 페이지네이션."""
+        return self.get('managers/', params=params)
+
 
 # ---------------------------------------------------------------- 2.2 구단
 class TheSportsDBClient(BaseClient):
