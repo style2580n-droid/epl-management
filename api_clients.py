@@ -98,6 +98,12 @@ class BSDClient(BaseClient):
         """팀 목록. league_id, country, name 등으로 필터 가능."""
         return self.get('teams/', params=params)
 
+    def standings(self, league_id, season_id=None):
+        """리그 순위표. 소속 팀 전체의 team_id/team_name을 확실하게 얻는 용도로도 사용.
+        season_id 생략 시 현재 시즌."""
+        params = {'season_id': season_id} if season_id else {}
+        return self.get(f'leagues/{league_id}/standings/', params=params)
+
     def managers(self, **params):
         """감독 목록(현재 소속팀 current_team_id 포함). limit/offset로 페이지네이션."""
         return self.get('managers/', params=params)
