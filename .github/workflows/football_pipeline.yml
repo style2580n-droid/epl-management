@@ -88,10 +88,9 @@ jobs:
           CATEGORY=injury python collectors.py
           CATEGORY=lineup python collectors.py
 
-      - name: Collect current coaches (API-Football /coachs)
+      - name: Collect current coaches (BSD managers)
         env:
-          API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
-          API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         run: |
           python collect_coaches.py
 
