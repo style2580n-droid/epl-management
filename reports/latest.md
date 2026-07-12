@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-12
 
-생성(UTC): 2026-07-12 14:38
+생성(UTC): 2026-07-12 15:20
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -121,6 +121,27 @@
 | Queensland Lions FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Eastern Suburbs | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### RosenborgBK_KristiansundBK_207007
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Rosenborg BK | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Kristiansund BK | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### SKBrann_IKStart_207008
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| SK Brann | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| IK Start | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### SandefjordFotball_HamKam_207009
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Sandefjord Fotball | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| HamKam | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### SpainU19_GermanyU19_215951
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -173,6 +194,9 @@
 - **MjällbyAIF_AIK_46397**: [heatmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_heatmap.svg) · [network(AIK)](viz/MjällbyAIF_AIK_46397_AIK_network.svg) · [shotmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_shotmap.svg) · [heatmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_heatmap.svg) · [network(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_network.svg) · [shotmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_shotmap.svg)
 - **Operário-PR_GrêmioNovorizontino_10020**: [heatmap(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_heatmap.svg) · [network(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_network.svg) · [shotmap(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_shotmap.svg) · [heatmap(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_heatmap.svg) · [network(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_network.svg) · [shotmap(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_shotmap.svg)
 - **QueenslandLionsFC_EasternSuburbs_210032**: [heatmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_heatmap.svg) · [network(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_network.svg) · [shotmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_shotmap.svg) · [heatmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_heatmap.svg) · [network(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_network.svg) · [shotmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_shotmap.svg)
+- **RosenborgBK_KristiansundBK_207007**: [heatmap(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_heatmap.svg) · [network(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_network.svg) · [shotmap(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_shotmap.svg) · [heatmap(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_heatmap.svg) · [network(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_network.svg) · [shotmap(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_shotmap.svg)
+- **SKBrann_IKStart_207008**: [heatmap(IK Start)](viz/SKBrann_IKStart_207008_IK Start_heatmap.svg) · [network(IK Start)](viz/SKBrann_IKStart_207008_IK Start_network.svg) · [shotmap(IK Start)](viz/SKBrann_IKStart_207008_IK Start_shotmap.svg) · [heatmap(SK Brann)](viz/SKBrann_IKStart_207008_SK Brann_heatmap.svg) · [network(SK Brann)](viz/SKBrann_IKStart_207008_SK Brann_network.svg) · [shotmap(SK Brann)](viz/SKBrann_IKStart_207008_SK Brann_shotmap.svg)
+- **SandefjordFotball_HamKam_207009**: [heatmap(HamKam)](viz/SandefjordFotball_HamKam_207009_HamKam_heatmap.svg) · [network(HamKam)](viz/SandefjordFotball_HamKam_207009_HamKam_network.svg) · [shotmap(HamKam)](viz/SandefjordFotball_HamKam_207009_HamKam_shotmap.svg) · [heatmap(Sandefjord Fotball)](viz/SandefjordFotball_HamKam_207009_Sandefjord Fotball_heatmap.svg) · [network(Sandefjord Fotball)](viz/SandefjordFotball_HamKam_207009_Sandefjord Fotball_network.svg) · [shotmap(Sandefjord Fotball)](viz/SandefjordFotball_HamKam_207009_Sandefjord Fotball_shotmap.svg)
 - **SpainU19_GermanyU19_215951**: [heatmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_heatmap.svg) · [network(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_network.svg) · [shotmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_shotmap.svg) · [heatmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_heatmap.svg) · [network(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_network.svg) · [shotmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_shotmap.svg)
 - **TromsøIL_VålerengaIF_207011**: [heatmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_heatmap.svg) · [network(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_network.svg) · [shotmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_shotmap.svg) · [heatmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_heatmap.svg) · [network(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_network.svg) · [shotmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_shotmap.svg)
 - **TurunPalloseura_ACOulu_207266**: [heatmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_heatmap.svg) · [network(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_network.svg) · [shotmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_shotmap.svg) · [heatmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_heatmap.svg) · [network(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_network.svg) · [shotmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_shotmap.svg)
