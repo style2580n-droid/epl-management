@@ -13,6 +13,7 @@ BSD(Bzzoiro Sports Data)의 팀별 경기 목록(/teams/{id}/matches/)으로
 """
 import json
 import os
+import time
 from datetime import datetime, timedelta, timezone
 
 from api_clients import BSDClient
@@ -112,6 +113,9 @@ def _fetch_all_team_matches(client, team_id):
         first = _unwrap(client.events(**{
             param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
             'limit': PAGE_LIMIT, 'offset': 0}))
+        time.sleep(0.3)  # 문서엔 "Rate limits: None"이지만, 연속 요청이 몰릴 때
+                          # 숨은 제한(429→기본 60초 대기)에 걸리는 걸 방지하기
+                          # 위한 방어적 텀 (2026-07-12: 24분 넘게 걸린 원인 추정)
         if not first:
             print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" 응답 없음',
                   flush=True)
@@ -141,6 +145,7 @@ def _fetch_all_team_matches(client, team_id):
             data = _unwrap(client.events(**{
                 param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
                 'limit': PAGE_LIMIT, 'offset': offset}))
+            time.sleep(0.3)
             if not data:
                 break
             rows = data.get('results', [])
