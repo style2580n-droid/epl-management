@@ -31,23 +31,54 @@ def _unwrap(resp):
 
 def _find_pl_league_id(client):
     """리그 목록에서 country=England / name에 'Premier League'가 들어간
-    항목을 직접 찾는다. ID를 추측하지 않고 실데이터로 확정."""
+    항목을 직접 찾는다. ID를 추측하지 않고 실데이터로 확정.
+    (league_id, current_season_id) 튜플을 반환."""
     offset = 0
     while True:
         data = _unwrap(client.leagues(limit=PAGE_LIMIT, offset=offset))
         if not data:
-            return None
+            return None, None
         results = data.get('results', [])
         for lg in results:
             name = (lg.get('name') or '')
             country = (lg.get('country') or '')
             if 'premier league' in name.lower() and country.lower() == 'england':
                 print(f'[collect_coaches] 리그 발견: {lg}')
-                return lg.get('id')
+                season = lg.get('current_season') or {}
+                return lg.get('id'), season.get('id')
         total = data.get('count', len(results))
         offset += PAGE_LIMIT
         if offset >= total or not results:
-            return None
+            return None, None
+
+
+def _find_pl_teams(client, league_id, season_id=None):
+    """/api/v2/teams/의 정확한 필터 파라미터 이름을 문서만으로 확신할 수
+    없으므로, 그럴듯한 후보를 전부 시도한 뒤 '결과의 절반 이상이
+    to_kr()로 우리 20개 구단에 실제 매칭되는' 조합만 채택한다.
+    추측이 아니라 결과를 직접 검증해서 고르는 방식."""
+    candidates = [
+        {'league': league_id},
+        {'league_id': league_id},
+        {'competition': league_id},
+        {'league': league_id, 'season': season_id} if season_id else None,
+        {'country': 'England'},
+    ]
+    for params in candidates:
+        if not params:
+            continue
+        data = _unwrap(client.teams(**params))
+        if not data:
+            continue
+        results = data.get('results', [])
+        if not results:
+            continue
+        matched = sum(1 for t in results if to_kr(t.get('name') or t.get('short_name')))
+        print(f'[collect_coaches] teams 필터 시도 {params} → '
+              f'{len(results)}개 중 {matched}개 매칭')
+        if matched >= 10:
+            return results, params
+    return [], None
 
 
 def _fetch_all_managers(client):
@@ -73,39 +104,26 @@ def main():
         print('[collect_coaches] BSD_API_KEY 미등록 → 스킵')
         return
 
-    league_id = _find_pl_league_id(client)
+    league_id, season_id = _find_pl_league_id(client)
     if not league_id:
         print('[collect_coaches] "Premier League"/England 리그를 리그 목록에서 '
               '못 찾음 → 중단')
         return
-    print(f'[collect_coaches] 실제 확인된 Premier League league_id = {league_id}')
+    print(f'[collect_coaches] 실제 확인된 Premier League league_id = {league_id}, '
+          f'season_id = {season_id}')
 
-    standings_data = _unwrap(client.standings(league_id))
-    if not standings_data:
-        print('[collect_coaches] BSD 순위표 조회 실패 (응답 없음)')
-        return
-    if standings_data.get('errors'):
-        print(f'[collect_coaches] 순위표 API 오류 → {standings_data["errors"]}')
-        return
-
-    rows = standings_data.get('standings', [])
-    if rows and isinstance(rows, dict):
-        # 컵대회처럼 grouped 응답일 경우를 대비한 방어 처리
-        rows = [r for grp in rows.values() for r in grp]
+    rows, used_params = _find_pl_teams(client, league_id, season_id)
     if not rows:
-        print(f'[collect_coaches] 순위표가 비어있음: {json.dumps(standings_data, ensure_ascii=False)[:500]}')
+        print('[collect_coaches] 어떤 필터 조합으로도 EPL 팀을 못 찾음 → 중단')
         return
-
-    print(f'[collect_coaches] BSD 순위표로 팀 {len(rows)}개 확보')
+    print(f'[collect_coaches] 채택된 필터: {used_params}, 팀 {len(rows)}개')
 
     team_id_to_kr = {}
     for r in rows:
-        kr = to_kr(r.get('team_name'))
-        if kr and r.get('team_id'):
-            team_id_to_kr[r['team_id']] = kr
+        kr = to_kr(r.get('name') or r.get('short_name'))
+        if kr and r.get('id'):
+            team_id_to_kr[r['id']] = kr
     print(f'[collect_coaches] 한글 팀명 매칭: {len(team_id_to_kr)}/{len(rows)}')
-    if len(team_id_to_kr) == 0 and rows:
-        print(f'[collect_coaches] 매칭 실패 원본 예시: {json.dumps(rows[:3], ensure_ascii=False)}')
 
     managers = _fetch_all_managers(client)
 
