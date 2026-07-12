@@ -17,7 +17,10 @@ from app_export import to_kr
 
 OUT_PATH = 'data/master/coaches.json'
 PL_LEAGUE_ID = 39          # API-Football 리그 ID: Premier League
-SEASON = int(os.getenv('AF_SEASON', '2026'))  # 2026 = 2026-27 시즌
+# 무료 플랜은 최신 시즌을 아직 안 줄 수 있어 여러 시즌을 순서대로 시도한다.
+SEASON_CANDIDATES = [
+    int(os.getenv('AF_SEASON', '2026')), 2026, 2025, 2024,
+]
 
 
 def _unwrap(resp):
@@ -28,6 +31,30 @@ def _unwrap(resp):
     if isinstance(resp, tuple):
         resp = resp[0]
     return resp
+
+
+def _fetch_teams(client):
+    """시즌 후보를 순서대로 시도해 팀 목록을 반환. 실패 시 에러 내용도 출력."""
+    tried = []
+    for season in dict.fromkeys(SEASON_CANDIDATES):  # 순서 유지 + 중복 제거
+        tried.append(season)
+        raw = client.teams(PL_LEAGUE_ID, season)
+        data = _unwrap(raw)
+        if not data:
+            print(f'[collect_coaches] {season} 시즌: 응답 자체가 없음 '
+                  f'(네트워크 실패 또는 쿼터 소진)')
+            continue
+        errors = data.get('errors')
+        if errors:
+            print(f'[collect_coaches] {season} 시즌: API 오류 응답 → {errors}')
+        team_list = data.get('response', [])
+        if team_list:
+            print(f'[collect_coaches] {season} 시즌으로 팀 {len(team_list)}개 조회 성공')
+            return team_list, season
+        print(f'[collect_coaches] {season} 시즌: response 비어있음 '
+              f'(results={data.get("results")})')
+    print(f'[collect_coaches] 시도한 시즌 전부 실패: {tried}')
+    return [], None
 
 
 def _current_coach_name(coach_entries):
@@ -48,11 +75,10 @@ def main():
         print('[collect_coaches] API_FOOTBALL_KEY 미등록 → 스킵')
         return
 
-    teams_data = _unwrap(client.teams(PL_LEAGUE_ID, SEASON))
-    team_list = (teams_data or {}).get('response', [])
+    team_list, used_season = _fetch_teams(client)
     if not team_list:
-        print(f'[collect_coaches] {SEASON} 시즌 팀 목록을 못 가져옴 '
-              f'(응답 비어있음 — 시즌 번호 확인 필요할 수 있음)')
+        print('[collect_coaches] 모든 시즌 시도 실패 → coaches.json 생성 안 함 '
+              '(API-Football 무료 플랜이 이 리그/시즌 조합을 지원 안 할 수 있음)')
         return
 
     coaches = {}
