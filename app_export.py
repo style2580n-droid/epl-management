@@ -129,6 +129,18 @@ TEAM_NAME_MAP = {
 }
 
 
+# ============================================================ 감독 수동 보정
+# BSD 데이터가 초고속 감독 교체를 못 따라잡을 때를 위한 override.
+# coaches.json / teams / lineups 어떤 소스보다도 우선 적용된다.
+# ⚠️ 보정한 팀이 실제로 또 감독을 바꾸면 여기 값이 낡을 수 있으니,
+#    BSD가 정확히 채우기 시작하면 해당 항목을 지우는 것이 이상적이다.
+# (기준일: 2026-07-12, 시즌 개막 전 여름 감독 대이동 반영)
+COACH_OVERRIDES = {
+    '리버풀': 'Andoni Iraola',        # 2026-06-05 슬롯 후임으로 부임
+    '노팅엄 포레스트': 'Oliver Glasner',  # 2026-07-06 페레이라 후임으로 부임
+}
+
+
 def _norm(name):
     """비교용 정규화: 대소문자/공백/흔한 접미사 제거."""
     if not name:
@@ -319,12 +331,16 @@ def build_squads(name_cache):
     conn.close()
 
     # 팀 한글명 -> 감독명
-    # 우선순위: 1) collect_coaches.py가 만든 전용 감독 조회 결과(가장 신뢰도 높음)
+    # 우선순위: 0) COACH_OVERRIDES 수동 보정(BSD가 못 따라잡는 초고속 교체 대비)
+    #          1) collect_coaches.py가 만든 전용 감독 조회 결과
     #          2) teams 테이블(football-data.org)   3) 최근 라인업의 감독
     coach_by_team = {}
+    for kr, name in COACH_OVERRIDES.items():
+        if name:
+            coach_by_team[kr] = name
     af_coaches = _load_json('data/master/coaches.json', {})
     for kr, name in af_coaches.items():
-        if name:
+        if name and kr not in coach_by_team:
             coach_by_team[kr] = name
     for row in team_coach_rows:
         kr = to_kr(row['name'])
