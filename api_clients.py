@@ -246,6 +246,14 @@ class APIFootballClient(BaseClient):
             params['date'] = date
         return self.get('fixtures', params=params)
 
+    def teams(self, league_id, season):
+        """리그 소속 팀 목록(API-Football 자체 team_id 포함)."""
+        return self.get('teams', params={'league': league_id, 'season': season})
+
+    def coach(self, team_id):
+        """팀의 현재/과거 감독 이력. career 배열 중 end가 없는 항목이 현직."""
+        return self.get('coachs', params={'team': team_id})
+
 
 class ApiFootballComClient(BaseClient):
     """apifootball.com (180/시간, 최대 쿼터) — 라이브 스코어·이벤트 1순위 (문서 5장)."""

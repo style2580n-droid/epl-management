@@ -318,11 +318,17 @@ def build_squads(name_cache):
     ).fetchall()
     conn.close()
 
-    # 팀 한글명 -> 감독명 (teams 테이블 우선, 없으면 최근 라인업의 감독으로 대체)
+    # 팀 한글명 -> 감독명
+    # 우선순위: 1) collect_coaches.py가 만든 전용 감독 조회 결과(가장 신뢰도 높음)
+    #          2) teams 테이블(football-data.org)   3) 최근 라인업의 감독
     coach_by_team = {}
+    af_coaches = _load_json('data/master/coaches.json', {})
+    for kr, name in af_coaches.items():
+        if name:
+            coach_by_team[kr] = name
     for row in team_coach_rows:
         kr = to_kr(row['name'])
-        if kr and row['coach']:
+        if kr and row['coach'] and kr not in coach_by_team:
             coach_by_team[kr] = row['coach']
     for row in lineup_coach_rows:
         kr = to_kr(row['team'])
