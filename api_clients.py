@@ -109,9 +109,19 @@ class BSDClient(BaseClient):
         return self.get('managers/', params=params)
 
     def team_matches(self, team_id, **params):
-        """팀의 경기 목록(과거 결과 + 예정 일정). date_from/date_to(YYYY-MM-DD)로 범위 지정.
-        미지정 시 기본값은 now-3h ~ now+7d 라서, 넓은 범위를 보려면 반드시 지정해야 한다."""
+        """[사용 중단] BSD 공식 엔드포인트 목록(llms.txt, MCP server-card)을
+        실측 확인한 결과 '/teams/{id}/matches/'는 애초에 존재하지 않는
+        경로였다(20개 팀 전부 HTTP 404 확인, 2026-07-12). 실제로는 아래
+        events()를 팀 파라미터로 필터링하는 구조다. 이 메서드는 하위
+        호환을 위해 남겨두되 더 이상 사용하지 않는다."""
         return self.get(f'teams/{team_id}/matches/', params=params)
+
+    def events(self, **params):
+        """경기 목록. date_from/date_to(YYYY-MM-DD)/league/status/tz로
+        필터 가능. 팀 단위 필터는 공식 문서에 파라미터명이 명시돼 있지
+        않아, 호출측(collect_fixtures.py)이 후보(team/team_id)를 실측
+        검증해 확정한다."""
+        return self.get('events/', params=params)
 
 
 # ---------------------------------------------------------------- 2.2 구단

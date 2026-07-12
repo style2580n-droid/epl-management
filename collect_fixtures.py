@@ -84,33 +84,49 @@ def _find_pl_teams(client, league_id, season_id=None):
     return {}
 
 
+_TEAM_PARAM_NAME = None  # 'team' 또는 'team_id' — 첫 성공 시 확정해 재사용(추측 금지)
+
+
 def _fetch_all_team_matches(client, team_id):
     """한 팀의 경기 목록을 offset/count로 끝까지 순회해 전부 모은다.
-    BSD가 이 엔드포인트도 leagues/managers처럼 페이지 단위로 끊어 주면
-    단발 호출은 뒷부분을 조용히 잘라버리므로(에러 없이 불완전 저장)
-    _find_pl_league_id / _fetch_all_managers와 동일한 패턴으로 방어한다.
-    응답에 페이지네이션 메타(count)가 없으면 첫 페이지가 전부라고 보고 종료."""
-    all_rows = []
-    offset = 0
-    while True:
-        data = _unwrap(client.team_matches(
-            team_id, date_from=DATE_FROM, date_to=DATE_TO,
-            limit=PAGE_LIMIT, offset=offset))
-        if not data:
-            break
-        rows = data.get('events') if isinstance(data, dict) else None
-        if rows is None and isinstance(data, dict):
+    ⚠️ 2026-07-12 실측 확인: BSD 공식 엔드포인트 목록(llms.txt, MCP
+    server-card)에 '/teams/{id}/matches/'는 아예 없음(20개 팀 전부
+    HTTP 404). 실제로는 /events/를 팀 파라미터로 필터링하는 구조다.
+    문서에 그 파라미터명이 명시돼 있지 않으므로, collect_coaches의
+    teams 필터 탐색과 동일하게 후보(team/team_id)를 실제로 호출해
+    이 팀의 경기가 맞게 나오는지(home/away에 team_id 포함) 검증한
+    뒤 확정한다. 한 번 확정되면 이후 팀들은 그 파라미터를 재사용."""
+    global _TEAM_PARAM_NAME
+    candidates = [_TEAM_PARAM_NAME] if _TEAM_PARAM_NAME else ['team', 'team_id']
+
+    for param_name in candidates:
+        all_rows = []
+        offset = 0
+        while True:
+            params = {param_name: team_id, 'date_from': DATE_FROM,
+                       'date_to': DATE_TO, 'limit': PAGE_LIMIT, 'offset': offset}
+            data = _unwrap(client.events(**params))
+            if not data:
+                all_rows = []
+                break
             rows = data.get('results', [])
-        if not rows:
-            break
-        all_rows.extend(rows)
-        # count(전체 건수)가 있으면 그걸로 종료 판정, 없으면 한 페이지에 다
-        # 담겼다고 보고(=페이지네이션 미지원) 루프 종료.
-        total = data.get('count')
-        offset += PAGE_LIMIT
-        if total is None or offset >= total or len(rows) < PAGE_LIMIT:
-            break
-    return all_rows
+            if not rows:
+                break
+            all_rows.extend(rows)
+            total = data.get('count')
+            offset += PAGE_LIMIT
+            if total is None or offset >= total or len(rows) < PAGE_LIMIT:
+                break
+        # 검증: 실제로 이 팀이 home/away 어느 쪽으로든 들어있는 경기가
+        # 맞는지 확인 — 필터가 안 먹혀서 전체 리그 경기가 다 온 경우를 방지.
+        if all_rows and any(
+                ev.get('home_team_id') == team_id or ev.get('away_team_id') == team_id
+                for ev in all_rows):
+            if _TEAM_PARAM_NAME is None:
+                _TEAM_PARAM_NAME = param_name
+                print(f'[collect_fixtures] events 팀 필터 파라미터 확정: "{param_name}"')
+            return all_rows
+    return []
 
 
 def _kst_date_time(iso_str):
@@ -178,7 +194,10 @@ def main():
                 'date': date_kst, 'home': home_kr, 'away': away_kr,
                 'homeGoals': hs, 'awayGoals': as_,
             })
-        elif status in ('notstarted', 'scheduled', ''):
+        elif status in ('upcoming', 'live'):
+            # BSD 공식 문서(status 값: upcoming/live/finished/cancelled/
+            # postponed) 실측 확인 결과, 기존 코드가 찾던 'notstarted'/
+            # 'scheduled'는 애초에 존재하지 않는 값이었다(2026-07-12 확인).
             schedule.append({
                 'date': date_kst, 'time': time_kst or '00:00',
                 'home': home_kr, 'away': away_kr,
