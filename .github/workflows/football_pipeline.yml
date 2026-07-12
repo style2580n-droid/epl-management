@@ -47,6 +47,8 @@ jobs:
           FOOTBALL_DATA_API_KEY1: ${{ secrets.FOOTBALL_DATA_API_KEY1 }}
           FOOTBALL_DATA_API_KEY2: ${{ secrets.FOOTBALL_DATA_API_KEY2 }}
           THESPORTSDB_API_KEY: ${{ secrets.THESPORTSDB_API_KEY }}
+          API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
+          API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
           LEAGUE: ${{ matrix.league }}
           CATEGORY: all
         run: |
