@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-12
 
-생성(UTC): 2026-07-12 06:51
+생성(UTC): 2026-07-12 07:36
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -30,6 +30,13 @@
 | Argentina | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Switzerland | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### GoldCoastKnights_BrisbaneCity_210031
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Gold Coast Knights | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Brisbane City | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### GoldCoastUnited_OlympicFC_210029
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -50,6 +57,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Mjällby AIF | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | AIK | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### QueenslandLionsFC_EasternSuburbs_210032
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Queensland Lions FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Eastern Suburbs | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### SpainU19_GermanyU19_215951
 
@@ -83,9 +97,11 @@
 
 - **AalesundsFK_MoldeFK_207004**: [heatmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_heatmap.svg) · [network(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_network.svg) · [shotmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_shotmap.svg) · [heatmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_heatmap.svg) · [network(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_network.svg) · [shotmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_shotmap.svg)
 - **Argentina_Switzerland_8386**: [heatmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_heatmap.svg) · [network(Argentina)](viz/Argentina_Switzerland_8386_Argentina_network.svg) · [shotmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_shotmap.svg) · [heatmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_heatmap.svg) · [network(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_network.svg) · [shotmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_shotmap.svg)
+- **GoldCoastKnights_BrisbaneCity_210031**: [heatmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_heatmap.svg) · [network(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_network.svg) · [shotmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_shotmap.svg) · [heatmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_heatmap.svg) · [network(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_network.svg) · [shotmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_shotmap.svg)
 - **GoldCoastUnited_OlympicFC_210029**: [heatmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_heatmap.svg) · [network(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_network.svg) · [shotmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_shotmap.svg) · [heatmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_heatmap.svg) · [network(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_network.svg) · [shotmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_shotmap.svg)
 - **IFGnistan_IFKMariehamn_207267**: [heatmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_heatmap.svg) · [network(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_network.svg) · [shotmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_shotmap.svg) · [heatmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_heatmap.svg) · [network(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_network.svg) · [shotmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_shotmap.svg)
 - **MjällbyAIF_AIK_46397**: [heatmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_heatmap.svg) · [network(AIK)](viz/MjällbyAIF_AIK_46397_AIK_network.svg) · [shotmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_shotmap.svg) · [heatmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_heatmap.svg) · [network(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_network.svg) · [shotmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_shotmap.svg)
+- **QueenslandLionsFC_EasternSuburbs_210032**: [heatmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_heatmap.svg) · [network(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_network.svg) · [shotmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_shotmap.svg) · [heatmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_heatmap.svg) · [network(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_network.svg) · [shotmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_shotmap.svg)
 - **SpainU19_GermanyU19_215951**: [heatmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_heatmap.svg) · [network(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_network.svg) · [shotmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_shotmap.svg) · [heatmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_heatmap.svg) · [network(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_network.svg) · [shotmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_shotmap.svg)
 - **TromsøIL_VålerengaIF_207011**: [heatmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_heatmap.svg) · [network(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_network.svg) · [shotmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_shotmap.svg) · [heatmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_heatmap.svg) · [network(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_network.svg) · [shotmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_shotmap.svg)
 - **TurunPalloseura_ACOulu_207266**: [heatmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_heatmap.svg) · [network(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_network.svg) · [shotmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_shotmap.svg) · [heatmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_heatmap.svg) · [network(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_network.svg) · [shotmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_shotmap.svg)
