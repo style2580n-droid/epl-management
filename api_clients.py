@@ -108,6 +108,11 @@ class BSDClient(BaseClient):
         """감독 목록(현재 소속팀 current_team_id 포함). limit/offset로 페이지네이션."""
         return self.get('managers/', params=params)
 
+    def team_matches(self, team_id, **params):
+        """팀의 경기 목록(과거 결과 + 예정 일정). date_from/date_to(YYYY-MM-DD)로 범위 지정.
+        미지정 시 기본값은 now-3h ~ now+7d 라서, 넓은 범위를 보려면 반드시 지정해야 한다."""
+        return self.get(f'teams/{team_id}/matches/', params=params)
+
 
 # ---------------------------------------------------------------- 2.2 구단
 class TheSportsDBClient(BaseClient):
