@@ -88,12 +88,6 @@ jobs:
           CATEGORY=injury python collectors.py
           CATEGORY=lineup python collectors.py
 
-      - name: Collect current coaches (BSD managers)
-        env:
-          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
-        run: |
-          python collect_coaches.py
-
       - uses: actions/upload-artifact@v4
         with:
           name: data-global
@@ -122,6 +116,7 @@ jobs:
       - name: Merge / Metrics / Report
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
         run: |
           python merge_artifacts.py artifacts/ data/
           # xG 계수가 없으면 StatsBomb Open으로 최초 1회 학습 (이후 커밋된 계수 재사용)
@@ -135,6 +130,7 @@ jobs:
           python transfer_impact.py
           python report_generator.py
           python retention.py
+          python collect_coaches.py
           python app_export.py
 
       - name: Commit results
