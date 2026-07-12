@@ -3,10 +3,11 @@
 BSD(Bzzoiro Sports Data)의 리그 순위표 + 감독 목록으로 EPL 20개 구단의
 '현재' 감독을 조회해 data/master/coaches.json에 저장한다.
 
-/api/v2/teams/ 는 필터 파라미터가 불명확해 리그 필터링이 안 먹혔음
-(사우디 팀이 섞여 나옴, 실측 확인됨) → 대신 /api/v2/leagues/17/standings/
-(리그 순위표)로 EPL 소속 20개 팀의 정확한 team_id를 확보한다.
-17 = BSD의 Premier League league_id.
+리그 ID를 하드코딩하지 않는다. /api/v2/teams/의 필터가 불명확했고
+league_id=17을 순위표에 넘겼더니 사우디 프로리그가 나온 것도 실측으로
+확인됐다 (숫자 추측은 신뢰할 수 없다는 게 반복 확인됨). 대신 매 실행마다
+/api/v2/leagues/ 전체 목록에서 name에 'Premier League'가 들어가고
+country가 'England'인 항목을 직접 찾아 그 id를 쓴다.
 
 실행: BSD_API_KEY 환경변수 필요. 없으면 조용히 스킵(예외 없음).
 """
@@ -17,7 +18,6 @@ from api_clients import BSDClient
 from app_export import to_kr
 
 OUT_PATH = 'data/master/coaches.json'
-PL_LEAGUE_ID = 17
 PAGE_LIMIT = 200
 
 
@@ -27,6 +27,27 @@ def _unwrap(resp):
     if isinstance(resp, tuple):
         resp = resp[0]
     return resp
+
+
+def _find_pl_league_id(client):
+    """리그 목록에서 country=England / name에 'Premier League'가 들어간
+    항목을 직접 찾는다. ID를 추측하지 않고 실데이터로 확정."""
+    offset = 0
+    while True:
+        data = _unwrap(client.leagues(limit=PAGE_LIMIT, offset=offset))
+        if not data:
+            return None
+        results = data.get('results', [])
+        for lg in results:
+            name = (lg.get('name') or '')
+            country = (lg.get('country') or '')
+            if 'premier league' in name.lower() and country.lower() == 'england':
+                print(f'[collect_coaches] 리그 발견: {lg}')
+                return lg.get('id')
+        total = data.get('count', len(results))
+        offset += PAGE_LIMIT
+        if offset >= total or not results:
+            return None
 
 
 def _fetch_all_managers(client):
@@ -52,7 +73,14 @@ def main():
         print('[collect_coaches] BSD_API_KEY 미등록 → 스킵')
         return
 
-    standings_data = _unwrap(client.standings(PL_LEAGUE_ID))
+    league_id = _find_pl_league_id(client)
+    if not league_id:
+        print('[collect_coaches] "Premier League"/England 리그를 리그 목록에서 '
+              '못 찾음 → 중단')
+        return
+    print(f'[collect_coaches] 실제 확인된 Premier League league_id = {league_id}')
+
+    standings_data = _unwrap(client.standings(league_id))
     if not standings_data:
         print('[collect_coaches] BSD 순위표 조회 실패 (응답 없음)')
         return
