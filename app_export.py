@@ -15,6 +15,7 @@ import os
 import re
 import sqlite3
 import time
+import unicodedata
 from collections import defaultdict
 
 import requests
@@ -38,13 +39,46 @@ def _save_name_cache(cache):
         json.dump(cache, f, ensure_ascii=False, indent=1)
 
 
+def _ascii_fold(s):
+    """악센트 제거 + 소문자화 (매칭용, 표시용 아님)."""
+    s = unicodedata.normalize('NFKD', s)
+    s = ''.join(c for c in s if not unicodedata.combining(c))
+    return s.lower()
+
+
+def _fuzzy_cache_match(name, cache):
+    """데이터 소스가 선수의 긴 법적 본명을 보낼 때 대비:
+    캐시에 있는 '일반적으로 쓰는 이름'의 각 단어가 전체 이름 문자열
+    안에 부분 문자열로 다 포함되면 그 캐시 항목을 재사용한다.
+    예: 'Rúben Santos Gato Alves Dias' -> 캐시의 'Rúben Dias' 매칭.
+    가장 긴(=가장 구체적인) 캐시 키를 우선한다."""
+    name_folded = _ascii_fold(name)
+    best_key, best_ko = None, None
+    for key, ko in cache.items():
+        if not key or key == name:
+            continue
+        parts = [p for p in re.split(r"[\s'\"]+", key) if p]
+        if not parts:
+            continue
+        parts_folded = [_ascii_fold(p) for p in parts]
+        if all(p in name_folded for p in parts_folded):
+            if best_key is None or len(key) > len(best_key):
+                best_key, best_ko = key, ko
+    return best_ko
+
+
 def _translate_name(name, cache):
-    """영문 선수명 -> 한글. 캐시에 있으면 재사용, 없으면 구글 번역 무료
-    엔드포인트로 조회(키 불필요, 실패하면 영문 그대로 반환)."""
+    """영문 선수명 -> 한글. 캐시에 정확히 있으면 재사용, 없으면 캐시 내
+    짧은 이름과의 부분일치(퍼지 매칭)를 시도, 그래도 없으면 구글 번역
+    무료 엔드포인트로 조회(키 불필요, 실패하면 영문 그대로 반환)."""
     if not name:
         return name
     if name in cache:
         return cache[name]
+    fuzzy = _fuzzy_cache_match(name, cache)
+    if fuzzy:
+        cache[name] = fuzzy
+        return fuzzy
     try:
         resp = requests.get(
             'https://translate.googleapis.com/translate_a/single',
