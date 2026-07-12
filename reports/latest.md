@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-12
 
-생성(UTC): 2026-07-12 09:18
+생성(UTC): 2026-07-12 11:23
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -30,6 +30,13 @@
 | Argentina | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Switzerland | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### FCSeoul_GangwonFC_205091
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC Seoul | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Gangwon FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### GoldCoastKnights_BrisbaneCity_210031
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -50,6 +57,20 @@
 |---|---|---|---|---|---|---|---|---|---|
 | IF Gnistan | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | IFK Mariehamn | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### IncheonUnited_FCAnyang_205092
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Incheon United | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| FC Anyang | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### JejuSK_DaejeonHanaCitizen_205093
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Jeju SK | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Daejeon Hana Citizen | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### MjällbyAIF_AIK_46397
 
@@ -97,9 +118,12 @@
 
 - **AalesundsFK_MoldeFK_207004**: [heatmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_heatmap.svg) · [network(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_network.svg) · [shotmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_shotmap.svg) · [heatmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_heatmap.svg) · [network(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_network.svg) · [shotmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_shotmap.svg)
 - **Argentina_Switzerland_8386**: [heatmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_heatmap.svg) · [network(Argentina)](viz/Argentina_Switzerland_8386_Argentina_network.svg) · [shotmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_shotmap.svg) · [heatmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_heatmap.svg) · [network(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_network.svg) · [shotmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_shotmap.svg)
+- **FCSeoul_GangwonFC_205091**: [heatmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_heatmap.svg) · [network(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_network.svg) · [shotmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_shotmap.svg) · [heatmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_heatmap.svg) · [network(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_network.svg) · [shotmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_shotmap.svg)
 - **GoldCoastKnights_BrisbaneCity_210031**: [heatmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_heatmap.svg) · [network(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_network.svg) · [shotmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_shotmap.svg) · [heatmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_heatmap.svg) · [network(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_network.svg) · [shotmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_shotmap.svg)
 - **GoldCoastUnited_OlympicFC_210029**: [heatmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_heatmap.svg) · [network(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_network.svg) · [shotmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_shotmap.svg) · [heatmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_heatmap.svg) · [network(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_network.svg) · [shotmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_shotmap.svg)
 - **IFGnistan_IFKMariehamn_207267**: [heatmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_heatmap.svg) · [network(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_network.svg) · [shotmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_shotmap.svg) · [heatmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_heatmap.svg) · [network(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_network.svg) · [shotmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_shotmap.svg)
+- **IncheonUnited_FCAnyang_205092**: [heatmap(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_heatmap.svg) · [network(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_network.svg) · [shotmap(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_shotmap.svg) · [heatmap(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_heatmap.svg) · [network(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_network.svg) · [shotmap(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_shotmap.svg)
+- **JejuSK_DaejeonHanaCitizen_205093**: [heatmap(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_heatmap.svg) · [network(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_network.svg) · [shotmap(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_shotmap.svg) · [heatmap(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_heatmap.svg) · [network(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_network.svg) · [shotmap(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_shotmap.svg)
 - **MjällbyAIF_AIK_46397**: [heatmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_heatmap.svg) · [network(AIK)](viz/MjällbyAIF_AIK_46397_AIK_network.svg) · [shotmap(AIK)](viz/MjällbyAIF_AIK_46397_AIK_shotmap.svg) · [heatmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_heatmap.svg) · [network(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_network.svg) · [shotmap(Mjällby AIF)](viz/MjällbyAIF_AIK_46397_Mjällby AIF_shotmap.svg)
 - **QueenslandLionsFC_EasternSuburbs_210032**: [heatmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_heatmap.svg) · [network(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_network.svg) · [shotmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_shotmap.svg) · [heatmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_heatmap.svg) · [network(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_network.svg) · [shotmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_shotmap.svg)
 - **SpainU19_GermanyU19_215951**: [heatmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_heatmap.svg) · [network(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_network.svg) · [shotmap(Germany U19)](viz/SpainU19_GermanyU19_215951_Germany U19_shotmap.svg) · [heatmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_heatmap.svg) · [network(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_network.svg) · [shotmap(Spain U19)](viz/SpainU19_GermanyU19_215951_Spain U19_shotmap.svg)
