@@ -2743,5 +2743,60 @@
             }
         ],
         "collected_at": "2026-07-12T01:13:48.654031+00:00"
+    },
+    "1298086399": {
+        "match": {
+            "id": 1298086399,
+            "round": "Group Stage",
+            "date": "2026-07-12T21:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22072320,
+                "logo": null,
+                "name": "Bangers"
+            },
+            "homeTeam": {
+                "id": 19682712,
+                "logo": null,
+                "name": "West Seattle Junction"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19682712,
+                    "logo": null,
+                    "name": "West Seattle Junction"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22072320,
+                    "logo": null,
+                    "name": "Bangers"
+                }
+            }
+        ],
+        "collected_at": "2026-07-12T03:24:28.355417+00:00"
     }
 }
