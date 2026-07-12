@@ -131,6 +131,7 @@ jobs:
           python report_generator.py
           python retention.py
           python collect_coaches.py
+          python collect_fixtures.py
           python app_export.py
 
       - name: Commit results
