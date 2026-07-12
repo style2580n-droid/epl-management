@@ -48,20 +48,21 @@ def _ascii_fold(s):
 
 def _fuzzy_cache_match(name, cache):
     """데이터 소스가 선수의 긴 법적 본명을 보낼 때 대비:
-    캐시에 있는 '일반적으로 쓰는 이름'의 각 단어가 전체 이름 문자열
-    안에 부분 문자열로 다 포함되면 그 캐시 항목을 재사용한다.
+    캐시에 있는 '일반적으로 쓰는 이름'의 각 단어가 전체 이름의 단어 목록
+    안에 '완전한 단어'로 다 포함되면 그 캐시 항목을 재사용한다.
     예: 'Rúben Santos Gato Alves Dias' -> 캐시의 'Rúben Dias' 매칭.
+    단어 단위 매칭이라 'Rodri'가 'Rodrigues' 안에서 잘못 매칭되는 것을 방지.
     가장 긴(=가장 구체적인) 캐시 키를 우선한다."""
-    name_folded = _ascii_fold(name)
+    name_tokens = [_ascii_fold(t) for t in re.split(r"[\s'\"-]+", name) if t]
     best_key, best_ko = None, None
     for key, ko in cache.items():
         if not key or key == name:
             continue
-        parts = [p for p in re.split(r"[\s'\"]+", key) if p]
+        parts = [p for p in re.split(r"[\s'\"-]+", key) if p]
         if not parts:
             continue
         parts_folded = [_ascii_fold(p) for p in parts]
-        if all(p in name_folded for p in parts_folded):
+        if all(p in name_tokens for p in parts_folded):
             if best_key is None or len(key) > len(best_key):
                 best_key, best_ko = key, ko
     return best_ko
@@ -311,13 +312,21 @@ def build_squads(name_cache):
     team_coach_rows = conn.execute(
         'SELECT name, coach FROM teams WHERE coach IS NOT NULL AND coach != ""'
     ).fetchall()
+    lineup_coach_rows = conn.execute(
+        'SELECT team, coach FROM lineups WHERE coach IS NOT NULL AND coach != "" '
+        'ORDER BY updated_at DESC'
+    ).fetchall()
     conn.close()
 
-    # 팀 한글명 -> 감독명
+    # 팀 한글명 -> 감독명 (teams 테이블 우선, 없으면 최근 라인업의 감독으로 대체)
     coach_by_team = {}
     for row in team_coach_rows:
         kr = to_kr(row['name'])
         if kr and row['coach']:
+            coach_by_team[kr] = row['coach']
+    for row in lineup_coach_rows:
+        kr = to_kr(row['team'])
+        if kr and row['coach'] and kr not in coach_by_team:
             coach_by_team[kr] = row['coach']
 
     # 선수명 -> (팀 한글명, 포지션버킷)
@@ -340,7 +349,9 @@ def build_squads(name_cache):
 
     squads = {}
     for kr in TEAM_NAME_MAP:
-        squads[kr] = {'coach': coach_by_team.get(kr, ''), 'formation': '4-3-3', 'league': 'PL',
+        coach_en = coach_by_team.get(kr, '')
+        squads[kr] = {'coach': _translate_name(coach_en, name_cache) if coach_en else '',
+                      'formation': '4-3-3', 'league': 'PL',
                       'gk': [], 'df': [], 'mf': [], 'fw': [],
                       'xi': [], 'injured': [], 'keyOut': [],
                       'ppda': 12.0, 'fieldTilt': 50, 'setPieceXg': 0.30}
@@ -376,12 +387,51 @@ def build_leaderboard(name_cache):
             'ownGoals': {}}
 
 
+# ============================================================ 5) TRANSFERS (영입/이탈)
+def build_transfers(name_cache):
+    conn = sqlite3.connect(DB_PATH)
+    conn.row_factory = sqlite3.Row
+    rows = conn.execute(
+        'SELECT player_name, from_team, to_team, detected_at '
+        'FROM transfers ORDER BY detected_at DESC'
+    ).fetchall()
+    conn.close()
+
+    out = {kr: {'in': [], 'out': []} for kr in TEAM_NAME_MAP}
+    for r in rows:
+        if not r['player_name']:
+            continue
+        player_ko = _translate_name(r['player_name'], name_cache)
+        to_team_kr = to_kr(r['to_team']) if r['to_team'] else None
+        from_team_kr = to_kr(r['from_team']) if r['from_team'] else None
+
+        if to_team_kr and to_team_kr in out:
+            out[to_team_kr]['in'].append({
+                'player': player_ko,
+                'from': r['from_team'] or '미상',
+                'date': r['detected_at'],
+            })
+        if from_team_kr and from_team_kr in out:
+            out[from_team_kr]['out'].append({
+                'player': player_ko,
+                'to': r['to_team'] or '미상',
+                'date': r['detected_at'],
+            })
+
+    # 팀당 최근 20건만 유지 (이미 최신순 정렬됨)
+    for kr in out:
+        out[kr]['in'] = out[kr]['in'][:20]
+        out[kr]['out'] = out[kr]['out'][:20]
+    return out
+
+
 # ============================================================ JS 렌더링
 def render_js(name_cache):
     elo, adv = build_team_blocks()
     recent_form, live_results = build_matches()
     squads = build_squads(name_cache)
     leaderboard = build_leaderboard(name_cache)
+    transfers = build_transfers(name_cache)
 
     lines = ['// 자동 생성 파일 — app_export.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {__import__("datetime").datetime.now(__import__("datetime").timezone.utc).isoformat()}',
@@ -392,10 +442,11 @@ def render_js(name_cache):
     lines.append('const PIPELINE_SQUADS = ' + _js(squads) + ';')
     lines.append('const PIPELINE_STATIC_LEADERBOARD = ' + _js(leaderboard) + ';')
     lines.append('const PIPELINE_LIVE_RESULTS = ' + _js(live_results) + ';')
+    lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
     lines.append('')
-    lines.append('// 앱에 반영하려면: 위 6개 PIPELINE_* 객체 내용을 앱 파일의 '
+    lines.append('// 앱에 반영하려면: 위 7개 PIPELINE_* 객체 내용을 앱 파일의 '
                  'ELO/ADVANCED_STATS/RECENT_FORM/SQUADS/STATIC_LEADERBOARD/'
-                 '_liveResults 각각에 Object.assign으로 병합하거나, '
+                 '_liveResults/TRANSFERS 각각에 Object.assign으로 병합하거나, '
                  '해당 const 선언을 통째로 교체하세요.')
     return '\n'.join(lines)
 
