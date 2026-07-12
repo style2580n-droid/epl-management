@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-BSD(Bzzoiro Sports Data)의 팀별 경기 목록(/teams/{id}/matches/)으로
+BSD(Bzzoiro Sports Data)의 /events/ (리그 단위, date_from~date_to 필터)로
   1) EPL 20개 구단의 향후 경기 일정을 한국시간(KST, UTC+9)으로 변환해
      data/master/schedule.json 에 저장
   2) 두 팀이 맞붙은 과거 경기(완료된 경기)를 모아 상대전적(H2H)을
@@ -8,6 +8,16 @@ BSD(Bzzoiro Sports Data)의 팀별 경기 목록(/teams/{id}/matches/)으로
 
 리그/팀 ID를 하드코딩하지 않는다 — collect_coaches.py와 동일하게
 실제 API 응답을 검증해서 확정한다 (숫자 추측 금지가 이번 프로젝트의 교훈).
+
+⚠️ 2026-07-12 시행착오 기록 (다음에 또 겪지 않도록):
+  1차: '/teams/{id}/matches/' 호출 → 20개 팀 전부 HTTP 404 (엔드포인트
+       자체가 존재하지 않았음).
+  2차: '/events/?team=...' 호출 → 응답은 오는데 팀을 바꿔도 count가
+       34631로 항상 똑같음 (필터가 무시되고 전체 스포츠 데이터가 그대로
+       옴). BSD 공식 문서(llms.txt)에도 애초에 team 필터는 없었음.
+  최종: 문서에 명시된 'league' 필터로 리그 전체를 한 번에 받고, 우리가
+        이미 아는 20개 EPL team_id로 파이썬에서 직접 걸러내는 방식으로
+        확정.
 
 실행: BSD_API_KEY 환경변수 필요. 없으면 조용히 스킵(예외 없음).
 """
@@ -85,65 +95,69 @@ def _find_pl_teams(client, league_id, season_id=None):
     return {}
 
 
-_TEAM_PARAM_NAME = None  # 'team' 또는 'team_id' — 첫 성공 시 확정해 재사용(추측 금지)
-_MAX_PAGES = 5  # 안전 상한: 팀당 최대 1000건(200*5). 필터가 안 먹혀 전체
-                 # 리그 데이터가 오는 경우 무한정 페이지 넘기는 것을 방지.
-                 # ⚠️ 24분 넘게 걸린 원인 진단을 위해 상한을 크게 낮춤 —
-                 # 실제로 팀당 경기가 1000건을 넘길 일은 없으므로 안전.
+_LEAGUE_PARAM_NAME = None  # 'league' 또는 'league_id' — 첫 성공 시 확정
+_MAX_PAGES = 100  # 안전 상한: 리그 단위 전체 페이지네이션이라 넉넉히 잡아도
+                   # 200*100=2만 건이면 3년+400일치 EPL 경기는 충분히 커버.
 
 
-def _fetch_all_team_matches(client, team_id):
-    """한 팀의 경기 목록을 offset/count로 끝까지 순회해 전부 모은다.
-    ⚠️ 2026-07-12 실측 확인: BSD 공식 엔드포인트 목록(llms.txt, MCP
-    server-card)에 '/teams/{id}/matches/'는 아예 없음(20개 팀 전부
-    HTTP 404). 실제로는 /events/를 팀 파라미터로 필터링하는 구조다.
-    문서에 그 파라미터명이 명시돼 있지 않으므로, collect_coaches의
-    teams 필터 탐색과 동일하게 후보(team/team_id)를 실제로 호출해
-    이 팀의 경기가 맞게 나오는지(home/away에 team_id 포함) 검증한다.
-    ⚠️ 검증은 반드시 '첫 페이지만 받은 시점'에 한다 — 필터가 안 먹히면
-    3년+400일치 전체 리그 경기가 오는데, 그걸 끝까지 다 모은 뒤에야
-    검증하면 페이지네이션이 사실상 멈추지 않는다. 한 번 확정되면
-    이후 팀들은 그 파라미터를 재사용하고 검증도 건너뛴다."""
-    global _TEAM_PARAM_NAME
-    candidates = [_TEAM_PARAM_NAME] if _TEAM_PARAM_NAME else ['team', 'team_id']
+def _fetch_all_league_events(client, league_id, team_ids):
+    """리그 전체 경기를 date_from~date_to 범위로 한 번에 받아온다.
+    ⚠️ 2026-07-12 실측으로 밝혀진 사실 두 가지:
+    1) '/teams/{id}/matches/'는 애초에 존재하지 않는 엔드포인트였다
+       (20개 팀 전부 HTTP 404).
+    2) 그 다음 시도했던 /events/?team=... 도 실은 안 먹혔다 — 팀을
+       바꿔가며 호출해도 count가 34631로 완전히 똑같이 나왔는데, 이는
+       필터가 무시되고 전체 스포츠/전체 리그 데이터가 그대로 반환됐다는
+       뜻이다(20번 다른 팀을 넣었는데 매번 똑같은 count가 나올 수는 없음).
+    BSD 공식 문서(llms.txt: "GET /api/events/?date_from=&date_to=&league=
+    &status=&tz=")에는 애초부터 team 필터가 없고 league 필터만 있다.
+    그래서 팀별 반복 대신 리그 단위로 딱 한 번만 받고, 우리가 이미 알고
+    있는 20개 EPL team_id로 파이썬 쪽에서 직접 걸러낸다 — 존재하지 않는
+    파라미터를 추측하는 대신 문서에 명시된 파라미터만 쓰는 방식."""
+    global _LEAGUE_PARAM_NAME
+    candidates = [_LEAGUE_PARAM_NAME] if _LEAGUE_PARAM_NAME else ['league', 'league_id']
 
     for param_name in candidates:
-        print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" 시도 중...',
+        print(f'[collect_fixtures] events "{param_name}"={league_id} 시도 중...',
               flush=True)
         first = _unwrap(client.events(**{
-            param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+            param_name: league_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
             'limit': PAGE_LIMIT, 'offset': 0}))
-        time.sleep(0.3)  # 문서엔 "Rate limits: None"이지만, 연속 요청이 몰릴 때
-                          # 숨은 제한(429→기본 60초 대기)에 걸리는 걸 방지하기
-                          # 위한 방어적 텀 (2026-07-12: 24분 넘게 걸린 원인 추정)
+        time.sleep(0.3)
         if not first:
-            print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" 응답 없음',
-                  flush=True)
+            print(f'[collect_fixtures] "{param_name}" 응답 없음', flush=True)
             continue
         first_rows = first.get('results', [])
-        print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" '
-              f'1페이지 {len(first_rows)}건, count={first.get("count")}', flush=True)
+        total = first.get('count')
+        print(f'[collect_fixtures] "{param_name}" 1페이지 {len(first_rows)}건, '
+              f'count={total}', flush=True)
         if not first_rows:
             continue
-        if not any(ev.get('home_team_id') == team_id or ev.get('away_team_id') == team_id
-                   for ev in first_rows):
-            print(f'[collect_fixtures]   team_id={team_id}: "{param_name}" '
-                  f'검증 실패(이 팀 경기 아님) → 다음 후보', flush=True)
+        # 검증: 리그 필터가 실제로 먹혔다면, 1페이지 안에 우리가 아는 20개
+        # EPL team_id가 상당수(과반) 등장해야 한다. 필터 무시되고 전체
+        # 스포츠 데이터가 왔다면 EPL 팀 비중이 훨씬 낮을 것.
+        hits = sum(1 for ev in first_rows
+                   if ev.get('home_team_id') in team_ids
+                   or ev.get('away_team_id') in team_ids)
+        print(f'[collect_fixtures] "{param_name}" 1페이지 중 EPL 팀 매칭 '
+              f'{hits}/{len(first_rows)}건', flush=True)
+        if hits < len(first_rows) * 0.3:
+            print(f'[collect_fixtures] "{param_name}" 검증 실패(EPL 비중 낮음) '
+                  f'→ 다음 후보', flush=True)
             continue
 
-        if _TEAM_PARAM_NAME is None:
-            _TEAM_PARAM_NAME = param_name
-            print(f'[collect_fixtures] events 팀 필터 파라미터 확정: "{param_name}"',
-                  flush=True)
+        if _LEAGUE_PARAM_NAME is None:
+            _LEAGUE_PARAM_NAME = param_name
+            print(f'[collect_fixtures] events 리그 필터 파라미터 확정: '
+                  f'"{param_name}"', flush=True)
 
         all_rows = list(first_rows)
-        total = first.get('count')
         offset = PAGE_LIMIT
         pages = 1
         while (total is None or offset < total) and len(first_rows) >= PAGE_LIMIT \
                 and pages < _MAX_PAGES:
             data = _unwrap(client.events(**{
-                param_name: team_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+                param_name: league_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
                 'limit': PAGE_LIMIT, 'offset': offset}))
             time.sleep(0.3)
             if not data:
@@ -154,11 +168,14 @@ def _fetch_all_team_matches(client, team_id):
             all_rows.extend(rows)
             offset += PAGE_LIMIT
             pages += 1
+            if pages % 10 == 0:
+                print(f'[collect_fixtures] ...{pages}페이지, 누적 '
+                      f'{len(all_rows)}건', flush=True)
             if len(rows) < PAGE_LIMIT:
                 break
         if pages >= _MAX_PAGES:
-            print(f'[collect_fixtures] 경고: team_id={team_id} 페이지 상한'
-                  f'({_MAX_PAGES}) 도달 — 데이터 일부만 수집됐을 수 있음', flush=True)
+            print(f'[collect_fixtures] 경고: 페이지 상한({_MAX_PAGES}) 도달 '
+                  f'— 데이터 일부만 수집됐을 수 있음', flush=True)
         return all_rows
     return []
 
@@ -197,14 +214,11 @@ def main():
     print(f'[collect_fixtures] 팀 {len(team_id_to_kr)}개 매칭', flush=True)
 
     events_by_id = {}
-    for i, team_id in enumerate(team_id_to_kr, 1):
-        print(f'[collect_fixtures] ({i}/{len(team_id_to_kr)}) '
-              f'{team_id_to_kr[team_id]} 조회 중...', flush=True)
-        rows = _fetch_all_team_matches(client, team_id)
-        for ev in rows:
-            eid = ev.get('id')
-            if eid is not None:
-                events_by_id[eid] = ev
+    rows = _fetch_all_league_events(client, league_id, set(team_id_to_kr.keys()))
+    for ev in rows:
+        eid = ev.get('id')
+        if eid is not None:
+            events_by_id[eid] = ev
 
     print(f'[collect_fixtures] 고유 경기 {len(events_by_id)}건 수집', flush=True)
 
