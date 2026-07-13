@@ -209,13 +209,16 @@ class TeamCollector:
         self.fd = registry.get('football-data')
         self.tsdb = registry.get('thesportsdb')
 
-    def run(self, leagues=LEAGUES):
+    def run(self, leagues=LEAGUES, teams_cache=None):
         if not self.fd:
             print('[team] football-data 비활성 → 건너뜀')
             return
         out = _load(f'{DATA_DIR}/teams.json', {})
         for code in leagues:
-            data, updated = self.fd.competition_teams(code)
+            if teams_cache is not None and code in teams_cache:
+                data, updated = teams_cache[code], True
+            else:
+                data, updated = self.fd.competition_teams(code)
             if not (updated and data):
                 continue
             for t in data.get('teams', []):
@@ -299,12 +302,15 @@ class TransferDetector:
     def _prev_team_id(entry):
         return entry.get('team_id') if isinstance(entry, dict) else entry
 
-    def run(self, leagues=LEAGUES):
+    def run(self, leagues=LEAGUES, teams_cache=None):
         if not self.fd:
             print('[transfer] football-data 비활성 → 건너뜀')
             return []
         for code in leagues:
-            data, updated = self.fd.competition_teams(code)
+            if teams_cache is not None and code in teams_cache:
+                data, updated = teams_cache[code], True
+            else:
+                data, updated = self.fd.competition_teams(code)
             if not (updated and data):
                 print(f'[transfer] {code} 변경 없음/실패 → 건너뜀')
                 continue
@@ -490,14 +496,35 @@ def main():
     league = os.getenv('LEAGUE')
     leagues = [league] if league else LEAGUES
 
-    if category in ('all', 'league'):
-        LeagueCollector(registry).run(leagues)
+    # ⚠️ 2026-07-13 실측으로 확인된 버그 수정: TeamCollector와 TransferDetector가
+    # 둘 다 competition_teams()를 부르는데, 같은 프로세스 안에서 같은 엔드포인트를
+    # 두 번 부르면 두 번째 호출은 IncrementalFetcher의 ETag 캐시 때문에 무조건
+    # 304(변경없음)를 받는다 — 첫 번째 호출이 이미 최신 ETag로 서버 상태를 갱신해
+    # 버려서, 몇 초 뒤의 두 번째 호출은 "그 사이 안 바뀌었다"는 응답만 받는다.
+    # 그 결과 TransferDetector는 이 프로세스 안에서 진짜 데이터를 받은 적이 없고,
+    # previous_squads.json이 태어날 때부터 계속 빈 {} 로 저장되고 있었다
+    # (실행 로그 실측 확인: 2일째 2바이트). team/transfer 둘 다 필요한 경우
+    # fetch를 한 번만 하고 두 수집기가 그 결과를 나눠 쓰도록 고쳤다.
+    teams_cache = {}
+    if category in ('all', 'team', 'transfer'):
+        fd = registry.get('football-data')
+        if fd:
+            for code in leagues:
+                data, updated = fd.competition_teams(code)
+                if updated and data:
+                    teams_cache[code] = data
+                    print(f'[teams_cache] {code} competition_teams 확보 '
+                          f'(team/transfer 공유)')
+                else:
+                    print(f'[teams_cache] {code} 변경 없음/실패 '
+                          f'(전날 캐시 그대로 유지됨)')
+
     if category in ('all', 'team'):
-        TeamCollector(registry).run(leagues)
+        TeamCollector(registry).run(leagues, teams_cache)
     if category in ('all', 'player'):
         PlayerCollector(registry).run()
     if category in ('all', 'transfer'):
-        TransferDetector(registry).run(leagues)
+        TransferDetector(registry).run(leagues, teams_cache)
     if category in ('all', 'event'):
         EventCollector(registry).run()
     if category in ('all', 'elo'):
