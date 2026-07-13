@@ -22,7 +22,7 @@ jobs:
       fail-fast: false
       max-parallel: 2          # football-data.org 분당 10회 제한 준수
       matrix:
-        league: [PL, PD, BL1, SA, FL1]
+        league: [PL, PD, BL1, SA, FL1, ELC, DED]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -133,6 +133,7 @@ jobs:
           python collect_coaches.py
           python collect_fixtures.py
           python app_export.py
+          python app_export_multileague.py
 
       - name: Commit results
         run: |
