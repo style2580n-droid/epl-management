@@ -26,10 +26,17 @@ from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league
 
 OUT_PATH = 'data/master/schedule_multileague.json'
 SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
+XG_OUT_PATH = 'data/master/xg_multileague.json'
 PAGE_LIMIT = 200
 _MAX_PAGES = 50
+_XG_MAX_PAGES = 20  # 리그당 시즌 하나에 최대 4000경기 — 실제로는 400경기 안팎이라 넉넉함
 DATE_FROM = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
 DATE_TO = (datetime.now(timezone.utc) + timedelta(days=400)).strftime('%Y-%m-%d')
+# 24-25, 25-26 시즌 대략적 날짜 범위 (유럽 시즌은 8월 개막~5/6월 종료 기준)
+XG_SEASON_RANGES = [
+    ('2024-08-01', '2025-06-30'),  # 24-25 시즌
+    ('2025-08-01', '2026-06-30'),  # 25-26 시즌
+]
 
 # ============================================================ 리그 판별 기준
 # EPL의 _find_pl_league_id(name+country 조합 실측 확인)와 동일한 방식.
@@ -205,6 +212,72 @@ def _fetch_team_players(client, team_id):
     return []
 
 
+_xg_diag_done = False
+
+
+def _fetch_team_xg(client, league_id, team_ids):
+    """24-25, 25-26 시즌 완료 경기에서 팀별 평균 xG(득점 기대값)/xGA(실점
+    기대값)를 계산한다. BSD 문서(docs/v2)에 "목록 응답도 상세 엔드포인트와
+    같은 구조라 stats.home.xg.actual이 바로 들어있다"고 나와 있는데, 오늘
+    하루 문서와 실제가 다른 경우가 많았으므로 첫 응답에서 그 필드가 실제로
+    있는지 진단 로그를 남긴다. 있으면 경기 상세를 따로 부를 필요 없이
+    한 번에 처리되고, 없으면 이 함수는 빈 결과를 반환한다(추가 조사 필요)."""
+    global _xg_diag_done
+    xg_for = {}
+    xg_against = {}
+
+    for date_from, date_to in XG_SEASON_RANGES:
+        offset = 0
+        pages = 0
+        while pages < _XG_MAX_PAGES:
+            data = _unwrap(client.events(
+                league_id=league_id, date_from=date_from, date_to=date_to,
+                status='finished', limit=PAGE_LIMIT, offset=offset))
+            time.sleep(0.2)
+            if not data:
+                break
+            rows = data.get('results', [])
+            if not rows:
+                break
+            if not _xg_diag_done:
+                _xg_diag_done = True
+                sample = rows[0]
+                print(f'[collect_fixtures_multileague] [diag-xg] 샘플 경기 '
+                      f'키목록={sorted(sample.keys())}', flush=True)
+                print(f'[collect_fixtures_multileague] [diag-xg] '
+                      f'stats={sample.get("stats")}', flush=True)
+            for ev in rows:
+                hid, aid = ev.get('home_team_id'), ev.get('away_team_id')
+                stats = ev.get('stats') or {}
+                hxg = ((stats.get('home') or {}).get('xg') or {}).get('actual')
+                axg = ((stats.get('away') or {}).get('xg') or {}).get('actual')
+                if hxg is None or axg is None:
+                    continue
+                if hid in team_ids:
+                    xg_for.setdefault(hid, []).append(hxg)
+                    xg_against.setdefault(hid, []).append(axg)
+                if aid in team_ids:
+                    xg_for.setdefault(aid, []).append(axg)
+                    xg_against.setdefault(aid, []).append(hxg)
+            total = data.get('count')
+            offset += PAGE_LIMIT
+            pages += 1
+            if total is None or offset >= total or len(rows) < PAGE_LIMIT:
+                break
+
+    result = {}
+    for tid, kr in team_ids.items():
+        fs = xg_for.get(tid)
+        ags = xg_against.get(tid)
+        if fs and ags:
+            result[kr] = {
+                'xG': round(sum(fs) / len(fs), 2),
+                'xGA': round(sum(ags) / len(ags), 2),
+                'matches': len(fs),
+            }
+    return result
+
+
 def main():
     client = BSDClient()
     if not client.enabled:
@@ -218,6 +291,7 @@ def main():
 
     out = {}
     squads_out = {}
+    xg_out = {}
     for league_key, (league_id, season_id, real_name) in leagues.items():
         team_ids = _find_league_teams(client, league_key, league_id, season_id)
         if not team_ids:
@@ -225,6 +299,7 @@ def main():
                   flush=True)
             out[league_key] = []
             squads_out[league_key] = {}
+            xg_out[league_key] = {}
             continue
 
         squads = {}
@@ -236,6 +311,11 @@ def main():
         total_players = sum(len(v) for v in squads.values())
         print(f'[collect_fixtures_multileague] {league_key} 스쿼드: '
               f'{len(squads)}팀/{total_players}명', flush=True)
+
+        xg = _fetch_team_xg(client, league_id, team_ids)
+        xg_out[league_key] = xg
+        print(f'[collect_fixtures_multileague] {league_key} xG: {len(xg)}팀',
+              flush=True)
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
@@ -261,6 +341,8 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=1)
     with open(SQUADS_OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(squads_out, f, ensure_ascii=False, indent=1)
+    with open(XG_OUT_PATH, 'w', encoding='utf-8') as f:
+        json.dump(xg_out, f, ensure_ascii=False, indent=1)
     print('[collect_fixtures_multileague] 완료', flush=True)
 
 

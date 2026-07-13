@@ -36,6 +36,7 @@ OUT_PATH = 'reports/app_data_multileague.js'
 ELO_PATH = 'data/master/club_elo.json'
 BSD_SCHEDULE_PATH = 'data/master/schedule_multileague.json'
 BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
+XG_PATH = 'data/master/xg_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
@@ -334,7 +335,7 @@ def build_all():
 
 
 # ============================================================ JS 렌더링
-def render_js(schedules, elo_by_league, squads):
+def render_js(schedules, elo_by_league, squads, xg_by_league):
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
@@ -344,6 +345,7 @@ def render_js(schedules, elo_by_league, squads):
             'logos': {},  # ⚠️ 로고 파일 미확보 (인수인계 문서 "아직 안 채워진 것" #2) — 나중에 채움
             'elo': elo_by_league.get(league_key, {}),
             'squads': squads.get(league_key, {}),
+            'teamXg': xg_by_league.get(league_key, {}),
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
@@ -354,7 +356,8 @@ def main():
     os.makedirs('reports', exist_ok=True)
     schedules, elo_by_league, unmatched = build_all()
     squads, unmatched_squad_teams = build_squads()
-    js = render_js(schedules, elo_by_league, squads)
+    xg_by_league = _load_json(XG_PATH, {})
+    js = render_js(schedules, elo_by_league, squads, xg_by_league)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
 
@@ -362,13 +365,16 @@ def main():
     total_elo = sum(len(v) for v in elo_by_league.values())
     total_squad_teams = sum(len(v) for v in squads.values())
     total_squad_players = sum(len(p) for v in squads.values() for p in v.values())
+    total_xg_teams = sum(len(xg_by_league.get(lk, {})) for lk in LEAGUE_TEAM_MAPS)
     print(f'[app_export_multileague] {OUT_PATH} 생성 완료, '
           f'일정 {total_sched}건, ELO {total_elo}팀, '
-          f'스쿼드 {total_squad_teams}팀/{total_squad_players}명', flush=True)
+          f'스쿼드 {total_squad_teams}팀/{total_squad_players}명, '
+          f'xG {total_xg_teams}팀', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
         squad_players = sum(len(p) for p in squads[lk].values())
         print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
-              f'스쿼드 {len(squads[lk])}팀/{squad_players}명',
+              f'스쿼드 {len(squads[lk])}팀/{squad_players}명, '
+              f'xG {len(xg_by_league.get(lk, {}))}팀',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]
