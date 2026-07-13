@@ -25,6 +25,7 @@ from api_clients import BSDClient
 from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league
 
 OUT_PATH = 'data/master/schedule_multileague.json'
+SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
 PAGE_LIMIT = 200
 _MAX_PAGES = 50
 DATE_FROM = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
@@ -164,6 +165,23 @@ def _fetch_league_events(client, league_id):
     return []
 
 
+def _fetch_team_players(client, team_id):
+    """BSD /players/?team= 로 한 팀의 선수 명단을 받는다. 이 파라미터는
+    events()의 team 필터(문서에 없어서 실제로 무시됐던 것)와 달리 공식
+    문서에 명시돼 있지만, 그래도 응답이 비정상(예: 필터 무시되고 전체
+    선수가 옴)인지 최소한의 크기로 확인한다."""
+    data = _unwrap(client.players(team=team_id, limit=100))
+    time.sleep(0.2)
+    if not data:
+        return []
+    rows = data.get('results', [])
+    # 필터가 안 먹혀서 팀 전체 선수 DB가 통째로 온 경우 방어 (한 팀 선수가
+    # 100명을 넘을 리 없으므로, 그런 경우면 잘못 온 것으로 보고 버린다)
+    if len(rows) > 60:
+        return []
+    return [p.get('name') for p in rows if p.get('name')]
+
+
 def main():
     client = BSDClient()
     if not client.enabled:
@@ -176,13 +194,25 @@ def main():
         return
 
     out = {}
+    squads_out = {}
     for league_key, (league_id, season_id, real_name) in leagues.items():
         team_ids = _find_league_teams(client, league_key, league_id, season_id)
         if not team_ids:
             print(f'[collect_fixtures_multileague] {league_key} 팀 매칭 실패 → 스킵',
                   flush=True)
             out[league_key] = []
+            squads_out[league_key] = {}
             continue
+
+        squads = {}
+        for team_id, kr in team_ids.items():
+            players = _fetch_team_players(client, team_id)
+            if players:
+                squads[kr] = players
+        squads_out[league_key] = squads
+        total_players = sum(len(v) for v in squads.values())
+        print(f'[collect_fixtures_multileague] {league_key} 스쿼드: '
+              f'{len(squads)}팀/{total_players}명', flush=True)
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
@@ -206,6 +236,8 @@ def main():
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
+    with open(SQUADS_OUT_PATH, 'w', encoding='utf-8') as f:
+        json.dump(squads_out, f, ensure_ascii=False, indent=1)
     print('[collect_fixtures_multileague] 완료', flush=True)
 
 

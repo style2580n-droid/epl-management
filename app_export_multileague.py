@@ -35,6 +35,7 @@ DB_PATH = 'data/football.db'
 OUT_PATH = 'reports/app_data_multileague.js'
 ELO_PATH = 'data/master/club_elo.json'
 BSD_SCHEDULE_PATH = 'data/master/schedule_multileague.json'
+BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
@@ -232,14 +233,18 @@ def _js(v):
 
 # ============================================================ 데이터 빌드
 def build_squads():
-    """SQUADS(요청사항 1번, 최우선)는 사실 이미 파이프라인에 수집되고
-    있었다 — collectors.py의 TransferDetector가 이적 감지를 위해 매
-    실행마다 football-data.org의 competition_teams() 응답에서 각 팀의
-    전체 스쿼드를 읽어 data/master/previous_squads.json에
-    {선수ID: {team_name, player_name, league}} 형태로 저장해둔다.
-    새로 수집할 필요 없이 이 파일을 리그별로 걸러 재활용하면 된다."""
+    """SQUADS(요청사항 1번, 최우선).
+    1순위: data/master/squads_multileague.json (collect_fixtures_multileague.py
+           가 BSD /players/?team= 로 만든 것 — football-data.org가 아직
+           26/27 스쿼드 등록을 안 채운 경우의 보조 소스, 2026-07-13 실측:
+           football-data.org 쪽 squad 필드는 존재하지만 비어있음(squad길이=0)
+           확인, 시즌 등록 시점 문제로 추정).
+    2순위: data/master/previous_squads.json (football-data.org, collectors.py의
+           TransferDetector가 이적 감지용으로 이미 수집해둔 스쿼드).
+    리그별로 독립적으로 판단한다 — schedule과 동일한 우선순위 패턴."""
+    bsd_squads = _load_json(BSD_SQUADS_PATH, {})
     raw = _load_json(SQUADS_PATH, {})
-    squads = {lk: {} for lk in LEAGUE_TEAM_MAPS}
+    fd_squads = {lk: {} for lk in LEAGUE_TEAM_MAPS}
     unmatched_teams = set()
     for _pid, info in raw.items():
         if not isinstance(info, dict):
@@ -253,10 +258,18 @@ def build_squads():
             unmatched_teams.add(team_name)
             continue
         lk, kr = hit
-        squads[lk].setdefault(kr, []).append(player_name)
-    for lk in squads:
-        for kr in squads[lk]:
-            squads[lk][kr].sort()
+        fd_squads[lk].setdefault(kr, []).append(player_name)
+    for lk in fd_squads:
+        for kr in fd_squads[lk]:
+            fd_squads[lk][kr].sort()
+
+    squads = {}
+    for lk in LEAGUE_TEAM_MAPS:
+        bsd_sq = bsd_squads.get(lk) or {}
+        if bsd_sq:
+            squads[lk] = bsd_sq
+        else:
+            squads[lk] = fd_squads[lk]
     return squads, unmatched_teams
 
 

@@ -123,6 +123,13 @@ class BSDClient(BaseClient):
         검증해 확정한다."""
         return self.get('events/', params=params)
 
+    def players(self, **params):
+        """선수 목록. BSD 공식 문서(llms.txt)에 명시된 필터: team/
+        nationality/position. team 파라미터가 문서에 명시돼 있어
+        events()의 team 필터(문서에 없어서 실제로 안 먹혔던 것)보다
+        신뢰도가 높지만, 그래도 첫 응답으로 검증 후 사용할 것."""
+        return self.get('players/', params=params)
+
 
 # ---------------------------------------------------------------- 2.2 구단
 class TheSportsDBClient(BaseClient):
