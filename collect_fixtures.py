@@ -244,10 +244,13 @@ def main():
                 'date': date_kst, 'home': home_kr, 'away': away_kr,
                 'homeGoals': hs, 'awayGoals': as_,
             })
-        elif status in ('upcoming', 'live'):
-            # BSD 공식 문서(status 값: upcoming/live/finished/cancelled/
-            # postponed) 실측 확인 결과, 기존 코드가 찾던 'notstarted'/
-            # 'scheduled'는 애초에 존재하지 않는 값이었다(2026-07-12 확인).
+        elif status.lower() != 'finished':
+            # ⚠️ 2026-07-13: 원래 ('upcoming','live')만 허용했더니 EPL만
+            # 향후 일정 0건이 나왔는데, 같은 날 만든 6개 리그용 스크립트
+            # (collect_fixtures_multileague.py)는 "finished만 제외" 방식으로
+            # 라리가 306건/분데스리가 306건 등 정상 수집에 성공했다. BSD가
+            # 실제로 쓰는 상태값이 문서(upcoming/live)와 다를 수 있다는
+            # 뜻이라, 검증된 더 느슨한 방식으로 통일한다.
             schedule.append({
                 'date': date_kst, 'time': time_kst or '00:00',
                 'home': home_kr, 'away': away_kr,
