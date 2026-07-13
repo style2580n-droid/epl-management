@@ -165,13 +165,29 @@ def _fetch_league_events(client, league_id):
     return []
 
 
+_players_diag_done = False
+
+
 def _fetch_team_players(client, team_id):
     """BSD /players/?team= 로 한 팀의 선수 명단을 받는다. 이 파라미터는
     events()의 team 필터(문서에 없어서 실제로 무시됐던 것)와 달리 공식
     문서에 명시돼 있지만, 그래도 응답이 비정상(예: 필터 무시되고 전체
     선수가 옴)인지 최소한의 크기로 확인한다."""
-    data = _unwrap(client.players(team=team_id, limit=100))
+    global _players_diag_done
+    resp = client.players(team=team_id, limit=100)
+    data = _unwrap(resp)
     time.sleep(0.2)
+    if not _players_diag_done:
+        _players_diag_done = True
+        print(f'[collect_fixtures_multileague] [diag] players(team={team_id}) '
+              f'원본응답타입={type(resp).__name__}, '
+              f'data키목록={sorted(data.keys()) if isinstance(data, dict) else data}',
+              flush=True)
+        if isinstance(data, dict):
+            rr = data.get('results', [])
+            print(f'[collect_fixtures_multileague] [diag] results 길이={len(rr)}, '
+                  f'count={data.get("count")}, '
+                  f'샘플0={rr[0] if rr else "없음"}', flush=True)
     if not data:
         return []
     rows = data.get('results', [])
