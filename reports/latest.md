@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-13
 
-생성(UTC): 2026-07-13 14:44
+생성(UTC): 2026-07-13 17:16
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -31,6 +31,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Argentina | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Switzerland | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### DjurgårdensIF_HalmstadsBK_46392
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Djurgårdens IF | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Halmstads BK | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### FCSeoul_GangwonFC_205091
 
@@ -183,6 +190,7 @@
 
 - **AalesundsFK_MoldeFK_207004**: [heatmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_heatmap.svg) · [network(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_network.svg) · [shotmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_shotmap.svg) · [heatmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_heatmap.svg) · [network(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_network.svg) · [shotmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_shotmap.svg)
 - **Argentina_Switzerland_8386**: [heatmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_heatmap.svg) · [network(Argentina)](viz/Argentina_Switzerland_8386_Argentina_network.svg) · [shotmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_shotmap.svg) · [heatmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_heatmap.svg) · [network(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_network.svg) · [shotmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_shotmap.svg)
+- **DjurgårdensIF_HalmstadsBK_46392**: [heatmap(Djurgårdens IF)](viz/DjurgårdensIF_HalmstadsBK_46392_Djurgårdens IF_heatmap.svg) · [network(Djurgårdens IF)](viz/DjurgårdensIF_HalmstadsBK_46392_Djurgårdens IF_network.svg) · [shotmap(Djurgårdens IF)](viz/DjurgårdensIF_HalmstadsBK_46392_Djurgårdens IF_shotmap.svg) · [heatmap(Halmstads BK)](viz/DjurgårdensIF_HalmstadsBK_46392_Halmstads BK_heatmap.svg) · [network(Halmstads BK)](viz/DjurgårdensIF_HalmstadsBK_46392_Halmstads BK_network.svg) · [shotmap(Halmstads BK)](viz/DjurgårdensIF_HalmstadsBK_46392_Halmstads BK_shotmap.svg)
 - **FCSeoul_GangwonFC_205091**: [heatmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_heatmap.svg) · [network(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_network.svg) · [shotmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_shotmap.svg) · [heatmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_heatmap.svg) · [network(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_network.svg) · [shotmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_shotmap.svg)
 - **GAIS_IFElfsborg_46393**: [heatmap(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_heatmap.svg) · [network(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_network.svg) · [shotmap(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_shotmap.svg) · [heatmap(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_heatmap.svg) · [network(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_network.svg) · [shotmap(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_shotmap.svg)
 - **GoldCoastKnights_BrisbaneCity_210031**: [heatmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_heatmap.svg) · [network(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_network.svg) · [shotmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_shotmap.svg) · [heatmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_heatmap.svg) · [network(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_network.svg) · [shotmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_shotmap.svg)
