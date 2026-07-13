@@ -509,12 +509,26 @@ def main():
     if category in ('all', 'team', 'transfer'):
         fd = registry.get('football-data')
         if fd:
+            _diag_printed = False
             for code in leagues:
                 data, updated = fd.competition_teams(code)
                 if updated and data:
                     teams_cache[code] = data
                     print(f'[teams_cache] {code} competition_teams 확보 '
                           f'(team/transfer 공유)')
+                    # ⚠️ 진단용: previous_squads.json이 계속 빈 값이라, team
+                    # 리스트 응답에 실제로 'squad' 필드가 있는지/몇 명인지
+                    # 1회만 확인해서 로그로 남긴다 (무료 플랜은 스쿼드가
+                    # 리스트 엔드포인트에서 아예 안 올 수도 있음 - 확인 필요).
+                    if not _diag_printed:
+                        teams_list = data.get('teams', [])
+                        if teams_list:
+                            sample = teams_list[0]
+                            squad = sample.get('squad')
+                            print(f'[diag] {code} 샘플팀 "{sample.get("name")}" '
+                                  f'키목록={sorted(sample.keys())}, '
+                                  f'squad길이={len(squad) if squad is not None else "필드없음"}')
+                        _diag_printed = True
                 else:
                     print(f'[teams_cache] {code} 변경 없음/실패 '
                           f'(전날 캐시 그대로 유지됨)')
