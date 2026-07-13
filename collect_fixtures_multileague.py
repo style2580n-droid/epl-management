@@ -246,6 +246,20 @@ def _fetch_team_xg(client, league_id, team_ids):
                       f'키목록={sorted(sample.keys())}', flush=True)
                 print(f'[collect_fixtures_multileague] [diag-xg] '
                       f'stats={sample.get("stats")}', flush=True)
+                if 'stats' not in sample or sample.get('stats') is None:
+                    # ⚠️ 목록에 stats가 없다 — BSD 피드백 페이지에 "경기가
+                    # 끝나면 라이브 스탯(xG 포함)이 사라진다"는 사용자 제보가
+                    # 있었다. 완료 경기 하나를 상세 조회(event_detail)해서
+                    # 그 제보가 맞는지, 아니면 상세 엔드포인트엔 남아있는지
+                    # 직접 확인한다 (전체 수집 전에 1건으로 먼저 검증).
+                    detail = _unwrap(client.event_detail(sample.get('id')))
+                    print(f'[collect_fixtures_multileague] [diag-xg] '
+                          f'event_detail({sample.get("id")}) 키목록='
+                          f'{sorted(detail.keys()) if isinstance(detail, dict) else detail}',
+                          flush=True)
+                    if isinstance(detail, dict):
+                        print(f'[collect_fixtures_multileague] [diag-xg] '
+                              f'detail.stats={detail.get("stats")}', flush=True)
             for ev in rows:
                 hid, aid = ev.get('home_team_id'), ev.get('away_team_id')
                 stats = ev.get('stats') or {}
