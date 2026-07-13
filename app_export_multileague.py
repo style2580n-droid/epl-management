@@ -7,8 +7,11 @@
       수집해서 쌓고 있으므로, EPL(collect_fixtures.py)처럼 BSD를 따로
       호출할 필요 없이 여기서 리그별로 걸러내기만 하면 된다.
       data/master/club_elo.json (ClubElo 랭킹, 여러 리그 커버)도 함께 사용.
+      data/master/previous_squads.json (collectors.py의 TransferDetector가
+      이적 감지용으로 이미 수집해둔 전체 스쿼드 — SQUADS 요청사항은 새로
+      수집할 필요 없이 이 파일을 재활용하면 된다, 2026-07-13 확인).
 출력: reports/app_data_multileague.js
-      리그별로 window.PIPELINE_DATA_{리그대문자} = {schedule, logos, elo}
+      리그별로 window.PIPELINE_DATA_{리그대문자} = {schedule, logos, elo, squads}
       형태로 생성한다. multi_league_index.html의 loadPipelineData()가
       기대하는 정확히 그 형식이다 (schedule: [{home,away,date}], ...).
 
@@ -32,6 +35,7 @@ DB_PATH = 'data/football.db'
 OUT_PATH = 'reports/app_data_multileague.js'
 ELO_PATH = 'data/master/club_elo.json'
 BSD_SCHEDULE_PATH = 'data/master/schedule_multileague.json'
+SQUADS_PATH = 'data/master/previous_squads.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
 # 인수인계_요약.md v2의 팀 명단과 1:1 대응. 리그 키는 multi_league_index.html의
@@ -227,6 +231,35 @@ def _js(v):
 
 
 # ============================================================ 데이터 빌드
+def build_squads():
+    """SQUADS(요청사항 1번, 최우선)는 사실 이미 파이프라인에 수집되고
+    있었다 — collectors.py의 TransferDetector가 이적 감지를 위해 매
+    실행마다 football-data.org의 competition_teams() 응답에서 각 팀의
+    전체 스쿼드를 읽어 data/master/previous_squads.json에
+    {선수ID: {team_name, player_name, league}} 형태로 저장해둔다.
+    새로 수집할 필요 없이 이 파일을 리그별로 걸러 재활용하면 된다."""
+    raw = _load_json(SQUADS_PATH, {})
+    squads = {lk: {} for lk in LEAGUE_TEAM_MAPS}
+    unmatched_teams = set()
+    for _pid, info in raw.items():
+        if not isinstance(info, dict):
+            continue
+        team_name = info.get('team_name')
+        player_name = info.get('player_name')
+        if not (team_name and player_name):
+            continue
+        hit = to_kr_league(team_name)
+        if not hit:
+            unmatched_teams.add(team_name)
+            continue
+        lk, kr = hit
+        squads[lk].setdefault(kr, []).append(player_name)
+    for lk in squads:
+        for kr in squads[lk]:
+            squads[lk][kr].sort()
+    return squads, unmatched_teams
+
+
 def build_all():
     """리그별 schedule을 두 소스에서 만든다.
     1순위: data/master/schedule_multileague.json (collect_fixtures_multileague.py
@@ -288,7 +321,7 @@ def build_all():
 
 
 # ============================================================ JS 렌더링
-def render_js(schedules, elo_by_league):
+def render_js(schedules, elo_by_league, squads):
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
@@ -297,6 +330,7 @@ def render_js(schedules, elo_by_league):
             'schedule': schedules.get(league_key, []),
             'logos': {},  # ⚠️ 로고 파일 미확보 (인수인계 문서 "아직 안 채워진 것" #2) — 나중에 채움
             'elo': elo_by_league.get(league_key, {}),
+            'squads': squads.get(league_key, {}),
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
@@ -306,21 +340,31 @@ def render_js(schedules, elo_by_league):
 def main():
     os.makedirs('reports', exist_ok=True)
     schedules, elo_by_league, unmatched = build_all()
-    js = render_js(schedules, elo_by_league)
+    squads, unmatched_squad_teams = build_squads()
+    js = render_js(schedules, elo_by_league, squads)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
 
     total_sched = sum(len(v) for v in schedules.values())
     total_elo = sum(len(v) for v in elo_by_league.values())
+    total_squad_teams = sum(len(v) for v in squads.values())
+    total_squad_players = sum(len(p) for v in squads.values() for p in v.values())
     print(f'[app_export_multileague] {OUT_PATH} 생성 완료, '
-          f'일정 {total_sched}건, ELO {total_elo}팀', flush=True)
+          f'일정 {total_sched}건, ELO {total_elo}팀, '
+          f'스쿼드 {total_squad_teams}팀/{total_squad_players}명', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
-        print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀',
+        squad_players = sum(len(p) for p in squads[lk].values())
+        print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
+              f'스쿼드 {len(squads[lk])}팀/{squad_players}명',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]
-        print(f'[app_export_multileague] ⚠️ 매칭 안 된 팀명 {len(unmatched)}개 '
+        print(f'[app_export_multileague] ⚠️ 일정 매칭 안 된 팀명 {len(unmatched)}개 '
               f'(샘플): {sample}', flush=True)
+    if unmatched_squad_teams:
+        sample2 = sorted(unmatched_squad_teams)[:15]
+        print(f'[app_export_multileague] ⚠️ 스쿼드 매칭 안 된 팀명 '
+              f'{len(unmatched_squad_teams)}개 (샘플): {sample2}', flush=True)
 
 
 if __name__ == '__main__':
