@@ -826,5 +826,365 @@
             }
         ],
         "collected_at": "2026-07-11T14:29:22.955379+00:00"
+    },
+    "DED": {
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "season": {
+            "start": "2026-08-07",
+            "end": "2027-05-23",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 680,
+                "team": "ADO Den Haag",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 678,
+                "team": "AFC Ajax",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 682,
+                "team": "AZ",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 677,
+                "team": "FC Groningen",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 666,
+                "team": "FC Twente '65",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 676,
+                "team": "FC Utrecht",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 675,
+                "team": "Feyenoord Rotterdam",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1920,
+                "team": "Fortuna Sittard",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 718,
+                "team": "Go Ahead Eagles",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1915,
+                "team": "NEC",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 684,
+                "team": "PEC Zwolle",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 674,
+                "team": "PSV",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 670,
+                "team": "SBV Excelsior",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1909,
+                "team": "SC Cambuur-Leeuwarden",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 673,
+                "team": "SC Heerenveen",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 6806,
+                "team": "Sparta Rotterdam",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 1912,
+                "team": "Telstar 1963",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            },
+            {
+                "position": 1,
+                "team_id": 672,
+                "team": "Willem II Tilburg",
+                "played": 0,
+                "points": 0,
+                "gd": 0
+            }
+        ],
+        "collected_at": "2026-07-13T09:16:01.625367+00:00"
+    },
+    "ELC": {
+        "name": "Championship",
+        "country": "England",
+        "season": {
+            "start": "2026-08-14",
+            "end": "2027-05-01",
+            "matchday": 1
+        },
+        "standings": [
+            {
+                "position": 1,
+                "team_id": 1076,
+                "team": "Coventry City FC",
+                "played": 46,
+                "points": 95,
+                "gd": 52
+            },
+            {
+                "position": 2,
+                "team_id": 349,
+                "team": "Ipswich Town FC",
+                "played": 46,
+                "points": 84,
+                "gd": 33
+            },
+            {
+                "position": 3,
+                "team_id": 384,
+                "team": "Millwall FC",
+                "played": 46,
+                "points": 83,
+                "gd": 15
+            },
+            {
+                "position": 4,
+                "team_id": 340,
+                "team": "Southampton FC",
+                "played": 46,
+                "points": 80,
+                "gd": 26
+            },
+            {
+                "position": 5,
+                "team_id": 343,
+                "team": "Middlesbrough FC",
+                "played": 46,
+                "points": 80,
+                "gd": 25
+            },
+            {
+                "position": 6,
+                "team_id": 322,
+                "team": "Hull City AFC",
+                "played": 46,
+                "points": 73,
+                "gd": 4
+            },
+            {
+                "position": 7,
+                "team_id": 404,
+                "team": "Wrexham AFC",
+                "played": 46,
+                "points": 71,
+                "gd": 4
+            },
+            {
+                "position": 8,
+                "team_id": 342,
+                "team": "Derby County FC",
+                "played": 46,
+                "points": 69,
+                "gd": 8
+            },
+            {
+                "position": 9,
+                "team_id": 68,
+                "team": "Norwich City FC",
+                "played": 46,
+                "points": 65,
+                "gd": 7
+            },
+            {
+                "position": 10,
+                "team_id": 332,
+                "team": "Birmingham City FC",
+                "played": 46,
+                "points": 64,
+                "gd": 1
+            },
+            {
+                "position": 11,
+                "team_id": 72,
+                "team": "Swansea City AFC",
+                "played": 46,
+                "points": 64,
+                "gd": -2
+            },
+            {
+                "position": 12,
+                "team_id": 387,
+                "team": "Bristol City FC",
+                "played": 46,
+                "points": 62,
+                "gd": 0
+            },
+            {
+                "position": 13,
+                "team_id": 356,
+                "team": "Sheffield United FC",
+                "played": 46,
+                "points": 60,
+                "gd": 0
+            },
+            {
+                "position": 14,
+                "team_id": 1081,
+                "team": "Preston North End FC",
+                "played": 46,
+                "points": 60,
+                "gd": -7
+            },
+            {
+                "position": 15,
+                "team_id": 69,
+                "team": "Queens Park Rangers FC",
+                "played": 46,
+                "points": 58,
+                "gd": -12
+            },
+            {
+                "position": 16,
+                "team_id": 346,
+                "team": "Watford FC",
+                "played": 46,
+                "points": 57,
+                "gd": -12
+            },
+            {
+                "position": 17,
+                "team_id": 70,
+                "team": "Stoke City FC",
+                "played": 46,
+                "points": 55,
+                "gd": -5
+            },
+            {
+                "position": 18,
+                "team_id": 325,
+                "team": "Portsmouth FC",
+                "played": 46,
+                "points": 55,
+                "gd": -15
+            },
+            {
+                "position": 19,
+                "team_id": 348,
+                "team": "Charlton Athletic FC",
+                "played": 46,
+                "points": 53,
+                "gd": -14
+            },
+            {
+                "position": 20,
+                "team_id": 59,
+                "team": "Blackburn Rovers FC",
+                "played": 46,
+                "points": 52,
+                "gd": -14
+            },
+            {
+                "position": 21,
+                "team_id": 74,
+                "team": "West Bromwich Albion FC",
+                "played": 46,
+                "points": 51,
+                "gd": -10
+            },
+            {
+                "position": 22,
+                "team_id": 1082,
+                "team": "Oxford United FC",
+                "played": 46,
+                "points": 47,
+                "gd": -14
+            },
+            {
+                "position": 23,
+                "team_id": 338,
+                "team": "Leicester City FC",
+                "played": 46,
+                "points": 46,
+                "gd": -10
+            },
+            {
+                "position": 24,
+                "team_id": 345,
+                "team": "Sheffield Wednesday FC",
+                "played": 46,
+                "points": 0,
+                "gd": -60
+            }
+        ],
+        "collected_at": "2026-07-13T09:15:34.813785+00:00"
     }
 }
