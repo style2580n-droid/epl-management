@@ -31,6 +31,7 @@ from datetime import datetime, timezone
 DB_PATH = 'data/football.db'
 OUT_PATH = 'reports/app_data_multileague.js'
 ELO_PATH = 'data/master/club_elo.json'
+BSD_SCHEDULE_PATH = 'data/master/schedule_multileague.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
 # 인수인계_요약.md v2의 팀 명단과 1:1 대응. 리그 키는 multi_league_index.html의
@@ -227,14 +228,22 @@ def _js(v):
 
 # ============================================================ 데이터 빌드
 def build_all():
-    """matches 테이블(6개 리그 다 섞여서 저장돼 있음)을 리그별로 걸러
-    schedule을 만들고, club_elo.json에서 ELO도 리그별로 걸러낸다."""
+    """리그별 schedule을 두 소스에서 만든다.
+    1순위: data/master/schedule_multileague.json (collect_fixtures_multileague.py
+           가 BSD로 만든 것 — football-data.org가 26/27 시즌을 아직 못 채웠을
+           가능성에 대비한 보조 소스, EPL과 동일한 실측 검증 패턴 사용).
+    2순위: data/football.db의 matches 테이블 (football-data.org, collectors.py).
+    리그별로 독립적으로 판단한다 — 어떤 리그는 BSD가 채워주고 다른 리그는
+    football-data.org가 채워줄 수 있으므로, 리그 단위로 "BSD 쪽에 그 리그
+    데이터가 있으면 그걸 쓰고, 없으면 DB 폴백" 방식이다."""
+    bsd_schedules = _load_json(BSD_SCHEDULE_PATH, {})
+
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     rows = conn.execute('SELECT * FROM matches ORDER BY date').fetchall()
     conn.close()
 
-    schedules = {lk: [] for lk in LEAGUE_TEAM_MAPS}
+    db_schedules = {lk: [] for lk in LEAGUE_TEAM_MAPS}
     unmatched = set()
 
     for r in rows:
@@ -253,11 +262,19 @@ def build_all():
         if home_league != away_league:
             continue  # 컵대회 등 다른 리그 팀끼리 매치업은 스킵
         if status.upper() == 'FINISHED':
-            continue  # 여기서는 예정 일정만 (완료 경기는 필요해지면 h2h로 별도 처리)
-        schedules[home_league].append({
+            continue
+        db_schedules[home_league].append({
             'home': home_kr, 'away': away_kr,
             'date': r['date'] if 'date' in keys else None,
         })
+
+    schedules = {}
+    for lk in LEAGUE_TEAM_MAPS:
+        bsd_sched = bsd_schedules.get(lk) or []
+        if bsd_sched:
+            schedules[lk] = bsd_sched
+        else:
+            schedules[lk] = db_schedules[lk]
 
     elo_rankings = _load_json(ELO_PATH, {}).get('rankings', [])
     elo_by_league = {lk: {} for lk in LEAGUE_TEAM_MAPS}
