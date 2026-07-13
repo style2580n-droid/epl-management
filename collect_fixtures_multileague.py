@@ -166,36 +166,43 @@ def _fetch_league_events(client, league_id):
 
 
 _players_diag_done = False
+_PLAYERS_PARAM_NAME = None  # 'team'/'team_id'/'current_team_id' — 첫 성공 시 확정
 
 
 def _fetch_team_players(client, team_id):
-    """BSD /players/?team= 로 한 팀의 선수 명단을 받는다. 이 파라미터는
-    events()의 team 필터(문서에 없어서 실제로 무시됐던 것)와 달리 공식
-    문서에 명시돼 있지만, 그래도 응답이 비정상(예: 필터 무시되고 전체
-    선수가 옴)인지 최소한의 크기로 확인한다."""
-    global _players_diag_done
-    resp = client.players(team=team_id, limit=100)
-    data = _unwrap(resp)
-    time.sleep(0.2)
-    if not _players_diag_done:
-        _players_diag_done = True
-        print(f'[collect_fixtures_multileague] [diag] players(team={team_id}) '
-              f'원본응답타입={type(resp).__name__}, '
-              f'data키목록={sorted(data.keys()) if isinstance(data, dict) else data}',
-              flush=True)
-        if isinstance(data, dict):
-            rr = data.get('results', [])
-            print(f'[collect_fixtures_multileague] [diag] results 길이={len(rr)}, '
-                  f'count={data.get("count")}, '
-                  f'샘플0={rr[0] if rr else "없음"}', flush=True)
-    if not data:
-        return []
-    rows = data.get('results', [])
-    # 필터가 안 먹혀서 팀 전체 선수 DB가 통째로 온 경우 방어 (한 팀 선수가
-    # 100명을 넘을 리 없으므로, 그런 경우면 잘못 온 것으로 보고 버린다)
-    if len(rows) > 60:
-        return []
-    return [p.get('name') for p in rows if p.get('name')]
+    """BSD /players/ 로 한 팀의 선수 명단을 받는다.
+    ⚠️ 2026-07-13 실측 확인: 문서에 명시된 team= 파라미터가 실제로는
+    무시됨(count=66053 전체 선수 DB가 그대로 옴, 요청한 team_id와 무관한
+    선수가 응답). 대신 선수 객체 필드명이 'current_team_id'인 것을
+    확인해서, 그걸 쿼리 파라미터 후보에도 추가해 검증한다."""
+    global _players_diag_done, _PLAYERS_PARAM_NAME
+    candidates = [_PLAYERS_PARAM_NAME] if _PLAYERS_PARAM_NAME else \
+        ['current_team_id', 'team_id', 'team']
+
+    for param_name in candidates:
+        resp = client.players(**{param_name: team_id, 'limit': 100})
+        data = _unwrap(resp)
+        time.sleep(0.2)
+        if not _players_diag_done:
+            _players_diag_done = True
+            print(f'[collect_fixtures_multileague] [diag] players('
+                  f'{param_name}={team_id}) count={data.get("count") if data else None}',
+                  flush=True)
+        if not data:
+            continue
+        rows = data.get('results', [])
+        if not rows:
+            continue
+        # 검증: 응답의 current_team_id가 실제로 요청한 팀과 일치하는지.
+        hits = sum(1 for p in rows if p.get('current_team_id') == team_id)
+        if hits < len(rows) * 0.8:
+            continue
+        if _PLAYERS_PARAM_NAME is None:
+            _PLAYERS_PARAM_NAME = param_name
+            print(f'[collect_fixtures_multileague] players 팀 필터 파라미터 확정: '
+                  f'"{param_name}"', flush=True)
+        return [p.get('name') for p in rows if p.get('name')]
+    return []
 
 
 def main():
