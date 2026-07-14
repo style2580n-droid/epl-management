@@ -1,4 +1,48 @@
 {
+ "뉴캐슬|||풀럼": [
+  {
+   "date": "2026-05-25",
+   "home": "풀럼",
+   "away": "뉴캐슬",
+   "homeGoals": 2,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-10-25",
+   "home": "뉴캐슬",
+   "away": "풀럼",
+   "homeGoals": 2,
+   "awayGoals": 1
+  },
+  {
+   "date": "2025-02-01",
+   "home": "뉴캐슬",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2024-09-21",
+   "home": "풀럼",
+   "away": "뉴캐슬",
+   "homeGoals": 3,
+   "awayGoals": 1
+  },
+  {
+   "date": "2024-04-06",
+   "home": "풀럼",
+   "away": "뉴캐슬",
+   "homeGoals": 0,
+   "awayGoals": 1
+  },
+  {
+   "date": "2023-12-16",
+   "home": "뉴캐슬",
+   "away": "풀럼",
+   "homeGoals": 3,
+   "awayGoals": 0
+  }
+ ],
  "노팅엄 포레스트|||본머스": [
   {
    "date": "2026-05-25",
@@ -129,50 +173,6 @@
    "away": "아스날",
    "homeGoals": 0,
    "awayGoals": 1
-  }
- ],
- "뉴캐슬|||풀럼": [
-  {
-   "date": "2026-05-25",
-   "home": "풀럼",
-   "away": "뉴캐슬",
-   "homeGoals": 2,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-10-25",
-   "home": "뉴캐슬",
-   "away": "풀럼",
-   "homeGoals": 2,
-   "awayGoals": 1
-  },
-  {
-   "date": "2025-02-01",
-   "home": "뉴캐슬",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 2
-  },
-  {
-   "date": "2024-09-21",
-   "home": "풀럼",
-   "away": "뉴캐슬",
-   "homeGoals": 3,
-   "awayGoals": 1
-  },
-  {
-   "date": "2024-04-06",
-   "home": "풀럼",
-   "away": "뉴캐슬",
-   "homeGoals": 0,
-   "awayGoals": 1
-  },
-  {
-   "date": "2023-12-16",
-   "home": "뉴캐슬",
-   "away": "풀럼",
-   "homeGoals": 3,
-   "awayGoals": 0
   }
  ],
  "맨체스터 시티|||아스톤 빌라": [
@@ -411,6 +411,38 @@
    "awayGoals": 1
   }
  ],
+ "리즈 유나이티드|||브라이튼": [
+  {
+   "date": "2026-05-17",
+   "home": "리즈 유나이티드",
+   "away": "브라이튼",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-11-02",
+   "home": "브라이튼",
+   "away": "리즈 유나이티드",
+   "homeGoals": 3,
+   "awayGoals": 0
+  }
+ ],
+ "선덜랜드|||에버튼": [
+  {
+   "date": "2026-05-17",
+   "home": "에버튼",
+   "away": "선덜랜드",
+   "homeGoals": 1,
+   "awayGoals": 3
+  },
+  {
+   "date": "2025-11-04",
+   "home": "선덜랜드",
+   "away": "에버튼",
+   "homeGoals": 1,
+   "awayGoals": 1
+  }
+ ],
  "브렌트포드|||크리스탈 팰리스": [
   {
    "date": "2026-05-17",
@@ -453,38 +485,6 @@
    "away": "크리스탈 팰리스",
    "homeGoals": 1,
    "awayGoals": 1
-  }
- ],
- "선덜랜드|||에버튼": [
-  {
-   "date": "2026-05-17",
-   "home": "에버튼",
-   "away": "선덜랜드",
-   "homeGoals": 1,
-   "awayGoals": 3
-  },
-  {
-   "date": "2025-11-04",
-   "home": "선덜랜드",
-   "away": "에버튼",
-   "homeGoals": 1,
-   "awayGoals": 1
-  }
- ],
- "리즈 유나이티드|||브라이튼": [
-  {
-   "date": "2026-05-17",
-   "home": "리즈 유나이티드",
-   "away": "브라이튼",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-11-02",
-   "home": "브라이튼",
-   "away": "리즈 유나이티드",
-   "homeGoals": 3,
-   "awayGoals": 0
   }
  ],
  "노팅엄 포레스트|||맨체스터 유나이티드": [
@@ -635,50 +635,6 @@
    "awayGoals": 2
   }
  ],
- "노팅엄 포레스트|||뉴캐슬": [
-  {
-   "date": "2026-05-10",
-   "home": "노팅엄 포레스트",
-   "away": "뉴캐슬",
-   "homeGoals": 1,
-   "awayGoals": 1
-  },
-  {
-   "date": "2025-10-05",
-   "home": "뉴캐슬",
-   "away": "노팅엄 포레스트",
-   "homeGoals": 2,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-02-23",
-   "home": "뉴캐슬",
-   "away": "노팅엄 포레스트",
-   "homeGoals": 4,
-   "awayGoals": 3
-  },
-  {
-   "date": "2024-11-10",
-   "home": "노팅엄 포레스트",
-   "away": "뉴캐슬",
-   "homeGoals": 1,
-   "awayGoals": 3
-  },
-  {
-   "date": "2024-02-10",
-   "home": "노팅엄 포레스트",
-   "away": "뉴캐슬",
-   "homeGoals": 2,
-   "awayGoals": 3
-  },
-  {
-   "date": "2023-12-26",
-   "home": "뉴캐슬",
-   "away": "노팅엄 포레스트",
-   "homeGoals": 1,
-   "awayGoals": 3
-  }
- ],
  "에버튼|||크리스탈 팰리스": [
   {
    "date": "2026-05-10",
@@ -720,6 +676,50 @@
    "home": "크리스탈 팰리스",
    "away": "에버튼",
    "homeGoals": 2,
+   "awayGoals": 3
+  }
+ ],
+ "노팅엄 포레스트|||뉴캐슬": [
+  {
+   "date": "2026-05-10",
+   "home": "노팅엄 포레스트",
+   "away": "뉴캐슬",
+   "homeGoals": 1,
+   "awayGoals": 1
+  },
+  {
+   "date": "2025-10-05",
+   "home": "뉴캐슬",
+   "away": "노팅엄 포레스트",
+   "homeGoals": 2,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-02-23",
+   "home": "뉴캐슬",
+   "away": "노팅엄 포레스트",
+   "homeGoals": 4,
+   "awayGoals": 3
+  },
+  {
+   "date": "2024-11-10",
+   "home": "노팅엄 포레스트",
+   "away": "뉴캐슬",
+   "homeGoals": 1,
+   "awayGoals": 3
+  },
+  {
+   "date": "2024-02-10",
+   "home": "노팅엄 포레스트",
+   "away": "뉴캐슬",
+   "homeGoals": 2,
+   "awayGoals": 3
+  },
+  {
+   "date": "2023-12-26",
+   "home": "뉴캐슬",
+   "away": "노팅엄 포레스트",
+   "homeGoals": 1,
    "awayGoals": 3
   }
  ],
@@ -1787,50 +1787,6 @@
    "awayGoals": 1
   }
  ],
- "뉴캐슬|||크리스탈 팰리스": [
-  {
-   "date": "2026-04-12",
-   "home": "크리스탈 팰리스",
-   "away": "뉴캐슬",
-   "homeGoals": 2,
-   "awayGoals": 1
-  },
-  {
-   "date": "2026-01-05",
-   "home": "뉴캐슬",
-   "away": "크리스탈 팰리스",
-   "homeGoals": 2,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-04-17",
-   "home": "뉴캐슬",
-   "away": "크리스탈 팰리스",
-   "homeGoals": 5,
-   "awayGoals": 0
-  },
-  {
-   "date": "2024-11-30",
-   "home": "크리스탈 팰리스",
-   "away": "뉴캐슬",
-   "homeGoals": 1,
-   "awayGoals": 1
-  },
-  {
-   "date": "2024-04-25",
-   "home": "크리스탈 팰리스",
-   "away": "뉴캐슬",
-   "homeGoals": 2,
-   "awayGoals": 0
-  },
-  {
-   "date": "2023-10-21",
-   "home": "뉴캐슬",
-   "away": "크리스탈 팰리스",
-   "homeGoals": 4,
-   "awayGoals": 0
-  }
- ],
  "노팅엄 포레스트|||아스톤 빌라": [
   {
    "date": "2026-04-12",
@@ -1872,6 +1828,50 @@
    "home": "노팅엄 포레스트",
    "away": "아스톤 빌라",
    "homeGoals": 2,
+   "awayGoals": 0
+  }
+ ],
+ "뉴캐슬|||크리스탈 팰리스": [
+  {
+   "date": "2026-04-12",
+   "home": "크리스탈 팰리스",
+   "away": "뉴캐슬",
+   "homeGoals": 2,
+   "awayGoals": 1
+  },
+  {
+   "date": "2026-01-05",
+   "home": "뉴캐슬",
+   "away": "크리스탈 팰리스",
+   "homeGoals": 2,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-04-17",
+   "home": "뉴캐슬",
+   "away": "크리스탈 팰리스",
+   "homeGoals": 5,
+   "awayGoals": 0
+  },
+  {
+   "date": "2024-11-30",
+   "home": "크리스탈 팰리스",
+   "away": "뉴캐슬",
+   "homeGoals": 1,
+   "awayGoals": 1
+  },
+  {
+   "date": "2024-04-25",
+   "home": "크리스탈 팰리스",
+   "away": "뉴캐슬",
+   "homeGoals": 2,
+   "awayGoals": 0
+  },
+  {
+   "date": "2023-10-21",
+   "home": "뉴캐슬",
+   "away": "크리스탈 팰리스",
+   "homeGoals": 4,
    "awayGoals": 0
   }
  ],
@@ -2259,6 +2259,22 @@
    "awayGoals": 1
   }
  ],
+ "리즈 유나이티드|||크리스탈 팰리스": [
+  {
+   "date": "2026-03-15",
+   "home": "크리스탈 팰리스",
+   "away": "리즈 유나이티드",
+   "homeGoals": 0,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-12-21",
+   "home": "리즈 유나이티드",
+   "away": "크리스탈 팰리스",
+   "homeGoals": 4,
+   "awayGoals": 1
+  }
+ ],
  "노팅엄 포레스트|||풀럼": [
   {
    "date": "2026-03-15",
@@ -2345,22 +2361,6 @@
    "away": "아스톤 빌라",
    "homeGoals": 3,
    "awayGoals": 2
-  }
- ],
- "리즈 유나이티드|||크리스탈 팰리스": [
-  {
-   "date": "2026-03-15",
-   "home": "크리스탈 팰리스",
-   "away": "리즈 유나이티드",
-   "homeGoals": 0,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-12-21",
-   "home": "리즈 유나이티드",
-   "away": "크리스탈 팰리스",
-   "homeGoals": 4,
-   "awayGoals": 1
   }
  ],
  "아스날|||에버튼": [
@@ -2555,50 +2555,6 @@
    "awayGoals": 0
   }
  ],
- "아스톤 빌라|||첼시": [
-  {
-   "date": "2026-03-05",
-   "home": "아스톤 빌라",
-   "away": "첼시",
-   "homeGoals": 1,
-   "awayGoals": 4
-  },
-  {
-   "date": "2025-12-28",
-   "home": "첼시",
-   "away": "아스톤 빌라",
-   "homeGoals": 1,
-   "awayGoals": 2
-  },
-  {
-   "date": "2025-02-22",
-   "home": "아스톤 빌라",
-   "away": "첼시",
-   "homeGoals": 2,
-   "awayGoals": 1
-  },
-  {
-   "date": "2024-12-01",
-   "home": "첼시",
-   "away": "아스톤 빌라",
-   "homeGoals": 3,
-   "awayGoals": 0
-  },
-  {
-   "date": "2024-04-28",
-   "home": "아스톤 빌라",
-   "away": "첼시",
-   "homeGoals": 2,
-   "awayGoals": 2
-  },
-  {
-   "date": "2023-09-24",
-   "home": "첼시",
-   "away": "아스톤 빌라",
-   "homeGoals": 0,
-   "awayGoals": 1
-  }
- ],
  "브라이튼|||아스날": [
   {
    "date": "2026-03-05",
@@ -2685,6 +2641,50 @@
    "away": "노팅엄 포레스트",
    "homeGoals": 2,
    "awayGoals": 0
+  }
+ ],
+ "아스톤 빌라|||첼시": [
+  {
+   "date": "2026-03-05",
+   "home": "아스톤 빌라",
+   "away": "첼시",
+   "homeGoals": 1,
+   "awayGoals": 4
+  },
+  {
+   "date": "2025-12-28",
+   "home": "첼시",
+   "away": "아스톤 빌라",
+   "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2025-02-22",
+   "home": "아스톤 빌라",
+   "away": "첼시",
+   "homeGoals": 2,
+   "awayGoals": 1
+  },
+  {
+   "date": "2024-12-01",
+   "home": "첼시",
+   "away": "아스톤 빌라",
+   "homeGoals": 3,
+   "awayGoals": 0
+  },
+  {
+   "date": "2024-04-28",
+   "home": "아스톤 빌라",
+   "away": "첼시",
+   "homeGoals": 2,
+   "awayGoals": 2
+  },
+  {
+   "date": "2023-09-24",
+   "home": "첼시",
+   "away": "아스톤 빌라",
+   "homeGoals": 0,
+   "awayGoals": 1
   }
  ],
  "리즈 유나이티드|||선덜랜드": [
@@ -2791,48 +2791,48 @@
    "awayGoals": 2
   }
  ],
- "토트넘|||풀럼": [
+ "노팅엄 포레스트|||브라이튼": [
   {
    "date": "2026-03-01",
-   "home": "풀럼",
-   "away": "토트넘",
+   "home": "브라이튼",
+   "away": "노팅엄 포레스트",
    "homeGoals": 2,
    "awayGoals": 1
   },
   {
    "date": "2025-11-30",
-   "home": "토트넘",
-   "away": "풀럼",
-   "homeGoals": 1,
+   "home": "노팅엄 포레스트",
+   "away": "브라이튼",
+   "homeGoals": 0,
    "awayGoals": 2
   },
   {
-   "date": "2025-03-16",
-   "home": "풀럼",
-   "away": "토트넘",
-   "homeGoals": 2,
+   "date": "2025-02-01",
+   "home": "노팅엄 포레스트",
+   "away": "브라이튼",
+   "homeGoals": 7,
    "awayGoals": 0
   },
   {
-   "date": "2024-12-01",
-   "home": "토트넘",
-   "away": "풀럼",
+   "date": "2024-09-22",
+   "home": "브라이튼",
+   "away": "노팅엄 포레스트",
+   "homeGoals": 2,
+   "awayGoals": 2
+  },
+  {
+   "date": "2024-03-10",
+   "home": "브라이튼",
+   "away": "노팅엄 포레스트",
    "homeGoals": 1,
-   "awayGoals": 1
-  },
-  {
-   "date": "2024-03-16",
-   "home": "풀럼",
-   "away": "토트넘",
-   "homeGoals": 3,
    "awayGoals": 0
   },
   {
-   "date": "2023-10-24",
-   "home": "토트넘",
-   "away": "풀럼",
+   "date": "2023-11-25",
+   "home": "노팅엄 포레스트",
+   "away": "브라이튼",
    "homeGoals": 2,
-   "awayGoals": 0
+   "awayGoals": 3
   }
  ],
  "맨체스터 유나이티드|||크리스탈 팰리스": [
@@ -2879,48 +2879,48 @@
    "awayGoals": 1
   }
  ],
- "노팅엄 포레스트|||브라이튼": [
+ "토트넘|||풀럼": [
   {
    "date": "2026-03-01",
-   "home": "브라이튼",
-   "away": "노팅엄 포레스트",
+   "home": "풀럼",
+   "away": "토트넘",
    "homeGoals": 2,
    "awayGoals": 1
   },
   {
    "date": "2025-11-30",
-   "home": "노팅엄 포레스트",
-   "away": "브라이튼",
-   "homeGoals": 0,
-   "awayGoals": 2
-  },
-  {
-   "date": "2025-02-01",
-   "home": "노팅엄 포레스트",
-   "away": "브라이튼",
-   "homeGoals": 7,
-   "awayGoals": 0
-  },
-  {
-   "date": "2024-09-22",
-   "home": "브라이튼",
-   "away": "노팅엄 포레스트",
-   "homeGoals": 2,
-   "awayGoals": 2
-  },
-  {
-   "date": "2024-03-10",
-   "home": "브라이튼",
-   "away": "노팅엄 포레스트",
+   "home": "토트넘",
+   "away": "풀럼",
    "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2025-03-16",
+   "home": "풀럼",
+   "away": "토트넘",
+   "homeGoals": 2,
    "awayGoals": 0
   },
   {
-   "date": "2023-11-25",
-   "home": "노팅엄 포레스트",
-   "away": "브라이튼",
+   "date": "2024-12-01",
+   "home": "토트넘",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 1
+  },
+  {
+   "date": "2024-03-16",
+   "home": "풀럼",
+   "away": "토트넘",
+   "homeGoals": 3,
+   "awayGoals": 0
+  },
+  {
+   "date": "2023-10-24",
+   "home": "토트넘",
+   "away": "풀럼",
    "homeGoals": 2,
-   "awayGoals": 3
+   "awayGoals": 0
   }
  ],
  "리즈 유나이티드|||맨체스터 시티": [
@@ -3087,6 +3087,22 @@
    "awayGoals": 2
   }
  ],
+ "선덜랜드|||풀럼": [
+  {
+   "date": "2026-02-22",
+   "home": "선덜랜드",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 3
+  },
+  {
+   "date": "2025-11-23",
+   "home": "풀럼",
+   "away": "선덜랜드",
+   "homeGoals": 1,
+   "awayGoals": 0
+  }
+ ],
  "노팅엄 포레스트|||리버풀": [
   {
    "date": "2026-02-22",
@@ -3128,22 +3144,6 @@
    "home": "리버풀",
    "away": "노팅엄 포레스트",
    "homeGoals": 3,
-   "awayGoals": 0
-  }
- ],
- "선덜랜드|||풀럼": [
-  {
-   "date": "2026-02-22",
-   "home": "선덜랜드",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 3
-  },
-  {
-   "date": "2025-11-23",
-   "home": "풀럼",
-   "away": "선덜랜드",
-   "homeGoals": 1,
    "awayGoals": 0
   }
  ],
@@ -3311,6 +3311,50 @@
    "awayGoals": 1
   }
  ],
+ "브라이튼|||아스톤 빌라": [
+  {
+   "date": "2026-02-12",
+   "home": "아스톤 빌라",
+   "away": "브라이튼",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-12-04",
+   "home": "브라이튼",
+   "away": "아스톤 빌라",
+   "homeGoals": 3,
+   "awayGoals": 4
+  },
+  {
+   "date": "2025-04-03",
+   "home": "브라이튼",
+   "away": "아스톤 빌라",
+   "homeGoals": 0,
+   "awayGoals": 3
+  },
+  {
+   "date": "2024-12-31",
+   "home": "아스톤 빌라",
+   "away": "브라이튼",
+   "homeGoals": 2,
+   "awayGoals": 2
+  },
+  {
+   "date": "2024-05-05",
+   "home": "브라이튼",
+   "away": "아스톤 빌라",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2023-09-30",
+   "home": "아스톤 빌라",
+   "away": "브라이튼",
+   "homeGoals": 6,
+   "awayGoals": 1
+  }
+ ],
  "맨체스터 시티|||풀럼": [
   {
    "date": "2026-02-12",
@@ -3355,47 +3399,19 @@
    "awayGoals": 1
   }
  ],
- "브라이튼|||아스톤 빌라": [
+ "리즈 유나이티드|||첼시": [
   {
-   "date": "2026-02-12",
-   "home": "아스톤 빌라",
-   "away": "브라이튼",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-12-04",
-   "home": "브라이튼",
-   "away": "아스톤 빌라",
-   "homeGoals": 3,
-   "awayGoals": 4
-  },
-  {
-   "date": "2025-04-03",
-   "home": "브라이튼",
-   "away": "아스톤 빌라",
-   "homeGoals": 0,
-   "awayGoals": 3
-  },
-  {
-   "date": "2024-12-31",
-   "home": "아스톤 빌라",
-   "away": "브라이튼",
+   "date": "2026-02-11",
+   "home": "첼시",
+   "away": "리즈 유나이티드",
    "homeGoals": 2,
    "awayGoals": 2
   },
   {
-   "date": "2024-05-05",
-   "home": "브라이튼",
-   "away": "아스톤 빌라",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2023-09-30",
-   "home": "아스톤 빌라",
-   "away": "브라이튼",
-   "homeGoals": 6,
+   "date": "2025-12-04",
+   "home": "리즈 유나이티드",
+   "away": "첼시",
+   "homeGoals": 3,
    "awayGoals": 1
   }
  ],
@@ -3441,22 +3457,6 @@
    "away": "본머스",
    "homeGoals": 3,
    "awayGoals": 0
-  }
- ],
- "리즈 유나이티드|||첼시": [
-  {
-   "date": "2026-02-11",
-   "home": "첼시",
-   "away": "리즈 유나이티드",
-   "homeGoals": 2,
-   "awayGoals": 2
-  },
-  {
-   "date": "2025-12-04",
-   "home": "리즈 유나이티드",
-   "away": "첼시",
-   "homeGoals": 3,
-   "awayGoals": 1
   }
  ],
  "뉴캐슬|||토트넘": [
@@ -3843,6 +3843,50 @@
    "awayGoals": 3
   }
  ],
+ "맨체스터 유나이티드|||풀럼": [
+  {
+   "date": "2026-02-01",
+   "home": "맨체스터 유나이티드",
+   "away": "풀럼",
+   "homeGoals": 3,
+   "awayGoals": 2
+  },
+  {
+   "date": "2025-08-25",
+   "home": "풀럼",
+   "away": "맨체스터 유나이티드",
+   "homeGoals": 1,
+   "awayGoals": 1
+  },
+  {
+   "date": "2025-01-27",
+   "home": "풀럼",
+   "away": "맨체스터 유나이티드",
+   "homeGoals": 0,
+   "awayGoals": 1
+  },
+  {
+   "date": "2024-08-17",
+   "home": "맨체스터 유나이티드",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2024-02-24",
+   "home": "맨체스터 유나이티드",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2023-11-04",
+   "home": "풀럼",
+   "away": "맨체스터 유나이티드",
+   "homeGoals": 0,
+   "awayGoals": 1
+  }
+ ],
  "노팅엄 포레스트|||크리스탈 팰리스": [
   {
    "date": "2026-02-01",
@@ -3929,50 +3973,6 @@
    "away": "아스톤 빌라",
    "homeGoals": 1,
    "awayGoals": 2
-  }
- ],
- "맨체스터 유나이티드|||풀럼": [
-  {
-   "date": "2026-02-01",
-   "home": "맨체스터 유나이티드",
-   "away": "풀럼",
-   "homeGoals": 3,
-   "awayGoals": 2
-  },
-  {
-   "date": "2025-08-25",
-   "home": "풀럼",
-   "away": "맨체스터 유나이티드",
-   "homeGoals": 1,
-   "awayGoals": 1
-  },
-  {
-   "date": "2025-01-27",
-   "home": "풀럼",
-   "away": "맨체스터 유나이티드",
-   "homeGoals": 0,
-   "awayGoals": 1
-  },
-  {
-   "date": "2024-08-17",
-   "home": "맨체스터 유나이티드",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2024-02-24",
-   "home": "맨체스터 유나이티드",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 2
-  },
-  {
-   "date": "2023-11-04",
-   "home": "풀럼",
-   "away": "맨체스터 유나이티드",
-   "homeGoals": 0,
-   "awayGoals": 1
   }
  ],
  "뉴캐슬|||리버풀": [
@@ -4491,6 +4491,38 @@
    "awayGoals": 1
   }
  ],
+ "선덜랜드|||크리스탈 팰리스": [
+  {
+   "date": "2026-01-18",
+   "home": "선덜랜드",
+   "away": "크리스탈 팰리스",
+   "homeGoals": 2,
+   "awayGoals": 1
+  },
+  {
+   "date": "2025-09-13",
+   "home": "크리스탈 팰리스",
+   "away": "선덜랜드",
+   "homeGoals": 0,
+   "awayGoals": 0
+  }
+ ],
+ "리즈 유나이티드|||풀럼": [
+  {
+   "date": "2026-01-18",
+   "home": "리즈 유나이티드",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-09-13",
+   "home": "풀럼",
+   "away": "리즈 유나이티드",
+   "homeGoals": 1,
+   "awayGoals": 0
+  }
+ ],
  "브렌트포드|||첼시": [
   {
    "date": "2026-01-18",
@@ -4533,38 +4565,6 @@
    "away": "브렌트포드",
    "homeGoals": 0,
    "awayGoals": 2
-  }
- ],
- "리즈 유나이티드|||풀럼": [
-  {
-   "date": "2026-01-18",
-   "home": "리즈 유나이티드",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-09-13",
-   "home": "풀럼",
-   "away": "리즈 유나이티드",
-   "homeGoals": 1,
-   "awayGoals": 0
-  }
- ],
- "선덜랜드|||크리스탈 팰리스": [
-  {
-   "date": "2026-01-18",
-   "home": "선덜랜드",
-   "away": "크리스탈 팰리스",
-   "homeGoals": 2,
-   "awayGoals": 1
-  },
-  {
-   "date": "2025-09-13",
-   "home": "크리스탈 팰리스",
-   "away": "선덜랜드",
-   "homeGoals": 0,
-   "awayGoals": 0
   }
  ],
  "맨체스터 시티|||맨체스터 유나이티드": [
@@ -4671,6 +4671,50 @@
    "awayGoals": 0
   }
  ],
+ "첼시|||풀럼": [
+  {
+   "date": "2026-01-08",
+   "home": "풀럼",
+   "away": "첼시",
+   "homeGoals": 2,
+   "awayGoals": 1
+  },
+  {
+   "date": "2025-08-30",
+   "home": "첼시",
+   "away": "풀럼",
+   "homeGoals": 2,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-04-20",
+   "home": "풀럼",
+   "away": "첼시",
+   "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2024-12-26",
+   "home": "첼시",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 2
+  },
+  {
+   "date": "2024-01-13",
+   "home": "첼시",
+   "away": "풀럼",
+   "homeGoals": 1,
+   "awayGoals": 0
+  },
+  {
+   "date": "2023-10-03",
+   "home": "풀럼",
+   "away": "첼시",
+   "homeGoals": 0,
+   "awayGoals": 2
+  }
+ ],
  "아스톤 빌라|||크리스탈 팰리스": [
   {
    "date": "2026-01-08",
@@ -4759,6 +4803,22 @@
    "awayGoals": 2
   }
  ],
+ "브렌트포드|||선덜랜드": [
+  {
+   "date": "2026-01-08",
+   "home": "브렌트포드",
+   "away": "선덜랜드",
+   "homeGoals": 3,
+   "awayGoals": 0
+  },
+  {
+   "date": "2025-08-30",
+   "home": "선덜랜드",
+   "away": "브렌트포드",
+   "homeGoals": 2,
+   "awayGoals": 1
+  }
+ ],
  "맨체스터 시티|||브라이튼": [
   {
    "date": "2026-01-08",
@@ -4799,66 +4859,6 @@
    "date": "2023-10-21",
    "home": "맨체스터 시티",
    "away": "브라이튼",
-   "homeGoals": 2,
-   "awayGoals": 1
-  }
- ],
- "첼시|||풀럼": [
-  {
-   "date": "2026-01-08",
-   "home": "풀럼",
-   "away": "첼시",
-   "homeGoals": 2,
-   "awayGoals": 1
-  },
-  {
-   "date": "2025-08-30",
-   "home": "첼시",
-   "away": "풀럼",
-   "homeGoals": 2,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-04-20",
-   "home": "풀럼",
-   "away": "첼시",
-   "homeGoals": 1,
-   "awayGoals": 2
-  },
-  {
-   "date": "2024-12-26",
-   "home": "첼시",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 2
-  },
-  {
-   "date": "2024-01-13",
-   "home": "첼시",
-   "away": "풀럼",
-   "homeGoals": 1,
-   "awayGoals": 0
-  },
-  {
-   "date": "2023-10-03",
-   "home": "풀럼",
-   "away": "첼시",
-   "homeGoals": 0,
-   "awayGoals": 2
-  }
- ],
- "브렌트포드|||선덜랜드": [
-  {
-   "date": "2026-01-08",
-   "home": "브렌트포드",
-   "away": "선덜랜드",
-   "homeGoals": 3,
-   "awayGoals": 0
-  },
-  {
-   "date": "2025-08-30",
-   "home": "선덜랜드",
-   "away": "브렌트포드",
    "homeGoals": 2,
    "awayGoals": 1
   }
