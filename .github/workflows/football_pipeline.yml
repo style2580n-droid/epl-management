@@ -107,6 +107,12 @@ jobs:
           python-version: '3.12'
           cache: 'pip'
       - run: pip install -r requirements.txt
+      # ⚠️ 2026-07-15: collect_xg_fbref.py가 fbrapi.com 호출 시
+      # SSLCertVerificationError(unable to get local issuer certificate)로
+      # 실패한 적 있음 — 로컬 CA 묶음이 오래됐을 가능성에 대비해 최신화.
+      # (서버 쪽이 인증서 체인을 불완전하게 보내는 문제라면 이걸로도 안
+      # 고쳐질 수 있음 — 그 경우 다음 실행 로그로 재확인 필요)
+      - run: pip install --upgrade certifi
 
       - uses: actions/download-artifact@v4
         with:
@@ -134,7 +140,7 @@ jobs:
           python collect_fixtures.py
           python app_export.py
           python collect_fixtures_multileague.py
-          python collect_xg_fbref.py
+          python collect_xg_bsd.py
           python app_export_multileague.py
 
       - name: Commit results
