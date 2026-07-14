@@ -134,6 +134,7 @@ jobs:
           python collect_fixtures.py
           python app_export.py
           python collect_fixtures_multileague.py
+          python collect_xg_fbref.py
           python app_export_multileague.py
 
       - name: Commit results
