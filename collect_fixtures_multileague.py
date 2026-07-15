@@ -28,6 +28,7 @@ OUT_PATH = 'data/master/schedule_multileague.json'
 SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
 PAGE_LIMIT = 200
 _MAX_PAGES = 50
+KST = timezone(timedelta(hours=9))
 DATE_FROM = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
 DATE_TO = (datetime.now(timezone.utc) + timedelta(days=400)).strftime('%Y-%m-%d')
 
@@ -52,6 +53,24 @@ def _unwrap(resp):
     if isinstance(resp, tuple):
         resp = resp[0]
     return resp
+
+
+def _kst_date_time(iso_str):
+    """ISO8601(UTC) 문자열을 KST 'YYYY-MM-DD', 'HH:MM'으로 변환.
+    EPL(collect_fixtures.py)에서 이미 검증된 함수를 그대로 재사용 —
+    2026-07-15까지 6개 리그 쪽은 [:10]으로 시간을 버리고 날짜만 썼는데,
+    킥오프 알림 기능에 시각이 필요해서 EPL과 동일하게 맞춘다."""
+    if not iso_str:
+        return None, None
+    s = iso_str.replace('Z', '+00:00')
+    try:
+        dt = datetime.fromisoformat(s)
+    except ValueError:
+        return None, None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    kst = dt.astimezone(KST)
+    return kst.strftime('%Y-%m-%d'), kst.strftime('%H:%M')
 
 
 # ============================================================ 1) 리그 찾기
@@ -256,11 +275,14 @@ def main():
             status = (ev.get('status') or '').lower()
             if status == 'finished':
                 continue
+            date_kst, time_kst = _kst_date_time(ev.get('event_date'))
+            if not date_kst:
+                continue
             schedule.append({
                 'home': home_kr, 'away': away_kr,
-                'date': (ev.get('event_date') or '')[:10] or None,
+                'date': date_kst, 'time': time_kst or '00:00',
             })
-        schedule.sort(key=lambda m: m['date'] or '')
+        schedule.sort(key=lambda m: (m['date'] or '', m['time'] or ''))
         out[league_key] = schedule
         print(f'[collect_fixtures_multileague] {league_key}: 팀 {len(team_ids)}개, '
               f'경기 {len(rows)}건 중 일정 {len(schedule)}건', flush=True)
