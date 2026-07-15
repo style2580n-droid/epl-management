@@ -38,6 +38,7 @@ BSD_SCHEDULE_PATH = 'data/master/schedule_multileague.json'
 BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
 XG_PATH = 'data/master/xg_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
+INJURIES_PATH = 'data/master/injuries_af.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
 # 인수인계_요약.md v2의 팀 명단과 1:1 대응. 리그 키는 multi_league_index.html의
@@ -233,6 +234,54 @@ def _js(v):
 
 
 # ============================================================ 데이터 빌드
+# ⚠️ 2026-07-16: API-Football의 부상 데이터(injuries_af.json)엔 "핵심결장
+# vs 로테이션 부상"을 구분하는 필드가 없다 — reason 텍스트로 심각도를
+# 추정하는 키워드 방식을 쓴다(장기·수술급 키워드만 keyOut, 나머지는 전부
+# injured로 보수적으로 분류 — 과대평가보다 과소평가가 예측 왜곡이 적음).
+# 완벽한 분류가 아니므로 로그에 분류 결과를 남겨 검증할 수 있게 한다.
+_KEYOUT_KEYWORDS = ('cruciate', 'acl', 'surgery', 'fracture', 'broken',
+                     'rupture', 'achilles', 'torn', 'long-term', 'long term')
+
+
+def _classify_injury(reason):
+    r = (reason or '').lower()
+    return 'keyOut' if any(kw in r for kw in _KEYOUT_KEYWORDS) else 'injured'
+
+
+def build_injuries():
+    """collectors.py의 InjuryCollector(어제 완성)가 만든 injuries_af.json을
+    리그별 {"팀명": {keyOut:[...], injured:[...]}} 형태로 변환한다.
+    EPL은 이 6개 리그 앱과 별개(SQUADS 임베드 방식)라 건드리지 않는다."""
+    raw = _load_json(INJURIES_PATH, {})
+    injuries = {lk: {} for lk in LEAGUE_TEAM_MAPS}
+    unmatched_teams = set()
+    n_keyout = n_injured = 0
+
+    for _pid, info in raw.items():
+        if not isinstance(info, dict):
+            continue
+        team_name = info.get('team')
+        player_name = info.get('player_name')
+        if not (team_name and player_name):
+            continue
+        hit = to_kr_league(team_name)
+        if not hit:
+            unmatched_teams.add(team_name)
+            continue
+        lk, kr = hit
+        bucket = injuries[lk].setdefault(kr, {'keyOut': [], 'injured': []})
+        category = _classify_injury(info.get('reason'))
+        bucket[category].append(player_name)
+        if category == 'keyOut':
+            n_keyout += 1
+        else:
+            n_injured += 1
+
+    print(f'[app_export_multileague] 부상 분류: keyOut {n_keyout}건, '
+          f'injured(로테이션) {n_injured}건', flush=True)
+    return injuries, unmatched_teams
+
+
 def build_squads():
     """SQUADS(요청사항 1번, 최우선).
     1순위: data/master/squads_multileague.json (collect_fixtures_multileague.py
@@ -335,7 +384,7 @@ def build_all():
 
 
 # ============================================================ JS 렌더링
-def render_js(schedules, elo_by_league, squads, xg_by_league):
+def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league):
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
@@ -346,6 +395,8 @@ def render_js(schedules, elo_by_league, squads, xg_by_league):
             'elo': elo_by_league.get(league_key, {}),
             'squads': squads.get(league_key, {}),
             'teamXg': xg_by_league.get(league_key, {}),
+            'injuries': injuries_by_league.get(league_key, {}),
+            'fatigue': {},  # ⚠️ 월드컵 여독 — 결승(7/19) 이후 별도 아티팩트로 병합 예정
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
@@ -357,7 +408,8 @@ def main():
     schedules, elo_by_league, unmatched = build_all()
     squads, unmatched_squad_teams = build_squads()
     xg_by_league = _load_json(XG_PATH, {})
-    js = render_js(schedules, elo_by_league, squads, xg_by_league)
+    injuries_by_league, unmatched_injury_teams = build_injuries()
+    js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
 
@@ -366,15 +418,17 @@ def main():
     total_squad_teams = sum(len(v) for v in squads.values())
     total_squad_players = sum(len(p) for v in squads.values() for p in v.values())
     total_xg_teams = sum(len(xg_by_league.get(lk, {})) for lk in LEAGUE_TEAM_MAPS)
+    total_injury_teams = sum(len(v) for v in injuries_by_league.values())
     print(f'[app_export_multileague] {OUT_PATH} 생성 완료, '
           f'일정 {total_sched}건, ELO {total_elo}팀, '
           f'스쿼드 {total_squad_teams}팀/{total_squad_players}명, '
-          f'xG {total_xg_teams}팀', flush=True)
+          f'xG {total_xg_teams}팀, 부상 {total_injury_teams}팀', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
         squad_players = sum(len(p) for p in squads[lk].values())
         print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
               f'스쿼드 {len(squads[lk])}팀/{squad_players}명, '
-              f'xG {len(xg_by_league.get(lk, {}))}팀',
+              f'xG {len(xg_by_league.get(lk, {}))}팀, '
+              f'부상 {len(injuries_by_league[lk])}팀',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]
@@ -384,6 +438,10 @@ def main():
         sample2 = sorted(unmatched_squad_teams)[:15]
         print(f'[app_export_multileague] ⚠️ 스쿼드 매칭 안 된 팀명 '
               f'{len(unmatched_squad_teams)}개 (샘플): {sample2}', flush=True)
+    if unmatched_injury_teams:
+        sample3 = sorted(unmatched_injury_teams)[:15]
+        print(f'[app_export_multileague] ⚠️ 부상 매칭 안 된 팀명 '
+              f'{len(unmatched_injury_teams)}개 (샘플): {sample3}', flush=True)
 
 
 if __name__ == '__main__':
