@@ -76,14 +76,30 @@ class FootballDataClient(BaseClient):
 
 # ------------------------------------------------------------ 이벤트/좌표
 class BSDClient(BaseClient):
-    """BSD (Bzzoiro) — 슛별 xG·좌표·이벤트. Authorization: Token 방식."""
+    """BSD (Bzzoiro) — 슛별 xG·좌표·이벤트. Authorization: Token 방식.
+    다중 계정 지원: BSD_API_KEY / BSD_API_KEY1 / BSD_API_KEY2 ... 라운드로빈
+    (FootballDataClient와 동일 패턴, 2026-07-15 추가)."""
     name = 'bsd'
 
     def __init__(self):
-        token = os.getenv('BSD_API_KEY') or os.getenv('BSD_API_TOKEN', '')
-        self.enabled = bool(token)
+        self.keys = _env_keys('BSD_API_KEY')
+        if not self.keys:
+            # 예전 단일 키 이름(BSD_API_TOKEN)도 폴백으로 지원
+            legacy = os.getenv('BSD_API_TOKEN', '')
+            if legacy:
+                self.keys = [legacy]
+        self.enabled = bool(self.keys)
+        self._i = 0
         super().__init__('https://sports.bzzoiro.com/api/v2',
-                         headers={'Authorization': f'Token {token}'})
+                         headers={'Authorization':
+                                  f'Token {self.keys[0]}' if self.keys else ''})
+
+    def get(self, endpoint, params=None):
+        if self.keys:
+            key = self.keys[self._i % len(self.keys)]
+            self.fetcher.headers['Authorization'] = f'Token {key}'
+            self._i += 1
+        return super().get(endpoint, params=params)
 
     def live_events(self):
         return self.get('events/live/')
