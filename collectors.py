@@ -12,7 +12,7 @@
 """
 import os
 import json
-from datetime import datetime, timezone
+from datetime import datetime, timezone, date, timedelta
 
 from api_clients import build_registry
 
@@ -20,7 +20,10 @@ DATA_DIR = 'data/master'
 EVENTS_DIR = 'data/events'
 LEAGUES = ['PL', 'PD', 'BL1', 'SA', 'FL1']  # football-data.org 공식 코드
 # API-Football 리그 ID 매핑 (부상/라인업 피드용)
-AF_LEAGUE_IDS = {'PL': 39, 'PD': 140, 'BL1': 78, 'SA': 135, 'FL1': 61}
+# API-Football 리그 ID 매핑 (부상/라인업 피드용)
+# ELC/DED는 2026-07-15 추가 (다른 리그 5개 값과 교차검증된 제3자 소스로 확인).
+AF_LEAGUE_IDS = {'PL': 39, 'PD': 140, 'BL1': 78, 'SA': 135, 'FL1': 61,
+                  'ELC': 180, 'DED': 88}
 
 
 def _season_year():
@@ -406,7 +409,26 @@ class EventCollector:
 
 # ============================================================ 부상 (전용 피드)
 class InjuryCollector:
-    """API-Football 전용 부상 피드 → data/master/injuries_af.json (보고서 3.1)."""
+    """API-Football 전용 부상 피드 → data/master/injuries_af.json (보고서 3.1).
+
+    ⚠️ 2026-07-15 확인: 이 API는 "복귀 예상 시기"를 구조화된 필드로 주지
+    않는다 — 경기 단위로 "이 선수는 이 경기에 못 나온다"만 알려주는
+    구조다(player.type/player.reason만 있음). 그래서 매 실행마다 스냅샷을
+    누적해서:
+      - first_seen: 이 선수가 이 부상 기록으로 처음 잡힌 날짜 (부상 추정일)
+      - last_seen : 가장 최근에도 여전히 부상 목록에 있었던 날짜
+    로 대신 추적한다. last_seen이 갱신을 멈추고 며칠 지나면 "그 즈음
+    복귀했다"고 추정할 수 있지만, 확정된 복귀일이 아니라 "최근 확인일
+    기준 며칠 지남"으로 앱 쪽에서 해석해야 한다 — 없는 데이터를 있는
+    것처럼 채우지 않는다.
+
+    선수명은 영문 그대로 저장한다(한글 변환은 app_export 쪽에서 처리).
+    나중에 월드컵/A매치 기간 부상 기록(사용자가 별도로 제공 예정, 7/19
+    결승 이후)과 선수명 기준으로 병합해서 "훈련 중 vs 월드컵 기간"을
+    구분할 계획 — 이 수집기는 그 병합 대상이 될 "훈련 중 부상" 쪽만
+    담당한다.
+    """
+    STALE_DAYS = 30  # 이만큼 last_seen이 안 갱신되면 회복한 것으로 보고 정리
 
     def __init__(self, registry):
         self.af = registry.get('api-football')
@@ -417,26 +439,56 @@ class InjuryCollector:
             return
         season = _season_year()
         out = _load(f'{DATA_DIR}/injuries_af.json', {})
+        today = datetime.now(timezone.utc).date().isoformat()
+
         for code in leagues:
             lid = AF_LEAGUE_IDS.get(code)
             if not lid:
+                print(f'[injury] {code} API-Football 리그 ID 없음 → 건너뜀')
                 continue
             data, ok = self.af.injuries(lid, season)
             if not (ok and data):
+                print(f'[injury] {code} 응답 없음/실패 (시즌 전이라 아직 '
+                      f'데이터가 없을 수 있음)')
                 continue
-            for item in data.get('response', []):
+            response = data.get('response', [])
+            print(f'[injury] {code}: {len(response)}건 수신')
+            for item in response:
                 p = item.get('player', {})
-                out[str(p.get('id'))] = {
+                pid = str(p.get('id')) if p.get('id') is not None else None
+                if not pid:
+                    continue
+                prev = out.get(pid)
+                first_seen = prev.get('first_seen') if prev else today
+                out[pid] = {
                     'player_name': p.get('name'),
                     'team': item.get('team', {}).get('name'),
                     'type': p.get('type'),          # Missing Fixture 등
                     'reason': p.get('reason'),      # 부상 부위/사유
                     'league': code,
                     'fixture_date': item.get('fixture', {}).get('date'),
+                    'first_seen': first_seen,       # 부상 추정일(최초 감지)
+                    'last_seen': today,             # 최근 확인일
                     'collected_at': _now(),
                 }
             print(f'[injury] {code} 부상 피드 수집')
+
+        # STALE_DAYS 넘게 다시 안 보인 선수는 회복한 것으로 보고 정리
+        cutoff = (datetime.now(timezone.utc) - timedelta(days=self.STALE_DAYS)).date()
+        removed = 0
+        for pid in list(out.keys()):
+            last_seen = out[pid].get('last_seen')
+            try:
+                if last_seen and date.fromisoformat(last_seen) < cutoff:
+                    del out[pid]
+                    removed += 1
+            except ValueError:
+                continue
+        if removed:
+            print(f'[injury] {self.STALE_DAYS}일 이상 미확인 {removed}명 정리(회복 추정)')
+
         _save(f'{DATA_DIR}/injuries_af.json', out)
+        print(f'[injury] 최종 {len(out)}명 추적 중')
 
 
 # ============================================================ 라인업
