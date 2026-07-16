@@ -44,6 +44,11 @@ INJURIES_PATH = 'data/master/injuries_af.json'
 # 팀명이라 여기서 다시 매핑할 필요 없음 (2026-07-16 확인 — 지금까지는
 # 이 파일이 수집만 되고 앱에 노출이 안 되고 있었음).
 TRANSFERS_PATH = 'data/master/transfers_bsd.json'
+# 2026-07-16 확인: 앱의 STATIC_LOGOS(로컬 파일)가 이미 118팀 전부 채워져 있어서
+# 이 필드가 지금 당장 급한 건 아니다. 그래도 다음 시즌 승격/강등으로 로고가 또
+# 비게 될 때를 위한 자동 백업 소스로 collect_logos_multileague.py를 붙여둔다
+# (앱은 로컬 우선 → 이 데이터는 로컬에 없는 팀에 대해서만 실제로 쓰인다).
+LOGOS_PATH = 'data/master/logos_multileague.json'
 # EPL과 완전히 같은 파일 — train_ml_ensemble.py가 EPL+6개 리그를 리그 구분 없이
 # 통합 학습해서 한 세트의 계수만 만든다(2026-07-16 착수). 없으면 null로 내려가고
 # 앱이 안전 폴백한다.
@@ -554,13 +559,14 @@ def build_all():
 # ============================================================ JS 렌더링
 def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
               transfers_by_league, h2h_by_league, ml_ensemble):
+    logos_by_league = _load_json(LOGOS_PATH, {})
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
     for league_key in LEAGUE_TEAM_MAPS:
         block = {
             'schedule': schedules.get(league_key, []),
-            'logos': {},  # ⚠️ 로고 파일 미확보 (인수인계 문서 "아직 안 채워진 것" #2) — 나중에 채움
+            'logos': logos_by_league.get(league_key, {}),
             'elo': elo_by_league.get(league_key, {}),
             'squads': squads.get(league_key, {}),
             'teamXg': xg_by_league.get(league_key, {}),

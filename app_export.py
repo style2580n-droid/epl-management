@@ -104,6 +104,11 @@ OUT_PATH = 'reports/app_data.js'
 # 아직 등록 안 돼(squad길이=0) 항상 0건이라, 여기를 1순위로 쓴다
 # (2026-07-16 확인, 인수인계 문서 "다음에 할 것" 대응).
 TRANSFERS_BSD_PATH = 'data/master/transfers_bsd.json'
+# train_ml_ensemble.py가 EPL+6개 리그 통합으로 학습한 모델(2026-07-16).
+# 2026-07-16 결정: EPL 앱의 randomForestWinProb(하드코딩 결정트리 5개, 실제
+# 데이터로 학습된 게 아님)를 이걸로 교체한다 — 파일 없으면(학습 표본 부족)
+# 프론트가 자동으로 기존 하드코딩 트리로 폴백하므로 안전하게 시도할 수 있다.
+ML_ENSEMBLE_PATH = 'data/master/ml_ensemble.json'
 
 # ============================================================ 팀명 매핑
 # 앱(EPL_index.html)이 쓰는 한글 20개 구단명 ↔ 파이프라인 소스가 쓰는 영문명
@@ -570,11 +575,16 @@ def render_js(name_cache):
     lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
     lines.append('const PIPELINE_SCHEDULE = ' + _js(schedule) + ';')
     lines.append('const PIPELINE_H2H = ' + _js(h2h) + ';')
+    ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
+    lines.append('const PIPELINE_ML_ENSEMBLE = ' + _js(ml_ensemble) + ';')
     lines.append('')
-    lines.append('// 앱에 반영하려면: 위 9개 PIPELINE_* 객체 내용을 앱 파일의 '
+    lines.append('// 앱에 반영하려면: 위 10개 PIPELINE_* 객체 내용을 앱 파일의 '
                  'ELO/ADVANCED_STATS/RECENT_FORM/SQUADS/STATIC_LEADERBOARD/'
-                 '_liveResults/TRANSFERS/SCHEDULE/H2H 각각에 Object.assign으로 '
-                 '병합하거나, 해당 const 선언을 통째로 교체하세요.')
+                 '_liveResults/TRANSFERS/SCHEDULE/H2H/ML_ENSEMBLE 각각에 '
+                 'Object.assign으로 병합하거나, 해당 const 선언을 통째로 '
+                 '교체하세요. PIPELINE_ML_ENSEMBLE은 train_ml_ensemble.py가 '
+                 '표본 부족으로 스킵했으면 null일 수 있음(앱에서 null 체크 후 '
+                 '기존 randomForestWinProb로 자동 폴백).')
     return '\n'.join(lines)
 
 
