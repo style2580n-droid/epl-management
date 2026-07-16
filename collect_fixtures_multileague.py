@@ -193,7 +193,12 @@ def _fetch_team_players(client, team_id):
     ⚠️ 2026-07-13 실측 확인: 문서에 명시된 team= 파라미터가 실제로는
     무시됨(count=66053 전체 선수 DB가 그대로 옴, 요청한 team_id와 무관한
     선수가 응답). 대신 선수 객체 필드명이 'current_team_id'인 것을
-    확인해서, 그걸 쿼리 파라미터 후보에도 추가해 검증한다."""
+    확인해서, 그걸 쿼리 파라미터 후보에도 추가해 검증한다.
+    ⚠️ 2026-07-16 추가: position 필드도 함께 뽑는다. BSD 공식 문서가
+    position을 필터 파라미터로 명시하고 있어 응답 객체에도 있을 가능성이
+    높지만(api_clients.py BSDClient.players 참고), 실전 검증 전까지는
+    단정하지 않는다 — 없으면 그냥 None으로 채워서 앱 쪽 포지션 버킷팅이
+    안전하게 폴백(기타로 분류)하도록 한다."""
     global _players_diag_done, _PLAYERS_PARAM_NAME
     candidates = [_PLAYERS_PARAM_NAME] if _PLAYERS_PARAM_NAME else \
         ['current_team_id', 'team_id', 'team']
@@ -204,8 +209,10 @@ def _fetch_team_players(client, team_id):
         time.sleep(0.2)
         if not _players_diag_done:
             _players_diag_done = True
+            sample = data.get('results', [{}])[0] if data and data.get('results') else {}
             print(f'[collect_fixtures_multileague] [diag] players('
-                  f'{param_name}={team_id}) count={data.get("count") if data else None}',
+                  f'{param_name}={team_id}) count={data.get("count") if data else None} '
+                  f'sample_keys={sorted(sample.keys()) if sample else []}',
                   flush=True)
         if not data:
             continue
@@ -220,8 +227,50 @@ def _fetch_team_players(client, team_id):
             _PLAYERS_PARAM_NAME = param_name
             print(f'[collect_fixtures_multileague] players 팀 필터 파라미터 확정: '
                   f'"{param_name}"', flush=True)
-        return [p.get('name') for p in rows if p.get('name')]
+        return [{'name': p.get('name'), 'position': p.get('position')}
+                for p in rows if p.get('name')]
     return []
+
+
+_coach_diag_done = False
+
+
+def _fetch_team_coach(client, team_id):
+    """BSD /coachs/ (team= 파라미터)로 감독명을 받는다. api_clients.py의
+    BSDClient.coach()가 이미 있는 엔드포인트를 그대로 쓴다 — 실전 응답
+    구조를 첫 호출에서 로그로 남겨 검증(다른 BSD 엔드포인트들과 동일하게
+    {results:[...], count:...} 래핑을 가정하지만, 다르면 빈 문자열로
+    안전하게 폴백한다)."""
+    global _coach_diag_done
+    try:
+        resp = client.coach(team_id)
+    except Exception as e:
+        if not _coach_diag_done:
+            _coach_diag_done = True
+            print(f'[collect_fixtures_multileague] [diag] coach() 호출 실패: {e}',
+                  flush=True)
+        return ''
+    data = _unwrap(resp)
+    time.sleep(0.2)
+    if not _coach_diag_done:
+        _coach_diag_done = True
+        rows_preview = data.get('results', []) if data else []
+        sample = rows_preview[0] if rows_preview else {}
+        print(f'[collect_fixtures_multileague] [diag] coach(team={team_id}) '
+              f'count={data.get("count") if data else None} '
+              f'sample_keys={sorted(sample.keys()) if sample else []}', flush=True)
+    if not data:
+        return ''
+    rows = data.get('results', [])
+    if not rows:
+        return ''
+    # 감독명 필드명이 확실치 않아 흔한 후보를 순서대로 시도.
+    row = rows[0]
+    for key in ('name', 'coach_name', 'coach'):
+        val = row.get(key)
+        if val:
+            return val
+    return ''
 
 
 # ⚠️ 2026-07-14 확정: BSD는 완료된 경기의 xG를 제공하지 않는다. 목록
@@ -256,14 +305,21 @@ def main():
             continue
 
         squads = {}
+        n_with_position = n_with_coach = 0
         for team_id, kr in team_ids.items():
             players = _fetch_team_players(client, team_id)
+            coach = _fetch_team_coach(client, team_id)
             if players:
-                squads[kr] = players
+                squads[kr] = {'coach': coach, 'players': players}
+                if coach:
+                    n_with_coach += 1
+                if any(p.get('position') for p in players):
+                    n_with_position += 1
         squads_out[league_key] = squads
-        total_players = sum(len(v) for v in squads.values())
+        total_players = sum(len(v['players']) for v in squads.values())
         print(f'[collect_fixtures_multileague] {league_key} 스쿼드: '
-              f'{len(squads)}팀/{total_players}명', flush=True)
+              f'{len(squads)}팀/{total_players}명 '
+              f'(포지션 확보 {n_with_position}팀, 감독 확보 {n_with_coach}팀)', flush=True)
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
