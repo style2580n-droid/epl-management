@@ -138,10 +138,14 @@ jobs:
           python retention.py
           python collect_coaches.py
           python collect_fixtures.py
-          python app_export.py
           python collect_fixtures_multileague.py
           python collect_xg_bsd.py
           python collect_transfers_bsd.py
+          # 2026-07-16 추가: 아래 둘은 app_export*.py가 임베드하는 데이터를
+          # 만들어야 해서 반드시 그 앞에 와야 한다.
+          python train_ml_ensemble.py
+          python collect_logos_multileague.py
+          python app_export.py
           python app_export_multileague.py
 
       - name: Commit results
