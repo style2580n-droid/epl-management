@@ -99,6 +99,11 @@ def _translate_name(name, cache):
 DB_PATH = 'data/football.db'
 METRICS_DIR = 'data/metrics'
 OUT_PATH = 'reports/app_data.js'
+# collect_transfers_bsd.py가 만드는 BSD 스냅샷 diff 기반 이적 기록.
+# football-data.org 기반 구 DB `transfers` 테이블은 26-27 시즌 스쿼드가
+# 아직 등록 안 돼(squad길이=0) 항상 0건이라, 여기를 1순위로 쓴다
+# (2026-07-16 확인, 인수인계 문서 "다음에 할 것" 대응).
+TRANSFERS_BSD_PATH = 'data/master/transfers_bsd.json'
 
 # ============================================================ 팀명 매핑
 # 앱(EPL_index.html)이 쓰는 한글 20개 구단명 ↔ 파이프라인 소스가 쓰는 영문명
@@ -410,7 +415,56 @@ def build_leaderboard(name_cache):
 
 
 # ============================================================ 5) TRANSFERS (영입/이탈)
-def build_transfers(name_cache):
+def _build_transfers_from_bsd(name_cache):
+    """1순위 소스: collect_transfers_bsd.py가 BSD 스냅샷 diff로 감지한 이적.
+    team_kr은 수집 시점에 이미 to_kr/to_kr_league로 변환된 한글 팀명이라
+    여기서 다시 매핑할 필요 없음 — league=='epl' 레코드만 걸러서 쓴다."""
+    records = _load_json(TRANSFERS_BSD_PATH, [])
+    if not records:
+        return None  # BSD 소스가 아직 없으면 None을 반환해 DB 폴백으로 넘김
+    # detected_at 최신순 정렬
+    records = sorted(records, key=lambda r: r.get('detected_at') or '', reverse=True)
+
+    out = {kr: {'in': [], 'out': []} for kr in TEAM_NAME_MAP}
+    seen = set()  # (player_id, from_team, to_team) 중복 제거
+    for r in records:
+        to_league, from_league = r.get('to_league'), r.get('from_league')
+        if to_league != 'epl' and from_league != 'epl':
+            continue
+        dedup_key = (r.get('player_id'), r.get('from_team'), r.get('to_team'))
+        if dedup_key in seen:
+            continue
+        seen.add(dedup_key)
+
+        player_en = r.get('player_name')
+        if not player_en:
+            continue
+        player_ko = _translate_name(player_en, name_cache)
+        to_team_kr, from_team_kr = r.get('to_team'), r.get('from_team')
+
+        if to_league == 'epl' and to_team_kr in out:
+            out[to_team_kr]['in'].append({
+                'player': player_ko,
+                'from': from_team_kr or ('미상' if not from_league else f'{from_league} 소속팀'),
+                'date': r.get('detected_at'),
+            })
+        if from_league == 'epl' and from_team_kr in out:
+            out[from_team_kr]['out'].append({
+                'player': player_ko,
+                'to': to_team_kr or ('미상' if not to_league else f'{to_league} 소속팀'),
+                'date': r.get('detected_at'),
+            })
+
+    for kr in out:
+        out[kr]['in'] = out[kr]['in'][:20]
+        out[kr]['out'] = out[kr]['out'][:20]
+    return out
+
+
+def _build_transfers_from_db(name_cache):
+    """2순위(폴백) 소스: football-data.org 기반 구 TransferDetector 결과.
+    26-27 시즌 스쿼드 등록 전에는 항상 비어있지만, BSD 소스가 없을 때
+    (예: BSD_API_KEY 미설정) 안전망으로 유지한다."""
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     rows = conn.execute(
@@ -440,11 +494,21 @@ def build_transfers(name_cache):
                 'date': r['detected_at'],
             })
 
-    # 팀당 최근 20건만 유지 (이미 최신순 정렬됨)
     for kr in out:
         out[kr]['in'] = out[kr]['in'][:20]
         out[kr]['out'] = out[kr]['out'][:20]
     return out
+
+
+def build_transfers(name_cache):
+    bsd_out = _build_transfers_from_bsd(name_cache)
+    if bsd_out is not None:
+        total = sum(len(v['in']) + len(v['out']) for v in bsd_out.values())
+        print(f'[app_export] 이적: BSD 소스 사용, {total}건', flush=True)
+        return bsd_out
+    print('[app_export] 이적: BSD 소스 없음 → DB 폴백(football-data.org, '
+          '시즌 전이라 0건일 가능성 높음)', flush=True)
+    return _build_transfers_from_db(name_cache)
 
 
 # ============================================================ 6) SCHEDULE / H2H

@@ -39,6 +39,11 @@ BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
 XG_PATH = 'data/master/xg_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
 INJURIES_PATH = 'data/master/injuries_af.json'
+# collect_transfers_bsd.py가 EPL+6개 리그 전부를 스냅샷 diff로 감지해서
+# 쌓아두는 파일. team_kr은 수집 시점에 이미 to_kr_league로 변환된 한글
+# 팀명이라 여기서 다시 매핑할 필요 없음 (2026-07-16 확인 — 지금까지는
+# 이 파일이 수집만 되고 앱에 노출이 안 되고 있었음).
+TRANSFERS_PATH = 'data/master/transfers_bsd.json'
 
 # ============================================================ 팀명 매핑 (6개 리그, 116팀)
 # 인수인계_요약.md v2의 팀 명단과 1:1 대응. 리그 키는 multi_league_index.html의
@@ -323,6 +328,52 @@ def build_squads():
     return squads, unmatched_teams
 
 
+def build_transfers():
+    """리그별 이적(영입/이탈) — collect_transfers_bsd.py가 이미 EPL+6개 리그를
+    전부 감지해서 transfers_bsd.json에 쌓아두고 있었는데, 지금까지 이 앱
+    출력에 노출이 안 되고 있었다 (multi_league_index.html에 이미 UI 훅까지
+    준비돼 있었음, 2026-07-16 발견). player_name은 BSD 원문(영문) 그대로
+    유지 — SQUADS도 번역 없이 영문 그대로라 일관성 유지."""
+    records = _load_json(TRANSFERS_PATH, [])
+    out = {lk: {kr: {'in': [], 'out': []} for kr in LEAGUE_TEAM_MAPS[lk]}
+           for lk in LEAGUE_TEAM_MAPS}
+    if not records:
+        return out
+
+    records = sorted(records, key=lambda r: r.get('detected_at') or '', reverse=True)
+    seen = set()
+    for r in records:
+        to_league, from_league = r.get('to_league'), r.get('from_league')
+        dedup_key = (r.get('player_id'), r.get('from_team'), r.get('to_team'))
+        if dedup_key in seen:
+            continue
+        seen.add(dedup_key)
+
+        player_name = r.get('player_name')
+        if not player_name:
+            continue
+        to_team_kr, from_team_kr = r.get('to_team'), r.get('from_team')
+
+        if to_league in out and to_team_kr in out[to_league]:
+            out[to_league][to_team_kr]['in'].append({
+                'player': player_name,
+                'from': from_team_kr or (from_league or '미상'),
+                'date': r.get('detected_at'),
+            })
+        if from_league in out and from_team_kr in out[from_league]:
+            out[from_league][from_team_kr]['out'].append({
+                'player': player_name,
+                'to': to_team_kr or (to_league or '미상'),
+                'date': r.get('detected_at'),
+            })
+
+    for lk in out:
+        for kr in out[lk]:
+            out[lk][kr]['in'] = out[lk][kr]['in'][:20]
+            out[lk][kr]['out'] = out[lk][kr]['out'][:20]
+    return out
+
+
 def build_all():
     """리그별 schedule을 두 소스에서 만든다.
     1순위: data/master/schedule_multileague.json (collect_fixtures_multileague.py
@@ -384,7 +435,8 @@ def build_all():
 
 
 # ============================================================ JS 렌더링
-def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league):
+def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
+              transfers_by_league):
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
@@ -397,6 +449,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'teamXg': xg_by_league.get(league_key, {}),
             'injuries': injuries_by_league.get(league_key, {}),
             'fatigue': {},  # ⚠️ 월드컵 여독 — 결승(7/19) 이후 별도 아티팩트로 병합 예정
+            'transfers': transfers_by_league.get(league_key, {}),
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
@@ -409,7 +462,9 @@ def main():
     squads, unmatched_squad_teams = build_squads()
     xg_by_league = _load_json(XG_PATH, {})
     injuries_by_league, unmatched_injury_teams = build_injuries()
-    js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league)
+    transfers_by_league = build_transfers()
+    js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
+                    transfers_by_league)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
 
@@ -419,16 +474,20 @@ def main():
     total_squad_players = sum(len(p) for v in squads.values() for p in v.values())
     total_xg_teams = sum(len(xg_by_league.get(lk, {})) for lk in LEAGUE_TEAM_MAPS)
     total_injury_teams = sum(len(v) for v in injuries_by_league.values())
+    total_transfers = sum(len(t['in']) + len(t['out'])
+                           for v in transfers_by_league.values() for t in v.values())
     print(f'[app_export_multileague] {OUT_PATH} 생성 완료, '
           f'일정 {total_sched}건, ELO {total_elo}팀, '
           f'스쿼드 {total_squad_teams}팀/{total_squad_players}명, '
-          f'xG {total_xg_teams}팀, 부상 {total_injury_teams}팀', flush=True)
+          f'xG {total_xg_teams}팀, 부상 {total_injury_teams}팀, '
+          f'이적 {total_transfers}건', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
         squad_players = sum(len(p) for p in squads[lk].values())
+        lk_transfers = sum(len(t['in']) + len(t['out']) for t in transfers_by_league[lk].values())
         print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
               f'스쿼드 {len(squads[lk])}팀/{squad_players}명, '
               f'xG {len(xg_by_league.get(lk, {}))}팀, '
-              f'부상 {len(injuries_by_league[lk])}팀',
+              f'부상 {len(injuries_by_league[lk])}팀, 이적 {lk_transfers}건',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]
