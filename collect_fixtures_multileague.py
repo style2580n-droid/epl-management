@@ -232,42 +232,66 @@ def _fetch_team_players(client, team_id):
     return []
 
 
-_coach_diag_done = False
+_managers_cache = None  # {current_team_id: manager_dict} — 한 번만 전체 페이지네이션으로 채움
+
+
+def _fetch_all_managers(client):
+    """BSDClient.managers()로 전체 감독 목록을 페이지네이션으로 받아
+    current_team_id 기준으로 캐시한다.
+
+    ⚠️ 2026-07-17 수정: 원래 여기서 client.coach(team_id)를 호출했는데,
+    coach()는 api_clients.py의 BSDClient가 아니라 APIFootballClient에만
+    있는 메서드였다(비활성화된 클라이언트라 항상 AttributeError로 실패,
+    스쿼드 수집 자체는 방어 코드 덕에 안 죽었지만 감독 확보 0팀이었음
+    — 2026-07-17 실행 로그에서 실측 확인). collect_coaches.py가 EPL에서
+    이미 BSDClient.managers()로 "managers 총 2076명 수집"에 성공한 걸
+    보고서야 진짜 메서드를 찾았다 — 앞으로는 실제 클래스 소속을 grep으로
+    직접 확인하고 쓸 것(문서/기억으로 짐작하지 말 것).
+    managers()는 팀 단위 필터 파라미터가 문서화돼 있지 않아서(players()와
+    달리), team_id당 개별 호출 대신 전체를 한 번만 받아 메모리에서
+    current_team_id로 매칭한다 — API 호출도 아끼고 필터 파라미터 실측
+    문제도 같이 피해간다."""
+    global _managers_cache
+    if _managers_cache is not None:
+        return _managers_cache
+
+    all_managers = []
+    limit, offset = 200, 0
+    while True:
+        resp = client.managers(limit=limit, offset=offset)
+        data = _unwrap(resp)
+        time.sleep(0.2)
+        if not data:
+            break
+        rows = data.get('results', [])
+        all_managers.extend(rows)
+        count = data.get('count')
+        offset += limit
+        if not rows or offset > 3000 or (count is not None and offset >= count):
+            break
+
+    _managers_cache = {}
+    for m in all_managers:
+        tid = m.get('current_team_id')
+        if tid is not None:
+            _managers_cache[tid] = m
+    print(f'[collect_fixtures_multileague] managers 전체 {len(all_managers)}명 수집, '
+          f'current_team_id 있는 것 {len(_managers_cache)}명 (감독 조회용 캐시)',
+          flush=True)
+    if all_managers:
+        sample = all_managers[0]
+        print(f'[collect_fixtures_multileague] [diag] managers sample_keys='
+              f'{sorted(sample.keys())}', flush=True)
+    return _managers_cache
 
 
 def _fetch_team_coach(client, team_id):
-    """BSD /coachs/ (team= 파라미터)로 감독명을 받는다. api_clients.py의
-    BSDClient.coach()가 이미 있는 엔드포인트를 그대로 쓴다 — 실전 응답
-    구조를 첫 호출에서 로그로 남겨 검증(다른 BSD 엔드포인트들과 동일하게
-    {results:[...], count:...} 래핑을 가정하지만, 다르면 빈 문자열로
-    안전하게 폴백한다)."""
-    global _coach_diag_done
-    try:
-        resp = client.coach(team_id)
-    except Exception as e:
-        if not _coach_diag_done:
-            _coach_diag_done = True
-            print(f'[collect_fixtures_multileague] [diag] coach() 호출 실패: {e}',
-                  flush=True)
+    managers_by_team = _fetch_all_managers(client)
+    m = managers_by_team.get(team_id)
+    if not m:
         return ''
-    data = _unwrap(resp)
-    time.sleep(0.2)
-    if not _coach_diag_done:
-        _coach_diag_done = True
-        rows_preview = data.get('results', []) if data else []
-        sample = rows_preview[0] if rows_preview else {}
-        print(f'[collect_fixtures_multileague] [diag] coach(team={team_id}) '
-              f'count={data.get("count") if data else None} '
-              f'sample_keys={sorted(sample.keys()) if sample else []}', flush=True)
-    if not data:
-        return ''
-    rows = data.get('results', [])
-    if not rows:
-        return ''
-    # 감독명 필드명이 확실치 않아 흔한 후보를 순서대로 시도.
-    row = rows[0]
-    for key in ('name', 'coach_name', 'coach'):
-        val = row.get(key)
+    for key in ('name', 'coach_name', 'manager_name', 'full_name'):
+        val = m.get(key)
         if val:
             return val
     return ''
