@@ -10049,5 +10049,60 @@
             }
         ],
         "collected_at": "2026-07-17T10:03:53.074986+00:00"
+    },
+    "1294180309": {
+        "match": {
+            "id": 1294180309,
+            "round": "Regular Season - 18",
+            "date": "2026-07-17T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1016027,
+                "logo": "https://highlightly.net/soccer/images/teams/1016027.png",
+                "name": "Cuiabá"
+            },
+            "homeTeam": {
+                "id": 130136,
+                "logo": "https://highlightly.net/soccer/images/teams/130136.png",
+                "name": "Juventude"
+            },
+            "league": {
+                "id": 62056,
+                "logo": "https://highlightly.net/soccer/images/leagues/62056.png",
+                "name": "Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 130136,
+                    "logo": "https://highlightly.net/soccer/images/teams/130136.png",
+                    "name": "Juventude"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1016027,
+                    "logo": "https://highlightly.net/soccer/images/teams/1016027.png",
+                    "name": "Cuiabá"
+                }
+            }
+        ],
+        "collected_at": "2026-07-17T16:17:02.767462+00:00"
     }
 }
