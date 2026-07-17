@@ -9994,5 +9994,60 @@
             }
         ],
         "collected_at": "2026-07-17T01:44:13.619219+00:00"
+    },
+    "1316791379": {
+        "match": {
+            "id": 1316791379,
+            "round": "Regular Season - 7",
+            "date": "2026-07-17T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 19444432,
+                "logo": null,
+                "name": "Sfera U20"
+            },
+            "homeTeam": {
+                "id": 11117397,
+                "logo": null,
+                "name": "Tanabi SP U20"
+            },
+            "league": {
+                "id": 924970,
+                "logo": null,
+                "name": "Paulista - U20",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 11117397,
+                    "logo": null,
+                    "name": "Tanabi SP U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19444432,
+                    "logo": null,
+                    "name": "Sfera U20"
+                }
+            }
+        ],
+        "collected_at": "2026-07-17T10:03:53.074986+00:00"
     }
 }
