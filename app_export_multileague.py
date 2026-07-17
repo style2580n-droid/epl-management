@@ -28,8 +28,11 @@ import json
 import os
 import re
 import sqlite3
+import time
 import unicodedata
 from datetime import datetime, timezone
+
+import requests
 
 DB_PATH = 'data/football.db'
 OUT_PATH = 'reports/app_data_multileague.js'
@@ -39,11 +42,60 @@ BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
 XG_PATH = 'data/master/xg_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
 INJURIES_PATH = 'data/master/injuries_af.json'
+# app_export.py(EPL)와 완전히 같은 파일을 공유한다 — 선수가 EPL/6개 리그를
+# 넘나드는 경우(이적 등)도 있고, 캐시를 나눠 갖는 것보다 하나로 합쳐야
+# 중복 번역 API 호출을 줄일 수 있다.
+NAME_CACHE_PATH = 'data/master/name_translations.json'
 # collect_transfers_bsd.py가 EPL+6개 리그 전부를 스냅샷 diff로 감지해서
 # 쌓아두는 파일. team_kr은 수집 시점에 이미 to_kr_league로 변환된 한글
 # 팀명이라 여기서 다시 매핑할 필요 없음 (2026-07-16 확인 — 지금까지는
 # 이 파일이 수집만 되고 앱에 노출이 안 되고 있었음).
 TRANSFERS_PATH = 'data/master/transfers_bsd.json'
+
+
+def _load_name_cache():
+    if os.path.exists(NAME_CACHE_PATH):
+        try:
+            with open(NAME_CACHE_PATH, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return {}
+    return {}
+
+
+def _save_name_cache(cache):
+    os.makedirs(os.path.dirname(NAME_CACHE_PATH), exist_ok=True)
+    with open(NAME_CACHE_PATH, 'w', encoding='utf-8') as f:
+        json.dump(cache, f, ensure_ascii=False, indent=1)
+
+
+def _translate_name(name, cache):
+    """선수/감독명 -> 한글 (2026-07-17 추가). app_export.py의 EPL용
+    _translate_name과 같은 캐시 파일을 공유하되, 소스 언어를 'en'으로
+    고정하지 않고 'auto'로 둔다 — 6개 리그는 독일어/스페인어/이탈리아어/
+    프랑스어/네덜란드어 표기가 섞여 있어서(예: 'Müller', 'Müller'를 영어로
+    잘못 취급하면 발음이 틀어질 수 있음), 구글 번역이 원어를 스스로
+    감지하게 하는 쪽이 더 정확하다. 실패하면 원문 그대로 반환(안전 폴백,
+    EPL 쪽과 동일한 방침)."""
+    if not name:
+        return name
+    if name in cache:
+        return cache[name]
+    try:
+        resp = requests.get(
+            'https://translate.googleapis.com/translate_a/single',
+            params={'client': 'gtx', 'sl': 'auto', 'tl': 'ko', 'dt': 't',
+                    'q': name},
+            timeout=5)
+        data = resp.json()
+        ko = ''.join(seg[0] for seg in data[0]) if data and data[0] else name
+        ko = ko.strip() or name
+    except Exception:
+        ko = name  # 실패 시 원문 그대로 (예외 없이 넘어감 — EPL 쪽과 동일 원칙)
+    else:
+        time.sleep(0.05)  # 신규 항목만 지연, 캐시 히트는 즉시 반환됨
+    cache[name] = ko
+    return ko
 # 2026-07-16 확인: 앱의 STATIC_LOGOS(로컬 파일)가 이미 118팀 전부 채워져 있어서
 # 이 필드가 지금 당장 급한 건 아니다. 그래도 다음 시즌 승격/강등으로 로고가 또
 # 비게 될 때를 위한 자동 백업 소스로 collect_logos_multileague.py를 붙여둔다
@@ -320,7 +372,7 @@ def build_injuries():
     return injuries, unmatched_teams
 
 
-def build_squads():
+def build_squads(name_cache):
     """SQUADS(요청사항 1번, 최우선).
     1순위: data/master/squads_multileague.json (collect_fixtures_multileague.py
            가 BSD /players/?team= 로 만든 것 — football-data.org가 아직
@@ -338,7 +390,12 @@ def build_squads():
     'fw':[...], 'all':[...전체], 'hasPositions':bool}}
     — 'hasPositions'가 False면(구버전/football-data 폴백처럼 포지션 정보가
     전혀 없는 경우) 프론트가 GK/DF/MF/FW로 나누지 않고 'all'만 평평하게
-    보여주도록 신호를 준다."""
+    보여주도록 신호를 준다.
+
+    2026-07-17 추가: 선수명/감독명을 한글로 번역한다(app_export.py의 EPL
+    앱과 동일한 캐시 파일 공유 — _translate_name 참고). 정렬은 번역된
+    한글 기준으로 하는 게 UI에서 자연스러워서 영문 정렬에서 한글 정렬로
+    바꿨다."""
     bsd_squads = _load_json(BSD_SQUADS_PATH, {})
     raw = _load_json(SQUADS_PATH, {})
     fd_squads = {lk: {} for lk in LEAGUE_TEAM_MAPS}
@@ -355,7 +412,7 @@ def build_squads():
             unmatched_teams.add(team_name)
             continue
         lk, kr = hit
-        fd_squads[lk].setdefault(kr, []).append(player_name)
+        fd_squads[lk].setdefault(kr, []).append(_translate_name(player_name, name_cache))
     for lk in fd_squads:
         for kr in fd_squads[lk]:
             fd_squads[lk][kr].sort()
@@ -367,27 +424,29 @@ def build_squads():
         squads[lk] = {}
         if bsd_sq:
             for kr, entry in bsd_sq.items():
-                coach = ''
+                coach_en = ''
                 raw_players = []
                 if isinstance(entry, dict):
-                    coach = entry.get('coach') or ''
+                    coach_en = entry.get('coach') or ''
                     raw_players = entry.get('players') or []
                 elif isinstance(entry, list):
                     # 구버전 호환: 이름 문자열 리스트만 있던 시절 데이터
                     raw_players = [{'name': n, 'position': None} for n in entry if n]
+                coach = _translate_name(coach_en, name_cache) if coach_en else ''
 
                 bucket = {'gk': [], 'df': [], 'mf': [], 'fw': []}
                 all_names = []
                 has_any_position = False
                 for p in raw_players:
-                    name = p.get('name') if isinstance(p, dict) else p
+                    name_en = p.get('name') if isinstance(p, dict) else p
                     pos = p.get('position') if isinstance(p, dict) else None
-                    if not name:
+                    if not name_en:
                         continue
-                    all_names.append(name)
+                    name_ko = _translate_name(name_en, name_cache)
+                    all_names.append(name_ko)
                     if pos:
                         has_any_position = True
-                    bucket[_bucket_position(pos)].append(name)
+                    bucket[_bucket_position(pos)].append(name_ko)
                 for k in bucket:
                     bucket[k].sort()
                 if coach:
@@ -450,12 +509,14 @@ def build_h2h():
     return out
 
 
-def build_transfers():
+def build_transfers(name_cache):
     """리그별 이적(영입/이탈) — collect_transfers_bsd.py가 이미 EPL+6개 리그를
     전부 감지해서 transfers_bsd.json에 쌓아두고 있었는데, 지금까지 이 앱
     출력에 노출이 안 되고 있었다 (multi_league_index.html에 이미 UI 훅까지
-    준비돼 있었음, 2026-07-16 발견). player_name은 BSD 원문(영문) 그대로
-    유지 — SQUADS도 번역 없이 영문 그대로라 일관성 유지."""
+    준비돼 있었음, 2026-07-16 발견).
+    2026-07-17 추가: player_name을 한글로 번역한다 — 처음엔 SQUADS와의
+    일관성을 이유로 영문 그대로 뒀는데, SQUADS 쪽을 번역하기로 하면서
+    이쪽도 맞춰야 진짜 일관성이 유지된다."""
     records = _load_json(TRANSFERS_PATH, [])
     out = {lk: {kr: {'in': [], 'out': []} for kr in LEAGUE_TEAM_MAPS[lk]}
            for lk in LEAGUE_TEAM_MAPS}
@@ -471,9 +532,10 @@ def build_transfers():
             continue
         seen.add(dedup_key)
 
-        player_name = r.get('player_name')
-        if not player_name:
+        player_name_en = r.get('player_name')
+        if not player_name_en:
             continue
+        player_name = _translate_name(player_name_en, name_cache)
         to_team_kr, from_team_kr = r.get('to_team'), r.get('from_team')
 
         if to_league in out and to_team_kr in out[to_league]:
@@ -585,17 +647,19 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
 
 def main():
     os.makedirs('reports', exist_ok=True)
+    name_cache = _load_name_cache()  # app_export.py(EPL)와 공유하는 캐시
     schedules, elo_by_league, unmatched = build_all()
-    squads, unmatched_squad_teams = build_squads()
+    squads, unmatched_squad_teams = build_squads(name_cache)
     xg_by_league = _load_json(XG_PATH, {})
     injuries_by_league, unmatched_injury_teams = build_injuries()
-    transfers_by_league = build_transfers()
+    transfers_by_league = build_transfers(name_cache)
     h2h_by_league = build_h2h()
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
                     transfers_by_league, h2h_by_league, ml_ensemble)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
+    _save_name_cache(name_cache)
 
     total_sched = sum(len(v) for v in schedules.values())
     total_elo = sum(len(v) for v in elo_by_league.values())
@@ -610,7 +674,8 @@ def main():
           f'일정 {total_sched}건, ELO {total_elo}팀, '
           f'스쿼드 {total_squad_teams}팀/{total_squad_players}명, '
           f'xG {total_xg_teams}팀, 부상 {total_injury_teams}팀, '
-          f'이적 {total_transfers}건, H2H {total_h2h_pairs}개 조합', flush=True)
+          f'이적 {total_transfers}건, H2H {total_h2h_pairs}개 조합, '
+          f'이름 캐시 {len(name_cache)}건', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
         squad_players = sum(len(t['all']) for t in squads[lk].values())
         lk_transfers = sum(len(t['in']) + len(t['out']) for t in transfers_by_league[lk].values())
