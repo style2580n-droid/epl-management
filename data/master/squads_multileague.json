@@ -1,7 +1,7 @@
 {
  "championship": {
   "버밍엄 시티": {
-   "coach": "",
+   "coach": "Chris Davies",
    "players": [
     {
      "name": "Alex Cochrane",
@@ -166,7 +166,7 @@
    ]
   },
   "블랙번 로버스": {
-   "coach": "",
+   "coach": "Tony Mowbray",
    "players": [
     {
      "name": "Adam Forshaw",
@@ -335,7 +335,7 @@
    ]
   },
   "볼턴 원더러스": {
-   "coach": "",
+   "coach": "Steven Schumacher",
    "players": [
     {
      "name": "Akin Famewo",
@@ -460,7 +460,7 @@
    ]
   },
   "브리스톨 시티": {
-   "coach": "",
+   "coach": "Roy Hodgson",
    "players": [
     {
      "name": "Adam Murphy",
@@ -629,7 +629,7 @@
    ]
   },
   "번리": {
-   "coach": "",
+   "coach": "Scott Parker",
    "players": [
     {
      "name": "Aaron Ramsey",
@@ -794,7 +794,7 @@
    ]
   },
   "찰턴 애슬레틱": {
-   "coach": "",
+   "coach": "Nathan Jones",
    "players": [
     {
      "name": "Alan Mwamba",
@@ -963,7 +963,7 @@
    ]
   },
   "더비 카운티": {
-   "coach": "",
+   "coach": "John Eustace",
    "players": [
     {
      "name": "Andreas Weimann",
@@ -1084,7 +1084,7 @@
    ]
   },
   "링컨 시티": {
-   "coach": "",
+   "coach": "Tom Shaw",
    "players": [
     {
      "name": "Adam Jackson",
@@ -1213,7 +1213,7 @@
    ]
   },
   "미들즈브러": {
-   "coach": "",
+   "coach": "Kim Hellberg",
    "players": [
     {
      "name": "Abdoulaye Kanté",
@@ -1370,7 +1370,7 @@
    ]
   },
   "밀월": {
-   "coach": "",
+   "coach": "Alex Neil",
    "players": [
     {
      "name": "Adam Mayor",
@@ -1523,7 +1523,7 @@
    ]
   },
   "노리치 시티": {
-   "coach": "",
+   "coach": "Philippe Clement",
    "players": [
     {
      "name": "Ali Ahmed",
@@ -1672,7 +1672,7 @@
    ]
   },
   "포츠머스": {
-   "coach": "",
+   "coach": "John Mousinho",
    "players": [
     {
      "name": "Adrian Segečić",
@@ -1841,7 +1841,7 @@
    ]
   },
   "프레스턴 노스엔드": {
-   "coach": "",
+   "coach": "Paul Heckingbottom",
    "players": [
     {
      "name": "Alfie Devine",
@@ -1982,7 +1982,7 @@
    ]
   },
   "QPR": {
-   "coach": "",
+   "coach": "Julien Stéphan",
    "players": [
     {
      "name": "Alex Wilkie",
@@ -2191,7 +2191,7 @@
    ]
   },
   "셰필드 유나이티드": {
-   "coach": "",
+   "coach": "Chris Wilder",
    "players": [
     {
      "name": "Adam Davies",
@@ -2368,7 +2368,7 @@
    ]
   },
   "사우샘프턴": {
-   "coach": "",
+   "coach": "Tonda Eckert",
    "players": [
     {
      "name": "Aaron Ramsdale",
@@ -2545,7 +2545,7 @@
    ]
   },
   "스토크 시티": {
-   "coach": "",
+   "coach": "Mark Robins",
    "players": [
     {
      "name": "Aaron Cresswell",
@@ -2718,7 +2718,7 @@
    ]
   },
   "왓포드": {
-   "coach": "",
+   "coach": "Edward Still",
    "players": [
     {
      "name": "Albert Eames",
@@ -2835,7 +2835,7 @@
    ]
   },
   "웨스트브롬위치 알비온": {
-   "coach": "",
+   "coach": "James Morrison",
    "players": [
     {
      "name": "Alex Mowatt",
@@ -3008,7 +3008,7 @@
    ]
   },
   "웨스트햄 유나이티드": {
-   "coach": "",
+   "coach": "Nuno Espírito Santo",
    "players": [
     {
      "name": "Aaron Wan-Bissaka",
@@ -3129,7 +3129,7 @@
    ]
   },
   "카디프 시티": {
-   "coach": "",
+   "coach": "Brian Barry-Murphy",
    "players": [
     {
      "name": "Alex Robertson",
@@ -3278,7 +3278,7 @@
    ]
   },
   "스완지 시티": {
-   "coach": "",
+   "coach": "Vitor Matos",
    "players": [
     {
      "name": "Adam Idah",
@@ -3421,7 +3421,7 @@
  },
  "ligue1": {
   "앙제SCO": {
-   "coach": "",
+   "coach": "Stephane Gilli",
    "players": [
     {
      "name": "Abdoulaye Bamba",
@@ -3434,6 +3434,14 @@
     {
      "name": "Amine Sbai",
      "position": "M"
+    },
+    {
+     "name": "Anthony Bermont",
+     "position": "M"
+    },
+    {
+     "name": "Anthony Lopes",
+     "position": "G"
     },
     {
      "name": "Bané Diatta",
@@ -3452,10 +3460,6 @@
      "position": "D"
     },
     {
-     "name": "Djibirin Harouna",
-     "position": "F"
-    },
-    {
      "name": "Emmanuel Biumla",
      "position": "D"
     },
@@ -3468,6 +3472,10 @@
      "position": "M"
     },
     {
+     "name": "Harouna Djibirin",
+     "position": "F"
+    },
+    {
      "name": "Hervé Koffi",
      "position": "G"
     },
@@ -3478,6 +3486,10 @@
     {
      "name": "Jacques Ekomié",
      "position": "D"
+    },
+    {
+     "name": "Jim Allevinah",
+     "position": "F"
     },
     {
      "name": "Jordan Lefort",
@@ -3500,11 +3512,15 @@
      "position": "D"
     },
     {
+     "name": "Mamadou Usman Simbakoli",
+     "position": "F"
+    },
+    {
      "name": "Marius Courcoul",
      "position": "D"
     },
     {
-     "name": "Marius Louer",
+     "name": "Marius Louër",
      "position": "D"
     },
     {
@@ -3546,7 +3562,7 @@
    ]
   },
   "AJ 오세르": {
-   "coach": "",
+   "coach": "Will Still",
    "players": [
     {
      "name": "Alvin Petit Dol",
@@ -3711,7 +3727,7 @@
    ]
   },
   "르아브르AC": {
-   "coach": "",
+   "coach": "Didier Digard",
    "players": [
     {
      "name": "Abdoulaye Touré",
@@ -3794,10 +3810,6 @@
      "position": "G"
     },
     {
-     "name": "Loic Négo",
-     "position": "D"
-    },
-    {
      "name": "Mokrane Bentoumi",
      "position": "F"
     },
@@ -3846,6 +3858,10 @@
      "position": "D"
     },
     {
+     "name": "Vincent Sasso",
+     "position": "D"
+    },
+    {
      "name": "Yanis Beau Djellel",
      "position": "F"
     },
@@ -3860,7 +3876,7 @@
    ]
   },
   "르망FC": {
-   "coach": "",
+   "coach": "Patrick Videira",
    "players": [
     {
      "name": "Adil Bourabaa",
@@ -3977,7 +3993,7 @@
    ]
   },
   "릴OSC": {
-   "coach": "",
+   "coach": "Davide Ancelotti",
    "players": [
     {
      "name": "Aïssa Mandi",
@@ -4118,7 +4134,7 @@
    ]
   },
   "FC 로리앙": {
-   "coach": "",
+   "coach": "Alexandre Dujeux",
    "players": [
     {
      "name": "Abdoulaye Faye",
@@ -4251,7 +4267,7 @@
    ]
   },
   "OGC 니스": {
-   "coach": "",
+   "coach": "Olivier Pantaloni",
    "players": [
     {
      "name": "Abdulay Juma Bah",
@@ -4420,7 +4436,7 @@
    ]
   },
   "올랭피크 마르세유": {
-   "coach": "",
+   "coach": "Habib Beye",
    "players": [
     {
      "name": "Amine Gouiri",
@@ -4565,7 +4581,7 @@
    ]
   },
   "올랭피크 리옹": {
-   "coach": "",
+   "coach": "Paulo Fonseca",
    "players": [
     {
      "name": "Abner Vinícius",
@@ -4714,7 +4730,7 @@
    ]
   },
   "파리 FC": {
-   "coach": "",
+   "coach": "Liam Rosenior",
    "players": [
     {
      "name": "Adama Camara",
@@ -4867,7 +4883,7 @@
    ]
   },
   "파리 생제르맹": {
-   "coach": "",
+   "coach": "Luis Enrique",
    "players": [
     {
      "name": "Achraf Hakimi",
@@ -4996,7 +5012,7 @@
    ]
   },
   "RC 랑스": {
-   "coach": "",
+   "coach": "Dino Toppmoller",
    "players": [
     {
      "name": "Abdallah Sima",
@@ -5020,10 +5036,6 @@
     },
     {
      "name": "Andrija Bulatovic",
-     "position": "M"
-    },
-    {
-     "name": "Anthony Bermont",
      "position": "M"
     },
     {
@@ -5121,7 +5133,7 @@
    ]
   },
   "라싱 스트라스부르": {
-   "coach": "",
+   "coach": "Hugo Oliveira",
    "players": [
     {
      "name": "Aarón Anselmino",
@@ -5270,7 +5282,7 @@
    ]
   },
   "스타드 렌": {
-   "coach": "",
+   "coach": "Franck Haise",
    "players": [
     {
      "name": "Abdelhamid Ait Boudlal",
@@ -5395,7 +5407,7 @@
    ]
   },
   "툴루즈": {
-   "coach": "",
+   "coach": "Jens Askou",
    "players": [
     {
      "name": "Abu Francis",
@@ -5544,7 +5556,7 @@
    ]
   },
   "ESTAC 트루아": {
-   "coach": "",
+   "coach": "Stephane Dumont",
    "players": [
     {
      "name": "Adrien Monfray",
@@ -5667,10 +5679,6 @@
      "position": "M"
     },
     {
-     "name": "Yasser Larouci",
-     "position": "D"
-    },
-    {
      "name": "Yvann Titi",
      "position": "D"
     },
@@ -5681,7 +5689,7 @@
    ]
   },
   "AS 모나코": {
-   "coach": "",
+   "coach": "Sébastien Pocognoli",
    "players": [
     {
      "name": "Aladji Bamba",
@@ -5820,7 +5828,7 @@
  },
  "bundesliga": {
   "1.FC 쾰른": {
-   "coach": "",
+   "coach": "René Wagner",
    "players": [
     {
      "name": "Alessio Castro-Montes",
@@ -5973,7 +5981,7 @@
    ]
   },
   "우니온 베를린": {
-   "coach": "",
+   "coach": "Steffen Baumgart",
    "players": [
     {
      "name": "Alex Král",
@@ -6130,7 +6138,7 @@
    ]
   },
   "1.FSV 마인츠05": {
-   "coach": "",
+   "coach": "Urs Fischer",
    "players": [
     {
      "name": "Andreas Hanche Olsen",
@@ -6275,7 +6283,7 @@
    ]
   },
   "바이어 레버쿠젠": {
-   "coach": "",
+   "coach": "Kasper Hjulmand",
    "players": [
     {
      "name": "Aleix García",
@@ -6400,7 +6408,7 @@
    ]
   },
   "보루시아 도르트문트": {
-   "coach": "",
+   "coach": "Niko Kovač",
    "players": [
     {
      "name": "Alexander Meyer",
@@ -6521,7 +6529,7 @@
    ]
   },
   "보루시아 묀헨글라드바흐": {
-   "coach": "",
+   "coach": "Eugen Polanski",
    "players": [
     {
      "name": "Alejo Sarco",
@@ -6658,7 +6666,7 @@
    ]
   },
   "아인트라흐트 프랑크푸르트": {
-   "coach": "",
+   "coach": "Albert Riera",
    "players": [
     {
      "name": "Amil Šiljević",
@@ -6811,7 +6819,7 @@
    ]
   },
   "FC 아우크스부르크": {
-   "coach": "",
+   "coach": "Manuel Baum",
    "players": [
     {
      "name": "Alexis Claude-Maurice",
@@ -6940,7 +6948,7 @@
    ]
   },
   "바이에른 뮌헨": {
-   "coach": "",
+   "coach": "Vincent Kompany",
    "players": [
     {
      "name": "Aleksandar Pavlović",
@@ -7089,7 +7097,7 @@
    ]
   },
   "샬케04": {
-   "coach": "",
+   "coach": "Miron Muslić",
    "players": [
     {
      "name": "Adil Aouchiche",
@@ -7180,10 +7188,6 @@
      "position": "G"
     },
     {
-     "name": "Luca Podlech",
-     "position": "G"
-    },
-    {
      "name": "Luca Vozar",
      "position": "M"
     },
@@ -7258,7 +7262,7 @@
    ]
   },
   "함부르크SV": {
-   "coach": "",
+   "coach": "Merlin Polzin",
    "players": [
     {
      "name": "Albert Grønbæk",
@@ -7359,7 +7363,7 @@
    ]
   },
   "RB 라이프치히": {
-   "coach": "",
+   "coach": "Ole Werner",
    "players": [
     {
      "name": "Abdul Al Khalaf",
@@ -7508,7 +7512,7 @@
    ]
   },
   "SC 프라이부르크": {
-   "coach": "",
+   "coach": "Julian Schuster",
    "players": [
     {
      "name": "Anthony Jung",
@@ -7621,7 +7625,7 @@
    ]
   },
   "SC 파더보른07": {
-   "coach": "",
+   "coach": "Ralf Kettemann",
    "players": [
     {
      "name": "Albert Millgramm",
@@ -7700,10 +7704,6 @@
      "position": "G"
     },
     {
-     "name": "Martin Ens",
-     "position": "D"
-    },
-    {
      "name": "Mattes Hansen",
      "position": "D"
     },
@@ -7778,7 +7778,7 @@
    ]
   },
   "SV 엘버스베르크": {
-   "coach": "",
+   "coach": "Vincent Wagner",
    "players": [
     {
      "name": "Amara Condé",
@@ -7927,7 +7927,7 @@
    ]
   },
   "베르더 브레멘": {
-   "coach": "",
+   "coach": "Daniel Thioune",
    "players": [
     {
      "name": "Alexander Schlager",
@@ -8080,7 +8080,7 @@
    ]
   },
   "TSG 호펜하임": {
-   "coach": "",
+   "coach": "Christian Ilzer",
    "players": [
     {
      "name": "Adam Hložek",
@@ -8189,7 +8189,7 @@
    ]
   },
   "VfB 슈투트가르트": {
-   "coach": "",
+   "coach": "Sebastian Hoeneß",
    "players": [
     {
      "name": "Ameen Al-Dakhil",
@@ -8324,7 +8324,7 @@
  },
  "seriea": {
   "AC밀란": {
-   "coach": "",
+   "coach": "Rúben Amorim",
    "players": [
     {
      "name": "Adrien Rabiot",
@@ -8449,7 +8449,7 @@
    ]
   },
   "AS로마": {
-   "coach": "",
+   "coach": "Gian Piero Gasperini",
    "players": [
     {
      "name": "Alessio Marcaccini",
@@ -8582,7 +8582,7 @@
    ]
   },
   "아탈란타": {
-   "coach": "",
+   "coach": "Raffaele Palladino",
    "players": [
     {
      "name": "Albert Navarro",
@@ -8715,7 +8715,7 @@
    ]
   },
   "볼로냐": {
-   "coach": "",
+   "coach": "Domenico Tedesco",
    "players": [
     {
      "name": "Benjamín Domínguez",
@@ -8864,7 +8864,7 @@
    ]
   },
   "칼리아리": {
-   "coach": "",
+   "coach": "Fabio Pisacane",
    "players": [
     {
      "name": "Adam Obert",
@@ -9025,7 +9025,7 @@
    ]
   },
   "코모": {
-   "coach": "",
+   "coach": "Cesc Fàbregas",
    "players": [
     {
      "name": "Adrian Lahdo",
@@ -9162,7 +9162,7 @@
    ]
   },
   "피오렌티나": {
-   "coach": "",
+   "coach": "Paolo Vanoli",
    "players": [
     {
      "name": "Abdelhamid Sabiri",
@@ -9311,7 +9311,7 @@
    ]
   },
   "프로시노네": {
-   "coach": "",
+   "coach": "Massimiliano Alvini",
    "players": [
     {
      "name": "Alejandro Cichero",
@@ -9452,7 +9452,7 @@
    ]
   },
   "제노아": {
-   "coach": "",
+   "coach": "Daniele De Rossi",
    "players": [
     {
      "name": "Aarón Martín",
@@ -9637,7 +9637,7 @@
    ]
   },
   "인테르": {
-   "coach": "",
+   "coach": "Cristian Chivu",
    "players": [
     {
      "name": "Alain Taho",
@@ -9782,7 +9782,7 @@
    ]
   },
   "유벤투스": {
-   "coach": "",
+   "coach": "Luciano Spalletti",
    "players": [
     {
      "name": "Andrea Cambiaso",
@@ -9919,7 +9919,7 @@
    ]
   },
   "라치오": {
-   "coach": "",
+   "coach": "Gennaro Gattuso",
    "players": [
     {
      "name": "Adam Marušić",
@@ -10088,7 +10088,7 @@
    ]
   },
   "레체": {
-   "coach": "",
+   "coach": "Eusebio Di Francesco",
    "players": [
     {
      "name": "Alexandru Borbei",
@@ -10257,7 +10257,7 @@
    ]
   },
   "몬차": {
-   "coach": "",
+   "coach": "Ivan Jurić",
    "players": [
     {
      "name": "Adam Bakoune",
@@ -10398,7 +10398,7 @@
    ]
   },
   "파르마": {
-   "coach": "",
+   "coach": "Carlos Cuesta",
    "players": [
     {
      "name": "Abdoulaye Ndiaye",
@@ -10563,7 +10563,7 @@
    ]
   },
   "사수올로": {
-   "coach": "",
+   "coach": "Alberto Aquilani",
    "players": [
     {
      "name": "Alieu Fadera",
@@ -10700,7 +10700,7 @@
    ]
   },
   "나폴리": {
-   "coach": "",
+   "coach": "Massimiliano Allegri",
    "players": [
     {
      "name": "Alessandro Buongiorno",
@@ -10833,7 +10833,7 @@
    ]
   },
   "토리노": {
-   "coach": "",
+   "coach": "Roberto D'Aversa",
    "players": [
     {
      "name": "Adam Masina",
@@ -10974,7 +10974,7 @@
    ]
   },
   "우디네세": {
-   "coach": "",
+   "coach": "Kosta Runjaic",
    "players": [
     {
      "name": "Abdoulaye Camara",
@@ -11151,7 +11151,7 @@
    ]
   },
   "베네치아": {
-   "coach": "",
+   "coach": "Giovanni Stroppa",
    "players": [
     {
      "name": "Alfred Duncan",
@@ -11278,7 +11278,7 @@
  },
  "eredivisie": {
   "ADO 덴하흐": {
-   "coach": "",
+   "coach": "Robin Peter",
    "players": [
     {
      "name": "Antoine Lejoly",
@@ -11411,7 +11411,7 @@
    ]
   },
   "아약스": {
-   "coach": "",
+   "coach": "Michel",
    "players": [
     {
      "name": "Aaron Bouwman",
@@ -11568,7 +11568,7 @@
    ]
   },
   "AZ 알크마르": {
-   "coach": "",
+   "coach": "Lee Roy Echteld",
    "players": [
     {
      "name": "Alexandre Penetra",
@@ -11733,7 +11733,7 @@
    ]
   },
   "엑셀시오르 로테르담": {
-   "coach": "",
+   "coach": "Ruben den Uil",
    "players": [
     {
      "name": "Adam Carlén",
@@ -11870,7 +11870,7 @@
    ]
   },
   "FC 흐로닝언": {
-   "coach": "",
+   "coach": "Dick Lukkien",
    "players": [
     {
      "name": "Brynjólfur Darri Willumsson",
@@ -12011,19 +12011,19 @@
     {
      "name": "Yenio Holder",
      "position": "M"
-    },
-    {
-     "name": "Younes Taha",
-     "position": "M"
     }
    ]
   },
   "FC 트벤테": {
-   "coach": "",
+   "coach": "John van den Brom",
    "players": [
     {
      "name": "Arno Verschueren",
      "position": "M"
+    },
+    {
+     "name": "Aske Adelgaard",
+     "position": "D"
     },
     {
      "name": "Bart van Rooij",
@@ -12046,6 +12046,10 @@
      "position": "M"
     },
     {
+     "name": "Gijs Besselink",
+     "position": "M"
+    },
+    {
      "name": "Guilherme Peixoto",
      "position": "D"
     },
@@ -12054,8 +12058,16 @@
      "position": "G"
     },
     {
+     "name": "Julien Mesbahi",
+     "position": "D"
+    },
+    {
      "name": "Kristian Hlynsson",
      "position": "M"
+    },
+    {
+     "name": "Krzysztof Kurowski",
+     "position": "D"
     },
     {
      "name": "Lars Unnerstall",
@@ -12090,6 +12102,10 @@
      "position": "D"
     },
     {
+     "name": "Naci Ünüvar",
+     "position": "F"
+    },
+    {
      "name": "Nigel Groenewald",
      "position": "F"
     },
@@ -12099,6 +12115,10 @@
     },
     {
      "name": "Przemysław Tytoń",
+     "position": "G"
+    },
+    {
+     "name": "Remko Pasveer",
      "position": "G"
     },
     {
@@ -12115,6 +12135,10 @@
     },
     {
      "name": "Sam Lammers",
+     "position": "F"
+    },
+    {
+     "name": "Sayfallah Ltaief",
      "position": "F"
     },
     {
@@ -12140,11 +12164,15 @@
     {
      "name": "Yannick Gerritsen",
      "position": "G"
+    },
+    {
+     "name": "Younes Taha",
+     "position": "M"
     }
    ]
   },
   "FC 위트레흐트": {
-   "coach": "",
+   "coach": "Ron Jans",
    "players": [
     {
      "name": "Adrian Blake",
@@ -12313,7 +12341,7 @@
    ]
   },
   "페예노르트": {
-   "coach": "",
+   "coach": "Robin van Persie",
    "players": [
     {
      "name": "Anel Ahmedhodžić",
@@ -12518,7 +12546,7 @@
    ]
   },
   "포르투나 시타르드": {
-   "coach": "",
+   "coach": "Danny Buijs",
    "players": [
     {
      "name": "Alen Halilović",
@@ -12651,7 +12679,7 @@
    ]
   },
   "호 어헤드 이글스": {
-   "coach": "",
+   "coach": "Melvin Boel",
    "players": [
     {
      "name": "Adam Benbouker",
@@ -12659,10 +12687,6 @@
     },
     {
      "name": "Alfons Sampsted",
-     "position": "D"
-    },
-    {
-     "name": "Aske Adelgaard",
      "position": "D"
     },
     {
@@ -12816,7 +12840,7 @@
    ]
   },
   "N.E.C. 네이메헌": {
-   "coach": "",
+   "coach": "Dick Schreuder",
    "players": [
     {
      "name": "Adam Tahaui",
@@ -12977,7 +13001,7 @@
    ]
   },
   "PEC 즈볼레": {
-   "coach": "",
+   "coach": "Henry van der Vegt",
    "players": [
     {
      "name": "Braydon Manu",
@@ -13134,7 +13158,7 @@
    ]
   },
   "PSV 에인트호번": {
-   "coach": "",
+   "coach": "Peter Bosz",
    "players": [
     {
      "name": "Alassane Pléa",
@@ -13259,7 +13283,7 @@
    ]
   },
   "SC 캄뷔르": {
-   "coach": "",
+   "coach": "Johan Plat",
    "players": [
     {
      "name": "Amar Bakkati",
@@ -13420,7 +13444,7 @@
    ]
   },
   "sc 헤렌베인": {
-   "coach": "",
+   "coach": "Robin Veldman",
    "players": [
     {
      "name": "Amourricho van Axel-Dongen",
@@ -13561,7 +13585,7 @@
    ]
   },
   "텔스타르": {
-   "coach": "",
+   "coach": "Henk Brugge",
    "players": [
     {
      "name": "Abdelnour Soualhia",
@@ -13710,7 +13734,7 @@
    ]
   },
   "스파르타 로테르담": {
-   "coach": "",
+   "coach": "Rogier Meijer",
    "players": [
     {
      "name": "Alwande Roaldsoy",
@@ -13847,7 +13871,7 @@
    ]
   },
   "빌럼II": {
-   "coach": "",
+   "coach": "John Stegeman",
    "players": [
     {
      "name": "Alessandro Ciranni",
@@ -13888,10 +13912,6 @@
     {
      "name": "Finn Stam",
      "position": "D"
-    },
-    {
-     "name": "Gijs Besselink",
-     "position": "M"
     },
     {
      "name": "Jaden Slory",
@@ -13982,7 +14002,7 @@
  },
  "laliga": {
   "아틀레틱 빌바오": {
-   "coach": "",
+   "coach": "Ernesto Valverde",
    "players": [
     {
      "name": "Adama Boiro",
@@ -14065,10 +14085,6 @@
      "position": "D"
     },
     {
-     "name": "Jon de Luis",
-     "position": "D"
-    },
-    {
      "name": "Maroan Sannadi",
      "position": "F"
     },
@@ -14123,7 +14139,7 @@
    ]
   },
   "아틀레티코 마드리드": {
-   "coach": "",
+   "coach": "José Ángel Herrera",
    "players": [
     {
      "name": "Alba Bucero",
@@ -14284,7 +14300,7 @@
    ]
   },
   "셀타 비고": {
-   "coach": "",
+   "coach": "Claudio Giráldez",
    "players": [
     {
      "name": "Alvaro Núñez",
@@ -14401,7 +14417,7 @@
    ]
   },
   "알라베스": {
-   "coach": "",
+   "coach": "Quique Sánchez Flores",
    "players": [
     {
      "name": "Abderrahman Rebbach",
@@ -14558,7 +14574,7 @@
    ]
   },
   "엘체": {
-   "coach": "",
+   "coach": "Martin Anselmi",
    "players": [
     {
      "name": "Abiel Osorio",
@@ -14743,7 +14759,7 @@
    ]
   },
   "에스파뇰": {
-   "coach": "",
+   "coach": "Sara Monforte",
    "players": [
     {
      "name": "Aina Duran",
@@ -14852,7 +14868,7 @@
    ]
   },
   "바르셀로나": {
-   "coach": "",
+   "coach": "Hans-Dieter Flick",
    "players": [
     {
      "name": "Alejandro Balde",
@@ -14973,7 +14989,7 @@
    ]
   },
   "헤타페": {
-   "coach": "",
+   "coach": "José Bordalás",
    "players": [
     {
      "name": "Abdel Abqar",
@@ -15110,7 +15126,7 @@
    ]
   },
   "레반테": {
-   "coach": "",
+   "coach": "Vicente Iborra",
    "players": [
     {
      "name": "Adrián de la Fuente",
@@ -15275,7 +15291,7 @@
    ]
   },
   "말라가": {
-   "coach": "",
+   "coach": "Juan Funes",
    "players": [
     {
      "name": "Aarón Ochoa",
@@ -15420,7 +15436,7 @@
    ]
   },
   "오사수나": {
-   "coach": "",
+   "coach": "Luis Miguel Ramis",
    "players": [
     {
      "name": "Abel Bretones",
@@ -15549,7 +15565,7 @@
    ]
   },
   "라요 바예카노": {
-   "coach": "",
+   "coach": "Benat San Jose",
    "players": [
     {
      "name": "Abdul Mumin",
@@ -15698,7 +15714,7 @@
    ]
   },
   "레알 베티스": {
-   "coach": "",
+   "coach": "Manuel Pellegrini",
    "players": [
     {
      "name": "Abdessamad Ezzalzouli",
@@ -15831,7 +15847,7 @@
    ]
   },
   "레알 마드리드": {
-   "coach": "",
+   "coach": "José Mourinho",
    "players": [
     {
      "name": "Álvaro Carreras",
@@ -16000,7 +16016,7 @@
    ]
   },
   "레알 소시에다드": {
-   "coach": "",
+   "coach": "Arturo Ruiz",
    "players": [
     {
      "name": "Aiara Aguirrezabala",
@@ -16117,7 +16133,7 @@
    ]
   },
   "세비야": {
-   "coach": "",
+   "coach": "Luis Garcia",
    "players": [
     {
      "name": "Adnan Januzaj",
@@ -16262,7 +16278,7 @@
    ]
   },
   "발렌시아": {
-   "coach": "",
+   "coach": "Carlos Corberán",
    "players": [
     {
      "name": "Aaron Mayol",
@@ -16431,7 +16447,7 @@
    ]
   },
   "비야레알": {
-   "coach": "",
+   "coach": "Marcelino",
    "players": [
     {
      "name": "Alassane Diatta",
