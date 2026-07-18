@@ -11934,5 +11934,60 @@
             }
         ],
         "collected_at": "2026-07-18T04:55:32.945415+00:00"
+    },
+    "1315706354": {
+        "match": {
+            "id": 1315706354,
+            "round": "Group Stage - 1",
+            "date": "2026-07-18T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6677730,
+                "logo": "https://highlightly.net/soccer/images/teams/6677730.png",
+                "name": "Linense"
+            },
+            "homeTeam": {
+                "id": 13294255,
+                "logo": "https://highlightly.net/soccer/images/teams/13294255.png",
+                "name": "Bandeirante SP"
+            },
+            "league": {
+                "id": 632226,
+                "logo": "https://highlightly.net/soccer/images/leagues/632226.png",
+                "name": "Copa Paulista",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13294255,
+                    "logo": "https://highlightly.net/soccer/images/teams/13294255.png",
+                    "name": "Bandeirante SP"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6677730,
+                    "logo": "https://highlightly.net/soccer/images/teams/6677730.png",
+                    "name": "Linense"
+                }
+            }
+        ],
+        "collected_at": "2026-07-18T12:23:49.730871+00:00"
     }
 }
