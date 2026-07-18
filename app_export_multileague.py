@@ -69,6 +69,26 @@ def _save_name_cache(cache):
         json.dump(cache, f, ensure_ascii=False, indent=1)
 
 
+_MISTRANSLATION_MARKERS = (
+    '세요', '십시오', '습니다', '합니다', '됩니다', '해요', '하세요',
+    '주세요', '것입니다', '것이다', '였다', '이었다', '했다', '한다',
+    '떠나', '구출', '살펴보', '찾아보', '찾으세요', '찾아서',
+)
+
+
+def _looks_like_mistranslation(translated):
+    """구글 번역이 사람 이름을 진짜 문장/명령문으로 직역해버린 경우를
+    걸러낸다 (2026-07-18 발견 — 예: 'Kevin De Bruyne'가 '드 브루인을
+    찾아보세요'로, 어떤 이름은 '~을 떠나다'/'~구출'로 번역됨. 이름 일부가
+    흔한 영어 단어와 겹치면 구글 번역이 고유명사가 아니라 문장으로
+    처리해버리는 게 원인). 완벽한 필터는 아니고 흔한 오역 패턴만 잡는
+    안전장치 — 여기 걸리면 원문 영문 이름을 그대로 쓴다(틀린 한글
+    번역보다 안 틀린 영문 원문이 낫다는 원칙)."""
+    if not translated:
+        return False
+    return any(marker in translated for marker in _MISTRANSLATION_MARKERS)
+
+
 def _translate_name(name, cache):
     """선수/감독명 -> 한글 (2026-07-17 추가). app_export.py의 EPL용
     _translate_name과 같은 캐시 파일을 공유하되, 소스 언어를 'en'으로
@@ -76,10 +96,14 @@ def _translate_name(name, cache):
     프랑스어/네덜란드어 표기가 섞여 있어서(예: 'Müller', 'Müller'를 영어로
     잘못 취급하면 발음이 틀어질 수 있음), 구글 번역이 원어를 스스로
     감지하게 하는 쪽이 더 정확하다. 실패하면 원문 그대로 반환(안전 폴백,
-    EPL 쪽과 동일한 방침)."""
+    EPL 쪽과 동일한 방침).
+
+    2026-07-18 추가: 캐시에 있어도 오역으로 의심되면(_looks_like_mistranslation)
+    재번역을 시도한다 — 이전 실행에서 잘못 캐시된 값이 계속 재사용되는 걸
+    막기 위한 자가 치유 로직."""
     if not name:
         return name
-    if name in cache:
+    if name in cache and not _looks_like_mistranslation(cache[name]):
         return cache[name]
     try:
         resp = requests.get(
@@ -94,6 +118,8 @@ def _translate_name(name, cache):
         ko = name  # 실패 시 원문 그대로 (예외 없이 넘어감 — EPL 쪽과 동일 원칙)
     else:
         time.sleep(0.05)  # 신규 항목만 지연, 캐시 히트는 즉시 반환됨
+    if _looks_like_mistranslation(ko):
+        ko = name  # 오역으로 보이면 원문 영문 이름으로 되돌림
     cache[name] = ko
     return ko
 # 2026-07-16 확인: 앱의 STATIC_LOGOS(로컬 파일)가 이미 118팀 전부 채워져 있어서

@@ -68,16 +68,39 @@ def _fuzzy_cache_match(name, cache):
     return best_ko
 
 
+_MISTRANSLATION_MARKERS = (
+    '세요', '십시오', '습니다', '합니다', '됩니다', '해요', '하세요',
+    '주세요', '것입니다', '것이다', '였다', '이었다', '했다', '한다',
+    '떠나', '구출', '살펴보', '찾아보', '찾으세요', '찾아서',
+)
+
+
+def _looks_like_mistranslation(translated):
+    """구글 번역이 사람 이름을 진짜 문장/명령문으로 직역해버린 경우를
+    걸러낸다 (2026-07-18 발견 — 6개 리그 앱 쪽 실전 실행에서 'Kevin De
+    Bruyne'가 '드 브루인을 찾아보세요'로, 어떤 이름은 '~을 떠나다'/
+    '~구출'로 나온 걸 확인함. EPL 쪽도 완전히 같은 메커니즘이라 똑같이
+    당할 수 있어서 여기도 방어 추가). 완벽한 필터는 아니고 흔한 오역
+    패턴만 잡는 안전장치 — 여기 걸리면 원문 영문 이름을 그대로 쓴다."""
+    if not translated:
+        return False
+    return any(marker in translated for marker in _MISTRANSLATION_MARKERS)
+
+
 def _translate_name(name, cache):
     """영문 선수명 -> 한글. 캐시에 정확히 있으면 재사용, 없으면 캐시 내
     짧은 이름과의 부분일치(퍼지 매칭)를 시도, 그래도 없으면 구글 번역
-    무료 엔드포인트로 조회(키 불필요, 실패하면 영문 그대로 반환)."""
+    무료 엔드포인트로 조회(키 불필요, 실패하면 영문 그대로 반환).
+
+    2026-07-18 추가: 캐시/퍼지매칭/신규번역 결과 전부 _looks_like_mistranslation
+    으로 한 번 더 검증한다 — 오역으로 의심되면 원문으로 재시도하거나
+    폴백한다(자가 치유 — 이전에 잘못 캐시된 값도 다음 실행에서 걸러짐)."""
     if not name:
         return name
-    if name in cache:
+    if name in cache and not _looks_like_mistranslation(cache[name]):
         return cache[name]
     fuzzy = _fuzzy_cache_match(name, cache)
-    if fuzzy:
+    if fuzzy and not _looks_like_mistranslation(fuzzy):
         cache[name] = fuzzy
         return fuzzy
     try:
@@ -93,6 +116,8 @@ def _translate_name(name, cache):
         ko = name  # 실패 시 영문 이름 그대로 사용 (예외 없이 넘어감)
     else:
         time.sleep(0.05)  # API 과다 호출 방지 (신규 항목만 지연, 캐시 히트는 즉시)
+    if _looks_like_mistranslation(ko):
+        ko = name  # 오역으로 보이면 원문 영문 이름으로 되돌림
     cache[name] = ko
     return ko
 
