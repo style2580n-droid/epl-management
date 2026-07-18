@@ -2993,6 +2993,143 @@
      "position": "F"
     }
    ]
+  },
+  "렉섬": {
+   "coach": "Phil Parkinson",
+   "players": [
+    {
+     "name": "Aaron James",
+     "position": "D"
+    },
+    {
+     "name": "Alexander James Moore",
+     "position": "M"
+    },
+    {
+     "name": "Arthur Okonkwo",
+     "position": "G"
+    },
+    {
+     "name": "Bailey Cadamarteri",
+     "position": "F"
+    },
+    {
+     "name": "Ben Sheaf",
+     "position": "M"
+    },
+    {
+     "name": "Callum Burton",
+     "position": "G"
+    },
+    {
+     "name": "Callum Doyle",
+     "position": "D"
+    },
+    {
+     "name": "Conor Coady",
+     "position": "D"
+    },
+    {
+     "name": "Danny Ward",
+     "position": "G"
+    },
+    {
+     "name": "Dan Scarr",
+     "position": "D"
+    },
+    {
+     "name": "Davis Keillor-Dunn",
+     "position": "F"
+    },
+    {
+     "name": "Dominic Hyam",
+     "position": "D"
+    },
+    {
+     "name": "Elliott Lee",
+     "position": "M"
+    },
+    {
+     "name": "George Dobson",
+     "position": "M"
+    },
+    {
+     "name": "George Thomason",
+     "position": "M"
+    },
+    {
+     "name": "Harry Ashfield",
+     "position": "M"
+    },
+    {
+     "name": "Josh Windass",
+     "position": "F"
+    },
+    {
+     "name": "Kieffer Moore",
+     "position": "F"
+    },
+    {
+     "name": "Lewis Brunt",
+     "position": "D"
+    },
+    {
+     "name": "Lewis O'Brien",
+     "position": "M"
+    },
+    {
+     "name": "Liberato Cacace",
+     "position": "M"
+    },
+    {
+     "name": "Matty James",
+     "position": "M"
+    },
+    {
+     "name": "Max Cleworth",
+     "position": "D"
+    },
+    {
+     "name": "Nathan Broadhead",
+     "position": "F"
+    },
+    {
+     "name": "Oliver Rathbone",
+     "position": "M"
+    },
+    {
+     "name": "Ryan Barnett",
+     "position": "M"
+    },
+    {
+     "name": "Ryan Hardie",
+     "position": "F"
+    },
+    {
+     "name": "Ryan Longman",
+     "position": "M"
+    },
+    {
+     "name": "Sam Smith",
+     "position": "F"
+    },
+    {
+     "name": "Sebastian Revan",
+     "position": "M"
+    },
+    {
+     "name": "Thomas Christopher Kelly",
+     "position": "M"
+    },
+    {
+     "name": "Tom Kelly",
+     "position": "D"
+    },
+    {
+     "name": "Zak Vyner",
+     "position": "D"
+    }
+   ]
   }
  },
  "ligue1": {
@@ -13290,168 +13427,256 @@
  },
  "laliga": {
   "아틀레틱 빌바오": {
-   "coach": "Ernesto Valverde",
+   "coach": "Rubén Berrogui",
    "players": [
     {
-     "name": "Adrian Perez",
-     "position": "M"
-    },
-    {
-     "name": "Ander Izagirre",
-     "position": "D"
-    },
-    {
-     "name": "Asier Hierro",
+     "name": "Ainize Barea",
      "position": "F"
     },
     {
-     "name": "Elijah Gift",
-     "position": "M"
+     "name": "Ane Anorga",
+     "position": "F"
     },
     {
-     "name": "Iker Monreal Agundez",
+     "name": "Ane Azcona",
+     "position": "F"
+    },
+    {
+     "name": "Ane Azkona",
+     "position": "F"
+    },
+    {
+     "name": "Ane Bordagaray",
      "position": "D"
     },
     {
-     "name": "Mikel Santos",
+     "name": "Ane Campos",
+     "position": "F"
+    },
+    {
+     "name": "Ane Elexpuru Añorga",
+     "position": "D"
+    },
+    {
+     "name": "Bibiane Schulze Solano",
+     "position": "D"
+    },
+    {
+     "name": "Clara Pinedo",
+     "position": "M"
+    },
+    {
+     "name": "Daniela Agote",
+     "position": "F"
+    },
+    {
+     "name": "Eider Arana",
+     "position": "D"
+    },
+    {
+     "name": "Elene Gurtubay",
+     "position": "M"
+    },
+    {
+     "name": "Estefa",
+     "position": "M"
+    },
+    {
+     "name": "Irati Alfaro",
+     "position": "D"
+    },
+    {
+     "name": "Irene Oguiza",
+     "position": "M"
+    },
+    {
+     "name": "Jone Amezaga Martinez",
+     "position": "F"
+    },
+    {
+     "name": "Leire Baños",
+     "position": "M"
+    },
+    {
+     "name": "Maitane Vilariño",
+     "position": "M"
+    },
+    {
+     "name": "Maite Valero",
+     "position": "M"
+    },
+    {
+     "name": "Marta Sanadri",
+     "position": "F"
+    },
+    {
+     "name": "Naia Landaluze",
+     "position": "D"
+    },
+    {
+     "name": "Nerea Benito",
+     "position": "D"
+    },
+    {
+     "name": "Nerea Benito Zaldibar",
+     "position": "D"
+    },
+    {
+     "name": "Nerea Nevado",
+     "position": "D"
+    },
+    {
+     "name": "Oihana Agirregomezkorta",
+     "position": "F"
+    },
+    {
+     "name": "Olatz Santana",
+     "position": "G"
+    },
+    {
+     "name": "Olatz Santana",
+     "position": "G"
+    },
+    {
+     "name": "Patricia Zugasti",
+     "position": "F"
+    },
+    {
+     "name": "Sara Ortega‌ Ruiz",
+     "position": "M"
+    },
+    {
+     "name": "Thais Begona",
+     "position": "F"
+    },
+    {
+     "name": "Thais Begoña Pargaray Bolekia",
+     "position": "M"
+    },
+    {
+     "name": "Ziara Vega Uribarri",
      "position": "G"
     }
    ]
   },
   "아틀레티코 마드리드": {
-   "coach": "José Ángel Herrera",
+   "coach": "Diego Simeone",
    "players": [
     {
-     "name": "Ainhoa Vicente Moraza",
-     "position": "D"
+     "name": "Ademola Lookman",
+     "position": "F"
     },
     {
-     "name": "Alba Bucero",
+     "name": "Alejandro Grimaldo",
+     "position": "M"
+    },
+    {
+     "name": "Alexander Sørloth",
+     "position": "F"
+    },
+    {
+     "name": "Alex Baena",
+     "position": "M"
+    },
+    {
+     "name": "Alvaro Moreno",
      "position": "G"
     },
     {
-     "name": "Alexia Fernández Díaz",
+     "name": "Antonio López",
      "position": "D"
     },
     {
-     "name": "Amaiur Sarriegi",
+     "name": "Carlos Martín",
      "position": "F"
     },
     {
-     "name": "Carmen Menayo",
+     "name": "Dávid Hancko",
      "position": "D"
     },
     {
-     "name": "Celia Gómez",
+     "name": "Giuliano Simeone",
      "position": "M"
     },
     {
-     "name": "Claudia Barrios",
-     "position": "M"
-    },
-    {
-     "name": "Daniela Miñambres",
-     "position": "M"
-    },
-    {
-     "name": "Fiamma Benítez",
-     "position": "M"
-    },
-    {
-     "name": "Génesis Pérez",
+     "name": "Jan Oblak",
      "position": "G"
     },
     {
-     "name": "Gio Garbelini",
-     "position": "F"
-    },
-    {
-     "name": "Henrietta Csiszár",
+     "name": "Johnny Cardoso",
      "position": "M"
     },
     {
-     "name": "Kathrine Kühl",
-     "position": "M"
-    },
-    {
-     "name": "Laura Tanarro",
+     "name": "José María Giménez",
      "position": "D"
     },
     {
-     "name": "Lauren",
-     "position": "D"
-    },
-    {
-     "name": "Leyre Valdivia",
-     "position": "D"
-    },
-    {
-     "name": "Luany",
-     "position": "M"
-    },
-    {
-     "name": "Lucía Rodríguez",
-     "position": "D"
-    },
-    {
-     "name": "Lydia Rodríguez",
-     "position": "D"
-    },
-    {
-     "name": "Maitane López",
-     "position": "M"
-    },
-    {
-     "name": "Maite Zubieta",
-     "position": "M"
-    },
-    {
-     "name": "Merle Barth",
-     "position": "D"
-    },
-    {
-     "name": "Naara Miranda",
-     "position": "D"
-    },
-    {
-     "name": "Natalia Peñalvo",
-     "position": "M"
-    },
-    {
-     "name": "Noa Ortega",
-     "position": "F"
-    },
-    {
-     "name": "Patricia Larqué Juste",
+     "name": "Juan Musso",
      "position": "G"
     },
     {
-     "name": "Raquel Gómez",
-     "position": "M"
-    },
-    {
-     "name": "Rosa Otermin",
-     "position": "D"
-    },
-    {
-     "name": "Sheila Guijarro Gómez",
+     "name": "Julián Alvarez",
      "position": "F"
     },
     {
-     "name": "Silvia Lloris",
-     "position": "D"
-    },
-    {
-     "name": "Vilde Bøe Risa",
+     "name": "Koke",
      "position": "M"
     },
     {
-     "name": "Viola Calligaris",
+     "name": "Marcos Llorente",
      "position": "D"
     },
     {
-     "name": "Xenia Perez",
+     "name": "Marc Pubill",
      "position": "D"
+    },
+    {
+     "name": "Matteo Ruggeri",
+     "position": "D"
+    },
+    {
+     "name": "Miguel Cubo",
+     "position": "F"
+    },
+    {
+     "name": "Morten Hjulmand",
+     "position": "M"
+    },
+    {
+     "name": "Nahuel Molina",
+     "position": "D"
+    },
+    {
+     "name": "Obed Vargas",
+     "position": "M"
+    },
+    {
+     "name": "Pablo Barrios",
+     "position": "M"
+    },
+    {
+     "name": "Robin Le Normand",
+     "position": "D"
+    },
+    {
+     "name": "Rodrigo Mendoza",
+     "position": "M"
+    },
+    {
+     "name": "Salvador Esquivel",
+     "position": "G"
+    },
+    {
+     "name": "Taufik Seidu",
+     "position": "M"
+    },
+    {
+     "name": "Thiago Almada",
+     "position": "M"
+    },
+    {
+     "name": "Thomas Lemar",
+     "position": "M"
     }
    ]
   },
@@ -13847,119 +14072,139 @@
    ]
   },
   "에스파뇰": {
-   "coach": "Sara Monforte",
+   "coach": "Manolo Gonzalez",
    "players": [
     {
-     "name": "Aina Duran",
-     "position": "M"
-    },
-    {
-     "name": "Ainhoa Domenech",
-     "position": "F"
-    },
-    {
-     "name": "Amaia Martínez",
+     "name": "Adama Timera",
      "position": "D"
     },
     {
-     "name": "Anita Marcos",
-     "position": "F"
-    },
-    {
-     "name": "Anna Torrodà Ricart",
+     "name": "Álex Calatrava",
      "position": "M"
     },
     {
-     "name": "Ariadna Domenech",
-     "position": "D"
-    },
-    {
-     "name": "Camila Reinaldo",
-     "position": "F"
-    },
-    {
-     "name": "Clara Rodríguez García",
-     "position": "D"
-    },
-    {
-     "name": "Claudia Iglesias Bicho",
-     "position": "M"
-    },
-    {
-     "name": "Cristina Baudet",
-     "position": "M"
-    },
-    {
-     "name": "Estefanía Botero",
-     "position": "D"
-    },
-    {
-     "name": "Iara Lacosta",
-     "position": "F"
-    },
-    {
-     "name": "Judit Pablos Garrido",
-     "position": "M"
-    },
-    {
-     "name": "Júlia Guerra Peiró",
-     "position": "D"
-    },
-    {
-     "name": "Laia Ballesté",
-     "position": "D"
-    },
-    {
-     "name": "Laura Martínez González",
-     "position": "M"
-    },
-    {
-     "name": "Lucia Loras",
-     "position": "F"
-    },
-    {
-     "name": "Lucía Vallejo",
-     "position": "D"
-    },
-    {
-     "name": "Mar Torrás",
-     "position": "M"
-    },
-    {
-     "name": "Meri Muñoz",
+     "name": "Angel Fortuno",
      "position": "G"
     },
     {
-     "name": "Meritxell Muñoz",
-     "position": "G"
-    },
-    {
-     "name": "Natalia Escot",
-     "position": "F"
-    },
-    {
-     "name": "Nayadet López",
+     "name": "Antoniu Roca",
      "position": "M"
     },
     {
-     "name": "Olivia Fergusson",
-     "position": "F"
-    },
-    {
-     "name": "Ona Baradad",
-     "position": "M"
-    },
-    {
-     "name": "Paula Coba",
-     "position": "G"
-    },
-    {
-     "name": "Paula Perea",
+     "name": "Clemens Riedel",
      "position": "D"
     },
     {
-     "name": "Romane Salvador",
+     "name": "Edu Expósito",
+     "position": "M"
+    },
+    {
+     "name": "Ferran Gomez",
+     "position": "M"
+    },
+    {
+     "name": "Gabriel Moscardo",
+     "position": "M"
+    },
+    {
+     "name": "Javier Hernández",
+     "position": "M"
+    },
+    {
+     "name": "Javi Puado",
+     "position": "M"
+    },
+    {
+     "name": "Jofre Carreras",
+     "position": "M"
+    },
+    {
+     "name": "José Ángel López",
+     "position": "D"
+    },
+    {
+     "name": "José Gragera",
+     "position": "M"
+    },
+    {
+     "name": "Jose Salinas",
+     "position": "D"
+    },
+    {
+     "name": "Kike García",
+     "position": "F"
+    },
+    {
+     "name": "Leandro Cabrera",
+     "position": "D"
+    },
+    {
+     "name": "Llorenç Serred",
      "position": "G"
+    },
+    {
+     "name": "Marcos Fernández",
+     "position": "F"
+    },
+    {
+     "name": "Marko Dmitrović",
+     "position": "G"
+    },
+    {
+     "name": "Miguel Londoño",
+     "position": "M"
+    },
+    {
+     "name": "Miguel Rubio",
+     "position": "D"
+    },
+    {
+     "name": "Omar El Hilali",
+     "position": "D"
+    },
+    {
+     "name": "Pablo Ramón",
+     "position": "D"
+    },
+    {
+     "name": "Pere Milla",
+     "position": "M"
+    },
+    {
+     "name": "Pol Lozano",
+     "position": "M"
+    },
+    {
+     "name": "Pol Tristan",
+     "position": "G"
+    },
+    {
+     "name": "Quilindschy Hartman",
+     "position": "D"
+    },
+    {
+     "name": "Rafael Bauzà",
+     "position": "M"
+    },
+    {
+     "name": "Roberto Fernández",
+     "position": "F"
+    },
+    {
+     "name": "Roger Hinojo",
+     "position": "D"
+    },
+    {
+     "name": "Rubén Sánchez",
+     "position": "D"
+    },
+    {
+     "name": "Tyrhys Dolan",
+     "position": "M"
+    },
+    {
+     "name": "Urko González",
+     "position": "M"
     }
    ]
   },
@@ -15032,115 +15277,115 @@
    ]
   },
   "레알 소시에다드": {
-   "coach": "Arturo Ruiz",
+   "coach": "Pellegrino Matarazzo",
    "players": [
     {
-     "name": "Aiara Aguirrezabala",
+     "name": "Aihen Muñoz",
      "position": "D"
     },
     {
-     "name": "Ainara Ugartemendia",
+     "name": "Álex Remiro",
      "position": "G"
     },
     {
-     "name": "Ainoa Campo Franco",
+     "name": "Álvaro Odriozola",
+     "position": "D"
+    },
+    {
+     "name": "Ander Barrenetxea",
      "position": "M"
     },
     {
-     "name": "Alazne Estensoro",
+     "name": "Arsen Zakharyan",
+     "position": "M"
+    },
+    {
+     "name": "Beñat Turrientes",
+     "position": "M"
+    },
+    {
+     "name": "Carlos Fernández",
+     "position": "F"
+    },
+    {
+     "name": "Carlos Soler",
+     "position": "M"
+    },
+    {
+     "name": "Gonçalo Guedes",
+     "position": "M"
+    },
+    {
+     "name": "Igor Zubeldia",
+     "position": "D"
+    },
+    {
+     "name": "Iñaki Rupérez",
+     "position": "D"
+    },
+    {
+     "name": "Javi López",
+     "position": "D"
+    },
+    {
+     "name": "Jon Aramburu",
+     "position": "D"
+    },
+    {
+     "name": "Jon Gorrotxategi",
+     "position": "M"
+    },
+    {
+     "name": "Jon Karrikaburu",
+     "position": "F"
+    },
+    {
+     "name": "Jon Martin",
+     "position": "D"
+    },
+    {
+     "name": "Jon Pacheco",
+     "position": "D"
+    },
+    {
+     "name": "Kazunari Kita",
+     "position": "D"
+    },
+    {
+     "name": "Luka Sučić",
+     "position": "M"
+    },
+    {
+     "name": "Mikel Goti",
+     "position": "M"
+    },
+    {
+     "name": "Mikel Oyarzabal",
+     "position": "F"
+    },
+    {
+     "name": "Orri Óskarsson",
+     "position": "F"
+    },
+    {
+     "name": "Pablo Marín",
+     "position": "M"
+    },
+    {
+     "name": "Sergio Gómez",
+     "position": "D"
+    },
+    {
+     "name": "Takefusa Kubo",
+     "position": "M"
+    },
+    {
+     "name": "Unai Marrero",
      "position": "G"
     },
     {
-     "name": "Ane Isasisasmendi",
+     "name": "Yangel Herrera",
      "position": "M"
-    },
-    {
-     "name": "Carlota Chacon",
-     "position": "F"
-    },
-    {
-     "name": "Carlota Chacón",
-     "position": "F"
-    },
-    {
-     "name": "Cecilia Marcos",
-     "position": "F"
-    },
-    {
-     "name": "Claudia Florentino",
-     "position": "D"
-    },
-    {
-     "name": "Edna Imade",
-     "position": "F"
-    },
-    {
-     "name": "Elene Guridi",
-     "position": "M"
-    },
-    {
-     "name": "Esther Laborde Cabanillas",
-     "position": "M"
-    },
-    {
-     "name": "Intza Eguiguren",
-     "position": "F"
-    },
-    {
-     "name": "Iraia Soroa",
-     "position": "D"
-    },
-    {
-     "name": "Iraia Soroa Moure",
-     "position": "D"
-    },
-    {
-     "name": "Julia Arrula",
-     "position": "G"
-    },
-    {
-     "name": "Klara Cahynova",
-     "position": "M"
-    },
-    {
-     "name": "Lorena Navarro",
-     "position": "M"
-    },
-    {
-     "name": "Maren Lezeta",
-     "position": "M"
-    },
-    {
-     "name": "Mirari Uria",
-     "position": "F"
-    },
-    {
-     "name": "Nahia Aparicio",
-     "position": "D"
-    },
-    {
-     "name": "Nahia Zunzunegui",
-     "position": "M"
-    },
-    {
-     "name": "Nerea Eizagirre",
-     "position": "M"
-    },
-    {
-     "name": "Paula Fernández",
-     "position": "M"
-    },
-    {
-     "name": "Sonya Keefe",
-     "position": "F"
-    },
-    {
-     "name": "Synne Jensen",
-     "position": "F"
-    },
-    {
-     "name": "Violeta Quiles",
-     "position": "D"
     }
    ]
   },
