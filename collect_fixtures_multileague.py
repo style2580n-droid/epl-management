@@ -22,7 +22,7 @@ import time
 from datetime import datetime, timedelta, timezone
 
 from api_clients import BSDClient
-from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league
+from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league, _ascii_fold
 
 OUT_PATH = 'data/master/schedule_multileague.json'
 SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
@@ -106,9 +106,73 @@ def _find_leagues(client):
 
 
 # ============================================================ 2) 그 리그의 팀 ID 확보
+# 2026-07-18: 라리가 22/20·챔피언십 22/24 매칭 갭 원인 분석용 진단 강화.
+# 코드 분석으로 좁힌 원인 후보 (실행 로그로 확정해야 함 — 추측 금지 원칙):
+#  (A) 중복 ID(라리가 22/20): matched가 BSD id 키라서 같은 클럽에 ID가
+#      2개(옛 레코드 중복/여자팀/B팀 등)면 둘 다 세어진다. 게다가 기존
+#      main()은 team_ids를 그대로 돌며 squads[한글팀명]에 덮어쓰기 때문에
+#      뒤에 온 ID(예: B팀)의 스쿼드가 1군 스쿼드를 **조용히 덮어쓸 수 있는
+#      실제 데이터 오염 경로**였다 → PRIMARY_TEAM_IDS로 해결.
+#  (B) 조용한 잘림(챔피언십 22/24 후보 #1): 기존엔 client.teams()를 limit
+#      없이 1회만 호출 — BSD 기본 페이지 크기에 잘리면 팀이 티 안 나게
+#      누락된다 → 페이지네이션 추가.
+#  (C) 별칭 부재(챔피언십 22/24 후보 #2): BSD가 "Sheffield Utd",
+#      "Wolverhampton"(단독) 같은 표기를 쓰면 현재 별칭 목록으로는 매칭
+#      실패한다(_norm은 FC/AFC/CF만 제거) → 미매칭 원문 팀명을 로그로
+#      남겨서 다음 실행에서 바로 별칭을 추가할 수 있게 한다.
+#  (D) 리그 필터 무시 가능성: /players/의 team= 이 무시됐던 전례처럼
+#      /teams/의 league 필터도 무시된다면 전체 팀 DB에서 이름이 우연히
+#      겹치는 타국 팀(예: 에콰도르 "Barcelona")이 섞일 수 있다 → 응답
+#      총 개수를 로그로 남겨 기대치 대비 과도하면 경고.
+PRIMARY_TEAM_IDS = {}  # league_key -> {한글팀명: 대표 team_id} (스쿼드/감독 조회용)
+_B_TEAM_RE = None
+
+
+def _looks_like_b_team(raw_name):
+    """원문 팀명이 B팀/유스/여자팀으로 보이는지. 중복 ID가 있을 때만
+    대표 ID 선정에 쓰인다(단독 매칭엔 적용 안 함 — 'Willem II'처럼 1군
+    이름에 II가 든 팀을 오판하지 않기 위해)."""
+    global _B_TEAM_RE
+    if _B_TEAM_RE is None:
+        import re as _re
+        _B_TEAM_RE = _re.compile(
+            r'\b(b|ii|iii|u\d{2}|youth|junior|castilla|atletic|femen\w*|'
+            r'women|ladies|reserves?)\b', _re.I)
+    return bool(_B_TEAM_RE.search(_ascii_fold(raw_name or '')))
+
+
+def _fetch_all_teams(client, params):
+    """teams()를 페이지네이션으로 전부 받는다. BSDClient.teams가
+    limit/offset을 안 받는 시그니처면(실측 전 미확정) 기존처럼 1회
+    호출로 폴백한다."""
+    rows, offset = [], 0
+    while True:
+        try:
+            data = _unwrap(client.teams(limit=PAGE_LIMIT, offset=offset, **params))
+        except TypeError:
+            # teams()가 limit/offset을 안 받는 시그니처 → 기존 방식 1회 호출
+            data = _unwrap(client.teams(**params))
+            return (data or {}).get('results', []) if data else rows
+        time.sleep(0.2)
+        if not data:
+            break
+        page = data.get('results', [])
+        rows.extend(page)
+        count = data.get('count')
+        offset += PAGE_LIMIT
+        if not page or len(page) < PAGE_LIMIT \
+                or (count is not None and offset >= count) \
+                or offset >= PAGE_LIMIT * 10:
+            break
+    return rows
+
+
 def _find_league_teams(client, league_key, league_id, season_id):
     """collect_coaches._find_pl_teams와 동일한 후보 시도+검증 패턴.
-    BSD team_id -> 한글팀명 매핑을 만든다 (LEAGUE_TEAM_MAPS로 검증)."""
+    BSD team_id -> 한글팀명 매핑을 만든다 (LEAGUE_TEAM_MAPS로 검증).
+    반환 형식 {id: 한글팀명}은 기존과 동일(중복 ID 전부 포함 — 일정 매칭과
+    collect_goalscorers.py가 이 형태를 그대로 씀). 스쿼드/감독 조회용
+    클럽당 대표 ID는 PRIMARY_TEAM_IDS[league_key]에 따로 담는다."""
     candidates = [
         {'league_id': league_id},
         {'league': league_id},
@@ -120,20 +184,56 @@ def _find_league_teams(client, league_key, league_id, season_id):
     for params in candidates:
         if not params:
             continue
-        data = _unwrap(client.teams(**params))
-        if not data:
+        results = _fetch_all_teams(client, params) or []
+        if not results:
             continue
-        results = data.get('results', [])
-        matched = {}
+        matched = {}       # id -> 한글팀명 (반환용, 중복 ID 유지)
+        by_kr = {}         # 한글팀명 -> [(id, 원문명)] (중복 진단용)
+        unmatched = []     # 어느 리그에도 매칭 안 된 원문명 (누락팀 후보)
         for t in results:
-            hit = to_kr_league(t.get('name') or t.get('short_name'))
+            raw = t.get('name') or t.get('short_name')
+            hit = to_kr_league(raw)
             if hit and hit[0] == league_key:
                 matched[t['id']] = hit[1]
+                by_kr.setdefault(hit[1], []).append((t['id'], raw))
+            elif hit is None and raw:
+                unmatched.append(raw)
         print(f'[collect_fixtures_multileague]   {league_key} teams{params} → '
-              f'{len(results)}개 중 {len(matched)}개 매칭(기대 {n_expected}팀)',
-              flush=True)
-        if len(matched) >= max(3, n_expected * 0.3):
-            return matched
+              f'응답 {len(results)}개 중 {len(matched)}개 ID 매칭'
+              f'(클럽 {len(by_kr)}개, 기대 {n_expected}팀)', flush=True)
+        if len(matched) < max(3, n_expected * 0.3):
+            continue
+
+        # --- 진단 (A): 한 클럽에 ID 여러 개 (라리가 22/20 원인 규명용) ---
+        primary = {}
+        for kr, lst in by_kr.items():
+            chosen = lst[0]
+            if len(lst) > 1:
+                non_b = [x for x in lst if not _looks_like_b_team(x[1])]
+                chosen = (non_b or lst)[0]
+                dup_desc = ', '.join(f'{i}:"{n}"' for i, n in lst)
+                print(f'[collect_fixtures_multileague] [diag] {league_key} '
+                      f'"{kr}" 중복 {len(lst)}건 [{dup_desc}] → 대표 '
+                      f'id={chosen[0]} "{chosen[1]}"', flush=True)
+            primary[kr] = chosen[0]
+        PRIMARY_TEAM_IDS[league_key] = primary
+
+        # --- 진단 (B)(C): 기대 팀 중 매칭 실패 (챔피언십 22/24 원인 규명용) ---
+        missing = [kr for kr in team_map if kr not in by_kr]
+        if missing:
+            print(f'[collect_fixtures_multileague] [diag] {league_key} '
+                  f'미매칭 기대팀 {len(missing)}개: {missing}', flush=True)
+            if len(results) <= n_expected * 3:
+                print(f'[collect_fixtures_multileague] [diag] {league_key} '
+                      f'응답에 있었지만 매칭 안 된 원문 팀명(누락팀의 실제 BSD '
+                      f'표기 후보): {unmatched[:20]}', flush=True)
+            else:
+                # 진단 (D): 응답이 기대치보다 훨씬 많으면 리그 필터 무시 의심
+                print(f'[collect_fixtures_multileague] [diag] {league_key} '
+                      f'응답 {len(results)}개 ≫ 기대 {n_expected}팀 — 리그 '
+                      f'필터가 무시됐을 가능성(과거 /players/ team= 무시 전례). '
+                      f'미매칭 원문 로그는 노이즈라 생략', flush=True)
+        return matched
     return {}
 
 
@@ -328,9 +428,14 @@ def main():
             squads_out[league_key] = {}
             continue
 
+        # 2026-07-18: 기존엔 team_ids(중복 ID 포함)를 그대로 돌아서, 한 클럽에
+        # ID가 2개면(라리가 22/20) 스쿼드를 두 번 받고 뒤의 것(B팀일 수 있음)이
+        # 1군을 덮어썼다 → 클럽당 대표 ID 1개(PRIMARY_TEAM_IDS)로만 조회.
+        primary = PRIMARY_TEAM_IDS.get(league_key) or \
+            {kr: tid for tid, kr in team_ids.items()}
         squads = {}
         n_with_position = n_with_coach = 0
-        for team_id, kr in team_ids.items():
+        for kr, team_id in primary.items():
             players = _fetch_team_players(client, team_id)
             coach = _fetch_team_coach(client, team_id)
             if players:
