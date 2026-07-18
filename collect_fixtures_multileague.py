@@ -454,10 +454,32 @@ def main():
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
+        # 2026-07-18: 이벤트에는 등장하는데 team_ids에 없는 팀 진단.
+        # 챔피언십 552건 중 46건(=한 팀의 풀시즌)이 매칭 실패 → 그 팀이
+        # /teams 응답에 다른 표기로 있거나 아예 없거나 둘 중 하나인데,
+        # 이 로그가 어느 쪽인지 + 이벤트가 팀명을 직접 들고 있는지까지
+        # 한 번의 실행으로 확정해준다.
+        unknown_ids = {}
         for ev in rows:
             home_kr = team_ids.get(ev.get('home_team_id'))
             away_kr = team_ids.get(ev.get('away_team_id'))
             if not (home_kr and away_kr):
+                for side in ('home', 'away'):
+                    tid = ev.get(f'{side}_team_id')
+                    if tid is not None and tid not in team_ids:
+                        info = unknown_ids.setdefault(tid, {'n': 0, 'name': None})
+                        info['n'] += 1
+                        if info['name'] is None:
+                            # 이벤트 행이 팀명을 직접 들고 있으면 그걸 확보
+                            # (스키마 미확정이라 흔한 키 후보만 시도)
+                            for k in (f'{side}_team', f'{side}_team_name',
+                                      f'{side}_name'):
+                                nm = ev.get(k)
+                                if isinstance(nm, dict):
+                                    nm = nm.get('name') or nm.get('short_name')
+                                if isinstance(nm, str) and nm:
+                                    info['name'] = nm
+                                    break
                 continue
             status = (ev.get('status') or '').lower()
             if status == 'finished':
@@ -473,6 +495,13 @@ def main():
         out[league_key] = schedule
         print(f'[collect_fixtures_multileague] {league_key}: 팀 {len(team_ids)}개, '
               f'경기 {len(rows)}건 중 일정 {len(schedule)}건', flush=True)
+        if unknown_ids:
+            desc = ', '.join(
+                f'id={tid}({v["n"]}경기' + (f', 이벤트상 팀명 "{v["name"]}"' if v['name'] else ', 이벤트에 팀명 필드 없음') + ')'
+                for tid, v in sorted(unknown_ids.items(), key=lambda x: -x[1]['n'])[:8])
+            print(f'[collect_fixtures_multileague] [diag] {league_key} 이벤트에 '
+                  f'있지만 팀 매칭에 없는 team_id {len(unknown_ids)}개: {desc}',
+                  flush=True)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
