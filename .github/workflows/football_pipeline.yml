@@ -141,6 +141,10 @@ jobs:
           python collect_fixtures_multileague.py
           python collect_xg_bsd.py
           python collect_transfers_bsd.py
+          # 2026-07-18 추가: 득점왕/도움왕용. collect_fixtures*.py의 리그/팀
+          # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
+          # 읽는 data/master/goalscorers.json을 만들어야 해서 그 앞에는 반드시 와야 한다.
+          python collect_goalscorers.py
           # 2026-07-16 추가: 아래 둘은 app_export*.py가 임베드하는 데이터를
           # 만들어야 해서 반드시 그 앞에 와야 한다.
           python train_ml_ensemble.py
