@@ -85,7 +85,10 @@ _MISTRANSLATION_MARKERS = (
 # 나타날 오역 패턴까지 훨씬 넓게 잡아준다. 한 음절짜리 조사(이/가/에/로
 # 등)는 진짜 이름 끝음절과 우연히 겹칠 위험이 있어서 제외하고, 겹칠
 # 위험이 낮은 을/를/은/는 4개만 쓴다.
-_STRUCTURAL_PARTICLES = ('을', '를', '은', '는')
+_STRUCTURAL_PARTICLES = ('을', '를', '은', '는', '의')
+# 형용사 관형형 오역 패턴(예: 'Honest Ahanor' -> '정직한 아하노르') 대응.
+# 2026-07-18 3차 추가 — 조사만으로는 못 잡는 [형용사]+[명사] 구조까지 커버.
+_ATTRIBUTIVE_SUFFIXES = ('한',)
 
 
 def _looks_like_mistranslation(translated):
@@ -105,7 +108,7 @@ def _looks_like_mistranslation(translated):
         return True
     tokens = translated.split()
     for tok in tokens[:-1]:  # 마지막 토큰 뒤엔 더 이어지는 말이 없으니 검사 제외
-        for suf in _STRUCTURAL_PARTICLES:
+        for suf in _STRUCTURAL_PARTICLES + _ATTRIBUTIVE_SUFFIXES:
             if tok.endswith(suf) and len(tok) > len(suf):
                 return True
     return False
