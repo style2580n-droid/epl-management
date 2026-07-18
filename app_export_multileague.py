@@ -194,7 +194,10 @@ LEAGUE_TEAM_MAPS = {
         '바르셀로나': ['FC Barcelona', 'Barcelona'],
         '셀타 비고': ['RC Celta de Vigo', 'Celta Vigo', 'Celta de Vigo', 'RC Celta'],
         '데포르티보 라코루냐': ['RC Deportivo La Coruña', 'Deportivo La Coruña',
-                        'Deportivo de La Coruña', 'RC Deportivo'],
+                        'Deportivo de La Coruña', 'RC Deportivo',
+                        # 2026-07-18 파이프라인 로그 실측: BSD는 갈리시아어
+                        # 표기 "A Coruña"를 쓴다 (La 아님)
+                        'Deportivo de A Coruña', 'Deportivo A Coruña'],
         '엘체': ['Elche CF', 'Elche'],
         '에스파뇰': ['RCD Espanyol de Barcelona', 'RCD Espanyol', 'Espanyol'],
         '헤타페': ['Getafe CF', 'Getafe'],
@@ -202,7 +205,9 @@ LEAGUE_TEAM_MAPS = {
         '말라가': ['Málaga CF', 'Malaga CF', 'Malaga'],
         '오사수나': ['CA Osasuna', 'Osasuna'],
         '라싱 산탄데르': ['Real Racing Club de Santander', 'Racing de Santander',
-                     'Racing Santander', 'Racing Club de Santander'],
+                     'Racing Santander', 'Racing Club de Santander',
+                     # 2026-07-18 파이프라인 로그 실측: BSD 표기
+                     'Real Racing Club'],
         '라요 바예카노': ['Rayo Vallecano de Madrid', 'Rayo Vallecano'],
         '레알 베티스': ['Real Betis Balompié', 'Real Betis'],
         '레알 마드리드': ['Real Madrid CF', 'Real Madrid'],
@@ -264,7 +269,9 @@ LEAGUE_TEAM_MAPS = {
         '툴루즈': ['Toulouse FC', 'Toulouse'],
         '올랭피크 리옹': ['Olympique Lyonnais', 'Lyon', 'OL'],
         '르망FC': ['Le Mans FC', 'Le Mans'],
-        '스타드 브레스투아29': ['Stade Brestois 29', 'Brest'],
+        '스타드 브레스투아29': ['Stade Brestois 29', 'Brest',
+                        # 2026-07-18 파이프라인 로그 실측: BSD는 29 없이 표기
+                        'Stade Brestois'],
         'OGC 니스': ['OGC Nice', 'Nice'],
         'FC 로리앙': ['FC Lorient', 'Lorient'],
         '올랭피크 마르세유': ['Olympique de Marseille', 'Marseille', 'OM'],
@@ -523,6 +530,52 @@ def build_squads(name_cache):
     return squads, unmatched_teams
 
 
+GOALSCORERS_PATH = 'data/master/goalscorers.json'
+
+
+def build_leaderboard(name_cache):
+    """리그별 득점왕/도움왕 (2026-07-18 신규 — EPL 앱의 build_leaderboard와
+    동일한 원칙). collect_goalscorers.py가 실제 26-27 시즌 종료 경기만
+    대상으로 모은 goalscorers.json을 쓴다.
+    ⚠️ 8월 개막 전이라 지금은 리그별로 빈 값이 나오는 게 정상이다 —
+    틀린 데이터를 보여주는 것보다 빈 화면이 낫다는 원칙으로, season_players.json
+    같은 대체 소스는 일부러 안 쓴다(EPL 쪽도 마찬가지 이유로 뺐음)."""
+    all_matches = _load_json(GOALSCORERS_PATH, {})
+    out = {}
+    for lk in LEAGUE_TEAM_MAPS:
+        matches = all_matches.get(lk, [])
+        scorers, assists = {}, {}
+        n_unresolved_team = 0
+        for m in matches:
+            home_kr, away_kr = m.get('home'), m.get('away')
+            for g in m.get('goals', []):
+                scorer_en = g.get('scorer')
+                if not scorer_en:
+                    continue
+                scorer_ko = _translate_name(scorer_en, name_cache)
+                team_raw = g.get('team')
+                hit = to_kr_league(team_raw) if team_raw else None
+                team_kr = hit[1] if (hit and hit[0] == lk) else None
+                if team_kr not in (home_kr, away_kr):
+                    team_kr = None
+                    n_unresolved_team += 1
+                key = f'{scorer_ko}|{team_kr or "미상"}'
+                scorers[key] = scorers.get(key, 0) + 1
+
+                assist_en = g.get('assist')
+                if assist_en:
+                    assist_ko = _translate_name(assist_en, name_cache)
+                    akey = f'{assist_ko}|{team_kr or "미상"}'
+                    assists[akey] = assists.get(akey, 0) + 1
+        out[lk] = {'scorers': scorers, 'assists': assists}
+        if scorers or n_unresolved_team:
+            print(f'[app_export_multileague] {lk} 득점왕/도움왕: '
+                  f'득점 {sum(scorers.values())}건, 도움 {sum(assists.values())}건'
+                  + (f', 팀 매칭 실패 {n_unresolved_team}건' if n_unresolved_team else ''),
+                  flush=True)
+    return out
+
+
 def build_h2h():
     """리그별 팀간 과거 맞대결 — EPL 앱(app_export.py build_h2h)과 완전히
     동일한 계산 방식(matches 테이블, "팀A|||팀B" 가나다순 키, 최신 10경기)을
@@ -672,7 +725,7 @@ def build_all():
 
 # ============================================================ JS 렌더링
 def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
-              transfers_by_league, h2h_by_league, ml_ensemble):
+              transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league):
     logos_by_league = _load_json(LOGOS_PATH, {})
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
@@ -688,6 +741,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'fatigue': {},  # ⚠️ 월드컵 여독 — 결승(7/19) 이후 별도 아티팩트로 병합 예정
             'transfers': transfers_by_league.get(league_key, {}),
             'h2h': h2h_by_league.get(league_key, {}),
+            'leaderboard': leaderboard_by_league.get(league_key, {'scorers': {}, 'assists': {}}),
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
@@ -706,9 +760,10 @@ def main():
     injuries_by_league, unmatched_injury_teams = build_injuries()
     transfers_by_league = build_transfers(name_cache)
     h2h_by_league = build_h2h()
+    leaderboard_by_league = build_leaderboard(name_cache)
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
-                    transfers_by_league, h2h_by_league, ml_ensemble)
+                    transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
     _save_name_cache(name_cache)
@@ -722,20 +777,23 @@ def main():
     total_transfers = sum(len(t['in']) + len(t['out'])
                            for v in transfers_by_league.values() for t in v.values())
     total_h2h_pairs = sum(len(v) for v in h2h_by_league.values())
+    total_goals = sum(sum(lb.get('scorers', {}).values()) for lb in leaderboard_by_league.values())
     print(f'[app_export_multileague] {OUT_PATH} 생성 완료, '
           f'일정 {total_sched}건, ELO {total_elo}팀, '
           f'스쿼드 {total_squad_teams}팀/{total_squad_players}명, '
           f'xG {total_xg_teams}팀, 부상 {total_injury_teams}팀, '
           f'이적 {total_transfers}건, H2H {total_h2h_pairs}개 조합, '
+          f'득점기록 {total_goals}골, '
           f'이름 캐시 {len(name_cache)}건', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
         squad_players = sum(len(t['all']) for t in squads[lk].values())
         lk_transfers = sum(len(t['in']) + len(t['out']) for t in transfers_by_league[lk].values())
+        lk_goals = sum(leaderboard_by_league.get(lk, {}).get('scorers', {}).values())
         print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
               f'스쿼드 {len(squads[lk])}팀/{squad_players}명, '
               f'xG {len(xg_by_league.get(lk, {}))}팀, '
               f'부상 {len(injuries_by_league[lk])}팀, 이적 {lk_transfers}건, '
-              f'H2H {len(h2h_by_league[lk])}개 조합',
+              f'H2H {len(h2h_by_league[lk])}개 조합, 득점기록 {lk_goals}골',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]

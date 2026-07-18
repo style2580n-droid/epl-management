@@ -224,9 +224,11 @@ def _find_league_teams(client, league_key, league_id, season_id):
             print(f'[collect_fixtures_multileague] [diag] {league_key} '
                   f'미매칭 기대팀 {len(missing)}개: {missing}', flush=True)
             if len(results) <= n_expected * 3:
+                # 2026-07-18: [:20] 잘림 탓에 알파벳 뒷순서(W 등) 표기를 못
+                # 봤다(울버햄튼) → 리그 필터 응답은 최대 50개 수준이라 전부 출력
                 print(f'[collect_fixtures_multileague] [diag] {league_key} '
                       f'응답에 있었지만 매칭 안 된 원문 팀명(누락팀의 실제 BSD '
-                      f'표기 후보): {unmatched[:20]}', flush=True)
+                      f'표기 후보): {unmatched}', flush=True)
             else:
                 # 진단 (D): 응답이 기대치보다 훨씬 많으면 리그 필터 무시 의심
                 print(f'[collect_fixtures_multileague] [diag] {league_key} '
