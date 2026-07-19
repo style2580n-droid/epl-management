@@ -304,7 +304,9 @@ LEAGUE_TEAM_MAPS = {
         '빌럼II': ['Willem II Tilburg', 'Willem II'],
     },
     'championship': {
-        '울버햄튼 원더러스': ['Wolverhampton Wanderers FC', 'Wolves',
+        # 2026-07-19 파이프라인 로그 실측: BSD는 'Wolverhampton' 단독 표기
+        # (팀 목록 + 이벤트 diag 양쪽에서 확인, team_id=11)
+        '울버햄튼 원더러스': ['Wolverhampton', 'Wolverhampton Wanderers FC', 'Wolves',
                       'Wolverhampton Wanderers'],
         '블랙번 로버스': ['Blackburn Rovers FC', 'Blackburn Rovers'],
         '볼턴 원더러스': ['Bolton Wanderers FC', 'Bolton Wanderers', 'Bolton'],
@@ -636,6 +638,16 @@ def build_transfers(name_cache):
         if dedup_key in seen:
             continue
         seen.add(dedup_key)
+
+        # 2026-07-19: 같은 리그·같은 팀 → 같은 팀 "이적"은 가짜다.
+        # collect_transfers_bsd가 BSD의 중복 team_id(예: 레알 소시에다드
+        # 48/924)를 둘 다 돌면서 같은 선수를 다른 ID 밑에서 재발견해 이적으로
+        # 오인한 것 (07-19 실행에서 28건 발생). 근본 수정은
+        # collect_transfers_bsd 쪽 대표 ID 적용이지만, 이미 누적 json에 들어간
+        # 기존 레코드도 걸러야 하므로 표시단에서도 차단한다.
+        if (r.get('from_team') and r.get('from_team') == r.get('to_team')
+                and from_league == to_league):
+            continue
 
         player_name_en = r.get('player_name')
         if not player_name_en:

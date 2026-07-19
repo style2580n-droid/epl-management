@@ -451,6 +451,13 @@ def main():
         print(f'[collect_fixtures_multileague] {league_key} 스쿼드: '
               f'{len(squads)}팀/{total_players}명 '
               f'(포지션 확보 {n_with_position}팀, 감독 확보 {n_with_coach}팀)', flush=True)
+        # 2026-07-19: 라리가 스쿼드가 19/20으로 나온 원인 규명용 — 선수 0명이라
+        # 조용히 빠진 클럽과 그때 쓴 team_id를 로그로 남긴다. 대표 ID가 빈
+        # 레코드였다면 중복 diag의 다른 ID로 바꿔볼 근거가 된다.
+        empty = {kr: tid for kr, tid in primary.items() if kr not in squads}
+        if empty:
+            print(f'[collect_fixtures_multileague] [diag] {league_key} 선수 0명으로 '
+                  f'스쿼드 누락된 클럽: {empty}', flush=True)
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
