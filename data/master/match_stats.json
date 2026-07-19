@@ -12084,28 +12084,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -12117,28 +12117,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -12148,7 +12148,7 @@
                 }
             }
         ],
-        "collected_at": "2026-07-19T00:35:35.563501+00:00"
+        "collected_at": "2026-07-19T16:00:04.418525+00:00"
     },
     "1283712158": {
         "match": {
@@ -12244,28 +12244,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -12277,28 +12277,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -12308,7 +12308,7 @@
                 }
             }
         ],
-        "collected_at": "2026-07-19T00:35:35.897476+00:00"
+        "collected_at": "2026-07-19T16:00:07.658198+00:00"
     },
     "1348270720": {
         "match": {
@@ -13189,5 +13189,225 @@
             }
         ],
         "collected_at": "2026-07-19T00:35:38.913712+00:00"
+    },
+    "1357728734": {
+        "match": {
+            "id": 1357728734,
+            "round": "Round of 16",
+            "date": "2026-07-19T23:30:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3483927,
+                "logo": "https://highlightly.net/soccer/images/teams/3483927.png",
+                "name": "Ventura County Fusion"
+            },
+            "homeTeam": {
+                "id": 3472013,
+                "logo": "https://highlightly.net/soccer/images/teams/3472013.png",
+                "name": "San Francisco City FC"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3472013,
+                    "logo": "https://highlightly.net/soccer/images/teams/3472013.png",
+                    "name": "San Francisco City FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3483927,
+                    "logo": "https://highlightly.net/soccer/images/teams/3483927.png",
+                    "name": "Ventura County Fusion"
+                }
+            }
+        ],
+        "collected_at": "2026-07-19T16:00:03.556864+00:00"
+    },
+    "1357726181": {
+        "match": {
+            "id": 1357726181,
+            "round": "Round of 16",
+            "date": "2026-07-19T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 17838595,
+                "logo": "https://highlightly.net/soccer/images/teams/17838595.png",
+                "name": "Appalachian"
+            },
+            "homeTeam": {
+                "id": 8590778,
+                "logo": "https://highlightly.net/soccer/images/teams/8590778.png",
+                "name": "Asheville City"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8590778,
+                    "logo": "https://highlightly.net/soccer/images/teams/8590778.png",
+                    "name": "Asheville City"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 17838595,
+                    "logo": "https://highlightly.net/soccer/images/teams/17838595.png",
+                    "name": "Appalachian"
+                }
+            }
+        ],
+        "collected_at": "2026-07-19T16:00:04.704675+00:00"
+    },
+    "1357727032": {
+        "match": {
+            "id": 1357727032,
+            "round": "Round of 16",
+            "date": "2026-07-19T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 19766961,
+                "logo": null,
+                "name": "Steel City"
+            },
+            "homeTeam": {
+                "id": 3449036,
+                "logo": "https://highlightly.net/soccer/images/teams/3449036.png",
+                "name": "Flint City Bucks"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3449036,
+                    "logo": "https://highlightly.net/soccer/images/teams/3449036.png",
+                    "name": "Flint City Bucks"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19766961,
+                    "logo": null,
+                    "name": "Steel City"
+                }
+            }
+        ],
+        "collected_at": "2026-07-19T16:00:05.988757+00:00"
+    },
+    "1357727883": {
+        "match": {
+            "id": 1357727883,
+            "round": "Round of 16",
+            "date": "2026-07-19T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3462652,
+                "logo": "https://highlightly.net/soccer/images/teams/3462652.png",
+                "name": "Ocean City Nor'easters"
+            },
+            "homeTeam": {
+                "id": 16094896,
+                "logo": "https://highlightly.net/soccer/images/teams/16094896.png",
+                "name": "Vermont Green"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16094896,
+                    "logo": "https://highlightly.net/soccer/images/teams/16094896.png",
+                    "name": "Vermont Green"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3462652,
+                    "logo": "https://highlightly.net/soccer/images/teams/3462652.png",
+                    "name": "Ocean City Nor'easters"
+                }
+            }
+        ],
+        "collected_at": "2026-07-19T16:00:06.357002+00:00"
     }
 }

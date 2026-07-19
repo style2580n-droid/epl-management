@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-19
 
-생성(UTC): 2026-07-19 00:39
+생성(UTC): 2026-07-19 16:03
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -38,6 +38,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Aalesunds FK | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Molde FK | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### Al-Ettifaq_JohorDarulTa'zim_219221
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Al-Ettifaq | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Johor Darul Ta'zim | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### AméricaMineiro_Ceará_10024
 
@@ -80,6 +87,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Basford United | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Gainsborough Trinity | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### Benevento_AsdCalvi_219931
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Benevento | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Asd Calvi | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### BerlinerFCDynamo_BerlinerAK07_218958
 
@@ -256,12 +270,26 @@
 | FC Seoul | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Gangwon FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### FCSt.Pauli_HNKGorica_219928
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC St. Pauli | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| HNK Gorica | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### FCTwente_KAAGent_219099
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
 |---|---|---|---|---|---|---|---|---|---|
 | FC Twente | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | KAA Gent | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### FCUniversitateaCluj_FCVFarulConstanța_214527
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC Universitatea Cluj | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| FCV Farul Constanța | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### FCVoluntari_FCBotoșani_214528
 
@@ -276,6 +304,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC Zürich | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | SpVgg Greuther Fürth | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### FFJaro_InterTurku_207271
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FF Jaro | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Inter Turku | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### FKSpartakVarna_FCCSKA1948Sofia_211654
 
@@ -319,6 +354,13 @@
 | Gangwon FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Gimcheon Sangmu FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Genoa_Trento_219214
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Genoa | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Trento | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### GoldCoastKnights_BrisbaneCity_210031
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -347,12 +389,26 @@
 | Grimsby Town | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Zoria Luhansk | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Göztepe_Al-Dhafra_219215
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Göztepe | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Al-Dhafra | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### HJK_VPS_207268
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
 |---|---|---|---|---|---|---|---|---|---|
 | HJK | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | VPS | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### HalmstadsBK_BKHäcken_46401
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Halmstads BK | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| BK Häcken | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### HamKam_TromsøIL_207013
 
@@ -361,12 +417,26 @@
 | HamKam | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Tromsø IL | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### HammarbyIF_DegerforsIF_46402
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Hammarby IF | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Degerfors IF | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### HammarbyIF_KalmarFF_46394
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
 |---|---|---|---|---|---|---|---|---|---|
 | Hammarby IF | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Kalmar FF | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### HellasVerona_A.S.D.Rovereto_219218
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Hellas Verona | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| A.S.D. Rovereto | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### Hibernian_BrøndbyIF_219039
 
@@ -394,6 +464,13 @@
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
 |---|---|---|---|---|---|---|---|---|---|
 | IF Brommapojkarna | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| IK Sirius | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### IFElfsborg_IKSirius_46403
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| IF Elfsborg | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | IK Sirius | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### IFGnistan_IFKMariehamn_207267
@@ -444,6 +521,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Juventude | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Cuiabá | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### KoninklijkeSportingHasselt_RoyalAntwerpFC_219212
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Koninklijke Sporting Hasselt | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Royal Antwerp FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### KuopionPalloseura_FKVardarSkopje_210765
 
@@ -543,6 +627,13 @@
 | Operário-PR | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Grêmio Novorizontino | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Pisa_PaviaCalcio_219222
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Pisa | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Pavia Calcio | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### PumasUNAM_CFPachuca_211503
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -570,6 +661,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Rhode Island FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Hartford Athletic | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### RioAve_Al-Ahli_219220
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Rio Ave | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Al-Ahli | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### RodezAF_ASCannes_218956
 
@@ -725,6 +823,13 @@
 | Tromsø IL | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Vålerenga IF | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### TuSEnnepetal_WestfaliaRhynern_219929
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| TuS Ennepetal | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Westfalia Rhynern | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### TurunPalloseura_ACOulu_207266
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -760,6 +865,13 @@
 | VSG Altglienicke | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | RB Leipzig | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Venezia_DolomitiBellunesi_219219
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Venezia | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Dolomiti Bellunesi | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### VfLWolfsburg_SCVerl_219033
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -794,6 +906,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Westfalia Rhynern | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | SpVg Essen Schonnebeck | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### WidzewŁódź_PuszczaNiepołomice_219930
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Widzew Łódź | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Puszcza Niepołomice | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### WiganAthletic_PortVale_219048
 
@@ -856,12 +975,14 @@
 - **1.FCKöln_FCRheinsudKoln_219001**: [heatmap(1. FC Köln)](viz/1.FCKöln_FCRheinsudKoln_219001_1. FC Köln_heatmap.svg) · [network(1. FC Köln)](viz/1.FCKöln_FCRheinsudKoln_219001_1. FC Köln_network.svg) · [shotmap(1. FC Köln)](viz/1.FCKöln_FCRheinsudKoln_219001_1. FC Köln_shotmap.svg) · [heatmap(FC Rheinsud Koln)](viz/1.FCKöln_FCRheinsudKoln_219001_FC Rheinsud Koln_heatmap.svg) · [network(FC Rheinsud Koln)](viz/1.FCKöln_FCRheinsudKoln_219001_FC Rheinsud Koln_network.svg) · [shotmap(FC Rheinsud Koln)](viz/1.FCKöln_FCRheinsudKoln_219001_FC Rheinsud Koln_shotmap.svg)
 - **ASMonaco_ASSaintPriest_219000**: [heatmap(AS Monaco)](viz/ASMonaco_ASSaintPriest_219000_AS Monaco_heatmap.svg) · [network(AS Monaco)](viz/ASMonaco_ASSaintPriest_219000_AS Monaco_network.svg) · [shotmap(AS Monaco)](viz/ASMonaco_ASSaintPriest_219000_AS Monaco_shotmap.svg) · [heatmap(AS Saint Priest)](viz/ASMonaco_ASSaintPriest_219000_AS Saint Priest_heatmap.svg) · [network(AS Saint Priest)](viz/ASMonaco_ASSaintPriest_219000_AS Saint Priest_network.svg) · [shotmap(AS Saint Priest)](viz/ASMonaco_ASSaintPriest_219000_AS Saint Priest_shotmap.svg)
 - **AalesundsFK_MoldeFK_207004**: [heatmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_heatmap.svg) · [network(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_network.svg) · [shotmap(Aalesunds FK)](viz/AalesundsFK_MoldeFK_207004_Aalesunds FK_shotmap.svg) · [heatmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_heatmap.svg) · [network(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_network.svg) · [shotmap(Molde FK)](viz/AalesundsFK_MoldeFK_207004_Molde FK_shotmap.svg)
+- **Al-Ettifaq_JohorDarulTa'zim_219221**: [heatmap(Al-Ettifaq)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Al-Ettifaq_heatmap.svg) · [network(Al-Ettifaq)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Al-Ettifaq_network.svg) · [shotmap(Al-Ettifaq)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Al-Ettifaq_shotmap.svg) · [heatmap(Johor Darul Ta'zim)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Johor Darul Ta'zim_heatmap.svg) · [network(Johor Darul Ta'zim)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Johor Darul Ta'zim_network.svg) · [shotmap(Johor Darul Ta'zim)](viz/Al-Ettifaq_JohorDarulTa'zim_219221_Johor Darul Ta'zim_shotmap.svg)
 - **AméricaMineiro_Ceará_10024**: [heatmap(América Mineiro)](viz/AméricaMineiro_Ceará_10024_América Mineiro_heatmap.svg) · [network(América Mineiro)](viz/AméricaMineiro_Ceará_10024_América Mineiro_network.svg) · [shotmap(América Mineiro)](viz/AméricaMineiro_Ceará_10024_América Mineiro_shotmap.svg) · [heatmap(Ceará)](viz/AméricaMineiro_Ceará_10024_Ceará_heatmap.svg) · [network(Ceará)](viz/AméricaMineiro_Ceará_10024_Ceará_network.svg) · [shotmap(Ceará)](viz/AméricaMineiro_Ceará_10024_Ceará_shotmap.svg)
 - **AméricaMineiro_Londrina_10014**: [heatmap(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_heatmap.svg) · [network(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_network.svg) · [shotmap(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_shotmap.svg) · [heatmap(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_heatmap.svg) · [network(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_network.svg) · [shotmap(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_shotmap.svg)
 - **AnnecyFC_FCSion_218950**: [heatmap(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_heatmap.svg) · [network(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_network.svg) · [shotmap(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_shotmap.svg) · [heatmap(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_heatmap.svg) · [network(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_network.svg) · [shotmap(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_shotmap.svg)
 - **Argentina_Switzerland_8386**: [heatmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_heatmap.svg) · [network(Argentina)](viz/Argentina_Switzerland_8386_Argentina_network.svg) · [shotmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_shotmap.svg) · [heatmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_heatmap.svg) · [network(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_network.svg) · [shotmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_shotmap.svg)
 - **Barnet_LutonTown_219038**: [heatmap(Barnet)](viz/Barnet_LutonTown_219038_Barnet_heatmap.svg) · [network(Barnet)](viz/Barnet_LutonTown_219038_Barnet_network.svg) · [shotmap(Barnet)](viz/Barnet_LutonTown_219038_Barnet_shotmap.svg) · [heatmap(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_heatmap.svg) · [network(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_network.svg) · [shotmap(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_shotmap.svg)
 - **BasfordUnited_GainsboroughTrinity_219080**: [heatmap(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_heatmap.svg) · [network(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_network.svg) · [shotmap(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_shotmap.svg) · [heatmap(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_heatmap.svg) · [network(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_network.svg) · [shotmap(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_shotmap.svg)
+- **Benevento_AsdCalvi_219931**: [heatmap(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_heatmap.svg) · [network(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_network.svg) · [shotmap(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_shotmap.svg) · [heatmap(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_heatmap.svg) · [network(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_network.svg) · [shotmap(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_shotmap.svg)
 - **BerlinerFCDynamo_BerlinerAK07_218958**: [heatmap(Berliner AK 07)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner AK 07_heatmap.svg) · [network(Berliner AK 07)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner AK 07_network.svg) · [shotmap(Berliner AK 07)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner AK 07_shotmap.svg) · [heatmap(Berliner FC Dynamo)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner FC Dynamo_heatmap.svg) · [network(Berliner FC Dynamo)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner FC Dynamo_network.svg) · [shotmap(Berliner FC Dynamo)](viz/BerlinerFCDynamo_BerlinerAK07_218958_Berliner FC Dynamo_shotmap.svg)
 - **BonnerSC_MSVDuisburg_219058**: [heatmap(Bonner SC)](viz/BonnerSC_MSVDuisburg_219058_Bonner SC_heatmap.svg) · [network(Bonner SC)](viz/BonnerSC_MSVDuisburg_219058_Bonner SC_network.svg) · [shotmap(Bonner SC)](viz/BonnerSC_MSVDuisburg_219058_Bonner SC_shotmap.svg) · [heatmap(MSV Duisburg)](viz/BonnerSC_MSVDuisburg_219058_MSV Duisburg_heatmap.svg) · [network(MSV Duisburg)](viz/BonnerSC_MSVDuisburg_219058_MSV Duisburg_network.svg) · [shotmap(MSV Duisburg)](viz/BonnerSC_MSVDuisburg_219058_MSV Duisburg_shotmap.svg)
 - **BurtonAlbion_LeicesterCity_219029**: [heatmap(Burton Albion)](viz/BurtonAlbion_LeicesterCity_219029_Burton Albion_heatmap.svg) · [network(Burton Albion)](viz/BurtonAlbion_LeicesterCity_219029_Burton Albion_network.svg) · [shotmap(Burton Albion)](viz/BurtonAlbion_LeicesterCity_219029_Burton Albion_shotmap.svg) · [heatmap(Leicester City)](viz/BurtonAlbion_LeicesterCity_219029_Leicester City_heatmap.svg) · [network(Leicester City)](viz/BurtonAlbion_LeicesterCity_219029_Leicester City_network.svg) · [shotmap(Leicester City)](viz/BurtonAlbion_LeicesterCity_219029_Leicester City_shotmap.svg)
@@ -887,26 +1008,35 @@
 - **FCLiefering_SVWehenWiesbaden_219732**: [heatmap(FC Liefering)](viz/FCLiefering_SVWehenWiesbaden_219732_FC Liefering_heatmap.svg) · [network(FC Liefering)](viz/FCLiefering_SVWehenWiesbaden_219732_FC Liefering_network.svg) · [shotmap(FC Liefering)](viz/FCLiefering_SVWehenWiesbaden_219732_FC Liefering_shotmap.svg) · [heatmap(SV Wehen Wiesbaden)](viz/FCLiefering_SVWehenWiesbaden_219732_SV Wehen Wiesbaden_heatmap.svg) · [network(SV Wehen Wiesbaden)](viz/FCLiefering_SVWehenWiesbaden_219732_SV Wehen Wiesbaden_network.svg) · [shotmap(SV Wehen Wiesbaden)](viz/FCLiefering_SVWehenWiesbaden_219732_SV Wehen Wiesbaden_shotmap.svg)
 - **FCNordsjælland_ACSpartaPraha_218918**: [heatmap(AC Sparta Praha)](viz/FCNordsjælland_ACSpartaPraha_218918_AC Sparta Praha_heatmap.svg) · [network(AC Sparta Praha)](viz/FCNordsjælland_ACSpartaPraha_218918_AC Sparta Praha_network.svg) · [shotmap(AC Sparta Praha)](viz/FCNordsjælland_ACSpartaPraha_218918_AC Sparta Praha_shotmap.svg) · [heatmap(FC Nordsjælland)](viz/FCNordsjælland_ACSpartaPraha_218918_FC Nordsjælland_heatmap.svg) · [network(FC Nordsjælland)](viz/FCNordsjælland_ACSpartaPraha_218918_FC Nordsjælland_network.svg) · [shotmap(FC Nordsjælland)](viz/FCNordsjælland_ACSpartaPraha_218918_FC Nordsjælland_shotmap.svg)
 - **FCSeoul_GangwonFC_205091**: [heatmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_heatmap.svg) · [network(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_network.svg) · [shotmap(FC Seoul)](viz/FCSeoul_GangwonFC_205091_FC Seoul_shotmap.svg) · [heatmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_heatmap.svg) · [network(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_network.svg) · [shotmap(Gangwon FC)](viz/FCSeoul_GangwonFC_205091_Gangwon FC_shotmap.svg)
+- **FCSt.Pauli_HNKGorica_219928**: [heatmap(FC St. Pauli)](viz/FCSt.Pauli_HNKGorica_219928_FC St. Pauli_heatmap.svg) · [network(FC St. Pauli)](viz/FCSt.Pauli_HNKGorica_219928_FC St. Pauli_network.svg) · [shotmap(FC St. Pauli)](viz/FCSt.Pauli_HNKGorica_219928_FC St. Pauli_shotmap.svg) · [heatmap(HNK Gorica)](viz/FCSt.Pauli_HNKGorica_219928_HNK Gorica_heatmap.svg) · [network(HNK Gorica)](viz/FCSt.Pauli_HNKGorica_219928_HNK Gorica_network.svg) · [shotmap(HNK Gorica)](viz/FCSt.Pauli_HNKGorica_219928_HNK Gorica_shotmap.svg)
 - **FCTwente_KAAGent_219099**: [heatmap(FC Twente)](viz/FCTwente_KAAGent_219099_FC Twente_heatmap.svg) · [network(FC Twente)](viz/FCTwente_KAAGent_219099_FC Twente_network.svg) · [shotmap(FC Twente)](viz/FCTwente_KAAGent_219099_FC Twente_shotmap.svg) · [heatmap(KAA Gent)](viz/FCTwente_KAAGent_219099_KAA Gent_heatmap.svg) · [network(KAA Gent)](viz/FCTwente_KAAGent_219099_KAA Gent_network.svg) · [shotmap(KAA Gent)](viz/FCTwente_KAAGent_219099_KAA Gent_shotmap.svg)
+- **FCUniversitateaCluj_FCVFarulConstanța_214527**: [heatmap(FC Universitatea Cluj)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FC Universitatea Cluj_heatmap.svg) · [network(FC Universitatea Cluj)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FC Universitatea Cluj_network.svg) · [shotmap(FC Universitatea Cluj)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FC Universitatea Cluj_shotmap.svg) · [heatmap(FCV Farul Constanța)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FCV Farul Constanța_heatmap.svg) · [network(FCV Farul Constanța)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FCV Farul Constanța_network.svg) · [shotmap(FCV Farul Constanța)](viz/FCUniversitateaCluj_FCVFarulConstanța_214527_FCV Farul Constanța_shotmap.svg)
 - **FCVoluntari_FCBotoșani_214528**: [heatmap(FC Botoșani)](viz/FCVoluntari_FCBotoșani_214528_FC Botoșani_heatmap.svg) · [network(FC Botoșani)](viz/FCVoluntari_FCBotoșani_214528_FC Botoșani_network.svg) · [shotmap(FC Botoșani)](viz/FCVoluntari_FCBotoșani_214528_FC Botoșani_shotmap.svg) · [heatmap(FC Voluntari)](viz/FCVoluntari_FCBotoșani_214528_FC Voluntari_heatmap.svg) · [network(FC Voluntari)](viz/FCVoluntari_FCBotoșani_214528_FC Voluntari_network.svg) · [shotmap(FC Voluntari)](viz/FCVoluntari_FCBotoșani_214528_FC Voluntari_shotmap.svg)
 - **FCZürich_SpVggGreutherFürth_219044**: [heatmap(FC Zürich)](viz/FCZürich_SpVggGreutherFürth_219044_FC Zürich_heatmap.svg) · [network(FC Zürich)](viz/FCZürich_SpVggGreutherFürth_219044_FC Zürich_network.svg) · [shotmap(FC Zürich)](viz/FCZürich_SpVggGreutherFürth_219044_FC Zürich_shotmap.svg) · [heatmap(SpVgg Greuther Fürth)](viz/FCZürich_SpVggGreutherFürth_219044_SpVgg Greuther Fürth_heatmap.svg) · [network(SpVgg Greuther Fürth)](viz/FCZürich_SpVggGreutherFürth_219044_SpVgg Greuther Fürth_network.svg) · [shotmap(SpVgg Greuther Fürth)](viz/FCZürich_SpVggGreutherFürth_219044_SpVgg Greuther Fürth_shotmap.svg)
+- **FFJaro_InterTurku_207271**: [heatmap(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_heatmap.svg) · [network(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_network.svg) · [shotmap(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_shotmap.svg) · [heatmap(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_heatmap.svg) · [network(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_network.svg) · [shotmap(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_shotmap.svg)
 - **FKSpartakVarna_FCCSKA1948Sofia_211654**: [heatmap(FC CSKA 1948 Sofia)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FC CSKA 1948 Sofia_heatmap.svg) · [network(FC CSKA 1948 Sofia)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FC CSKA 1948 Sofia_network.svg) · [shotmap(FC CSKA 1948 Sofia)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FC CSKA 1948 Sofia_shotmap.svg) · [heatmap(FK Spartak Varna)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FK Spartak Varna_heatmap.svg) · [network(FK Spartak Varna)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FK Spartak Varna_network.svg) · [shotmap(FK Spartak Varna)](viz/FKSpartakVarna_FCCSKA1948Sofia_211654_FK Spartak Varna_shotmap.svg)
 - **FSVSchoningen2011_1.FCMagdeburg_219120**: [heatmap(1. FC Magdeburg)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_1. FC Magdeburg_heatmap.svg) · [network(1. FC Magdeburg)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_1. FC Magdeburg_network.svg) · [shotmap(1. FC Magdeburg)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_1. FC Magdeburg_shotmap.svg) · [heatmap(FSV Schoningen 2011)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_FSV Schoningen 2011_heatmap.svg) · [network(FSV Schoningen 2011)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_FSV Schoningen 2011_network.svg) · [shotmap(FSV Schoningen 2011)](viz/FSVSchoningen2011_1.FCMagdeburg_219120_FSV Schoningen 2011_shotmap.svg)
 - **France_Spain_8387**: [heatmap(France)](viz/France_Spain_8387_France_heatmap.svg) · [network(France)](viz/France_Spain_8387_France_network.svg) · [shotmap(France)](viz/France_Spain_8387_France_shotmap.svg) · [heatmap(Spain)](viz/France_Spain_8387_Spain_heatmap.svg) · [network(Spain)](viz/France_Spain_8387_Spain_network.svg) · [shotmap(Spain)](viz/France_Spain_8387_Spain_shotmap.svg)
 - **GAIS_IFElfsborg_46393**: [heatmap(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_heatmap.svg) · [network(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_network.svg) · [shotmap(GAIS)](viz/GAIS_IFElfsborg_46393_GAIS_shotmap.svg) · [heatmap(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_heatmap.svg) · [network(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_network.svg) · [shotmap(IF Elfsborg)](viz/GAIS_IFElfsborg_46393_IF Elfsborg_shotmap.svg)
 - **GKSWikielec_BKSChemikBydgoszcz_219082**: [heatmap(BKS Chemik Bydgoszcz)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_BKS Chemik Bydgoszcz_heatmap.svg) · [network(BKS Chemik Bydgoszcz)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_BKS Chemik Bydgoszcz_network.svg) · [shotmap(BKS Chemik Bydgoszcz)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_BKS Chemik Bydgoszcz_shotmap.svg) · [heatmap(GKS Wikielec)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_GKS Wikielec_heatmap.svg) · [network(GKS Wikielec)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_GKS Wikielec_network.svg) · [shotmap(GKS Wikielec)](viz/GKSWikielec_BKSChemikBydgoszcz_219082_GKS Wikielec_shotmap.svg)
 - **GangwonFC_GimcheonSangmuFC_205095**: [heatmap(Gangwon FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gangwon FC_heatmap.svg) · [network(Gangwon FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gangwon FC_network.svg) · [shotmap(Gangwon FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gangwon FC_shotmap.svg) · [heatmap(Gimcheon Sangmu FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gimcheon Sangmu FC_heatmap.svg) · [network(Gimcheon Sangmu FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gimcheon Sangmu FC_network.svg) · [shotmap(Gimcheon Sangmu FC)](viz/GangwonFC_GimcheonSangmuFC_205095_Gimcheon Sangmu FC_shotmap.svg)
+- **Genoa_Trento_219214**: [heatmap(Genoa)](viz/Genoa_Trento_219214_Genoa_heatmap.svg) · [network(Genoa)](viz/Genoa_Trento_219214_Genoa_network.svg) · [shotmap(Genoa)](viz/Genoa_Trento_219214_Genoa_shotmap.svg) · [heatmap(Trento)](viz/Genoa_Trento_219214_Trento_heatmap.svg) · [network(Trento)](viz/Genoa_Trento_219214_Trento_network.svg) · [shotmap(Trento)](viz/Genoa_Trento_219214_Trento_shotmap.svg)
 - **GoldCoastKnights_BrisbaneCity_210031**: [heatmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_heatmap.svg) · [network(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_network.svg) · [shotmap(Brisbane City)](viz/GoldCoastKnights_BrisbaneCity_210031_Brisbane City_shotmap.svg) · [heatmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_heatmap.svg) · [network(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_network.svg) · [shotmap(Gold Coast Knights)](viz/GoldCoastKnights_BrisbaneCity_210031_Gold Coast Knights_shotmap.svg)
 - **GoldCoastUnited_OlympicFC_210029**: [heatmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_heatmap.svg) · [network(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_network.svg) · [shotmap(Gold Coast United)](viz/GoldCoastUnited_OlympicFC_210029_Gold Coast United_shotmap.svg) · [heatmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_heatmap.svg) · [network(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_network.svg) · [shotmap(Olympic FC)](viz/GoldCoastUnited_OlympicFC_210029_Olympic FC_shotmap.svg)
 - **GoldCoastUnited_QueenslandLionsFC_210034**: [heatmap(Gold Coast United)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Gold Coast United_heatmap.svg) · [network(Gold Coast United)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Gold Coast United_network.svg) · [shotmap(Gold Coast United)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Gold Coast United_shotmap.svg) · [heatmap(Queensland Lions FC)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Queensland Lions FC_heatmap.svg) · [network(Queensland Lions FC)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Queensland Lions FC_network.svg) · [shotmap(Queensland Lions FC)](viz/GoldCoastUnited_QueenslandLionsFC_210034_Queensland Lions FC_shotmap.svg)
 - **GrimsbyTown_ZoriaLuhansk_219018**: [heatmap(Grimsby Town)](viz/GrimsbyTown_ZoriaLuhansk_219018_Grimsby Town_heatmap.svg) · [network(Grimsby Town)](viz/GrimsbyTown_ZoriaLuhansk_219018_Grimsby Town_network.svg) · [shotmap(Grimsby Town)](viz/GrimsbyTown_ZoriaLuhansk_219018_Grimsby Town_shotmap.svg) · [heatmap(Zoria Luhansk)](viz/GrimsbyTown_ZoriaLuhansk_219018_Zoria Luhansk_heatmap.svg) · [network(Zoria Luhansk)](viz/GrimsbyTown_ZoriaLuhansk_219018_Zoria Luhansk_network.svg) · [shotmap(Zoria Luhansk)](viz/GrimsbyTown_ZoriaLuhansk_219018_Zoria Luhansk_shotmap.svg)
+- **Göztepe_Al-Dhafra_219215**: [heatmap(Al-Dhafra)](viz/Göztepe_Al-Dhafra_219215_Al-Dhafra_heatmap.svg) · [network(Al-Dhafra)](viz/Göztepe_Al-Dhafra_219215_Al-Dhafra_network.svg) · [shotmap(Al-Dhafra)](viz/Göztepe_Al-Dhafra_219215_Al-Dhafra_shotmap.svg) · [heatmap(Göztepe)](viz/Göztepe_Al-Dhafra_219215_Göztepe_heatmap.svg) · [network(Göztepe)](viz/Göztepe_Al-Dhafra_219215_Göztepe_network.svg) · [shotmap(Göztepe)](viz/Göztepe_Al-Dhafra_219215_Göztepe_shotmap.svg)
 - **HJK_VPS_207268**: [heatmap(HJK)](viz/HJK_VPS_207268_HJK_heatmap.svg) · [network(HJK)](viz/HJK_VPS_207268_HJK_network.svg) · [shotmap(HJK)](viz/HJK_VPS_207268_HJK_shotmap.svg) · [heatmap(VPS)](viz/HJK_VPS_207268_VPS_heatmap.svg) · [network(VPS)](viz/HJK_VPS_207268_VPS_network.svg) · [shotmap(VPS)](viz/HJK_VPS_207268_VPS_shotmap.svg)
+- **HalmstadsBK_BKHäcken_46401**: [heatmap(BK Häcken)](viz/HalmstadsBK_BKHäcken_46401_BK Häcken_heatmap.svg) · [network(BK Häcken)](viz/HalmstadsBK_BKHäcken_46401_BK Häcken_network.svg) · [shotmap(BK Häcken)](viz/HalmstadsBK_BKHäcken_46401_BK Häcken_shotmap.svg) · [heatmap(Halmstads BK)](viz/HalmstadsBK_BKHäcken_46401_Halmstads BK_heatmap.svg) · [network(Halmstads BK)](viz/HalmstadsBK_BKHäcken_46401_Halmstads BK_network.svg) · [shotmap(Halmstads BK)](viz/HalmstadsBK_BKHäcken_46401_Halmstads BK_shotmap.svg)
 - **HamKam_TromsøIL_207013**: [heatmap(HamKam)](viz/HamKam_TromsøIL_207013_HamKam_heatmap.svg) · [network(HamKam)](viz/HamKam_TromsøIL_207013_HamKam_network.svg) · [shotmap(HamKam)](viz/HamKam_TromsøIL_207013_HamKam_shotmap.svg) · [heatmap(Tromsø IL)](viz/HamKam_TromsøIL_207013_Tromsø IL_heatmap.svg) · [network(Tromsø IL)](viz/HamKam_TromsøIL_207013_Tromsø IL_network.svg) · [shotmap(Tromsø IL)](viz/HamKam_TromsøIL_207013_Tromsø IL_shotmap.svg)
+- **HammarbyIF_DegerforsIF_46402**: [heatmap(Degerfors IF)](viz/HammarbyIF_DegerforsIF_46402_Degerfors IF_heatmap.svg) · [network(Degerfors IF)](viz/HammarbyIF_DegerforsIF_46402_Degerfors IF_network.svg) · [shotmap(Degerfors IF)](viz/HammarbyIF_DegerforsIF_46402_Degerfors IF_shotmap.svg) · [heatmap(Hammarby IF)](viz/HammarbyIF_DegerforsIF_46402_Hammarby IF_heatmap.svg) · [network(Hammarby IF)](viz/HammarbyIF_DegerforsIF_46402_Hammarby IF_network.svg) · [shotmap(Hammarby IF)](viz/HammarbyIF_DegerforsIF_46402_Hammarby IF_shotmap.svg)
 - **HammarbyIF_KalmarFF_46394**: [heatmap(Hammarby IF)](viz/HammarbyIF_KalmarFF_46394_Hammarby IF_heatmap.svg) · [network(Hammarby IF)](viz/HammarbyIF_KalmarFF_46394_Hammarby IF_network.svg) · [shotmap(Hammarby IF)](viz/HammarbyIF_KalmarFF_46394_Hammarby IF_shotmap.svg) · [heatmap(Kalmar FF)](viz/HammarbyIF_KalmarFF_46394_Kalmar FF_heatmap.svg) · [network(Kalmar FF)](viz/HammarbyIF_KalmarFF_46394_Kalmar FF_network.svg) · [shotmap(Kalmar FF)](viz/HammarbyIF_KalmarFF_46394_Kalmar FF_shotmap.svg)
+- **HellasVerona_A.S.D.Rovereto_219218**: [heatmap(A.S.D. Rovereto)](viz/HellasVerona_A.S.D.Rovereto_219218_A.S.D. Rovereto_heatmap.svg) · [network(A.S.D. Rovereto)](viz/HellasVerona_A.S.D.Rovereto_219218_A.S.D. Rovereto_network.svg) · [shotmap(A.S.D. Rovereto)](viz/HellasVerona_A.S.D.Rovereto_219218_A.S.D. Rovereto_shotmap.svg) · [heatmap(Hellas Verona)](viz/HellasVerona_A.S.D.Rovereto_219218_Hellas Verona_heatmap.svg) · [network(Hellas Verona)](viz/HellasVerona_A.S.D.Rovereto_219218_Hellas Verona_network.svg) · [shotmap(Hellas Verona)](viz/HellasVerona_A.S.D.Rovereto_219218_Hellas Verona_shotmap.svg)
 - **Hibernian_BrøndbyIF_219039**: [heatmap(Brøndby IF)](viz/Hibernian_BrøndbyIF_219039_Brøndby IF_heatmap.svg) · [network(Brøndby IF)](viz/Hibernian_BrøndbyIF_219039_Brøndby IF_network.svg) · [shotmap(Brøndby IF)](viz/Hibernian_BrøndbyIF_219039_Brøndby IF_shotmap.svg) · [heatmap(Hibernian)](viz/Hibernian_BrøndbyIF_219039_Hibernian_heatmap.svg) · [network(Hibernian)](viz/Hibernian_BrøndbyIF_219039_Hibernian_network.svg) · [shotmap(Hibernian)](viz/Hibernian_BrøndbyIF_219039_Hibernian_shotmap.svg)
 - **HillerødFodbold_Lyngby_219024**: [heatmap(Hillerød Fodbold)](viz/HillerødFodbold_Lyngby_219024_Hillerød Fodbold_heatmap.svg) · [network(Hillerød Fodbold)](viz/HillerødFodbold_Lyngby_219024_Hillerød Fodbold_network.svg) · [shotmap(Hillerød Fodbold)](viz/HillerødFodbold_Lyngby_219024_Hillerød Fodbold_shotmap.svg) · [heatmap(Lyngby)](viz/HillerødFodbold_Lyngby_219024_Lyngby_heatmap.svg) · [network(Lyngby)](viz/HillerødFodbold_Lyngby_219024_Lyngby_network.svg) · [shotmap(Lyngby)](viz/HillerødFodbold_Lyngby_219024_Lyngby_shotmap.svg)
 - **Hvidovre_Vejle_219051**: [heatmap(Hvidovre)](viz/Hvidovre_Vejle_219051_Hvidovre_heatmap.svg) · [network(Hvidovre)](viz/Hvidovre_Vejle_219051_Hvidovre_network.svg) · [shotmap(Hvidovre)](viz/Hvidovre_Vejle_219051_Hvidovre_shotmap.svg) · [heatmap(Vejle)](viz/Hvidovre_Vejle_219051_Vejle_heatmap.svg) · [network(Vejle)](viz/Hvidovre_Vejle_219051_Vejle_network.svg) · [shotmap(Vejle)](viz/Hvidovre_Vejle_219051_Vejle_shotmap.svg)
 - **IFBrommapojkarna_IKSirius_46395**: [heatmap(IF Brommapojkarna)](viz/IFBrommapojkarna_IKSirius_46395_IF Brommapojkarna_heatmap.svg) · [network(IF Brommapojkarna)](viz/IFBrommapojkarna_IKSirius_46395_IF Brommapojkarna_network.svg) · [shotmap(IF Brommapojkarna)](viz/IFBrommapojkarna_IKSirius_46395_IF Brommapojkarna_shotmap.svg) · [heatmap(IK Sirius)](viz/IFBrommapojkarna_IKSirius_46395_IK Sirius_heatmap.svg) · [network(IK Sirius)](viz/IFBrommapojkarna_IKSirius_46395_IK Sirius_network.svg) · [shotmap(IK Sirius)](viz/IFBrommapojkarna_IKSirius_46395_IK Sirius_shotmap.svg)
+- **IFElfsborg_IKSirius_46403**: [heatmap(IF Elfsborg)](viz/IFElfsborg_IKSirius_46403_IF Elfsborg_heatmap.svg) · [network(IF Elfsborg)](viz/IFElfsborg_IKSirius_46403_IF Elfsborg_network.svg) · [shotmap(IF Elfsborg)](viz/IFElfsborg_IKSirius_46403_IF Elfsborg_shotmap.svg) · [heatmap(IK Sirius)](viz/IFElfsborg_IKSirius_46403_IK Sirius_heatmap.svg) · [network(IK Sirius)](viz/IFElfsborg_IKSirius_46403_IK Sirius_network.svg) · [shotmap(IK Sirius)](viz/IFElfsborg_IKSirius_46403_IK Sirius_shotmap.svg)
 - **IFGnistan_IFKMariehamn_207267**: [heatmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_heatmap.svg) · [network(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_network.svg) · [shotmap(IF Gnistan)](viz/IFGnistan_IFKMariehamn_207267_IF Gnistan_shotmap.svg) · [heatmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_heatmap.svg) · [network(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_network.svg) · [shotmap(IFK Mariehamn)](viz/IFGnistan_IFKMariehamn_207267_IFK Mariehamn_shotmap.svg)
 - **IncheonUnited_FCAnyang_205092**: [heatmap(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_heatmap.svg) · [network(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_network.svg) · [shotmap(FC Anyang)](viz/IncheonUnited_FCAnyang_205092_FC Anyang_shotmap.svg) · [heatmap(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_heatmap.svg) · [network(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_network.svg) · [shotmap(Incheon United)](viz/IncheonUnited_FCAnyang_205092_Incheon United_shotmap.svg)
 - **IncheonUnited_JeonbukHyundaiMotors_205096**: [heatmap(Incheon United)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Incheon United_heatmap.svg) · [network(Incheon United)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Incheon United_network.svg) · [shotmap(Incheon United)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Incheon United_shotmap.svg) · [heatmap(Jeonbuk Hyundai Motors)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Jeonbuk Hyundai Motors_heatmap.svg) · [network(Jeonbuk Hyundai Motors)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Jeonbuk Hyundai Motors_network.svg) · [shotmap(Jeonbuk Hyundai Motors)](viz/IncheonUnited_JeonbukHyundaiMotors_205096_Jeonbuk Hyundai Motors_shotmap.svg)
@@ -914,6 +1044,7 @@
 - **JejuSK_DaejeonHanaCitizen_205093**: [heatmap(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_heatmap.svg) · [network(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_network.svg) · [shotmap(Daejeon Hana Citizen)](viz/JejuSK_DaejeonHanaCitizen_205093_Daejeon Hana Citizen_shotmap.svg) · [heatmap(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_heatmap.svg) · [network(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_network.svg) · [shotmap(Jeju SK)](viz/JejuSK_DaejeonHanaCitizen_205093_Jeju SK_shotmap.svg)
 - **JejuSK_PohangSteelers_205097**: [heatmap(Jeju SK)](viz/JejuSK_PohangSteelers_205097_Jeju SK_heatmap.svg) · [network(Jeju SK)](viz/JejuSK_PohangSteelers_205097_Jeju SK_network.svg) · [shotmap(Jeju SK)](viz/JejuSK_PohangSteelers_205097_Jeju SK_shotmap.svg) · [heatmap(Pohang Steelers)](viz/JejuSK_PohangSteelers_205097_Pohang Steelers_heatmap.svg) · [network(Pohang Steelers)](viz/JejuSK_PohangSteelers_205097_Pohang Steelers_network.svg) · [shotmap(Pohang Steelers)](viz/JejuSK_PohangSteelers_205097_Pohang Steelers_shotmap.svg)
 - **Juventude_Cuiabá_10029**: [heatmap(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_heatmap.svg) · [network(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_network.svg) · [shotmap(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_shotmap.svg) · [heatmap(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_heatmap.svg) · [network(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_network.svg) · [shotmap(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_shotmap.svg)
+- **KoninklijkeSportingHasselt_RoyalAntwerpFC_219212**: [heatmap(Koninklijke Sporting Hasselt)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Koninklijke Sporting Hasselt_heatmap.svg) · [network(Koninklijke Sporting Hasselt)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Koninklijke Sporting Hasselt_network.svg) · [shotmap(Koninklijke Sporting Hasselt)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Koninklijke Sporting Hasselt_shotmap.svg) · [heatmap(Royal Antwerp FC)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Royal Antwerp FC_heatmap.svg) · [network(Royal Antwerp FC)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Royal Antwerp FC_network.svg) · [shotmap(Royal Antwerp FC)](viz/KoninklijkeSportingHasselt_RoyalAntwerpFC_219212_Royal Antwerp FC_shotmap.svg)
 - **KuopionPalloseura_FKVardarSkopje_210765**: [heatmap(FK Vardar Skopje)](viz/KuopionPalloseura_FKVardarSkopje_210765_FK Vardar Skopje_heatmap.svg) · [network(FK Vardar Skopje)](viz/KuopionPalloseura_FKVardarSkopje_210765_FK Vardar Skopje_network.svg) · [shotmap(FK Vardar Skopje)](viz/KuopionPalloseura_FKVardarSkopje_210765_FK Vardar Skopje_shotmap.svg) · [heatmap(Kuopion Palloseura)](viz/KuopionPalloseura_FKVardarSkopje_210765_Kuopion Palloseura_heatmap.svg) · [network(Kuopion Palloseura)](viz/KuopionPalloseura_FKVardarSkopje_210765_Kuopion Palloseura_network.svg) · [shotmap(Kuopion Palloseura)](viz/KuopionPalloseura_FKVardarSkopje_210765_Kuopion Palloseura_shotmap.svg)
 - **LarneFC_SPTreFiori_210767**: [heatmap(Larne FC)](viz/LarneFC_SPTreFiori_210767_Larne FC_heatmap.svg) · [network(Larne FC)](viz/LarneFC_SPTreFiori_210767_Larne FC_network.svg) · [shotmap(Larne FC)](viz/LarneFC_SPTreFiori_210767_Larne FC_shotmap.svg) · [heatmap(SP Tre Fiori)](viz/LarneFC_SPTreFiori_210767_SP Tre Fiori_heatmap.svg) · [network(SP Tre Fiori)](viz/LarneFC_SPTreFiori_210767_SP Tre Fiori_network.svg) · [shotmap(SP Tre Fiori)](viz/LarneFC_SPTreFiori_210767_SP Tre Fiori_shotmap.svg)
 - **LeHavre_AmiensSC_218943**: [heatmap(Amiens SC)](viz/LeHavre_AmiensSC_218943_Amiens SC_heatmap.svg) · [network(Amiens SC)](viz/LeHavre_AmiensSC_218943_Amiens SC_network.svg) · [shotmap(Amiens SC)](viz/LeHavre_AmiensSC_218943_Amiens SC_shotmap.svg) · [heatmap(Le Havre)](viz/LeHavre_AmiensSC_218943_Le Havre_heatmap.svg) · [network(Le Havre)](viz/LeHavre_AmiensSC_218943_Le Havre_network.svg) · [shotmap(Le Havre)](viz/LeHavre_AmiensSC_218943_Le Havre_shotmap.svg)
@@ -928,10 +1059,12 @@
 - **Montpellier_LePuy-en-Velay_218948**: [heatmap(Le Puy-en-Velay)](viz/Montpellier_LePuy-en-Velay_218948_Le Puy-en-Velay_heatmap.svg) · [network(Le Puy-en-Velay)](viz/Montpellier_LePuy-en-Velay_218948_Le Puy-en-Velay_network.svg) · [shotmap(Le Puy-en-Velay)](viz/Montpellier_LePuy-en-Velay_218948_Le Puy-en-Velay_shotmap.svg) · [heatmap(Montpellier)](viz/Montpellier_LePuy-en-Velay_218948_Montpellier_heatmap.svg) · [network(Montpellier)](viz/Montpellier_LePuy-en-Velay_218948_Montpellier_network.svg) · [shotmap(Montpellier)](viz/Montpellier_LePuy-en-Velay_218948_Montpellier_shotmap.svg)
 - **NECNijmegen_Al-Fayha_219036**: [heatmap(Al-Fayha)](viz/NECNijmegen_Al-Fayha_219036_Al-Fayha_heatmap.svg) · [network(Al-Fayha)](viz/NECNijmegen_Al-Fayha_219036_Al-Fayha_network.svg) · [shotmap(Al-Fayha)](viz/NECNijmegen_Al-Fayha_219036_Al-Fayha_shotmap.svg) · [heatmap(NEC Nijmegen)](viz/NECNijmegen_Al-Fayha_219036_NEC Nijmegen_heatmap.svg) · [network(NEC Nijmegen)](viz/NECNijmegen_Al-Fayha_219036_NEC Nijmegen_network.svg) · [shotmap(NEC Nijmegen)](viz/NECNijmegen_Al-Fayha_219036_NEC Nijmegen_shotmap.svg)
 - **Operário-PR_GrêmioNovorizontino_10020**: [heatmap(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_heatmap.svg) · [network(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_network.svg) · [shotmap(Grêmio Novorizontino)](viz/Operário-PR_GrêmioNovorizontino_10020_Grêmio Novorizontino_shotmap.svg) · [heatmap(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_heatmap.svg) · [network(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_network.svg) · [shotmap(Operário-PR)](viz/Operário-PR_GrêmioNovorizontino_10020_Operário-PR_shotmap.svg)
+- **Pisa_PaviaCalcio_219222**: [heatmap(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_heatmap.svg) · [network(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_network.svg) · [shotmap(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_shotmap.svg) · [heatmap(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_heatmap.svg) · [network(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_network.svg) · [shotmap(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_shotmap.svg)
 - **PumasUNAM_CFPachuca_211503**: [heatmap(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_heatmap.svg) · [network(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_network.svg) · [shotmap(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_shotmap.svg) · [heatmap(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_heatmap.svg) · [network(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_network.svg) · [shotmap(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_shotmap.svg)
 - **QueenslandLionsFC_EasternSuburbs_210032**: [heatmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_heatmap.svg) · [network(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_network.svg) · [shotmap(Eastern Suburbs)](viz/QueenslandLionsFC_EasternSuburbs_210032_Eastern Suburbs_shotmap.svg) · [heatmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_heatmap.svg) · [network(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_network.svg) · [shotmap(Queensland Lions FC)](viz/QueenslandLionsFC_EasternSuburbs_210032_Queensland Lions FC_shotmap.svg)
 - **RKCWaalwijk_AlemanniaAachen_219050**: [heatmap(Alemannia Aachen)](viz/RKCWaalwijk_AlemanniaAachen_219050_Alemannia Aachen_heatmap.svg) · [network(Alemannia Aachen)](viz/RKCWaalwijk_AlemanniaAachen_219050_Alemannia Aachen_network.svg) · [shotmap(Alemannia Aachen)](viz/RKCWaalwijk_AlemanniaAachen_219050_Alemannia Aachen_shotmap.svg) · [heatmap(RKC Waalwijk)](viz/RKCWaalwijk_AlemanniaAachen_219050_RKC Waalwijk_heatmap.svg) · [network(RKC Waalwijk)](viz/RKCWaalwijk_AlemanniaAachen_219050_RKC Waalwijk_network.svg) · [shotmap(RKC Waalwijk)](viz/RKCWaalwijk_AlemanniaAachen_219050_RKC Waalwijk_shotmap.svg)
 - **RhodeIslandFC_HartfordAthletic_207703**: [heatmap(Hartford Athletic)](viz/RhodeIslandFC_HartfordAthletic_207703_Hartford Athletic_heatmap.svg) · [network(Hartford Athletic)](viz/RhodeIslandFC_HartfordAthletic_207703_Hartford Athletic_network.svg) · [shotmap(Hartford Athletic)](viz/RhodeIslandFC_HartfordAthletic_207703_Hartford Athletic_shotmap.svg) · [heatmap(Rhode Island FC)](viz/RhodeIslandFC_HartfordAthletic_207703_Rhode Island FC_heatmap.svg) · [network(Rhode Island FC)](viz/RhodeIslandFC_HartfordAthletic_207703_Rhode Island FC_network.svg) · [shotmap(Rhode Island FC)](viz/RhodeIslandFC_HartfordAthletic_207703_Rhode Island FC_shotmap.svg)
+- **RioAve_Al-Ahli_219220**: [heatmap(Al-Ahli)](viz/RioAve_Al-Ahli_219220_Al-Ahli_heatmap.svg) · [network(Al-Ahli)](viz/RioAve_Al-Ahli_219220_Al-Ahli_network.svg) · [shotmap(Al-Ahli)](viz/RioAve_Al-Ahli_219220_Al-Ahli_shotmap.svg) · [heatmap(Rio Ave)](viz/RioAve_Al-Ahli_219220_Rio Ave_heatmap.svg) · [network(Rio Ave)](viz/RioAve_Al-Ahli_219220_Rio Ave_network.svg) · [shotmap(Rio Ave)](viz/RioAve_Al-Ahli_219220_Rio Ave_shotmap.svg)
 - **RodezAF_ASCannes_218956**: [heatmap(AS Cannes)](viz/RodezAF_ASCannes_218956_AS Cannes_heatmap.svg) · [network(AS Cannes)](viz/RodezAF_ASCannes_218956_AS Cannes_network.svg) · [shotmap(AS Cannes)](viz/RodezAF_ASCannes_218956_AS Cannes_shotmap.svg) · [heatmap(Rodez AF)](viz/RodezAF_ASCannes_218956_Rodez AF_heatmap.svg) · [network(Rodez AF)](viz/RodezAF_ASCannes_218956_Rodez AF_network.svg) · [shotmap(Rodez AF)](viz/RodezAF_ASCannes_218956_Rodez AF_shotmap.svg)
 - **RosenborgBK_KristiansundBK_207007**: [heatmap(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_heatmap.svg) · [network(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_network.svg) · [shotmap(Kristiansund BK)](viz/RosenborgBK_KristiansundBK_207007_Kristiansund BK_shotmap.svg) · [heatmap(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_heatmap.svg) · [network(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_network.svg) · [shotmap(Rosenborg BK)](viz/RosenborgBK_KristiansundBK_207007_Rosenborg BK_shotmap.svg)
 - **SCJacksonville_BrooklynFC_207701**: [heatmap(Brooklyn FC)](viz/SCJacksonville_BrooklynFC_207701_Brooklyn FC_heatmap.svg) · [network(Brooklyn FC)](viz/SCJacksonville_BrooklynFC_207701_Brooklyn FC_network.svg) · [shotmap(Brooklyn FC)](viz/SCJacksonville_BrooklynFC_207701_Brooklyn FC_shotmap.svg) · [heatmap(SC Jacksonville)](viz/SCJacksonville_BrooklynFC_207701_SC Jacksonville_heatmap.svg) · [network(SC Jacksonville)](viz/SCJacksonville_BrooklynFC_207701_SC Jacksonville_network.svg) · [shotmap(SC Jacksonville)](viz/SCJacksonville_BrooklynFC_207701_SC Jacksonville_shotmap.svg)
@@ -954,16 +1087,19 @@
 - **StockportCounty_BristolCity_218914**: [heatmap(Bristol City)](viz/StockportCounty_BristolCity_218914_Bristol City_heatmap.svg) · [network(Bristol City)](viz/StockportCounty_BristolCity_218914_Bristol City_network.svg) · [shotmap(Bristol City)](viz/StockportCounty_BristolCity_218914_Bristol City_shotmap.svg) · [heatmap(Stockport County)](viz/StockportCounty_BristolCity_218914_Stockport County_heatmap.svg) · [network(Stockport County)](viz/StockportCounty_BristolCity_218914_Stockport County_network.svg) · [shotmap(Stockport County)](viz/StockportCounty_BristolCity_218914_Stockport County_shotmap.svg)
 - **SãoBernardo_Avaí_10033**: [heatmap(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_heatmap.svg) · [network(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_network.svg) · [shotmap(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_shotmap.svg) · [heatmap(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_heatmap.svg) · [network(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_network.svg) · [shotmap(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_shotmap.svg)
 - **TromsøIL_VålerengaIF_207011**: [heatmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_heatmap.svg) · [network(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_network.svg) · [shotmap(Tromsø IL)](viz/TromsøIL_VålerengaIF_207011_Tromsø IL_shotmap.svg) · [heatmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_heatmap.svg) · [network(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_network.svg) · [shotmap(Vålerenga IF)](viz/TromsøIL_VålerengaIF_207011_Vålerenga IF_shotmap.svg)
+- **TuSEnnepetal_WestfaliaRhynern_219929**: [heatmap(TuS Ennepetal)](viz/TuSEnnepetal_WestfaliaRhynern_219929_TuS Ennepetal_heatmap.svg) · [network(TuS Ennepetal)](viz/TuSEnnepetal_WestfaliaRhynern_219929_TuS Ennepetal_network.svg) · [shotmap(TuS Ennepetal)](viz/TuSEnnepetal_WestfaliaRhynern_219929_TuS Ennepetal_shotmap.svg) · [heatmap(Westfalia Rhynern)](viz/TuSEnnepetal_WestfaliaRhynern_219929_Westfalia Rhynern_heatmap.svg) · [network(Westfalia Rhynern)](viz/TuSEnnepetal_WestfaliaRhynern_219929_Westfalia Rhynern_network.svg) · [shotmap(Westfalia Rhynern)](viz/TuSEnnepetal_WestfaliaRhynern_219929_Westfalia Rhynern_shotmap.svg)
 - **TurunPalloseura_ACOulu_207266**: [heatmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_heatmap.svg) · [network(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_network.svg) · [shotmap(AC Oulu)](viz/TurunPalloseura_ACOulu_207266_AC Oulu_shotmap.svg) · [heatmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_heatmap.svg) · [network(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_network.svg) · [shotmap(Turun Palloseura)](viz/TurunPalloseura_ACOulu_207266_Turun Palloseura_shotmap.svg)
 - **USLDunkerque_StandardLiège_219008**: [heatmap(Standard Liège)](viz/USLDunkerque_StandardLiège_219008_Standard Liège_heatmap.svg) · [network(Standard Liège)](viz/USLDunkerque_StandardLiège_219008_Standard Liège_network.svg) · [shotmap(Standard Liège)](viz/USLDunkerque_StandardLiège_219008_Standard Liège_shotmap.svg) · [heatmap(USL Dunkerque)](viz/USLDunkerque_StandardLiège_219008_USL Dunkerque_heatmap.svg) · [network(USL Dunkerque)](viz/USLDunkerque_StandardLiège_219008_USL Dunkerque_network.svg) · [shotmap(USL Dunkerque)](viz/USLDunkerque_StandardLiège_219008_USL Dunkerque_shotmap.svg)
 - **UniaSkierniewice_KKS1925Kalisz_219020**: [heatmap(KKS 1925 Kalisz)](viz/UniaSkierniewice_KKS1925Kalisz_219020_KKS 1925 Kalisz_heatmap.svg) · [network(KKS 1925 Kalisz)](viz/UniaSkierniewice_KKS1925Kalisz_219020_KKS 1925 Kalisz_network.svg) · [shotmap(KKS 1925 Kalisz)](viz/UniaSkierniewice_KKS1925Kalisz_219020_KKS 1925 Kalisz_shotmap.svg) · [heatmap(Unia Skierniewice)](viz/UniaSkierniewice_KKS1925Kalisz_219020_Unia Skierniewice_heatmap.svg) · [network(Unia Skierniewice)](viz/UniaSkierniewice_KKS1925Kalisz_219020_Unia Skierniewice_network.svg) · [shotmap(Unia Skierniewice)](viz/UniaSkierniewice_KKS1925Kalisz_219020_Unia Skierniewice_shotmap.svg)
 - **UniaSwarzędz_SokółKleczew_218930**: [heatmap(Sokół Kleczew)](viz/UniaSwarzędz_SokółKleczew_218930_Sokół Kleczew_heatmap.svg) · [network(Sokół Kleczew)](viz/UniaSwarzędz_SokółKleczew_218930_Sokół Kleczew_network.svg) · [shotmap(Sokół Kleczew)](viz/UniaSwarzędz_SokółKleczew_218930_Sokół Kleczew_shotmap.svg) · [heatmap(Unia Swarzędz)](viz/UniaSwarzędz_SokółKleczew_218930_Unia Swarzędz_heatmap.svg) · [network(Unia Swarzędz)](viz/UniaSwarzędz_SokółKleczew_218930_Unia Swarzędz_network.svg) · [shotmap(Unia Swarzędz)](viz/UniaSwarzędz_SokółKleczew_218930_Unia Swarzędz_shotmap.svg)
 - **VSGAltglienicke_RBLeipzig_219028**: [heatmap(RB Leipzig)](viz/VSGAltglienicke_RBLeipzig_219028_RB Leipzig_heatmap.svg) · [network(RB Leipzig)](viz/VSGAltglienicke_RBLeipzig_219028_RB Leipzig_network.svg) · [shotmap(RB Leipzig)](viz/VSGAltglienicke_RBLeipzig_219028_RB Leipzig_shotmap.svg) · [heatmap(VSG Altglienicke)](viz/VSGAltglienicke_RBLeipzig_219028_VSG Altglienicke_heatmap.svg) · [network(VSG Altglienicke)](viz/VSGAltglienicke_RBLeipzig_219028_VSG Altglienicke_network.svg) · [shotmap(VSG Altglienicke)](viz/VSGAltglienicke_RBLeipzig_219028_VSG Altglienicke_shotmap.svg)
+- **Venezia_DolomitiBellunesi_219219**: [heatmap(Dolomiti Bellunesi)](viz/Venezia_DolomitiBellunesi_219219_Dolomiti Bellunesi_heatmap.svg) · [network(Dolomiti Bellunesi)](viz/Venezia_DolomitiBellunesi_219219_Dolomiti Bellunesi_network.svg) · [shotmap(Dolomiti Bellunesi)](viz/Venezia_DolomitiBellunesi_219219_Dolomiti Bellunesi_shotmap.svg) · [heatmap(Venezia)](viz/Venezia_DolomitiBellunesi_219219_Venezia_heatmap.svg) · [network(Venezia)](viz/Venezia_DolomitiBellunesi_219219_Venezia_network.svg) · [shotmap(Venezia)](viz/Venezia_DolomitiBellunesi_219219_Venezia_shotmap.svg)
 - **VfLWolfsburg_SCVerl_219033**: [heatmap(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_heatmap.svg) · [network(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_network.svg) · [shotmap(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_shotmap.svg) · [heatmap(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_heatmap.svg) · [network(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_network.svg) · [shotmap(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_shotmap.svg)
 - **Vietnam_Myanmar_216521**: [heatmap(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_heatmap.svg) · [network(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_network.svg) · [shotmap(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_shotmap.svg) · [heatmap(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_heatmap.svg) · [network(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_network.svg) · [shotmap(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_shotmap.svg)
 - **VästeråsSK_DegerforsIF_46398**: [heatmap(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_heatmap.svg) · [network(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_network.svg) · [shotmap(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_shotmap.svg) · [heatmap(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_heatmap.svg) · [network(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_network.svg) · [shotmap(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_shotmap.svg)
 - **WartaPoznań_LechiaZielonaGóra_218997**: [heatmap(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_heatmap.svg) · [network(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_network.svg) · [shotmap(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_shotmap.svg) · [heatmap(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_heatmap.svg) · [network(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_network.svg) · [shotmap(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_shotmap.svg)
 - **WestfaliaRhynern_SpVgEssenSchonnebeck_219733**: [heatmap(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_heatmap.svg) · [network(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_network.svg) · [shotmap(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_shotmap.svg) · [heatmap(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_heatmap.svg) · [network(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_network.svg) · [shotmap(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_shotmap.svg)
+- **WidzewŁódź_PuszczaNiepołomice_219930**: [heatmap(Puszcza Niepołomice)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Puszcza Niepołomice_heatmap.svg) · [network(Puszcza Niepołomice)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Puszcza Niepołomice_network.svg) · [shotmap(Puszcza Niepołomice)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Puszcza Niepołomice_shotmap.svg) · [heatmap(Widzew Łódź)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Widzew Łódź_heatmap.svg) · [network(Widzew Łódź)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Widzew Łódź_network.svg) · [shotmap(Widzew Łódź)](viz/WidzewŁódź_PuszczaNiepołomice_219930_Widzew Łódź_shotmap.svg)
 - **WiganAthletic_PortVale_219048**: [heatmap(Port Vale)](viz/WiganAthletic_PortVale_219048_Port Vale_heatmap.svg) · [network(Port Vale)](viz/WiganAthletic_PortVale_219048_Port Vale_network.svg) · [shotmap(Port Vale)](viz/WiganAthletic_PortVale_219048_Port Vale_shotmap.svg) · [heatmap(Wigan Athletic)](viz/WiganAthletic_PortVale_219048_Wigan Athletic_heatmap.svg) · [network(Wigan Athletic)](viz/WiganAthletic_PortVale_219048_Wigan Athletic_network.svg) · [shotmap(Wigan Athletic)](viz/WiganAthletic_PortVale_219048_Wigan Athletic_shotmap.svg)
 - **WisłaKraków_SKArtisBrno_219003**: [heatmap(SK Artis Brno)](viz/WisłaKraków_SKArtisBrno_219003_SK Artis Brno_heatmap.svg) · [network(SK Artis Brno)](viz/WisłaKraków_SKArtisBrno_219003_SK Artis Brno_network.svg) · [shotmap(SK Artis Brno)](viz/WisłaKraków_SKArtisBrno_219003_SK Artis Brno_shotmap.svg) · [heatmap(Wisła Kraków)](viz/WisłaKraków_SKArtisBrno_219003_Wisła Kraków_heatmap.svg) · [network(Wisła Kraków)](viz/WisłaKraków_SKArtisBrno_219003_Wisła Kraków_network.svg) · [shotmap(Wisła Kraków)](viz/WisłaKraków_SKArtisBrno_219003_Wisła Kraków_shotmap.svg)
 - **WolfsbergerAC_KapfenbergerSV_218952**: [heatmap(Kapfenberger SV)](viz/WolfsbergerAC_KapfenbergerSV_218952_Kapfenberger SV_heatmap.svg) · [network(Kapfenberger SV)](viz/WolfsbergerAC_KapfenbergerSV_218952_Kapfenberger SV_network.svg) · [shotmap(Kapfenberger SV)](viz/WolfsbergerAC_KapfenbergerSV_218952_Kapfenberger SV_shotmap.svg) · [heatmap(Wolfsberger AC)](viz/WolfsbergerAC_KapfenbergerSV_218952_Wolfsberger AC_heatmap.svg) · [network(Wolfsberger AC)](viz/WolfsbergerAC_KapfenbergerSV_218952_Wolfsberger AC_network.svg) · [shotmap(Wolfsberger AC)](viz/WolfsbergerAC_KapfenbergerSV_218952_Wolfsberger AC_shotmap.svg)
