@@ -111,21 +111,46 @@ def _team_kr(name, league_key):
     return None
 
 
+def _looks_like_b_team(raw_name):
+    """collect_fixtures_multileague의 동명 헬퍼와 동일 기준. 중복 ID가 있을
+    때만 대표 ID 선정에 쓴다."""
+    import re
+    from app_export_multileague import _ascii_fold
+    return bool(re.search(
+        r'\b(b|ii|iii|u\d{2}|youth|junior|castilla|atletic|femen\w*|'
+        r'women|ladies|reserves?)\b', _ascii_fold(raw_name or ''), re.I))
+
+
 def _find_league_teams(client, league_key, league_id):
+    """2026-07-19: 클럽당 BSD ID를 1개(대표)로 축소. 기존엔 중복 ID(예:
+    라리가 레알 소시에다드 48/924)를 둘 다 돌면서 같은 선수를 다른 ID
+    밑에서 재발견해 가짜 이적 28건을 만들었다(07-19 실행 실측). 스냅샷
+    비교도 team_id 기준이라 대표 ID 고정이 근본 해결책이다."""
     candidates = [{'league_id': league_id}, {'league': league_id}]
     for params in candidates:
         data = _unwrap(client.teams(**params))
         if not data:
             continue
         results = data.get('results', [])
-        matched = {}
+        by_kr = {}
         for t in results:
             name = t.get('name') or t.get('short_name')
             kr = _team_kr(name, league_key)
             if kr:
-                matched[t['id']] = kr
+                by_kr.setdefault(kr, []).append((t['id'], name))
+        matched = {}
+        for kr, lst in by_kr.items():
+            chosen = lst[0]
+            if len(lst) > 1:
+                non_b = [x for x in lst if not _looks_like_b_team(x[1])]
+                chosen = (non_b or lst)[0]
+                dup_desc = ', '.join(f'{i}:"{n}"' for i, n in lst)
+                print(f'[collect_transfers_bsd] [diag] {league_key} "{kr}" '
+                      f'중복 {len(lst)}건 [{dup_desc}] → 대표 id={chosen[0]} 사용',
+                      flush=True)
+            matched[chosen[0]] = kr
         print(f'[collect_transfers_bsd]   {league_key} teams{params} → '
-              f'{len(results)}개 중 {len(matched)}개 매칭', flush=True)
+              f'{len(results)}개 중 클럽 {len(matched)}개 매칭', flush=True)
         if len(matched) >= 3:
             return matched
     return {}
@@ -158,6 +183,17 @@ def main():
     prev_snapshot = _load_json(SNAPSHOT_PATH, {})
     fresh_snapshot = {}
     transfers = _load_json(TRANSFERS_PATH, [])
+    # 2026-07-19: 이미 누적된 가짜 이적(같은 리그·같은 팀 → 같은 팀) 청소.
+    # 07-19 실행에서 레알 소시에다드 28건 등이 들어간 상태라, 근본 수정
+    # (대표 ID + 같은 클럽 가드)과 별개로 기존 레코드도 걸러야 한다.
+    n_before = len(transfers)
+    transfers = [t for t in transfers
+                 if not (t.get('from_team')
+                         and t.get('from_team') == t.get('to_team')
+                         and t.get('from_league') == t.get('to_league'))]
+    if len(transfers) != n_before:
+        print(f'[collect_transfers_bsd] 누적 목록에서 가짜 이적(같은팀→같은팀) '
+              f'{n_before - len(transfers)}건 제거', flush=True)
     today = datetime.now(timezone.utc).date().isoformat()
 
     for league_key, league_id in leagues.items():
@@ -183,6 +219,12 @@ def main():
                 league_player_count += 1
                 prev = prev_snapshot.get(pid)
                 if prev and prev.get('team_id') != team_id:
+                    # 2026-07-19: ID가 달라도 같은 리그·같은 클럽이면 이적이
+                    # 아니다 — BSD 중복 레코드이거나 BSD가 클럽 ID를 갈아탄
+                    # 경우다. 스냅샷만 새 ID로 갱신하고 넘어간다.
+                    if (prev.get('team_kr') == team_kr
+                            and prev.get('league') == league_key):
+                        continue
                     transfers.append({
                         'player_id': pid,
                         'player_name': p.get('name'),
