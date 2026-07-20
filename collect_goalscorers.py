@@ -40,15 +40,16 @@ from collect_fixtures_multileague import (_find_leagues, _find_league_teams,
 OUT_PATH = 'data/master/goalscorers.json'
 _diag_done = False
 
-# 2026-07-19: 실전 첫 실행(#67)에서 event_detail 응답에 득점자 필드가 아예
-# 없음이 확정됐다(sample_keys에 home_score/away_score만 있고 goals/events/
-# incidents 류 없음 — 종료경기 722건에서 0건). 필드명 문제가 아니라 데이터가
-# 다른 엔드포인트에 있는 문제. BSDClient에 득점자 전용 메서드도 없으므로,
-# 이 프로젝트의 확립된 패턴(후보를 실측으로 검증해 확정)대로 종료경기
-# 1건을 상대로 하위 경로 후보를 한 번씩 프로브하고, 득점 데이터가 나오는
-# 경로를 찾으면 그 실행에서 즉시 채택한다. 못 찾으면 전 후보의 응답을
-# [diag]로 남겨 다음 판단 근거로 삼는다.
-_SUB = {'checked': False, 'tpl': None}
+# 2026-07-20 실측 확정: 득점자 엔드포인트는 events/{eid}/incidents/ 다.
+# 근거(#68~ 실행 로그): 후보 중 유일하게 404가 아니었고(빈 경기는 빈 리스트
+# 응답), 실제로 EPL 종료경기 722건 중 251건에서 득점자 추출에 성공했다.
+# 리그 단위 topscorers 류는 전부 404 → BSD에 없음 확정.
+# 이전 프로브 설계의 허점: 첫 실패 경기 1건으로만 판정해서, 그 경기가
+# BSD에 기록이 없는 옛 경기면(160551처럼 빈 리스트) 경로를 못 찾은 걸로
+# 오판했다 → 이제 확정 경로를 항상 쓰고, 프로브는 확정 경로가 404를
+# 내기 시작할 때(경로 소실)만 비상용으로 돌린다.
+_CONFIRMED_TPL = 'events/{eid}/incidents/'
+_SUB = {'checked': False, 'tpl': _CONFIRMED_TPL}
 _EVENT_SUB_CANDIDATES = [
     'events/{eid}/incidents/',
     'events/{eid}/events/',
@@ -156,12 +157,17 @@ def _probe_sub_endpoints(client, eid, league_id):
 
 
 def _goals_via_sub(client, eid, tpl):
+    """확정 하위 경로에서 골을 뽑는다. 반환: (goals, endpoint_ok).
+    endpoint_ok=False는 경로 자체가 죽은 것(404/예외), True인데 goals가
+    비면 그 경기에 BSD 기록이 없는 것(옛 경기 등)."""
     try:
         rows = _rows_of(client.get(tpl.format(eid=eid)))
     except Exception:
         rows = None
     time.sleep(0.2)
-    return _goals_from_items(rows)
+    if rows is None:
+        return [], False
+    return _goals_from_items(rows), True
 
 
 def _name_of(val):
@@ -264,11 +270,11 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
         if eid is None:
             continue
 
-        # 2026-07-19 증분 수집: 이미 골을 확보한 경기와 0-0으로 확정된
-        # 경기는 재호출하지 않는다 — EPL만 종료경기 722건이라(#67 실측)
-        # 매 실행 전수 재조회는 낭비 + 레이트리밋 위험.
+        # 2026-07-19 증분 수집: 골 확보 경기, 0-0 확정 경기, incidents까지
+        # 확인했는데 BSD에 기록이 없던 경기(checked)는 재호출하지 않는다.
         prev_m = prev_by_eid.get(eid)
-        if prev_m and (prev_m.get('goals') or prev_m.get('nil')):
+        if prev_m and (prev_m.get('goals') or prev_m.get('nil')
+                       or prev_m.get('checked')):
             matches.append(prev_m)
             n_reused += 1
             if prev_m.get('goals'):
@@ -277,6 +283,7 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
 
         total = _score_total(ev)
         goals = []
+        checked = False
         if total == 0:
             pass  # 0-0 — 득점자 조회 자체가 불필요
         else:
@@ -284,13 +291,20 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
             time.sleep(0.2)
             if ok and detail:
                 goals = _extract_goals(detail)
-            # detail에 골이 없으면(=#67에서 확정된 상황) 하위 엔드포인트로.
             if not goals:
-                if not _SUB['checked']:
+                # 2026-07-20 실측 확정 경로(incidents/)를 항상 사용
+                goals, ep_ok = _goals_via_sub(client, eid, _SUB['tpl'])
+                if ep_ok and not goals:
+                    checked = True  # 경로 정상, 이 경기 기록이 BSD에 없음
+                elif not ep_ok and not _SUB['checked']:
+                    # 확정 경로가 죽었을 때만 비상 프로브 1회
                     _SUB['checked'] = True
-                    _SUB['tpl'] = _probe_sub_endpoints(client, eid, league_id)
-                if _SUB['tpl']:
-                    goals = _goals_via_sub(client, eid, _SUB['tpl'])
+                    found = _probe_sub_endpoints(client, eid, league_id)
+                    if found:
+                        _SUB['tpl'] = found
+                        goals, ep_ok = _goals_via_sub(client, eid, _SUB['tpl'])
+                        if ep_ok and not goals:
+                            checked = True
         date_kst, _ = _kst_date_time(ev.get('event_date'))
         m = {
             'home': home_kr, 'away': away_kr, 'date': date_kst,
@@ -298,6 +312,8 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
         }
         if total == 0:
             m['nil'] = True
+        if checked:
+            m['checked'] = True
         matches.append(m)
         if goals:
             n_with_goals += 1
