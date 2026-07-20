@@ -14454,5 +14454,115 @@
             }
         ],
         "collected_at": "2026-07-20T00:45:28.111530+00:00"
+    },
+    "1360315774": {
+        "match": {
+            "id": 1360315774,
+            "round": "Club Friendlies",
+            "date": "2026-07-20T18:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6599438,
+                "logo": "https://highlightly.net/soccer/images/teams/6599438.png",
+                "name": "United of Manchester"
+            },
+            "homeTeam": {
+                "id": 6533911,
+                "logo": "https://highlightly.net/soccer/images/teams/6533911.png",
+                "name": "Trafford"
+            },
+            "league": {
+                "id": 568401,
+                "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+                "name": "Friendlies Clubs",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6533911,
+                    "logo": "https://highlightly.net/soccer/images/teams/6533911.png",
+                    "name": "Trafford"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6599438,
+                    "logo": "https://highlightly.net/soccer/images/teams/6599438.png",
+                    "name": "United of Manchester"
+                }
+            }
+        ],
+        "collected_at": "2026-07-20T13:47:01.893135+00:00"
+    },
+    "1360314923": {
+        "match": {
+            "id": 1360314923,
+            "round": "Club Friendlies",
+            "date": "2026-07-20T18:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6535613,
+                "logo": "https://highlightly.net/soccer/images/teams/6535613.png",
+                "name": "Welwyn Garden City"
+            },
+            "homeTeam": {
+                "id": 7581492,
+                "logo": "https://highlightly.net/soccer/images/teams/7581492.png",
+                "name": "Redbridge"
+            },
+            "league": {
+                "id": 568401,
+                "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+                "name": "Friendlies Clubs",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7581492,
+                    "logo": "https://highlightly.net/soccer/images/teams/7581492.png",
+                    "name": "Redbridge"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6535613,
+                    "logo": "https://highlightly.net/soccer/images/teams/6535613.png",
+                    "name": "Welwyn Garden City"
+                }
+            }
+        ],
+        "collected_at": "2026-07-20T13:47:02.081585+00:00"
     }
 }
