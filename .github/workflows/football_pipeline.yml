@@ -145,10 +145,6 @@ jobs:
           # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
           # 읽는 data/master/goalscorers.json을 만들어야 해서 그 앞에는 반드시 와야 한다.
           python collect_goalscorers.py
-          # 2026-07-21 [임시/리허설] UEFA 예선(진행 중인 실시간 종료 경기)으로
-          # 득점자 수집 배관을 검증한다. 앱에는 아무것도 반영하지 않고 로그만
-          # 남긴다. 로그의 [rehearse_uefa] 결과를 확인한 뒤 이 줄은 삭제할 것.
-          python rehearse_goalscorers_uefa.py || true
           # 2026-07-16 추가: 아래 둘은 app_export*.py가 임베드하는 데이터를
           # 만들어야 해서 반드시 그 앞에 와야 한다.
           python train_ml_ensemble.py
