@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-21
 
-생성(UTC): 2026-07-21 16:28
+생성(UTC): 2026-07-21 21:31
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -80,6 +80,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Argentina | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Switzerland | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### AtléticoNacional_TigresFC_220388
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Atlético Nacional | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Tigres FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### Barnet_LutonTown_219038
 
@@ -1128,6 +1135,7 @@
 - **AméricaMineiro_Londrina_10014**: [heatmap(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_heatmap.svg) · [network(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_network.svg) · [shotmap(América Mineiro)](viz/AméricaMineiro_Londrina_10014_América Mineiro_shotmap.svg) · [heatmap(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_heatmap.svg) · [network(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_network.svg) · [shotmap(Londrina)](viz/AméricaMineiro_Londrina_10014_Londrina_shotmap.svg)
 - **AnnecyFC_FCSion_218950**: [heatmap(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_heatmap.svg) · [network(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_network.svg) · [shotmap(Annecy FC)](viz/AnnecyFC_FCSion_218950_Annecy FC_shotmap.svg) · [heatmap(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_heatmap.svg) · [network(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_network.svg) · [shotmap(FC Sion)](viz/AnnecyFC_FCSion_218950_FC Sion_shotmap.svg)
 - **Argentina_Switzerland_8386**: [heatmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_heatmap.svg) · [network(Argentina)](viz/Argentina_Switzerland_8386_Argentina_network.svg) · [shotmap(Argentina)](viz/Argentina_Switzerland_8386_Argentina_shotmap.svg) · [heatmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_heatmap.svg) · [network(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_network.svg) · [shotmap(Switzerland)](viz/Argentina_Switzerland_8386_Switzerland_shotmap.svg)
+- **AtléticoNacional_TigresFC_220388**: [heatmap(Atlético Nacional)](viz/AtléticoNacional_TigresFC_220388_Atlético Nacional_heatmap.svg) · [network(Atlético Nacional)](viz/AtléticoNacional_TigresFC_220388_Atlético Nacional_network.svg) · [shotmap(Atlético Nacional)](viz/AtléticoNacional_TigresFC_220388_Atlético Nacional_shotmap.svg) · [heatmap(Tigres FC)](viz/AtléticoNacional_TigresFC_220388_Tigres FC_heatmap.svg) · [network(Tigres FC)](viz/AtléticoNacional_TigresFC_220388_Tigres FC_network.svg) · [shotmap(Tigres FC)](viz/AtléticoNacional_TigresFC_220388_Tigres FC_shotmap.svg)
 - **Barnet_LutonTown_219038**: [heatmap(Barnet)](viz/Barnet_LutonTown_219038_Barnet_heatmap.svg) · [network(Barnet)](viz/Barnet_LutonTown_219038_Barnet_network.svg) · [shotmap(Barnet)](viz/Barnet_LutonTown_219038_Barnet_shotmap.svg) · [heatmap(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_heatmap.svg) · [network(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_network.svg) · [shotmap(Luton Town)](viz/Barnet_LutonTown_219038_Luton Town_shotmap.svg)
 - **BasfordUnited_GainsboroughTrinity_219080**: [heatmap(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_heatmap.svg) · [network(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_network.svg) · [shotmap(Basford United)](viz/BasfordUnited_GainsboroughTrinity_219080_Basford United_shotmap.svg) · [heatmap(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_heatmap.svg) · [network(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_network.svg) · [shotmap(Gainsborough Trinity)](viz/BasfordUnited_GainsboroughTrinity_219080_Gainsborough Trinity_shotmap.svg)
 - **Benevento_AsdCalvi_219931**: [heatmap(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_heatmap.svg) · [network(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_network.svg) · [shotmap(Asd Calvi)](viz/Benevento_AsdCalvi_219931_Asd Calvi_shotmap.svg) · [heatmap(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_heatmap.svg) · [network(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_network.svg) · [shotmap(Benevento)](viz/Benevento_AsdCalvi_219931_Benevento_shotmap.svg)
