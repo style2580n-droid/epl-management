@@ -1,4 +1,50 @@
 {
+    "FC Iberia 1999": {
+        "matches": 2,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "ŠK Slovan Bratislava": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Turun Palloseura": {
         "matches": 2,
         "totals": {
@@ -610,13 +656,13 @@
         }
     },
     "Mjällby AIF": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0
         },
         "per_match": {
             "buildup_attempts": 0.0,
@@ -1207,6 +1253,35 @@
             "clean_sheet": 1.0
         }
     },
+    "Lincoln Red Imps": {
+        "matches": 2,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "RKC Waalwijk": {
         "matches": 1,
         "totals": {
@@ -1541,6 +1616,52 @@
             "clean_sheet": 1.0
         }
     },
+    "VfL Bochum 1848": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Swansea City": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "FC Zürich": {
         "matches": 1,
         "totals": {
@@ -1588,20 +1709,32 @@
         }
     },
     "Shamrock Rovers": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         },
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 1.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         }
     },
     "Floriana FC": {
@@ -1817,23 +1950,6 @@
             "clean_sheet": 1.0
         }
     },
-    "FC Iberia 1999": {
-        "matches": 1,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
     "Flora Tallinn": {
         "matches": 1,
         "totals": {
@@ -1902,6 +2018,23 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "FC Ararat-Armenia": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -2203,6 +2336,98 @@
         }
     },
     "Colo-Colo": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Sabah FK": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Kuopion Palloseura": {
+        "matches": 2,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "NK Slaven Belupo": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Shakhtar Donetsk": {
         "matches": 1,
         "totals": {
             "passes": 0.0,
@@ -2650,23 +2875,6 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
-    "Kuopion Palloseura": {
-        "matches": 1,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -5228,35 +5436,6 @@
             "clean_sheet": 1.0
         },
         "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
-    "Lincoln Red Imps": {
-        "matches": 1,
-        "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
