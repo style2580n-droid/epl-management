@@ -15664,5 +15664,60 @@
             }
         ],
         "collected_at": "2026-07-21T11:29:16.732179+00:00"
+    },
+    "1328219458": {
+        "match": {
+            "id": 1328219458,
+            "round": "Club Friendlies",
+            "date": "2026-07-21T18:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 7647870,
+                "logo": null,
+                "name": "Walton & Hersham"
+            },
+            "homeTeam": {
+                "id": 1562369,
+                "logo": "https://highlightly.net/soccer/images/teams/1562369.png",
+                "name": "Sutton United"
+            },
+            "league": {
+                "id": 568401,
+                "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+                "name": "Friendlies Clubs",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1562369,
+                    "logo": "https://highlightly.net/soccer/images/teams/1562369.png",
+                    "name": "Sutton United"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7647870,
+                    "logo": null,
+                    "name": "Walton & Hersham"
+                }
+            }
+        ],
+        "collected_at": "2026-07-21T11:56:17.851523+00:00"
     }
 }
