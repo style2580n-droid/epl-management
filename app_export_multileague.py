@@ -594,10 +594,33 @@ def update_player_baseline(name_cache):
     if not isinstance(players, dict) or not players:
         return
     all_matches = _load_json(GOALSCORERS_PATH, {})
-    # 한글명 → 기준선 키 (동명이인은 건너뜀 — 오귀속 방지)
-    by_kr = {}
+    # 한글명 → 기준선 키. 월드컵 마스터는 이름이 '성'만인 경우가 많고
+    # (오야르사발), 리그 득점자 번역은 풀네임(미켈 오야르사발)이라 형식이
+    # 다르다. 그래서 (1) 전체 한글명, (2) 성(마지막 토큰) 두 인덱스를 만들되
+    # 성 인덱스는 유일할 때만 매칭에 쓴다(동명이인 오귀속 방지).
+    by_full, by_last = {}, {}
     for k, p in players.items():
-        by_kr.setdefault(p.get('name_kr'), []).append(k)
+        nm = (p.get('name_kr') or '').strip()
+        if not nm:
+            continue
+        by_full.setdefault(nm, []).append(k)
+        by_last.setdefault(nm.split()[-1], []).append(k)
+
+    def _resolve(nm_ko):
+        """리그 번역명(풀네임 가능)을 기준선 키로. 전체일치 우선, 없으면
+        마지막 토큰(성)이 양쪽에서 유일할 때만."""
+        nm_ko = (nm_ko or '').strip()
+        if not nm_ko:
+            return None
+        hits = by_full.get(nm_ko)
+        if hits and len(hits) == 1:
+            return hits[0]
+        last = nm_ko.split()[-1]
+        cand = by_last.get(last)
+        if cand and len(cand) == 1:
+            return cand[0]
+        return None
+
     tally = {}  # key -> {'g','a','apps'}
     for lk in LEAGUE_TEAM_MAPS:
         for m in all_matches.get(lk, []):
@@ -607,11 +630,9 @@ def update_player_baseline(name_cache):
                     nm_en = g.get(field)
                     if not nm_en:
                         continue
-                    nm_ko = _translate_name(nm_en, name_cache)
-                    hits = by_kr.get(nm_ko, [])
-                    if len(hits) != 1:
+                    key = _resolve(_translate_name(nm_en, name_cache))
+                    if not key:
                         continue
-                    key = hits[0]
                     t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
                     t[stat] += 1
                     if key not in seen_this_match:
@@ -839,7 +860,9 @@ def build_all():
 
 # ============================================================ JS 렌더링
 def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
-              transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league):
+              transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league,
+              wc_fatigue=None):
+    wc_fatigue = wc_fatigue or {}
     logos_by_league = _load_json(LOGOS_PATH, {})
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
@@ -885,7 +908,8 @@ def main():
     update_player_baseline(name_cache)  # C단계: 기준선에 리그 기록 누적
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
-                    transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league)
+                    transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league,
+                    wc_fatigue)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
     _save_name_cache(name_cache)
@@ -908,14 +932,17 @@ def main():
           f'득점기록 {total_goals}골, '
           f'이름 캐시 {len(name_cache)}건', flush=True)
     for lk in LEAGUE_TEAM_MAPS:
-        squad_players = sum(len(t['all']) for t in squads[lk].values())
-        lk_transfers = sum(len(t['in']) + len(t['out']) for t in transfers_by_league[lk].values())
+        # 2026-07-21: .get()으로 방어 — 리그 하나가 502 등으로 통째 빠져도
+        # 요약 출력에서 KeyError로 죽지 않게 (수집 자체 실패는 위 로그에 이미 남음).
+        squad_players = sum(len(t.get('all', [])) for t in squads.get(lk, {}).values())
+        lk_transfers = sum(len(t.get('in', [])) + len(t.get('out', []))
+                           for t in transfers_by_league.get(lk, {}).values())
         lk_goals = sum(leaderboard_by_league.get(lk, {}).get('scorers', {}).values())
-        print(f'  {lk}: 일정 {len(schedules[lk])}건, ELO {len(elo_by_league[lk])}팀, '
-              f'스쿼드 {len(squads[lk])}팀/{squad_players}명, '
+        print(f'  {lk}: 일정 {len(schedules.get(lk, []))}건, ELO {len(elo_by_league.get(lk, {}))}팀, '
+              f'스쿼드 {len(squads.get(lk, {}))}팀/{squad_players}명, '
               f'xG {len(xg_by_league.get(lk, {}))}팀, '
-              f'부상 {len(injuries_by_league[lk])}팀, 이적 {lk_transfers}건, '
-              f'H2H {len(h2h_by_league[lk])}개 조합, 득점기록 {lk_goals}골',
+              f'부상 {len(injuries_by_league.get(lk, {}))}팀, 이적 {lk_transfers}건, '
+              f'H2H {len(h2h_by_league.get(lk, {}))}개 조합, 득점기록 {lk_goals}골',
               flush=True)
     if unmatched:
         sample = sorted(unmatched)[:15]
