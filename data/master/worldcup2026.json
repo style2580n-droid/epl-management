@@ -1,0 +1,134 @@
+{
+ "_meta": {
+  "generated": "2026-07-20",
+  "source": "월드컵2026_선수데이터.xlsx (앱 아티팩트 추출, 결승 2026-07-19 종료)",
+  "final_date": "2026-07-19",
+  "fatigue_formula": "선수 load = 라운드가중치(우승/준우승 1.0, 3-4위 0.9, 8강 0.7, 16강 0.55, 32강 0.4, 조별 0.3) × min(1, 추정출전시간/540). 팀 점수 = min(1, Σload/2.5). 주의: 출전시간은 경기수×90 추정치이고 8강 이후 선수별 기록 미수집로 심층 진출팀이 과소집계되는 경향 있음 → 라운드 가중치로 보정",
+  "fatigue_decay": "수출 시점 감쇠: 결승 후 14일까지 100%, 이후 56일차에 0%로 선형 감소 (app_export_multileague.py가 적용)",
+  "injuries_valid_until": "2026-08-31",
+  "players_used_for_fatigue": 152
+ },
+ "fatigue_base": {
+  "laliga": {
+   "레알 소시에다드": 0.293,
+   "바르셀로나": 1.0,
+   "아틀레틱 빌바오": 0.733,
+   "아틀레티코 마드리드": 1.0,
+   "레알 베티스": 0.067,
+   "레알 마드리드": 0.86,
+   "세비야": 0.373,
+   "비야레알": 0.22,
+   "오사수나": 0.027
+  },
+  "ligue1": {
+   "파리 생제르맹": 1.0,
+   "올랭피크 마르세유": 0.497,
+   "올랭피크 리옹": 0.293,
+   "릴OSC": 0.147,
+   "스타드 렌": 0.233,
+   "AS 모나코": 0.167,
+   "OGC 니스": 0.127,
+   "라싱 스트라스부르": 0.11,
+   "앙제SCO": 0.08
+  },
+  "seriea": {
+   "인테르": 0.653,
+   "코모": 0.187,
+   "AS로마": 0.107,
+   "AC밀란": 0.357,
+   "아탈란타": 0.2,
+   "나폴리": 0.26,
+   "볼로냐": 0.333,
+   "유벤투스": 0.373,
+   "파르마": 0.027,
+   "토리노": 0.027,
+   "피오렌티나": 0.027
+  },
+  "bundesliga": {
+   "바이어 레버쿠젠": 0.237,
+   "바이에른 뮌헨": 1.0,
+   "RB 라이프치히": 0.227,
+   "SC 프라이부르크": 0.14,
+   "1.FSV 마인츠05": 0.267,
+   "보루시아 묀헨글라드바흐": 0.223,
+   "보루시아 도르트문트": 0.447,
+   "VfB 슈투트가르트": 0.053,
+   "아인트라흐트 프랑크푸르트": 0.16,
+   "TSG 호펜하임": 0.053
+  },
+  "eredivisie": {
+   "PSV 에인트호번": 0.36,
+   "아약스": 0.053,
+   "페예노르트": 0.173,
+   "N.E.C. 네이메헌": 0.027
+  },
+  "championship": {
+   "웨스트햄 유나이티드": 0.19,
+   "울버햄튼 원더러스": 0.223,
+   "버밍엄 시티": 0.04,
+   "스완지 시티": 0.04
+  }
+ },
+ "injuries": [
+  {
+   "name_kr": "사이바리",
+   "country": "모로코",
+   "club_en": "PSV Eindhoven",
+   "league": "eredivisie",
+   "team_kr": "PSV 에인트호번",
+   "kind": "injury",
+   "merge": true,
+   "note": "16강 캐나다전 22분 조기 교체(부상 추정) — 시트 부상 항목"
+  },
+  {
+   "name_kr": "살리바",
+   "country": "프랑스",
+   "club_en": "Arsenal",
+   "league": "epl",
+   "team_kr": null,
+   "kind": "injury",
+   "merge": false,
+   "note": "4강 부상 교체. EPL은 별도 앱이라 이 파이프라인 병합 대상 아님 — 기록만"
+  },
+  {
+   "name_kr": "예레미 피노",
+   "country": "스페인",
+   "club_en": "Crystal Palace",
+   "league": "epl",
+   "team_kr": null,
+   "kind": "absence",
+   "merge": false,
+   "note": "월드컵 중 keyOut, 사유 미상(부상/징계 구분 미기록) — 추측 금지로 병합 제외"
+  },
+  {
+   "name_kr": "비드머",
+   "country": "스위스",
+   "club_en": "Mainz 05",
+   "league": "bundesliga",
+   "team_kr": "1.FSV 마인츠05",
+   "kind": "absence",
+   "merge": false,
+   "note": "월드컵 중 keyOut, 사유 미상 — 추측 금지로 병합 제외(뉴스 확인 시 merge만 True로)"
+  },
+  {
+   "name_kr": "뤼에르손",
+   "country": "노르웨이",
+   "club_en": "Sporting CP",
+   "league": "other",
+   "team_kr": null,
+   "kind": "absence",
+   "merge": false,
+   "note": "월드컵 중 keyOut, 사유 미상. 포르투갈 리그 — 대상 외"
+  },
+  {
+   "name_kr": "발로건",
+   "country": "미국",
+   "club_en": "AS Monaco",
+   "league": "ligue1",
+   "team_kr": "AS 모나코",
+   "kind": "absence",
+   "merge": false,
+   "note": "월드컵 중 keyOut, 사유 미상 — 추측 금지로 병합 제외(뉴스 확인 시 merge만 True로)"
+  }
+ ]
+}
