@@ -15719,5 +15719,60 @@
             }
         ],
         "collected_at": "2026-07-21T11:56:17.851523+00:00"
+    },
+    "1347474184": {
+        "match": {
+            "id": 1347474184,
+            "round": "Club Friendlies",
+            "date": "2026-07-21T18:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6119474,
+                "logo": "https://highlightly.net/soccer/images/teams/6119474.png",
+                "name": "Aston Villa U21"
+            },
+            "homeTeam": {
+                "id": 6597736,
+                "logo": "https://highlightly.net/soccer/images/teams/6597736.png",
+                "name": "Tamworth"
+            },
+            "league": {
+                "id": 568401,
+                "logo": "https://highlightly.net/soccer/images/leagues/568401.png",
+                "name": "Friendlies Clubs",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6597736,
+                    "logo": "https://highlightly.net/soccer/images/teams/6597736.png",
+                    "name": "Tamworth"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6119474,
+                    "logo": "https://highlightly.net/soccer/images/teams/6119474.png",
+                    "name": "Aston Villa U21"
+                }
+            }
+        ],
+        "collected_at": "2026-07-21T14:23:36.417079+00:00"
     }
 }
