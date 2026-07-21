@@ -42,6 +42,8 @@ BSD_SQUADS_PATH = 'data/master/squads_multileague.json'
 XG_PATH = 'data/master/xg_multileague.json'
 SQUADS_PATH = 'data/master/previous_squads.json'
 INJURIES_PATH = 'data/master/injuries_af.json'
+WORLDCUP_PATH = 'data/master/worldcup2026.json'  # 2026-07-20: 월드컵 여독/부상 (정적)
+PLAYER_BASELINE_PATH = 'data/master/player_baseline.json'  # 2026-07-20: 선수 능력치 기준선(C단계)
 # app_export.py(EPL)와 완전히 같은 파일을 공유한다 — 선수가 EPL/6개 리그를
 # 넘나드는 경우(이적 등)도 있고, 캐시를 나눠 갖는 것보다 하나로 합쳐야
 # 중복 번역 API 호출을 줄일 수 있다.
@@ -399,6 +401,50 @@ def _classify_injury(reason):
     return 'keyOut' if any(kw in r for kw in _KEYOUT_KEYWORDS) else 'injured'
 
 
+def build_worldcup(today=None):
+    """2026-07-20: 월드컵 여독/부상 (data/master/worldcup2026.json — 결승
+    직후 아티팩트 기록에서 1회 생성한 정적 데이터).
+    - fatigue: 결승(7/19) 후 14일까지 100%, 56일차에 0%로 선형 감쇠를
+      수출 시점에 적용 (앱은 받은 fatigueScore 0~1에 최대 -10%만 적용).
+    - injuries: merge=True 항목만, injuries_valid_until까지만 병합 —
+      그 후엔 API-Football 실데이터가 대체.
+    반환: (fatigue_by_league, wc_injuries[(lk, team_kr, name)])"""
+    from datetime import date, timedelta
+    raw = _load_json(WORLDCUP_PATH, {})
+    if not raw:
+        return {}, []
+    today = today or date.today()
+    meta = raw.get('_meta', {})
+    try:
+        final_d = date.fromisoformat(meta.get('final_date', '2026-07-19'))
+    except ValueError:
+        final_d = date(2026, 7, 19)
+    days = (today - final_d).days
+    decay = 1.0 if days <= 14 else max(0.0, (56 - days) / 42.0)
+    fatigue_by_league = {}
+    if decay > 0:
+        for lk, teams in (raw.get('fatigue_base') or {}).items():
+            fatigue_by_league[lk] = {
+                kr: {'fatigueScore': round(score * decay, 3)}
+                for kr, score in teams.items() if score * decay >= 0.005}
+    wc_injuries = []
+    try:
+        valid_until = date.fromisoformat(
+            meta.get('injuries_valid_until', '2026-08-31'))
+    except ValueError:
+        valid_until = date(2026, 8, 31)
+    if today <= valid_until:
+        for inj in raw.get('injuries') or []:
+            if inj.get('merge') and inj.get('team_kr') and \
+                    inj.get('league') in LEAGUE_TEAM_MAPS:
+                wc_injuries.append(
+                    (inj['league'], inj['team_kr'], inj.get('name_kr')))
+    n_teams = sum(len(v) for v in fatigue_by_league.values())
+    print(f'[app_export_multileague] 월드컵: fatigue {n_teams}팀'
+          f'(감쇠 {decay:.2f}), 부상 병합 {len(wc_injuries)}건', flush=True)
+    return fatigue_by_league, wc_injuries
+
+
 def build_injuries():
     """collectors.py의 InjuryCollector(어제 완성)가 만든 injuries_af.json을
     리그별 {"팀명": {keyOut:[...], injured:[...]}} 형태로 변환한다.
@@ -533,6 +579,62 @@ def build_squads(name_cache):
 
 
 GOALSCORERS_PATH = 'data/master/goalscorers.json'
+
+
+def update_player_baseline(name_cache):
+    """2026-07-20 (C단계): 월드컵 기준선(player_baseline.json)에 리그 실기록을
+    누적한다. goalscorers.json의 경기별 득점 관여를 선수(한글명) 기준으로
+    세서 league_goals/league_assists/league_apps(득점 관여 경기수)를 갱신하고,
+    league_apps >= 5 이면 source를 'league'로 전환한다.
+    한계(정직하게): 득점자 데이터라 공격 기록만 갱신 가능 — 무득점 선수의
+    출전/수비 기록은 라인업 데이터가 생겨야 갱신된다(A단계 과제).
+    파일이 없으면 조용히 스킵(선택 기능)."""
+    base = _load_json(PLAYER_BASELINE_PATH, {})
+    players = base.get('players')
+    if not isinstance(players, dict) or not players:
+        return
+    all_matches = _load_json(GOALSCORERS_PATH, {})
+    # 한글명 → 기준선 키 (동명이인은 건너뜀 — 오귀속 방지)
+    by_kr = {}
+    for k, p in players.items():
+        by_kr.setdefault(p.get('name_kr'), []).append(k)
+    tally = {}  # key -> {'g','a','apps'}
+    for lk in LEAGUE_TEAM_MAPS:
+        for m in all_matches.get(lk, []):
+            seen_this_match = set()
+            for g in m.get('goals', []):
+                for field, stat in (('scorer', 'g'), ('assist', 'a')):
+                    nm_en = g.get(field)
+                    if not nm_en:
+                        continue
+                    nm_ko = _translate_name(nm_en, name_cache)
+                    hits = by_kr.get(nm_ko, [])
+                    if len(hits) != 1:
+                        continue
+                    key = hits[0]
+                    t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
+                    t[stat] += 1
+                    if key not in seen_this_match:
+                        t['apps'] += 1
+                        seen_this_match.add(key)
+    if not tally:
+        return
+    n_switched = 0
+    for key, t in tally.items():
+        p = players[key]
+        p['league_goals'] = t['g']
+        p['league_assists'] = t['a']
+        p['league_apps'] = t['apps']
+        if t['apps'] >= 5 and p.get('source') != 'league':
+            p['source'] = 'league'
+            n_switched += 1
+    try:
+        with open(PLAYER_BASELINE_PATH, 'w', encoding='utf-8') as f:
+            json.dump(base, f, ensure_ascii=False, indent=1)
+        print(f'[app_export_multileague] 선수 기준선 갱신: 리그 기록 반영 '
+              f'{len(tally)}명, source=league 전환 {n_switched}명', flush=True)
+    except OSError as exc:
+        print(f'[app_export_multileague] 선수 기준선 저장 실패: {exc}', flush=True)
 
 
 def build_leaderboard(name_cache):
@@ -750,7 +852,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'squads': squads.get(league_key, {}),
             'teamXg': xg_by_league.get(league_key, {}),
             'injuries': injuries_by_league.get(league_key, {}),
-            'fatigue': {},  # ⚠️ 월드컵 여독 — 결승(7/19) 이후 별도 아티팩트로 병합 예정
+            'fatigue': wc_fatigue.get(league_key, {}),  # 월드컵 여독 (2026-07-20 병합, 감쇠 적용)
             'transfers': transfers_by_league.get(league_key, {}),
             'h2h': h2h_by_league.get(league_key, {}),
             'leaderboard': leaderboard_by_league.get(league_key, {'scorers': {}, 'assists': {}}),
@@ -770,9 +872,17 @@ def main():
     squads, unmatched_squad_teams = build_squads(name_cache)
     xg_by_league = _load_json(XG_PATH, {})
     injuries_by_league, unmatched_injury_teams = build_injuries()
+    # 2026-07-20: 월드컵 여독/부상 병합
+    wc_fatigue, wc_injuries = build_worldcup()
+    for lk, kr, name in wc_injuries:
+        bucket = injuries_by_league.setdefault(lk, {}).setdefault(
+            kr, {'keyOut': [], 'injured': []})
+        if name and name not in bucket['injured'] and name not in bucket['keyOut']:
+            bucket['injured'].append(name)  # 월드컵 부상은 보수적으로 로테이션 등급
     transfers_by_league = build_transfers(name_cache)
     h2h_by_league = build_h2h()
     leaderboard_by_league = build_leaderboard(name_cache)
+    update_player_baseline(name_cache)  # C단계: 기준선에 리그 기록 누적
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
                     transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league)
