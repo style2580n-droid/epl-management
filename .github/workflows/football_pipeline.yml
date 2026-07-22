@@ -145,6 +145,10 @@ jobs:
           # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
           # 읽는 data/master/goalscorers.json을 만들어야 해서 그 앞에는 반드시 와야 한다.
           python collect_goalscorers.py
+          # 2026-07-22 [임시/리허설] BSD가 라인업을 주는지 실측 확정용. 앱에
+          # 아무것도 반영 안 하고 로그만 남긴다. [rehearse_lineups] 결과 확인 후
+          # 이 줄 삭제할 것. (A단계 defending 갱신 가능 여부 판단용)
+          python rehearse_lineups_probe.py || true
           # 2026-07-16 추가: 아래 둘은 app_export*.py가 임베드하는 데이터를
           # 만들어야 해서 반드시 그 앞에 와야 한다.
           python train_ml_ensemble.py
