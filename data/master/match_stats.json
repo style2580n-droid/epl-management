@@ -16874,5 +16874,60 @@
             }
         ],
         "collected_at": "2026-07-22T08:55:06.781423+00:00"
+    },
+    "1299122066": {
+        "match": {
+            "id": 1299122066,
+            "round": "Regular Season - 18",
+            "date": "2026-07-22T20:30:00.000Z",
+            "country": {
+                "code": "EC",
+                "name": "Ecuador",
+                "logo": "https://highlightly.net/soccer/images/countries/EC.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 14021860,
+                "logo": "https://highlightly.net/soccer/images/teams/14021860.png",
+                "name": "Cumbayá"
+            },
+            "homeTeam": {
+                "id": 19837594,
+                "logo": null,
+                "name": "San Antonio FC"
+            },
+            "league": {
+                "id": 207577,
+                "logo": "https://highlightly.net/soccer/images/leagues/207577.png",
+                "name": "Liga Pro Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19837594,
+                    "logo": null,
+                    "name": "San Antonio FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14021860,
+                    "logo": "https://highlightly.net/soccer/images/teams/14021860.png",
+                    "name": "Cumbayá"
+                }
+            }
+        ],
+        "collected_at": "2026-07-22T16:21:28.335365+00:00"
     }
 }
