@@ -864,6 +864,18 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
               wc_fatigue=None):
     wc_fatigue = wc_fatigue or {}
     logos_by_league = _load_json(LOGOS_PATH, {})
+    # 2026-07-22 (A단계): 선수 능력치 기준선을 앱에 전달. 클라이언트
+    # (multi_league_index.html)는 player_baseline.json의 players 구조를 그대로
+    # 받아 club_en으로 팀 매칭하고 source==="league"인 선수만 예측에 쓴다.
+    # 따라서 여기서 source=league만 추려 넘기면 (1) 개막 전엔 사실상 빈 {}라
+    # 파일이 안 커지고 (2) 개막 후 리그기록으로 전환된 선수만 자동으로 실린다.
+    # club_en 매칭이라 리그 구분이 불필요하므로 6개 블록에 동일 dict를 준다.
+    _baseline_all = (_load_json(PLAYER_BASELINE_PATH, {}) or {}).get('players', {})
+    player_baseline_league = {
+        k: v for k, v in _baseline_all.items()
+        if isinstance(v, dict) and v.get('source') == 'league'
+        and v.get('club_en') and isinstance(v.get('per90'), dict)
+    }
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
@@ -879,9 +891,14 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'transfers': transfers_by_league.get(league_key, {}),
             'h2h': h2h_by_league.get(league_key, {}),
             'leaderboard': leaderboard_by_league.get(league_key, {'scorers': {}, 'assists': {}}),
+            'playerBaseline': player_baseline_league,  # A단계 (2026-07-22)
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')
+    print(f'[app_export_multileague] 선수 기준선(A단계): source=league '
+          f'{len(player_baseline_league)}명 전달'
+          + ('' if player_baseline_league else ' (개막 전이라 정상적으로 0명 — '
+             '리그기록 쌓이면 자동 반영)'), flush=True)
     # 리그별 블록과 별개로 하나만 — EPL 앱(app_export.py)과 동일한 통합 모델을
     # 그대로 재사용(리그마다 따로 학습 안 함, train_ml_ensemble.py 상단 설명 참고).
     lines.append('window.PIPELINE_ML_ENSEMBLE = ' + _js(ml_ensemble) + ';')

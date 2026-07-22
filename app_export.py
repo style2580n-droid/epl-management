@@ -629,14 +629,29 @@ def render_js(name_cache):
     lines.append('const PIPELINE_H2H = ' + _js(h2h) + ';')
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     lines.append('const PIPELINE_ML_ENSEMBLE = ' + _js(ml_ensemble) + ';')
+    # 2026-07-22 (A단계): 선수 능력치 기준선. EPL 앱도 club_en으로 팀 매칭하고
+    # source==="league"(리그 실기록으로 갱신된)만 예측에 쓰므로 여기서 그 조건만
+    # 추려 넘긴다. 개막 전엔 사실상 빈 {}라 파일이 안 커지고, 리그 경기가 쌓여
+    # league_apps>=5로 전환된 선수만 자동으로 실린다.
+    _baseline_all = (_load_json('data/master/player_baseline.json', {}) or {}).get('players', {})
+    player_baseline = {
+        k: v for k, v in _baseline_all.items()
+        if isinstance(v, dict) and v.get('source') == 'league'
+        and v.get('club_en') and isinstance(v.get('per90'), dict)
+    }
+    lines.append('const PIPELINE_PLAYER_BASELINE = ' + _js(player_baseline) + ';')
+    print(f'[app_export] 선수 기준선(A단계): source=league {len(player_baseline)}명 전달'
+          + ('' if player_baseline else ' (개막 전이라 정상적으로 0명)'))
     lines.append('')
-    lines.append('// 앱에 반영하려면: 위 10개 PIPELINE_* 객체 내용을 앱 파일의 '
+    lines.append('// 앱에 반영하려면: 위 PIPELINE_* 객체 내용을 앱 파일의 '
                  'ELO/ADVANCED_STATS/RECENT_FORM/SQUADS/STATIC_LEADERBOARD/'
                  '_liveResults/TRANSFERS/SCHEDULE/H2H/ML_ENSEMBLE 각각에 '
                  'Object.assign으로 병합하거나, 해당 const 선언을 통째로 '
                  '교체하세요. PIPELINE_ML_ENSEMBLE은 train_ml_ensemble.py가 '
                  '표본 부족으로 스킵했으면 null일 수 있음(앱에서 null 체크 후 '
-                 '기존 randomForestWinProb로 자동 폴백).')
+                 '기존 randomForestWinProb로 자동 폴백). PIPELINE_PLAYER_BASELINE'
+                 '(A단계)은 앱의 PLAYER_BASELINE에 Object.assign — 개막 전엔 빈 '
+                 '{}이고 playerBaselineLambdaAdjust가 표본 부족 시 무효과.')
     return '\n'.join(lines)
 
 
