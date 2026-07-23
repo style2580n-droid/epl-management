@@ -118,7 +118,7 @@ _SUB_CANDIDATES = [
 
 
 def _describe(obj, depth=0):
-    """응답 구조를 사람이 읽을 요약으로. 선수명/포지션 후보를 뽑아본다."""
+    """응답 구조를 사람이 읽을 요약으로."""
     if isinstance(obj, dict):
         keys = sorted(obj.keys())
         return f'dict(keys={keys[:15]})'
@@ -128,6 +128,57 @@ def _describe(obj, depth=0):
             return f'list[{n}] first_keys={sorted(obj[0].keys())[:15]}'
         return f'list[{n}] {obj[:3]}'
     return repr(obj)[:80]
+
+
+def _walk_structure(obj, path='', depth=0, out=None, max_depth=4):
+    """2026-07-23: 응답 구조를 재귀적으로 훑어 '선수 리스트로 보이는 것'을 전부
+    찾는다. 1차 프로브에서 events/{id}/lineups/가 dict(keys=[beta, event_id,
+    lineup_status, lineups, unavailable_players, updated_at])를 반환했는데,
+    고정된 body['home']['players'] 경로만 찾다가 놓쳤다 → 구조를 가정하지 말고
+    전수 탐색으로 바꾼다(추측 금지 원칙)."""
+    if out is None:
+        out = []
+    if depth > max_depth:
+        return out
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            _walk_structure(v, f'{path}.{k}' if path else k, depth + 1, out, max_depth)
+    elif isinstance(obj, list) and obj:
+        first = obj[0]
+        if isinstance(first, dict):
+            keys = set(first.keys())
+            # 선수 항목으로 보이는지: 이름/포지션/등번호/출전 관련 키가 있으면
+            player_ish = keys & {'player', 'player_id', 'player_name', 'name',
+                                 'position', 'pos', 'shirt_number', 'jersey_number',
+                                 'number', 'minutes', 'minutes_played', 'is_starter',
+                                 'starting', 'substitute'}
+            if player_ish:
+                out.append((path, len(obj), sorted(keys)[:14], obj[:2]))
+            else:
+                _walk_structure(first, f'{path}[0]', depth + 1, out, max_depth)
+    return out
+
+
+def _fmt_player(p):
+    """선수 항목 dict에서 이름/포지션/출전분 후보를 뽑아 한 줄로."""
+    if not isinstance(p, dict):
+        return str(p)[:40]
+    nm = p.get('player') or p.get('player_name') or p.get('name')
+    if isinstance(nm, dict):
+        nm = nm.get('name') or nm.get('short_name') or nm.get('id')
+    pos = p.get('position') or p.get('pos') or p.get('specific_position')
+    mins = p.get('minutes') or p.get('minutes_played')
+    start = p.get('is_starter')
+    if start is None:
+        start = p.get('starting')
+    bits = [str(nm)]
+    if pos:
+        bits.append(f'pos={pos}')
+    if mins is not None:
+        bits.append(f'{mins}분')
+    if start is not None:
+        bits.append('선발' if start else '교체')
+    return ' '.join(bits)
 
 
 def main():
@@ -189,37 +240,37 @@ def main():
             path = tpl.format(eid=eid)
             try:
                 raw = _unwrap(client.get(path))
-            except Exception as exc:
+            except Exception:
                 continue
             time.sleep(0.2)
             if raw is None:
                 continue
-            body = _rows_of(raw)
-            # 비었으면 다음 경기로 (옛 경기 함정 회피 — 여러 건 시도)
-            if not body or (isinstance(body, list) and not body):
+            if isinstance(raw, (dict, list)) and not raw:
                 continue
             ok_any = True
-            print(f'{LOG} [diag] {path} → {_describe(body)}', flush=True)
-            # 선수명/포지션 뽑아보기
-            def _extract_players(b):
-                out = []
-                seq = b if isinstance(b, list) else (
-                    (b.get('home', {}).get('players', []) if isinstance(b, dict) else []) +
-                    (b.get('away', {}).get('players', []) if isinstance(b, dict) else []))
-                for p in (seq or [])[:6]:
-                    if isinstance(p, dict):
-                        nm = (p.get('player') or p.get('name') or
-                              (p.get('player') or {}).get('name')
-                              if isinstance(p.get('player'), dict) else p.get('name'))
-                        pos = p.get('position') or p.get('pos')
-                        out.append(f'{nm}({pos})' if pos else str(nm))
-                return out
-            players = _extract_players(body)
-            if players:
+            print(f'{LOG} [diag] {path} → {_describe(raw)}', flush=True)
+            # dict면 최상위 키별 요약도 남긴다(구조 파악용)
+            if isinstance(raw, dict):
+                for k, v in list(raw.items())[:10]:
+                    print(f'{LOG}     .{k} = {_describe(v)}', flush=True)
+            # 2026-07-23: 구조를 가정하지 않고 전수 탐색으로 선수 리스트를 찾는다
+            found = _walk_structure(raw)
+            if found:
+                for (fpath, n, keys, sample) in found[:4]:
+                    print(f'{LOG}   ✔ 선수 리스트 발견 경로 "{fpath}" '
+                          f'{n}명, keys={keys}', flush=True)
+                    print(f'{LOG}     샘플: '
+                          f'{[_fmt_player(x) for x in sample]}', flush=True)
                 lineup_parsed += 1
-                print(f'{LOG}   선수 샘플: {players}', flush=True)
-            if endpoint_found is None:
-                endpoint_found = tpl
+                if endpoint_found is None:
+                    # 대표 경로는 실제 출전 라인업 쪽을 우선(결장자 목록보다).
+                    lineup_paths = [f for f in found
+                                    if not any(w in f[0].lower() for w in
+                                               ('unavailable', 'injur', 'missing', 'out'))]
+                    endpoint_found = (tpl, (lineup_paths or found)[0][0])
+            else:
+                print(f'{LOG}   (선수 리스트로 보이는 항목 없음 — 구조 위 참조)',
+                      flush=True)
             break  # 이 후보는 한 경기에서 확인됐으면 충분
         if not ok_any:
             print(f'{LOG} [diag] {tpl} → 모든 샘플 경기에서 데이터 없음', flush=True)
@@ -227,19 +278,17 @@ def main():
     # --- 결론 ---
     print(f'{LOG} ===== 라인업 실측 결과 =====', flush=True)
     if endpoint_found and lineup_parsed:
-        print(f'{LOG} ✅ BSD 라인업 확보 가능: {endpoint_found} 에서 선발 선수 '
-              f'파싱 성공({lineup_parsed}경기). → defending 갱신용 라인업 수집기 '
-              f'작성 가능. 다음 단계: 이 경로로 collect_lineups.py 작성 후 '
-              f'baseline defending per90 갱신에 연결.', flush=True)
+        tpl, inner = endpoint_found
+        print(f'{LOG} ✅ BSD 라인업 확보 가능: {tpl} → 내부 경로 "{inner}"에서 '
+              f'선수 리스트 파싱 성공({lineup_parsed}개 경로). '
+              f'다음 단계: 이 경로로 collect_lineups.py 작성 → baseline '
+              f'defending per90 갱신에 연결.', flush=True)
     elif detail_has_lineup:
-        print(f'{LOG} ✅ event_detail 자체에 라인업 필드 있음(위 diag 참조). '
-              f'하위 경로 대신 event_detail에서 뽑는 방식으로 수집기 작성.',
+        print(f'{LOG} ✅ event_detail 자체에 라인업 필드 있음(위 diag 참조).',
               flush=True)
     else:
-        print(f'{LOG} ❌ BSD는 라인업을 주지 않음(모든 경로/필드에서 미확인). '
-              f'→ A단계 defending 갱신은 BSD로 불가. 대안: SportScore(RAPIDAPI_KEY '
-              f'필요) 또는 TheSportsDB/FPL의 라인업. 사용자와 소스 결정 필요.',
-              flush=True)
+        print(f'{LOG} ❌ BSD 라인업 미확인. 위 [diag] 구조 로그를 보고 판단 필요. '
+              f'대안: SportScore(RAPIDAPI_KEY 필요) 등.', flush=True)
 
 
 if __name__ == '__main__':
