@@ -274,8 +274,21 @@ def load_injuries_af(conn, path='data/master/injuries_af.json'):
 
 
 def load_lineups(conn, path='data/master/lineups.json'):
+    """⚠️ 2026-07-23: 이 파일 경로를 collect_lineups.py가 다른 스키마(리그별
+    리스트)로 잠깐 같이 쓰다가 파이프라인 전체를 크래시시킨 적이 있다
+    (AttributeError: 'list' object has no attribute 'get' — data.values()가
+    dict 레코드가 아니라 리스트를 내놓아서). collect_lineups.py 쪽은
+    lineups_bsd.json으로 개명해서 근본 원인은 없앴지만, 이 로더 자체도
+    dict가 아닌 값이 오면 죽지 않고 건너뛰도록 방어한다 — 파일 하나의 스키마
+    문제가 db.py 전체를(그리고 이 뒤에 실행되는 모든 스텝을) 죽이는 구조는
+    이번 일로 위험하다는 게 실측 확인됐다."""
     data = _load_json(path, {})
+    if not isinstance(data, dict):
+        return 0
+    n = 0
     for rec in data.values():
+        if not isinstance(rec, dict):
+            continue
         conn.execute(
             'INSERT OR REPLACE INTO lineups '
             '(fixture_id, league_id, team, formation, coach, starters, updated_at) '
@@ -284,7 +297,8 @@ def load_lineups(conn, path='data/master/lineups.json'):
              rec.get('formation'), rec.get('coach'),
              json.dumps(rec.get('starters', []), ensure_ascii=False),
              rec.get('collected_at')))
-    return len(data)
+        n += 1
+    return n
 
 
 def load_events(conn, events_dir='data/events'):

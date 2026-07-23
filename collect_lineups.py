@@ -30,7 +30,8 @@ defending per90 갱신은 별도 미해결 항목(수비 스탯 소스 자체가
 collect_goalscorers.py와 동일한 리그 순회/증분 캐싱 골격을 그대로 재사용
 한다(팀 매칭·이벤트 조회는 이미 검증된 로직이라 새로 만들지 않음).
 
-출력: data/master/lineups.json
+출력: data/master/lineups_bsd.json (db.py의 기존 lineups 테이블/로더와
+      경로 충돌 나서 개명함 — 아래 OUT_PATH 옆 주석 참조)
   { "epl": [ {home, away, date, eid,
               home_starters:[영문명,...], away_starters:[영문명,...]}, ... ],
     "laliga": [...], ... 6개 리그 키 ... }
@@ -45,7 +46,13 @@ from collect_fixtures import (_find_pl_league_id, _find_pl_teams,
 from collect_fixtures_multileague import (_find_leagues, _find_league_teams,
                                            _fetch_league_events)
 
-OUT_PATH = 'data/master/lineups.json'
+# 2026-07-23 수정(파이프라인 크래시): 원래 'data/master/lineups.json'을
+# 썼는데, db.py의 load_lineups()가 그 경로를 이미 선점하고 있었다(완전히
+# 다른 스키마 — {fixture_id,league,team,formation,coach,starters} per-team
+# 레코드용, 우리 건 리그별 리스트라 db.py가 data.values()로 리스트를
+# 만나 AttributeError로 파이프라인 전체를 죽였다, 실행 로그로 확인됨).
+# db.py 쪽 lineups 테이블은 손대지 않고 이름만 바꿔서 충돌을 없앤다.
+OUT_PATH = 'data/master/lineups_bsd.json'
 
 # 2026-07-23 실측 확정 (rehearse_lineups_probe.py, [rehearse_lineups] ✅ 로그).
 # 다른 후보(/lineup/, /formations/, /players/, /squads/)는 전부 404 확인됨

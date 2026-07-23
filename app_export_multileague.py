@@ -579,7 +579,11 @@ def build_squads(name_cache):
 
 
 GOALSCORERS_PATH = 'data/master/goalscorers.json'
-LINEUPS_PATH = 'data/master/lineups.json'
+# 2026-07-23 수정(파이프라인 크래시): db.py의 load_lineups()가 이미
+# 'data/master/lineups.json'을 다른 스키마로 쓰고 있어서 전체 파이프라인이
+# AttributeError로 죽었다(실행 로그로 확인). collect_lineups.py와 함께
+# lineups_bsd.json으로 개명해서 충돌 제거.
+LINEUPS_PATH = 'data/master/lineups_bsd.json'
 
 
 _EPL_SEASON_START = '2026-07-01'  # 실측 확정(collect_coaches 로그: current_season.start_date)
