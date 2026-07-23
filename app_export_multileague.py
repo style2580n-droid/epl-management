@@ -582,6 +582,46 @@ GOALSCORERS_PATH = 'data/master/goalscorers.json'
 LINEUPS_PATH = 'data/master/lineups.json'
 
 
+_EPL_SEASON_START = '2026-07-01'  # 실측 확정(collect_coaches 로그: current_season.start_date)
+
+
+def _in_current_epl_season(lk, m):
+    """2026-07-23 (0-B #1): EPL은 _fetch_all_league_events로 과거 시즌까지
+    긁어오므로(722건=지난 시즌), 그대로 apps에 반영하면 26-27 개막 전에
+    선수들이 source=league로 오염된다. 경기 레코드 자체엔 season_id가 없어서
+    (collect_fixtures.py 미확인 — 추측 금지) 이미 확보된 date로 필터링한다.
+    6개 리그는 _fetch_league_events가 애초에 현재 시즌만 잡으므로 그대로 통과."""
+    if lk != 'epl':
+        return True
+    return (m.get('date') or '') >= _EPL_SEASON_START
+
+
+_CLUB_STOPWORDS = {
+    'fc', 'cf', 'sc', 'afc', 'club', 'de', 'the', 'united', 'city', 'ac',
+    'ss', 'ssc', 'ud', 'cd', 'rc', 'rcd', 'sv', 'vfl', 'vfb', 'sk', 'bk',
+    'if', 'fk', 'cfc', 'town', 'real', 'football', 'associazione', 'calcio',
+}
+
+
+def _club_tokens(name):
+    if not name:
+        return set()
+    name = re.sub(r'[^a-zA-Z0-9\s]', ' ', name.lower())
+    return {t for t in name.split() if t and t not in _CLUB_STOPWORDS and not t.isdigit()}
+
+
+def _team_mismatch(team_a, team_b):
+    """2026-07-23 (0-B #2): 두 팀명이 관대한 토큰 비교로도 명백히 다르면
+    True(불일치). 흔한 접미사(FC/City/United 등)는 제거하고 나머지 단어가
+    하나도 안 겹치면 다른 팀으로 판단한다. 둘 중 하나라도 정보가 없으면
+    False(판단 보류 — 기존처럼 이름매칭만으로 통과, 이름 매칭이 이미 성
+    유일성 체크를 거쳤으므로 정보 추가 전보다 나빠지지 않음)."""
+    ta, tb = _club_tokens(team_a), _club_tokens(team_b)
+    if not ta or not tb:
+        return False
+    return not (ta & tb)
+
+
 def update_player_baseline(name_cache):
     """2026-07-20 (C단계): 월드컵 기준선(player_baseline.json)에 리그 실기록을
     누적한다. goalscorers.json의 경기별 득점 관여를 선수(한글명) 기준으로
@@ -591,6 +631,16 @@ def update_player_baseline(name_cache):
     선수도 league_apps에 반영한다(득점 관여 선수만 카운트되던 한계 해소).
     한 경기를 득점/라인업 두 소스에서 중복 카운트하지 않도록 (리그,eid) 단위로
     "이미 apps 처리된 선수"를 추적한다.
+    2026-07-23 전수 감사(0-B) 수정 3건:
+    (1) LEAGUE_TEAM_MAPS(6개 리그 전용)로만 돌아 'epl'이 통째로 빠져있던 버그
+        수정 — _EPL_SEASON_START로 지난 시즌 오염 없이 26-27만 반영.
+    (2) 이름만으로 매칭해 성이 겹치는 다른 리그 선수에게 득점이 오귀속될 수
+        있던 위험 — 득점 레코드의 team 필드 vs 선수 club_en 관대 대조 추가.
+        (라인업 쪽도 LEAGUE_TEAM_MAPS 별칭으로 같은 검증 적용, EPL 라인업은
+        별칭 소스가 이 파일에 없어 검증 보류 — 정직하게 남김.)
+    (3) app_export.py가 이 함수보다 먼저 실행돼 EPL이 항상 한 실행 지연된
+        baseline을 받던 문제는 app_export.py 쪽에서 이 함수를 먼저 호출하는
+        식으로 해결(이 파일 쪽 수정 아님 — app_export.py 참조).
     ⚠️ 한계(정직하게, 실측 확정): defending(수비) per90은 이걸로도 갱신 불가.
     BSD 라인업 응답엔 태클/인터셉트 등 수비 이벤트 카운트가 없다(명단·포지션
     뿐). 수비 스탯 소스 자체가 없는 별도 미해결 항목(인수인계 "다음 할 일
@@ -601,6 +651,10 @@ def update_player_baseline(name_cache):
     if not isinstance(players, dict) or not players:
         return
     all_matches = _load_json(GOALSCORERS_PATH, {})
+    # 2026-07-23: goalscorers.json/lineups.json에 실제로 들어있는 리그 키
+    # 목록. LEAGUE_TEAM_MAPS(6개 리그)는 팀명 별칭용 딕셔너리라 여기선 그
+    # 키 목록만 재사용하고, EPL은 별도로 더한다(위 docstring 참조).
+    _BASELINE_LEAGUE_KEYS = list(LEAGUE_TEAM_MAPS) + ['epl']
     # 한글명 → 기준선 키. 월드컵 마스터는 이름이 '성'만인 경우가 많고
     # (오야르사발), 리그 득점자 번역은 풀네임(미켈 오야르사발)이라 형식이
     # 다르다. 그래서 (1) 전체 한글명, (2) 성(마지막 토큰) 두 인덱스를 만들되
@@ -630,8 +684,13 @@ def update_player_baseline(name_cache):
 
     tally = {}  # key -> {'g','a','apps'}
     seen_by_match = {}  # (lk, eid) -> {key, ...} — 득점/라인업 중복 apps 방지
-    for lk in LEAGUE_TEAM_MAPS:
+    n_season_skipped = 0
+    n_team_mismatch = 0
+    for lk in _BASELINE_LEAGUE_KEYS:
         for m in all_matches.get(lk, []):
+            if not _in_current_epl_season(lk, m):
+                n_season_skipped += 1
+                continue
             seen_this_match = seen_by_match.setdefault((lk, m.get('eid')), set())
             for g in m.get('goals', []):
                 for field, stat in (('scorer', 'g'), ('assist', 'a')):
@@ -641,6 +700,9 @@ def update_player_baseline(name_cache):
                     key = _resolve(_translate_name(nm_en, name_cache))
                     if not key:
                         continue
+                    if _team_mismatch(g.get('team'), players[key].get('club_en')):
+                        n_team_mismatch += 1
+                        continue
                     t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
                     t[stat] += 1
                     if key not in seen_this_match:
@@ -649,22 +711,36 @@ def update_player_baseline(name_cache):
 
     # 2026-07-23: 득점/도움이 없어도 선발 출전만으로 apps를 채운다(무득점
     # 선수 구제). 같은 경기가 goalscorers에서 이미 apps 처리된 선수는
-    # seen_this_match로 걸러 중복 카운트하지 않는다.
+    # seen_this_match로 걸러 중복 카운트하지 않는다. 팀 검증은 6개 리그만
+    # (LEAGUE_TEAM_MAPS 별칭 필요) — EPL 라인업은 이 파일에 별칭 소스가 없어
+    # 보류(정직하게 남김, docstring 참조).
     all_lineups = _load_json(LINEUPS_PATH, {})
     n_lineup_only = 0
-    for lk in LEAGUE_TEAM_MAPS:
+    for lk in _BASELINE_LEAGUE_KEYS:
         for m in all_lineups.get(lk, []):
+            if not _in_current_epl_season(lk, m):
+                n_season_skipped += 1
+                continue
             seen_this_match = seen_by_match.setdefault((lk, m.get('eid')), set())
-            starters = (m.get('home_starters') or []) + (m.get('away_starters') or [])
-            for nm_en in starters:
-                key = _resolve(_translate_name(nm_en, name_cache))
-                if not key or key in seen_this_match:
-                    continue
-                t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
-                if t['g'] == 0 and t['a'] == 0 and t['apps'] == 0:
-                    n_lineup_only += 1
-                t['apps'] += 1
-                seen_this_match.add(key)
+            for side_key, kr_team in (('home_starters', m.get('home')),
+                                       ('away_starters', m.get('away'))):
+                team_aliases = LEAGUE_TEAM_MAPS.get(lk, {}).get(kr_team) or []
+                team_toks = set()
+                for alias in team_aliases:
+                    team_toks |= _club_tokens(alias)
+                for nm_en in (m.get(side_key) or []):
+                    key = _resolve(_translate_name(nm_en, name_cache))
+                    if not key or key in seen_this_match:
+                        continue
+                    if team_toks and _team_mismatch(
+                            ' '.join(team_toks), players[key].get('club_en')):
+                        n_team_mismatch += 1
+                        continue
+                    t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
+                    if t['g'] == 0 and t['a'] == 0 and t['apps'] == 0:
+                        n_lineup_only += 1
+                    t['apps'] += 1
+                    seen_this_match.add(key)
 
     if not tally:
         return
@@ -682,7 +758,9 @@ def update_player_baseline(name_cache):
             json.dump(base, f, ensure_ascii=False, indent=1)
         print(f'[app_export_multileague] 선수 기준선 갱신: 리그 기록 반영 '
               f'{len(tally)}명(라인업으로만 추가된 무득점 선수 {n_lineup_only}명), '
-              f'source=league 전환 {n_switched}명', flush=True)
+              f'source=league 전환 {n_switched}명, 팀불일치로 스킵 '
+              f'{n_team_mismatch}건, 지난시즌(EPL) 제외 {n_season_skipped}건',
+              flush=True)
     except OSError as exc:
         print(f'[app_export_multileague] 선수 기준선 저장 실패: {exc}', flush=True)
 
