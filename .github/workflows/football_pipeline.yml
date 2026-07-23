@@ -139,6 +139,10 @@ jobs:
           python collect_coaches.py
           python collect_fixtures.py
           python collect_fixtures_multileague.py
+          # 2026-07-23 [임시/리허설] MLS·노르웨이 엘리테세리엔 확장 검토용.
+          # 앱에 아무것도 반영 안 하고 로그만 남긴다. [rehearse_mls_norway]
+          # 결과 확인 후 이 줄 삭제할 것.
+          python rehearse_mls_norway_probe.py || true
           python collect_xg_bsd.py
           python collect_transfers_bsd.py
           # 2026-07-18 추가: 득점왕/도움왕용. collect_fixtures*.py의 리그/팀
