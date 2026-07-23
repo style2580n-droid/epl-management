@@ -579,15 +579,22 @@ def build_squads(name_cache):
 
 
 GOALSCORERS_PATH = 'data/master/goalscorers.json'
+LINEUPS_PATH = 'data/master/lineups.json'
 
 
 def update_player_baseline(name_cache):
     """2026-07-20 (C단계): 월드컵 기준선(player_baseline.json)에 리그 실기록을
     누적한다. goalscorers.json의 경기별 득점 관여를 선수(한글명) 기준으로
-    세서 league_goals/league_assists/league_apps(득점 관여 경기수)를 갱신하고,
-    league_apps >= 5 이면 source를 'league'로 전환한다.
-    한계(정직하게): 득점자 데이터라 공격 기록만 갱신 가능 — 무득점 선수의
-    출전/수비 기록은 라인업 데이터가 생겨야 갱신된다(A단계 과제).
+    세서 league_goals/league_assists/league_apps를 갱신하고, league_apps >= 5
+    이면 source를 'league'로 전환한다.
+    2026-07-23 확장: lineups.json(collect_lineups.py)의 선발 명단으로 무득점
+    선수도 league_apps에 반영한다(득점 관여 선수만 카운트되던 한계 해소).
+    한 경기를 득점/라인업 두 소스에서 중복 카운트하지 않도록 (리그,eid) 단위로
+    "이미 apps 처리된 선수"를 추적한다.
+    ⚠️ 한계(정직하게, 실측 확정): defending(수비) per90은 이걸로도 갱신 불가.
+    BSD 라인업 응답엔 태클/인터셉트 등 수비 이벤트 카운트가 없다(명단·포지션
+    뿐). 수비 스탯 소스 자체가 없는 별도 미해결 항목(인수인계 "다음 할 일
+    5번" 참조) — 이 함수가 하는 일은 apps 확장까지다.
     파일이 없으면 조용히 스킵(선택 기능)."""
     base = _load_json(PLAYER_BASELINE_PATH, {})
     players = base.get('players')
@@ -622,9 +629,10 @@ def update_player_baseline(name_cache):
         return None
 
     tally = {}  # key -> {'g','a','apps'}
+    seen_by_match = {}  # (lk, eid) -> {key, ...} — 득점/라인업 중복 apps 방지
     for lk in LEAGUE_TEAM_MAPS:
         for m in all_matches.get(lk, []):
-            seen_this_match = set()
+            seen_this_match = seen_by_match.setdefault((lk, m.get('eid')), set())
             for g in m.get('goals', []):
                 for field, stat in (('scorer', 'g'), ('assist', 'a')):
                     nm_en = g.get(field)
@@ -638,6 +646,26 @@ def update_player_baseline(name_cache):
                     if key not in seen_this_match:
                         t['apps'] += 1
                         seen_this_match.add(key)
+
+    # 2026-07-23: 득점/도움이 없어도 선발 출전만으로 apps를 채운다(무득점
+    # 선수 구제). 같은 경기가 goalscorers에서 이미 apps 처리된 선수는
+    # seen_this_match로 걸러 중복 카운트하지 않는다.
+    all_lineups = _load_json(LINEUPS_PATH, {})
+    n_lineup_only = 0
+    for lk in LEAGUE_TEAM_MAPS:
+        for m in all_lineups.get(lk, []):
+            seen_this_match = seen_by_match.setdefault((lk, m.get('eid')), set())
+            starters = (m.get('home_starters') or []) + (m.get('away_starters') or [])
+            for nm_en in starters:
+                key = _resolve(_translate_name(nm_en, name_cache))
+                if not key or key in seen_this_match:
+                    continue
+                t = tally.setdefault(key, {'g': 0, 'a': 0, 'apps': 0})
+                if t['g'] == 0 and t['a'] == 0 and t['apps'] == 0:
+                    n_lineup_only += 1
+                t['apps'] += 1
+                seen_this_match.add(key)
+
     if not tally:
         return
     n_switched = 0
@@ -653,7 +681,8 @@ def update_player_baseline(name_cache):
         with open(PLAYER_BASELINE_PATH, 'w', encoding='utf-8') as f:
             json.dump(base, f, ensure_ascii=False, indent=1)
         print(f'[app_export_multileague] 선수 기준선 갱신: 리그 기록 반영 '
-              f'{len(tally)}명, source=league 전환 {n_switched}명', flush=True)
+              f'{len(tally)}명(라인업으로만 추가된 무득점 선수 {n_lineup_only}명), '
+              f'source=league 전환 {n_switched}명', flush=True)
     except OSError as exc:
         print(f'[app_export_multileague] 선수 기준선 저장 실패: {exc}', flush=True)
 
