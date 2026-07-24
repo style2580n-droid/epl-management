@@ -152,6 +152,10 @@ jobs:
           # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
           # 읽는 data/master/goalscorers.json을 만들어야 해서 그 앞에는 반드시 와야 한다.
           python collect_goalscorers.py
+          # 2026-07-24 [임시/리허설] 득점왕 team 필드가 항상 None인 원인 확인용.
+          # collect_goalscorers.py는 증분캐싱 때문에 이미 처리된 경기는 건너뛰어서
+          # 이 프로브로 캐시 없이 직접 확인한다. 결과 확인 후 이 줄 삭제할 것.
+          python rehearse_goal_team_probe.py || true
           # 2026-07-23 추가: 무득점 선수도 league_apps에 반영(선발 명단 기반).
           # collect_goalscorers.py와 같은 이유로 그 뒤·app_export*.py 앞에 위치.
           # (rehearse_lineups_probe.py로 events/{eid}/lineups/ 구조 실측 확정
