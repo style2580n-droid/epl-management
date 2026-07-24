@@ -837,6 +837,7 @@ def build_leaderboard(name_cache):
         matches = all_matches.get(lk, [])
         scorers, assists = {}, {}
         n_unresolved_team = 0
+        unresolved_samples = []  # 2026-07-24: 원인 진단용 (최대 5개만 보관)
         for m in matches:
             home_kr, away_kr = m.get('home'), m.get('away')
             for g in m.get('goals', []):
@@ -848,6 +849,11 @@ def build_leaderboard(name_cache):
                 hit = to_kr_league(team_raw) if team_raw else None
                 team_kr = hit[1] if (hit and hit[0] == lk) else None
                 if team_kr not in (home_kr, away_kr):
+                    if len(unresolved_samples) < 5:
+                        unresolved_samples.append({
+                            'team_raw': team_raw, 'to_kr_league_결과': hit,
+                            'home_kr': home_kr, 'away_kr': away_kr,
+                        })
                     team_kr = None
                     n_unresolved_team += 1
                 key = f'{scorer_ko}|{team_kr or "미상"}'
@@ -864,6 +870,9 @@ def build_leaderboard(name_cache):
                   f'득점 {sum(scorers.values())}건, 도움 {sum(assists.values())}건'
                   + (f', 팀 매칭 실패 {n_unresolved_team}건' if n_unresolved_team else ''),
                   flush=True)
+        if unresolved_samples:
+            print(f'[app_export_multileague] [diag] {lk} 팀 매칭 실패 샘플: '
+                  f'{unresolved_samples}', flush=True)
     return out
 
 
