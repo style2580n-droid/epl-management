@@ -39,6 +39,7 @@ from collect_fixtures_multileague import (_find_leagues, _find_league_teams,
 
 OUT_PATH = 'data/master/goalscorers.json'
 _diag_done = False
+_item_diag_done = False
 
 # 2026-07-20 실측 확정: 득점자 엔드포인트는 events/{eid}/incidents/ 다.
 # 근거(#68~ 실행 로그): 후보 중 유일하게 404가 아니었고(빈 경기는 빈 리스트
@@ -83,6 +84,7 @@ def _rows_of(resp):
 
 def _goals_from_items(items):
     """이벤트 항목 리스트에서 골만 뽑는다 (_extract_goals 후보 2와 동일 기준)."""
+    global _item_diag_done
     goals = []
     for e in items or []:
         if not isinstance(e, dict):
@@ -91,6 +93,14 @@ def _goals_from_items(items):
               or '').lower()
         if 'goal' not in et or 'own' in et:
             continue
+        # 2026-07-24: MLS/엘리테세리엔 골 기록에서 team 필드가 항상 None으로
+        # 나온 원인 진단용 — 이 함수가 실제로 쓰이는 경로(events/{eid}/incidents/,
+        # event_detail엔 애초에 events/incidents/timeline 필드가 없음이 실측
+        # 확정돼 있어 후보 2는 그쪽에서 실행 안 됨)라 여기에 넣는다.
+        if not _item_diag_done:
+            _item_diag_done = True
+            print(f'[collect_goalscorers] [diag] 골 이벤트(incidents/) 원문 '
+                  f'아이템 sample_keys={sorted(e.keys())} 전체값={e}', flush=True)
         scorer = _name_of(e.get('player') or e.get('scorer'))
         if not scorer:
             continue
