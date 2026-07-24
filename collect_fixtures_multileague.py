@@ -496,15 +496,29 @@ def main():
                                     break
                 continue
             status = (ev.get('status') or '').lower()
-            if status == 'finished':
-                continue
             date_kst, time_kst = _kst_date_time(ev.get('event_date'))
             if not date_kst:
                 continue
-            schedule.append({
+            row = {
                 'home': home_kr, 'away': away_kr,
                 'date': date_kst, 'time': time_kst or '00:00',
-            })
+            }
+            # 2026-07-24 수정: 종료경기를 통째로 버리던 걸 고침. 클라이언트의
+            # computeStandingsTable()/StandingsTab이 SCHEDULE의 각 fixture에
+            # homeGoals/awayGoals(정확히 이 필드명, 클라이언트 코드에 이미
+            # 그렇게 박혀있음)가 있으면 "치른 경기"로 실제 순위에 반영하도록
+            # 이미 만들어져 있었는데, 여태 이 데이터가 한 번도 안 들어와서
+            # (6개 리그가 계속 개막 전) 안 드러났던 것뿐 — MLS/엘리테세리엔이
+            # 실경기 데이터를 만든 첫 리그라 지금 처음 필요해짐.
+            if status == 'finished':
+                h_score, a_score = ev.get('home_score'), ev.get('away_score')
+                if isinstance(h_score, (int, float)) and isinstance(a_score, (int, float)):
+                    row['homeGoals'] = h_score
+                    row['awayGoals'] = a_score
+                # 스코어가 없는 종료경기(드묾)는 homeGoals/awayGoals 없이
+                # 그냥 날짜만 있는 채로 들어간다 — 클라이언트가
+                # Number.isFinite로 걸러서 "안 친 경기"로 안전하게 처리함.
+            schedule.append(row)
         schedule.sort(key=lambda m: (m['date'] or '', m['time'] or ''))
         out[league_key] = schedule
         print(f'[collect_fixtures_multileague] {league_key}: 팀 {len(team_ids)}개, '
