@@ -148,6 +148,10 @@ jobs:
           # 이 파일을 안 읽는다 — 앱 통합은 보류 상태(사용자 결정), 매칭률 확인용.
           python collect_mls_norway_teams.py || true
           python collect_xg_bsd.py
+          # 2026-07-24 추가: MLS·엘리테세리엔이 BSD에서 xG를 주는지 확인용
+          # (ELO는 ClubElo가 미국을 아예 커버 안 해서 MLS는 xG 대체 가능성 검토
+          # 중). collect_xg_bsd.py는 안 건드림 — 완전히 별도 프로브.
+          python rehearse_mls_norway_xg_probe.py || true
           python collect_transfers_bsd.py
           # 2026-07-18 추가: 득점왕/도움왕용. collect_fixtures*.py의 리그/팀
           # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
