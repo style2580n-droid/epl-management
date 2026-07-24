@@ -108,6 +108,10 @@ def _goals_from_items(items):
             'scorer': scorer,
             'assist': _name_of(e.get('assist') or e.get('assist_player')),
             'team': e.get('team') or e.get('team_name'),
+            # 2026-07-24 실측 확정(events/{eid}/incidents/): team/team_name
+            # 필드는 이 응답에 아예 없고, 대신 is_home(bool)으로 홈/원정 중
+            # 어느 쪽 골인지 알려준다. 그동안 team이 항상 None이었던 원인.
+            'is_home': e.get('is_home'),
             'minute': e.get('minute'),
         })
     return goals
@@ -218,6 +222,7 @@ def _extract_goals(detail):
                 'scorer': scorer,
                 'assist': _name_of(g.get('assist')),
                 'team': g.get('team') or g.get('team_name'),
+                'is_home': g.get('is_home'),  # 2026-07-24: 일관성 유지
                 'minute': g.get('minute'),
             })
         if goals:
@@ -245,6 +250,7 @@ def _extract_goals(detail):
                 'scorer': scorer,
                 'assist': _name_of(e.get('assist') or e.get('assist_player')),
                 'team': e.get('team') or e.get('team_name'),
+                'is_home': e.get('is_home'),  # 2026-07-24: 위 함수와 일관성 유지
                 'minute': e.get('minute'),
             })
         if goals:

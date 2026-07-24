@@ -830,7 +830,14 @@ def build_leaderboard(name_cache):
     대상으로 모은 goalscorers.json을 쓴다.
     ⚠️ 8월 개막 전이라 지금은 리그별로 빈 값이 나오는 게 정상이다 —
     틀린 데이터를 보여주는 것보다 빈 화면이 낫다는 원칙으로, season_players.json
-    같은 대체 소스는 일부러 안 쓴다(EPL 쪽도 마찬가지 이유로 뺐음)."""
+    같은 대체 소스는 일부러 안 쓴다(EPL 쪽도 마찬가지 이유로 뺐음).
+    2026-07-24 수정: 팀 판별을 team/team_name 필드 매칭에서 is_home(bool)
+    기반으로 교체했다. rehearse_goal_team_probe.py 실측 확정(events/{eid}/
+    incidents/ 원문) — 이 응답엔 team/team_name 필드 자체가 없다(그동안
+    100% 매칭 실패했던 원인). is_home=True면 home_kr, False면 away_kr —
+    home_kr/away_kr는 collect_goalscorers.py가 team_id로 이미 확정해둔
+    값이라 별도 이름 매칭이 필요 없다. team_raw 매칭은 옛 데이터·다른 소스
+    대비용으로 폴백만 남겨둔다."""
     all_matches = _load_json(GOALSCORERS_PATH, {})
     out = {}
     for lk in LEAGUE_TEAM_MAPS:
@@ -845,17 +852,25 @@ def build_leaderboard(name_cache):
                 if not scorer_en:
                     continue
                 scorer_ko = _translate_name(scorer_en, name_cache)
-                team_raw = g.get('team')
-                hit = to_kr_league(team_raw) if team_raw else None
-                team_kr = hit[1] if (hit and hit[0] == lk) else None
-                if team_kr not in (home_kr, away_kr):
-                    if len(unresolved_samples) < 5:
-                        unresolved_samples.append({
-                            'team_raw': team_raw, 'to_kr_league_결과': hit,
-                            'home_kr': home_kr, 'away_kr': away_kr,
-                        })
-                    team_kr = None
-                    n_unresolved_team += 1
+
+                is_home = g.get('is_home')
+                if is_home is True:
+                    team_kr = home_kr
+                elif is_home is False:
+                    team_kr = away_kr
+                else:
+                    # 폴백: is_home이 없는 옛 레코드/다른 소스 대비.
+                    team_raw = g.get('team')
+                    hit = to_kr_league(team_raw) if team_raw else None
+                    team_kr = hit[1] if (hit and hit[0] == lk) else None
+                    if team_kr not in (home_kr, away_kr):
+                        if len(unresolved_samples) < 5:
+                            unresolved_samples.append({
+                                'team_raw': team_raw, 'to_kr_league_결과': hit,
+                                'home_kr': home_kr, 'away_kr': away_kr,
+                            })
+                        team_kr = None
+                        n_unresolved_team += 1
                 key = f'{scorer_ko}|{team_kr or "미상"}'
                 scorers[key] = scorers.get(key, 0) + 1
 
@@ -868,7 +883,8 @@ def build_leaderboard(name_cache):
         if scorers or n_unresolved_team:
             print(f'[app_export_multileague] {lk} 득점왕/도움왕: '
                   f'득점 {sum(scorers.values())}건, 도움 {sum(assists.values())}건'
-                  + (f', 팀 매칭 실패 {n_unresolved_team}건' if n_unresolved_team else ''),
+                  + (f', 팀 매칭 실패(is_home 없음) {n_unresolved_team}건'
+                     if n_unresolved_team else ''),
                   flush=True)
         if unresolved_samples:
             print(f'[app_export_multileague] [diag] {lk} 팀 매칭 실패 샘플: '
