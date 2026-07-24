@@ -143,6 +143,10 @@ jobs:
           # 앱에 아무것도 반영 안 하고 로그만 남긴다. [rehearse_mls_norway]
           # 결과 확인 후 이 줄 삭제할 것.
           python rehearse_mls_norway_probe.py || true
+          # 2026-07-24 추가: MLS·엘리테세리엔 팀명 매핑 초안(mls_norway_team_maps.py)
+          # 검증용. data/master/teams_mls_norway.json에만 쓰고 어떤 app_export*.py도
+          # 이 파일을 안 읽는다 — 앱 통합은 보류 상태(사용자 결정), 매칭률 확인용.
+          python collect_mls_norway_teams.py || true
           python collect_xg_bsd.py
           python collect_transfers_bsd.py
           # 2026-07-18 추가: 득점왕/도움왕용. collect_fixtures*.py의 리그/팀
