@@ -46,6 +46,13 @@ LEAGUE_MATCHERS = {
     'ligue1': lambda n, c: c == 'france' and 'ligue 1' in n,
     'eredivisie': lambda n, c: c in ('netherlands', 'holland') and 'eredivisie' in n,
     'championship': lambda n, c: c == 'england' and n == 'championship',
+    # 2026-07-24 추가: collect_fixtures_multileague.py와 동일 매처(실측 확정됨).
+    # 이 파일은 자체 LEAGUE_MATCHERS를 따로 갖고 있어서(공용 LEAGUE_TEAM_MAPS
+    # 재사용 안 함) 거기 추가한다고 여기 자동 반영 안 됨 — 별도로 추가해야 함.
+    'mls': lambda n, c: c in ('usa', 'united states', 'united states of america') and (
+        n == 'mls' or 'major league soccer' in n),
+    'eliteserien': lambda n, c: c == 'norway' and (
+        n == 'eliteserien' or 'eliteserien' in n),
 }
 
 
