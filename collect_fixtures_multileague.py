@@ -31,6 +31,17 @@ _MAX_PAGES = 50
 KST = timezone(timedelta(hours=9))
 DATE_FROM = (datetime.now(timezone.utc) - timedelta(days=30)).strftime('%Y-%m-%d')
 DATE_TO = (datetime.now(timezone.utc) + timedelta(days=400)).strftime('%Y-%m-%d')
+# 2026-07-24 추가: MLS/엘리테세리엔처럼 이미 몇 달째 진행 중인 리그는 DATE_FROM
+# (오늘-30일) 때문에 이전에 열린 경기들이 조회 자체가 안 됐다(실측 확인 —
+# MLS 30팀 합쳐서 종료경기 20건, 엘리테세리엔 16팀 합쳐서 18건이 나왔는데
+# 이건 "최근 한 달치"로 보면 딱 맞고 실제 시즌 누적으론 턱없이 적었음).
+# _find_leagues()가 찾은 리그의 실제 시즌 시작일을 여기에 채워두고
+# _fetch_league_events()가 리그별로 이걸 date_from으로 쓴다. 6개 리그는
+# 이미 다 아직 개막 전이라(2026-07-01 이후) 이 값을 써도 결과가 똑같아서
+# 회귀 위험 없음 — collect_goalscorers.py/collect_lineups.py 등 외부에서
+# _find_leagues()의 반환 튜플(league_id, season_id, 실제이름)을 그대로
+# 3개로 언패킹하고 있어서 그 튜플 구조 자체는 안 건드리고 별도 채널로 뺐다.
+_LEAGUE_SEASON_START = {}  # league_id -> 'YYYY-MM-DD'
 
 # ============================================================ 리그 판별 기준
 # EPL의 _find_pl_league_id(name+country 조합 실측 확인)와 동일한 방식.
@@ -98,9 +109,12 @@ def _find_leagues(client):
                 if matcher(name, country):
                     season = lg.get('current_season') or {}
                     found[league_key] = (lg.get('id'), season.get('id'), lg.get('name'))
+                    if season.get('start_date'):
+                        _LEAGUE_SEASON_START[lg.get('id')] = season.get('start_date')
                     print(f'[collect_fixtures_multileague] {league_key} 발견: '
                           f'"{lg.get("name")}" (id={lg.get("id")}, '
-                          f'season_id={season.get("id")})', flush=True)
+                          f'season_id={season.get("id")}, '
+                          f'season_start={season.get("start_date")})', flush=True)
         total = data.get('count', len(results))
         offset += PAGE_LIMIT
         if offset >= total or not results or len(found) == len(LEAGUE_MATCHERS):
@@ -253,10 +267,14 @@ _LEAGUE_PARAM_NAME = None
 def _fetch_league_events(client, league_id):
     global _LEAGUE_PARAM_NAME
     candidates = [_LEAGUE_PARAM_NAME] if _LEAGUE_PARAM_NAME else ['league_id', 'league']
+    # 2026-07-24: 이 리그의 실제 시즌 시작일을 알면 그걸 date_from으로 쓴다
+    # (모듈 상수 DATE_FROM=오늘-30일 대신) — 몇 달째 진행 중인 리그의 과거
+    # 경기가 안 잘리게. 모르면 기존처럼 DATE_FROM.
+    date_from = _LEAGUE_SEASON_START.get(league_id, DATE_FROM)
 
     for param_name in candidates:
         first = _unwrap(client.events(**{
-            param_name: league_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+            param_name: league_id, 'date_from': date_from, 'date_to': DATE_TO,
             'limit': PAGE_LIMIT, 'offset': 0}))
         time.sleep(0.3)
         if not first:
@@ -276,7 +294,7 @@ def _fetch_league_events(client, league_id):
         while (total is None or offset < total) and len(first_rows) >= PAGE_LIMIT \
                 and pages < _MAX_PAGES:
             data = _unwrap(client.events(**{
-                param_name: league_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+                param_name: league_id, 'date_from': date_from, 'date_to': DATE_TO,
                 'limit': PAGE_LIMIT, 'offset': offset}))
             time.sleep(0.3)
             if not data:
