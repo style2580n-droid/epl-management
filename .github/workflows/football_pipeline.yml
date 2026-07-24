@@ -138,20 +138,15 @@ jobs:
           python retention.py
           python collect_coaches.py
           python collect_fixtures.py
+          # 2026-07-24: MLS·엘리테세리엔이 이제 LEAGUE_MATCHERS/LEAGUE_TEAM_MAPS에
+          # 정식 포함돼서 이 실행이 곧 실전 수집이다(더 이상 리허설 아님).
+          # rehearse_mls_norway_probe.py·collect_mls_norway_teams.py는 목적
+          # (리그/팀 존재 확인) 달성해서 제거함 — mls_norway_team_maps.py 내용은
+          # app_export_multileague.py의 LEAGUE_TEAM_MAPS로 그대로 병합됨.
           python collect_fixtures_multileague.py
-          # 2026-07-23 [임시/리허설] MLS·노르웨이 엘리테세리엔 확장 검토용.
-          # 앱에 아무것도 반영 안 하고 로그만 남긴다. [rehearse_mls_norway]
-          # 결과 확인 후 이 줄 삭제할 것.
-          python rehearse_mls_norway_probe.py || true
-          # 2026-07-24 추가: MLS·엘리테세리엔 팀명 매핑 초안(mls_norway_team_maps.py)
-          # 검증용. data/master/teams_mls_norway.json에만 쓰고 어떤 app_export*.py도
-          # 이 파일을 안 읽는다 — 앱 통합은 보류 상태(사용자 결정), 매칭률 확인용.
-          python collect_mls_norway_teams.py || true
           python collect_xg_bsd.py
-          # 2026-07-24 추가: MLS·엘리테세리엔이 BSD에서 xG를 주는지 확인용
-          # (ELO는 ClubElo가 미국을 아예 커버 안 해서 MLS는 xG 대체 가능성 검토
-          # 중). collect_xg_bsd.py는 안 건드림 — 완전히 별도 프로브.
-          python rehearse_mls_norway_xg_probe.py || true
+          # 2026-07-24: MLS xG 확인(rehearse_mls_norway_xg_probe.py)도 목적
+          # 달성 — MLS는 이제 collect_xg_bsd.py의 LEAGUES에 정식 포함됨.
           python collect_transfers_bsd.py
           # 2026-07-18 추가: 득점왕/도움왕용. collect_fixtures*.py의 리그/팀
           # 매칭 로직을 재사용하므로 걔들 뒤에 두는 게 자연스럽고, app_export*.py가
