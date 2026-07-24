@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-24
 
-생성(UTC): 2026-07-24 09:02
+생성(UTC): 2026-07-24 09:31
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -37,8 +37,11 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 21건 (누적 27건)
+오늘 24건 (누적 30건)
 
 ## 📊 경기 고급 지표
 
@@ -1400,6 +1403,13 @@
 | Vietnam | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Myanmar | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### VitóriaSC_Al-Ahli_221407
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Vitória SC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Al-Ahli | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### VästeråsSK_DegerforsIF_46398
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -1680,6 +1690,7 @@
 - **VfLBochum1848_SwanseaCity_219232**: [heatmap(Swansea City)](viz/VfLBochum1848_SwanseaCity_219232_Swansea City_heatmap.svg) · [network(Swansea City)](viz/VfLBochum1848_SwanseaCity_219232_Swansea City_network.svg) · [shotmap(Swansea City)](viz/VfLBochum1848_SwanseaCity_219232_Swansea City_shotmap.svg) · [heatmap(VfL Bochum 1848)](viz/VfLBochum1848_SwanseaCity_219232_VfL Bochum 1848_heatmap.svg) · [network(VfL Bochum 1848)](viz/VfLBochum1848_SwanseaCity_219232_VfL Bochum 1848_network.svg) · [shotmap(VfL Bochum 1848)](viz/VfLBochum1848_SwanseaCity_219232_VfL Bochum 1848_shotmap.svg)
 - **VfLWolfsburg_SCVerl_219033**: [heatmap(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_heatmap.svg) · [network(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_network.svg) · [shotmap(SC Verl)](viz/VfLWolfsburg_SCVerl_219033_SC Verl_shotmap.svg) · [heatmap(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_heatmap.svg) · [network(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_network.svg) · [shotmap(VfL Wolfsburg)](viz/VfLWolfsburg_SCVerl_219033_VfL Wolfsburg_shotmap.svg)
 - **Vietnam_Myanmar_216521**: [heatmap(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_heatmap.svg) · [network(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_network.svg) · [shotmap(Myanmar)](viz/Vietnam_Myanmar_216521_Myanmar_shotmap.svg) · [heatmap(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_heatmap.svg) · [network(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_network.svg) · [shotmap(Vietnam)](viz/Vietnam_Myanmar_216521_Vietnam_shotmap.svg)
+- **VitóriaSC_Al-Ahli_221407**: [heatmap(Al-Ahli)](viz/VitóriaSC_Al-Ahli_221407_Al-Ahli_heatmap.svg) · [network(Al-Ahli)](viz/VitóriaSC_Al-Ahli_221407_Al-Ahli_network.svg) · [shotmap(Al-Ahli)](viz/VitóriaSC_Al-Ahli_221407_Al-Ahli_shotmap.svg) · [heatmap(Vitória SC)](viz/VitóriaSC_Al-Ahli_221407_Vitória SC_heatmap.svg) · [network(Vitória SC)](viz/VitóriaSC_Al-Ahli_221407_Vitória SC_network.svg) · [shotmap(Vitória SC)](viz/VitóriaSC_Al-Ahli_221407_Vitória SC_shotmap.svg)
 - **VästeråsSK_DegerforsIF_46398**: [heatmap(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_heatmap.svg) · [network(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_network.svg) · [shotmap(Degerfors IF)](viz/VästeråsSK_DegerforsIF_46398_Degerfors IF_shotmap.svg) · [heatmap(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_heatmap.svg) · [network(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_network.svg) · [shotmap(Västerås SK)](viz/VästeråsSK_DegerforsIF_46398_Västerås SK_shotmap.svg)
 - **WartaPoznań_LechiaZielonaGóra_218997**: [heatmap(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_heatmap.svg) · [network(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_network.svg) · [shotmap(Lechia Zielona Góra)](viz/WartaPoznań_LechiaZielonaGóra_218997_Lechia Zielona Góra_shotmap.svg) · [heatmap(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_heatmap.svg) · [network(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_network.svg) · [shotmap(Warta Poznań)](viz/WartaPoznań_LechiaZielonaGóra_218997_Warta Poznań_shotmap.svg)
 - **WestfaliaRhynern_SpVgEssenSchonnebeck_219733**: [heatmap(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_heatmap.svg) · [network(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_network.svg) · [shotmap(SpVg Essen Schonnebeck)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_SpVg Essen Schonnebeck_shotmap.svg) · [heatmap(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_heatmap.svg) · [network(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_network.svg) · [shotmap(Westfalia Rhynern)](viz/WestfaliaRhynern_SpVgEssenSchonnebeck_219733_Westfalia Rhynern_shotmap.svg)
