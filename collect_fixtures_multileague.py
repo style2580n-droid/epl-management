@@ -44,6 +44,13 @@ LEAGUE_MATCHERS = {
     'ligue1': lambda n, c: c == 'france' and 'ligue 1' in n,
     'eredivisie': lambda n, c: c in ('netherlands', 'holland') and 'eredivisie' in n,
     'championship': lambda n, c: c == 'england' and n == 'championship',
+    # 2026-07-24 추가: rehearse_mls_norway_probe.py로 실측 확정된 매처
+    # (mls: id=18/season_id=158, eliteserien: id=54/season_id=1230).
+    # 컵대회(NM Cupen 등)와 안 섞이게 나라+정확한 이름으로 제한.
+    'mls': lambda n, c: c in ('usa', 'united states', 'united states of america') and (
+        n == 'mls' or 'major league soccer' in n),
+    'eliteserien': lambda n, c: c == 'norway' and (
+        n == 'eliteserien' or 'eliteserien' in n),
 }
 
 

@@ -18,6 +18,13 @@ LEAGUES = {
     'ligue1': 6,
     'eredivisie': 10,
     'championship': 12,
+    # 2026-07-24 추가: rehearse_mls_norway_xg_probe.py 실측 확정 —
+    # MLS는 종료경기 200건 중 200건(100%) xG 있음, 팀명매칭 30/30 확인됨.
+    # ELO(ClubElo)가 미국을 아예 커버 안 해서 MLS는 xG로 대체.
+    # 엘리테세리엔은 여기 안 넣음 — ELO가 이미 16/16 완전 커버돼서 불필요하고,
+    # 같은 프로브에서 TARGET_YEARS(2024/2025) 시즌엔 이벤트 자체가 0건이라
+    # (season_id 매핑 이슈로 보임, 원인 미확정) 지금 넣어봐야 빈 결과만 남음.
+    'mls': 18,
 }
 
 # 대상 시즌 연도
