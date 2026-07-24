@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-24
 
-생성(UTC): 2026-07-24 07:35
+생성(UTC): 2026-07-24 07:53
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -31,8 +31,11 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 15건 (누적 21건)
+오늘 18건 (누적 24건)
 
 ## 📊 경기 고급 지표
 
