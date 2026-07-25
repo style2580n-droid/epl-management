@@ -21661,5 +21661,225 @@
             }
         ],
         "collected_at": "2026-07-25T02:03:32.432434+00:00"
+    },
+    "1271043321": {
+        "match": {
+            "id": 1271043321,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3407337,
+                "logo": "https://highlightly.net/soccer/images/teams/3407337.png",
+                "name": "New Mexico United"
+            },
+            "homeTeam": {
+                "id": 3395423,
+                "logo": "https://highlightly.net/soccer/images/teams/3395423.png",
+                "name": "Birmingham Legion"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3395423,
+                    "logo": "https://highlightly.net/soccer/images/teams/3395423.png",
+                    "name": "Birmingham Legion"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3407337,
+                    "logo": "https://highlightly.net/soccer/images/teams/3407337.png",
+                    "name": "New Mexico United"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T05:45:09.182446+00:00"
+    },
+    "1271048427": {
+        "match": {
+            "id": 1271048427,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3403933,
+                "logo": "https://highlightly.net/soccer/images/teams/3403933.png",
+                "name": "Loudoun United FC"
+            },
+            "homeTeam": {
+                "id": 3401380,
+                "logo": "https://highlightly.net/soccer/images/teams/3401380.png",
+                "name": "Indy Eleven"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3401380,
+                    "logo": "https://highlightly.net/soccer/images/teams/3401380.png",
+                    "name": "Indy Eleven"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3403933,
+                    "logo": "https://highlightly.net/soccer/images/teams/3403933.png",
+                    "name": "Loudoun United FC"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T05:45:09.830463+00:00"
+    },
+    "1271049278": {
+        "match": {
+            "id": 1271049278,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3422655,
+                "logo": "https://highlightly.net/soccer/images/teams/3422655.png",
+                "name": "Tampa Bay Rowdies"
+            },
+            "homeTeam": {
+                "id": 7685314,
+                "logo": "https://highlightly.net/soccer/images/teams/7685314.png",
+                "name": "Miami FC"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7685314,
+                    "logo": "https://highlightly.net/soccer/images/teams/7685314.png",
+                    "name": "Miami FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3422655,
+                    "logo": "https://highlightly.net/soccer/images/teams/3422655.png",
+                    "name": "Tampa Bay Rowdies"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T05:45:10.178068+00:00"
+    },
+    "1271319045": {
+        "match": {
+            "id": 1271319045,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3425208,
+                "logo": "https://highlightly.net/soccer/images/teams/3425208.png",
+                "name": "Richmond Kickers"
+            },
+            "homeTeam": {
+                "id": 3397125,
+                "logo": "https://highlightly.net/soccer/images/teams/3397125.png",
+                "name": "Charlotte Independence"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3397125,
+                    "logo": "https://highlightly.net/soccer/images/teams/3397125.png",
+                    "name": "Charlotte Independence"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3425208,
+                    "logo": "https://highlightly.net/soccer/images/teams/3425208.png",
+                    "name": "Richmond Kickers"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T05:45:10.881907+00:00"
     }
 }
