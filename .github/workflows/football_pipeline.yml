@@ -2,7 +2,7 @@ name: Football Data Center Pipeline
 
 on:
   schedule:
-    - cron: '0 15 * * *'   # 15:00 UTC = 한국시간 자정 00:00 (새 틀 Step 3)
+    - cron: '0 3,9,15,21 * * *'   # UTC 03/09/15/21시 = 한국시간 12/18/00/06시, 6시간 간격
   workflow_dispatch:
 
 permissions:
