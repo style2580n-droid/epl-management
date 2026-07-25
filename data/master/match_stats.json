@@ -21881,5 +21881,170 @@
             }
         ],
         "collected_at": "2026-07-25T05:45:10.881907+00:00"
+    },
+    "1271321598": {
+        "match": {
+            "id": 1271321598,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21688519,
+                "logo": null,
+                "name": "Naples"
+            },
+            "homeTeam": {
+                "id": 7681059,
+                "logo": "https://highlightly.net/soccer/images/teams/7681059.png",
+                "name": "Forward Madison"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7681059,
+                    "logo": "https://highlightly.net/soccer/images/teams/7681059.png",
+                    "name": "Forward Madison"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21688519,
+                    "logo": null,
+                    "name": "Naples"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T09:22:24.418576+00:00"
+    },
+    "1345744101": {
+        "match": {
+            "id": 1345744101,
+            "round": "Apertura - 1",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1958084,
+                "logo": "https://highlightly.net/soccer/images/teams/1958084.png",
+                "name": "Alebrijes de Oaxaca"
+            },
+            "homeTeam": {
+                "id": 1967445,
+                "logo": "https://highlightly.net/soccer/images/teams/1967445.png",
+                "name": "Venados FC"
+            },
+            "league": {
+                "id": 224597,
+                "logo": "https://highlightly.net/soccer/images/leagues/224597.png",
+                "name": "Liga de Expansión MX",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1967445,
+                    "logo": "https://highlightly.net/soccer/images/teams/1967445.png",
+                    "name": "Venados FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1958084,
+                    "logo": "https://highlightly.net/soccer/images/teams/1958084.png",
+                    "name": "Alebrijes de Oaxaca"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T09:22:24.716480+00:00"
+    },
+    "1271319896": {
+        "match": {
+            "id": 1271319896,
+            "round": "Group Stage",
+            "date": "2026-07-25T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16088939,
+                "logo": "https://highlightly.net/soccer/images/teams/16088939.png",
+                "name": "One Knoxville"
+            },
+            "homeTeam": {
+                "id": 7673400,
+                "logo": "https://highlightly.net/soccer/images/teams/7673400.png",
+                "name": "Chattanooga Red Wolves"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7673400,
+                    "logo": "https://highlightly.net/soccer/images/teams/7673400.png",
+                    "name": "Chattanooga Red Wolves"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16088939,
+                    "logo": "https://highlightly.net/soccer/images/teams/16088939.png",
+                    "name": "One Knoxville"
+                }
+            }
+        ],
+        "collected_at": "2026-07-25T09:22:25.023490+00:00"
     }
 }
