@@ -217,6 +217,11 @@ LEAGUE_TEAM_MAPS = {
         '세비야': ['Sevilla FC', 'Sevilla'],
         '발렌시아': ['Valencia CF', 'Valencia'],
         '비야레알': ['Villarreal CF', 'Villarreal'],
+        # 2026-07-25 추가: 파이프라인 로그(collect_xg_bsd)에서 "한글 매칭 안 됨"으로
+        # 확인된 26-27시즌 현역 라리가 팀 — 원래 매핑에 아예 없었음(오타/별칭 문제 아님).
+        '지로나': ['Girona FC', 'Girona'],
+        '마요르카': ['RCD Mallorca', 'Mallorca'],
+        '레알 오비에도': ['Real Oviedo'],
     },
     'bundesliga': {
         '바이에른 뮌헨': ['FC Bayern München', 'Bayern Munich', 'Bayern München',
@@ -239,6 +244,10 @@ LEAGUE_TEAM_MAPS = {
         '샬케04': ['FC Schalke 04', 'Schalke 04', 'Schalke'],
         'SV 엘버스베르크': ['SV 07 Elversberg', 'Elversberg'],
         'SC 파더보른07': ['SC Paderborn 07', 'Paderborn', 'Paderborn 07'],
+        # 2026-07-25 추가: 파이프라인 로그에서 "한글 매칭 안 됨"으로 확인된 26-27시즌
+        # 현역 분데스리가 팀.
+        '상트파울리': ['FC St. Pauli', 'St. Pauli', 'FC St Pauli'],
+        '볼프스부르크': ['VfL Wolfsburg', 'Wolfsburg'],
     },
     'seriea': {
         '아탈란타': ['Atalanta BC', 'Atalanta'],
@@ -261,6 +270,11 @@ LEAGUE_TEAM_MAPS = {
         '토리노': ['Torino FC', 'Torino'],
         '우디네세': ['Udinese Calcio', 'Udinese'],
         '베네치아': ['Venezia FC', 'Venezia'],
+        # 2026-07-25 추가: 파이프라인 로그에서 "한글 매칭 안 됨"으로 확인된 26-27시즌
+        # 현역 세리에A 팀(승격팀 포함).
+        '크레모네세': ['US Cremonese', 'Cremonese'],
+        '엘라스 베로나': ['Hellas Verona FC', 'Hellas Verona'],
+        '피사': ['Pisa Sporting Club', 'Pisa'],
     },
     'ligue1': {
         '파리 생제르맹': ['Paris Saint-Germain FC', 'PSG', 'Paris Saint Germain'],
@@ -284,6 +298,10 @@ LEAGUE_TEAM_MAPS = {
         '앙제SCO': ['Angers SCO', 'Angers'],
         '릴OSC': ['Lille OSC', 'LOSC Lille', 'Lille'],
         '르아브르AC': ['Le Havre AC', 'Le Havre'],
+        # 2026-07-25 추가: 파이프라인 로그에서 "한글 매칭 안 됨"으로 확인된 26-27시즌
+        # 현역 리그앙 팀.
+        'FC 메스': ['FC Metz', 'Metz'],
+        'FC 낭트': ['FC Nantes', 'Nantes'],
     },
     'eredivisie': {
         'ADO 덴하흐': ['ADO Den Haag'],
@@ -304,6 +322,11 @@ LEAGUE_TEAM_MAPS = {
         '스파르타 로테르담': ['Sparta Rotterdam'],
         '텔스타르': ['SC Telstar', 'Telstar'],
         '빌럼II': ['Willem II Tilburg', 'Willem II'],
+        # 2026-07-25 추가: 파이프라인 로그에서 "한글 매칭 안 됨"으로 확인된 26-27시즌
+        # 현역 에레디비시 팀(승격팀 포함).
+        'FC 볼렌담': ['FC Volendam', 'Volendam'],
+        '헤라클레스 알멜로': ['Heracles Almelo'],
+        'NAC 브레다': ['NAC Breda'],
     },
     'championship': {
         # 2026-07-19 파이프라인 로그 실측: BSD는 'Wolverhampton' 단독 표기
@@ -334,6 +357,17 @@ LEAGUE_TEAM_MAPS = {
         '렉섬': ['Wrexham AFC', 'Wrexham'],
         '카디프 시티': ['Cardiff City FC', 'Cardiff City'],
         '사우샘프턴': ['Southampton FC', 'Southampton'],
+        # 2026-07-25 추가: 파이프라인 로그에서 "championship: 한글 매칭 안 됨"으로 나온
+        # 6개 팀 중 3개만 추가함. 나머지 3개(코번트리 시티/헐 시티/입스위치 타운)는
+        # 일부러 안 넣음 — 같은 실행의 [collect_coaches] 로그에 이 3팀이 실제
+        # "20개 팀" 프리미어리그 로스터로 이미 확정 수집돼 있음(아스날/맨시티 등과
+        # 나란히). 즉 26-27시즌엔 승격해서 EPL 소속인데, BSD의 xG 데이터가 아직
+        # (작년 챔피언십 시절 기준으로) 예전 리그 소속으로 태깅돼 있는 걸로 보임 —
+        # 이건 한글 매핑 문제가 아니라 BSD 쪽 xG 데이터의 리그 귀속 지연/캐시 문제라
+        # 여기 championship 맵에 잘못 추가하면 오히려 리그 오귀속을 만들 수 있어서 보류.
+        '레스터 시티': ['Leicester City FC', 'Leicester City'],
+        '옥스퍼드 유나이티드': ['Oxford United FC', 'Oxford United'],
+        '셰필드 웬즈데이': ['Sheffield Wednesday FC', 'Sheffield Wednesday'],
     },
     # 2026-07-24 추가: mls_norway_team_maps.py에서 그대로 병합(2026-07-24
     # collect_mls_norway_teams.py 실행 로그로 46/46 전부 매칭 확정됨 — 재검증
@@ -413,6 +447,14 @@ for _league_key, _team_map in LEAGUE_TEAM_MAPS.items():
     for _kr, _aliases in _team_map.items():
         for _a in _aliases + [_kr]:
             _LOOKUP[_norm(_a)] = (_league_key, _kr)
+
+# 2026-07-25 추가: 이 파일이 실제로 최신본인지 다음 로그에서 100% 확실하게 확인하기 위한
+# 마커. 이 줄이 로그에 안 보이면 이 모듈이 아예 안 불려졌거나 옛날 버전이 돌고 있는
+# 것 — 반대로 팀 매칭 개수로 간접 추론할 필요 없이 이 한 줄로 바로 판별 가능함.
+print(f'[app_export_multileague] LEAGUE_TEAM_MAPS 로드 완료 — 총 {len(_LOOKUP)}개 별칭, '
+      f'2026-07-25 16팀 추가판(지로나·마요르카·레알오비에도·상트파울리·볼프스부르크·'
+      f'크레모네세·엘라스베로나·피사·메스·낭트·볼렌담·헤라클레스알멜로·NAC브레다·'
+      f'레스터·옥스퍼드·셰필드웬즈데이 포함)')
 
 
 def to_kr_league(name):
