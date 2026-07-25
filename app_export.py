@@ -290,6 +290,13 @@ def build_team_blocks():
             e['npXg'] = pm['npxG']
         if pm.get('PPDA') is not None:
             e['ppda'] = pm['PPDA']
+        # 2026-07-25 추가: impact_engine.py의 compute_match_metrics()가 이미
+        # field_tilt_pct를 계산해서 season_teams.json까지 내려오는데(season_aggregator.py가
+        # 그대로 통과시킨다고 가정 — PPDA/PSxG처럼 다른 필드들이 이미 그렇게 동작 중이라
+        # 같은 패턴일 것으로 봄, 실제로 안 내려오면 아래는 그냥 조용히 스킵되고 폴백값 유지됨)
+        # 여태 default_elo의 fieldTilt=50 고정값만 나가고 있었던 걸 실측으로 교체.
+        if pm.get('field_tilt_pct') is not None:
+            e['fieldTilt'] = pm['field_tilt_pct']
         e['form'] = e['base']
         elo_out[kr] = {('def' if k == 'def_' else k): v for k, v in e.items()}
 
@@ -300,9 +307,17 @@ def build_team_blocks():
             a['psxgAllowed'] = pm['PSxG_faced']
         if pm.get('big_chances_created') is not None:
             a['bigChances'] = pm['big_chances_created']
+        if pm.get('big_chances_allowed') is not None:
+            a['bigChancesAllowed'] = pm['big_chances_allowed']
+        # 2026-07-25 추가: shotQuality(슈팅 하나당 평균 xG)는 impact_engine.py에
+        # 별도 필드로는 없지만, 이미 있는 xG 합계/슈팅 수로 바로 계산 가능
+        # (season_teams.json에 shots 카운트가 안 내려오면 조용히 스킵 — 크래시 없음).
+        if pm.get('xG') is not None and pm.get('shots'):
+            a['shotQuality'] = round(pm['xG'] / pm['shots'], 3)
         adv_out[kr] = a
 
     return elo_out, adv_out
+
 
 
 # ============================================================ 2) RECENT_FORM / _liveResults

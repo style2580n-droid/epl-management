@@ -435,6 +435,10 @@ def compute_match_metrics(events, home, away, xg_model=None, xt=None):
                 if xg >= 0.3:                                 # Big Chance 기준
                     P[kp]['big_chances_created'] += 1
                     T[t]['big_chances_created'] += 1
+                    # 2026-07-25 추가: PSxG_faced와 동일 패턴으로 상대팀 관점(허용) 미러링.
+                    # app_export.py의 ADVANCED_STATS.bigChancesAllowed가 여태 항상
+                    # 기본값(2.0)이었던 이유가 이 필드 자체가 없었기 때문 — 추가함.
+                    T[teams[t]]['big_chances_allowed'] += 1
                 T[t]['xA'] += xg
                 if e.get('outcome') == 'Goal':
                     P[kp]['assists'] += 1
