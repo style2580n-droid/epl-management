@@ -14100,6 +14100,364 @@
  "mls": [
   {
    "home": "포틀랜드 팀버스",
+   "away": "리얼 솔트레이크",
+   "date": "2026-07-26",
+   "eid": 5168,
+   "goals": [
+    {
+     "scorer": "F. Mora",
+     "assist": "K. Velde",
+     "team": null,
+     "is_home": true,
+     "minute": 67
+    },
+    {
+     "scorer": "F. Mora",
+     "assist": "A. Lassiter",
+     "team": null,
+     "is_home": true,
+     "minute": 56
+    },
+    {
+     "scorer": "J. Sanabria",
+     "assist": "M. Guilavogui",
+     "team": null,
+     "is_home": false,
+     "minute": 18
+    }
+   ]
+  },
+  {
+   "home": "산호세 어스퀘이크스",
+   "away": "LA 갤럭시",
+   "date": "2026-07-26",
+   "eid": 5167,
+   "goals": [
+    {
+     "scorer": "R. Roberts",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 62
+    },
+    {
+     "scorer": "J. Paintsil",
+     "assist": "M. Reus",
+     "team": null,
+     "is_home": false,
+     "minute": 13
+    }
+   ]
+  },
+  {
+   "home": "로스앤젤레스 FC",
+   "away": "스포르팅 캔자스시티",
+   "date": "2026-07-26",
+   "eid": 5166,
+   "goals": [
+    {
+     "scorer": "D. Bouanga",
+     "assist": "T. Boyd",
+     "team": null,
+     "is_home": true,
+     "minute": 85
+    },
+    {
+     "scorer": "D. M. Morales",
+     "assist": "D. Bouanga",
+     "team": null,
+     "is_home": true,
+     "minute": 45
+    },
+    {
+     "scorer": "D. Bouanga",
+     "assist": "M. Choinière",
+     "team": null,
+     "is_home": true,
+     "minute": 37
+    },
+    {
+     "scorer": "S. Heung-min",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 5
+    }
+   ]
+  },
+  {
+   "home": "샌디에이고 FC",
+   "away": "FC 댈러스",
+   "date": "2026-07-26",
+   "eid": 5165,
+   "goals": [
+    {
+     "scorer": "A. Alvarado Jr",
+     "assist": "M. Duah",
+     "team": null,
+     "is_home": true,
+     "minute": 50
+    }
+   ]
+  },
+  {
+   "home": "세인트루이스 시티",
+   "away": "콜로라도 래피즈",
+   "date": "2026-07-26",
+   "eid": 5164,
+   "goals": [
+    {
+     "scorer": "T. Ostrák",
+     "assist": "T. Totland",
+     "team": null,
+     "is_home": true,
+     "minute": 83
+    }
+   ]
+  },
+  {
+   "home": "휴스턴 다이나모",
+   "away": "오스틴 FC",
+   "date": "2026-07-26",
+   "eid": 5163,
+   "goals": [
+    {
+     "scorer": "Guilherme",
+     "assist": "A. Bouzat",
+     "team": null,
+     "is_home": true,
+     "minute": 32
+    },
+    {
+     "scorer": "M. Bogusz",
+     "assist": "Guilherme",
+     "team": null,
+     "is_home": true,
+     "minute": 29
+    },
+    {
+     "scorer": "M. Bogusz",
+     "assist": "E. Ponce",
+     "team": null,
+     "is_home": true,
+     "minute": 12
+    }
+   ]
+  },
+  {
+   "home": "미네소타 유나이티드",
+   "away": "밴쿠버 화이트캡스",
+   "date": "2026-07-26",
+   "eid": 5162,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "DC 유나이티드",
+   "away": "토론토 FC",
+   "date": "2026-07-26",
+   "eid": 5161,
+   "goals": [
+    {
+     "scorer": "T. Baribo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90
+    },
+    {
+     "scorer": "T. Corbeanu",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 76
+    },
+    {
+     "scorer": "K. Rowles",
+     "assist": "K. Kurokawa",
+     "team": null,
+     "is_home": true,
+     "minute": 41
+    }
+   ]
+  },
+  {
+   "home": "뉴잉글랜드 레볼루션",
+   "away": "애틀랜타 유나이티드",
+   "date": "2026-07-26",
+   "eid": 5159,
+   "goals": [
+    {
+     "scorer": "M. Almirón",
+     "assist": "A. Miranchuk",
+     "team": null,
+     "is_home": false,
+     "minute": 85
+    },
+    {
+     "scorer": "B. Raines",
+     "assist": "M. Zambrano",
+     "team": null,
+     "is_home": true,
+     "minute": 67
+    },
+    {
+     "scorer": "P. Miller",
+     "assist": "M. Polster",
+     "team": null,
+     "is_home": true,
+     "minute": 56
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "A. Yusuf",
+     "team": null,
+     "is_home": true,
+     "minute": 36
+    },
+    {
+     "scorer": "C. Gil",
+     "assist": "M. Polster",
+     "team": null,
+     "is_home": true,
+     "minute": 11
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 시티 FC",
+   "away": "시카고 파이어",
+   "date": "2026-07-26",
+   "eid": 5158,
+   "goals": [
+    {
+     "scorer": "M. Jones",
+     "assist": "A. Ojeda",
+     "team": null,
+     "is_home": true,
+     "minute": 41
+    },
+    {
+     "scorer": "A. Ojeda",
+     "assist": "A. Perea",
+     "team": null,
+     "is_home": true,
+     "minute": 29
+    },
+    {
+     "scorer": "J. Waterman",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 21
+    },
+    {
+     "scorer": "N. Fernández",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 10
+    }
+   ]
+  },
+  {
+   "home": "올랜도 시티",
+   "away": "내슈빌 SC",
+   "date": "2026-07-26",
+   "eid": 5157,
+   "goals": [
+    {
+     "scorer": "T. Spicer",
+     "assist": "J. Ellis",
+     "team": null,
+     "is_home": true,
+     "minute": 72
+    }
+   ]
+  },
+  {
+   "home": "필라델피아 유니온",
+   "away": "시애틀 사운더스",
+   "date": "2026-07-26",
+   "eid": 5156,
+   "goals": [
+    {
+     "scorer": "M. Iloski",
+     "assist": "F. Westfield",
+     "team": null,
+     "is_home": true,
+     "minute": 31
+    }
+   ]
+  },
+  {
+   "home": "CF 몬트리올",
+   "away": "인터 마이애미",
+   "date": "2026-07-26",
+   "eid": 5155,
+   "goals": [
+    {
+     "scorer": "L. Suárez",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 81
+    }
+   ]
+  },
+  {
+   "home": "콜럼버스 크루",
+   "away": "FC 신시내티",
+   "date": "2026-07-26",
+   "eid": 5154,
+   "goals": [
+    {
+     "scorer": "D. Gazdag",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45
+    },
+    {
+     "scorer": "J. Thiaré",
+     "assist": "D. Chambost",
+     "team": null,
+     "is_home": true,
+     "minute": 41
+    },
+    {
+     "scorer": "K. Denkey",
+     "assist": "Evander",
+     "team": null,
+     "is_home": false,
+     "minute": 9
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 레드불스",
+   "away": "샬럿 FC",
+   "date": "2026-07-26",
+   "eid": 5160,
+   "goals": [
+    {
+     "scorer": "A. Westwood",
+     "assist": "K. C. Vargas",
+     "team": null,
+     "is_home": false,
+     "minute": 12
+    },
+    {
+     "scorer": "P. Biel",
+     "assist": "L. Abada",
+     "team": null,
+     "is_home": false,
+     "minute": 7
+    }
+   ]
+  },
+  {
+   "home": "포틀랜드 팀버스",
    "away": "FC 댈러스",
    "date": "2026-07-23",
    "eid": 5153,
