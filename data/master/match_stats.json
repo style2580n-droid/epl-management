@@ -23223,5 +23223,60 @@
             }
         ],
         "collected_at": "2026-07-26T06:08:07.917160+00:00"
+    },
+    "1287772279": {
+        "match": {
+            "id": 1287772279,
+            "round": "Group Stage",
+            "date": "2026-07-26T22:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16008945,
+                "logo": "https://highlightly.net/soccer/images/teams/16008945.png",
+                "name": "Columbus Crew II"
+            },
+            "homeTeam": {
+                "id": 23335204,
+                "logo": null,
+                "name": "Connecticut Fc"
+            },
+            "league": {
+                "id": 774343,
+                "logo": "https://highlightly.net/soccer/images/leagues/774343.png",
+                "name": "MLS Next Pro",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23335204,
+                    "logo": null,
+                    "name": "Connecticut Fc"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16008945,
+                    "logo": "https://highlightly.net/soccer/images/teams/16008945.png",
+                    "name": "Columbus Crew II"
+                }
+            }
+        ],
+        "collected_at": "2026-07-26T10:46:04.909025+00:00"
     }
 }
