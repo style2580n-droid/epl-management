@@ -22931,7 +22931,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1020282,
                     "logo": "https://highlightly.net/soccer/images/teams/1020282.png",
@@ -22939,7 +22948,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 116520,
                     "logo": "https://highlightly.net/soccer/images/teams/116520.png",
@@ -22947,7 +22965,7 @@
                 }
             }
         ],
-        "collected_at": "2026-07-26T06:08:05.457851+00:00"
+        "collected_at": "2026-07-26T22:00:58.687766+00:00"
     },
     "1269953190": {
         "match": {
@@ -22986,7 +23004,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 103755,
                     "logo": "https://highlightly.net/soccer/images/teams/103755.png",
@@ -22994,7 +23021,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 904546,
                     "logo": "https://highlightly.net/soccer/images/teams/904546.png",
@@ -23002,7 +23038,7 @@
                 }
             }
         ],
-        "collected_at": "2026-07-26T06:08:06.376020+00:00"
+        "collected_at": "2026-07-26T22:00:58.315538+00:00"
     },
     "1270548039": {
         "match": {
@@ -23278,5 +23314,60 @@
             }
         ],
         "collected_at": "2026-07-26T10:46:04.909025+00:00"
+    },
+    "1364403127": {
+        "match": {
+            "id": 1364403127,
+            "round": "Semi-finals",
+            "date": "2026-07-26T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3483927,
+                "logo": "https://highlightly.net/soccer/images/teams/3483927.png",
+                "name": "Ventura County Fusion"
+            },
+            "homeTeam": {
+                "id": 3449036,
+                "logo": "https://highlightly.net/soccer/images/teams/3449036.png",
+                "name": "Flint City Bucks"
+            },
+            "league": {
+                "id": 218640,
+                "logo": "https://highlightly.net/soccer/images/leagues/218640.png",
+                "name": "USL League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3449036,
+                    "logo": "https://highlightly.net/soccer/images/teams/3449036.png",
+                    "name": "Flint City Bucks"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3483927,
+                    "logo": "https://highlightly.net/soccer/images/teams/3483927.png",
+                    "name": "Ventura County Fusion"
+                }
+            }
+        ],
+        "collected_at": "2026-07-26T22:00:54.711228+00:00"
     }
 }
