@@ -20,6 +20,14 @@ from collections import defaultdict
 
 import requests
 
+# 2026-07-23 (0-B #3 수정): update_player_baseline()이 app_export_multileague.py
+# 안에서만 호출되는데 yml 순서가 app_export.py(EPL) → app_export_multileague.py라,
+# EPL은 항상 한 실행 전(stale) baseline을 읽고 있었다. 여기서도 같은 함수를
+# 먼저 호출해서 EPL도 이번 실행의 최신 리그 기록을 반영받게 한다. 이 함수는
+# player_baseline.json을 매번 처음부터 다시 계산해서 통째로 덮어쓰므로(증분
+# 누적이 아님) 같은 실행 안에서 두 번 호출돼도 안전(멱등)하다.
+from app_export_multileague import update_player_baseline
+
 NAME_CACHE_PATH = 'data/master/name_translations.json'
 
 
@@ -290,13 +298,6 @@ def build_team_blocks():
             e['npXg'] = pm['npxG']
         if pm.get('PPDA') is not None:
             e['ppda'] = pm['PPDA']
-        # 2026-07-25 추가: impact_engine.py의 compute_match_metrics()가 이미
-        # field_tilt_pct를 계산해서 season_teams.json까지 내려오는데(season_aggregator.py가
-        # 그대로 통과시킨다고 가정 — PPDA/PSxG처럼 다른 필드들이 이미 그렇게 동작 중이라
-        # 같은 패턴일 것으로 봄, 실제로 안 내려오면 아래는 그냥 조용히 스킵되고 폴백값 유지됨)
-        # 여태 default_elo의 fieldTilt=50 고정값만 나가고 있었던 걸 실측으로 교체.
-        if pm.get('field_tilt_pct') is not None:
-            e['fieldTilt'] = pm['field_tilt_pct']
         e['form'] = e['base']
         elo_out[kr] = {('def' if k == 'def_' else k): v for k, v in e.items()}
 
@@ -307,17 +308,9 @@ def build_team_blocks():
             a['psxgAllowed'] = pm['PSxG_faced']
         if pm.get('big_chances_created') is not None:
             a['bigChances'] = pm['big_chances_created']
-        if pm.get('big_chances_allowed') is not None:
-            a['bigChancesAllowed'] = pm['big_chances_allowed']
-        # 2026-07-25 추가: shotQuality(슈팅 하나당 평균 xG)는 impact_engine.py에
-        # 별도 필드로는 없지만, 이미 있는 xG 합계/슈팅 수로 바로 계산 가능
-        # (season_teams.json에 shots 카운트가 안 내려오면 조용히 스킵 — 크래시 없음).
-        if pm.get('xG') is not None and pm.get('shots'):
-            a['shotQuality'] = round(pm['xG'] / pm['shots'], 3)
         adv_out[kr] = a
 
     return elo_out, adv_out
-
 
 
 # ============================================================ 2) RECENT_FORM / _liveResults
@@ -435,8 +428,15 @@ def build_squads(name_cache):
         if kr:
             player_team[p['name']] = (kr, POS_BUCKET.get(p['position'], 'mf'))
 
-    # 경기별 metrics 파일을 순회하며 선수별 game 배열 축적
+    # 경기별 metrics 파일을 순회하며 선수별 game 배열 축적.
+    # 2026-07-26 추가: 같은 루프에서 팀→경기(파일명)→선수배열 구조
+    # (team_group_games)도 같이 만든다 — EPL_index.html의 TEAM_GROUP_GAMES가
+    # 여태 빈 객체로 하드코딩돼 있어서 개인기여도(playerImpactPct)가 죽어있던
+    # 문제 대응. gameRawScore()가 필요로 하는 지표(xg/xa/progPass/sca/gca/
+    # bigChances/keyPasses/tacklesWon/recoveries/takeOns 등)를 _game_record()가
+    # 이미 다 뽑고 있어서 새로 만들 데이터는 없고 재구성만 하면 된다.
     games_by_player = defaultdict(list)
+    team_group_games = defaultdict(dict)  # {팀kr: {경기라벨: [선수레코드,...]}}
     for path in sorted(glob.glob(os.path.join(METRICS_DIR, '*_metrics.json'))):
         base = os.path.basename(path)
         if base in ('player_profiles.json', 'season_players.json',
@@ -444,7 +444,17 @@ def build_squads(name_cache):
             continue
         data = _load_json(path, {})
         for name, stats in data.get('players', {}).items():
-            games_by_player[name].append(_game_record(stats))
+            rec = _game_record(stats)
+            games_by_player[name].append(rec)
+            info = player_team.get(name)
+            if not info:
+                continue
+            kr, bucket = info
+            team_group_games[kr].setdefault(base, []).append({
+                **rec,
+                'name': _translate_name(name, name_cache),
+                'pos': {'gk': 'GK', 'df': 'DF', 'mf': 'MF', 'fw': 'FW'}[bucket],
+            })
 
     squads = {}
     for kr in TEAM_NAME_MAP:
@@ -464,7 +474,7 @@ def build_squads(name_cache):
             'games': games,
         })
 
-    return squads
+    return squads, dict(team_group_games)
 
 
 # ============================================================ 4) STATIC_LEADERBOARD
@@ -624,7 +634,7 @@ def build_h2h():
 def render_js(name_cache):
     elo, adv = build_team_blocks()
     recent_form, live_results = build_matches()
-    squads = build_squads(name_cache)
+    squads, team_group_games = build_squads(name_cache)
     leaderboard = build_leaderboard(name_cache)
     transfers = build_transfers(name_cache)
     schedule = build_schedule()
@@ -637,6 +647,9 @@ def render_js(name_cache):
     lines.append('const PIPELINE_ADVANCED_STATS = ' + _js(adv) + ';')
     lines.append('const PIPELINE_RECENT_FORM = ' + _js(recent_form) + ';')
     lines.append('const PIPELINE_SQUADS = ' + _js(squads) + ';')
+    # 2026-07-26 추가: EPL_index.html의 TEAM_GROUP_GAMES(개인기여도 소스,
+    # 여태 하드코딩 빈 객체라 죽어있던 기능) 살리기용.
+    lines.append('const PIPELINE_TEAM_GROUP_GAMES = ' + _js(team_group_games) + ';')
     lines.append('const PIPELINE_STATIC_LEADERBOARD = ' + _js(leaderboard) + ';')
     lines.append('const PIPELINE_LIVE_RESULTS = ' + _js(live_results) + ';')
     lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
@@ -648,6 +661,9 @@ def render_js(name_cache):
     # source==="league"(리그 실기록으로 갱신된)만 예측에 쓰므로 여기서 그 조건만
     # 추려 넘긴다. 개막 전엔 사실상 빈 {}라 파일이 안 커지고, 리그 경기가 쌓여
     # league_apps>=5로 전환된 선수만 자동으로 실린다.
+    # 2026-07-23 (0-B #3): 읽기 직전에 먼저 갱신 — app_export_multileague.py가
+    # 나중에 실행돼서 생기던 "EPL은 한 실행 지연된 baseline" 문제 해결.
+    update_player_baseline(name_cache)
     _baseline_all = (_load_json('data/master/player_baseline.json', {}) or {}).get('players', {})
     player_baseline = {
         k: v for k, v in _baseline_all.items()
@@ -660,7 +676,8 @@ def render_js(name_cache):
     lines.append('')
     lines.append('// 앱에 반영하려면: 위 PIPELINE_* 객체 내용을 앱 파일의 '
                  'ELO/ADVANCED_STATS/RECENT_FORM/SQUADS/STATIC_LEADERBOARD/'
-                 '_liveResults/TRANSFERS/SCHEDULE/H2H/ML_ENSEMBLE 각각에 '
+                 '_liveResults/TRANSFERS/SCHEDULE/H2H/ML_ENSEMBLE/'
+                 'TEAM_GROUP_GAMES 각각에 '
                  'Object.assign으로 병합하거나, 해당 const 선언을 통째로 '
                  '교체하세요. PIPELINE_ML_ENSEMBLE은 train_ml_ensemble.py가 '
                  '표본 부족으로 스킵했으면 null일 수 있음(앱에서 null 체크 후 '
