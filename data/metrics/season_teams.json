@@ -46,13 +46,13 @@
         }
     },
     "Halmstads BK": {
-        "matches": 2,
+        "matches": 3,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0,
+            "clean_sheet": 3.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -584,6 +584,98 @@
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "HJK": {
+        "matches": 2,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Turun Palloseura": {
+        "matches": 3,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 3.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Malmö FF": {
+        "matches": 2,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "IF Elfsborg": {
+        "matches": 3,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 3.0
         },
         "per_match": {
             "passes": 0.0,
@@ -2242,6 +2334,52 @@
             "clean_sheet": 1.0
         }
     },
+    "Sepsi OSK": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "FC Universitatea Cluj": {
+        "matches": 2,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Zagłębie Lubin": {
         "matches": 1,
         "totals": {
@@ -2899,7 +3037,7 @@
         }
     },
     "Lyngby": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -2911,7 +3049,7 @@
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0
         },
         "per_match": {
             "passes": 0.0,
@@ -3946,6 +4084,52 @@
             "clean_sheet": 1.0
         }
     },
+    "PEC Zwolle": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "AEK Athens": {
+        "matches": 2,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "SV Werder Bremen": {
         "matches": 2,
         "totals": {
@@ -4540,6 +4724,52 @@
         }
     },
     "Shakhtar Donetsk": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Raków Częstochowa": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Wisła Płock": {
         "matches": 1,
         "totals": {
             "passes": 0.0,
@@ -5331,31 +5561,8 @@
         }
     },
     "GAIS": {
-        "matches": 1,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
-    "IF Elfsborg": {
         "matches": 2,
         "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -5363,12 +5570,6 @@
             "clean_sheet": 2.0
         },
         "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -5507,23 +5708,6 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
-    "Malmö FF": {
-        "matches": 1,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -6555,6 +6739,52 @@
             "clean_sheet": 1.0
         }
     },
+    "Karlsruher SC": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Inter": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Red Star FC": {
         "matches": 1,
         "totals": {
@@ -6918,23 +7148,6 @@
             "clean_sheet": 1.0
         }
     },
-    "HJK": {
-        "matches": 1,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
     "VPS": {
         "matches": 1,
         "totals": {
@@ -7149,20 +7362,32 @@
         }
     },
     "FC Zürich": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         },
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 1.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         }
     },
     "SpVgg Greuther Fürth": {
@@ -7775,6 +8000,64 @@
             "clean_sheet": 1.0
         }
     },
+    "SC Verl": {
+        "matches": 2,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 2.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
+        }
+    },
+    "Bremer SV": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Stevenage": {
         "matches": 1,
         "totals": {
@@ -7935,6 +8218,23 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "FC St. Gallen 1879": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -8172,23 +8472,6 @@
             "clean_sheet": 1.0
         }
     },
-    "Turun Palloseura": {
-        "matches": 2,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
     "AC Oulu": {
         "matches": 2,
         "totals": {
@@ -8276,7 +8559,7 @@
             "clean_sheet": 1.0
         }
     },
-    "FC Universitatea Cluj": {
+    "Clydebank FC": {
         "matches": 1,
         "totals": {
             "buildup_attempts": 0.0,
@@ -8286,6 +8569,81 @@
             "clean_sheet": 1.0
         },
         "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Partick Thistle": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Eintracht Frankfurt": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "Trabzonspor": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
@@ -9382,35 +9740,6 @@
             "clean_sheet": 1.0
         }
     },
-    "AEK Athens": {
-        "matches": 1,
-        "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
     "Botafogo-SP": {
         "matches": 1,
         "totals": {
@@ -9671,35 +10000,6 @@
         }
     },
     "US Créteil Football": {
-        "matches": 1,
-        "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        },
-        "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
-        }
-    },
-    "SC Verl": {
         "matches": 1,
         "totals": {
             "passes": 0.0,
@@ -11454,6 +11754,52 @@
             "clean_sheet": 1.0
         }
     },
+    "FC Lugano": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "FC Vaduz": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "HNK Gorica": {
         "matches": 1,
         "totals": {
@@ -11660,6 +12006,23 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "FC København": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
