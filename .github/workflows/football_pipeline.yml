@@ -123,6 +123,18 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          # 2026-07-26 추가: 이 잡(report)이 collect-by-league/collect-global과
+          # 별개 잡이라 그쪽 env가 자동으로 안 물려받아져서, collect_logos_
+          # multileague.py 등에서 build_registry() 호출 시 이 키들이 전부
+          # "미등록"으로 뜨던 문제 — 시크릿 자체는 있었는데 이 잡에만 전달이
+          # 안 됐던 것. RAPIDAPI_KEY(sportscore)/APIFOOTBALL_COM_KEY는 yml
+          # 어디에도 없어서 별개 문제로 보임(시크릿 자체 미등록 추정) — 여긴 안 건드림.
+          FOOTBALL_DATA_API_KEY1: ${{ secrets.FOOTBALL_DATA_API_KEY1 }}
+          FOOTBALL_DATA_API_KEY2: ${{ secrets.FOOTBALL_DATA_API_KEY2 }}
+          THESPORTSDB_API_KEY: ${{ secrets.THESPORTSDB_API_KEY }}
+          API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
+          API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
+          HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
         run: |
           python merge_artifacts.py artifacts/ data/
           # xG 계수가 없으면 StatsBomb Open으로 최초 1회 학습 (이후 커밋된 계수 재사용)
