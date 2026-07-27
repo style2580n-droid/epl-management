@@ -437,12 +437,30 @@ def build_squads(name_cache):
     # 이미 다 뽑고 있어서 새로 만들 데이터는 없고 재구성만 하면 된다.
     games_by_player = defaultdict(list)
     team_group_games = defaultdict(dict)  # {팀kr: {경기라벨: [선수레코드,...]}}
+    _diag_shown = False
     for path in sorted(glob.glob(os.path.join(METRICS_DIR, '*_metrics.json'))):
         base = os.path.basename(path)
         if base in ('player_profiles.json', 'season_players.json',
                     'season_teams.json', 'transfer_impact.json'):
             continue
         data = _load_json(path, {})
+        metrics_names = list(data.get('players', {}).keys())
+        # 2026-07-26 추가: team_group_games가 0건으로 나온 원인 진단 —
+        # player_team(SQLite players.name, 보통 풀네임)과 metrics.json의
+        # 선수 키(득점 이벤트에서 실측 확인된 "이니셜.성" 축약형일 가능성)가
+        # 서로 다른 포맷이라 매칭이 안 되는 것으로 추정됨. 실제 샘플을 로그로
+        # 남겨서 확정한다.
+        if not _diag_shown and metrics_names:
+            _diag_shown = True
+            sample_metrics_names = metrics_names[:5]
+            sample_player_team_names = list(player_team.keys())[:5]
+            matched = sum(1 for n in metrics_names if n in player_team)
+            print(f'[app_export] [diag] {base} 선수 키 샘플(metrics.json): '
+                  f'{sample_metrics_names}', flush=True)
+            print(f'[app_export] [diag] player_team(DB) 키 샘플: '
+                  f'{sample_player_team_names}', flush=True)
+            print(f'[app_export] [diag] 이 경기 {len(metrics_names)}명 중 '
+                  f'player_team과 매칭된 수: {matched}', flush=True)
         for name, stats in data.get('players', {}).items():
             rec = _game_record(stats)
             games_by_player[name].append(rec)
