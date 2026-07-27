@@ -427,6 +427,9 @@ def build_squads(name_cache):
         kr = to_kr(p['team']) if p['team'] else None
         if kr:
             player_team[p['name']] = (kr, POS_BUCKET.get(p['position'], 'mf'))
+    print(f'[app_export] [diag] players_rows {len(players_rows)}건 → '
+          f'player_team {len(player_team)}명 (팀 매칭된 선수만) '
+          f'샘플: {list(player_team.keys())[:5]}', flush=True)
 
     # 경기별 metrics 파일을 순회하며 선수별 game 배열 축적.
     # 2026-07-26 추가: 같은 루프에서 팀→경기(파일명)→선수배열 구조
@@ -445,22 +448,29 @@ def build_squads(name_cache):
             continue
         data = _load_json(path, {})
         metrics_names = list(data.get('players', {}).keys())
-        # 2026-07-26 추가: team_group_games가 0건으로 나온 원인 진단 —
-        # player_team(SQLite players.name, 보통 풀네임)과 metrics.json의
-        # 선수 키(득점 이벤트에서 실측 확인된 "이니셜.성" 축약형일 가능성)가
-        # 서로 다른 포맷이라 매칭이 안 되는 것으로 추정됨. 실제 샘플을 로그로
-        # 남겨서 확정한다.
-        if not _diag_shown and metrics_names:
+        # 2026-07-26 수정: 이전 버전은 metrics_names가 있어야만 로그를 찍어서,
+        # 'players' 딕셔너리 자체가 계속 비어있는 경우(포맷 문제보다 더
+        # 근본적인 원인) 진단 로그가 아예 안 찍히는 맹점이 있었음(실전 확인
+        # 됨 — [profiler] 선수 0명도 같은 근본 원인일 가능성). 이제
+        # metrics_names가 비어있어도 최초 1개 파일은 무조건 최상위 키 구조를
+        # 찍는다.
+        if not _diag_shown:
             _diag_shown = True
-            sample_metrics_names = metrics_names[:5]
-            sample_player_team_names = list(player_team.keys())[:5]
-            matched = sum(1 for n in metrics_names if n in player_team)
-            print(f'[app_export] [diag] {base} 선수 키 샘플(metrics.json): '
-                  f'{sample_metrics_names}', flush=True)
-            print(f'[app_export] [diag] player_team(DB) 키 샘플: '
-                  f'{sample_player_team_names}', flush=True)
-            print(f'[app_export] [diag] 이 경기 {len(metrics_names)}명 중 '
-                  f'player_team과 매칭된 수: {matched}', flush=True)
+            print(f'[app_export] [diag] {base} data 최상위 키: '
+                  f'{sorted(data.keys())}', flush=True)
+            print(f'[app_export] [diag] {base} players 값 타입: '
+                  f'{type(data.get("players"))}, 개수: {len(metrics_names)}',
+                  flush=True)
+            if metrics_names:
+                sample_metrics_names = metrics_names[:5]
+                sample_player_team_names = list(player_team.keys())[:5]
+                matched = sum(1 for n in metrics_names if n in player_team)
+                print(f'[app_export] [diag] 선수 키 샘플(metrics.json): '
+                      f'{sample_metrics_names}', flush=True)
+                print(f'[app_export] [diag] player_team(DB) 키 샘플: '
+                      f'{sample_player_team_names}', flush=True)
+                print(f'[app_export] [diag] 이 경기 {len(metrics_names)}명 중 '
+                      f'player_team과 매칭된 수: {matched}', flush=True)
         for name, stats in data.get('players', {}).items():
             rec = _game_record(stats)
             games_by_player[name].append(rec)
