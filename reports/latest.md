@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-27
 
-생성(UTC): 2026-07-27 10:16
+생성(UTC): 2026-07-27 12:50
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -28,8 +28,14 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 12건 (누적 96건)
+오늘 18건 (누적 102건)
 
 ## 📊 경기 고급 지표
 
@@ -1440,6 +1446,13 @@
 | Malmö FF | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | IFK Göteborg | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### MamelodiSundowns_MCAlger_222806
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Mamelodi Sundowns | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| MC Alger | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### Metz_FortunaSittard_219331
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -2651,6 +2664,7 @@
 - **MSVDuisburg_K.BeerschotV.A._220493**: [heatmap(K. Beerschot V.A.)](viz/MSVDuisburg_K.BeerschotV.A._220493_K. Beerschot V.A._heatmap.svg) · [network(K. Beerschot V.A.)](viz/MSVDuisburg_K.BeerschotV.A._220493_K. Beerschot V.A._network.svg) · [shotmap(K. Beerschot V.A.)](viz/MSVDuisburg_K.BeerschotV.A._220493_K. Beerschot V.A._shotmap.svg) · [heatmap(MSV Duisburg)](viz/MSVDuisburg_K.BeerschotV.A._220493_MSV Duisburg_heatmap.svg) · [network(MSV Duisburg)](viz/MSVDuisburg_K.BeerschotV.A._220493_MSV Duisburg_network.svg) · [shotmap(MSV Duisburg)](viz/MSVDuisburg_K.BeerschotV.A._220493_MSV Duisburg_shotmap.svg)
 - **MalmöFF_IFElfsborg_46414**: [heatmap(IF Elfsborg)](viz/MalmöFF_IFElfsborg_46414_IF Elfsborg_heatmap.svg) · [network(IF Elfsborg)](viz/MalmöFF_IFElfsborg_46414_IF Elfsborg_network.svg) · [shotmap(IF Elfsborg)](viz/MalmöFF_IFElfsborg_46414_IF Elfsborg_shotmap.svg) · [heatmap(Malmö FF)](viz/MalmöFF_IFElfsborg_46414_Malmö FF_heatmap.svg) · [network(Malmö FF)](viz/MalmöFF_IFElfsborg_46414_Malmö FF_network.svg) · [shotmap(Malmö FF)](viz/MalmöFF_IFElfsborg_46414_Malmö FF_shotmap.svg)
 - **MalmöFF_IFKGöteborg_46396**: [heatmap(IFK Göteborg)](viz/MalmöFF_IFKGöteborg_46396_IFK Göteborg_heatmap.svg) · [network(IFK Göteborg)](viz/MalmöFF_IFKGöteborg_46396_IFK Göteborg_network.svg) · [shotmap(IFK Göteborg)](viz/MalmöFF_IFKGöteborg_46396_IFK Göteborg_shotmap.svg) · [heatmap(Malmö FF)](viz/MalmöFF_IFKGöteborg_46396_Malmö FF_heatmap.svg) · [network(Malmö FF)](viz/MalmöFF_IFKGöteborg_46396_Malmö FF_network.svg) · [shotmap(Malmö FF)](viz/MalmöFF_IFKGöteborg_46396_Malmö FF_shotmap.svg)
+- **MamelodiSundowns_MCAlger_222806**: [heatmap(MC Alger)](viz/MamelodiSundowns_MCAlger_222806_MC Alger_heatmap.svg) · [network(MC Alger)](viz/MamelodiSundowns_MCAlger_222806_MC Alger_network.svg) · [shotmap(MC Alger)](viz/MamelodiSundowns_MCAlger_222806_MC Alger_shotmap.svg) · [heatmap(Mamelodi Sundowns)](viz/MamelodiSundowns_MCAlger_222806_Mamelodi Sundowns_heatmap.svg) · [network(Mamelodi Sundowns)](viz/MamelodiSundowns_MCAlger_222806_Mamelodi Sundowns_network.svg) · [shotmap(Mamelodi Sundowns)](viz/MamelodiSundowns_MCAlger_222806_Mamelodi Sundowns_shotmap.svg)
 - **Metz_FortunaSittard_219331**: [heatmap(Fortuna Sittard)](viz/Metz_FortunaSittard_219331_Fortuna Sittard_heatmap.svg) · [network(Fortuna Sittard)](viz/Metz_FortunaSittard_219331_Fortuna Sittard_network.svg) · [shotmap(Fortuna Sittard)](viz/Metz_FortunaSittard_219331_Fortuna Sittard_shotmap.svg) · [heatmap(Metz)](viz/Metz_FortunaSittard_219331_Metz_heatmap.svg) · [network(Metz)](viz/Metz_FortunaSittard_219331_Metz_network.svg) · [shotmap(Metz)](viz/Metz_FortunaSittard_219331_Metz_shotmap.svg)
 - **Metz_RFCSeraing_218947**: [heatmap(Metz)](viz/Metz_RFCSeraing_218947_Metz_heatmap.svg) · [network(Metz)](viz/Metz_RFCSeraing_218947_Metz_network.svg) · [shotmap(Metz)](viz/Metz_RFCSeraing_218947_Metz_shotmap.svg) · [heatmap(RFC Seraing)](viz/Metz_RFCSeraing_218947_RFC Seraing_heatmap.svg) · [network(RFC Seraing)](viz/Metz_RFCSeraing_218947_RFC Seraing_network.svg) · [shotmap(RFC Seraing)](viz/Metz_RFCSeraing_218947_RFC Seraing_shotmap.svg)
 - **Metz_Sochaux_219276**: [heatmap(Metz)](viz/Metz_Sochaux_219276_Metz_heatmap.svg) · [network(Metz)](viz/Metz_Sochaux_219276_Metz_network.svg) · [shotmap(Metz)](viz/Metz_Sochaux_219276_Metz_shotmap.svg) · [heatmap(Sochaux)](viz/Metz_Sochaux_219276_Sochaux_heatmap.svg) · [network(Sochaux)](viz/Metz_Sochaux_219276_Sochaux_network.svg) · [shotmap(Sochaux)](viz/Metz_Sochaux_219276_Sochaux_shotmap.svg)
