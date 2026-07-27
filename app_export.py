@@ -650,6 +650,9 @@ def render_js(name_cache):
     # 2026-07-26 추가: EPL_index.html의 TEAM_GROUP_GAMES(개인기여도 소스,
     # 여태 하드코딩 빈 객체라 죽어있던 기능) 살리기용.
     lines.append('const PIPELINE_TEAM_GROUP_GAMES = ' + _js(team_group_games) + ';')
+    _n_games = sum(len(v) for v in team_group_games.values())
+    print(f'[app_export] team_group_games: {len(team_group_games)}팀, '
+          f'경기기록 {_n_games}건 → PIPELINE_TEAM_GROUP_GAMES 전달', flush=True)
     lines.append('const PIPELINE_STATIC_LEADERBOARD = ' + _js(leaderboard) + ';')
     lines.append('const PIPELINE_LIVE_RESULTS = ' + _js(live_results) + ';')
     lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
