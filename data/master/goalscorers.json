@@ -10999,6 +10999,42 @@
  "eredivisie": [],
  "eliteserien": [
   {
+   "home": "로젠보르그",
+   "away": "프레드릭스타",
+   "date": "2026-07-28",
+   "eid": 207024,
+   "goals": [
+    {
+     "scorer": "I. Fossum",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 88
+    },
+    {
+     "scorer": "A. Chiakha",
+     "assist": "M. Bomholt",
+     "team": null,
+     "is_home": true,
+     "minute": 77
+    },
+    {
+     "scorer": "E. Ceide",
+     "assist": "O. Selnaes",
+     "team": null,
+     "is_home": true,
+     "minute": 13
+    },
+    {
+     "scorer": "A. Pereira",
+     "assist": "O. Selnaes",
+     "team": null,
+     "is_home": true,
+     "minute": 10
+    }
+   ]
+  },
+  {
    "home": "올레순",
    "away": "비킹",
    "date": "2026-07-27",
