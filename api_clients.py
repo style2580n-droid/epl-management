@@ -110,6 +110,19 @@ class BSDClient(BaseClient):
     def event_detail(self, event_id):
         return self.get(f'events/{event_id}/')
 
+    def event_incidents(self, event_id):
+        """2026-07-20 collect_goalscorers.py에서 실측 확정된 엔드포인트.
+        event_detail()(events/{eid}/)엔 이벤트/인시던트 필드 자체가 없고,
+        골/카드/교체 등 주요 사건은 이 하위 경로에 별도로 있다. 응답은
+        리스트 그대로 오거나 {'results'/'incidents'/'events'/...: [...]}
+        형태 — 호출부에서 여러 키 후보를 방어적으로 처리해야 한다.
+        ⚠️ 패스/슛 단위의 좌표가 있는 전체 이벤트 스트림인지, 아니면
+        골/카드류 주요 사건만인지는 미확정 — collect_goalscorers.py가 쓴
+        용도(골/도움만 필요)로는 충분했지만 PPDA/패스완성률처럼 세부
+        이벤트가 필요한 계산엔 부족할 수 있다(2026-07-27 기준 미확정).
+        """
+        return self.get(f'events/{event_id}/incidents/')
+
     def teams(self, **params):
         """팀 목록. league_id, country, name 등으로 필터 가능."""
         return self.get('teams/', params=params)

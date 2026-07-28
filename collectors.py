@@ -383,12 +383,18 @@ class EventCollector:
         collected = []
         for ev in data.get('events', []):
             eid = ev.get('id')
-            detail, ok = self.bsd.event_detail(eid)
-            if not (ok and detail):
-                continue
             home = ev.get('home_team', 'Home')
             away = ev.get('away_team', 'Away')
-            events = self._normalize(detail)
+            # 2026-07-27 수정: event_detail()(events/{eid}/)엔 이벤트 필드가
+            # 애초에 없다는 게 collect_goalscorers.py에서 이미 실측 확정돼
+            # 있었음(2026-07-20) — 그런데 이 클래스만 옛 방식을 계속 쓰고
+            # 있어서 항상 빈 이벤트 파일을 만들고 있었다(team_group_games/
+            # impact_engine 전부 다운스트림에서 0으로 나오던 근본 원인).
+            # 실측 확정된 events/{eid}/incidents/로 교체.
+            detail, ok = self.bsd.event_incidents(eid)
+            if not (ok and detail):
+                continue
+            events = self._normalize(detail, home, away)
             path = f'{EVENTS_DIR}/{home}_{away}_{eid}.json'.replace(' ', '')
             _save(path, {'home': home, 'away': away, 'events': events})
             collected.append(path)
@@ -396,13 +402,43 @@ class EventCollector:
         return collected
 
     @staticmethod
-    def _normalize(detail):
-        """BSD 상세 응답 → 표준 이벤트 리스트. 필드명 매핑 지점."""
+    def _rows_of(resp):
+        """collect_goalscorers.py의 _rows_of()와 동일 패턴 — incidents/
+        응답이 리스트 그대로 오거나 여러 키 후보 아래 있을 수 있어서
+        방어적으로 찾는다."""
+        if isinstance(resp, tuple):
+            resp = resp[0]
+        if isinstance(resp, list):
+            return resp
+        if isinstance(resp, dict):
+            for k in ('results', 'incidents', 'events', 'goals', 'timeline',
+                      'data', 'items'):
+                if isinstance(resp.get(k), list):
+                    return resp[k]
+        return []
+
+    @classmethod
+    def _normalize(cls, detail, home=None, away=None):
+        """BSD 상세 응답 → 표준 이벤트 리스트. 필드명 매핑 지점.
+        2026-07-27 수정: team/team_name 필드는 이 엔드포인트에 없고
+        is_home(bool)만 있다는 게 collect_goalscorers.py에서 실측
+        확정돼 있음(2026-07-24) — is_home을 home/away 팀명으로 변환해서
+        기존 impact_engine.py가 기대하는 'team' 필드 자리에 채운다.
+        ⚠️ x/y/end_x/end_y/outcome/situation/second/xg는 골 이벤트
+        샘플(rehearse_goal_team_probe.py 실측)엔 없었음 — 이 엔드포인트가
+        패스 단위 전체 이벤트 스트림인지 골/카드류 주요 사건만인지는
+        미확정. 이 필드들은 없으면 그냥 None으로 남는다(기존 동작 유지).
+        """
         out = []
-        for e in detail.get('events', detail.get('incidents', [])):
+        for e in cls._rows_of(detail):
+            if not isinstance(e, dict):
+                continue
+            team = e.get('team') or e.get('team_name')
+            if team is None and 'is_home' in e and home and away:
+                team = home if e.get('is_home') else away
             out.append({
                 'type': e.get('type'),
-                'team': e.get('team'),
+                'team': team,
                 'player': e.get('player'),
                 'x': e.get('x'), 'y': e.get('y'),
                 'end_x': e.get('end_x'), 'end_y': e.get('end_y'),
