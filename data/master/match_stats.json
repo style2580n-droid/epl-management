@@ -25664,5 +25664,60 @@
             }
         ],
         "collected_at": "2026-07-28T05:48:09.215463+00:00"
+    },
+    "1365129881": {
+        "match": {
+            "id": 1365129881,
+            "round": "Semi-finals",
+            "date": "2026-07-28T20:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16957810,
+                "logo": null,
+                "name": "Valencia U20"
+            },
+            "homeTeam": {
+                "id": 9394973,
+                "logo": "https://highlightly.net/soccer/images/teams/9394973.png",
+                "name": "Morocco U20"
+            },
+            "league": {
+                "id": 800724,
+                "logo": null,
+                "name": "COTIF Tournament",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 9394973,
+                    "logo": "https://highlightly.net/soccer/images/teams/9394973.png",
+                    "name": "Morocco U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16957810,
+                    "logo": null,
+                    "name": "Valencia U20"
+                }
+            }
+        ],
+        "collected_at": "2026-07-28T11:19:14.220158+00:00"
     }
 }

@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-28
 
-생성(UTC): 2026-07-28 05:50
+생성(UTC): 2026-07-28 11:21
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -20,8 +20,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 4건 (누적 110건)
+오늘 8건 (누적 114건)
 
 ## 📊 경기 고급 지표
 
@@ -374,6 +378,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Chatham Town | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Margate | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### Chelsea_WesternSydneyWanderers_219430
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Chelsea | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Western Sydney Wanderers | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
 ### ChernoMoreVarna_FKSpartakVarna_211660
 
@@ -2541,6 +2552,7 @@
 - **CharlestonBattery_SacramentoRepublicFC_207702**: [heatmap(Charleston Battery)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Charleston Battery_heatmap.svg) · [network(Charleston Battery)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Charleston Battery_network.svg) · [shotmap(Charleston Battery)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Charleston Battery_shotmap.svg) · [heatmap(Sacramento Republic FC)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Sacramento Republic FC_heatmap.svg) · [network(Sacramento Republic FC)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Sacramento Republic FC_network.svg) · [shotmap(Sacramento Republic FC)](viz/CharlestonBattery_SacramentoRepublicFC_207702_Sacramento Republic FC_shotmap.svg)
 - **CharlotteFC_AtlantaUnited_5144**: [heatmap(Atlanta United)](viz/CharlotteFC_AtlantaUnited_5144_Atlanta United_heatmap.svg) · [network(Atlanta United)](viz/CharlotteFC_AtlantaUnited_5144_Atlanta United_network.svg) · [shotmap(Atlanta United)](viz/CharlotteFC_AtlantaUnited_5144_Atlanta United_shotmap.svg) · [heatmap(Charlotte FC)](viz/CharlotteFC_AtlantaUnited_5144_Charlotte FC_heatmap.svg) · [network(Charlotte FC)](viz/CharlotteFC_AtlantaUnited_5144_Charlotte FC_network.svg) · [shotmap(Charlotte FC)](viz/CharlotteFC_AtlantaUnited_5144_Charlotte FC_shotmap.svg)
 - **ChathamTown_Margate_219026**: [heatmap(Chatham Town)](viz/ChathamTown_Margate_219026_Chatham Town_heatmap.svg) · [network(Chatham Town)](viz/ChathamTown_Margate_219026_Chatham Town_network.svg) · [shotmap(Chatham Town)](viz/ChathamTown_Margate_219026_Chatham Town_shotmap.svg) · [heatmap(Margate)](viz/ChathamTown_Margate_219026_Margate_heatmap.svg) · [network(Margate)](viz/ChathamTown_Margate_219026_Margate_network.svg) · [shotmap(Margate)](viz/ChathamTown_Margate_219026_Margate_shotmap.svg)
+- **Chelsea_WesternSydneyWanderers_219430**: [heatmap(Chelsea)](viz/Chelsea_WesternSydneyWanderers_219430_Chelsea_heatmap.svg) · [network(Chelsea)](viz/Chelsea_WesternSydneyWanderers_219430_Chelsea_network.svg) · [shotmap(Chelsea)](viz/Chelsea_WesternSydneyWanderers_219430_Chelsea_shotmap.svg) · [heatmap(Western Sydney Wanderers)](viz/Chelsea_WesternSydneyWanderers_219430_Western Sydney Wanderers_heatmap.svg) · [network(Western Sydney Wanderers)](viz/Chelsea_WesternSydneyWanderers_219430_Western Sydney Wanderers_network.svg) · [shotmap(Western Sydney Wanderers)](viz/Chelsea_WesternSydneyWanderers_219430_Western Sydney Wanderers_shotmap.svg)
 - **ChernoMoreVarna_FKSpartakVarna_211660**: [heatmap(Cherno More Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_Cherno More Varna_heatmap.svg) · [network(Cherno More Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_Cherno More Varna_network.svg) · [shotmap(Cherno More Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_Cherno More Varna_shotmap.svg) · [heatmap(FK Spartak Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_FK Spartak Varna_heatmap.svg) · [network(FK Spartak Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_FK Spartak Varna_network.svg) · [shotmap(FK Spartak Varna)](viz/ChernoMoreVarna_FKSpartakVarna_211660_FK Spartak Varna_shotmap.svg)
 - **ChicagoStarsFC_AngelCityFC_216374**: [heatmap(Angel City FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Angel City FC_heatmap.svg) · [network(Angel City FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Angel City FC_network.svg) · [shotmap(Angel City FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Angel City FC_shotmap.svg) · [heatmap(Chicago Stars FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Chicago Stars FC_heatmap.svg) · [network(Chicago Stars FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Chicago Stars FC_network.svg) · [shotmap(Chicago Stars FC)](viz/ChicagoStarsFC_AngelCityFC_216374_Chicago Stars FC_shotmap.svg)
 - **ChindiaTârgoviște_ConcordiaChiajna_218998**: [heatmap(Chindia Târgoviște)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Chindia Târgoviște_heatmap.svg) · [network(Chindia Târgoviște)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Chindia Târgoviște_network.svg) · [shotmap(Chindia Târgoviște)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Chindia Târgoviște_shotmap.svg) · [heatmap(Concordia Chiajna)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Concordia Chiajna_heatmap.svg) · [network(Concordia Chiajna)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Concordia Chiajna_network.svg) · [shotmap(Concordia Chiajna)](viz/ChindiaTârgoviște_ConcordiaChiajna_218998_Concordia Chiajna_shotmap.svg)
