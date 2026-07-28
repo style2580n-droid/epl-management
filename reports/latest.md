@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-28
 
-생성(UTC): 2026-07-28 16:44
+생성(UTC): 2026-07-28 22:07
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -28,8 +28,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 12건 (누적 118건)
+오늘 16건 (누적 122건)
 
 ## 📊 경기 고급 지표
 
@@ -2231,6 +2235,13 @@
 | São Paulo | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Athletico | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Tigre_Nacional_207984
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Tigre | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Nacional | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### Torino_AlcioneMilano_219272
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -2855,6 +2866,7 @@
 - **SwindonTown_BristolCity_219360**: [heatmap(Bristol City)](viz/SwindonTown_BristolCity_219360_Bristol City_heatmap.svg) · [network(Bristol City)](viz/SwindonTown_BristolCity_219360_Bristol City_network.svg) · [shotmap(Bristol City)](viz/SwindonTown_BristolCity_219360_Bristol City_shotmap.svg) · [heatmap(Swindon Town)](viz/SwindonTown_BristolCity_219360_Swindon Town_heatmap.svg) · [network(Swindon Town)](viz/SwindonTown_BristolCity_219360_Swindon Town_network.svg) · [shotmap(Swindon Town)](viz/SwindonTown_BristolCity_219360_Swindon Town_shotmap.svg)
 - **SãoBernardo_Avaí_10033**: [heatmap(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_heatmap.svg) · [network(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_network.svg) · [shotmap(Avaí)](viz/SãoBernardo_Avaí_10033_Avaí_shotmap.svg) · [heatmap(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_heatmap.svg) · [network(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_network.svg) · [shotmap(São Bernardo)](viz/SãoBernardo_Avaí_10033_São Bernardo_shotmap.svg)
 - **SãoPaulo_Athletico_7182**: [heatmap(Athletico)](viz/SãoPaulo_Athletico_7182_Athletico_heatmap.svg) · [network(Athletico)](viz/SãoPaulo_Athletico_7182_Athletico_network.svg) · [shotmap(Athletico)](viz/SãoPaulo_Athletico_7182_Athletico_shotmap.svg) · [heatmap(São Paulo)](viz/SãoPaulo_Athletico_7182_São Paulo_heatmap.svg) · [network(São Paulo)](viz/SãoPaulo_Athletico_7182_São Paulo_network.svg) · [shotmap(São Paulo)](viz/SãoPaulo_Athletico_7182_São Paulo_shotmap.svg)
+- **Tigre_Nacional_207984**: [heatmap(Nacional)](viz/Tigre_Nacional_207984_Nacional_heatmap.svg) · [network(Nacional)](viz/Tigre_Nacional_207984_Nacional_network.svg) · [shotmap(Nacional)](viz/Tigre_Nacional_207984_Nacional_shotmap.svg) · [heatmap(Tigre)](viz/Tigre_Nacional_207984_Tigre_heatmap.svg) · [network(Tigre)](viz/Tigre_Nacional_207984_Tigre_network.svg) · [shotmap(Tigre)](viz/Tigre_Nacional_207984_Tigre_shotmap.svg)
 - **Torino_AlcioneMilano_219272**: [heatmap(Alcione Milano)](viz/Torino_AlcioneMilano_219272_Alcione Milano_heatmap.svg) · [network(Alcione Milano)](viz/Torino_AlcioneMilano_219272_Alcione Milano_network.svg) · [shotmap(Alcione Milano)](viz/Torino_AlcioneMilano_219272_Alcione Milano_shotmap.svg) · [heatmap(Torino)](viz/Torino_AlcioneMilano_219272_Torino_heatmap.svg) · [network(Torino)](viz/Torino_AlcioneMilano_219272_Torino_network.svg) · [shotmap(Torino)](viz/Torino_AlcioneMilano_219272_Torino_shotmap.svg)
 - **Torino_Cittadella_219387**: [heatmap(Cittadella)](viz/Torino_Cittadella_219387_Cittadella_heatmap.svg) · [network(Cittadella)](viz/Torino_Cittadella_219387_Cittadella_network.svg) · [shotmap(Cittadella)](viz/Torino_Cittadella_219387_Cittadella_shotmap.svg) · [heatmap(Torino)](viz/Torino_Cittadella_219387_Torino_heatmap.svg) · [network(Torino)](viz/Torino_Cittadella_219387_Torino_network.svg) · [shotmap(Torino)](viz/Torino_Cittadella_219387_Torino_shotmap.svg)
 - **TottenhamHotspur_MiltonKeynesDons_219277**: [heatmap(Milton Keynes Dons)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Milton Keynes Dons_heatmap.svg) · [network(Milton Keynes Dons)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Milton Keynes Dons_network.svg) · [shotmap(Milton Keynes Dons)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Milton Keynes Dons_shotmap.svg) · [heatmap(Tottenham Hotspur)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Tottenham Hotspur_heatmap.svg) · [network(Tottenham Hotspur)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Tottenham Hotspur_network.svg) · [shotmap(Tottenham Hotspur)](viz/TottenhamHotspur_MiltonKeynesDons_219277_Tottenham Hotspur_shotmap.svg)
