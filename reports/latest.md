@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-07-28
 
-생성(UTC): 2026-07-28 22:07
+생성(UTC): 2026-07-28 22:48
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -32,8 +32,16 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 16건 (누적 122건)
+오늘 24건 (누적 130건)
 
 ## 📊 경기 고급 지표
 
@@ -1276,6 +1284,13 @@
 | Juve Stabia | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Potenza Calcio | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### Juventude_Avaí_10049
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Juventude | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
+| Avaí | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
 ### Juventude_Cuiabá_10029
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -1674,6 +1689,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | Pohang Steelers | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | Jeonbuk Hyundai Motors | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+
+### PontePreta_AthleticClub_10051
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| Ponte Preta | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 0.0% |
+| Athletic Club | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 100.0% |
 
 ### PortlandTimbers_FCDallas_5153
 
@@ -2239,8 +2261,8 @@
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
 |---|---|---|---|---|---|---|---|---|---|
-| Tigre | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
-| Nacional | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
+| Tigre | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 0.0% |
+| Nacional | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 100.0% |
 
 ### Torino_AlcioneMilano_219272
 
@@ -2550,6 +2572,8 @@
 | Örgryte IS | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | BK Häcken | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+## 🌟 선수 랭킹
+
 ## 🎨 경기 시각 자료
 
 - **1.FCKaiserslautern_Südtirol_219317**: [heatmap(1. FC Kaiserslautern)](viz/1.FCKaiserslautern_Südtirol_219317_1. FC Kaiserslautern_heatmap.svg) · [network(1. FC Kaiserslautern)](viz/1.FCKaiserslautern_Südtirol_219317_1. FC Kaiserslautern_network.svg) · [shotmap(1. FC Kaiserslautern)](viz/1.FCKaiserslautern_Südtirol_219317_1. FC Kaiserslautern_shotmap.svg) · [heatmap(Südtirol)](viz/1.FCKaiserslautern_Südtirol_219317_Südtirol_heatmap.svg) · [network(Südtirol)](viz/1.FCKaiserslautern_Südtirol_219317_Südtirol_network.svg) · [shotmap(Südtirol)](viz/1.FCKaiserslautern_Südtirol_219317_Südtirol_shotmap.svg)
@@ -2729,6 +2753,7 @@
 - **JeonbukHyundaiMotors_DaejeonHanaCitizen_205101**: [heatmap(Daejeon Hana Citizen)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Daejeon Hana Citizen_heatmap.svg) · [network(Daejeon Hana Citizen)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Daejeon Hana Citizen_network.svg) · [shotmap(Daejeon Hana Citizen)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Daejeon Hana Citizen_shotmap.svg) · [heatmap(Jeonbuk Hyundai Motors)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Jeonbuk Hyundai Motors_heatmap.svg) · [network(Jeonbuk Hyundai Motors)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Jeonbuk Hyundai Motors_network.svg) · [shotmap(Jeonbuk Hyundai Motors)](viz/JeonbukHyundaiMotors_DaejeonHanaCitizen_205101_Jeonbuk Hyundai Motors_shotmap.svg)
 - **JuniorBarranquilla_BarranquillaFC_220395**: [heatmap(Barranquilla FC)](viz/JuniorBarranquilla_BarranquillaFC_220395_Barranquilla FC_heatmap.svg) · [network(Barranquilla FC)](viz/JuniorBarranquilla_BarranquillaFC_220395_Barranquilla FC_network.svg) · [shotmap(Barranquilla FC)](viz/JuniorBarranquilla_BarranquillaFC_220395_Barranquilla FC_shotmap.svg) · [heatmap(Junior Barranquilla)](viz/JuniorBarranquilla_BarranquillaFC_220395_Junior Barranquilla_heatmap.svg) · [network(Junior Barranquilla)](viz/JuniorBarranquilla_BarranquillaFC_220395_Junior Barranquilla_network.svg) · [shotmap(Junior Barranquilla)](viz/JuniorBarranquilla_BarranquillaFC_220395_Junior Barranquilla_shotmap.svg)
 - **JuveStabia_PotenzaCalcio_220429**: [heatmap(Juve Stabia)](viz/JuveStabia_PotenzaCalcio_220429_Juve Stabia_heatmap.svg) · [network(Juve Stabia)](viz/JuveStabia_PotenzaCalcio_220429_Juve Stabia_network.svg) · [shotmap(Juve Stabia)](viz/JuveStabia_PotenzaCalcio_220429_Juve Stabia_shotmap.svg) · [heatmap(Potenza Calcio)](viz/JuveStabia_PotenzaCalcio_220429_Potenza Calcio_heatmap.svg) · [network(Potenza Calcio)](viz/JuveStabia_PotenzaCalcio_220429_Potenza Calcio_network.svg) · [shotmap(Potenza Calcio)](viz/JuveStabia_PotenzaCalcio_220429_Potenza Calcio_shotmap.svg)
+- **Juventude_Avaí_10049**: [heatmap(Avaí)](viz/Juventude_Avaí_10049_Avaí_heatmap.svg) · [network(Avaí)](viz/Juventude_Avaí_10049_Avaí_network.svg) · [shotmap(Avaí)](viz/Juventude_Avaí_10049_Avaí_shotmap.svg) · [heatmap(Juventude)](viz/Juventude_Avaí_10049_Juventude_heatmap.svg) · [network(Juventude)](viz/Juventude_Avaí_10049_Juventude_network.svg) · [shotmap(Juventude)](viz/Juventude_Avaí_10049_Juventude_shotmap.svg)
 - **Juventude_Cuiabá_10029**: [heatmap(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_heatmap.svg) · [network(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_network.svg) · [shotmap(Cuiabá)](viz/Juventude_Cuiabá_10029_Cuiabá_shotmap.svg) · [heatmap(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_heatmap.svg) · [network(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_network.svg) · [shotmap(Juventude)](viz/Juventude_Cuiabá_10029_Juventude_shotmap.svg)
 - **KFUMOslo_MoldeFK_207022**: [heatmap(KFUM Oslo)](viz/KFUMOslo_MoldeFK_207022_KFUM Oslo_heatmap.svg) · [network(KFUM Oslo)](viz/KFUMOslo_MoldeFK_207022_KFUM Oslo_network.svg) · [shotmap(KFUM Oslo)](viz/KFUMOslo_MoldeFK_207022_KFUM Oslo_shotmap.svg) · [heatmap(Molde FK)](viz/KFUMOslo_MoldeFK_207022_Molde FK_heatmap.svg) · [network(Molde FK)](viz/KFUMOslo_MoldeFK_207022_Molde FK_network.svg) · [shotmap(Molde FK)](viz/KFUMOslo_MoldeFK_207022_Molde FK_shotmap.svg)
 - **KVKortrijk_AmiensSC_219367**: [heatmap(Amiens SC)](viz/KVKortrijk_AmiensSC_219367_Amiens SC_heatmap.svg) · [network(Amiens SC)](viz/KVKortrijk_AmiensSC_219367_Amiens SC_network.svg) · [shotmap(Amiens SC)](viz/KVKortrijk_AmiensSC_219367_Amiens SC_shotmap.svg) · [heatmap(KV Kortrijk)](viz/KVKortrijk_AmiensSC_219367_KV Kortrijk_heatmap.svg) · [network(KV Kortrijk)](viz/KVKortrijk_AmiensSC_219367_KV Kortrijk_network.svg) · [shotmap(KV Kortrijk)](viz/KVKortrijk_AmiensSC_219367_KV Kortrijk_shotmap.svg)
@@ -2786,6 +2811,7 @@
 - **Penafiel_Leganés_221408**: [heatmap(Leganés)](viz/Penafiel_Leganés_221408_Leganés_heatmap.svg) · [network(Leganés)](viz/Penafiel_Leganés_221408_Leganés_network.svg) · [shotmap(Leganés)](viz/Penafiel_Leganés_221408_Leganés_shotmap.svg) · [heatmap(Penafiel)](viz/Penafiel_Leganés_221408_Penafiel_heatmap.svg) · [network(Penafiel)](viz/Penafiel_Leganés_221408_Penafiel_network.svg) · [shotmap(Penafiel)](viz/Penafiel_Leganés_221408_Penafiel_shotmap.svg)
 - **Pisa_PaviaCalcio_219222**: [heatmap(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_heatmap.svg) · [network(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_network.svg) · [shotmap(Pavia Calcio)](viz/Pisa_PaviaCalcio_219222_Pavia Calcio_shotmap.svg) · [heatmap(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_heatmap.svg) · [network(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_network.svg) · [shotmap(Pisa)](viz/Pisa_PaviaCalcio_219222_Pisa_shotmap.svg)
 - **PohangSteelers_JeonbukHyundaiMotors_205107**: [heatmap(Jeonbuk Hyundai Motors)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Jeonbuk Hyundai Motors_heatmap.svg) · [network(Jeonbuk Hyundai Motors)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Jeonbuk Hyundai Motors_network.svg) · [shotmap(Jeonbuk Hyundai Motors)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Jeonbuk Hyundai Motors_shotmap.svg) · [heatmap(Pohang Steelers)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Pohang Steelers_heatmap.svg) · [network(Pohang Steelers)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Pohang Steelers_network.svg) · [shotmap(Pohang Steelers)](viz/PohangSteelers_JeonbukHyundaiMotors_205107_Pohang Steelers_shotmap.svg)
+- **PontePreta_AthleticClub_10051**: [heatmap(Athletic Club)](viz/PontePreta_AthleticClub_10051_Athletic Club_heatmap.svg) · [network(Athletic Club)](viz/PontePreta_AthleticClub_10051_Athletic Club_network.svg) · [shotmap(Athletic Club)](viz/PontePreta_AthleticClub_10051_Athletic Club_shotmap.svg) · [heatmap(Ponte Preta)](viz/PontePreta_AthleticClub_10051_Ponte Preta_heatmap.svg) · [network(Ponte Preta)](viz/PontePreta_AthleticClub_10051_Ponte Preta_network.svg) · [shotmap(Ponte Preta)](viz/PontePreta_AthleticClub_10051_Ponte Preta_shotmap.svg)
 - **PortlandTimbers_FCDallas_5153**: [heatmap(FC Dallas)](viz/PortlandTimbers_FCDallas_5153_FC Dallas_heatmap.svg) · [network(FC Dallas)](viz/PortlandTimbers_FCDallas_5153_FC Dallas_network.svg) · [shotmap(FC Dallas)](viz/PortlandTimbers_FCDallas_5153_FC Dallas_shotmap.svg) · [heatmap(Portland Timbers)](viz/PortlandTimbers_FCDallas_5153_Portland Timbers_heatmap.svg) · [network(Portland Timbers)](viz/PortlandTimbers_FCDallas_5153_Portland Timbers_network.svg) · [shotmap(Portland Timbers)](viz/PortlandTimbers_FCDallas_5153_Portland Timbers_shotmap.svg)
 - **PrestonNorthEnd_CambridgeUnited_219301**: [heatmap(Cambridge United)](viz/PrestonNorthEnd_CambridgeUnited_219301_Cambridge United_heatmap.svg) · [network(Cambridge United)](viz/PrestonNorthEnd_CambridgeUnited_219301_Cambridge United_network.svg) · [shotmap(Cambridge United)](viz/PrestonNorthEnd_CambridgeUnited_219301_Cambridge United_shotmap.svg) · [heatmap(Preston North End)](viz/PrestonNorthEnd_CambridgeUnited_219301_Preston North End_heatmap.svg) · [network(Preston North End)](viz/PrestonNorthEnd_CambridgeUnited_219301_Preston North End_network.svg) · [shotmap(Preston North End)](viz/PrestonNorthEnd_CambridgeUnited_219301_Preston North End_shotmap.svg)
 - **PumasUNAM_CFPachuca_211503**: [heatmap(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_heatmap.svg) · [network(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_network.svg) · [shotmap(CF Pachuca)](viz/PumasUNAM_CFPachuca_211503_CF Pachuca_shotmap.svg) · [heatmap(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_heatmap.svg) · [network(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_network.svg) · [shotmap(Pumas UNAM)](viz/PumasUNAM_CFPachuca_211503_Pumas UNAM_shotmap.svg)

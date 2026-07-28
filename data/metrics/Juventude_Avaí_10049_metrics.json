@@ -1,6 +1,6 @@
 {
     "teams": {
-        "Tigre": {
+        "Juventude": {
             "buildup_attempts": 0,
             "buildup_success_pct": null,
             "buildup_disruption_pct": null,
@@ -11,7 +11,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 0.0,
+            "possession_pct": null,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -35,7 +35,7 @@
             "launch_accuracy_pct": null,
             "field_tilt_pct": null
         },
-        "Nacional": {
+        "Avaí": {
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -52,7 +52,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 100.0,
+            "possession_pct": null,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -77,15 +77,5 @@
             "field_tilt_pct": null
         }
     },
-    "players": {
-        "T. V. Lupi": {
-            "_team": "Nacional"
-        },
-        "M. Silvera": {
-            "_team": "Nacional"
-        },
-        "M. Gómez": {
-            "_team": "Nacional"
-        }
-    }
+    "players": {}
 }

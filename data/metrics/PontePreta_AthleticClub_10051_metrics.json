@@ -1,6 +1,6 @@
 {
     "teams": {
-        "Tigre": {
+        "Ponte Preta": {
             "buildup_attempts": 0,
             "buildup_success_pct": null,
             "buildup_disruption_pct": null,
@@ -35,7 +35,7 @@
             "launch_accuracy_pct": null,
             "field_tilt_pct": null
         },
-        "Nacional": {
+        "Athletic Club": {
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -78,14 +78,8 @@
         }
     },
     "players": {
-        "T. V. Lupi": {
-            "_team": "Nacional"
-        },
-        "M. Silvera": {
-            "_team": "Nacional"
-        },
-        "M. Gómez": {
-            "_team": "Nacional"
+        "Max": {
+            "_team": "Athletic Club"
         }
     }
 }

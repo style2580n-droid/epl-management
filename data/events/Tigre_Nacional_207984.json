@@ -1,5 +1,62 @@
 {
     "home": "Tigre",
     "away": "Nacional",
-    "events": []
+    "events": [
+        {
+            "type": "period",
+            "team": null,
+            "player": null,
+            "x": null,
+            "y": null,
+            "end_x": null,
+            "end_y": null,
+            "outcome": null,
+            "situation": null,
+            "minute": 45,
+            "second": null,
+            "xg": null
+        },
+        {
+            "type": "varDecision",
+            "team": "Nacional",
+            "player": "T. V. Lupi",
+            "x": null,
+            "y": null,
+            "end_x": null,
+            "end_y": null,
+            "outcome": null,
+            "situation": null,
+            "minute": 33,
+            "second": null,
+            "xg": null
+        },
+        {
+            "type": "goal",
+            "team": "Nacional",
+            "player": "M. Silvera",
+            "x": null,
+            "y": null,
+            "end_x": null,
+            "end_y": null,
+            "outcome": null,
+            "situation": null,
+            "minute": 31,
+            "second": null,
+            "xg": null
+        },
+        {
+            "type": "goal",
+            "team": "Nacional",
+            "player": "M. Gómez",
+            "x": null,
+            "y": null,
+            "end_x": null,
+            "end_y": null,
+            "outcome": null,
+            "situation": null,
+            "minute": 11,
+            "second": null,
+            "xg": null
+        }
+    ]
 }
