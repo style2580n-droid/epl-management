@@ -379,6 +379,25 @@ def compute_match_metrics(events, home, away, xg_model=None, xt=None):
     xt = xt or XTGrid()
     teams = {home: away, away: home}
 
+    # 2026-07-27 추가: players 딕셔너리가 항상 빈 채로 나오는 원인 진단.
+    # events가 애초에 비어있는지, 아니면 이벤트는 있는데 e.get('team')이
+    # home/away 문자열과 안 맞아서 continue로 다 걸러지는지 확정한다.
+    global _diag_done_impact
+    try:
+        _diag_done_impact
+    except NameError:
+        _diag_done_impact = False
+    if not _diag_done_impact:
+        _diag_done_impact = True
+        sample_teams = [e.get('team') for e in events[:5]] if events else []
+        print(f'[impact_engine] [diag] events 길이: {len(events)}, '
+              f'home={home!r}, away={away!r}', flush=True)
+        print(f'[impact_engine] [diag] 앞 5개 이벤트의 team 필드값: '
+              f'{sample_teams}', flush=True)
+        if events:
+            print(f'[impact_engine] [diag] 첫 이벤트 전체 키: '
+                  f'{sorted(events[0].keys())}', flush=True)
+
     T = {t: defaultdict(float) for t in teams}       # 팀 지표
     P = defaultdict(lambda: defaultdict(float))       # 선수 지표
     last_key_pass = {}                                 # xA: 슛 직전 키패스 추적
