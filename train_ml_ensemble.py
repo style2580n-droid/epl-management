@@ -162,6 +162,18 @@ def train_and_export():
               f'재실행). 기존 {OUT_PATH}는 건드리지 않음.', flush=True)
         return
 
+    # 2026-07-29 추가: 표본이 MIN_SAMPLES를 넘겨도 결과가 전부 한 가지
+    # (예: 전부 무승부)뿐이면 LogisticRegression.fit()이 그 자리에서
+    # ValueError로 죽는다("needs samples of at least 2 classes") — 실전에서
+    # 실제로 터진 걸 확인함. 학습 자체가 무의미한 상황이니(분류할 클래스가
+    # 하나뿐이면 아무것도 배울 게 없음) 에러 대신 안전하게 스킵한다.
+    classes_present = sorted(set(y.tolist()))
+    if len(classes_present) < 2:
+        print(f'[train_ml_ensemble] ⚠️ 표본 {len(X)}건이지만 결과 클래스가 '
+              f'{classes_present} 하나뿐 → 학습 스킵(분류 자체가 불가능). '
+              f'기존 {OUT_PATH}는 건드리지 않음.', flush=True)
+        return
+
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y)
 
