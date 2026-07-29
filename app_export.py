@@ -440,7 +440,8 @@ def build_squads(name_cache):
     # 이미 다 뽑고 있어서 새로 만들 데이터는 없고 재구성만 하면 된다.
     games_by_player = defaultdict(list)
     team_group_games = defaultdict(dict)  # {팀kr: {경기라벨: [선수레코드,...]}}
-    _diag_shown = False
+    _diag_done = False
+    _n_files_total, _n_files_with_players = 0, 0
     for path in sorted(glob.glob(os.path.join(METRICS_DIR, '*_metrics.json'))):
         base = os.path.basename(path)
         if base in ('player_profiles.json', 'season_players.json',
@@ -448,29 +449,29 @@ def build_squads(name_cache):
             continue
         data = _load_json(path, {})
         metrics_names = list(data.get('players', {}).keys())
-        # 2026-07-26 수정: 이전 버전은 metrics_names가 있어야만 로그를 찍어서,
-        # 'players' 딕셔너리 자체가 계속 비어있는 경우(포맷 문제보다 더
-        # 근본적인 원인) 진단 로그가 아예 안 찍히는 맹점이 있었음(실전 확인
-        # 됨 — [profiler] 선수 0명도 같은 근본 원인일 가능성). 이제
-        # metrics_names가 비어있어도 최초 1개 파일은 무조건 최상위 키 구조를
-        # 찍는다.
-        if not _diag_shown:
-            _diag_shown = True
-            print(f'[app_export] [diag] {base} data 최상위 키: '
-                  f'{sorted(data.keys())}', flush=True)
-            print(f'[app_export] [diag] {base} players 값 타입: '
-                  f'{type(data.get("players"))}, 개수: {len(metrics_names)}',
-                  flush=True)
-            if metrics_names:
-                sample_metrics_names = metrics_names[:5]
-                sample_player_team_names = list(player_team.keys())[:5]
-                matched = sum(1 for n in metrics_names if n in player_team)
-                print(f'[app_export] [diag] 선수 키 샘플(metrics.json): '
-                      f'{sample_metrics_names}', flush=True)
-                print(f'[app_export] [diag] player_team(DB) 키 샘플: '
-                      f'{sample_player_team_names}', flush=True)
-                print(f'[app_export] [diag] 이 경기 {len(metrics_names)}명 중 '
-                      f'player_team과 매칭된 수: {matched}', flush=True)
+        _n_files_total += 1
+        if metrics_names:
+            _n_files_with_players += 1
+        # 2026-07-29 수정: 이전 버전은 sorted() 결과의 "첫 파일"만 찍었는데,
+        # 알파벳순 정렬이라 숫자/영문으로 시작하는 오래된 파일(예:
+        # 1.FCKaiserslautern...)이 항상 먼저 나와서, 이번에 새로 대량
+        # 채워진 한글 팀명 파일들(아스톤빌라_맨체스터유나이티드 등, 알파벳
+        # 순으로 한참 뒤)은 한 번도 진단 로그에 안 잡혔을 가능성이 있음
+        # (실전에서 team_group_games가 계속 0으로 나온 게 이 진단 맹점
+        # 때문인지, 진짜 0인지 구분이 안 됐음). 이제 "실제로 players가
+        # 채워진 첫 파일"을 찾아서 보여주고, 전체 중 몇 개나 채워졌는지도
+        # 집계한다.
+        if not _diag_done and metrics_names:
+            _diag_done = True
+            sample_metrics_names = metrics_names[:5]
+            sample_player_team_names = list(player_team.keys())[:5]
+            matched = sum(1 for n in metrics_names if n in player_team)
+            print(f'[app_export] [diag] 실제로 채워진 첫 metrics 파일: {base}, '
+                  f'선수 키 샘플: {sample_metrics_names}', flush=True)
+            print(f'[app_export] [diag] player_team(DB) 키 샘플: '
+                  f'{sample_player_team_names}', flush=True)
+            print(f'[app_export] [diag] 이 경기 {len(metrics_names)}명 중 '
+                  f'player_team과 매칭된 수: {matched}', flush=True)
         for name, stats in data.get('players', {}).items():
             rec = _game_record(stats)
             games_by_player[name].append(rec)
@@ -502,6 +503,8 @@ def build_squads(name_cache):
             'games': games,
         })
 
+    print(f'[app_export] [diag] metrics 파일 총 {_n_files_total}개 중 '
+          f'players 채워진 파일 {_n_files_with_players}개', flush=True)
     return squads, dict(team_group_games)
 
 
