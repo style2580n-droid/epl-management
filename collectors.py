@@ -12,9 +12,18 @@
 """
 import os
 import json
+import time
 from datetime import datetime, timezone, date, timedelta
 
 from api_clients import build_registry
+# 2026-07-27 추가: EventCollector를 "라이브 경기만" 방식에서 "종료경기 백필"
+# 방식으로 재설계하면서, collect_goalscorers.py가 이미 검증해둔 리그발견/
+# 종료경기조회 함수들을 그대로 재사용한다(중복 구현 방지, 이미 실전
+# 검증됨).
+from collect_fixtures import _find_pl_league_id, _find_pl_teams, \
+    _fetch_all_league_events
+from collect_fixtures_multileague import _find_leagues, _find_league_teams, \
+    _fetch_league_events
 
 DATA_DIR = 'data/master'
 EVENTS_DIR = 'data/events'
@@ -377,28 +386,69 @@ class EventCollector:
         if not self.bsd:
             print('[event] BSD 비활성 → 건너뜀')
             return []
-        data, updated = self.bsd.live_events()
-        if not (updated and data):
-            return []
+        # 2026-07-27 재설계: live_events()는 "지금 이 순간 라이브인 경기"만
+        # 잡아서, 6시간마다 도는 배치 파이프라인 특성상 대부분의 종료경기가
+        # 영원히 이벤트 0건으로 남는 근본 문제가 있었음(실전 로그로 확인 —
+        # events 7건/normalizer 4명처럼 그 순간 우연히 라이브였던 경기 1개
+        # 정도만 잡히고 나머지 수백 개 종료경기는 전부 비어있었음). 이제
+        # collect_goalscorers.py와 동일하게 리그별 종료경기를 전부 순회하며
+        # 파일 존재 여부로 증분 수집한다.
+        os.makedirs(EVENTS_DIR, exist_ok=True)
+        try:
+            existing = set(os.listdir(EVENTS_DIR))
+        except OSError:
+            existing = set()
         collected = []
-        for ev in data.get('events', []):
-            eid = ev.get('id')
-            home = ev.get('home_team', 'Home')
-            away = ev.get('away_team', 'Away')
-            # 2026-07-27 수정: event_detail()(events/{eid}/)엔 이벤트 필드가
-            # 애초에 없다는 게 collect_goalscorers.py에서 이미 실측 확정돼
-            # 있었음(2026-07-20) — 그런데 이 클래스만 옛 방식을 계속 쓰고
-            # 있어서 항상 빈 이벤트 파일을 만들고 있었다(team_group_games/
-            # impact_engine 전부 다운스트림에서 0으로 나오던 근본 원인).
-            # 실측 확정된 events/{eid}/incidents/로 교체.
-            detail, ok = self.bsd.event_incidents(eid)
-            if not (ok and detail):
+        stats = {'finished': 0, 'new': 0}
+
+        def _process_league(rows, team_ids):
+            for ev in rows:
+                status = (ev.get('status') or '').lower()
+                if status != 'finished':
+                    continue
+                home = team_ids.get(ev.get('home_team_id'))
+                away = team_ids.get(ev.get('away_team_id'))
+                if not (home and away):
+                    continue
+                eid = ev.get('id')
+                if eid is None:
+                    continue
+                stats['finished'] += 1
+                fname = f'{home}_{away}_{eid}.json'.replace(' ', '')
+                if fname in existing:
+                    continue  # 이미 수집됨 — 재호출 안 함
+                detail, ok = self.bsd.event_incidents(eid)
+                time.sleep(0.2)
+                if not (ok and detail):
+                    continue
+                events = self._normalize(detail, home, away)
+                _save(f'{EVENTS_DIR}/{fname}', {'home': home, 'away': away,
+                                                 'events': events})
+                collected.append(fname)
+                existing.add(fname)
+                stats['new'] += 1
+
+        # EPL
+        league_id, season_id = _find_pl_league_id(self.bsd)
+        if league_id:
+            team_ids = _find_pl_teams(self.bsd, league_id, season_id)
+            if team_ids:
+                rows = _fetch_all_league_events(self.bsd, league_id,
+                                                 set(team_ids.keys()))
+                _process_league(rows, team_ids)
+
+        # 6개 리그 + MLS + 엘리테세리엔
+        leagues = _find_leagues(self.bsd)
+        for league_key, (lid, sid, _name) in (leagues or {}).items():
+            team_ids = _find_league_teams(self.bsd, league_key, lid, sid)
+            if not team_ids:
                 continue
-            events = self._normalize(detail, home, away)
-            path = f'{EVENTS_DIR}/{home}_{away}_{eid}.json'.replace(' ', '')
-            _save(path, {'home': home, 'away': away, 'events': events})
-            collected.append(path)
-            print(f'[event] {home} vs {away} 이벤트 {len(events)}건 저장')
+            rows = _fetch_league_events(self.bsd, lid)
+            _process_league(rows, team_ids)
+
+        print(f'[event] 종료경기 {stats["finished"]}건 중 신규 이벤트 수집 '
+              f'{stats["new"]}건 (기존 재사용 {stats["finished"] - stats["new"]}건)',
+              flush=True)
         return collected
 
     @staticmethod
