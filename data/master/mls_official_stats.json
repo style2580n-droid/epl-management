@@ -4,21 +4,67 @@
  "_diag": {
   "tried": [
    {
-    "url": "https://stats-api.mlssoccer.com/v1/players/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-assists&page_size=60&include=*",
+    "url": "https://sportapi.mlssoccer.com/api/stats/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
     "status": 404,
-    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+    "body_head": ""
    },
    {
-    "url": "https://stats-api.mlssoccer.com/v1/players/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-statistics.assists&page_size=60&include=player,club,statistics",
+    "url": "https://sportapi.mlssoccer.com/api/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
     "status": 404,
-    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+    "body_head": ""
    },
    {
-    "url": "https://stats-api.mlssoccer.com/v1/players/statistics/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-assists&page_size=60",
+    "url": "https://sportapi.mlssoccer.com/api/competitions/MLS-COM-000001/seasons/2026/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
     "status": 404,
-    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+    "body_head": ""
+   },
+   {
+    "url": "https://sportapi.mlssoccer.com/api/stats/leaders?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v1/stats/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v1/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v1/competitions/MLS-COM-000001/seasons/2026/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v1/stats/leaders?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v2/stats/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v2/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v2/competitions/MLS-COM-000001/seasons/2026/leaders/players?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
+   },
+   {
+    "url": "https://dapi.mlssoccer.com/v2/stats/leaders?competitionSportecId=MLS-COM-000001&season=2026&statViewType=shots_assists",
+    "status": 404,
+    "body_head": ""
    }
   ],
-  "season_opta_id_assumed": 2026
+  "season_assumed": "2026",
+  "competition_id_assumed": "MLS-COM-000001"
  }
 }
