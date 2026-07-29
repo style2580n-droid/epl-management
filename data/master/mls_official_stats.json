@@ -1,0 +1,24 @@
+{
+ "assists": {},
+ "goals": {},
+ "_diag": {
+  "tried": [
+   {
+    "url": "https://stats-api.mlssoccer.com/v1/players/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-assists&page_size=60&include=*",
+    "status": 404,
+    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+   },
+   {
+    "url": "https://stats-api.mlssoccer.com/v1/players/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-statistics.assists&page_size=60&include=player,club,statistics",
+    "status": 404,
+    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+   },
+   {
+    "url": "https://stats-api.mlssoccer.com/v1/players/statistics/seasons?competition_opta_id=98&season_opta_id=2026&order_by=-assists&page_size=60",
+    "status": 404,
+    "body_head": "{\"message\":\"Endpoint Not Found\"}"
+   }
+  ],
+  "season_opta_id_assumed": 2026
+ }
+}
