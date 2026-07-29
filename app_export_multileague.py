@@ -498,6 +498,47 @@ def _classify_injury(reason):
     return 'keyOut' if any(kw in r for kw in _KEYOUT_KEYWORDS) else 'injured'
 
 
+# 2026-07-26 추가: reason 원문(영문)을 한글 사유 라벨로 변환해 선수명에 괄호로
+# 붙여둔다("손흥민 (레드카드)") — EPL 앱의 SQUADS[team].injured 표기 방식과
+# 동일한 형태로 맞춰서, 클라이언트의 parseTeamAbsences()가 그대로 재사용하는
+# 정규식(레드카드/퇴장/출전정지/경고누적/부상 등)에 맞게 분류되도록 함.
+# ⚠️ API-Football 부상 피드는 서스펜션(레드카드/경고누적)과 실제 부상을
+# 같은 엔드포인트에서 reason 텍스트로만 구분해서 준다 — "경고 누적"인지
+# "단일 레드카드"인지까지는 이 피드에 명시적 필드가 없어서, red/suspend
+# 키워드가 있으면 일단 "레드카드" 하나로 묶는다(추측 금지 원칙 — 실제
+# API 응답에 누적 여부가 나오는지는 다음 세션에서 [diag] 로그로 검증할 것).
+_REASON_KO_RULES = (
+    (('red card',), '레드카드'),
+    (('suspen',), '출전정지'),
+    (('cruciate', 'acl'), 'ACL 부상'),
+    (('hamstring',), '햄스트링 부상'),
+    (('achilles',), '아킬레스 부상'),
+    (('groin',), '서혜부 부상'),
+    (('calf',), '종아리 부상'),
+    (('knee',), '무릎 부상'),
+    (('ankle',), '발목 부상'),
+    (('shoulder',), '어깨 부상'),
+    (('hip',), '고관절 부상'),
+    (('back', 'spine'), '허리 부상'),
+    (('thigh', 'muscle', 'hip flexor'), '근육 부상'),
+    (('fracture', 'broken'), '골절'),
+    (('surgery', 'operation'), '수술'),
+    (('illness', 'sick', 'virus', 'flu', 'covid'), '컨디션 난조(질병)'),
+    (('personal',), '개인 사유 결장'),
+    (('coach', 'decision', 'rotation', 'rest', 'unavailable',
+      'not included', 'squad'), '로테이션/명단제외'),
+    (('doubt', 'knock', 'minor', 'day to day', 'day-to-day'), '경미한 부상(출전 불투명)'),
+)
+
+
+def _reason_ko(reason):
+    r = (reason or '').lower()
+    for kws, ko in _REASON_KO_RULES:
+        if any(kw in r for kw in kws):
+            return ko
+    return '부상' if reason else '결장'
+
+
 def build_worldcup(today=None):
     """2026-07-20: 월드컵 여독/부상 (data/master/worldcup2026.json — 결승
     직후 아티팩트 기록에서 1회 생성한 정적 데이터).
@@ -545,7 +586,11 @@ def build_worldcup(today=None):
 def build_injuries():
     """collectors.py의 InjuryCollector(어제 완성)가 만든 injuries_af.json을
     리그별 {"팀명": {keyOut:[...], injured:[...]}} 형태로 변환한다.
-    EPL은 이 6개 리그 앱과 별개(SQUADS 임베드 방식)라 건드리지 않는다."""
+    EPL은 이 6개 리그 앱과 별개(SQUADS 임베드 방식)라 건드리지 않는다.
+    2026-07-26 수정: 선수명 뒤에 한글 사유를 괄호로 붙인다("손흥민 (레드카드)")
+    — 그동안 reason 텍스트를 keyOut/injured 분류에만 쓰고 버려서, 레드카드로
+    결장인지 부상으로 결장인지 클라이언트에서 전혀 구분을 못 하고 있었다.
+    keyOut/injured 버킷(=lambda 보정 강도)은 그대로 유지 — 사유 표기만 추가."""
     raw = _load_json(INJURIES_PATH, {})
     injuries = {lk: {} for lk in LEAGUE_TEAM_MAPS}
     unmatched_teams = set()
@@ -564,8 +609,10 @@ def build_injuries():
             continue
         lk, kr = hit
         bucket = injuries[lk].setdefault(kr, {'keyOut': [], 'injured': []})
-        category = _classify_injury(info.get('reason'))
-        bucket[category].append(player_name)
+        reason = info.get('reason')
+        category = _classify_injury(reason)
+        label = f'{player_name} ({_reason_ko(reason)})'
+        bucket[category].append(label)
         if category == 'keyOut':
             n_keyout += 1
         else:
@@ -1150,8 +1197,12 @@ def main():
     for lk, kr, name in wc_injuries:
         bucket = injuries_by_league.setdefault(lk, {}).setdefault(
             kr, {'keyOut': [], 'injured': []})
-        if name and name not in bucket['injured'] and name not in bucket['keyOut']:
-            bucket['injured'].append(name)  # 월드컵 부상은 보수적으로 로테이션 등급
+        # 2026-07-26: 일반 부상도 이제 "이름 (사유)" 형태로 저장되므로, 정확히
+        # 일치하는 문자열이 아니라 이름이 접두어로 이미 있는지로 중복을 판단한다.
+        already = any(x == name or x.startswith(f'{name} (')
+                      for x in bucket['injured'] + bucket['keyOut'])
+        if name and not already:
+            bucket['injured'].append(f'{name} (월드컵 부상)')  # 보수적으로 로테이션 등급
     transfers_by_league = build_transfers(name_cache)
     h2h_by_league = build_h2h()
     leaderboard_by_league = build_leaderboard(name_cache)
