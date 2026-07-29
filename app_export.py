@@ -431,6 +431,37 @@ def build_squads(name_cache):
           f'player_team {len(player_team)}명 (팀 매칭된 선수만) '
           f'샘플: {list(player_team.keys())[:5]}', flush=True)
 
+    # 2026-07-29 확정된 근본원인 수정: BSD incidents/ 이벤트가 주는 선수명은
+    # "M. Longstaff"(이니셜.성) 형식인데, player_team(DB)엔 "David Raya
+    # Martín" 같은 풀네임으로 저장돼 있어서 문자열이 절대 일치할 수 없었음
+    # (실전 로그로 매칭 0/10 확인) — 이게 team_group_games가 계속 0으로
+    # 나오던 진짜 원인. 성(마지막 단어)으로 역인덱스를 만들고, 이니셜.성
+    # 패턴이면 성이 일치하는 후보 중 이니셜도 맞는 것을 찾는다. 후보가
+    # 2명 이상 겹치면(동성이름) 오매칭 위험이 크므로 매칭시키지 않는다.
+    last_name_index = defaultdict(list)
+    for full_name in player_team:
+        parts = full_name.strip().split()
+        if parts:
+            last_name_index[parts[-1]].append(full_name)
+    _initial_re = re.compile(r'^([A-Za-zÀ-ÿ])\.\s*(.+)$')
+
+    def _resolve_player(name):
+        """player_team에서 name을 찾는다. 정확매칭 우선, 실패시 'M. Longstaff'
+        같은 이니셜.성 형식을 풀네임과 대조한다."""
+        info = player_team.get(name)
+        if info:
+            return info
+        m = _initial_re.match(name.strip())
+        if not m:
+            return None
+        initial, last = m.group(1).lower(), m.group(2).strip()
+        candidates = last_name_index.get(last, [])
+        matched = [c for c in candidates
+                   if c.strip().split()[0][:1].lower() == initial]
+        if len(matched) == 1:
+            return player_team.get(matched[0])
+        return None  # 0명 또는 동명이인 2명 이상이면 안전하게 매칭 안 함
+
     # 경기별 metrics 파일을 순회하며 선수별 game 배열 축적.
     # 2026-07-26 추가: 같은 루프에서 팀→경기(파일명)→선수배열 구조
     # (team_group_games)도 같이 만든다 — EPL_index.html의 TEAM_GROUP_GAMES가
@@ -465,7 +496,7 @@ def build_squads(name_cache):
             _diag_done = True
             sample_metrics_names = metrics_names[:5]
             sample_player_team_names = list(player_team.keys())[:5]
-            matched = sum(1 for n in metrics_names if n in player_team)
+            matched = sum(1 for n in metrics_names if _resolve_player(n))
             print(f'[app_export] [diag] 실제로 채워진 첫 metrics 파일: {base}, '
                   f'선수 키 샘플: {sample_metrics_names}', flush=True)
             print(f'[app_export] [diag] player_team(DB) 키 샘플: '
@@ -475,7 +506,7 @@ def build_squads(name_cache):
         for name, stats in data.get('players', {}).items():
             rec = _game_record(stats)
             games_by_player[name].append(rec)
-            info = player_team.get(name)
+            info = _resolve_player(name)
             if not info:
                 continue
             kr, bucket = info
