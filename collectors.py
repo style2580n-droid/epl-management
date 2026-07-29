@@ -386,6 +386,20 @@ class EventCollector:
         if not self.bsd:
             print('[event] BSD 비활성 → 건너뜀')
             return []
+        # 2026-07-29 추가: football_pipeline.yml 확인 결과, collect-by-league
+        # 잡이 LEAGUE=matrix.league(7개 리그 병렬) × CATEGORY=all로 돌면서
+        # 이 EventCollector도 매번 실행되고 있었음 — 거기에 collect-global의
+        # CATEGORY=event까지 합치면 "전체 리그 종료경기 백필"이 **8번
+        # 중복** 실행되는 구조였음(각 잡이 독립 체크아웃이라 증분캐싱도
+        # 서로 공유 안 됨). API 요청이 8배로 몰려 rate limit/타임아웃에
+        # 걸렸을 가능성이 높고, team_group_games가 계속 0으로 나오던 것과
+        # 무관하지 않아 보임. LEAGUE 환경변수가 있으면(=매트릭스 잡) 이
+        # 무거운 전체 백필은 건너뛰고, LEAGUE가 없는 collect-global(전역,
+        # 1회만 실행)에서만 돈다.
+        if os.getenv('LEAGUE'):
+            print('[event] LEAGUE 매트릭스 잡에서는 건너뜀 '
+                  '(collect-global에서 1회만 실행)', flush=True)
+            return []
         # 2026-07-27 재설계: live_events()는 "지금 이 순간 라이브인 경기"만
         # 잡아서, 6시간마다 도는 배치 파이프라인 특성상 대부분의 종료경기가
         # 영원히 이벤트 0건으로 남는 근본 문제가 있었음(실전 로그로 확인 —
