@@ -76,6 +76,7 @@ jobs:
       - name: Collect players (FPL) + events (BSD)
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          BSD_API_KEY2: ${{ secrets.BSD_API_KEY2 }}
           API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
           API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
           HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
@@ -123,6 +124,7 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
+          BSD_API_KEY2: ${{ secrets.BSD_API_KEY2 }}
           # 2026-07-26 추가: 이 잡(report)이 collect-by-league/collect-global과
           # 별개 잡이라 그쪽 env가 자동으로 안 물려받아져서, collect_logos_
           # multileague.py 등에서 build_registry() 호출 시 이 키들이 전부
