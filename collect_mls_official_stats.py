@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-MLS 공식(Opta 기반) 도움/득점 순위 수집 — 2026-07-26 착수.
+MLS 공식(Opta 기반) 도움/득점 순위 수집 — 2026-07-26 착수, 2026-07-29 재작성.
 
 배경: collect_goalscorers.py가 쓰는 BSD event incidents 스키마는 골당
 assist 필드 1명만 준다 — MLS 고유의 "세컨더리 어시스트"(도움으로 이어진
@@ -9,32 +9,30 @@ mlssoccer.com 공식 집계보다 적게 나온다(손흥민 실사례로 확인
 파이프라인 집계 6개). 다른 5개 리그는 이 문제가 없다(세컨더리 어시스트
 규정 자체가 MLS 전용이라).
 
-⚠️ 이 스크립트는 이 세션(샌드박스, 외부 네트워크 차단)에서 단 한 번도
-실행/검증을 못 해봤다 — mlssoccer.com이 실제로 쓰는 백엔드
-(stats-api.mlssoccer.com, Opta 기반)의 존재 자체는 공개된 3rd-party 문서
-(GitHub gist: akeaswaran/mls-json-api.md)로 확인했지만, "리그 전체 도움
-순위"를 한 번에 주는 엔드포인트가 정확히 어떤 경로/파라미터/응답 필드명인지는
-실행 결과로만 검증 가능하다. collect_goalscorers.py와 동일한 원칙
-(추측 금지 — [diag] 로그 남기고 실행 결과 보고 다음 사람이 고친다)으로 작성.
+⚠️ 2026-07-26 첫 시도(stats-api.mlssoccer.com, competition_opta_id=98) 전부
+404 — 완전히 틀린 호스트/ID 체계였다. 사용자가 모바일에서 mlssoccer.com
+페이지 소스를 직접 열어서(view-page-source.com 경유) 찾아낸 실제 값으로
+2026-07-29 재작성:
+  - ID 체계가 "Opta"가 아니라 "Sportec"이었다: competitionSportecId
+    (예: "MLS-COM-000001", 숫자 아님).
+  - 실제 API 서버 후보 3개(페이지의 JS 설정 객체에서 직접 확인):
+      forgeDAPI(v2)   = https://dapi.mlssoccer.com/v2
+      forgeDAPIv1     = https://dapi.mlssoccer.com/v1
+      d3SportsAPI     = https://sportapi.mlssoccer.com/api  (Deltatre로 추정 —
+        "d3Sports"·소스에 deltatre.digital 흔적 있었음. 유력 후보.)
+  - mls-leader-card 컴포넌트가 실제로 쓰던 파라미터: competitionSportecId,
+    season(="2026", 문자열), statViewType(="shots_assists" 등 snake_case).
+  - statsAPIToken이 빈 문자열("")로 찍혀 있었음 — 인증 토큰이 필요한 요청이면
+    이 시도들도 401/403 날 수 있다. 이번에도 실패하면 그게 다음 단서.
 
-⚠️ 실행 전 반드시 확인/조정할 것:
-  1. SEASON_OPTA_ID: 지금은 2026(MLS는 달력연도=시즌이라 연도값 그대로일
-     가능성이 높다고 추정만 함 — gist 예시가 season_opta_id=2022로 2022년도를
-     가리켰던 것과 같은 패턴이라 추정. 확정 아님)로 하드코딩해뒀다. 첫 실행
-     로그의 [diag] season 확인 결과를 보고 틀렸으면 고칠 것.
-  2. 인증 불필요(공개 API로 보임)라고 가정했다 — 401/403 뜨면 헤더
-     (User-Agent 등) 추가가 필요할 수 있다.
-  3. 리그 전체 정렬 엔드포인트를 못 찾으면(모든 후보가 개별 선수 조회만
-     되면), 대안으로 선수 목록(로스터)을 먼저 받아 선수별로 순회 조회하는
-     방식으로 전환해야 하는데, 그러면 호출 수가 팀당 30명 × 30팀 = 900회
-     가까이 나올 수 있어 rate limit 확인이 먼저 필요하다 — 이번 스크립트는
-     "리그 전체 한 번에" 후보들만 우선 시도하고, 전부 실패하면 그 사실만
-     로그로 남기고 종료한다(추측으로 로스터 순회를 자동 실행하지 않음).
+⚠️ 이번에도 정확한 경로(path)까지는 확인 못 했다 — 호스트 3개 × 경로 후보
+여러 개를 조합해서 시도한다. 여전히 [diag] 로그로 검증하는 방식(추측 금지
+원칙 — collect_goalscorers.py와 동일).
 
 출력: data/master/mls_official_stats.json
   { "assists": {"선수명(영문)": 개수, ...}, "goals": {...},
-    "_diag": {...} }  ← 다음 세션/사용자 검증용, build_leaderboard에는
-  아직 자동 병합 안 함(필드 매핑 확정 전까지는 수동 대조 단계).
+    "_diag": {...} }  ← build_leaderboard()에 아직 자동 병합 안 함
+  (필드 매핑 확정 전까지는 수동 대조 단계).
 """
 import json
 import os
@@ -43,39 +41,39 @@ import urllib.error
 import urllib.request
 
 OUT_PATH = 'data/master/mls_official_stats.json'
-BASE = 'https://stats-api.mlssoccer.com/v1'
-COMPETITION_OPTA_ID = 98  # gist 문서에 MLS 정규시즌으로 명시됨(competition=98)
-SEASON_OPTA_ID = 2026     # ⚠️ 추정치 — 실행 로그로 검증 필요(위 docstring 참고)
+COMPETITION_ID = 'MLS-COM-000001'  # 2026-07-29 확인: 정규시즌으로 추정(파일 하단 참고)
+SEASON = '2026'
 
-# "리그 전체 도움 순위"를 한 번에 줄 가능성이 있는 후보 쿼리들.
-# player_opta_id를 빼고 order_by만으로 리그 전체를 정렬해서 받는 시도.
-_CANDIDATE_QUERIES = [
-    ('players/seasons', {
-        'competition_opta_id': COMPETITION_OPTA_ID,
-        'season_opta_id': SEASON_OPTA_ID,
-        'order_by': '-assists',
-        'page_size': 60,
-        'include': '*',
-    }),
-    ('players/seasons', {
-        'competition_opta_id': COMPETITION_OPTA_ID,
-        'season_opta_id': SEASON_OPTA_ID,
-        'order_by': '-statistics.assists',
-        'page_size': 60,
-        'include': 'player,club,statistics',
-    }),
-    ('players/statistics/seasons', {
-        'competition_opta_id': COMPETITION_OPTA_ID,
-        'season_opta_id': SEASON_OPTA_ID,
-        'order_by': '-assists',
-        'page_size': 60,
-    }),
+_BASES = [
+    'https://sportapi.mlssoccer.com/api',   # d3SportsAPI — 가장 유력한 후보
+    'https://dapi.mlssoccer.com/v1',        # forgeDAPIv1
+    'https://dapi.mlssoccer.com/v2',        # forgeDAPI
+]
+_PATHS = [
+    'stats/leaders/players',
+    'leaders/players',
+    'competitions/{comp}/seasons/{season}/leaders/players',
+    'stats/leaders',
 ]
 
+def _build_queries():
+    out = []
+    for base in _BASES:
+        for path in _PATHS:
+            p = path.format(comp=COMPETITION_ID, season=SEASON)
+            out.append((f'{base}/{p}', {
+                'competitionSportecId': COMPETITION_ID,
+                'season': SEASON,
+                'statViewType': 'shots_assists',
+            }))
+    return out
 
-def _get(path, params, timeout=10):
+_CANDIDATE_QUERIES = _build_queries()
+
+
+def _get(url_base, params, timeout=10):
     qs = '&'.join(f'{k}={v}' for k, v in params.items())
-    url = f'{BASE}/{path}?{qs}'
+    url = f'{url_base}?{qs}'
     req = urllib.request.Request(url, headers={
         'User-Agent': 'Mozilla/5.0 (compatible; stats-research/1.0)',
         'Accept': 'application/json',
@@ -116,12 +114,12 @@ def _find_assist_field(row):
 
 
 def main():
-    diag = {'tried': [], 'season_opta_id_assumed': SEASON_OPTA_ID}
+    diag = {'tried': [], 'season_assumed': SEASON, 'competition_id_assumed': COMPETITION_ID}
     rows = None
     used_query = None
 
-    for path, params in _CANDIDATE_QUERIES:
-        status, body, url = _get(path, params)
+    for url_base, params in _CANDIDATE_QUERIES:
+        status, body, url = _get(url_base, params, timeout=6)
         entry = {'url': url, 'status': status}
         if status == 200:
             try:
