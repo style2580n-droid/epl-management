@@ -1,0 +1,124 @@
+{
+    "teams": {
+        "토론토 FC": {
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 50.0,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        },
+        "오스틴 FC": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 50.0,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        }
+    },
+    "players": {
+        "E. Aristizábal": {
+            "_team": "토론토 FC"
+        },
+        "null": {
+            "_team": "토론토 FC"
+        },
+        "A. Coello": {
+            "_team": "토론토 FC"
+        },
+        "K. Franklin": {
+            "_team": "토론토 FC"
+        },
+        "C. Ramirez": {
+            "_team": "오스틴 FC"
+        },
+        "L. Stefanovic": {
+            "_team": "토론토 FC"
+        },
+        "F. Torres": {
+            "_team": "오스틴 FC"
+        },
+        "R. Laryea": {
+            "_team": "토론토 FC"
+        },
+        "J. Cifuentes": {
+            "_team": "토론토 FC"
+        },
+        "D. Sallói": {
+            "_team": "토론토 FC"
+        },
+        "Guilherme Biro": {
+            "_team": "오스틴 FC"
+        },
+        "R. Edwards": {
+            "_team": "토론토 FC"
+        },
+        "J. Bell": {
+            "_team": "오스틴 FC"
+        },
+        "N. Dubersarsky": {
+            "_team": "오스틴 FC"
+        }
+    }
+}

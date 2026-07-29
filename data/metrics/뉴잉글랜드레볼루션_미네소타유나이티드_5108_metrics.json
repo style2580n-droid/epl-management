@@ -1,0 +1,106 @@
+{
+    "teams": {
+        "뉴잉글랜드 레볼루션": {
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 57.1,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        },
+        "미네소타 유나이티드": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 42.9,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        }
+    },
+    "players": {
+        "G. Yow": {
+            "_team": "뉴잉글랜드 레볼루션"
+        },
+        "null": {
+            "_team": "뉴잉글랜드 레볼루션"
+        },
+        "N. Romero": {
+            "_team": "미네소타 유나이티드"
+        },
+        "B. Raines": {
+            "_team": "뉴잉글랜드 레볼루션"
+        },
+        "L. Langoni": {
+            "_team": "뉴잉글랜드 레볼루션"
+        },
+        "K. Yeboah": {
+            "_team": "미네소타 유나이티드"
+        },
+        "C. Gil": {
+            "_team": "뉴잉글랜드 레볼루션"
+        },
+        "D. Turgeman": {
+            "_team": "뉴잉글랜드 레볼루션"
+        }
+    }
+}
