@@ -168,6 +168,16 @@ jobs:
           # collect_goalscorers.py는 증분캐싱 때문에 이미 처리된 경기는 건너뛰어서
           # 이 프로브로 캐시 없이 직접 확인한다. 결과 확인 후 이 줄 삭제할 것.
           python rehearse_goal_team_probe.py || true
+          # 2026-07-29 [진단/미검증] MLS 도움왕이 BSD 소스 특성상 실제보다 적게
+          # 나오는 문제(MLS만의 "세컨더리 어시스트" 규정을 BSD가 반영 안 함,
+          # 손흥민 실사례로 확인: 공식 10개인데 파이프라인 집계 6개) 대응.
+          # mlssoccer.com 공식 API(Opta 기반, stats-api.mlssoccer.com)에서 직접
+          # 받아보는 진단 수집기 — 정확한 응답 필드명은 이 실행 로그로 처음
+          # 검증하는 것이라 실패 가능성이 높음. data/master/mls_official_stats.json에
+          # [diag] 로그와 함께 저장만 하고 build_leaderboard()에 자동 병합은
+          # 아직 안 함(필드 매핑 확정 전까지 수동 대조 단계) — 그래서 실패해도
+          # 나머지 파이프라인에 영향 없도록 || true.
+          python collect_mls_official_stats.py || true
           # 2026-07-23 추가: 무득점 선수도 league_apps에 반영(선발 명단 기반).
           # collect_goalscorers.py와 같은 이유로 그 뒤·app_export*.py 앞에 위치.
           # (rehearse_lineups_probe.py로 events/{eid}/lineups/ 구조 실측 확정
