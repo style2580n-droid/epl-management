@@ -360,7 +360,11 @@ def _game_record(stats):
         'xg': round(stats.get('xG', 0) or 0, 3),
         'xa': round(stats.get('xA', 0) or 0, 3),
         'shots': int(shots),
-        'sot': 0,
+        # 2026-07-30 (2-1): 이전엔 하드코딩 0 — BSD엔 없는 필드라 항상 0이었다.
+        # collect_api_football_player_stats.py가 종료경기에 한해 API-FOOTBALL
+        # /fixtures/players에서 이 필드를 채워 넣으면(stats['sot']) 그 값을 쓰고,
+        # 아직 못 채워진 경기(대다수, 쿼터 제약으로 점진적 채움)는 그대로 0.
+        'sot': int(stats.get('sot', 0) or 0),
         'progPass': int(stats.get('progressive_passes', 0) or 0),
         'progCarry': int(stats.get('progressive_carries', 0) or 0),
         'sca': int(stats.get('SCA', 0) or 0),
@@ -370,7 +374,8 @@ def _game_record(stats):
         'keyPasses': int(stats.get('key_passes', 0) or 0),
         'crossComp': 0,
         'tacklesWon': int(stats.get('tackles_won', 0) or 0),
-        'interceptions': 0,
+        # 2026-07-30 (2-1): sot와 동일한 이유로 하드코딩 0 해제.
+        'interceptions': int(stats.get('interceptions', 0) or 0),
         'clr': 0,
         'recoveries': int((stats.get('pressure_regains', 0) or 0)
                           + (stats.get('counterpress_recoveries', 0) or 0)),
