@@ -208,7 +208,23 @@ def _af_get(session, keys, state, path, params):
                              headers={'x-apisports-key': key}, timeout=15)
             state['calls_used'][idx] = state['calls_used'].get(idx, 0) + 1
             if r.status_code == 200:
-                return r.json()
+                body = r.json()
+                # 2026-07-31 추가: API-FOOTBALL은 HTTP 200을 주면서도 바디의
+                # 'errors' 필드로 진짜 실패 사유(잘못된 키, 플랜 제한, 일일
+                # 쿼터 초과 등)를 알리는 경우가 많다 — 상태코드만 보고 넘어가면
+                # "성공했는데 결과가 0건"으로 오인하게 된다(실제로 이번 세션
+                # 첫 실행에서 EPL 리그검색 0건, 6개리그 fixtures 조회 3건 모두
+                # 0건이 나왔는데 에러 로그가 하나도 없었던 게 이 문제로 의심됨).
+                # errors가 dict/list든 비어있지 않으면 실패로 간주하고 원문을
+                # 그대로 로그에 남긴다.
+                errors = body.get('errors') if isinstance(body, dict) else None
+                if errors:
+                    print(f'[collect_api_football_player_stats] {path} '
+                          f'HTTP 200이지만 본문에 errors 있음(키{i+1}): '
+                          f'{errors} | results={body.get("results")}',
+                          flush=True)
+                    continue  # 다음 키로 폴백(쿼터/플랜 문제면 다른 키는 될 수도)
+                return body
             if r.status_code in (401, 403, 429):
                 print(f'[collect_api_football_player_stats] 키{i+1} 응답 '
                       f'{r.status_code} → 다음 키 시도', flush=True)
@@ -221,6 +237,7 @@ def _af_get(session, keys, state, path, params):
                   flush=True)
             continue
     return None  # 모든 키 쿼터 소진 또는 실패
+
 
 
 def _discover_epl_league_id(session, keys, state):
