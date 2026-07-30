@@ -685,10 +685,35 @@ def build_h2h():
             'date': r['date'],
         })
 
+    # 2026-07-30 확정: collect_fixtures.py가 DATE_FROM=오늘-3년으로 이미
+    # 3년치 종료경기를 통째로 훑으면서 h2h_raw를 계산해 data/master/h2h.json
+    # 으로 저장까지 해두고 있었는데, 여기(build_h2h)는 그동안 이 파일을 전혀
+    # 안 읽고 matches 테이블(EventCollector가 최근 것만 채움)만 썼음 — 그래서
+    # "예전시즌 상대전적"이 계속 빠져 있었음. 새 API 호출 없이 이미 있는
+    # 파일을 병합만 하면 된다.
+    h2h_3yr = _load_json('data/master/h2h.json', {})
+    n_3yr_merged = 0
+    for key, games_3yr in h2h_3yr.items():
+        h2h.setdefault(key, []).extend(games_3yr)
+        n_3yr_merged += len(games_3yr)
+    if n_3yr_merged:
+        print(f'[app_export] 3년치 상대전적(h2h.json) {n_3yr_merged}건 병합',
+              flush=True)
+
     out = {}
     for key, games in h2h.items():
-        games_sorted = sorted(games, key=lambda g: g['date'] or '', reverse=True)
-        out[key] = games_sorted[:10]
+        # 2026-07-30: DB(matches)와 h2h.json 양쪽에서 같은 경기가 중복으로
+        # 들어올 수 있어(둘 다 소스가 겹치는 최근 구간) date+home+away로
+        # 중복 제거 후 최신순 10경기.
+        seen = set()
+        dedup = []
+        for g in sorted(games, key=lambda g: g['date'] or '', reverse=True):
+            sig = (g['date'], g['home'], g['away'])
+            if sig in seen:
+                continue
+            seen.add(sig)
+            dedup.append(g)
+        out[key] = dedup[:10]
     return out
 
 
