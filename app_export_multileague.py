@@ -24,12 +24,14 @@ multi_league_index.html의 LEAGUE_ORDER와 반드시 일치해야 한다.
 이름이 있으면 LEAGUE_TEAM_MAPS에 별칭을 추가해야 한다 (추측 금지 원칙 —
 실행 결과로 검증).
 """
+import glob
 import json
 import os
 import re
 import sqlite3
 import time
 import unicodedata
+from collections import defaultdict
 from datetime import datetime, timezone
 
 import requests
@@ -722,6 +724,130 @@ def build_squads(name_cache):
     return squads, unmatched_teams
 
 
+def _game_record(stats):
+    """2026-07-29 app_export.py(EPL)에서 그대로 이식 — gameRawScore()가
+    필요로 하는 15개 지표를 metrics.json의 원본 필드에서 뽑는다. BSD
+    incidents/가 좌표기반 세부지표를 안 주는 한계는 EPL과 동일하게 적용됨
+    (골/어시스트 중심으로만 정확, 나머지는 0에 가까울 수 있음 — 이미
+    알려진 한계, 여기서 새로 발생한 문제 아님)."""
+    shots = stats.get('shots', 0) or 0
+    return {
+        'goals': int(stats.get('goals', 0) or 0),
+        'assists': int(stats.get('assists', 0) or 0),
+        'xg': round(stats.get('xG', 0) or 0, 3),
+        'xa': round(stats.get('xA', 0) or 0, 3),
+        'shots': int(shots),
+        'sot': 0,
+        'progPass': int(stats.get('progressive_passes', 0) or 0),
+        'progCarry': int(stats.get('progressive_carries', 0) or 0),
+        'sca': int(stats.get('SCA', 0) or 0),
+        'gca': int(stats.get('GCA', 0) or 0),
+        'psxgGA': 0,
+        'bigChances': int(stats.get('big_chances_created', 0) or 0),
+        'keyPasses': int(stats.get('key_passes', 0) or 0),
+        'crossComp': 0,
+        'tacklesWon': int(stats.get('tackles_won', 0) or 0),
+        'interceptions': 0,
+        'clr': 0,
+        'recoveries': int((stats.get('pressure_regains', 0) or 0)
+                          + (stats.get('counterpress_recoveries', 0) or 0)),
+        'aerialWinPct': 0,
+        'takeOns': int(stats.get('dribbles', 0) or 0),
+        'takeOnPct': round((stats.get('dribbles_won', 0) or 0)
+                           / stats['dribbles'] * 100, 1)
+                    if stats.get('dribbles') else 0,
+        'pressSucc': int(stats.get('counterpress_recoveries', 0) or 0),
+        'pressSuccPct': 0,
+    }
+
+
+METRICS_DIR = 'data/metrics'
+
+
+def build_team_group_games_multileague(name_cache):
+    """8개리그판 team_group_games (개인기여도 playerImpactPct의 데이터 소스).
+    2026-07-29 추가 — EPL 앱(app_export.py build_squads() 안)의 실전 검증된
+    로직을 그대로 이식. 소스만 다르다: EPL은 SQLite players/teams 테이블,
+    여기는 data/master/squads_multileague.json(BSD, collect_fixtures_multileague.py
+    가 만듦) 원본을 다시 읽어서 "영문명 → (리그키, 팀kr, 포지션버킷)"
+    역인덱스를 만든다(build_squads()가 반환하는 값은 이미 한글 번역이 끝난
+    뒤라 원본 영문명과 매칭이 안 되므로 별도로 원본을 다시 읽음).
+    _resolve_player(이니셜.성 매칭, 동명이인 방어)와 metrics 순회 로직은
+    EPL과 완전히 동일 — 이미 실전 검증된 패턴이라 재검증 불필요.
+    반환: {리그키: {팀kr: {경기라벨: [선수레코드,...]}}}
+    """
+    bsd_squads = _load_json(BSD_SQUADS_PATH, {})
+    player_team = {}  # 영문명 -> (리그키, 팀kr, 포지션버킷)
+    for lk, teams in bsd_squads.items():
+        if not isinstance(teams, dict):
+            continue
+        for kr, entry in teams.items():
+            if isinstance(entry, dict):
+                raw_players = entry.get('players') or []
+            elif isinstance(entry, list):
+                raw_players = [{'name': n, 'position': None} for n in entry if n]
+            else:
+                raw_players = []
+            for p in raw_players:
+                name_en = p.get('name') if isinstance(p, dict) else p
+                pos = p.get('position') if isinstance(p, dict) else None
+                if not name_en:
+                    continue
+                player_team[name_en] = (lk, kr, _bucket_position(pos))
+
+    last_name_index = defaultdict(list)
+    for full_name in player_team:
+        parts = full_name.strip().split()
+        if parts:
+            last_name_index[parts[-1]].append(full_name)
+    _initial_re = re.compile(r'^([A-Za-zÀ-ÿ])\.\s*(.+)$')
+
+    def _resolve_player(name):
+        info = player_team.get(name)
+        if info:
+            return info
+        m = _initial_re.match(name.strip())
+        if not m:
+            return None
+        initial, last = m.group(1).lower(), m.group(2).strip()
+        candidates = last_name_index.get(last, [])
+        matched = [c for c in candidates
+                   if c.strip().split()[0][:1].lower() == initial]
+        if len(matched) == 1:
+            return player_team.get(matched[0])
+        return None  # 0명 또는 동명이인 2명 이상이면 안전하게 매칭 안 함
+
+    team_group_games = defaultdict(lambda: defaultdict(dict))
+    n_total, n_with_players, n_matched = 0, 0, 0
+    for path in sorted(glob.glob(os.path.join(METRICS_DIR, '*_metrics.json'))):
+        base = os.path.basename(path)
+        if base in ('player_profiles.json', 'season_players.json',
+                    'season_teams.json', 'transfer_impact.json'):
+            continue
+        data = _load_json(path, {})
+        players = data.get('players', {})
+        n_total += 1
+        if players:
+            n_with_players += 1
+        for name, stats in players.items():
+            info = _resolve_player(name)
+            if not info:
+                continue
+            lk, kr, bucket = info
+            n_matched += 1
+            rec = _game_record(stats)
+            team_group_games[lk][kr].setdefault(base, []).append({
+                **rec,
+                'name': _translate_name(name, name_cache),
+                'pos': {'gk': 'GK', 'df': 'DF', 'mf': 'MF', 'fw': 'FW'}[bucket],
+            })
+    n_teams_total = sum(len(v) for v in team_group_games.values())
+    print(f'[app_export_multileague] team_group_games: metrics파일 {n_total}개 중 '
+          f'players채워짐 {n_with_players}개, 선수매칭 {n_matched}건 → '
+          f'{n_teams_total}팀(전체 리그 합계)', flush=True)
+    return {lk: dict(v) for lk, v in team_group_games.items()}
+
+
 GOALSCORERS_PATH = 'data/master/goalscorers.json'
 # 2026-07-23 수정(파이프라인 크래시): db.py의 load_lineups()가 이미
 # 'data/master/lineups.json'을 다른 스키마로 쓰고 있어서 전체 파이프라인이
@@ -1141,7 +1267,7 @@ def build_all():
 # ============================================================ JS 렌더링
 def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
               transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league,
-              wc_fatigue=None):
+              team_group_games_by_league, wc_fatigue=None):
     wc_fatigue = wc_fatigue or {}
     logos_by_league = _load_json(LOGOS_PATH, {})
     # 2026-07-22 (A단계): 선수 능력치 기준선을 앱에 전달. 클라이언트
@@ -1171,6 +1297,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'transfers': transfers_by_league.get(league_key, {}),
             'h2h': h2h_by_league.get(league_key, {}),
             'leaderboard': leaderboard_by_league.get(league_key, {'scorers': {}, 'assists': {}}),
+            'teamGroupGames': team_group_games_by_league.get(league_key, {}),  # 2026-07-29 개인기여도
             'playerBaseline': player_baseline_league,  # A단계 (2026-07-22)
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
@@ -1206,11 +1333,12 @@ def main():
     transfers_by_league = build_transfers(name_cache)
     h2h_by_league = build_h2h()
     leaderboard_by_league = build_leaderboard(name_cache)
+    team_group_games_by_league = build_team_group_games_multileague(name_cache)  # 2026-07-29 개인기여도
     update_player_baseline(name_cache)  # C단계: 기준선에 리그 기록 누적
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     js = render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league,
                     transfers_by_league, h2h_by_league, ml_ensemble, leaderboard_by_league,
-                    wc_fatigue)
+                    team_group_games_by_league, wc_fatigue)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
         f.write(js)
     _save_name_cache(name_cache)

@@ -313,7 +313,12 @@ def load_events(conn, events_dir='data/events'):
         evs = payload['events']
         goals = {home: 0, away: 0}
         for e in evs:
-            if e.get('type') == 'Shot' and e.get('outcome') == 'Goal':
+            # 2026-07-30 확정된 근본원인 수정: 이 조건이 원래 type=='Shot'&&
+            # outcome=='Goal'이었는데, rehearse_goal_team_probe.py로 실측
+            # 확정된 BSD incidents/ 실제 필드는 type=='goal'(소문자, outcome
+            # 필드 자체가 없음) — 절대 매치가 안 돼서 모든 경기의 골이 0-0
+            # 으로 저장되고 있었다(H2H가 전부 0-0으로만 나오던 진짜 원인).
+            if e.get('type') == 'goal':
                 goals[e.get('team')] = goals.get(e.get('team'), 0) + 1
         conn.execute('INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?)',
                      (mid, payload.get('league'), home, away,
