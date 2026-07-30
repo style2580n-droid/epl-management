@@ -63,14 +63,15 @@ LEAGUE_MATCHERS = {
         n == 'mls' or 'major league soccer' in n),
     'eliteserien': lambda n, c: c == 'norway' and (
         n == 'eliteserien' or 'eliteserien' in n),
-    # 2026-07-30 추가: 월드컵 앱을 하드코딩 데이터에서 파이프라인 연동으로
-    # 전환하기 위해 8개리그와 동일한 메커니즘(BSD leagues() 검색)으로 발견.
-    # 정확한 BSD 표기명은 미확정 — "world cup" 포함 + 연령대/여자부 대회
-    # 제외로 안전하게 매칭. 못 찾으면 _find_leagues()가 이미 자동으로
-    # "못 찾은 리그" 로그를 찍어주니 다음 실행 로그로 바로 확인 가능.
-    'worldcup': lambda n, c: 'world cup' in n and not any(
-        x in n for x in ('u17', 'u-17', 'u20', 'u-20', 'u23', 'u-23',
-                          'women', "women's", 'female', 'club world cup')),
+    # 2026-07-30 [삭제됨, 원래 여기 'worldcup' 매처가 있었음]: BSD leagues()에서
+    # "World Cup"을 찾아 파이프라인 연동하려던 시도였는데, LEAGUE_TEAM_MAPS에
+    # 'worldcup' 항목을 같이 안 만들어서 _find_league_teams()의
+    # `LEAGUE_TEAM_MAPS[league_key]`가 KeyError('worldcup')로 죽었다(실전
+    # 로그로 확인 — collect-global 잡 전체가 실패해서 FPL 선수/BSD 이벤트가
+    # 그 실행에서 아예 하나도 안 걷힘, 단순히 월드컵 데이터 하나만 빠지는
+    # 게 아니라 피해 범위가 훨씬 컸음). 월드컵 앱(worldcup_index.html) 관련
+    # 작업은 인수인계에서 명확히 금지된 항목이라 이 매처는 되살리지 않고
+    # 아예 제거한다 — BSD가 "World Cup"을 찾아도 이제 그냥 무시된다.
 }
 
 
@@ -209,7 +210,20 @@ def _find_league_teams(client, league_key, league_id, season_id):
         {'league_id': league_id, 'season': season_id} if season_id else None,
         {'league': league_id, 'season': season_id} if season_id else None,
     ]
-    team_map = LEAGUE_TEAM_MAPS[league_key]
+    # 2026-07-30 추가: LEAGUE_MATCHERS에 있는데 LEAGUE_TEAM_MAPS엔 없는
+    # league_key가 오면(방금 'worldcup'에서 실제로 겪음 — KeyError로
+    # collect-global 잡 전체가 죽어서 FPL 선수/BSD 이벤트까지 그 실행에서
+    # 통째로 안 걷혔음) 이 리그 하나만 건너뛰고 나머지는 계속 진행한다.
+    # LEAGUE_MATCHERS와 LEAGUE_TEAM_MAPS 두 딕셔너리가 서로 다른 파일에
+    # 있어서(따로 수정하다 깜빡하기 쉬움) 근본적으로 이런 불일치가 또
+    # 생길 수 있으니, 이후에도 한쪽만 고치는 실수가 있어도 크래시 대신
+    # 로그로 드러나게 하는 안전망.
+    team_map = LEAGUE_TEAM_MAPS.get(league_key)
+    if team_map is None:
+        print(f'[collect_fixtures_multileague] [경고] "{league_key}"가 '
+              f'LEAGUE_MATCHERS엔 있는데 LEAGUE_TEAM_MAPS엔 없음 → 이 리그만 '
+              f'건너뜀(나머지 리그는 계속 진행)', flush=True)
+        return {}
     n_expected = len(team_map)
     for params in candidates:
         if not params:
