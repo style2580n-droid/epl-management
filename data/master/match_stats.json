@@ -29837,5 +29837,225 @@
             }
         ],
         "collected_at": "2026-07-30T05:44:13.911822+00:00"
+    },
+    "1366998677": {
+        "match": {
+            "id": 1366998677,
+            "round": "Group Stage - 2",
+            "date": "2026-07-30T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 15209005,
+                "logo": "https://highlightly.net/soccer/images/teams/15209005.png",
+                "name": "Dominican Republic U23"
+            },
+            "homeTeam": {
+                "id": 15211558,
+                "logo": "https://highlightly.net/soccer/images/teams/15211558.png",
+                "name": "Guatemala U23"
+            },
+            "league": {
+                "id": 865400,
+                "logo": null,
+                "name": "CAC Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15211558,
+                    "logo": "https://highlightly.net/soccer/images/teams/15211558.png",
+                    "name": "Guatemala U23"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15209005,
+                    "logo": "https://highlightly.net/soccer/images/teams/15209005.png",
+                    "name": "Dominican Republic U23"
+                }
+            }
+        ],
+        "collected_at": "2026-07-30T15:10:52.162824+00:00"
+    },
+    "1366997826": {
+        "match": {
+            "id": 1366997826,
+            "round": "Group Stage - 1",
+            "date": "2026-07-30T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 15206452,
+                "logo": "https://highlightly.net/soccer/images/teams/15206452.png",
+                "name": "Costa Rica U23"
+            },
+            "homeTeam": {
+                "id": 15207303,
+                "logo": null,
+                "name": "Cuba U23"
+            },
+            "league": {
+                "id": 865400,
+                "logo": null,
+                "name": "CAC Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15207303,
+                    "logo": null,
+                    "name": "Cuba U23"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15206452,
+                    "logo": "https://highlightly.net/soccer/images/teams/15206452.png",
+                    "name": "Costa Rica U23"
+                }
+            }
+        ],
+        "collected_at": "2026-07-30T15:10:52.407141+00:00"
+    },
+    "1366996124": {
+        "match": {
+            "id": 1366996124,
+            "round": "Group Stage - 1",
+            "date": "2026-07-30T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 8670772,
+                "logo": "https://highlightly.net/soccer/images/teams/8670772.png",
+                "name": "Colombia U23"
+            },
+            "homeTeam": {
+                "id": 15214962,
+                "logo": "https://highlightly.net/soccer/images/teams/15214962.png",
+                "name": "Panama U23"
+            },
+            "league": {
+                "id": 865400,
+                "logo": null,
+                "name": "CAC Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15214962,
+                    "logo": "https://highlightly.net/soccer/images/teams/15214962.png",
+                    "name": "Panama U23"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8670772,
+                    "logo": "https://highlightly.net/soccer/images/teams/8670772.png",
+                    "name": "Colombia U23"
+                }
+            }
+        ],
+        "collected_at": "2026-07-30T15:10:57.285257+00:00"
+    },
+    "1366996975": {
+        "match": {
+            "id": 1366996975,
+            "round": "Group Stage - 2",
+            "date": "2026-07-30T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16155317,
+                "logo": "https://highlightly.net/soccer/images/teams/16155317.png",
+                "name": "Venezuela U23"
+            },
+            "homeTeam": {
+                "id": 8662262,
+                "logo": "https://highlightly.net/soccer/images/teams/8662262.png",
+                "name": "Mexico U23"
+            },
+            "league": {
+                "id": 865400,
+                "logo": null,
+                "name": "CAC Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8662262,
+                    "logo": "https://highlightly.net/soccer/images/teams/8662262.png",
+                    "name": "Mexico U23"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16155317,
+                    "logo": "https://highlightly.net/soccer/images/teams/16155317.png",
+                    "name": "Venezuela U23"
+                }
+            }
+        ],
+        "collected_at": "2026-07-30T15:10:57.516796+00:00"
     }
 }

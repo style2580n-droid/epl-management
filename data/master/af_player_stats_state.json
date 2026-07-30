@@ -1,0 +1,43 @@
+{
+ "date": "2026-07-30",
+ "calls_used": {
+  "0": 4,
+  "1": 0
+ },
+ "done_matches": {
+  "SCCambuur_FCUtrecht_221406": {
+   "status": "no_af_fixture",
+   "at": "2026-07-30T15:13:49.550805+00:00"
+  },
+  "FCGroningen_FCVolendam_221412": {
+   "status": "no_af_fixture",
+   "at": "2026-07-30T15:13:49.550805+00:00"
+  },
+  "HeraclesAlmelo_Excelsior_221423": {
+   "status": "no_af_fixture",
+   "at": "2026-07-30T15:13:49.550805+00:00"
+  },
+  "GironaFC_DeportivoAlavés_219316": {
+   "status": "no_af_fixture",
+   "at": "2026-07-30T15:13:49.550805+00:00"
+  },
+  "LeMans_Nantes_219389": {
+   "status": "no_af_fixture",
+   "at": "2026-07-30T15:13:49.550805+00:00"
+  }
+ },
+ "af_fixtures_cache": {
+  "eredivisie": {
+   "fetched_at": 1785424429.561565,
+   "fixtures": []
+  },
+  "laliga": {
+   "fetched_at": 1785424429.8287659,
+   "fixtures": []
+  },
+  "ligue1": {
+   "fetched_at": 1785424429.9858096,
+   "fixtures": []
+  }
+ }
+}
