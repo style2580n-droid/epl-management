@@ -1137,6 +1137,24 @@ def build_h2h():
             'date': r['date'],
         })
 
+    # 2026-07-30 추가: 지난 시즌 상대전적 병합. collect_fixtures_multileague.py
+    # 가 별도로 수집해둔 h2h_history_multileague.json(이번 시즌 SCHEDULE과
+    # 완전히 독립된 소스 — events() 목록 응답의 home_score/away_score를
+    # 그대로 쓴 것, incidents/ 같은 무거운 조회 없음)을 그대로 병합만 한다.
+    # 이 파일 자체가 이미 리그별로 나뉘어 있어서 재분류(to_kr_league) 불필요.
+    h2h_history = _load_json('data/master/h2h_history_multileague.json', {})
+    n_history_merged = 0
+    for lk, rows_prev in h2h_history.items():
+        if lk not in h2h_by_league:
+            continue
+        for r in rows_prev:
+            key = '|||'.join(sorted([r['home'], r['away']]))
+            h2h_by_league[lk].setdefault(key, []).append(r)
+            n_history_merged += 1
+    if n_history_merged:
+        print(f'[app_export_multileague] 지난시즌 상대전적 {n_history_merged}건 '
+              f'병합', flush=True)
+
     out = {lk: {} for lk in LEAGUE_TEAM_MAPS}
     for lk, h2h in h2h_by_league.items():
         for key, games in h2h.items():

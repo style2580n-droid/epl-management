@@ -26,6 +26,7 @@ from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league, _ascii_fold
 
 OUT_PATH = 'data/master/schedule_multileague.json'
 SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
+H2H_HISTORY_PATH = 'data/master/h2h_history_multileague.json'  # 2026-07-30 지난시즌 상대전적
 PAGE_LIMIT = 200
 _MAX_PAGES = 50
 KST = timezone(timedelta(hours=9))
@@ -62,6 +63,14 @@ LEAGUE_MATCHERS = {
         n == 'mls' or 'major league soccer' in n),
     'eliteserien': lambda n, c: c == 'norway' and (
         n == 'eliteserien' or 'eliteserien' in n),
+    # 2026-07-30 추가: 월드컵 앱을 하드코딩 데이터에서 파이프라인 연동으로
+    # 전환하기 위해 8개리그와 동일한 메커니즘(BSD leagues() 검색)으로 발견.
+    # 정확한 BSD 표기명은 미확정 — "world cup" 포함 + 연령대/여자부 대회
+    # 제외로 안전하게 매칭. 못 찾으면 _find_leagues()가 이미 자동으로
+    # "못 찾은 리그" 로그를 찍어주니 다음 실행 로그로 바로 확인 가능.
+    'worldcup': lambda n, c: 'world cup' in n and not any(
+        x in n for x in ('u17', 'u-17', 'u20', 'u-20', 'u23', 'u-23',
+                          'women', "women's", 'female', 'club world cup')),
 }
 
 
@@ -264,13 +273,16 @@ def _find_league_teams(client, league_key, league_id, season_id):
 _LEAGUE_PARAM_NAME = None
 
 
-def _fetch_league_events(client, league_id):
+def _fetch_league_events(client, league_id, date_from_override=None):
     global _LEAGUE_PARAM_NAME
     candidates = [_LEAGUE_PARAM_NAME] if _LEAGUE_PARAM_NAME else ['league_id', 'league']
     # 2026-07-24: 이 리그의 실제 시즌 시작일을 알면 그걸 date_from으로 쓴다
     # (모듈 상수 DATE_FROM=오늘-30일 대신) — 몇 달째 진행 중인 리그의 과거
     # 경기가 안 잘리게. 모르면 기존처럼 DATE_FROM.
-    date_from = _LEAGUE_SEASON_START.get(league_id, DATE_FROM)
+    # 2026-07-30 추가: date_from_override가 있으면 그걸 우선(지난 시즌 H2H
+    # 백필용 — build_h2h_history_multileague()에서만 사용, 기존 호출부는
+    # 전부 None을 넘기니 동작 그대로 유지됨).
+    date_from = date_from_override or _LEAGUE_SEASON_START.get(league_id, DATE_FROM)
 
     for param_name in candidates:
         first = _unwrap(client.events(**{
@@ -446,6 +458,7 @@ def main():
 
     out = {}
     squads_out = {}
+    h2h_history_by_league = {}
     for league_key, (league_id, season_id, real_name) in leagues.items():
         team_ids = _find_league_teams(client, league_key, league_id, season_id)
         if not team_ids:
@@ -486,6 +499,49 @@ def main():
 
         rows = _fetch_league_events(client, league_id)
         schedule = []
+        # 2026-07-30 추가: "예전시즌 상대전적" 요청 대응. events() 목록 응답
+        # 자체에 home_score/away_score가 이미 있다는 게 위 SCHEDULE 로직으로
+        # 실측 확정돼 있었음(추가 API 부담 없음, incidents/ 같은 무거운
+        # 경기별 상세조회가 전혀 필요 없음) — _LEAGUE_SEASON_START(올 시즌
+        # 시작일)에서 1년 전~직전까지를 date_from_override로 딱 한 번 더
+        # 조회해서 지난 시즌 스코어를 확보한다. team_ids는 이미 위에서
+        # 만든 걸 그대로 재사용(중복 API 호출 없음).
+        h2h_history_rows = []
+        season_start = _LEAGUE_SEASON_START.get(league_id)
+        if season_start:
+            try:
+                _y, _m, _d = season_start.split('-')
+                prev_from = f'{int(_y)-1}-{_m}-{_d}'
+                prev_to = (datetime.strptime(season_start, '%Y-%m-%d')
+                           - timedelta(days=1)).strftime('%Y-%m-%d')
+                prev_rows = _fetch_league_events(client, league_id,
+                                                  date_from_override=prev_from)
+                for ev in prev_rows:
+                    ev_date = (ev.get('event_date') or '')[:10]
+                    if ev_date and ev_date > prev_to:
+                        continue  # 이번 시즌 것과 겹치는 구간은 SCHEDULE이 이미 담당
+                    home_kr = team_ids.get(ev.get('home_team_id'))
+                    away_kr = team_ids.get(ev.get('away_team_id'))
+                    if not (home_kr and away_kr):
+                        continue
+                    if (ev.get('status') or '').lower() != 'finished':
+                        continue
+                    h_score, a_score = ev.get('home_score'), ev.get('away_score')
+                    if not (isinstance(h_score, (int, float)) and isinstance(a_score, (int, float))):
+                        continue
+                    date_kst, _ = _kst_date_time(ev.get('event_date'))
+                    h2h_history_rows.append({
+                        'home': home_kr, 'away': away_kr,
+                        'homeGoals': h_score, 'awayGoals': a_score,
+                        'date': date_kst,
+                    })
+                print(f'[collect_fixtures_multileague] {league_key} 지난시즌 H2H: '
+                      f'{prev_from}~{prev_to} 구간 {len(h2h_history_rows)}건 확보',
+                      flush=True)
+            except Exception as e:
+                print(f'[collect_fixtures_multileague] {league_key} 지난시즌 H2H '
+                      f'조회 실패(스킵, 이번 시즌 SCHEDULE엔 영향 없음): {e}', flush=True)
+        h2h_history_by_league[league_key] = h2h_history_rows
         # 2026-07-18: 이벤트에는 등장하는데 team_ids에 없는 팀 진단.
         # 챔피언십 552건 중 46건(=한 팀의 풀시즌)이 매칭 실패 → 그 팀이
         # /teams 응답에 다른 표기로 있거나 아예 없거나 둘 중 하나인데,
@@ -554,6 +610,11 @@ def main():
         json.dump(out, f, ensure_ascii=False, indent=1)
     with open(SQUADS_OUT_PATH, 'w', encoding='utf-8') as f:
         json.dump(squads_out, f, ensure_ascii=False, indent=1)
+    with open(H2H_HISTORY_PATH, 'w', encoding='utf-8') as f:
+        json.dump(h2h_history_by_league, f, ensure_ascii=False, indent=1)
+    n_h2h = sum(len(v) for v in h2h_history_by_league.values())
+    print(f'[collect_fixtures_multileague] 지난시즌 H2H 총 {n_h2h}건 → '
+          f'{H2H_HISTORY_PATH} 저장', flush=True)
     print('[collect_fixtures_multileague] 완료', flush=True)
 
 
