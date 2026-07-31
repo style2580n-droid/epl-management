@@ -170,13 +170,19 @@ jobs:
           # 나머지 파이프라인 안 죽게 || true.
           python collect_football_data_co_uk.py || true
           python collect_clubelo.py || true
-          # 2026-07-31 추가(2-1 최종 대안): API-FOOTBALL 무료플랜이 최신시즌을
-          # 아예 안 줘서(계정정지와 별개 문제, 실측 확인됨) fbrapi.com(공식
-          # 문서로 필드명 확인됨, collect_xg_fbref.py가 이미 같은 서비스로
-          # xG를 받고 있어 인증 패턴 검증돼있음)으로 선수별 슈팅/유효슈팅/
-          # 태클/인터셉트/키패스/드리블 6개 필드를 채운다. fbref 3초/요청
-          # 제한 때문에 오래 걸릴 수 있어 || true 필수.
-          python collect_fbref_player_stats.py || true
+          # 2026-07-31: fbrapi.com(collect_fbref_player_stats.py)은 여기서
+          # 제거함 — SSL/User-Agent 다 고쳐봤지만 최종적으로 봇탐지 JS
+          # 챌린지 페이지("Redirecting...")로 리다이렉트당하는 걸로 실측
+          # 확인됨. requests로는 자바스크립트를 실행 못 해서 절대 못 뚫음 —
+          # 코드로 고칠 수 있는 문제가 아니라 파일 자체를 뺌(스크립트는
+          # 남겨뒀지만 파이프라인에서 호출 안 함).
+          # 2026-07-31 추가(2-1 최종 대안): BSD 공식 스펙(football-schema.json,
+          # 사용자가 BSD 사이트에서 직접 받음)에서 확인된 /api/v2/events/{id}/
+          # player-stats/ 로 선수별 슈팅/유효슈팅/태클/인터셉트/키패스/드리블
+          # 6개 필드를 채운다. matches.match_id가 BSD 이벤트 ID 그대로라
+          # 팀명매칭/날짜매칭/시즌계산이 전혀 필요 없어서, 이번 세션에 시도한
+          # 것 중 구조적으로 가장 실패 위험이 낮다.
+          python collect_bsd_player_stats.py || true
           python normalizer.py
           python viz_engine.py
           python player_profiler.py
