@@ -10,6 +10,25 @@ SQLite 데이터베이스 계층
 import json
 import os
 import sqlite3
+import unicodedata
+import re as _re
+
+# 2026-07-31 추가: 이벤트 payload에 date 필드 자체가 없다는 게 실측 확인돼서
+# (진단로그: payload 키가 home/away/events 세 개뿐), h2h.json/h2h_history_
+# multileague.json(둘 다 날짜+팀명+스코어를 이미 갖고 있음)에서 역으로 날짜를
+# 찾아오기 위해 팀명 별칭 테이블이 필요하다. db.py는 원래 app_export*.py에
+# 의존하지 않는 독립 모듈이었는데 이번에 처음 의존이 생긴다 — db.py가
+# 파이프라인에서 제일 앞단(다른 모든 스크립트가 이 DB를 읽음)이라 이 임포트가
+# 실패하면 절대 안 되므로 반드시 방어적으로(실패해도 빈 dict로 폴백, db.py
+# 자체는 절대 안 죽게).
+try:
+    from app_export import TEAM_NAME_MAP as _EPL_TEAM_MAP
+except Exception:
+    _EPL_TEAM_MAP = {}
+try:
+    from app_export_multileague import LEAGUE_TEAM_MAPS as _ML_TEAM_MAPS
+except Exception:
+    _ML_TEAM_MAPS = {}
 
 DB_PATH = 'data/football.db'
 
@@ -301,22 +320,96 @@ def load_lineups(conn, path='data/master/lineups.json'):
     return n
 
 
+def _fold(name):
+    n = unicodedata.normalize('NFKD', name)
+    n = ''.join(c for c in n if not unicodedata.combining(c))
+    return unicodedata.normalize('NFC', n)
+
+
+def _norm_kr(name):
+    """한글 안전 정규화(다른 수집기들과 동일 원칙 — NFKD로 한글이 자모로
+    쪼개지는 걸 NFC로 재조합해서 방지)."""
+    if not name:
+        return ''
+    n = _fold(name)
+    n = _re.sub(r'\b(FC|AFC|CF)\b', '', n, flags=_re.I)
+    return _re.sub(r'[^a-z가-힣0-9]', '', n.lower())
+
+
+def _build_kr_team_index():
+    """영문/한글 별칭 -> 한글 표준명. EPL_TEAM_MAP/LEAGUE_TEAM_MAPS 임포트가
+    실패했으면(위에서 방어) 그냥 빈 인덱스 — 날짜 역조회를 못 할 뿐 db.py
+    자체는 정상 동작."""
+    index = {}
+    for kr, aliases in _EPL_TEAM_MAP.items():
+        for a in list(aliases) + [kr]:
+            index[_norm_kr(a)] = kr
+    for team_map in _ML_TEAM_MAPS.values():
+        for kr, aliases in team_map.items():
+            for a in list(aliases) + [kr]:
+                index.setdefault(_norm_kr(a), kr)
+    return index
+
+
+_KR_TEAM_INDEX = _build_kr_team_index()
+
+
+def _build_h2h_date_lookup(paths=('data/master/h2h.json',
+                                   'data/master/h2h_history_multileague.json')):
+    """h2h.json류 파일들(이미 날짜+팀명+스코어를 갖고 있음)에서
+    (한글팀A, 한글팀B, 팀A골, 팀B골) -> 날짜 매핑을 만든다. 팀명 순서를
+    안 가리려고 양방향(A,B)과 (B,A) 둘 다 키로 넣는다."""
+    lookup = {}
+    for path in paths:
+        data = _load_json(path, {})
+        if not isinstance(data, dict):
+            continue
+        for games in data.values():
+            if not isinstance(games, list):
+                continue
+            for g in games:
+                date = g.get('date')
+                home, away = g.get('home'), g.get('away')
+                hg, ag = g.get('homeGoals'), g.get('awayGoals')
+                if not (date and home and away) or hg is None or ag is None:
+                    continue
+                lookup[(home, away, hg, ag)] = date
+                lookup[(away, home, ag, hg)] = date  # 반대 방향도(안전망)
+    return lookup
+
+
+def _resolve_date_from_h2h(h2h_lookup, home_raw, away_raw, home_goals, away_goals):
+    """이벤트 payload의 home/away(한글이든 영문이든)를 한글 표준명으로 바꿔서
+    h2h_lookup에서 날짜를 찾는다. 실패하면 None(기존 동작과 동일 — 절대
+    크래시 안 남)."""
+    try:
+        home_kr = _KR_TEAM_INDEX.get(_norm_kr(home_raw))
+        away_kr = _KR_TEAM_INDEX.get(_norm_kr(away_raw))
+        if not home_kr or not away_kr:
+            return None
+        return h2h_lookup.get((home_kr, away_kr, home_goals, away_goals))
+    except Exception:
+        return None
+
+
 def load_events(conn, events_dir='data/events'):
     import glob
     n_match = n_ev = 0
+    n_date_backfilled = 0
     _diag_printed = False
+    h2h_lookup = _build_h2h_date_lookup()
     for path in glob.glob(os.path.join(events_dir, '*.json')):
         payload = _load_json(path, {})
         if not isinstance(payload, dict) or 'events' not in payload:
             continue
         if not _diag_printed:
-            # 2026-07-31 추가: matches.date가 전부 비어있는 게 확인돼서(Understat/
-            # football-data.co.uk 연동 작업 중 실측 확인) payload.get('date')가
-            # 실제로 맞는 필드명인지 의심됨 — 예전에 goal 판정 필드명도 이런
-            # 식으로 틀렸었다(바로 위 2026-07-30 코멘트 참고). 실제 최상위
-            # 키를 한 번만 찍어서 다음 로그로 확정한다.
+            # 2026-07-31: matches.date가 전부 비어있는 게 확인돼서(Understat/
+            # football-data.co.uk 연동 작업 중 실측 확인) 이벤트 payload에
+            # 애초에 date 필드가 없다는 게 드러났다(이 진단으로 확정) — 그래서
+            # 아래에서 h2h.json 역조회로 백필한다.
             print(f'[db] [diag] events payload 최상위 키 샘플: {sorted(payload.keys())} '
-                  f'· date 필드 값: {payload.get("date")!r}', flush=True)
+                  f'· date 필드 값: {payload.get("date")!r} · h2h 역조회용 데이터 '
+                  f'{len(h2h_lookup)}건 로드됨', flush=True)
             _diag_printed = True
         mid = os.path.splitext(os.path.basename(path))[0]
         home, away = payload.get('home'), payload.get('away')
@@ -330,9 +423,19 @@ def load_events(conn, events_dir='data/events'):
             # 으로 저장되고 있었다(H2H가 전부 0-0으로만 나오던 진짜 원인).
             if e.get('type') == 'goal':
                 goals[e.get('team')] = goals.get(e.get('team'), 0) + 1
+        date_val = payload.get('date')
+        if not date_val:
+            # 2026-07-31 추가: payload에 date가 아예 없어서(위 진단으로 확정)
+            # h2h.json/h2h_history_multileague.json에서 (팀명,스코어)로
+            # 역조회한다. 못 찾으면 그냥 None(기존과 동일 — Understat 등
+            # 날짜 필요한 소비처는 그 경기만 건너뛸 뿐 크래시 없음).
+            date_val = _resolve_date_from_h2h(
+                h2h_lookup, home, away, goals.get(home, 0), goals.get(away, 0))
+            if date_val:
+                n_date_backfilled += 1
         conn.execute('INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?)',
                      (mid, payload.get('league'), home, away,
-                      payload.get('date'), 'FINISHED',
+                      date_val, 'FINISHED',
                       goals.get(home, 0), goals.get(away, 0)))
         conn.execute('DELETE FROM events WHERE match_id = ?', (mid,))
         core = ('minute', 'second', 'team', 'player', 'type',
@@ -349,6 +452,8 @@ def load_events(conn, events_dir='data/events'):
                  json.dumps(extra, ensure_ascii=False) if extra else None))
             n_ev += 1
         n_match += 1
+    print(f'[db] events 적재: {n_match}경기 중 날짜 h2h역조회로 백필 '
+          f'{n_date_backfilled}건', flush=True)
     return n_match, n_ev
 
 
