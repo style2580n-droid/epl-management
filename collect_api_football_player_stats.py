@@ -475,7 +475,15 @@ def _resolve_match_teams(row):
 
 # ============================================================ 메인
 def main():
-    keys = [os.environ.get('API_FOOTBALL_KEY1'), os.environ.get('API_FOOTBALL_KEY2')]
+    # 2026-07-31 수정: 계정정지 풀리면 API_FOOTBALL_KEY 하나로 통합할 예정이라
+    # 미리 대응 — KEY1/KEY2도 계속 인식하니(하위호환) 나중에 시크릿을 어떤
+    # 조합으로 등록해도(단일 키만 / KEY1·2만 / 셋 다) 코드 수정 없이 그대로
+    # 작동한다. 중복값은 자동 제거.
+    keys = []
+    for _name in ('API_FOOTBALL_KEY', 'API_FOOTBALL_KEY1', 'API_FOOTBALL_KEY2'):
+        _v = os.environ.get(_name)
+        if _v and _v not in keys:
+            keys.append(_v)
     keys = [k for k in keys if k]
     if not keys:
         print('[collect_api_football_player_stats] API_FOOTBALL_KEY1/2 '
