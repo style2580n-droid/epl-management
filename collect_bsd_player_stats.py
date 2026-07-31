@@ -135,9 +135,18 @@ def _get_keys():
     return keys
 
 
+# 2026-07-31 추가: 150건 시도해서 전부 실패했는데 HTTP 에러 로그가 하나도
+# 없었다 — 404를 "정상(그 경기엔 데이터 없음)"으로 조용히 처리하던 게
+# 원인 진단을 가렸다. 상태코드별 집계 + 첫 응답 원문 샘플을 남겨서 진짜
+# 원인(전부 404인지/인증실패인지/응답구조가 다른지)을 다음 로그로 확정한다.
+_status_counts = {}
+_sample_logged = False
+
+
 def fetch_player_stats(session, keys, match_id):
     """/api/v2/events/{id}/player-stats/ 호출. 페이지네이션 있으면 따라감
     (스펙상 PaginatedPlayerStatList — count/next/previous/results)."""
+    global _sample_logged
     url = f'{BSD_BASE}/api/v2/events/{match_id}/player-stats/'
     params = {'limit': 50}
     all_results = []
@@ -148,10 +157,16 @@ def fetch_player_stats(session, keys, match_id):
         except Exception as e:
             print(f'[collect_bsd_player_stats] event={match_id} 요청 실패: {e}', flush=True)
             continue
+        _status_counts[r.status_code] = _status_counts.get(r.status_code, 0) + 1
+        if not _sample_logged:
+            print(f'[collect_bsd_player_stats] [diag] event={match_id} 첫 응답 '
+                  f'HTTP {r.status_code} · 본문 앞 300자: {r.text[:300]!r}', flush=True)
+            _sample_logged = True
         if r.status_code == 404:
             return None  # 이 경기는 BSD에 player-stats 자체가 없음(정상적인 경우)
         if r.status_code != 200:
-            print(f'[collect_bsd_player_stats] event={match_id} HTTP {r.status_code}', flush=True)
+            print(f'[collect_bsd_player_stats] event={match_id} HTTP {r.status_code}: '
+                  f'{r.text[:200]!r}', flush=True)
             continue
         try:
             data = r.json()
@@ -371,8 +386,8 @@ def main():
 
     _atomic_write(STATE_PATH, state)
     print(f'[collect_bsd_player_stats] 완료: 신규병합 {n_ok}경기({n_merged_players}명), '
-          f'데이터없음/매칭실패 {n_no_data + n_no_merge}건, '
-          f'키별 사용 {len(keys)}개', flush=True)
+          f'응답없음/404 {n_no_data}건, 응답은 왔지만 선수매칭 실패 {n_no_merge}건, '
+          f'키별 사용 {len(keys)}개, 상태코드별 집계: {_status_counts}', flush=True)
 
 
 if __name__ == '__main__':
