@@ -152,11 +152,44 @@ def fbref_season_id(date_str):
 
 
 # ============================================================ fbrapi 호출
+# 2026-07-31 발견: fbrapi.com 호출 시 SSLCertVerificationError(unable to get
+# local issuer certificate)가 남 — 2026-07-15에 collect_xg_fbref.py에서 이미
+# 겪었던 것과 동일(그때 pip install --upgrade certifi로 시도했지만 이번에도
+# 재현됨). "로컬 CA 번들이 오래됨" 문제였다면 certifi 업데이트로 고쳐졌을
+# 텐데 안 고쳐진 걸 보면, 서버 쪽이 중간 인증서 체인을 불완전하게 보내는
+# 문제일 가능성이 높다(클라이언트 쪽 조치로는 못 고치는 종류) — 그래서 이
+# 서버 하나에 한해서만, SSL 검증 실패 시에만 verify=False로 재시도한다.
+# 무차별 적용 아님: 다른 종류의 요청 실패(타임아웃, 404 등)는 그대로 실패.
+_ssl_warned = False
+
+
+def _request(session, method, url, **kwargs):
+    global _ssl_warned
+    try:
+        return session.request(method, url, timeout=30, **kwargs)
+    except requests.exceptions.SSLError as e:
+        if not _ssl_warned:
+            print(f'[collect_fbref_player_stats] [diag] SSL 인증서 검증 실패 '
+                  f'(fbrapi.com 서버측 인증서 체인 문제로 추정, 2026-07-15에 '
+                  f'collect_xg_fbref.py도 동일 증상 — certifi 업데이트로도 '
+                  f'안 고쳐짐): {e} — 이 서버에 한해 검증 없이 재시도', flush=True)
+            _ssl_warned = True
+        try:
+            return session.request(method, url, timeout=30, verify=False, **kwargs)
+        except Exception as e2:
+            print(f'[collect_fbref_player_stats] 검증 없이도 실패: {e2}', flush=True)
+            return None
+
+
 def generate_api_key(session):
     try:
-        r = session.post(f'{BASE_URL}/generate_api_key', timeout=30)
-    except Exception as e:
-        print(f'[collect_fbref_player_stats] API 키 발급 실패: {e}', flush=True)
+        import urllib3
+        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+    except Exception:
+        pass
+    r = _request(session, 'POST', f'{BASE_URL}/generate_api_key')
+    if r is None:
+        print('[collect_fbref_player_stats] API 키 발급 실패(요청 자체 실패)', flush=True)
         return None
     if r.status_code != 200:
         print(f'[collect_fbref_player_stats] API 키 발급 HTTP {r.status_code}', flush=True)
@@ -165,11 +198,10 @@ def generate_api_key(session):
 
 
 def _get(session, api_key, path, params):
-    try:
-        r = session.get(f'{BASE_URL}{path}', params=params,
-                         headers={'X-API-Key': api_key}, timeout=30)
-    except Exception as e:
-        print(f'[collect_fbref_player_stats] {path} 요청 실패: {e}', flush=True)
+    r = _request(session, 'GET', f'{BASE_URL}{path}', params=params,
+                 headers={'X-API-Key': api_key})
+    if r is None:
+        print(f'[collect_fbref_player_stats] {path} 요청 실패(재시도 포함 모두 실패)', flush=True)
         return None
     if r.status_code != 200:
         print(f'[collect_fbref_player_stats] {path} HTTP {r.status_code} '
