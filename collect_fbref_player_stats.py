@@ -203,8 +203,19 @@ def generate_api_key(session):
     for attempt in range(3):
         r = _request(session, 'POST', f'{BASE_URL}/generate_api_key')
         if r is not None and r.status_code == 200:
-            return r.json().get('api_key')
-        if r is not None and r.status_code != 200:
+            # 2026-07-31 추가: status 200이어도 body가 JSON이 아닐 수 있어서
+            # (실측 확인: JSONDecodeError로 스크립트 자체가 죽음 — .json()을
+            # 안 감쌌던 버그) try/except로 방어 + 실패 시 원문 일부를 로그로.
+            try:
+                key = r.json().get('api_key')
+                if key:
+                    return key
+                print(f'[collect_fbref_player_stats] API 키 응답에 api_key '
+                      f'없음(시도 {attempt+1}/3): {r.text[:200]!r}', flush=True)
+            except ValueError as e:
+                print(f'[collect_fbref_player_stats] API 키 응답이 JSON 아님 '
+                      f'(시도 {attempt+1}/3): {e} · 원문: {r.text[:200]!r}', flush=True)
+        elif r is not None and r.status_code != 200:
             print(f'[collect_fbref_player_stats] API 키 발급 HTTP {r.status_code} '
                   f'(시도 {attempt+1}/3)', flush=True)
         else:
@@ -226,7 +237,12 @@ def _get(session, api_key, path, params):
         print(f'[collect_fbref_player_stats] {path} HTTP {r.status_code} '
               f'params={params}', flush=True)
         return None
-    return r.json()
+    try:
+        return r.json()
+    except ValueError as e:
+        print(f'[collect_fbref_player_stats] {path} 응답이 JSON 아님: {e} · '
+              f'원문: {r.text[:200]!r}', flush=True)
+        return None
 
 
 def fetch_league_matches(session, api_key, league_id, season_id):
