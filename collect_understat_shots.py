@@ -179,6 +179,18 @@ def fetch_league_matches(session, understat_league):
         return []
     print(f'[collect_understat_shots] [diag] {understat_league} 응답 HTML {len(html)}자',
           flush=True)
+    # 2026-07-31 추가: 5개 리그 응답 크기가 전부 18.6KB 근처로 거의 똑같이
+    # 나온 게 확인돼서(진짜 리그 페이지라면 리그마다 크게 달라야 정상) —
+    # 봇 차단/챌린지 페이지를 받고 있을 가능성이 높다고 의심됨. <title>과
+    # 본문 앞부분을 그대로 로그에 남겨서 확정한다(Cloudflare "Just a
+    # moment..." 류 문구가 있는지 직접 확인).
+    title_m = re.search(r'<title[^>]*>(.*?)</title>', html, re.I | re.S)
+    title = title_m.group(1).strip()[:120] if title_m else '(title 태그 없음)'
+    body_snippet = re.sub(r'\s+', ' ', html[:300]).strip()
+    print(f'[collect_understat_shots] [diag] {understat_league} <title>: {title}',
+          flush=True)
+    print(f'[collect_understat_shots] [diag] {understat_league} 본문 앞 300자: '
+          f'{body_snippet}', flush=True)
     data = _extract_js_json(html, 'datesData')
     if not isinstance(data, list):
         return []
