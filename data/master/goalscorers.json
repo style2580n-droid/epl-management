@@ -10999,6 +10999,71 @@
  "eredivisie": [],
  "eliteserien": [
   {
+   "home": "보되글림트",
+   "away": "릴레스트룀",
+   "date": "2026-08-01",
+   "eid": 207029,
+   "goals": [
+    {
+     "scorer": "M. Karlsbakk",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 77
+    },
+    {
+     "scorer": "J. Hauge",
+     "assist": "S. Auklend",
+     "team": null,
+     "is_home": true,
+     "minute": 63
+    },
+    {
+     "scorer": "S. Fet",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 25
+    },
+    {
+     "scorer": "O. Blomberg",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 17
+    }
+   ]
+  },
+  {
+   "home": "발레렝가",
+   "away": "함캄",
+   "date": "2026-08-01",
+   "eid": 207035,
+   "goals": [
+    {
+     "scorer": "P. Metcalfe",
+     "assist": "S. S. Nilsen",
+     "team": null,
+     "is_home": false,
+     "minute": 83
+    },
+    {
+     "scorer": "M. Gjone",
+     "assist": "A. Ekeroth",
+     "team": null,
+     "is_home": false,
+     "minute": 68
+    },
+    {
+     "scorer": "A. B. Potur",
+     "assist": "M. Gjone",
+     "team": null,
+     "is_home": false,
+     "minute": 45
+    }
+   ]
+  },
+  {
    "home": "로젠보르그",
    "away": "프레드릭스타",
    "date": "2026-07-28",
