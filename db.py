@@ -304,10 +304,20 @@ def load_lineups(conn, path='data/master/lineups.json'):
 def load_events(conn, events_dir='data/events'):
     import glob
     n_match = n_ev = 0
+    _diag_printed = False
     for path in glob.glob(os.path.join(events_dir, '*.json')):
         payload = _load_json(path, {})
         if not isinstance(payload, dict) or 'events' not in payload:
             continue
+        if not _diag_printed:
+            # 2026-07-31 추가: matches.date가 전부 비어있는 게 확인돼서(Understat/
+            # football-data.co.uk 연동 작업 중 실측 확인) payload.get('date')가
+            # 실제로 맞는 필드명인지 의심됨 — 예전에 goal 판정 필드명도 이런
+            # 식으로 틀렸었다(바로 위 2026-07-30 코멘트 참고). 실제 최상위
+            # 키를 한 번만 찍어서 다음 로그로 확정한다.
+            print(f'[db] [diag] events payload 최상위 키 샘플: {sorted(payload.keys())} '
+                  f'· date 필드 값: {payload.get("date")!r}', flush=True)
+            _diag_printed = True
         mid = os.path.splitext(os.path.basename(path))[0]
         home, away = payload.get('home'), payload.get('away')
         evs = payload['events']
