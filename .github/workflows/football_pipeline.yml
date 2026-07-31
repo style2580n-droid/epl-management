@@ -153,6 +153,12 @@ jobs:
           # 점진적으로 채워지도록 설계됨(data/master/af_player_stats_state.json
           # 에 진행상태 영구 저장 → 커밋되어 다음 실행에 이어짐).
           python collect_api_football_player_stats.py || true
+          # 2026-07-31 추가(2-1 보조/2순위): API-FOOTBALL 계정정지 대응으로, 그 사이
+          # Understat 크롤링해서 슈팅/유효슈팅 2개 필드만이라도 채운다(태클/키패스/
+          # 드리블/인터셉트는 Understat에 없어서 여전히 공백 — API-FOOTBALL 복구 전까지
+          # 못 채움). 크롤링이라 API보다 훨씬 깨지기 쉬워서 || true 필수.
+          # API-FOOTBALL 계정 복구되면 이 줄은 끄는 걸 검토할 것(공식 API가 더 안정적).
+          python collect_understat_shots.py || true
           python normalizer.py
           python viz_engine.py
           python player_profiler.py
