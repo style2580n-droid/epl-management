@@ -47,6 +47,7 @@ jobs:
           FOOTBALL_DATA_API_KEY1: ${{ secrets.FOOTBALL_DATA_API_KEY1 }}
           FOOTBALL_DATA_API_KEY2: ${{ secrets.FOOTBALL_DATA_API_KEY2 }}
           THESPORTSDB_API_KEY: ${{ secrets.THESPORTSDB_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
           API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
           LEAGUE: ${{ matrix.league }}
@@ -77,6 +78,7 @@ jobs:
         env:
           BSD_API_KEY: ${{ secrets.BSD_API_KEY }}
           BSD_API_KEY2: ${{ secrets.BSD_API_KEY2 }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
           API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
           HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
@@ -134,6 +136,7 @@ jobs:
           FOOTBALL_DATA_API_KEY1: ${{ secrets.FOOTBALL_DATA_API_KEY1 }}
           FOOTBALL_DATA_API_KEY2: ${{ secrets.FOOTBALL_DATA_API_KEY2 }}
           THESPORTSDB_API_KEY: ${{ secrets.THESPORTSDB_API_KEY }}
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
           API_FOOTBALL_KEY1: ${{ secrets.API_FOOTBALL_KEY1 }}
           API_FOOTBALL_KEY2: ${{ secrets.API_FOOTBALL_KEY2 }}
           HIGHLIGHTLY_KEY: ${{ secrets.HIGHLIGHTLY_KEY }}
