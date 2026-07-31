@@ -352,7 +352,7 @@ def main():
     print(f'[collect_understat_shots] DB 종료경기 {len(rows)}건 조회', flush=True)
 
     candidates = []
-    n_league_matched = n_metrics_found = 0
+    n_league_matched = n_metrics_found = n_already_ok = n_no_date = 0
     for row in rows:
         resolved = _resolve_match_teams(row)
         if not resolved:
@@ -367,14 +367,22 @@ def main():
             continue
         n_metrics_found += 1
         if done.get(mid, {}).get('status') == 'ok':
+            n_already_ok += 1
             continue
         date_str = row['date'] or ''
         if not date_str:
+            n_no_date += 1
             continue
         season_slug = understat_season_slug(date_str)
         candidates.append((mid, lk, kr_home, kr_away, date_str, season_slug, metrics_path))
     print(f'[collect_understat_shots] Understat 지원리그+팀 매칭 {n_league_matched}건, '
-          f'metrics 파일 존재 {n_metrics_found}건, 처리 대상(미완료) {len(candidates)}건', flush=True)
+          f'metrics 파일 존재 {n_metrics_found}건, 처리 대상(미완료) {len(candidates)}건 '
+          f'[diag] 이미ok로표시됨={n_already_ok}, 날짜없음={n_no_date}', flush=True)
+    if n_already_ok == n_metrics_found and n_metrics_found > 0:
+        sample = [mid for mid in list(done.keys())[:5]]
+        print(f'[collect_understat_shots] [diag] 전부 이미 ok 상태 — state 파일에 '
+              f'쌓인 done_matches 샘플(최대5개): '
+              f'{[(mid, done[mid]) for mid in sample]}', flush=True)
 
     # 2026-07-31 수정: 우리 DB엔 여러 시즌 경기가 섞여있어서(3년치 상대전적 등)
     # 리그당 한 번이 아니라 (리그, 시즌) 조합별로 필요할 때만 조회·캐시한다.
