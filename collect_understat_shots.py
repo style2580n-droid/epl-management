@@ -56,11 +56,21 @@ DB_PATH = 'data/football.db'
 METRICS_DIR = 'data/metrics'
 STATE_PATH = 'data/master/understat_shots_state.json'
 UNDERSTAT_BASE = 'https://understat.com'
-SEASON = '2026'  # 이 코드베이스 전체 관례(26/27시즌=2026)와 동일 — 검증 필요(위 docstring 참고)
 REQUEST_DELAY_SEC = 1.5  # 매치 페이지 요청 사이 딜레이(크롤링 매너)
 MAX_NEW_MATCHES_PER_RUN = 30  # 한 실행당 신규 매치 처리 상한(부담 최소화 + 파이프라인 시간 보호
 UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
       '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36')
+
+
+def understat_season_slug(date_str):
+    """이 프로젝트는 시즌을 '시작연도'로 부르는데(26-27시즌="2026"), Understat은
+    '끝나는 연도'로 부른다(2026-07-31 실측 확인: /league/EPL/2026 요청 →
+    <title>에 "2025/2026 season"으로 응답 — 2025년 8월 시작~2026년 5월 종료
+    시즌이 Understat 기준 "2026"). 그래서 8월~12월 경기는 다음 해가, 1월~7월
+    경기는 같은 해가 Understat 시즌 슬러그다."""
+    year, month = int(date_str[:4]), int(date_str[5:7])
+    end_year = year + 1 if month >= 8 else year
+    return str(end_year)
 
 # Understat이 실제로 커버하는 리그만(확인된 5개 — 나머지 4개 리그는 대상 자체에서 제외)
 UNDERSTAT_LEAGUES = {
@@ -171,26 +181,22 @@ def _fetch(session, url):
         return None
 
 
-def fetch_league_matches(session, understat_league):
-    """리그 페이지에서 datesData(매치 목록: understat matchId, 팀명, 날짜, 종료여부)를 가져온다."""
-    url = f'{UNDERSTAT_BASE}/league/{understat_league}/{SEASON}'
+def fetch_league_matches(session, understat_league, season_slug):
+    """리그 페이지에서 datesData(매치 목록: understat matchId, 팀명, 날짜, 종료여부)를 가져온다.
+    season_slug는 understat_season_slug()로 계산한 값(끝나는 연도 기준)."""
+    url = f'{UNDERSTAT_BASE}/league/{understat_league}/{season_slug}'
     html = _fetch(session, url)
     if not html:
         return []
-    print(f'[collect_understat_shots] [diag] {understat_league} 응답 HTML {len(html)}자',
-          flush=True)
-    # 2026-07-31 추가: 5개 리그 응답 크기가 전부 18.6KB 근처로 거의 똑같이
-    # 나온 게 확인돼서(진짜 리그 페이지라면 리그마다 크게 달라야 정상) —
-    # 봇 차단/챌린지 페이지를 받고 있을 가능성이 높다고 의심됨. <title>과
-    # 본문 앞부분을 그대로 로그에 남겨서 확정한다(Cloudflare "Just a
-    # moment..." 류 문구가 있는지 직접 확인).
+    # 2026-07-31: 처음엔 응답 크기가 리그마다 거의 똑같아서 차단페이지를
+    # 의심했었는데, 실측 결과 <title>이 정상("EPL xG Table... 2025/2026
+    # season")이라 차단은 아니었다 — 원인은 시즌 슬러그를 반대로 계산했던
+    # 것(위 understat_season_slug 독스트링 참고). 진단 로그는 혹시 모를 재발
+    # 대비로 유지.
     title_m = re.search(r'<title[^>]*>(.*?)</title>', html, re.I | re.S)
     title = title_m.group(1).strip()[:120] if title_m else '(title 태그 없음)'
-    body_snippet = re.sub(r'\s+', ' ', html[:300]).strip()
-    print(f'[collect_understat_shots] [diag] {understat_league} <title>: {title}',
-          flush=True)
-    print(f'[collect_understat_shots] [diag] {understat_league} 본문 앞 300자: '
-          f'{body_snippet}', flush=True)
+    print(f'[collect_understat_shots] [diag] {understat_league}/{season_slug} '
+          f'HTML {len(html)}자 · <title>: {title}', flush=True)
     data = _extract_js_json(html, 'datesData')
     if not isinstance(data, list):
         return []
@@ -362,28 +368,37 @@ def main():
         n_metrics_found += 1
         if done.get(mid, {}).get('status') == 'ok':
             continue
-        candidates.append((mid, lk, kr_home, kr_away, row['date'], metrics_path))
+        date_str = row['date'] or ''
+        if not date_str:
+            continue
+        season_slug = understat_season_slug(date_str)
+        candidates.append((mid, lk, kr_home, kr_away, date_str, season_slug, metrics_path))
     print(f'[collect_understat_shots] Understat 지원리그+팀 매칭 {n_league_matched}건, '
           f'metrics 파일 존재 {n_metrics_found}건, 처리 대상(미완료) {len(candidates)}건', flush=True)
 
-    # 리그 페이지는 리그당 1번만 조회(캐시 없이 매번 새로 — 시즌 통째로 받아오는
-    # 가벼운 호출이라 매치 페이지처럼 딜레이/제한을 안 둔다)
-    league_matches_cache = {}
-    for lk, understat_league in UNDERSTAT_LEAGUES.items():
-        matches = fetch_league_matches(session, understat_league)
-        league_matches_cache[lk] = matches
-        print(f'[collect_understat_shots] {understat_league} 리그페이지: '
-              f'{len(matches)}경기 수신', flush=True)
-        time.sleep(REQUEST_DELAY_SEC)
+    # 2026-07-31 수정: 우리 DB엔 여러 시즌 경기가 섞여있어서(3년치 상대전적 등)
+    # 리그당 한 번이 아니라 (리그, 시즌) 조합별로 필요할 때만 조회·캐시한다.
+    league_season_cache = {}
+
+    def _get_league_matches(lk, season_slug):
+        key = (lk, season_slug)
+        if key not in league_season_cache:
+            understat_league = UNDERSTAT_LEAGUES[lk]
+            matches = fetch_league_matches(session, understat_league, season_slug)
+            league_season_cache[key] = matches
+            print(f'[collect_understat_shots] {understat_league}/{season_slug} 리그페이지: '
+                  f'{len(matches)}경기 수신', flush=True)
+            time.sleep(REQUEST_DELAY_SEC)
+        return league_season_cache[key]
 
     n_ok = n_no_match = n_no_shots = 0
     n_merged_players = 0
-    for mid, lk, kr_home, kr_away, date_str, metrics_path in candidates:
+    for mid, lk, kr_home, kr_away, date_str, season_slug, metrics_path in candidates:
         if n_ok + n_no_match + n_no_shots >= MAX_NEW_MATCHES_PER_RUN:
             print(f'[collect_understat_shots] 실행당 상한({MAX_NEW_MATCHES_PER_RUN}건) 도달 '
                   f'→ 중단(다음 실행에서 이어감)', flush=True)
             break
-        understat_matches = league_matches_cache.get(lk, [])
+        understat_matches = _get_league_matches(lk, season_slug)
         m, swapped = find_understat_match(understat_matches, kr_home, kr_away, date_str, lk)
         if not m:
             done[mid] = {'status': 'no_match', 'at': datetime.now(timezone.utc).isoformat()}
