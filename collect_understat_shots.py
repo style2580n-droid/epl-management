@@ -132,6 +132,22 @@ def _extract_js_json(html, var_name):
     스크래핑에서 널리 쓰이는 알려진 패턴 — 공식 문서는 없음)."""
     m = re.search(var_name + r"\s*=\s*JSON\.parse\('(.*?)'\)", html)
     if not m:
+        # 2026-07-31 추가: 실전 첫 실행에서 5개 리그 전부 0건이 나왔는데 에러
+        # 로그가 하나도 안 찍혀서 원인을 못 봤다 — 정규식이 아예 안 맞는
+        # 경우를 조용히 넘기던 게 원인이었다. 이제 HTML 길이, 변수명 자체가
+        # 존재하는지, 존재한다면 그 주변 200자를 로그로 남겨서 다음 실행
+        # 로그로 실제 원인(변수명이 다른지/JSON.parse 패턴이 다른지/페이지
+        # 자체가 아예 다른 내용인지)을 바로 알 수 있게 한다.
+        idx = html.find(var_name)
+        if idx == -1:
+            print(f'[collect_understat_shots] [diag] {var_name} 정규식 매치 실패 — '
+                  f'변수명 자체가 HTML(길이 {len(html)}자)에 없음. 페이지 구조가 '
+                  f'바뀌었거나 차단 페이지를 받았을 가능성', flush=True)
+        else:
+            snippet = html[idx:idx+200].replace('\n', ' ')
+            print(f'[collect_understat_shots] [diag] {var_name} 변수명은 있는데 '
+                  f'JSON.parse(\'...\') 정규식은 안 맞음 — 주변 200자: {snippet}',
+                  flush=True)
         return None
     raw = m.group(1)
     try:
@@ -161,6 +177,8 @@ def fetch_league_matches(session, understat_league):
     html = _fetch(session, url)
     if not html:
         return []
+    print(f'[collect_understat_shots] [diag] {understat_league} 응답 HTML {len(html)}자',
+          flush=True)
     data = _extract_js_json(html, 'datesData')
     if not isinstance(data, list):
         return []
