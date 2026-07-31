@@ -590,6 +590,8 @@ def main():
             row = {
                 'home': home_kr, 'away': away_kr,
                 'date': date_kst, 'time': time_kst or '00:00',
+                'id': ev.get('id'),  # 2026-07-31 추가: BSD 이벤트 id(EPL판과 동일 이유 —
+                # 배당 조회를 event_id로 직접 하면 팀명 매칭이 아예 불필요해짐).
             }
             # 2026-07-24 수정: 종료경기를 통째로 버리던 걸 고침. 클라이언트의
             # computeStandingsTable()/StandingsTab이 SCHEDULE의 각 fixture에

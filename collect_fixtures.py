@@ -254,6 +254,10 @@ def main():
             schedule.append({
                 'date': date_kst, 'time': time_kst or '00:00',
                 'home': home_kr, 'away': away_kr,
+                'id': eid,  # 2026-07-31 추가: BSD 이벤트 id. 프론트엔드가 이걸로
+                # /api/v2/odds/?event_id=... 직접 조회 가능(팀명 매칭 불필요 —
+                # odds-api.io/the-odds-api처럼 팀명 fuzzy 매칭하다 실패하는
+                # 문제 자체가 없어짐, 같은 BSD 이벤트 객체에서 나온 id라서).
             })
 
     schedule.sort(key=lambda m: (m['date'], m['time']))
