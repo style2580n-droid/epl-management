@@ -31207,5 +31207,115 @@
             }
         ],
         "collected_at": "2026-07-31T05:13:52.949606+00:00"
+    },
+    "1368025834": {
+        "match": {
+            "id": 1368025834,
+            "round": "Group Stage",
+            "date": "2026-07-31T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1472163,
+                "logo": "https://highlightly.net/soccer/images/teams/1472163.png",
+                "name": "Mexico Women"
+            },
+            "homeTeam": {
+                "id": 1478971,
+                "logo": "https://highlightly.net/soccer/images/teams/1478971.png",
+                "name": "Colombia Women"
+            },
+            "league": {
+                "id": 1053471,
+                "logo": null,
+                "name": "Central American and Caribbean Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1478971,
+                    "logo": "https://highlightly.net/soccer/images/teams/1478971.png",
+                    "name": "Colombia Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1472163,
+                    "logo": "https://highlightly.net/soccer/images/teams/1472163.png",
+                    "name": "Mexico Women"
+                }
+            }
+        ],
+        "collected_at": "2026-07-31T07:21:05.367238+00:00"
+    },
+    "1368026685": {
+        "match": {
+            "id": 1368026685,
+            "round": "Group Stage",
+            "date": "2026-07-31T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1470461,
+                "logo": "https://highlightly.net/soccer/images/teams/1470461.png",
+                "name": "Costa Rica Women"
+            },
+            "homeTeam": {
+                "id": 14404810,
+                "logo": null,
+                "name": "Dominican Republic Women"
+            },
+            "league": {
+                "id": 1053471,
+                "logo": null,
+                "name": "Central American and Caribbean Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14404810,
+                    "logo": null,
+                    "name": "Dominican Republic Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1470461,
+                    "logo": "https://highlightly.net/soccer/images/teams/1470461.png",
+                    "name": "Costa Rica Women"
+                }
+            }
+        ],
+        "collected_at": "2026-07-31T07:21:05.638106+00:00"
     }
 }
