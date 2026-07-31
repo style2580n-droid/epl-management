@@ -159,6 +159,14 @@ jobs:
           # 못 채움). 크롤링이라 API보다 훨씬 깨지기 쉬워서 || true 필수.
           # API-FOOTBALL 계정 복구되면 이 줄은 끄는 걸 검토할 것(공식 API가 더 안정적).
           python collect_understat_shots.py || true
+          # 2026-07-31 추가(2순위 크롤링 대상 나머지 둘): Football-Data.co.uk
+          # (팀단위 결과/배당/슈팅/코너, MLS·엘리테세리엔 제외 7개리그) +
+          # Club Elo(전세계 클럽 Elo 스냅샷, BSD ELO 보조/대조용). 둘 다
+          # 정적 CSV라 Understat보다 안정적일 것으로 기대되지만, 이 프로젝트
+          # 전체 원칙대로 실행 로그로 검증 전까지는 확정 아님. 실패해도
+          # 나머지 파이프라인 안 죽게 || true.
+          python collect_football_data_co_uk.py || true
+          python collect_clubelo.py || true
           python normalizer.py
           python viz_engine.py
           python player_profiler.py
