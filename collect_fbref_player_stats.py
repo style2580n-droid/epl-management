@@ -163,10 +163,20 @@ def fbref_season_id(date_str):
 _ssl_warned = False
 
 
+UA = ('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+      '(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36')
+
+
 def _request(session, method, url, **kwargs):
     global _ssl_warned
+    # 2026-07-31 추가: 기본 User-Agent(python-requests/x.x)가 그대로 나가고
+    # 있었다 — 봇으로 차단됐을 가능성이 있어 다른 크롤링 스크립트들과 동일하게
+    # 브라우저 UA를 명시. "원격 서버가 응답 없이 연결 끊음"(3회 재시도 전부
+    # 동일 증상)이 이걸로 해결되는지 다음 실행 로그로 검증 필요.
+    headers = dict(kwargs.pop('headers', None) or {})
+    headers.setdefault('User-Agent', UA)
     try:
-        return session.request(method, url, timeout=30, **kwargs)
+        return session.request(method, url, timeout=30, headers=headers, **kwargs)
     except requests.exceptions.SSLError as e:
         if not _ssl_warned:
             print(f'[collect_fbref_player_stats] [diag] SSL 인증서 검증 실패 '
@@ -175,7 +185,7 @@ def _request(session, method, url, **kwargs):
                   f'안 고쳐짐): {e} — 이 서버에 한해 검증 없이 재시도', flush=True)
             _ssl_warned = True
         try:
-            return session.request(method, url, timeout=30, verify=False, **kwargs)
+            return session.request(method, url, timeout=30, headers=headers, verify=False, **kwargs)
         except Exception as e2:
             print(f'[collect_fbref_player_stats] 검증 없이도 실패: {e2}', flush=True)
             return None
