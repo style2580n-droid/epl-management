@@ -187,14 +187,23 @@ def generate_api_key(session):
         urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     except Exception:
         pass
-    r = _request(session, 'POST', f'{BASE_URL}/generate_api_key')
-    if r is None:
-        print('[collect_fbref_player_stats] API 키 발급 실패(요청 자체 실패)', flush=True)
-        return None
-    if r.status_code != 200:
-        print(f'[collect_fbref_player_stats] API 키 발급 HTTP {r.status_code}', flush=True)
-        return None
-    return r.json().get('api_key')
+    # 2026-07-31 추가: SSL 우회 후 "원격 서버가 응답 없이 연결 끊음"이 실측
+    # 확인됨 — 인증서 문제와는 다른 증상이라, fbrapi.com 서버 자체가 그
+    # 순간 일시적으로 불안정했을 가능성을 반영해 재시도(딜레이 포함)를 둔다.
+    for attempt in range(3):
+        r = _request(session, 'POST', f'{BASE_URL}/generate_api_key')
+        if r is not None and r.status_code == 200:
+            return r.json().get('api_key')
+        if r is not None and r.status_code != 200:
+            print(f'[collect_fbref_player_stats] API 키 발급 HTTP {r.status_code} '
+                  f'(시도 {attempt+1}/3)', flush=True)
+        else:
+            print(f'[collect_fbref_player_stats] API 키 발급 요청 실패 '
+                  f'(시도 {attempt+1}/3)', flush=True)
+        if attempt < 2:
+            time.sleep(5)
+    print('[collect_fbref_player_stats] API 키 발급 3회 시도 전부 실패', flush=True)
+    return None
 
 
 def _get(session, api_key, path, params):
