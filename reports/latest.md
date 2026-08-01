@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 11:27
+생성(UTC): 2026-08-01 12:21
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -60,8 +60,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 44건 (누적 342건)
+오늘 48건 (누적 346건)
 
 ## 📊 경기 고급 지표
 
@@ -11698,13 +11702,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| B. Diakité | - | 13.3 | 75.0 | 0.0 | - |
-| J. Hato | - | 2.7 | 35.0 | 0.0 | - |
-| E. Konsa | - | 0.0 | 37.5 | 0.0 | - |
-| J. Acheampong | - | 0.0 | 31.2 | 0.0 | - |
-| W. Saliba | 0.0 | 0.0 | 37.5 | 0.0 | - |
-| K. Mainoo | - | 0.0 | 25.0 | 0.0 | - |
-| S. Bornauw | - | 0.0 | 25.0 | 0.0 | - |
-| M. Lacroix | 0.0 | 2.7 | 30.0 | 0.0 | - |
-| K. Danso | - | 0.0 | 23.2 | 0.0 | - |
-| C. Bassey | - | 0.0 | 21.9 | 0.0 | - |
+| M. Boxall | - | 0.0 | 87.5 | 0.0 | - |
+| K. Tete | 0.0 | 0.0 | 93.8 | 0.0 | - |
+| D. Coppola | - | 0.0 | 56.2 | 0.0 | - |
+| B. Craig | 0.0 | 20.0 | 31.2 | 0.0 | - |
+| Morato | - | 0.0 | 37.5 | 0.0 | - |
+| F. Schär | 0.0 | 0.0 | 50.0 | 0.0 | - |
+| L. Hall | - | 3.3 | 25.0 | 0.0 | - |
+| Murillo | 0.0 | 2.2 | 33.3 | 0.0 | - |
+| C. Roldán | 0.0 | 8.9 | 25.0 | 0.0 | - |
+| A. Robinson | 0.0 | 4.4 | 29.2 | 0.0 | - |
