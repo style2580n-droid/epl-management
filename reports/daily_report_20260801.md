@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 04:43
+생성(UTC): 2026-08-01 05:48
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -40,8 +40,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 24건 (누적 322건)
+오늘 28건 (누적 326건)
 
 ## 📊 경기 고급 지표
 
@@ -11678,13 +11682,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| J. Lukić | - | 6.7 | 12.5 | 0.0 | - |
-| C. Bradley | - | 3.3 | 15.6 | 0.0 | - |
-| L. O'Nien | - | 0.0 | 18.8 | 0.0 | - |
-| Raul Gustavo | - | 0.0 | 16.7 | 0.0 | - |
-| D. Diani | - | 0.0 | 16.7 | 0.0 | - |
-| S. Adingra | 0.0 | 6.7 | 12.5 | 0.0 | - |
-| D. Ndoye | 0.0 | 0.0 | 18.8 | 0.0 | - |
-| N. Domínguez | - | 6.7 | 6.2 | 0.0 | - |
-| J. Hato | - | 2.7 | 10.0 | 0.0 | - |
-| A. Gutman | 0.0 | 4.4 | 12.5 | 0.0 | - |
+| D. Kamada | - | 8.9 | 25.0 | 0.0 | - |
+| R. Sessegnon | 0.0 | 0.0 | 31.2 | 0.0 | - |
+| A. Marín | 0.0 | 8.9 | 16.7 | 0.0 | - |
+| S. Moreira | 0.0 | 0.0 | 25.0 | 0.0 | - |
+| B. Fernandes | 0.0 | 13.3 | 4.2 | 0.0 | - |
+| M. Gusto | 0.0 | 11.1 | 2.1 | 0.0 | - |
+| D. Dalot | - | 6.7 | 3.1 | 0.0 | - |
+| C. Gakpo | 0.0 | 8.0 | 5.0 | 0.0 | - |
+| Y. Minteh | 0.0 | 6.7 | 6.2 | 0.0 | - |
+| M. Pašalić | 0.0 | 4.4 | 8.3 | 0.0 | - |
