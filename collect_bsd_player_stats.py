@@ -20,23 +20,30 @@ player-stats/` 엔드포인트로 선수별 슈팅/유효슈팅/태클(승리)/�
   전혀 필요 없다. 이번 세션 내내 다른 소스들을 괴롭혔던 "팀명이 안 맞음"
   류 실패 자체가 구조적으로 발생할 수 없다.
 
-## 필드 매핑 (BSD PlayerStat 스키마 -> 우리 metrics.json 필드)
+## 필드 매핑 (BSD player-stats 응답 -> 우리 metrics.json 필드, 2026-08-01
+## 실측 확인 — 스펙엔 예시 응답이 없어서 처음엔 아래와 다르게 잘못 가정했었음)
 - shots         <- total_shots
 - sot           <- shots_on_target
 - tackles_won   <- won_tackle (total_tackle은 "시도" — 우리 필드명(승리)과
                    더 정확히 일치하는 won_tackle을 씀)
 - interceptions <- interception
 - key_passes    <- key_pass
-- dribbles      <- dribble_attempted (스펙상 타입이 이상하게 string으로
-                   돼있음 — 실제 값이 뭐로 오는지 첫 실행 로그로 확인 필요,
-                   방어적으로 파싱)
-- dribbles_won  <- dribble_won (dribble_attempted와 동일한 타입 이슈)
+- dribbles      <- total_contest (처음엔 dribble_attempted로 잘못 가정했었음)
+- dribbles_won  <- won_contest (처음엔 dribble_won으로 잘못 가정했었음)
+- tackles(별칭) <- tackles_won과 동일값. app_export.py는 'tackles_won'을,
+                   player_profiler.py/season_aggregator.py/transfer_impact.py
+                   (이번 세션 이전부터 있던 파일들, 실측 확인)는 'tackles'를
+                   읽어서 코드베이스 안에 두 관례가 공존 — 둘 다 채움.
 
-## 선수 이름 매칭
-BSD가 주는 player.short_name이 "M. Salah" 형식(스펙에 명시)이라, 우리
-metrics.json의 기존 키(BSD incidents 기반, 같은 "이니셜.성" 형식)와
-직접 일치할 가능성이 높다 — 그래도 안전하게 다른 수집기들과 동일한
-이니셜.성 폴백 매칭을 유지한다.
+## 선수 이름 매칭 (2026-08-01 실측 확인 — 처음 가정과 다름)
+player-stats 응답 레코드엔 'player' 중첩객체가 없고 player_id(정수)만 있다
+(처음엔 player.short_name이 바로 있을 거라고 잘못 가정했었음). 그래서
+/api/v2/players/{id}/ 로 이름(name/short_name)을 별도 조회해서
+data/master/bsd_player_names_cache.json에 캐시해뒀다가 재사용한다 —
+매치마다 최대 40명씩 매번 새로 조회하면 너무 느려서, 한 번 조회한 선수는
+다음 실행부터 캐시로 즉시 해결된다(캐시가 쌓일수록 실행이 빨라짐).
+metrics.json 기존 키(BSD incidents 기반 "이니셜.성" 형식)와 매칭할 때는
+다른 수집기들과 동일하게 short_name 우선 + 이니셜.성 폴백을 쓴다.
 
 ## 인증
 파이프라인이 이미 쓰는 BSD_API_KEY/BSD_API_KEY2를 그대로 재사용
@@ -45,9 +52,8 @@ metrics.json의 기존 키(BSD incidents 기반, 같은 "이니셜.성" 형식)�
 
 ## 안전 실패
 요청/파싱 전부 try/except. 실패해도 나머지 파이프라인 안 죽음(yml에서
-|| true). 응답 스키마 중 "No response body"로 문서화된 부분(정확한 예시
-응답 없음)은 첫 실행 로그로 최종 검증할 것 — 특히 dribble_attempted/
-dribble_won의 실제 타입.
+|| true). 실행당 매치 수(25건)/신규 선수이름 조회 수(300명) 둘 다 상한을
+둬서 파이프라인 시간을 보호한다.
 """
 import json
 import os
@@ -69,9 +75,16 @@ from app_export_multileague import LEAGUE_TEAM_MAPS
 DB_PATH = 'data/football.db'
 METRICS_DIR = 'data/metrics'
 STATE_PATH = 'data/master/bsd_player_stats_state.json'
+PLAYER_NAME_CACHE_PATH = 'data/master/bsd_player_names_cache.json'
 BSD_BASE = 'https://sports.bzzoiro.com'
 REQUEST_DELAY = 0.4  # collect_fixtures.py가 쓰던 BSD 요청 간 딜레이(0.3초)와 비슷한 수준
-MAX_NEW_MATCHES_PER_RUN = 150  # match_id 그대로 쓰는 구조라 다른 수집기들보다 훨씬 가벼움
+# 2026-08-01 수정: player-stats 응답에 선수 "이름"이 없고 player_id(정수)만
+# 있는 게 실측 확인돼서, /api/v2/players/{id}/ 로 이름을 별도 조회해야 한다
+# (캐시해서 재사용 — 한 번 조회한 선수는 다음 실행부터 재조회 안 함). 이름
+# 조회가 추가되면서 매치당 API 호출이 최대 40배까지 늘 수 있어 실행당
+# 상한을 크게 낮춘다.
+MAX_NEW_MATCHES_PER_RUN = 25
+MAX_NEW_PLAYER_NAMES_PER_RUN = 300  # 실행당 신규 선수이름 조회 상한(시간 보호)
 
 
 # ============================================================ 팀명 매칭
@@ -142,6 +155,29 @@ def _get_keys():
 _status_counts = {}
 _sample_logged = False
 _sample_row_logged = False
+
+
+def fetch_player_name(session, keys, player_id):
+    """/api/v2/players/{id}/ 로 name/short_name을 받는다(공식 스펙
+    PlayerDetailV2Schema로 필드명 확인됨 — 추측 아님)."""
+    url = f'{BSD_BASE}/api/v2/players/{player_id}/'
+    for key in keys:
+        try:
+            r = session.get(url, headers={'Authorization': f'Token {key}'}, timeout=15)
+        except Exception:
+            continue
+        if r.status_code != 200:
+            continue
+        try:
+            data = r.json()
+        except ValueError:
+            continue
+        name = data.get('name')
+        short_name = data.get('short_name')
+        if name or short_name:
+            return {'name': name, 'short_name': short_name or None}
+        return None
+    return None
 
 
 def fetch_player_stats(session, keys, event_id):
@@ -233,8 +269,8 @@ def _resolve_metrics_key(candidate_names, players, last_name_index):
 
 
 def _num(v):
-    """BSD 스펙상 dribble_attempted/dribble_won이 이상하게 string 타입으로
-    문서화돼있음 — int든 문자열이든 방어적으로 처리."""
+    """혹시 몰라 문자열/정수 둘 다 방어적으로 처리(BSD 응답 필드가 실제로는
+    전부 정수로 왔지만, 다른 필드에서도 이런 타입 이슈가 재발할 수 있어 유지)."""
     if v is None:
         return None
     try:
@@ -246,31 +282,44 @@ def _num(v):
             return None
 
 
-def parse_player_stats(results):
-    """results(list of PlayerStat) -> {(name_short, name_full): {필드:값}}
-    나중에 병합 단계에서 두 이름 후보 다 시도."""
+def parse_player_stats(results, player_names):
+    """results, player_names({str(player_id): {'name','short_name'}}) ->
+    ([((name_short, name_full), rec), ...], missing_player_ids(set)).
+    missing_player_ids는 이번에 이름 캐시에 없어서 못 채운 선수id들 —
+    호출부가 이걸로 다음에 조회할 대상을 정한다."""
     global _sample_row_logged
     out = []
+    missing = set()
     for row in (results or []):
         if not _sample_row_logged:
             # 2026-08-01 추가: 최상위 응답 구조(results vs player_stats)가
             # 스펙 예시 없이 틀렸던 전례가 있어서, 개별 선수 레코드 구조도
-            # 한 번 그대로 로그에 남긴다 — 필드명(total_shots/won_tackle 등)이
-            # 실제로 맞는지 다음 로그로 바로 확정하기 위함.
+            # 한 번 그대로 로그에 남긴다 — 필드명이 실제로 맞는지 다음 로그로
+            # 바로 확정하기 위함. (2026-08-01 실측 확인: 이 레코드엔 'player'
+            # 중첩객체가 없고 'player_id'(정수)만 있음 — 이름은 /api/v2/
+            # players/{id}/ 로 별도 조회 필요. 드리블 필드명도 예상했던
+            # dribble_attempted/dribble_won이 아니라 total_contest/
+            # won_contest였음.)
             print(f'[collect_bsd_player_stats] [diag] 선수 레코드 원본 샘플: {row}',
                   flush=True)
             _sample_row_logged = True
-        player = row.get('player') or {}
-        name_full = player.get('name')
-        name_short = player.get('short_name')
+        pid = row.get('player_id')
+        if pid is None:
+            continue
+        info = player_names.get(str(pid))
+        if not info:
+            missing.add(pid)
+            continue
+        name_full = info.get('name')
+        name_short = info.get('short_name')
         if not name_full and not name_short:
             continue
         rec = {}
         for field, src_key in (
             ('shots', 'total_shots'), ('sot', 'shots_on_target'),
             ('tackles_won', 'won_tackle'), ('interceptions', 'interception'),
-            ('key_passes', 'key_pass'), ('dribbles', 'dribble_attempted'),
-            ('dribbles_won', 'dribble_won'),
+            ('key_passes', 'key_pass'),
+            ('dribbles', 'total_contest'), ('dribbles_won', 'won_contest'),
         ):
             val = _num(row.get(src_key))
             if val is not None:
@@ -284,7 +333,7 @@ def parse_player_stats(results):
             rec['tackles'] = rec['tackles_won']
         if rec:
             out.append(((name_short, name_full), rec))
-    return out
+    return out, missing
 
 
 def merge_into_metrics(metrics_path, parsed):
@@ -362,6 +411,7 @@ def main():
 
     state = _load_json(STATE_PATH, {})
     done = state.setdefault('done_matches', {})
+    player_names = _load_json(PLAYER_NAME_CACHE_PATH, {})  # {str(player_id): {name, short_name}}
     session = requests.Session()
 
     rows = _finished_matches()
@@ -384,38 +434,85 @@ def main():
         candidates.append((mid, real_event_id, metrics_path))
     print(f'[collect_bsd_player_stats] 우리 추적리그 소속 {n_league_matched}건(참고용, '
           f'조회는 전체 대상), metrics 파일 존재 {n_metrics_found}건, '
-          f'처리 대상(미완료) {len(candidates)}건', flush=True)
+          f'처리 대상(미완료) {len(candidates)}건, 선수이름 캐시 {len(player_names)}명 보유',
+          flush=True)
 
-    n_ok = n_no_data = n_no_merge = 0
-    n_merged_players = 0
-    for mid, real_event_id, metrics_path in candidates:
-        if n_ok + n_no_data + n_no_merge >= MAX_NEW_MATCHES_PER_RUN:
-            print(f'[collect_bsd_player_stats] 실행당 상한({MAX_NEW_MATCHES_PER_RUN}건) '
-                  f'도달 → 중단(다음 실행에서 이어감)', flush=True)
-            break
+    # 2026-08-01 추가: 1단계 — 실행당 상한만큼 매치별 player-stats를 먼저
+    # 전부 받아둔다(캐시에 없는 선수 이름이 있어도 여기선 스킵 안 함).
+    match_results = []  # [(mid, metrics_path, results_or_None), ...]
+    n_fetch_no_data = 0
+    for mid, real_event_id, metrics_path in candidates[:MAX_NEW_MATCHES_PER_RUN]:
         results = fetch_player_stats(session, keys, real_event_id)
         time.sleep(REQUEST_DELAY)
         if results is None:
             done[mid] = {'status': 'no_data', 'at': datetime.now(timezone.utc).isoformat()}
-            n_no_data += 1
+            n_fetch_no_data += 1
             continue
-        parsed = parse_player_stats(results)
+        match_results.append((mid, metrics_path, results))
+    if len(candidates) > MAX_NEW_MATCHES_PER_RUN:
+        print(f'[collect_bsd_player_stats] 실행당 상한({MAX_NEW_MATCHES_PER_RUN}건) '
+              f'적용 → 나머지는 다음 실행에서 이어감', flush=True)
+
+    # 2026-08-01 추가: 2단계 — 이번에 받은 응답들에 등장하는 고유 player_id 중
+    # 캐시에 없는 것만 모아서 이름을 일괄 조회한다(같은 선수가 여러 경기에
+    # 나와도 한 번만 조회 — 캐시가 쌓일수록 이후 실행은 점점 빨라짐).
+    all_player_ids = set()
+    for _, _, results in match_results:
+        for row in (results or []):
+            pid = row.get('player_id')
+            if pid is not None:
+                all_player_ids.add(pid)
+    missing_ids = [pid for pid in all_player_ids if str(pid) not in player_names]
+    print(f'[collect_bsd_player_stats] 이번 응답에 등장한 고유 선수 {len(all_player_ids)}명, '
+          f'이름 캐시에 없는 선수 {len(missing_ids)}명', flush=True)
+
+    n_name_fetched = n_name_failed = 0
+    for pid in missing_ids[:MAX_NEW_PLAYER_NAMES_PER_RUN]:
+        info = fetch_player_name(session, keys, pid)
+        time.sleep(REQUEST_DELAY)
+        if info:
+            player_names[str(pid)] = info
+            n_name_fetched += 1
+        else:
+            n_name_failed += 1
+    if len(missing_ids) > MAX_NEW_PLAYER_NAMES_PER_RUN:
+        print(f'[collect_bsd_player_stats] 선수이름 조회도 실행당 상한'
+              f'({MAX_NEW_PLAYER_NAMES_PER_RUN}명) 적용 → 나머지는 다음 실행', flush=True)
+    _atomic_write(PLAYER_NAME_CACHE_PATH, player_names)
+    print(f'[collect_bsd_player_stats] 선수이름 신규조회 {n_name_fetched}명 성공, '
+          f'{n_name_failed}명 실패 → 캐시 총 {len(player_names)}명', flush=True)
+
+    # 2026-08-01 추가: 3단계 — 이제 이름이 채워진 만큼 파싱+병합.
+    n_ok = n_no_data = n_no_merge = 0
+    n_merged_players = 0
+    for mid, metrics_path, results in match_results:
+        parsed, missing = parse_player_stats(results, player_names)
         if not parsed:
+            # 이번 실행에서 이름을 못 채운 선수만 있었다면 완료(ok)로 확정
+            # 짓지 않고 다음 실행에서 재시도하도록 status를 남기지 않는다
+            # (done에 아무것도 안 남기면 다음 실행의 candidates에 다시 포함됨).
+            if missing:
+                n_no_data += 1
+                continue
             done[mid] = {'status': 'no_data', 'at': datetime.now(timezone.utc).isoformat()}
             n_no_data += 1
             continue
         n_merged = merge_into_metrics(metrics_path, parsed)
         n_merged_players += n_merged
-        if n_merged:
+        if n_merged and not missing:
+            # missing이 남아있으면(일부 선수만 이름 확보) 아직 완료가 아니므로
+            # ok로 확정 안 짓고 다음 실행에서 나머지 선수까지 마저 채우게 둔다.
             done[mid] = {'status': 'ok', 'at': datetime.now(timezone.utc).isoformat(), 'players': n_merged}
             n_ok += 1
+        elif n_merged:
+            n_ok += 1  # 부분 병합 — done엔 안 남겨서 다음 실행에 재시도
         else:
             done[mid] = {'status': 'no_data', 'at': datetime.now(timezone.utc).isoformat()}
             n_no_merge += 1
 
     _atomic_write(STATE_PATH, state)
     print(f'[collect_bsd_player_stats] 완료: 신규병합 {n_ok}경기({n_merged_players}명), '
-          f'응답없음/404 {n_no_data}건, 응답은 왔지만 선수매칭 실패 {n_no_merge}건, '
+          f'응답없음/404 {n_fetch_no_data + n_no_data}건, 선수매칭 실패 {n_no_merge}건, '
           f'키별 사용 {len(keys)}개, 상태코드별 집계: {_status_counts}', flush=True)
 
 
