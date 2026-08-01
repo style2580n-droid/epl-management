@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 14:12
+생성(UTC): 2026-08-01 16:24
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -72,8 +72,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 56건 (누적 354건)
+오늘 60건 (누적 358건)
 
 ## 📊 경기 고급 지표
 
@@ -10073,6 +10077,13 @@
 | 프레드릭스타 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 35.7% |
 | 비킹 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 64.3% |
 
+### 프레드릭스타_산네피오르_207030
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 프레드릭스타 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 58.3% |
+| 산네피오르 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 41.7% |
+
 ### 프레드릭스타_함캄_206972
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -11680,6 +11691,7 @@
 - **프레드릭스타_릴레스트룀_207005**: [heatmap(릴레스트룀)](viz/프레드릭스타_릴레스트룀_207005_릴레스트룀_heatmap.svg) · [network(릴레스트룀)](viz/프레드릭스타_릴레스트룀_207005_릴레스트룀_network.svg) · [shotmap(릴레스트룀)](viz/프레드릭스타_릴레스트룀_207005_릴레스트룀_shotmap.svg) · [heatmap(프레드릭스타)](viz/프레드릭스타_릴레스트룀_207005_프레드릭스타_heatmap.svg) · [network(프레드릭스타)](viz/프레드릭스타_릴레스트룀_207005_프레드릭스타_network.svg) · [shotmap(프레드릭스타)](viz/프레드릭스타_릴레스트룀_207005_프레드릭스타_shotmap.svg)
 - **프레드릭스타_발레렝가_206933**: [heatmap(발레렝가)](viz/프레드릭스타_발레렝가_206933_발레렝가_heatmap.svg) · [network(발레렝가)](viz/프레드릭스타_발레렝가_206933_발레렝가_network.svg) · [shotmap(발레렝가)](viz/프레드릭스타_발레렝가_206933_발레렝가_shotmap.svg) · [heatmap(프레드릭스타)](viz/프레드릭스타_발레렝가_206933_프레드릭스타_heatmap.svg) · [network(프레드릭스타)](viz/프레드릭스타_발레렝가_206933_프레드릭스타_network.svg) · [shotmap(프레드릭스타)](viz/프레드릭스타_발레렝가_206933_프레드릭스타_shotmap.svg)
 - **프레드릭스타_비킹_206944**: [heatmap(비킹)](viz/프레드릭스타_비킹_206944_비킹_heatmap.svg) · [network(비킹)](viz/프레드릭스타_비킹_206944_비킹_network.svg) · [shotmap(비킹)](viz/프레드릭스타_비킹_206944_비킹_shotmap.svg) · [heatmap(프레드릭스타)](viz/프레드릭스타_비킹_206944_프레드릭스타_heatmap.svg) · [network(프레드릭스타)](viz/프레드릭스타_비킹_206944_프레드릭스타_network.svg) · [shotmap(프레드릭스타)](viz/프레드릭스타_비킹_206944_프레드릭스타_shotmap.svg)
+- **프레드릭스타_산네피오르_207030**: [heatmap(산네피오르)](viz/프레드릭스타_산네피오르_207030_산네피오르_heatmap.svg) · [network(산네피오르)](viz/프레드릭스타_산네피오르_207030_산네피오르_network.svg) · [shotmap(산네피오르)](viz/프레드릭스타_산네피오르_207030_산네피오르_shotmap.svg) · [heatmap(프레드릭스타)](viz/프레드릭스타_산네피오르_207030_프레드릭스타_heatmap.svg) · [network(프레드릭스타)](viz/프레드릭스타_산네피오르_207030_프레드릭스타_network.svg) · [shotmap(프레드릭스타)](viz/프레드릭스타_산네피오르_207030_프레드릭스타_shotmap.svg)
 - **프레드릭스타_함캄_206972**: [heatmap(프레드릭스타)](viz/프레드릭스타_함캄_206972_프레드릭스타_heatmap.svg) · [network(프레드릭스타)](viz/프레드릭스타_함캄_206972_프레드릭스타_network.svg) · [shotmap(프레드릭스타)](viz/프레드릭스타_함캄_206972_프레드릭스타_shotmap.svg) · [heatmap(함캄)](viz/프레드릭스타_함캄_206972_함캄_heatmap.svg) · [network(함캄)](viz/프레드릭스타_함캄_206972_함캄_network.svg) · [shotmap(함캄)](viz/프레드릭스타_함캄_206972_함캄_shotmap.svg)
 - **필라델피아유니온_DC유나이티드_5025**: [heatmap(DC 유나이티드)](viz/필라델피아유니온_DC유나이티드_5025_DC 유나이티드_heatmap.svg) · [network(DC 유나이티드)](viz/필라델피아유니온_DC유나이티드_5025_DC 유나이티드_network.svg) · [shotmap(DC 유나이티드)](viz/필라델피아유니온_DC유나이티드_5025_DC 유나이티드_shotmap.svg) · [heatmap(필라델피아 유니온)](viz/필라델피아유니온_DC유나이티드_5025_필라델피아 유니온_heatmap.svg) · [network(필라델피아 유니온)](viz/필라델피아유니온_DC유나이티드_5025_필라델피아 유니온_network.svg) · [shotmap(필라델피아 유니온)](viz/필라델피아유니온_DC유나이티드_5025_필라델피아 유니온_shotmap.svg)
 - **필라델피아유니온_내슈빌SC_5063**: [heatmap(내슈빌 SC)](viz/필라델피아유니온_내슈빌SC_5063_내슈빌 SC_heatmap.svg) · [network(내슈빌 SC)](viz/필라델피아유니온_내슈빌SC_5063_내슈빌 SC_network.svg) · [shotmap(내슈빌 SC)](viz/필라델피아유니온_내슈빌SC_5063_내슈빌 SC_shotmap.svg) · [heatmap(필라델피아 유니온)](viz/필라델피아유니온_내슈빌SC_5063_필라델피아 유니온_heatmap.svg) · [network(필라델피아 유니온)](viz/필라델피아유니온_내슈빌SC_5063_필라델피아 유니온_network.svg) · [shotmap(필라델피아 유니온)](viz/필라델피아유니온_내슈빌SC_5063_필라델피아 유니온_shotmap.svg)
@@ -11710,13 +11722,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| N. Aké | - | 13.3 | 100.0 | 0.0 | - |
-| M. Ugarte | - | 0.0 | 50.0 | 0.0 | - |
-| M. Lacroix | - | 0.0 | 42.5 | 0.0 | - |
-| M. Delgado | 0.0 | 20.0 | 25.0 | 0.0 | - |
-| M. Senesi | - | 2.2 | 25.0 | 0.0 | - |
-| J. McGlynn | 0.0 | 6.7 | 25.0 | 0.0 | - |
-| D. Chambost | 0.0 | 26.7 | 0.0 | 0.0 | - |
-| P. Sarr | - | 6.7 | 12.5 | 0.0 | - |
-| J. P. van Hecke | 0.0 | 4.4 | 20.8 | 0.0 | - |
-| C. Romero | - | 0.0 | 17.5 | 0.0 | - |
+| L. Miley | 0.0 | 26.7 | 50.0 | 0.0 | - |
+| K. Tete | - | 0.0 | 56.2 | 0.0 | - |
+| N. Clyne | - | 0.0 | 50.0 | 0.0 | - |
+| S. Longstaff | 0.0 | 23.3 | 25.0 | 0.0 | - |
+| D. McNeil | 0.0 | 13.3 | 25.0 | 0.0 | - |
+| P. M. Sarr | 0.0 | 0.0 | 37.5 | 0.0 | - |
+| Souza | - | 13.3 | 12.5 | 0.0 | - |
+| A. Tanaka | - | 4.4 | 20.8 | 0.0 | - |
+| M. Turner | - | 0.0 | 25.0 | 0.0 | - |
+| V. Mykolenko | - | 2.7 | 20.0 | 0.0 | - |

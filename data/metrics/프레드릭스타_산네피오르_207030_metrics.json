@@ -1,6 +1,6 @@
 {
     "teams": {
-        "토트넘": {
+        "프레드릭스타": {
             "buildup_attempts": 0,
             "buildup_success_pct": null,
             "buildup_disruption_pct": null,
@@ -11,7 +11,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 56.2,
+            "possession_pct": 58.3,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -35,7 +35,7 @@
             "launch_accuracy_pct": null,
             "field_tilt_pct": null
         },
-        "에버튼": {
+        "산네피오르": {
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -52,7 +52,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 43.8,
+            "possession_pct": 41.7,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -78,23 +78,14 @@
         }
     },
     "players": {
-        "A. Kinský": {
-            "_team": "토트넘"
-        },
         "null": {
-            "_team": "토트넘"
+            "_team": "산네피오르"
         },
-        "J. Tarkowski": {
-            "_team": "에버튼"
+        "F. Holmé": {
+            "_team": "프레드릭스타"
         },
-        "J. Palhinha": {
-            "_team": "토트넘"
-        },
-        "P. Sarr": {
-            "_team": "토트넘"
-        },
-        "J. O'Brien": {
-            "_team": "에버튼"
+        "O. Öhlenschlaeger": {
+            "_team": "프레드릭스타"
         }
     }
 }
