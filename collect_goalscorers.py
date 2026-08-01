@@ -82,6 +82,25 @@ def _rows_of(resp):
     return None
 
 
+def _goal_type_and_body(e):
+    """2026-08-01 추가: 실측 확인된 필드(goal_type, sequence 마지막 동작의
+    body)로 세트피스 종류/신체부위를 뽑는다. body는 로그에서 'right-foot'
+    하나만 확인됐고 'head'/'left-foot' 등 다른 값은 아직 실측 전이라,
+    이번 실행 로그로 전체 종류를 [diag]에 남겨서 검증한다."""
+    goal_type = e.get('goal_type')
+    body = None
+    seq = e.get('sequence')
+    if isinstance(seq, list) and seq:
+        last = seq[-1]
+        if isinstance(last, dict):
+            body = last.get('body')
+    return goal_type, body
+
+
+_body_values_seen = set()
+_goal_type_values_seen = set()
+
+
 def _goals_from_items(items):
     """이벤트 항목 리스트에서 골만 뽑는다 (_extract_goals 후보 2와 동일 기준)."""
     global _item_diag_done
@@ -104,6 +123,11 @@ def _goals_from_items(items):
         scorer = _name_of(e.get('player') or e.get('scorer'))
         if not scorer:
             continue
+        goal_type, body = _goal_type_and_body(e)
+        if goal_type:
+            _goal_type_values_seen.add(goal_type)
+        if body:
+            _body_values_seen.add(body)
         goals.append({
             'scorer': scorer,
             'assist': _name_of(e.get('assist') or e.get('assist_player')),
@@ -113,6 +137,8 @@ def _goals_from_items(items):
             # 어느 쪽 골인지 알려준다. 그동안 team이 항상 None이었던 원인.
             'is_home': e.get('is_home'),
             'minute': e.get('minute'),
+            'goal_type': goal_type,  # 2026-08-01 추가: 'regular'/'penalty' 등(세트피스 리더보드용)
+            'body': body,  # 2026-08-01 추가: 'right-foot' 등(헤더골 판별용 — 'head' 값 다음 로그로 검증 필요)
         })
     return goals
 
@@ -396,6 +422,13 @@ def main():
     total_with_goals = sum(1 for v in out.values() for m in v if m.get('goals'))
     print(f'[collect_goalscorers] 완료 — 종료경기 {total_matches}건 중 '
           f'득점정보 확보 {total_with_goals}건 → {OUT_PATH} 저장', flush=True)
+    # 2026-08-01 추가: 이번 실행에서 실제로 관측된 body/goal_type 전체 종류.
+    # 'head'가 실제로 이 목록에 있는지, 정확한 표기(head vs header 등)가
+    # 뭔지 이 로그로 확정한다 — 지금은 'right-foot' 하나만 실측된 상태.
+    print(f'[collect_goalscorers] [diag] 관측된 body 값 전체: '
+          f'{sorted(_body_values_seen)}', flush=True)
+    print(f'[collect_goalscorers] [diag] 관측된 goal_type 값 전체: '
+          f'{sorted(_goal_type_values_seen)}', flush=True)
     if total_matches and not total_with_goals:
         if _SUB['checked'] and not _SUB['tpl']:
             print('[collect_goalscorers] ⚠️ event_detail에도, 프로브한 하위 '

@@ -547,7 +547,28 @@ def build_squads(name_cache):
 # ============================================================ 4) STATIC_LEADERBOARD
 def build_leaderboard(name_cache):
     season_players = _load_json(f'{METRICS_DIR}/season_players.json', {})
-    scorers, assists = {}, {}
+    # 2026-08-01 확장: scorers/assists 외 7개 카테고리(공격/패스/드리블/수비/
+    # 골키퍼/세트피스/출전징계) 추가 — collect_bsd_player_stats.py가 이미
+    # metrics.json에 채운 필드들이 season_aggregator.py를 거쳐 season_players.json
+    # 의 totals에 그대로 누적돼있어서(원본 필드명 그대로 합산하는 방식이라
+    # 별도 배선 없이 바로 활용 가능), 그 필드들을 그대로 리더보드로 뽑기만
+    # 하면 된다.
+    boards = {
+        'scorers': {}, 'assists': {}, 'shots': {}, 'sot': {},
+        'keyPasses': {}, 'dribbles': {}, 'dribblesWon': {},
+        'tacklesWon': {}, 'interceptions': {}, 'clearances': {},
+        'saves': {}, 'cleanSheets': {}, 'yellowCards': {}, 'redCards': {},
+        'headerGoals': {}, 'penaltyGoals': {}, 'freeKickGoals': {},
+        'appearances': {}, 'minutesPlayed': {},
+    }
+    _FIELD_MAP = {
+        'goals': 'scorers', 'assists': 'assists', 'shots': 'shots', 'sot': 'sot',
+        'key_passes': 'keyPasses', 'dribbles': 'dribbles',
+        'dribbles_won': 'dribblesWon', 'tackles_won': 'tacklesWon',
+        'interceptions': 'interceptions', 'clearances': 'clearances',
+        'saves': 'saves', 'yellow_cards': 'yellowCards', 'red_cards': 'redCards',
+        'minutes_played': 'minutesPlayed',
+    }
     for name, obj in season_players.items():
         team_kr = to_kr(obj.get('team')) if obj.get('team') else None
         if not team_kr:
@@ -555,12 +576,61 @@ def build_leaderboard(name_cache):
         ko_name = _translate_name(name, name_cache)
         key = f'{ko_name}|{team_kr}'
         totals = obj.get('totals', {})
-        if totals.get('goals'):
-            scorers[key] = int(totals['goals'])
-        if totals.get('assists'):
-            assists[key] = int(totals['assists'])
-    return {'scorers': scorers, 'assists': assists, 'gk': {}, 'cards': {},
-            'ownGoals': {}}
+        for src_field, board_name in _FIELD_MAP.items():
+            v = totals.get(src_field)
+            if v:
+                boards[board_name][key] = int(v)
+        # 출전경기수: totals가 아니라 obj 자체에 있을 수도 있어(season_aggregator.py
+        # 가 apps를 별도로 셈) 방어적으로 둘 다 시도.
+        apps = obj.get('apps') or totals.get('apps')
+        if apps:
+            boards['appearances'][key] = int(apps)
+
+    # 2026-08-01 추가: goalscorers.json(collect_goalscorers.py)의 골 이벤트
+    # 상세정보(goal_type/body, 이번 세션에 실측 확인된 필드)로 헤더골/
+    # 페널티골/프리킥골을 별도 집계. body='head' 포함 여부로 헤더 판정
+    # (실측된 값은 'right-foot' 하나뿐이라 'head' 표기는 다음 로그로 최종
+    # 검증 필요 — 그때까지 이 카테고리는 0건이 정상일 수 있음).
+    goalscorers_raw = _load_json('data/master/goalscorers.json', {})
+    epl_matches = goalscorers_raw.get('epl', []) if isinstance(goalscorers_raw, dict) else []
+    for m in epl_matches:
+        if not isinstance(m, dict):
+            continue
+        home_kr, away_kr = m.get('home'), m.get('away')
+        for g in (m.get('goals') or []):
+            scorer_en = g.get('scorer')
+            if not scorer_en:
+                continue
+            team_kr = home_kr if g.get('is_home') else away_kr
+            if not team_kr:
+                continue
+            ko_name = _translate_name(scorer_en, name_cache)
+            key = f'{ko_name}|{team_kr}'
+            body = (g.get('body') or '').lower()
+            goal_type = (g.get('goal_type') or '').lower()
+            if 'head' in body:
+                boards['headerGoals'][key] = boards['headerGoals'].get(key, 0) + 1
+            if 'penalty' in goal_type or 'pk' in goal_type:
+                boards['penaltyGoals'][key] = boards['penaltyGoals'].get(key, 0) + 1
+            if 'free' in goal_type or 'freekick' in goal_type:
+                boards['freeKickGoals'][key] = boards['freeKickGoals'].get(key, 0) + 1
+
+    # 2026-08-01 수정: 프론트엔드(LeaderboardView)가 gk는 {saves,cs,apps} 객체,
+    # cards는 {yellow,red} 객체 구조를 기대한다(이미 화면 코드에 그렇게 박혀
+    # 있었음) — boards의 단순 숫자 딕셔너리(saves/yellowCards/redCards)를
+    # 그 구조로 재조합한다. cs(클린시트)는 지금 소스로는 계산 불가라 0 고정
+    # (골키퍼별 실점 합계가 있어야 하는데 팀 단위 실점이라 선수 개인 클린
+    # 시트 판정이 어려움 — 추후 과제로 남김, 잘못된 값 대신 0 유지).
+    gk = {}
+    for key, saves in boards['saves'].items():
+        gk[key] = {'saves': saves, 'cs': 0, 'apps': boards['appearances'].get(key, 0)}
+    cards = {}
+    all_card_keys = set(boards['yellowCards']) | set(boards['redCards'])
+    for key in all_card_keys:
+        cards[key] = {'yellow': boards['yellowCards'].get(key, 0),
+                      'red': boards['redCards'].get(key, 0)}
+
+    return {**boards, 'gk': gk, 'cards': cards, 'ownGoals': {}}
 
 
 # ============================================================ 5) TRANSFERS (영입/이탈)

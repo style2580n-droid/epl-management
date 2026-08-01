@@ -1042,26 +1042,32 @@ def update_player_baseline(name_cache):
 
 
 def build_leaderboard(name_cache):
-    """리그별 득점왕/도움왕 (2026-07-18 신규 — EPL 앱의 build_leaderboard와
-    동일한 원칙). collect_goalscorers.py가 실제 26-27 시즌 종료 경기만
-    대상으로 모은 goalscorers.json을 쓴다.
-    ⚠️ 8월 개막 전이라 지금은 리그별로 빈 값이 나오는 게 정상이다 —
-    틀린 데이터를 보여주는 것보다 빈 화면이 낫다는 원칙으로, season_players.json
-    같은 대체 소스는 일부러 안 쓴다(EPL 쪽도 마찬가지 이유로 뺐음).
-    2026-07-24 수정: 팀 판별을 team/team_name 필드 매칭에서 is_home(bool)
-    기반으로 교체했다. rehearse_goal_team_probe.py 실측 확정(events/{eid}/
-    incidents/ 원문) — 이 응답엔 team/team_name 필드 자체가 없다(그동안
-    100% 매칭 실패했던 원인). is_home=True면 home_kr, False면 away_kr —
-    home_kr/away_kr는 collect_goalscorers.py가 team_id로 이미 확정해둔
-    값이라 별도 이름 매칭이 필요 없다. team_raw 매칭은 옛 데이터·다른 소스
-    대비용으로 폴백만 남겨둔다."""
+    """리그별 득점왕/도움왕 + 2026-08-01 확장(공격/패스/드리블/수비/골키퍼/
+    세트피스/출전징계). scorers/assists는 기존처럼 goalscorers.json(경기
+    단위 골 이벤트, is_home 기반 팀 판별 — 실측 확정된 정확한 방식) 그대로
+    유지하고, 나머지 카테고리는 season_players.json(collect_bsd_player_stats.py
+    가 채운 필드가 season_aggregator.py를 거쳐 누적된 것)에서 리그별로
+    걸러서 추가한다 — season_players.json은 이제(2026-08-01, 시즌 진행 중)
+    실측 데이터가 실제로 쌓이고 있어서, "8월 개막 전이라 안 씀"이었던 예전
+    정책을 이 확장분에는 적용 안 한다(scorers/assists 자체는 더 정확한
+    goalscorers.json 방식을 계속 유지 — 굳이 바꿀 이유 없음)."""
     all_matches = _load_json(GOALSCORERS_PATH, {})
+    season_players = _load_json('data/metrics/season_players.json', {})
+    _FIELD_MAP = {
+        'shots': 'shots', 'sot': 'sot', 'key_passes': 'keyPasses',
+        'dribbles': 'dribbles', 'dribbles_won': 'dribblesWon',
+        'tackles_won': 'tacklesWon', 'interceptions': 'interceptions',
+        'clearances': 'clearances', 'saves': 'saves',
+        'yellow_cards': 'yellowCards', 'red_cards': 'redCards',
+        'minutes_played': 'minutesPlayed',
+    }
     out = {}
     for lk in LEAGUE_TEAM_MAPS:
         matches = all_matches.get(lk, [])
         scorers, assists = {}, {}
         n_unresolved_team = 0
         unresolved_samples = []  # 2026-07-24: 원인 진단용 (최대 5개만 보관)
+        header_goals, penalty_goals, freekick_goals = {}, {}, {}
         for m in matches:
             home_kr, away_kr = m.get('home'), m.get('away')
             for g in m.get('goals', []):
@@ -1090,13 +1096,61 @@ def build_leaderboard(name_cache):
                         n_unresolved_team += 1
                 key = f'{scorer_ko}|{team_kr or "미상"}'
                 scorers[key] = scorers.get(key, 0) + 1
+                # 2026-08-01 추가: goal_type/body(이번 세션 실측 확인된 필드)로
+                # 헤더골/페널티골/프리킥골 집계. body='head' 실측은 아직
+                # 안 됐지만('right-foot'만 확인됨), 포함 여부 체크라 다음
+                # 로그에서 'head'가 확인되면 자동으로 반영된다.
+                body = (g.get('body') or '').lower()
+                goal_type = (g.get('goal_type') or '').lower()
+                if 'head' in body:
+                    header_goals[key] = header_goals.get(key, 0) + 1
+                if 'penalty' in goal_type or 'pk' in goal_type:
+                    penalty_goals[key] = penalty_goals.get(key, 0) + 1
+                if 'free' in goal_type or 'freekick' in goal_type:
+                    freekick_goals[key] = freekick_goals.get(key, 0) + 1
 
                 assist_en = g.get('assist')
                 if assist_en:
                     assist_ko = _translate_name(assist_en, name_cache)
                     akey = f'{assist_ko}|{team_kr or "미상"}'
                     assists[akey] = assists.get(akey, 0) + 1
-        out[lk] = {'scorers': scorers, 'assists': assists}
+
+        boards = {f: {} for f in _FIELD_MAP.values()}
+        boards['appearances'] = {}
+        for name, obj in season_players.items():
+            team_en = obj.get('team')
+            if not team_en:
+                continue
+            hit = to_kr_league(team_en)
+            if not hit or hit[0] != lk:
+                continue
+            team_kr = hit[1]
+            ko_name = _translate_name(name, name_cache)
+            key = f'{ko_name}|{team_kr}'
+            totals = obj.get('totals', {})
+            for src_field, board_name in _FIELD_MAP.items():
+                v = totals.get(src_field)
+                if v:
+                    boards[board_name][key] = int(v)
+            apps = obj.get('apps') or totals.get('apps')
+            if apps:
+                boards['appearances'][key] = int(apps)
+
+        # 2026-08-01 추가: EPL 앱과 동일한 gk/cards 객체 구조({saves,cs,apps}/
+        # {yellow,red}) — 지금은 8개리그 화면에 아직 이 구조를 쓰는 UI가
+        # 없지만, EPL과 나중에 UI를 통일할 걸 대비해 미리 맞춰둔다.
+        gk = {}
+        for key, saves in boards['saves'].items():
+            gk[key] = {'saves': saves, 'cs': 0, 'apps': boards['appearances'].get(key, 0)}
+        cards = {}
+        for key in set(boards['yellowCards']) | set(boards['redCards']):
+            cards[key] = {'yellow': boards['yellowCards'].get(key, 0),
+                          'red': boards['redCards'].get(key, 0)}
+
+        out[lk] = {'scorers': scorers, 'assists': assists,
+                   'headerGoals': header_goals, 'penaltyGoals': penalty_goals,
+                   'freeKickGoals': freekick_goals, 'gk': gk, 'cards': cards,
+                   **boards}
         if scorers or n_unresolved_team:
             print(f'[app_export_multileague] {lk} 득점왕/도움왕: '
                   f'득점 {sum(scorers.values())}건, 도움 {sum(assists.values())}건'

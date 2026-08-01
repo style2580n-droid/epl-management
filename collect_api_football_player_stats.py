@@ -432,6 +432,11 @@ def merge_into_metrics(metrics_path, parsed):
             v = rec.get(src_field)
             if v is not None:
                 stats[dst_field] = v
+        # 2026-08-01 추가: app_export.py는 'tackles_won'을, player_profiler.py/
+        # season_aggregator.py/transfer_impact.py(실측 확인)는 'tackles'를
+        # 읽는다 — 두 이름 다 채워서 양쪽 소비처 다 정상 작동하게.
+        if 'tackles_won' in stats:
+            stats['tackles'] = stats['tackles_won']
         stats['_af_enriched'] = True
         n_merged += 1
         if is_new:
@@ -486,8 +491,8 @@ def main():
             keys.append(_v)
     keys = [k for k in keys if k]
     if not keys:
-        print('[collect_api_football_player_stats] API_FOOTBALL_KEY1/2 '
-              '미등록 → 스킵', flush=True)
+        print('[collect_api_football_player_stats] API_FOOTBALL_KEY(또는 '
+              'KEY1/KEY2) 미등록 → 스킵', flush=True)
         return
     if requests is None:
         print('[collect_api_football_player_stats] requests 라이브러리 '

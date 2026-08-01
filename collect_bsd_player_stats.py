@@ -330,6 +330,21 @@ def parse_player_stats(results, player_names):
             # 2026-08-01 추가: 카드 누적 정지 판정용(별도 집계 스크립트가
             # 이 경기별 값들을 모아서 시즌 누적/직전경기 레드카드를 계산).
             ('yellow_cards', 'yellow_card'), ('red_cards', 'red_card'),
+            # 2026-08-01 추가: 리더보드 확장(공격/패스/드리블/수비/골키퍼/
+            # 세트피스/출전징계 7개 카테고리)용 — 전부 이번 세션에 실측
+            # 확인된 BSD player-stats 원본 필드명 그대로 매핑.
+            ('saves', 'saves'), ('goals_conceded', 'goals_conceded'),
+            ('clearances', 'total_clearance'), ('fouls', 'fouls'),
+            ('was_fouled', 'was_fouled'), ('touches', 'touches'),
+            ('total_pass', 'total_pass'), ('accurate_pass', 'accurate_pass'),
+            ('total_long_balls', 'total_long_balls'),
+            ('accurate_long_balls', 'accurate_long_balls'),
+            ('total_cross', 'total_cross'), ('accurate_cross', 'accurate_cross'),
+            ('duel_won', 'duel_won'), ('duel_lost', 'duel_lost'),
+            ('aerial_won', 'aerial_won'), ('aerial_lost', 'aerial_lost'),
+            ('ball_recovery', 'ball_recovery'),
+            ('blocked_scoring_attempt', 'blocked_scoring_attempt'),
+            ('minutes_played', 'minutes_played'),
         ):
             val = _num(row.get(src_key))
             if val is not None:
