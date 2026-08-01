@@ -1,180 +1,5 @@
 {
-    "P. Porro": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.3,
-            "through_ball_success_pct": null,
-            "score": 4.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 5,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 15.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Rodon": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 25.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 2.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Calvert-Lewin": {
-        "matches": 11,
-        "shooting_precision": {
-            "shots": 6,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.18,
-            "through_ball_success_pct": null,
-            "score": 2.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 3.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "E. Ampadu": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 3,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 8.8
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.7,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Palhinha": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 3,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.12,
-            "through_ball_success_pct": null,
-            "score": 1.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 4,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 23.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.9,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "M. Tel": {
+    "A. Miranchuk": {
         "matches": 5,
         "shooting_precision": {
             "shots": 2,
@@ -189,120 +14,15 @@
             "score": 2.7
         },
         "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 2.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "K. Danso": {
-        "matches": 7,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.14,
-            "through_ball_success_pct": null,
-            "score": 1.9
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 17.9
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.4,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "A. Tanaka": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 4.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Gomez": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
             "true_interceptions": 2,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 6.2
+            "score": 5.0
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
+            "work_rate_index": 0.4,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -314,8 +34,8 @@
             "score": null
         }
     },
-    "P. Struijk": {
-        "matches": 3,
+    "D. Chambost": {
+        "matches": 2,
         "shooting_precision": {
             "shots": 1,
             "xG_per_shot": 0.0,
@@ -324,289 +44,9 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
+            "key_passes_per_match": 2.0,
             "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 16.7
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "V. van Dijk": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 23.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.9,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Szoboszlai": {
-        "matches": 13,
-        "shooting_precision": {
-            "shots": 5,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.46,
-            "through_ball_success_pct": null,
-            "score": 6.2
-        },
-        "defensive_contribution": {
-            "true_interceptions": 4,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 10.6
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "A. Stach": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.5,
-            "through_ball_success_pct": null,
-            "score": 6.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 6.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "H. Ekitiké": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 5,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.12,
-            "through_ball_success_pct": null,
-            "score": 1.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 1.6
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.1,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "C. Bradley": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 9.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "G. Gudmundsson": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 4.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Bogle": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 3,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 8.3
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.7,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "W. Gnonto": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
+            "score": 26.7
         },
         "defensive_contribution": {
             "true_interceptions": 0,
@@ -629,8 +69,8 @@
             "score": null
         }
     },
-    "N. Pope": {
-        "matches": 2,
+    "C. Romero": {
+        "matches": 10,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -642,6 +82,216 @@
             "key_passes_per_match": 0.0,
             "through_ball_success_pct": null,
             "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 5,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 17.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. P. van Hecke": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.33,
+            "through_ball_success_pct": null,
+            "score": 4.4
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 20.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.7,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Gómez": {
+        "matches": 13,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.08,
+            "through_ball_success_pct": null,
+            "score": 1.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 1.9
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Kudus": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.5,
+            "through_ball_success_pct": null,
+            "score": 6.7
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "Richarlison": {
+        "matches": 11,
+        "shooting_precision": {
+            "shots": 5,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.09,
+            "through_ball_success_pct": null,
+            "score": 1.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 1.1
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "Y. Ayari": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 5,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.33,
+            "through_ball_success_pct": null,
+            "score": 4.4
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 12.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "Y. Minteh": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.25,
+            "through_ball_success_pct": null,
+            "score": 3.3
         },
         "defensive_contribution": {
             "true_interceptions": 0,
@@ -664,8 +314,603 @@
             "score": null
         }
     },
-    "D. Essugo": {
+    "L. Bogarde": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Dalot": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 12.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Ugarte": {
+        "matches": 1,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 50.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 4.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Rogers": {
+        "matches": 13,
+        "shooting_precision": {
+            "shots": 8,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 3.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Cunha": {
+        "matches": 13,
+        "shooting_precision": {
+            "shots": 6,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.15,
+            "through_ball_success_pct": null,
+            "score": 2.1
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 1.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Jensen": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "P. Dorgu": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 9.7
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.8,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "K. Schade": {
+        "matches": 11,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.09,
+            "through_ball_success_pct": null,
+            "score": 1.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 3.4
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "N. Collins": {
+        "matches": 7,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.14,
+            "through_ball_success_pct": null,
+            "score": 1.9
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 12.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "B. Fernandes": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.11,
+            "through_ball_success_pct": null,
+            "score": 1.5
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 5.6
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "B. Šeško": {
+        "matches": 10,
+        "shooting_precision": {
+            "shots": 6,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.1,
+            "through_ball_success_pct": null,
+            "score": 1.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "I. Thiago": {
+        "matches": 12,
+        "shooting_precision": {
+            "shots": 6,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.08,
+            "through_ball_success_pct": null,
+            "score": 1.1
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 7.3
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.6,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. McGinn": {
+        "matches": 6,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.17,
+            "through_ball_success_pct": null,
+            "score": 2.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.1
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "Murillo": {
+        "matches": 6,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 16.7
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "O. Hutchinson": {
         "matches": 2,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 6.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.5,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "N. Williams": {
+        "matches": 8,
+        "shooting_precision": {
+            "shots": 4,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.25,
+            "through_ball_success_pct": null,
+            "score": 3.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 9.4
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.8,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Cash": {
+        "matches": 10,
+        "shooting_precision": {
+            "shots": 3,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.1,
+            "through_ball_success_pct": null,
+            "score": 1.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 3,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 11.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.9,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Kinský": {
+        "matches": 1,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -699,43 +944,8 @@
             "score": null
         }
     },
-    "J. Doku": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "M. Guéhi": {
-        "matches": 8,
+    "J. Tarkowski": {
+        "matches": 7,
         "shooting_precision": {
             "shots": 1,
             "xG_per_shot": 0.0,
@@ -744,55 +954,20 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.12,
+            "key_passes_per_match": 0.0,
             "through_ball_success_pct": null,
-            "score": 1.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 3,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 9.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "M. Cucurella": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
             "score": 0.0
         },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
         "defensive_contribution": {
-            "true_interceptions": 1,
+            "true_interceptions": 2,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 7.8
+            "score": 14.3
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.6,
+            "work_rate_index": 1.1,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -804,43 +979,8 @@
             "score": null
         }
     },
-    "N. O’Reilly": {
+    "J. Palhinha": {
         "matches": 8,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 4.7
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.4,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "A. Semenyo": {
-        "matches": 18,
         "shooting_precision": {
             "shots": 5,
             "xG_per_shot": 0.0,
@@ -849,20 +989,20 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.06,
+            "key_passes_per_match": 0.25,
             "through_ball_success_pct": null,
-            "score": 0.7
+            "score": 3.3
         },
         "defensive_contribution": {
-            "true_interceptions": 0,
+            "true_interceptions": 2,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 0.7
+            "score": 15.6
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.1,
+            "work_rate_index": 1.2,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -874,83 +1014,13 @@
             "score": null
         }
     },
-    "Estêvão": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.17,
-            "through_ball_success_pct": null,
-            "score": 2.2
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "S. Palencia": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 25.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 2.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "R. Hollingshead": {
+    "P. Sarr": {
         "matches": 2,
         "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
@@ -962,12 +1032,12 @@
             "true_interceptions": 1,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 37.5
+            "score": 12.5
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 3.0,
+            "work_rate_index": 1.0,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -979,112 +1049,7 @@
             "score": null
         }
     },
-    "K. Yeboah": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "T. Tillman": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 6.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. M. Morales": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.12,
-            "through_ball_success_pct": null,
-            "score": 1.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "N. Collins": {
+    "J. O'Brien": {
         "matches": 7,
         "shooting_precision": {
             "shots": 0,
@@ -1102,12 +1067,12 @@
             "true_interceptions": 0,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 16.1
+            "score": 7.1
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.3,
+            "work_rate_index": 0.6,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -1119,8 +1084,8 @@
             "score": null
         }
     },
-    "V. Janelt": {
-        "matches": 7,
+    "N. Aké": {
+        "matches": 1,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -1129,20 +1094,20 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.29,
+            "key_passes_per_match": 1.0,
             "through_ball_success_pct": null,
-            "score": 3.8
+            "score": 13.3
         },
         "defensive_contribution": {
             "true_interceptions": 2,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 10.7
+            "score": 100.0
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.9,
+            "work_rate_index": 10.0,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -1154,43 +1119,8 @@
             "score": null
         }
     },
-    "A. Mac Allister": {
-        "matches": 8,
-        "shooting_precision": {
-            "shots": 7,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.5,
-            "through_ball_success_pct": null,
-            "score": 6.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 6.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "I. Konaté": {
-        "matches": 8,
+    "S. Adingra": {
+        "matches": 2,
         "shooting_precision": {
             "shots": 2,
             "xG_per_shot": 0.0,
@@ -1199,254 +1129,9 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.12,
-            "through_ball_success_pct": null,
-            "score": 1.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 14.1
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.1,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "K. Schade": {
-        "matches": 11,
-        "shooting_precision": {
-            "shots": 4,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
             "key_passes_per_match": 0.0,
             "through_ball_success_pct": null,
             "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 2.3
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "C. Jones": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 20.8
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.7,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Henderson": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.17,
-            "through_ball_success_pct": null,
-            "score": 2.2
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 4.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "O. Watkins": {
-        "matches": 11,
-        "shooting_precision": {
-            "shots": 5,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 2.3
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "L. Bogarde": {
-        "matches": 5,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 10.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "G. Jesus": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "L. Trossard": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 4,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.5,
-            "through_ball_success_pct": null,
-            "score": 6.7
         },
         "defensive_contribution": {
             "true_interceptions": 0,
@@ -1469,8 +1154,8 @@
             "score": null
         }
     },
-    "M. Zubimendi": {
-        "matches": 8,
+    "A. Stach": {
+        "matches": 6,
         "shooting_precision": {
             "shots": 3,
             "xG_per_shot": 0.0,
@@ -1479,20 +1164,20 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
+            "key_passes_per_match": 0.83,
             "through_ball_success_pct": null,
-            "score": 3.3
+            "score": 11.1
         },
         "defensive_contribution": {
-            "true_interceptions": 2,
+            "true_interceptions": 0,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 3.1
+            "score": 6.2
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
+            "work_rate_index": 0.5,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -1504,8 +1189,43 @@
             "score": null
         }
     },
-    "M. Rogers": {
-        "matches": 13,
+    "A. Wharton": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 10.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.8,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. Devenny": {
+        "matches": 1,
         "shooting_precision": {
             "shots": 2,
             "xG_per_shot": 0.0,
@@ -1539,77 +1259,7 @@
             "score": null
         }
     },
-    "M. Merino": {
-        "matches": 5,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.6,
-            "through_ball_success_pct": null,
-            "score": 8.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 10.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "I. Sangaré": {
-        "matches": 6,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
-            "through_ball_success_pct": null,
-            "score": 4.4
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 10.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.8,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "L. Bergvall": {
+    "L. Perri": {
         "matches": 1,
         "shooting_precision": {
             "shots": 0,
@@ -1644,10 +1294,185 @@
             "score": null
         }
     },
-    "A. Gray": {
-        "matches": 5,
+    "E. Ampadu": {
+        "matches": 10,
         "shooting_precision": {
             "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 6.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.5,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Calvert-Lewin": {
+        "matches": 11,
+        "shooting_precision": {
+            "shots": 6,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.09,
+            "through_ball_success_pct": null,
+            "score": 1.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 3.4
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Guéhi": {
+        "matches": 8,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 14.1
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Lacroix": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 42.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 3.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Scott": {
+        "matches": 6,
+        "shooting_precision": {
+            "shots": 3,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.17,
+            "through_ball_success_pct": null,
+            "score": 2.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 4,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 14.6
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "R. Christie": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 2,
             "xG_per_shot": 0.0,
             "finishing_skill": 0,
             "score": 0.0
@@ -1679,713 +1504,13 @@
             "score": null
         }
     },
-    "N. Savona": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.5,
-            "through_ball_success_pct": null,
-            "score": 6.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 3.1
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "B. Fernandes": {
-        "matches": 9,
-        "shooting_precision": {
-            "shots": 8,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.67,
-            "through_ball_success_pct": null,
-            "score": 8.9
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "A. Diallo": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.75,
-            "through_ball_success_pct": null,
-            "score": 10.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 3.1
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "B. Mbeumo": {
-        "matches": 11,
-        "shooting_precision": {
-            "shots": 3,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 1.1
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.1,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "C. Romero": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 2.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Udogie": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.25,
-            "through_ball_success_pct": null,
-            "score": 3.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 6.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "M. Wieffer": {
-        "matches": 7,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 5.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.4,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "F. Chiesa": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 0.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "L. Dunk": {
-        "matches": 7,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 5.4
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.4,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "J. Frimpong": {
+    "A. Tóth": {
         "matches": 1,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
             "finishing_skill": null,
             "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 2.0,
-            "through_ball_success_pct": null,
-            "score": 26.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 37.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 3.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Welbeck": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 3,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.2,
-            "through_ball_success_pct": null,
-            "score": 2.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 1.2
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.1,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Gómez": {
-        "matches": 13,
-        "shooting_precision": {
-            "shots": 3,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.08,
-            "through_ball_success_pct": null,
-            "score": 1.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 8.7
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.7,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "M. Kerkez": {
-        "matches": 3,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 16.7
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.3,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "Y. Minteh": {
-        "matches": 4,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.75,
-            "through_ball_success_pct": null,
-            "score": 10.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 3.1
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "G. Vicario": {
-        "matches": 1,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 25.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 2.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "R. Bentancur": {
-        "matches": 7,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 4,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 14.3
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.1,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "B. Brobbey": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 3,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.1,
-            "through_ball_success_pct": null,
-            "score": 1.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 2.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.2,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "E. Le Fée": {
-        "matches": 10,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.1,
-            "through_ball_success_pct": null,
-            "score": 1.3
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 7.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.6,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "O. Alderete": {
-        "matches": 7,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 1,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 8.9
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.7,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "D. Cirkin": {
-        "matches": 1,
-        "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
-        },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.0,
-            "through_ball_success_pct": null,
-            "score": 0.0
-        },
-        "defensive_contribution": {
-            "true_interceptions": 0,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 25.0
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 2.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "B. Davies": {
-        "matches": 1,
-        "shooting_precision": {
-            "shots": 2,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
-            "score": 0.0
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
@@ -2397,47 +1522,12 @@
             "true_interceptions": 0,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 62.5
-        },
-        "physical_activity": {
-            "carry_distance_per_match": 0.0,
-            "progressive_carries_per_match": 0.0,
-            "work_rate_index": 5.0,
-            "score": 0.0,
-            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
-        },
-        "psychological_stability": {
-            "pass_accuracy_pct": null,
-            "pass_accuracy_under_pressure_pct": null,
-            "accuracy_drop_under_pressure": null,
-            "errors_lead_to_shot": 0,
-            "score": null
-        }
-    },
-    "P. Miller": {
-        "matches": 5,
-        "shooting_precision": {
-            "shots": 1,
-            "xG_per_shot": 0.0,
-            "finishing_skill": 0,
             "score": 0.0
         },
-        "pass_creativity": {
-            "xT_per_match": 0.0,
-            "key_passes_per_match": 0.2,
-            "through_ball_success_pct": null,
-            "score": 2.7
-        },
-        "defensive_contribution": {
-            "true_interceptions": 2,
-            "pressure_efficiency_pct": null,
-            "ppda_contribution_pct": null,
-            "score": 7.5
-        },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.6,
+            "work_rate_index": 0.0,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -2449,8 +1539,8 @@
             "score": null
         }
     },
-    "M. Fofana": {
-        "matches": 4,
+    "R. Roefs": {
+        "matches": 3,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -2464,15 +1554,15 @@
             "score": 0.0
         },
         "defensive_contribution": {
-            "true_interceptions": 1,
+            "true_interceptions": 0,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 18.8
+            "score": 8.3
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.5,
+            "work_rate_index": 0.7,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -2484,13 +1574,13 @@
             "score": null
         }
     },
-    "B. Craig": {
-        "matches": 2,
+    "Evanilson": {
+        "matches": 8,
         "shooting_precision": {
-            "shots": 0,
-            "xG_per_shot": null,
-            "finishing_skill": null,
-            "score": null
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
@@ -2519,25 +1609,60 @@
             "score": null
         }
     },
-    "I. Thiago": {
-        "matches": 12,
+    "T. Adams": {
+        "matches": 9,
         "shooting_precision": {
-            "shots": 6,
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 3,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 5.6
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "N. Sadiki": {
+        "matches": 8,
+        "shooting_precision": {
+            "shots": 1,
             "xG_per_shot": 0.0,
             "finishing_skill": 0,
             "score": 0.0
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.17,
+            "key_passes_per_match": 0.0,
             "through_ball_success_pct": null,
-            "score": 2.2
+            "score": 0.0
         },
         "defensive_contribution": {
-            "true_interceptions": 0,
+            "true_interceptions": 1,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 2.1
+            "score": 3.1
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
@@ -2554,8 +1679,113 @@
             "score": null
         }
     },
-    "T. Hume": {
-        "matches": 12,
+    "E. Mayenda": {
+        "matches": 1,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 12.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "E. Buendía": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 6,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.33,
+            "through_ball_success_pct": null,
+            "score": 4.4
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 8.3
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.7,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "B. Saka": {
+        "matches": 7,
+        "shooting_precision": {
+            "shots": 4,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.57,
+            "through_ball_success_pct": null,
+            "score": 7.6
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 1.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "R. Calafiori": {
+        "matches": 6,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -2564,9 +1794,9 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.08,
+            "key_passes_per_match": 0.0,
             "through_ball_success_pct": null,
-            "score": 1.1
+            "score": 0.0
         },
         "defensive_contribution": {
             "true_interceptions": 1,
@@ -2589,8 +1819,8 @@
             "score": null
         }
     },
-    "J. S. Larsen": {
-        "matches": 2,
+    "L. Trossard": {
+        "matches": 6,
         "shooting_precision": {
             "shots": 3,
             "xG_per_shot": 0.0,
@@ -2607,12 +1837,12 @@
             "true_interceptions": 0,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 6.2
+            "score": 2.1
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.5,
+            "work_rate_index": 0.2,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -2624,8 +1854,183 @@
             "score": null
         }
     },
-    "D. Muñoz": {
-        "matches": 5,
+    "M. Delgado": {
+        "matches": 2,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 1.5,
+            "through_ball_success_pct": null,
+            "score": 20.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 2,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 25.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 2.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Bouanga": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 9,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.22,
+            "through_ball_success_pct": null,
+            "score": 3.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 4.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. McGlynn": {
+        "matches": 2,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.5,
+            "through_ball_success_pct": null,
+            "score": 6.7
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 25.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 2.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. Henderson": {
+        "matches": 6,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.33,
+            "through_ball_success_pct": null,
+            "score": 4.4
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "K. Dewsbury-Hall": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.22,
+            "through_ball_success_pct": null,
+            "score": 3.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. Garner": {
+        "matches": 12,
         "shooting_precision": {
             "shots": 0,
             "xG_per_shot": null,
@@ -2634,20 +2039,20 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.4,
+            "key_passes_per_match": 0.08,
             "through_ball_success_pct": null,
-            "score": 5.3
+            "score": 1.1
         },
         "defensive_contribution": {
-            "true_interceptions": 2,
+            "true_interceptions": 3,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 20.0
+            "score": 9.4
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 1.6,
+            "work_rate_index": 0.8,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
@@ -2659,10 +2064,115 @@
             "score": null
         }
     },
-    "I. Sarr": {
-        "matches": 8,
+    "Beto": {
+        "matches": 10,
         "shooting_precision": {
             "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.1,
+            "through_ball_success_pct": null,
+            "score": 1.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. Pickford": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "T. Mitchell": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.2,
+            "through_ball_success_pct": null,
+            "score": 2.7
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 5.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "B. Johnson": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 3,
             "xG_per_shot": 0.0,
             "finishing_skill": 0,
             "score": 0.0
@@ -2694,7 +2204,427 @@
             "score": null
         }
     },
-    "W. Hughes": {
+    "C. Talbi": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Santos": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "E. Le Fée": {
+        "matches": 10,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.2,
+            "through_ball_success_pct": null,
+            "score": 2.7
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 3.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "W. Isidor": {
+        "matches": 6,
+        "shooting_precision": {
+            "shots": 3,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.1
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Garnacho": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 4,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 4.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "L. O'Nien": {
+        "matches": 2,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "P. Foden": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 5,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.22,
+            "through_ball_success_pct": null,
+            "score": 3.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 1.4
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "J. Gvardiol": {
+        "matches": 2,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 18.8
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.5,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "R. Dias": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.2,
+            "through_ball_success_pct": null,
+            "score": 2.7
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 17.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "C. Kostoulas": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "Đ. Petrović": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 6.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.5,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Smith": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 8.3
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.7,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Senesi": {
         "matches": 6,
         "shooting_precision": {
             "shots": 0,
@@ -2704,20 +2634,300 @@
         },
         "pass_creativity": {
             "xT_per_match": 0.0,
-            "key_passes_per_match": 0.33,
+            "key_passes_per_match": 0.17,
             "through_ball_success_pct": null,
-            "score": 4.4
+            "score": 2.2
+        },
+        "defensive_contribution": {
+            "true_interceptions": 5,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 25.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 2.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Welbeck": {
+        "matches": 10,
+        "shooting_precision": {
+            "shots": 0,
+            "xG_per_shot": null,
+            "finishing_skill": null,
+            "score": null
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.1,
+            "through_ball_success_pct": null,
+            "score": 1.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 2.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "M. Tavernier": {
+        "matches": 10,
+        "shooting_precision": {
+            "shots": 2,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.1,
+            "through_ball_success_pct": null,
+            "score": 1.3
         },
         "defensive_contribution": {
             "true_interceptions": 1,
             "pressure_efficiency_pct": null,
             "ppda_contribution_pct": null,
-            "score": 8.3
+            "score": 1.2
         },
         "physical_activity": {
             "carry_distance_per_match": 0.0,
             "progressive_carries_per_match": 0.0,
-            "work_rate_index": 0.7,
+            "work_rate_index": 0.1,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "D. Malen": {
+        "matches": 2,
+        "shooting_precision": {
+            "shots": 3,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 0.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.0,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "R. Barkley": {
+        "matches": 3,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.33,
+            "through_ball_success_pct": null,
+            "score": 4.4
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 4.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Onana": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 17.5
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.4,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Truffert": {
+        "matches": 5,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.4,
+            "through_ball_success_pct": null,
+            "score": 5.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 15.0
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 1.2,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "A. Jiménez": {
+        "matches": 9,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.0,
+            "through_ball_success_pct": null,
+            "score": 0.0
+        },
+        "defensive_contribution": {
+            "true_interceptions": 1,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 4.2
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.3,
+            "score": 0.0,
+            "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
+        },
+        "psychological_stability": {
+            "pass_accuracy_pct": null,
+            "pass_accuracy_under_pressure_pct": null,
+            "accuracy_drop_under_pressure": null,
+            "errors_lead_to_shot": 0,
+            "score": null
+        }
+    },
+    "B. Kamara": {
+        "matches": 4,
+        "shooting_precision": {
+            "shots": 1,
+            "xG_per_shot": 0.0,
+            "finishing_skill": 0,
+            "score": 0.0
+        },
+        "pass_creativity": {
+            "xT_per_match": 0.0,
+            "key_passes_per_match": 0.25,
+            "through_ball_success_pct": null,
+            "score": 3.3
+        },
+        "defensive_contribution": {
+            "true_interceptions": 0,
+            "pressure_efficiency_pct": null,
+            "ppda_contribution_pct": null,
+            "score": 9.4
+        },
+        "physical_activity": {
+            "carry_distance_per_match": 0.0,
+            "progressive_carries_per_match": 0.0,
+            "work_rate_index": 0.8,
             "score": 0.0,
             "note": "Carry 이벤트 기반 추정치 (트래킹 데이터 연동 시 정밀화)"
         },
