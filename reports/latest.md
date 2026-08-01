@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 18:32
+생성(UTC): 2026-08-01 22:12
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -84,8 +84,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 68건 (누적 366건)
+오늘 72건 (누적 370건)
 
 ## 📊 경기 고급 지표
 
@@ -11738,13 +11742,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| F. Morato | - | 0.0 | 100.0 | 0.0 | - |
-| A. Khusanov | - | 0.0 | 50.0 | 0.0 | - |
-| A. Robinson | - | 4.4 | 29.2 | 0.0 | - |
-| S. Berge | - | 2.7 | 30.0 | 0.0 | - |
-| M. De Cuyper | - | 3.3 | 28.1 | 0.0 | - |
-| E. Pinnock | - | 0.0 | 31.2 | 0.0 | - |
-| P. Groß | 0.0 | 0.0 | 37.5 | 0.0 | - |
-| J. Tarkowski | - | 0.0 | 26.8 | 0.0 | - |
-| Rodri | - | 6.7 | 18.8 | 0.0 | - |
-| J. Andersen | - | 0.0 | 25.0 | 0.0 | - |
+| S. Botman | - | 6.7 | 56.2 | 0.0 | - |
+| A. Masuaku | 0.0 | 0.0 | 50.0 | 0.0 | - |
+| J. Rodon | - | 0.0 | 29.2 | 0.0 | - |
+| M. Senesi | 0.0 | 0.0 | 35.4 | 0.0 | - |
+| K. Lewis-Potter | - | 13.3 | 12.5 | 0.0 | - |
+| P. Struijk | 0.0 | 4.4 | 29.2 | 0.0 | - |
+| J. Justin | 0.0 | 0.0 | 33.3 | 0.0 | - |
+| R. Dias | - | 0.0 | 22.5 | 0.0 | - |
+| L. Shaw | 0.0 | 1.7 | 25.0 | 0.0 | - |
+| J. Gvardiol | 0.0 | 6.7 | 18.8 | 0.0 | - |
