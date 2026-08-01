@@ -1,108 +1,62 @@
 {
-    "B. Johnson": {
-        "team": "크리스탈 팰리스",
-        "matches": 5,
+    "H. Barnes": {
+        "team": "뉴캐슬",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 3.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "J. P. van Hecke": {
+        "team": "브라이튼",
+        "matches": 9,
         "minutes_fpl": null,
         "totals": {
             "shots": 1.0,
             "sot": 0.0,
-            "tackles_won": 2.0,
-            "interceptions": 0.0,
-            "key_passes": 2.0,
+            "tackles_won": 5.0,
+            "interceptions": 6.0,
+            "key_passes": 0.0,
             "dribbles": 0.0,
             "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.4,
-            "tackles": 0.4,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "G. Gudmundsson": {
-        "team": "리즈 유나이티드",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 2.0,
-            "dribbles_won": 1.0,
             "yellow_cards": 2.0,
-            "red_cards": 1.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "W. Hughes": {
-        "team": "크리스탈 팰리스",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
             "red_cards": 0.0,
-            "tackles": 0.0
+            "tackles": 5.0
         },
         "per90": {
             "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
+            "tackles": 0.556,
+            "interceptions": 0.667
         },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
     },
-    "J. Bijol": {
-        "team": "리즈 유나이티드",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 0.0,
-            "tackles_won": 2.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.5,
-            "interceptions": 0.25
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "Savinho": {
-        "team": "맨체스터 시티",
+    "Y. Wissa": {
+        "team": "뉴캐슬",
         "matches": 3,
         "minutes_fpl": null,
         "totals": {
-            "shots": 0.0,
+            "shots": 1.0,
             "sot": 0.0,
             "tackles_won": 1.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
             "dribbles": 1.0,
-            "dribbles_won": 1.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 1.0,
             "red_cards": 0.0,
             "tackles": 1.0
@@ -114,557 +68,51 @@
         },
         "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "G. Donnarumma": {
-        "team": "맨체스터 시티",
-        "matches": 8,
+    "S. Tonali": {
+        "team": "뉴캐슬",
+        "matches": 3,
         "minutes_fpl": null,
         "totals": {
             "shots": 0.0,
             "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "A. Semenyo": {
-        "team": "본머스",
-        "matches": 18,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 6.0,
-            "sot": 3.0,
             "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 3.0,
-            "dribbles": 4.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.167,
-            "tackles": 0.056,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 18경기 기준)"
-    },
-    "G. Xhaka": {
-        "team": "선덜랜드",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 1.0,
-            "tackles_won": 3.0,
-            "interceptions": 0.0,
+            "interceptions": 1.0,
             "key_passes": 2.0,
-            "dribbles": 3.0,
-            "dribbles_won": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 1.0,
             "red_cards": 0.0,
-            "tackles": 3.0
-        },
-        "per90": {
-            "key_passes": 0.25,
-            "tackles": 0.375,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "W. Isidor": {
-        "team": "선덜랜드",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 6.0,
-            "sot": 2.0,
-            "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
             "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.167,
-            "interceptions": 0.0
+            "key_passes": 0.667,
+            "tackles": 0.333,
+            "interceptions": 0.333
         },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "N. Sadiki": {
-        "team": "선덜랜드",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 1.0,
-            "key_passes": 1.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.125,
-            "tackles": 0.125,
-            "interceptions": 0.125
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "M. Cash": {
-        "team": "아스톤 빌라",
-        "matches": 10,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 1.0,
-            "tackles_won": 2.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.2,
-            "interceptions": 0.1
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "I. Maatsen": {
-        "team": "아스톤 빌라",
-        "matches": 2,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
-    },
-    "R. Mandava": {
-        "team": "선덜랜드",
-        "matches": 7,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.143
-        },
-        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
-    },
-    "A. Adli": {
-        "team": "본머스",
+    "J. Hinshelwood": {
+        "team": "브라이튼",
         "matches": 4,
         "minutes_fpl": null,
         "totals": {
-            "shots": 2.0,
-            "sot": 1.0,
+            "shots": 7.0,
+            "sot": 3.0,
             "tackles_won": 1.0,
             "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 3.0,
-            "dribbles_won": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
             "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.0,
+            "key_passes": 0.25,
             "tackles": 0.25,
             "interceptions": 0.25
         },
         "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "R. Gravenberch": {
-        "team": "리버풀",
-        "matches": 7,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 1.0,
-            "tackles_won": 3.0,
-            "interceptions": 2.0,
-            "key_passes": 1.0,
-            "dribbles": 2.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 3.0
-        },
-        "per90": {
-            "key_passes": 0.143,
-            "tackles": 0.429,
-            "interceptions": 0.286
-        },
-        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
-    },
-    "D. Szoboszlai": {
-        "team": "리버풀",
-        "matches": 13,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 4.0,
-            "sot": 1.0,
-            "tackles_won": 4.0,
-            "interceptions": 1.0,
-            "key_passes": 3.0,
-            "dribbles": 2.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 4.0
-        },
-        "per90": {
-            "key_passes": 0.231,
-            "tackles": 0.308,
-            "interceptions": 0.077
-        },
-        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
-    },
-    "E. J. Kroupi": {
-        "team": "본머스",
-        "matches": 12,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 12경기 기준)"
-    },
-    "V. van Dijk": {
-        "team": "리버풀",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.125,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "A. Jiménez": {
-        "team": "본머스",
-        "matches": 9,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 2.0,
-            "tackles_won": 1.0,
-            "interceptions": 4.0,
-            "key_passes": 0.0,
-            "dribbles": 4.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.111,
-            "interceptions": 0.444
-        },
-        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
-    },
-    "Evanilson": {
-        "team": "본머스",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 5.0,
-            "sot": 2.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 3.0,
-            "dribbles_won": 3.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.125,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "D. Kamada": {
-        "team": "크리스탈 팰리스",
-        "matches": 3,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 4.0,
-            "interceptions": 2.0,
-            "key_passes": 2.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 2.0,
-            "red_cards": 0.0,
-            "tackles": 4.0
-        },
-        "per90": {
-            "key_passes": 0.667,
-            "tackles": 1.333,
-            "interceptions": 0.667
-        },
-        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
-    },
-    "T. Mitchell": {
-        "team": "크리스탈 팰리스",
-        "matches": 5,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "O. Marmoush": {
-        "team": "맨체스터 시티",
-        "matches": 3,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
-    },
-    "R. Ngumoha": {
-        "team": "리버풀",
-        "matches": 2,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
-    },
-    "W. Osula": {
-        "team": "뉴캐슬",
-        "matches": 5,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "C. Bradley": {
-        "team": "리버풀",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 3.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "B. Guimarães": {
-        "team": "뉴캐슬",
-        "matches": 10,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 2.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 6.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.2,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "H. Ekitiké": {
-        "team": "리버풀",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 2.0,
-            "dribbles": 2.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.25,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "A. Gordon": {
-        "team": "뉴캐슬",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 3.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 3.0,
-            "dribbles_won": 3.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.125,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
     },
     "D. Burn": {
         "team": "뉴캐슬",
@@ -672,367 +120,229 @@
         "minutes_fpl": null,
         "totals": {
             "shots": 1.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 2.0,
-            "key_passes": 1.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.1,
-            "tackles": 0.1,
-            "interceptions": 0.2
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "I. Konaté": {
-        "team": "리버풀",
-        "matches": 8,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.125,
-            "interceptions": 0.125
-        },
-        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
-    },
-    "A. Smith": {
-        "team": "본머스",
-        "matches": 3,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 1.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.333,
-            "tackles": 0.0,
-            "interceptions": 0.333
-        },
-        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
-    },
-    "M. Cunha": {
-        "team": "맨체스터 유나이티드",
-        "matches": 13,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 8.0,
-            "sot": 3.0,
-            "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 3.0,
-            "dribbles": 4.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.231,
-            "tackles": 0.077,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
-    },
-    "B. Fernandes": {
-        "team": "맨체스터 유나이티드",
-        "matches": 9,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 4.0,
-            "sot": 2.0,
-            "tackles_won": 2.0,
-            "interceptions": 1.0,
-            "key_passes": 9.0,
-            "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 1.0,
-            "tackles": 0.222,
-            "interceptions": 0.111
-        },
-        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
-    },
-    "M. Senesi": {
-        "team": "본머스",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
             "sot": 1.0,
-            "tackles_won": 2.0,
-            "interceptions": 2.0,
-            "key_passes": 1.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.167,
-            "tackles": 0.333,
-            "interceptions": 0.333
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "M. Tavernier": {
-        "team": "본머스",
-        "matches": 10,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 4.0,
-            "sot": 3.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 3.0,
-            "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.3,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "Casemiro": {
-        "team": "맨체스터 유나이티드",
-        "matches": 15,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 5.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.067,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 15경기 기준)"
-    },
-    "D. Dalot": {
-        "team": "맨체스터 유나이티드",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 2.0,
-            "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.5,
-            "tackles": 0.25,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "A. Diallo": {
-        "team": "맨체스터 유나이티드",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 4.0,
-            "sot": 1.0,
-            "tackles_won": 1.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 3.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.25,
-            "tackles": 0.25,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "Y. Minteh": {
-        "team": "브라이튼",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 2.0,
-            "interceptions": 0.0,
-            "key_passes": 2.0,
-            "dribbles": 2.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
-        },
-        "per90": {
-            "key_passes": 0.5,
-            "tackles": 0.5,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "D. Gómez": {
-        "team": "브라이튼",
-        "matches": 13,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 2.0,
-            "key_passes": 0.0,
-            "dribbles": 3.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.077,
-            "interceptions": 0.154
-        },
-        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
-    },
-    "Estêvão": {
-        "team": "첼시",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 2.0,
-            "tackles_won": 1.0,
-            "interceptions": 1.0,
-            "key_passes": 2.0,
-            "dribbles": 3.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.333,
-            "tackles": 0.167,
-            "interceptions": 0.167
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "C. Gakpo": {
-        "team": "리버풀",
-        "matches": 5,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 2.0,
-            "key_passes": 3.0,
-            "dribbles": 4.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.6,
-            "tackles": 0.0,
-            "interceptions": 0.4
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "M. Caicedo": {
-        "team": "첼시",
-        "matches": 11,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 2.0,
             "tackles_won": 3.0,
-            "interceptions": 4.0,
+            "interceptions": 2.0,
             "key_passes": 0.0,
-            "dribbles": 1.0,
+            "dribbles": 0.0,
             "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
+            "yellow_cards": 2.0,
             "red_cards": 0.0,
             "tackles": 3.0
         },
         "per90": {
             "key_passes": 0.0,
-            "tackles": 0.273,
-            "interceptions": 0.364
+            "tackles": 0.3,
+            "interceptions": 0.2
         },
-        "per90_basis": "per_match (출전시간 미확보, 11경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
     },
-    "E. Haaland": {
-        "team": "맨체스터 시티",
-        "matches": 16,
+    "K. Mitoma": {
+        "team": "브라이튼",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.167,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "J. Veltman": {
+        "team": "브라이튼",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 2.0,
+            "key_passes": 0.0,
+            "dribbles": 1.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 2.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.2,
+            "interceptions": 0.4
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "W. Osula": {
+        "team": "뉴캐슬",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 5.0,
+            "sot": 3.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.2,
+            "tackles": 0.2,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "F. Wirtz": {
+        "team": "리버풀",
+        "matches": 4,
         "minutes_fpl": null,
         "totals": {
             "shots": 2.0,
-            "sot": 2.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+    },
+    "B. Sosa": {
+        "team": "크리스탈 팰리스",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 1.0,
+            "tackles": 0.0,
+            "interceptions": 1.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+    },
+    "D. Szoboszlai": {
+        "team": "리버풀",
+        "matches": 13,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 0.0,
             "tackles_won": 2.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 2.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.154,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
+    },
+    "D. Muñoz": {
+        "team": "크리스탈 팰리스",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 1.0,
+            "tackles_won": 2.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 1.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 2.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.4,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "A. Robertson": {
+        "team": "리버풀",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 1.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+    },
+    "A. Isak": {
+        "team": "리버풀",
+        "matches": 2,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
             "dribbles": 0.0,
             "dribbles_won": 0.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
-            "tackles": 2.0
+            "tackles": 0.0
         },
         "per90": {
             "key_passes": 0.0,
-            "tackles": 0.125,
+            "tackles": 0.0,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 16경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
     },
     "D. Henderson": {
         "team": "크리스탈 팰리스",
@@ -1057,18 +367,202 @@
         },
         "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
     },
-    "P. Foden": {
-        "team": "맨체스터 시티",
-        "matches": 9,
+    "M. Salah": {
+        "team": "리버풀",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 4.0,
+            "dribbles_won": 2.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.167,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "J. Garner": {
+        "team": "에버튼",
+        "matches": 12,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 1.0,
+            "interceptions": 2.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.083,
+            "interceptions": 0.167
+        },
+        "per90_basis": "per_match (출전시간 미확보, 12경기 기준)"
+    },
+    "W. Isidor": {
+        "team": "선덜랜드",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.167,
+            "interceptions": 0.167
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "E. Le Fée": {
+        "team": "선덜랜드",
+        "matches": 10,
         "minutes_fpl": null,
         "totals": {
             "shots": 3.0,
+            "sot": 1.0,
+            "tackles_won": 3.0,
+            "interceptions": 0.0,
+            "key_passes": 3.0,
+            "dribbles": 2.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 3.0
+        },
+        "per90": {
+            "key_passes": 0.3,
+            "tackles": 0.3,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
+    },
+    "B. Brobbey": {
+        "team": "선덜랜드",
+        "matches": 10,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
             "sot": 2.0,
             "tackles_won": 0.0,
             "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 1.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.1,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
+    },
+    "J. O'Brien": {
+        "team": "에버튼",
+        "matches": 7,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 1.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
             "key_passes": 0.0,
-            "dribbles": 5.0,
-            "dribbles_won": 4.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.143,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
+    },
+    "M. Röhl": {
+        "team": "에버튼",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 3.0,
+            "sot": 1.0,
+            "tackles_won": 3.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 3.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 3.0,
+            "interceptions": 1.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+    },
+    "T. Iroegbunam": {
+        "team": "에버튼",
+        "matches": 7,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 2.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 2.0
+        },
+        "per90": {
+            "key_passes": 0.143,
+            "tackles": 0.286,
+            "interceptions": 0.143
+        },
+        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
+    },
+    "I. Smith": {
+        "team": "포틀랜드 팀버스",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
             "tackles": 0.0
@@ -1078,41 +572,110 @@
             "tackles": 0.0,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "M. Pašalić": {
-        "team": "올랜도 시티",
-        "matches": 3,
+    "K. Miller": {
+        "team": "포틀랜드 팀버스",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.2,
+            "interceptions": 0.2
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "H. Maguire": {
+        "team": "맨체스터 유나이티드",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.2,
+            "tackles": 0.2,
+            "interceptions": 0.2
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "B. Šeško": {
+        "team": "맨체스터 유나이티드",
+        "matches": 10,
         "minutes_fpl": null,
         "totals": {
             "shots": 2.0,
             "sot": 1.0,
-            "tackles_won": 2.0,
+            "tackles_won": 0.0,
             "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
+    },
+    "L. Yoro": {
+        "team": "맨체스터 유나이티드",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 2.0,
+            "interceptions": 3.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
             "red_cards": 0.0,
             "tackles": 2.0
         },
         "per90": {
-            "key_passes": 0.333,
-            "tackles": 0.667,
-            "interceptions": 0.0
+            "key_passes": 0.0,
+            "tackles": 2.0,
+            "interceptions": 3.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
     },
-    "A. Marín": {
-        "team": "올랜도 시티",
-        "matches": 3,
+    "M. Cunha": {
+        "team": "맨체스터 유나이티드",
+        "matches": 13,
         "minutes_fpl": null,
         "totals": {
-            "shots": 1.0,
-            "sot": 0.0,
+            "shots": 2.0,
+            "sot": 1.0,
             "tackles_won": 1.0,
-            "interceptions": 3.0,
-            "key_passes": 2.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
             "dribbles": 1.0,
             "dribbles_won": 0.0,
             "yellow_cards": 0.0,
@@ -1120,71 +683,140 @@
             "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.667,
-            "tackles": 0.333,
-            "interceptions": 1.0
+            "key_passes": 0.077,
+            "tackles": 0.077,
+            "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
     },
-    "D. Rossi": {
-        "team": "콜럼버스 크루",
-        "matches": 6,
+    "E. Buendía": {
+        "team": "아스톤 빌라",
+        "matches": 9,
         "minutes_fpl": null,
         "totals": {
-            "shots": 3.0,
-            "sot": 2.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 2.0,
+            "shots": 2.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 3.0,
+            "key_passes": 0.0,
+            "dribbles": 3.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.111,
+            "interceptions": 0.333
+        },
+        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+    },
+    "R. Barkley": {
+        "team": "아스톤 빌라",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 4.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
             "dribbles": 1.0,
             "dribbles_won": 1.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.333,
-            "tackles": 0.0,
-            "interceptions": 0.167
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "S. Moreira": {
-        "team": "콜럼버스 크루",
-        "matches": 1,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 0.0,
-            "tackles_won": 2.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 2.0
+            "tackles": 4.0
         },
         "per90": {
             "key_passes": 0.0,
-            "tackles": 2.0,
+            "tackles": 1.333,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "D. Brekalo": {
-        "team": "로스앤젤레스 FC",
-        "matches": 4,
+    "Casemiro": {
+        "team": "맨체스터 유나이티드",
+        "matches": 15,
         "minutes_fpl": null,
         "totals": {
             "shots": 3.0,
+            "sot": 2.0,
+            "tackles_won": 4.0,
+            "interceptions": 4.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 4.0
+        },
+        "per90": {
+            "key_passes": 0.067,
+            "tackles": 0.267,
+            "interceptions": 0.267
+        },
+        "per90_basis": "per_match (출전시간 미확보, 15경기 기준)"
+    },
+    "O. Watkins": {
+        "team": "아스톤 빌라",
+        "matches": 11,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 4.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 11경기 기준)"
+    },
+    "I. Konaté": {
+        "team": "리버풀",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.125
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "G. Martinelli": {
+        "team": "아스날",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
             "sot": 1.0,
             "tackles_won": 0.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 2.0,
+            "yellow_cards": 1.0,
             "red_cards": 0.0,
             "tackles": 0.0
         },
@@ -1195,19 +827,272 @@
         },
         "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
     },
-    "D. Luiz": {
-        "team": "아스톤 빌라",
-        "matches": 4,
+    "A. Mac Allister": {
+        "team": "리버풀",
+        "matches": 8,
         "minutes_fpl": null,
         "totals": {
             "shots": 0.0,
             "sot": 0.0,
             "tackles_won": 0.0,
             "interceptions": 1.0,
-            "key_passes": 1.0,
+            "key_passes": 2.0,
+            "dribbles": 1.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.25,
+            "tackles": 0.0,
+            "interceptions": 0.125
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "L. Trossard": {
+        "team": "아스날",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
             "dribbles": 2.0,
             "dribbles_won": 1.0,
             "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.167,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "Joelinton": {
+        "team": "뉴캐슬",
+        "matches": 9,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 3.0,
+            "sot": 0.0,
+            "tackles_won": 2.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 2.0,
+            "dribbles_won": 2.0,
+            "yellow_cards": 2.0,
+            "red_cards": 0.0,
+            "tackles": 2.0
+        },
+        "per90": {
+            "key_passes": 0.111,
+            "tackles": 0.222,
+            "interceptions": 0.111
+        },
+        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+    },
+    "K. Trippier": {
+        "team": "뉴캐슬",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 4.0,
+            "interceptions": 2.0,
+            "key_passes": 3.0,
+            "dribbles": 1.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 2.0,
+            "red_cards": 0.0,
+            "tackles": 4.0
+        },
+        "per90": {
+            "key_passes": 1.0,
+            "tackles": 1.333,
+            "interceptions": 0.667
+        },
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+    },
+    "B. Silva": {
+        "team": "맨체스터 시티",
+        "matches": 9,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 2.0,
+            "dribbles": 4.0,
+            "dribbles_won": 2.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.222,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+    },
+    "J. Willock": {
+        "team": "뉴캐슬",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+    },
+    "R. Dias": {
+        "team": "맨체스터 시티",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "N. O’Reilly": {
+        "team": "맨체스터 시티",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 3.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "L. Hall": {
+        "team": "뉴캐슬",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 1.0,
+            "tackles_won": 3.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 7.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 3.0
+        },
+        "per90": {
+            "key_passes": 0.25,
+            "tackles": 0.75,
+            "interceptions": 0.25
+        },
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+    },
+    "N. Mukiele": {
+        "team": "선덜랜드",
+        "matches": 7,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.143,
+            "interceptions": 0.143
+        },
+        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
+    },
+    "C. Talbi": {
+        "team": "선덜랜드",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+    },
+    "J. Gomez": {
+        "team": "리버풀",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
             "red_cards": 0.0,
             "tackles": 0.0
         },
@@ -1218,62 +1103,16 @@
         },
         "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
     },
-    "H. Wilson": {
-        "team": "풀럼",
-        "matches": 12,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 3.0,
-            "sot": 0.0,
-            "tackles_won": 1.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 5.0,
-            "dribbles_won": 3.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.083,
-            "interceptions": 0.083
-        },
-        "per90_basis": "per_match (출전시간 미확보, 12경기 기준)"
-    },
-    "P. Torres": {
-        "team": "브라이튼",
+    "A. Ramsdale": {
+        "team": "뉴캐슬",
         "matches": 2,
         "minutes_fpl": null,
         "totals": {
             "shots": 0.0,
             "sot": 0.0,
-            "tackles_won": 1.0,
+            "tackles_won": 0.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
-            "dribbles": 1.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 1.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.5,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
-    },
-    "T. Castagne": {
-        "team": "풀럼",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 2.0,
-            "key_passes": 1.0,
             "dribbles": 0.0,
             "dribbles_won": 0.0,
             "yellow_cards": 1.0,
@@ -1281,22 +1120,459 @@
             "tackles": 0.0
         },
         "per90": {
-            "key_passes": 0.25,
+            "key_passes": 0.0,
             "tackles": 0.0,
-            "interceptions": 0.5
+            "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
     },
-    "R. Sessegnon": {
-        "team": "풀럼",
-        "matches": 2,
+    "M. Caicedo": {
+        "team": "첼시",
+        "matches": 11,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.091,
+            "tackles": 0.091,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 11경기 기준)"
+    },
+    "W. Fofana": {
+        "team": "첼시",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 2.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.333
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "A. Gordon": {
+        "team": "뉴캐슬",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 6.0,
+            "sot": 5.0,
+            "tackles_won": 3.0,
+            "interceptions": 0.0,
+            "key_passes": 2.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 3.0
+        },
+        "per90": {
+            "key_passes": 0.25,
+            "tackles": 0.375,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "J. Mateta": {
+        "team": "크리스탈 팰리스",
+        "matches": 9,
         "minutes_fpl": null,
         "totals": {
             "shots": 1.0,
             "sot": 1.0,
-            "tackles_won": 3.0,
-            "interceptions": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
             "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+    },
+    "G. Jesus": {
+        "team": "아스날",
+        "matches": 3,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 4.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.333,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
+    },
+    "N. Madueke": {
+        "team": "아스날",
+        "matches": 2,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 4.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 3.0,
+            "dribbles": 5.0,
+            "dribbles_won": 3.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 1.5,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
+    },
+    "C. Gakpo": {
+        "team": "리버풀",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 5.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 3.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.6,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "A. Diallo": {
+        "team": "맨체스터 유나이티드",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 2.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.5,
+            "tackles": 0.25,
+            "interceptions": 0.25
+        },
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+    },
+    "B. Mbeumo": {
+        "team": "맨체스터 유나이티드",
+        "matches": 11,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 4.0,
+            "sot": 2.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 2.0,
+            "dribbles": 2.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.182,
+            "tackles": 0.091,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 11경기 기준)"
+    },
+    "M. Rogers": {
+        "team": "아스톤 빌라",
+        "matches": 13,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 4.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 2.0,
+            "dribbles": 1.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.154,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
+    },
+    "E. Martínez": {
+        "team": "아스톤 빌라",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+    },
+    "C. Baleba": {
+        "team": "브라이튼",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.25
+        },
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+    },
+    "D. Welbeck": {
+        "team": "브라이튼",
+        "matches": 10,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 3.0,
+            "sot": 2.0,
+            "tackles_won": 0.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.1
+        },
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
+    },
+    "M. De Cuyper": {
+        "team": "브라이튼",
+        "matches": 4,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+    },
+    "L. Dunk": {
+        "team": "브라이튼",
+        "matches": 7,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 3.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.143,
+            "interceptions": 0.429
+        },
+        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
+    },
+    "B. Badiashile": {
+        "team": "첼시",
+        "matches": 1,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 1경기 기준)"
+    },
+    "R. James": {
+        "team": "첼시",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 2.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 3.0,
+            "key_passes": 1.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.167,
+            "tackles": 0.0,
+            "interceptions": 0.5
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "M. Wieffer": {
+        "team": "브라이튼",
+        "matches": 7,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 1.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.143,
+            "tackles": 0.143,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 7경기 기준)"
+    },
+    "T. Chalobah": {
+        "team": "첼시",
+        "matches": 6,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+    },
+    "M. Cucurella": {
+        "team": "첼시",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 3.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
             "dribbles": 1.0,
             "dribbles_won": 1.0,
             "yellow_cards": 0.0,
@@ -1304,318 +1580,226 @@
             "tackles": 3.0
         },
         "per90": {
-            "key_passes": 0.0,
-            "tackles": 1.5,
-            "interceptions": 1.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
-    },
-    "M. Sels": {
-        "team": "노팅엄 포레스트",
-        "matches": 2,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
+            "key_passes": 0.125,
+            "tackles": 0.375,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
     },
-    "E. Anderson": {
-        "team": "노팅엄 포레스트",
-        "matches": 10,
+    "E. Fernández": {
+        "team": "첼시",
+        "matches": 14,
         "minutes_fpl": null,
         "totals": {
-            "shots": 3.0,
-            "sot": 1.0,
-            "tackles_won": 4.0,
-            "interceptions": 1.0,
-            "key_passes": 1.0,
-            "dribbles": 4.0,
-            "dribbles_won": 2.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 4.0
-        },
-        "per90": {
-            "key_passes": 0.1,
-            "tackles": 0.4,
-            "interceptions": 0.1
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "N. Milenković": {
-        "team": "노팅엄 포레스트",
-        "matches": 5,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "Rodri": {
-        "team": "맨체스터 시티",
-        "matches": 4,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 3.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 2.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.5,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
-    },
-    "Murillo": {
-        "team": "노팅엄 포레스트",
-        "matches": 6,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.167
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "M. Gibbs-White": {
-        "team": "노팅엄 포레스트",
-        "matches": 12,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 3.0,
+            "shots": 4.0,
             "sot": 2.0,
             "tackles_won": 1.0,
             "interceptions": 0.0,
             "key_passes": 1.0,
-            "dribbles": 2.0,
-            "dribbles_won": 2.0,
+            "dribbles": 1.0,
+            "dribbles_won": 0.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
             "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.083,
-            "tackles": 0.083,
+            "key_passes": 0.071,
+            "tackles": 0.071,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 12경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 14경기 기준)"
     },
-    "I. Sangaré": {
-        "team": "노팅엄 포레스트",
-        "matches": 6,
+    "V. Gyökeres": {
+        "team": "아스날",
+        "matches": 13,
         "minutes_fpl": null,
         "totals": {
-            "shots": 0.0,
-            "sot": 0.0,
+            "shots": 2.0,
+            "sot": 2.0,
             "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
             "dribbles": 1.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.167,
-            "tackles": 0.0,
-            "interceptions": 0.167
-        },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
-    },
-    "P. Dorgu": {
-        "team": "맨체스터 유나이티드",
-        "matches": 9,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 3.0,
-            "sot": 3.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 2.0,
-            "dribbles": 2.0,
             "dribbles_won": 0.0,
             "yellow_cards": 0.0,
             "red_cards": 0.0,
             "tackles": 0.0
         },
         "per90": {
-            "key_passes": 0.222,
+            "key_passes": 0.0,
             "tackles": 0.0,
-            "interceptions": 0.111
+            "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 9경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 13경기 기준)"
     },
-    "K. Mainoo": {
+    "M. Zubimendi": {
+        "team": "아스날",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 3.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.375
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "H. Diarra": {
+        "team": "선덜랜드",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 1.0,
+            "tackles_won": 0.0,
+            "interceptions": 0.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "W. Saliba": {
+        "team": "아스날",
+        "matches": 2,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.5,
+            "interceptions": 0.5
+        },
+        "per90_basis": "per_match (출전시간 미확보, 2경기 기준)"
+    },
+    "N. Mazraoui": {
         "team": "맨체스터 유나이티드",
         "matches": 3,
         "minutes_fpl": null,
         "totals": {
-            "shots": 2.0,
+            "shots": 1.0,
             "sot": 0.0,
-            "tackles_won": 2.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 5.0,
-            "dribbles_won": 3.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 0.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
             "yellow_cards": 1.0,
             "red_cards": 0.0,
-            "tackles": 2.0
+            "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.333,
-            "tackles": 0.667,
-            "interceptions": 0.0
+            "key_passes": 0.0,
+            "tackles": 0.333,
+            "interceptions": 0.333
         },
         "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "B. Mbeumo": {
-        "team": "맨체스터 유나이티드",
-        "matches": 11,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 2.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.091,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 11경기 기준)"
-    },
-    "J. Pedro": {
-        "team": "첼시",
-        "matches": 10,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 1.0,
-            "dribbles": 6.0,
-            "dribbles_won": 4.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.1,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
-    },
-    "L. Delap": {
-        "team": "첼시",
-        "matches": 5,
-        "minutes_fpl": null,
-        "totals": {
-            "shots": 2.0,
-            "sot": 0.0,
-            "tackles_won": 0.0,
-            "interceptions": 0.0,
-            "key_passes": 0.0,
-            "dribbles": 0.0,
-            "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
-        },
-        "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
-            "interceptions": 0.0
-        },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
-    },
-    "T. Awoniyi": {
-        "team": "노팅엄 포레스트",
+    "J. Ramsey": {
+        "team": "뉴캐슬",
         "matches": 4,
         "minutes_fpl": null,
         "totals": {
-            "shots": 2.0,
-            "sot": 2.0,
-            "tackles_won": 0.0,
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 2.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
             "dribbles": 0.0,
             "dribbles_won": 0.0,
-            "yellow_cards": 0.0,
-            "red_cards": 0.0,
-            "tackles": 0.0
+            "yellow_cards": 2.0,
+            "red_cards": 1.0,
+            "tackles": 2.0
         },
         "per90": {
             "key_passes": 0.0,
-            "tackles": 0.0,
+            "tackles": 0.5,
             "interceptions": 0.0
         },
         "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
     },
-    "I. Jesus": {
-        "team": "노팅엄 포레스트",
-        "matches": 5,
+    "L. Shaw": {
+        "team": "맨체스터 유나이티드",
+        "matches": 8,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 0.0,
+            "interceptions": 2.0,
+            "key_passes": 0.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "tackles": 0.0
+        },
+        "per90": {
+            "key_passes": 0.0,
+            "tackles": 0.0,
+            "interceptions": 0.25
+        },
+        "per90_basis": "per_match (출전시간 미확보, 8경기 기준)"
+    },
+    "S. Lukić": {
+        "team": "풀럼",
+        "matches": 10,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 2.0,
+            "key_passes": 3.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.3,
+            "tackles": 0.1,
+            "interceptions": 0.2
+        },
+        "per90_basis": "per_match (출전시간 미확보, 10경기 기준)"
+    },
+    "E. Smith Rowe": {
+        "team": "풀럼",
+        "matches": 3,
         "minutes_fpl": null,
         "totals": {
             "shots": 2.0,
-            "sot": 2.0,
+            "sot": 1.0,
             "tackles_won": 0.0,
             "interceptions": 0.0,
             "key_passes": 0.0,
@@ -1630,52 +1814,52 @@
             "tackles": 0.0,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 3경기 기준)"
     },
-    "M. Gusto": {
-        "team": "첼시",
-        "matches": 6,
+    "R. Muniz": {
+        "team": "맨체스터 유나이티드",
+        "matches": 4,
         "minutes_fpl": null,
         "totals": {
-            "shots": 1.0,
-            "sot": 1.0,
-            "tackles_won": 0.0,
-            "interceptions": 1.0,
-            "key_passes": 5.0,
-            "dribbles": 2.0,
-            "dribbles_won": 1.0,
-            "yellow_cards": 1.0,
+            "shots": 3.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 1.0,
+            "dribbles": 3.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
             "red_cards": 0.0,
-            "tackles": 0.0
+            "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.833,
-            "tackles": 0.0,
-            "interceptions": 0.167
+            "key_passes": 0.25,
+            "tackles": 0.25,
+            "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 6경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
     },
-    "Morato": {
-        "team": "노팅엄 포레스트",
-        "matches": 4,
+    "M. Mount": {
+        "team": "맨체스터 유나이티드",
+        "matches": 5,
         "minutes_fpl": null,
         "totals": {
             "shots": 0.0,
             "sot": 0.0,
-            "tackles_won": 0.0,
+            "tackles_won": 1.0,
             "interceptions": 0.0,
-            "key_passes": 0.0,
+            "key_passes": 2.0,
             "dribbles": 0.0,
             "dribbles_won": 0.0,
-            "yellow_cards": 1.0,
+            "yellow_cards": 0.0,
             "red_cards": 0.0,
-            "tackles": 0.0
+            "tackles": 1.0
         },
         "per90": {
-            "key_passes": 0.0,
-            "tackles": 0.0,
+            "key_passes": 0.4,
+            "tackles": 0.2,
             "interceptions": 0.0
         },
-        "per90_basis": "per_match (출전시간 미확보, 4경기 기준)"
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
     }
 }
