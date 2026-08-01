@@ -180,4 +180,24 @@
 - 리그: 프리미어리그
 - 감지 시각: 2026-08-01T10:23:40.324531+00:00
 
-누적 감지 이적: 334건
+## Karlan Ahearne-Grant
+- 이동: **Charlton Athletic FC → West Bromwich Albion FC**
+- 리그: ELC
+- 감지 시각: 2026-08-01T10:43:35.438242+00:00
+
+## Morgan Rogers
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-01T10:42:06.222332+00:00
+
+## Alejandro Garnacho
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-01T10:42:06.222352+00:00
+
+## Issa Diop
+- 이동: **Ipswich Town FC → Fulham FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-01T10:42:06.222405+00:00
+
+누적 감지 이적: 338건
