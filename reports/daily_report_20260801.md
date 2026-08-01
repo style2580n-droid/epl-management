@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 02:59
+생성(UTC): 2026-08-01 03:51
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -32,8 +32,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 16건 (누적 314건)
+오늘 20건 (누적 318건)
 
 ## 📊 경기 고급 지표
 
@@ -11665,3 +11669,18 @@
 - **휴스턴다이나모_오스틴FC_5163**: [heatmap(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_shotmap.svg)
 - **휴스턴다이나모_콜로라도래피즈_5069**: [heatmap(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_shotmap.svg)
 - **휴스턴다이나모_포틀랜드팀버스_4966**: [heatmap(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_shotmap.svg)
+
+## 🧬 선수 능력치 프로파일 (V2 고급화 매핑)
+
+| 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
+|---|---|---|---|---|---|
+| J. Lukić | - | 6.7 | 12.5 | 0.0 | - |
+| L. O'Nien | - | 0.0 | 18.8 | 0.0 | - |
+| Raul Gustavo | - | 0.0 | 16.7 | 0.0 | - |
+| D. Diani | - | 0.0 | 16.7 | 0.0 | - |
+| S. Adingra | 0.0 | 6.7 | 12.5 | 0.0 | - |
+| D. Ndoye | 0.0 | 0.0 | 18.8 | 0.0 | - |
+| N. Domínguez | - | 6.7 | 6.2 | 0.0 | - |
+| J. Hato | - | 2.7 | 10.0 | 0.0 | - |
+| A. Gutman | 0.0 | 4.4 | 12.5 | 0.0 | - |
+| P. Porro | - | 8.0 | 3.8 | 0.0 | - |
