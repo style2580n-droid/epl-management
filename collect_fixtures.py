@@ -243,6 +243,11 @@ def main():
             h2h_raw.setdefault(key, []).append({
                 'date': date_kst, 'home': home_kr, 'away': away_kr,
                 'homeGoals': hs, 'awayGoals': as_,
+                'id': ev.get('id'),  # 2026-07-31 추가: 진짜 BSD event id.
+                # db.py가 이걸로 matches.match_id(홈팀_원정팀_숫자 형식의
+                # 합성 id, BSD의 진짜 숫자 id가 아님 — 실측 확인된 사실)와
+                # 별도로 진짜 BSD id를 채워서, collect_bsd_player_stats.py
+                # 같은 소비처가 팀명 매칭 없이 event_id로 직접 조회 가능하게.
             })
         elif status.lower() != 'finished':
             # ⚠️ 2026-07-13: 원래 ('upcoming','live')만 허용했더니 EPL만
@@ -254,10 +259,15 @@ def main():
             schedule.append({
                 'date': date_kst, 'time': time_kst or '00:00',
                 'home': home_kr, 'away': away_kr,
-                'id': eid,  # 2026-07-31 추가: BSD 이벤트 id. 프론트엔드가 이걸로
-                # /api/v2/odds/?event_id=... 직접 조회 가능(팀명 매칭 불필요 —
-                # odds-api.io/the-odds-api처럼 팀명 fuzzy 매칭하다 실패하는
-                # 문제 자체가 없어짐, 같은 BSD 이벤트 객체에서 나온 id라서).
+                # 2026-07-31 수정: 원래 'id': eid였는데, eid는 위쪽 첫 번째
+                # for 루프(`for ev in rows:`)에서 마지막으로 남은 값이 그대로
+                # 재사용되고 있었다(파이썬 for 루프 변수가 루프 종료 후에도
+                # 스코프에 남는 특성 때문에 생긴 버그) — 385건 전부 같은 id로
+                # 저장되고 있었던 게 실측 확인됨(schedule.json 직접 검증).
+                # 지금 루프(`for ev in events_by_id.values():`)의 ev를 직접
+                # 써야 한다 — 8개리그판(collect_fixtures_multileague.py)은
+                # 처음부터 이렇게 짜여있어서 버그가 없었다(대조 확인함).
+                'id': ev.get('id'),
             })
 
     schedule.sort(key=lambda m: (m['date'], m['time']))

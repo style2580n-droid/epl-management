@@ -73,7 +73,10 @@ CREATE TABLE IF NOT EXISTS matches (
     date        TEXT,
     status      TEXT,
     home_goals  INTEGER,
-    away_goals  INTEGER
+    away_goals  INTEGER,
+    bsd_event_id INTEGER  -- 2026-07-31 추가: match_id는 "홈팀_원정팀_숫자"
+    -- 합성id라 BSD의 진짜 숫자 이벤트 id가 아님(실측 확인) — player-stats
+    -- 등 event_id로 직접 조회해야 하는 소비처를 위해 별도 저장.
 );
 CREATE TABLE IF NOT EXISTS events (
     event_id    INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -140,6 +143,9 @@ def connect(db_path=DB_PATH):
     cols = [r[1] for r in conn.execute('PRAGMA table_info(events)')]
     if 'canonical_id' not in cols:
         conn.execute('ALTER TABLE events ADD COLUMN canonical_id TEXT')
+    match_cols = [r[1] for r in conn.execute('PRAGMA table_info(matches)')]
+    if 'bsd_event_id' not in match_cols:
+        conn.execute('ALTER TABLE matches ADD COLUMN bsd_event_id INTEGER')
     inj_cols = [r[1] for r in conn.execute('PRAGMA table_info(injuries)')]
     if inj_cols and 'source' not in inj_cols:
         conn.execute("ALTER TABLE injuries ADD COLUMN source TEXT DEFAULT 'fpl'")
@@ -272,10 +278,14 @@ def load_fixtures_openfootball(conn, path='data/master/fixtures_openfootball.jso
             score = m.get('score') or [None, None]
             mid = f"of:{code}:{m.get('round','')}:{m.get('home','')}_{m.get('away','')}".replace(' ', '')
             conn.execute(
-                'INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?)',
+                # 2026-07-31 수정: matches 스키마에 bsd_event_id 컬럼이 추가돼서
+                # (총 9개 컬럼) 물음표도 9개로 맞춰야 함 — 이 함수를 안 고쳤으면
+                # SQL "컬럼 개수 불일치" 에러로 이 함수 전체가 죽었을 것.
+                'INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?,?)',
                 (mid, code, m.get('home'), m.get('away'), m.get('date'),
                  'FINISHED' if score and score[0] is not None else 'SCHEDULED',
-                 score[0] if score else None, score[1] if score else None))
+                 score[0] if score else None, score[1] if score else None,
+                 None))  # OpenFootball 소스엔 BSD 이벤트 id가 없음(당연히 None)
             n += 1
     return n
 
@@ -356,9 +366,9 @@ _KR_TEAM_INDEX = _build_kr_team_index()
 
 def _build_h2h_date_lookup(paths=('data/master/h2h.json',
                                    'data/master/h2h_history_multileague.json')):
-    """h2h.json류 파일들(이미 날짜+팀명+스코어를 갖고 있음)에서
-    (한글팀A, 한글팀B, 팀A골, 팀B골) -> 날짜 매핑을 만든다. 팀명 순서를
-    안 가리려고 양방향(A,B)과 (B,A) 둘 다 키로 넣는다."""
+    """h2h.json류 파일들(이미 날짜+팀명+스코어+[2026-07-31 추가]진짜 BSD id를
+    갖고 있음)에서 (한글팀A, 한글팀B, 팀A골, 팀B골) -> (날짜, BSD id) 매핑을
+    만든다. 팀명 순서를 안 가리려고 양방향(A,B)과 (B,A) 둘 다 키로 넣는다."""
     lookup = {}
     for path in paths:
         data = _load_json(path, {})
@@ -371,25 +381,26 @@ def _build_h2h_date_lookup(paths=('data/master/h2h.json',
                 date = g.get('date')
                 home, away = g.get('home'), g.get('away')
                 hg, ag = g.get('homeGoals'), g.get('awayGoals')
+                bsd_id = g.get('id')
                 if not (date and home and away) or hg is None or ag is None:
                     continue
-                lookup[(home, away, hg, ag)] = date
-                lookup[(away, home, ag, hg)] = date  # 반대 방향도(안전망)
+                lookup[(home, away, hg, ag)] = (date, bsd_id)
+                lookup[(away, home, ag, hg)] = (date, bsd_id)  # 반대 방향도(안전망)
     return lookup
 
 
 def _resolve_date_from_h2h(h2h_lookup, home_raw, away_raw, home_goals, away_goals):
     """이벤트 payload의 home/away(한글이든 영문이든)를 한글 표준명으로 바꿔서
-    h2h_lookup에서 날짜를 찾는다. 실패하면 None(기존 동작과 동일 — 절대
-    크래시 안 남)."""
+    h2h_lookup에서 (날짜, 진짜BSD id)를 찾는다. 실패하면 (None, None)(기존
+    동작과 동일 — 절대 크래시 안 남)."""
     try:
         home_kr = _KR_TEAM_INDEX.get(_norm_kr(home_raw))
         away_kr = _KR_TEAM_INDEX.get(_norm_kr(away_raw))
         if not home_kr or not away_kr:
-            return None
-        return h2h_lookup.get((home_kr, away_kr, home_goals, away_goals))
+            return None, None
+        return h2h_lookup.get((home_kr, away_kr, home_goals, away_goals), (None, None))
     except Exception:
-        return None
+        return None, None
 
 
 def load_events(conn, events_dir='data/events'):
@@ -424,19 +435,24 @@ def load_events(conn, events_dir='data/events'):
             if e.get('type') == 'goal':
                 goals[e.get('team')] = goals.get(e.get('team'), 0) + 1
         date_val = payload.get('date')
+        bsd_event_id = None
         if not date_val:
             # 2026-07-31 추가: payload에 date가 아예 없어서(위 진단으로 확정)
             # h2h.json/h2h_history_multileague.json에서 (팀명,스코어)로
             # 역조회한다. 못 찾으면 그냥 None(기존과 동일 — Understat 등
-            # 날짜 필요한 소비처는 그 경기만 건너뛸 뿐 크래시 없음).
-            date_val = _resolve_date_from_h2h(
+            # 날짜 필요한 소비처는 그 경기만 건너뛸 뿐 크래시 없음). 같은
+            # 김에 진짜 BSD event id도 같이 받아온다(match_id 자체는
+            # "홈팀_원정팀_숫자" 합성id라 BSD의 진짜 숫자 id가 아님 — 실측
+            # 확인된 사실. player-stats 등 event_id 직접조회가 필요한
+            # 소비처를 위해 별도 컬럼에 저장).
+            date_val, bsd_event_id = _resolve_date_from_h2h(
                 h2h_lookup, home, away, goals.get(home, 0), goals.get(away, 0))
             if date_val:
                 n_date_backfilled += 1
-        conn.execute('INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?)',
+        conn.execute('INSERT OR REPLACE INTO matches VALUES (?,?,?,?,?,?,?,?,?)',
                      (mid, payload.get('league'), home, away,
                       date_val, 'FINISHED',
-                      goals.get(home, 0), goals.get(away, 0)))
+                      goals.get(home, 0), goals.get(away, 0), bsd_event_id))
         conn.execute('DELETE FROM events WHERE match_id = ?', (mid,))
         core = ('minute', 'second', 'team', 'player', 'type',
                 'x', 'y', 'end_x', 'end_y', 'outcome')

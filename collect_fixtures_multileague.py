@@ -548,6 +548,9 @@ def main():
                         'home': home_kr, 'away': away_kr,
                         'homeGoals': h_score, 'awayGoals': a_score,
                         'date': date_kst,
+                        'id': ev.get('id'),  # 2026-07-31 추가: 진짜 BSD event id
+                        # (EPL판 collect_fixtures.py와 동일 이유 — matches.match_id는
+                        # 홈팀_원정팀_숫자 합성id라 진짜 BSD id가 별도로 필요).
                     })
                 print(f'[collect_fixtures_multileague] {league_key} 지난시즌 H2H: '
                       f'{prev_from}~{prev_to} 구간 {len(h2h_history_rows)}건 확보',

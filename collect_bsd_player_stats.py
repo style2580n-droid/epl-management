@@ -143,11 +143,11 @@ _status_counts = {}
 _sample_logged = False
 
 
-def fetch_player_stats(session, keys, match_id):
+def fetch_player_stats(session, keys, event_id):
     """/api/v2/events/{id}/player-stats/ 호출. 페이지네이션 있으면 따라감
     (스펙상 PaginatedPlayerStatList — count/next/previous/results)."""
     global _sample_logged
-    url = f'{BSD_BASE}/api/v2/events/{match_id}/player-stats/'
+    url = f'{BSD_BASE}/api/v2/events/{event_id}/player-stats/'
     params = {'limit': 50}
     all_results = []
     for key in keys:
@@ -155,23 +155,23 @@ def fetch_player_stats(session, keys, match_id):
             r = session.get(url, params=params,
                              headers={'Authorization': f'Token {key}'}, timeout=15)
         except Exception as e:
-            print(f'[collect_bsd_player_stats] event={match_id} 요청 실패: {e}', flush=True)
+            print(f'[collect_bsd_player_stats] event={event_id} 요청 실패: {e}', flush=True)
             continue
         _status_counts[r.status_code] = _status_counts.get(r.status_code, 0) + 1
         if not _sample_logged:
-            print(f'[collect_bsd_player_stats] [diag] event={match_id} 첫 응답 '
+            print(f'[collect_bsd_player_stats] [diag] event={event_id} 첫 응답 '
                   f'HTTP {r.status_code} · 본문 앞 300자: {r.text[:300]!r}', flush=True)
             _sample_logged = True
         if r.status_code == 404:
             return None  # 이 경기는 BSD에 player-stats 자체가 없음(정상적인 경우)
         if r.status_code != 200:
-            print(f'[collect_bsd_player_stats] event={match_id} HTTP {r.status_code}: '
+            print(f'[collect_bsd_player_stats] event={event_id} HTTP {r.status_code}: '
                   f'{r.text[:200]!r}', flush=True)
             continue
         try:
             data = r.json()
         except ValueError as e:
-            print(f'[collect_bsd_player_stats] event={match_id} JSON 아님: {e}', flush=True)
+            print(f'[collect_bsd_player_stats] event={event_id} JSON 아님: {e}', flush=True)
             continue
         # 스펙에 "No response body" 예시가 없어서 두 가지 형태(페이지네이션
         # 래퍼 vs 순수 리스트) 다 방어적으로 처리.
@@ -299,9 +299,14 @@ def _finished_matches():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     try:
+        # 2026-07-31 수정: match_id는 "홈팀_원정팀_숫자" 합성id라 BSD의 진짜
+        # 숫자 이벤트 id가 아님(실측 확인된 사실 — 이전 버전이 이걸 event_id로
+        # 그대로 썼다가 전부 404가 났었음). db.py가 h2h 역조회로 채워준
+        # bsd_event_id 컬럼(진짜 BSD id)이 있는 경기만 대상으로 삼는다.
         rows = conn.execute(
-            "SELECT match_id, home, away FROM matches "
-            "WHERE status = 'FINISHED' AND home_goals IS NOT NULL AND away_goals IS NOT NULL"
+            "SELECT match_id, home, away, bsd_event_id FROM matches "
+            "WHERE status = 'FINISHED' AND home_goals IS NOT NULL "
+            "AND away_goals IS NOT NULL AND bsd_event_id IS NOT NULL"
         ).fetchall()
     finally:
         conn.close()
@@ -345,26 +350,27 @@ def main():
         lk = _resolve_league(row)
         if lk:
             n_league_matched += 1
-        mid = row['match_id']
+        mid = row['match_id']  # 합성id(홈팀_원정팀_숫자) — 파일경로/state 키용
+        real_event_id = row['bsd_event_id']  # 진짜 BSD 숫자id — 조회용
         metrics_path = os.path.join(METRICS_DIR, f'{mid}_metrics.json')
         if not os.path.exists(metrics_path):
             continue
         n_metrics_found += 1
         if done.get(mid, {}).get('status') in ('ok', 'no_data'):
             continue
-        candidates.append((mid, metrics_path))
+        candidates.append((mid, real_event_id, metrics_path))
     print(f'[collect_bsd_player_stats] 우리 추적리그 소속 {n_league_matched}건(참고용, '
           f'조회는 전체 대상), metrics 파일 존재 {n_metrics_found}건, '
           f'처리 대상(미완료) {len(candidates)}건', flush=True)
 
     n_ok = n_no_data = n_no_merge = 0
     n_merged_players = 0
-    for mid, metrics_path in candidates:
+    for mid, real_event_id, metrics_path in candidates:
         if n_ok + n_no_data + n_no_merge >= MAX_NEW_MATCHES_PER_RUN:
             print(f'[collect_bsd_player_stats] 실행당 상한({MAX_NEW_MATCHES_PER_RUN}건) '
                   f'도달 → 중단(다음 실행에서 이어감)', flush=True)
             break
-        results = fetch_player_stats(session, keys, mid)
+        results = fetch_player_stats(session, keys, real_event_id)
         time.sleep(REQUEST_DELAY)
         if results is None:
             done[mid] = {'status': 'no_data', 'at': datetime.now(timezone.utc).isoformat()}
