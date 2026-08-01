@@ -179,10 +179,11 @@ jobs:
           # 2026-07-31 추가(2-1 최종 대안): BSD 공식 스펙(football-schema.json,
           # 사용자가 BSD 사이트에서 직접 받음)에서 확인된 /api/v2/events/{id}/
           # player-stats/ 로 선수별 슈팅/유효슈팅/태클/인터셉트/키패스/드리블
-          # 6개 필드를 채운다. matches.match_id가 BSD 이벤트 ID 그대로라
-          # 팀명매칭/날짜매칭/시즌계산이 전혀 필요 없어서, 이번 세션에 시도한
-          # 것 중 구조적으로 가장 실패 위험이 낮다.
-          python collect_bsd_player_stats.py || true
+          # 6개 필드를 채운다. matches.bsd_event_id(진짜 BSD 숫자id)가 필요한데,
+          # 그건 collect_fixtures*.py + db.py 재실행 이후에야 채워지므로, 이
+          # 스크립트 실행문은 아래쪽(db.py 재실행 직후)으로 옮김 — 여기 두면
+          # 아직 id가 안 채워진 예전 DB를 보게 돼서 전부 대상 0건이 남(실측
+          # 확인된 문제).
           python normalizer.py
           python viz_engine.py
           python player_profiler.py
@@ -198,6 +199,30 @@ jobs:
           # (리그/팀 존재 확인) 달성해서 제거함 — mls_norway_team_maps.py 내용은
           # app_export_multileague.py의 LEAGUE_TEAM_MAPS로 그대로 병합됨.
           python collect_fixtures_multileague.py
+          # 2026-07-31 추가: db.py(위쪽에서 이미 한 번 실행됨, 3번째 순서)가
+          # collect_fixtures.py/collect_fixtures_multileague.py(17~18번째 순서)
+          # 보다 먼저 도는 구조라, db.py가 h2h.json을 읽어 날짜/진짜BSD id를
+          # 백필할 때 아직 이번 실행에서 새로 안 만들어진 예전 h2h.json을
+          # 읽고 있었다(실측 확인: bsd_event_id가 전부 비어서 collect_bsd_
+          # player_stats.py 대상이 0건이 나옴). 기존 순서(다른 스크립트들이
+          # db.py를 일찍 필요로 함)는 안 건드리고, h2h.json이 방금 최신화된
+          # 지금 시점에 db.py를 한 번 더 돌려서 날짜/id 백필만 다시 반영한다
+          # (INSERT OR REPLACE라 재실행해도 안전 — 멱등성 있음).
+          python db.py
+          # 2026-07-31 추가: db.py의 load_events()는 매번 호출될 때마다 모든
+          # 경기의 events를 삭제 후 재생성하고, canonical_id는 항상 NULL로
+          # 리셋된다(재삽입 시 canonical_id 컬럼 자체를 안 채움 — normalizer.py가
+          # 후처리하는 구조라서). db.py를 여기서 재실행하면서 그 이후로
+          # normalizer.py가 다시 안 돈다면, 위쪽(8번째 순서)에서 이미 정규화한
+          # canonical_id가 전부 날아간 채로 나머지 파이프라인이 진행되는
+          # 심각한 회귀가 생긴다 — 그래서 normalizer.py도 같이 재실행한다.
+          python normalizer.py
+          # 2026-07-31 추가: collect_bsd_player_stats.py를 여기로 옮김(원래
+          # 위쪽 db.py 1차 실행 직후에 있었는데, 그 시점엔 아직 이번 실행의
+          # h2h.json이 안 만들어져서 matches.bsd_event_id가 전부 비어있었다
+          # — 실측 확인: 대상 0건). 이제 db.py 2차 실행(바로 위) 직후라 진짜
+          # BSD id가 채워진 상태를 보게 된다.
+          python collect_bsd_player_stats.py || true
           python collect_xg_bsd.py
           # 2026-07-24: MLS xG 확인(rehearse_mls_norway_xg_probe.py)도 목적
           # 달성 — MLS는 이제 collect_xg_bsd.py의 LEAGUES에 정식 포함됨.
@@ -230,6 +255,17 @@ jobs:
           # 만들어야 해서 반드시 그 앞에 와야 한다.
           python train_ml_ensemble.py
           python collect_logos_multileague.py
+          # 2026-08-01 추가: 이 4개는 원래 위쪽(9~13번 순서, viz_engine.py
+          # 다음)에서 이미 한 번 돌았는데, 그 시점은 collect_bsd_player_stats.py
+          # (아래쪽으로 옮겨진 뒤)보다 훨씬 전이라 태클/인터셉트/키패스/드리블
+          # 데이터가 채워지기 전 상태로 player_profiles.json 등을 만들어냈다
+          # (사용자가 제공한 파일로 실측 확인 — player_profiler.py/
+          # season_aggregator.py/transfer_impact.py가 정확히 이 필드들을
+          # 씀). app_export.py 직전에 재실행해서 최신 데이터를 반영한다.
+          python player_profiler.py
+          python season_aggregator.py
+          python transfer_impact.py
+          python report_generator.py
           python app_export.py
           python app_export_multileague.py
 
