@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 01:31
+생성(UTC): 2026-08-01 02:29
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -24,8 +24,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 8건 (누적 306건)
+오늘 12건 (누적 310건)
 
 ## 📊 경기 고급 지표
 
@@ -3444,6 +3448,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 뉴욕 시티 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 | 콜로라도 래피즈 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+
+### 뉴욕시티FC_토론토FC_5169
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 뉴욕 시티 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.1% |
+| 토론토 FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.9% |
 
 ### 뉴잉글랜드레볼루션_CF몬트리올_4989
 
@@ -10685,6 +10696,7 @@
 - **뉴욕시티FC_인터마이애미_4983**: [heatmap(뉴욕 시티 FC)](viz/뉴욕시티FC_인터마이애미_4983_뉴욕 시티 FC_heatmap.svg) · [network(뉴욕 시티 FC)](viz/뉴욕시티FC_인터마이애미_4983_뉴욕 시티 FC_network.svg) · [shotmap(뉴욕 시티 FC)](viz/뉴욕시티FC_인터마이애미_4983_뉴욕 시티 FC_shotmap.svg) · [heatmap(인터 마이애미)](viz/뉴욕시티FC_인터마이애미_4983_인터 마이애미_heatmap.svg) · [network(인터 마이애미)](viz/뉴욕시티FC_인터마이애미_4983_인터 마이애미_network.svg) · [shotmap(인터 마이애미)](viz/뉴욕시티FC_인터마이애미_4983_인터 마이애미_shotmap.svg)
 - **뉴욕시티FC_콜럼버스크루_5086**: [heatmap(뉴욕 시티 FC)](viz/뉴욕시티FC_콜럼버스크루_5086_뉴욕 시티 FC_heatmap.svg) · [network(뉴욕 시티 FC)](viz/뉴욕시티FC_콜럼버스크루_5086_뉴욕 시티 FC_network.svg) · [shotmap(뉴욕 시티 FC)](viz/뉴욕시티FC_콜럼버스크루_5086_뉴욕 시티 FC_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/뉴욕시티FC_콜럼버스크루_5086_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/뉴욕시티FC_콜럼버스크루_5086_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/뉴욕시티FC_콜럼버스크루_5086_콜럼버스 크루_shotmap.svg)
 - **뉴욕시티FC_콜로라도래피즈_4963**: [heatmap(뉴욕 시티 FC)](viz/뉴욕시티FC_콜로라도래피즈_4963_뉴욕 시티 FC_heatmap.svg) · [network(뉴욕 시티 FC)](viz/뉴욕시티FC_콜로라도래피즈_4963_뉴욕 시티 FC_network.svg) · [shotmap(뉴욕 시티 FC)](viz/뉴욕시티FC_콜로라도래피즈_4963_뉴욕 시티 FC_shotmap.svg) · [heatmap(콜로라도 래피즈)](viz/뉴욕시티FC_콜로라도래피즈_4963_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/뉴욕시티FC_콜로라도래피즈_4963_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/뉴욕시티FC_콜로라도래피즈_4963_콜로라도 래피즈_shotmap.svg)
+- **뉴욕시티FC_토론토FC_5169**: [heatmap(뉴욕 시티 FC)](viz/뉴욕시티FC_토론토FC_5169_뉴욕 시티 FC_heatmap.svg) · [network(뉴욕 시티 FC)](viz/뉴욕시티FC_토론토FC_5169_뉴욕 시티 FC_network.svg) · [shotmap(뉴욕 시티 FC)](viz/뉴욕시티FC_토론토FC_5169_뉴욕 시티 FC_shotmap.svg) · [heatmap(토론토 FC)](viz/뉴욕시티FC_토론토FC_5169_토론토 FC_heatmap.svg) · [network(토론토 FC)](viz/뉴욕시티FC_토론토FC_5169_토론토 FC_network.svg) · [shotmap(토론토 FC)](viz/뉴욕시티FC_토론토FC_5169_토론토 FC_shotmap.svg)
 - **뉴잉글랜드레볼루션_CF몬트리올_4989**: [heatmap(CF 몬트리올)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_CF 몬트리올_heatmap.svg) · [network(CF 몬트리올)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_CF 몬트리올_network.svg) · [shotmap(CF 몬트리올)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_CF 몬트리올_shotmap.svg) · [heatmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_뉴잉글랜드 레볼루션_heatmap.svg) · [network(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_뉴잉글랜드 레볼루션_network.svg) · [shotmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_CF몬트리올_4989_뉴잉글랜드 레볼루션_shotmap.svg)
 - **뉴잉글랜드레볼루션_DC유나이티드_5010**: [heatmap(DC 유나이티드)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_DC 유나이티드_heatmap.svg) · [network(DC 유나이티드)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_DC 유나이티드_network.svg) · [shotmap(DC 유나이티드)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_DC 유나이티드_shotmap.svg) · [heatmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_뉴잉글랜드 레볼루션_heatmap.svg) · [network(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_뉴잉글랜드 레볼루션_network.svg) · [shotmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_DC유나이티드_5010_뉴잉글랜드 레볼루션_shotmap.svg)
 - **뉴잉글랜드레볼루션_FC신시내티_4971**: [heatmap(FC 신시내티)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_FC 신시내티_shotmap.svg) · [heatmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_뉴잉글랜드 레볼루션_heatmap.svg) · [network(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_뉴잉글랜드 레볼루션_network.svg) · [shotmap(뉴잉글랜드 레볼루션)](viz/뉴잉글랜드레볼루션_FC신시내티_4971_뉴잉글랜드 레볼루션_shotmap.svg)
