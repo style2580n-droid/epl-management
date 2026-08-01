@@ -223,6 +223,11 @@ jobs:
           # — 실측 확인: 대상 0건). 이제 db.py 2차 실행(바로 위) 직후라 진짜
           # BSD id가 채워진 상태를 보게 된다.
           python collect_bsd_player_stats.py || true
+          # 2026-08-01 추가: collect_bsd_player_stats.py가 방금 채운 경기별
+          # yellow_cards/red_cards를 모아서 옐로누적/레드카드직전경기로
+          # 결장위험을 판정한다. API 호출 없이 로컬 metrics.json만 읽으므로
+          # collect_bsd_player_stats.py 직후 아무 데나 둬도 안전(가볍고 빠름).
+          python compute_card_suspensions.py || true
           python collect_xg_bsd.py
           # 2026-07-24: MLS xG 확인(rehearse_mls_norway_xg_probe.py)도 목적
           # 달성 — MLS는 이제 collect_xg_bsd.py의 LEAGUES에 정식 포함됨.
