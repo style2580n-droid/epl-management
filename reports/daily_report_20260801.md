@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 06:09
+생성(UTC): 2026-08-01 10:35
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -48,8 +48,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 32건 (누적 330건)
+오늘 36건 (누적 334건)
 
 ## 📊 경기 고급 지표
 
@@ -11686,13 +11690,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| L. Yoro | - | 0.0 | 62.5 | 0.0 | - |
-| K. Trippier | - | 13.3 | 25.0 | 0.0 | - |
-| M. Röhl | 0.0 | 0.0 | 50.0 | 0.0 | - |
-| B. Sosa | 0.0 | 13.3 | 12.5 | 0.0 | - |
-| S. Tonali | - | 8.9 | 8.3 | 0.0 | - |
-| N. Madueke | 0.0 | 20.0 | 0.0 | 0.0 | - |
-| A. Diallo | - | 6.7 | 6.2 | 0.0 | - |
-| R. Barkley | 0.0 | 0.0 | 16.7 | 0.0 | - |
-| W. Saliba | - | 0.0 | 12.5 | 0.0 | - |
-| L. Hall | 0.0 | 3.3 | 12.5 | 0.0 | - |
+| I. Diop | - | 0.0 | 50.0 | 0.0 | - |
+| D. Bugaj | 0.0 | 13.3 | 50.0 | 0.0 | - |
+| L. Cook | - | 0.0 | 43.8 | 0.0 | - |
+| R. Sessegnon | 0.0 | 6.7 | 31.2 | 0.0 | - |
+| J. Bijol | 0.0 | 0.0 | 34.4 | 0.0 | - |
+| T. Castagne | - | 0.0 | 25.0 | 0.0 | - |
+| J. Cuenca | - | 0.0 | 20.8 | 0.0 | - |
+| M. Zubimendi | 0.0 | 5.0 | 18.8 | 0.0 | - |
+| M. Mount | - | 0.0 | 17.5 | 0.0 | - |
+| I. Konaté | - | 0.0 | 17.2 | 0.0 | - |
