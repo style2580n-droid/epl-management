@@ -141,6 +141,7 @@ def _get_keys():
 # 원인(전부 404인지/인증실패인지/응답구조가 다른지)을 다음 로그로 확정한다.
 _status_counts = {}
 _sample_logged = False
+_sample_row_logged = False
 
 
 def fetch_player_stats(session, keys, event_id):
@@ -173,9 +174,15 @@ def fetch_player_stats(session, keys, event_id):
         except ValueError as e:
             print(f'[collect_bsd_player_stats] event={event_id} JSON 아님: {e}', flush=True)
             continue
-        # 스펙에 "No response body" 예시가 없어서 두 가지 형태(페이지네이션
-        # 래퍼 vs 순수 리스트) 다 방어적으로 처리.
-        if isinstance(data, dict) and 'results' in data:
+        # 2026-08-01 수정: 실제 응답이 {"event_id":..., "count":N,
+        # "player_stats":[...]} 형태인 게 실측 확인됨(스펙엔 "No response
+        # body"라 예시가 없어서 페이지네이션 래퍼로 잘못 가정했었음 —
+        # 그래서 매번 성공 응답을 받고도 파싱을 못 해 전부 no_data로
+        # 새나가고 있었다). player_stats를 최우선으로 확인하고, 혹시
+        # 다른 형태로 올 경우도 대비해 결과/리스트 형태도 폴백으로 둔다.
+        if isinstance(data, dict) and 'player_stats' in data:
+            all_results.extend(data.get('player_stats') or [])
+        elif isinstance(data, dict) and 'results' in data:
             all_results.extend(data.get('results') or [])
             next_url = data.get('next')
             while next_url:
@@ -242,8 +249,17 @@ def _num(v):
 def parse_player_stats(results):
     """results(list of PlayerStat) -> {(name_short, name_full): {필드:값}}
     나중에 병합 단계에서 두 이름 후보 다 시도."""
+    global _sample_row_logged
     out = []
     for row in (results or []):
+        if not _sample_row_logged:
+            # 2026-08-01 추가: 최상위 응답 구조(results vs player_stats)가
+            # 스펙 예시 없이 틀렸던 전례가 있어서, 개별 선수 레코드 구조도
+            # 한 번 그대로 로그에 남긴다 — 필드명(total_shots/won_tackle 등)이
+            # 실제로 맞는지 다음 로그로 바로 확정하기 위함.
+            print(f'[collect_bsd_player_stats] [diag] 선수 레코드 원본 샘플: {row}',
+                  flush=True)
+            _sample_row_logged = True
         player = row.get('player') or {}
         name_full = player.get('name')
         name_short = player.get('short_name')
@@ -259,6 +275,13 @@ def parse_player_stats(results):
             val = _num(row.get(src_key))
             if val is not None:
                 rec[field] = val
+        # 2026-08-01 추가: app_export.py는 'tackles_won'을 읽는데,
+        # player_profiler.py/season_aggregator.py/transfer_impact.py(이번
+        # 세션 이전부터 있던 파일, 실측 확인)는 'tackles'를 읽는다 — 코드베이스
+        # 안에 서로 다른 필드명 관례가 이미 공존하고 있어서, 두 이름 다 같은
+        # 값으로 저장해야 양쪽 소비처가 다 정상 작동한다.
+        if 'tackles_won' in rec:
+            rec['tackles'] = rec['tackles_won']
         if rec:
             out.append(((name_short, name_full), rec))
     return out
