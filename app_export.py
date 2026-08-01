@@ -750,6 +750,12 @@ def render_js(name_cache):
     lines.append('const PIPELINE_TRANSFERS = ' + _js(transfers) + ';')
     lines.append('const PIPELINE_SCHEDULE = ' + _js(schedule) + ';')
     lines.append('const PIPELINE_H2H = ' + _js(h2h) + ';')
+    # 2026-08-01 추가: compute_card_suspensions.py가 만든 카드누적/레드카드
+    # 결장위험 정보. {선수명: {team, yellow_total, red_on_last_match,
+    # last_match_date}} — 옐로누적 5장 이상이거나 직전경기 레드카드였던
+    # 선수만 담겨있음(그 외는 결장 관련 알릴 게 없어서 파일에서 제외됨).
+    card_suspensions = _load_json('data/master/card_suspensions.json', {})
+    lines.append('const PIPELINE_CARD_SUSPENSIONS = ' + _js(card_suspensions) + ';')
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     lines.append('const PIPELINE_ML_ENSEMBLE = ' + _js(ml_ensemble) + ';')
     # 2026-07-22 (A단계): 선수 능력치 기준선. EPL 앱도 club_en으로 팀 매칭하고

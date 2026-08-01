@@ -1290,6 +1290,21 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
               team_group_games_by_league, wc_fatigue=None):
     wc_fatigue = wc_fatigue or {}
     logos_by_league = _load_json(LOGOS_PATH, {})
+    # 2026-08-01 추가: compute_card_suspensions.py가 만든 카드누적/레드카드
+    # 결장위험 정보를 리그별로 분류. 원본은 리그 구분 없이 {선수명: {team,...}}
+    # 형태라, 각 선수의 team(한글 팀명)이 LEAGUE_TEAM_MAPS 어느 리그에 속하는지
+    # 찾아서 나눈다 — injuries/elo 등 기존 필드들과 동일한 리그별 블록 구조로
+    # 맞추기 위함(클라이언트가 PIPELINE_DATA_{리그}.cardSuspensions로 접근).
+    _card_susp_all = _load_json('data/master/card_suspensions.json', {})
+    _team_to_league = {}
+    for _lk, _team_map in LEAGUE_TEAM_MAPS.items():
+        for _kr in _team_map:
+            _team_to_league[_kr] = _lk
+    card_suspensions_by_league = {}
+    for _name, _info in _card_susp_all.items():
+        _lk = _team_to_league.get(_info.get('team'))
+        if _lk:
+            card_suspensions_by_league.setdefault(_lk, {})[_name] = _info
     # 2026-07-22 (A단계): 선수 능력치 기준선을 앱에 전달. 클라이언트
     # (multi_league_index.html)는 player_baseline.json의 players 구조를 그대로
     # 받아 club_en으로 팀 매칭하고 source==="league"인 선수만 예측에 쓴다.
@@ -1319,6 +1334,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             'leaderboard': leaderboard_by_league.get(league_key, {'scorers': {}, 'assists': {}}),
             'teamGroupGames': team_group_games_by_league.get(league_key, {}),  # 2026-07-29 개인기여도
             'playerBaseline': player_baseline_league,  # A단계 (2026-07-22)
+            'cardSuspensions': card_suspensions_by_league.get(league_key, {}),  # 2026-08-01 추가
         }
         var_name = f'PIPELINE_DATA_{league_key.upper()}'
         lines.append(f'window.{var_name} = ' + _js(block) + ';')

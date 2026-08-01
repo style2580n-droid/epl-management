@@ -327,6 +327,9 @@ def parse_player_stats(results, player_names):
             ('tackles_won', 'won_tackle'), ('interceptions', 'interception'),
             ('key_passes', 'key_pass'),
             ('dribbles', 'total_contest'), ('dribbles_won', 'won_contest'),
+            # 2026-08-01 추가: 카드 누적 정지 판정용(별도 집계 스크립트가
+            # 이 경기별 값들을 모아서 시즌 누적/직전경기 레드카드를 계산).
+            ('yellow_cards', 'yellow_card'), ('red_cards', 'red_card'),
         ):
             val = _num(row.get(src_key))
             if val is not None:
