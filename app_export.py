@@ -26,7 +26,7 @@ import requests
 # 먼저 호출해서 EPL도 이번 실행의 최신 리그 기록을 반영받게 한다. 이 함수는
 # player_baseline.json을 매번 처음부터 다시 계산해서 통째로 덮어쓰므로(증분
 # 누적이 아님) 같은 실행 안에서 두 번 호출돼도 안전(멱등)하다.
-from app_export_multileague import update_player_baseline
+from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league, update_player_baseline
 
 NAME_CACHE_PATH = 'data/master/name_translations.json'
 
@@ -256,10 +256,26 @@ def _js(v):
 def build_team_blocks():
     elo_rankings = _load_json('data/master/club_elo.json', {}).get('rankings', [])
     elo_by_team = {}
+    # 2026-08-02 추가: ClubElo는 원래 전세계 클럽을 한 척도로 매기는
+    # 크로스리그 비교용 데이터인데(그래서 챔스/유로파 예측에도 쓰인다),
+    # 예전엔 to_kr()(EPL 20팀 별칭만 인식)로만 걸러서 그 외 클럽은 전부
+    # 버려졌다. 그 결과 EPL팀이 챔스·유로파·리그간 친선전에서 다른
+    # 트래킹 리그 소속 팀과 붙으면 상대 ELO를 못 찾아 중립값(1500)으로
+    # 깔려서 예측이 왜곡됐다(8개리그 앱에서 실측 확인된 것과 동일한
+    # 버그 — 사용자 지적으로 발견). to_kr_league(8개리그 전체 별칭)도
+    # 같이 시도해서, 크로스리그로 매칭된 팀도 elo_by_team에 넣는다.
+    cross_league_teams = set()
     for r in elo_rankings:
-        kr = to_kr(r.get('club'))
+        club = r.get('club')
+        kr = to_kr(club)
         if kr:
             elo_by_team[kr] = r.get('elo')
+            continue
+        hit = to_kr_league(club)
+        if hit:
+            _lk, kr2 = hit
+            elo_by_team[kr2] = r.get('elo')
+            cross_league_teams.add(kr2)
 
     season_teams = _load_json(f'{METRICS_DIR}/season_teams.json', {})
     team_pm = {}  # 한글팀명 -> per_match dict
@@ -283,7 +299,12 @@ def build_team_blocks():
                         homeXga=1.3, awayXg=1.2, awayXga=1.5, euRotation=0)
 
     elo_out, adv_out = {}, {}
-    for kr in TEAM_NAME_MAP:
+    # 2026-08-02 수정: TEAM_NAME_MAP(EPL 20팀)만 돌던 걸 cross_league_teams
+    # 까지 합쳐서 돈다 — advanced stats(season_teams.json)는 EPL 전용이라
+    # 크로스리그 팀은 team_pm이 그냥 비어있고(=default_adv 그대로), 그건
+    # 원래도 그렇게 설계돼있어서 문제없다(핵심은 ELO 기본값이 실제
+    # 수치로 채워지는 것).
+    for kr in set(TEAM_NAME_MAP) | cross_league_teams:
         base_elo = elo_by_team.get(kr)
         e = dict(default_elo)
         if base_elo:

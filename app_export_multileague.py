@@ -1388,6 +1388,17 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
     _all_logos = {}
     for _lk in LEAGUE_TEAM_MAPS:
         _all_logos.update(logos_by_league.get(_lk, {}))
+    # 2026-08-02 추가: ELO도 로고와 똑같은 구조적 문제가 있었다 — ClubElo는
+    # 애초에 전세계 클럽을 하나의 척도로 매기는 크로스리그 비교용 데이터인데
+    # (그래서 챔스/유로파 예측에도 쓰이는 것), 리그별로 쪼개서 내보내다 보니
+    # 프론트가 "지금 보는 리그의 ELO만" 메모리에 올려서, 챔스·유로파·리그간
+    # 친선전처럼 상대가 다른 트래킹 리그 소속이면 그 팀 ELO를 못 찾고
+    # 중립값(1500)으로 깔려서 예측 자체가 왜곡됐다(사용자 지적으로 실측
+    # 확인). 로고와 동일하게 8개리그 전체 ELO를 병합해서 모든 리그 block에
+    # 공통으로 전달 — 팀명이 리그 간에 겹칠 일은 없어 병합 순서 문제 없음.
+    _all_elo = {}
+    for _lk in LEAGUE_TEAM_MAPS:
+        _all_elo.update(elo_by_league.get(_lk, {}))
     for league_key in LEAGUE_TEAM_MAPS:
         block = {
             'schedule': schedules.get(league_key, []),
@@ -1397,7 +1408,7 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
             # 리그 구분 없이 모아둔 걸 모든 리그 block에 공통으로 병합한다.
             # 정규 리그 로고를 뒤에 스프레드해서 혹시 이름이 겹치면 정규
             # 쪽이 우선하도록(더 신뢰도 높은 소스이므로).
-            'elo': elo_by_league.get(league_key, {}),
+            'elo': _all_elo,
             'squads': squads.get(league_key, {}),
             'teamXg': xg_by_league.get(league_key, {}),
             'injuries': injuries_by_league.get(league_key, {}),
