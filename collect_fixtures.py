@@ -23,11 +23,13 @@ BSD(Bzzoiro Sports Data)의 /events/ (리그 단위, date_from~date_to 필터)�
 """
 import json
 import os
+import re
 import time
 from datetime import datetime, timedelta, timezone
 
 from api_clients import BSDClient
 from app_export import to_kr
+from app_export_multileague import LEAGUE_TEAM_MAPS as _ML_TEAM_MAPS
 
 SCHEDULE_OUT = 'data/master/schedule.json'
 H2H_OUT = 'data/master/h2h.json'
@@ -195,6 +197,81 @@ def _kst_date_time(iso_str):
     return kst.strftime('%Y-%m-%d'), kst.strftime('%H:%M')
 
 
+def _norm_any(name):
+    if not name:
+        return ''
+    n = re.sub(r'\b(FC|AFC|CF)\b', '', name, flags=re.I)
+    return re.sub(r'[^a-z가-힣0-9]', '', n.lower())
+
+
+_ANY_LEAGUE_LOOKUP = {}
+for _team_map in _ML_TEAM_MAPS.values():
+    for _kr, _aliases in _team_map.items():
+        for _a in list(_aliases) + [_kr]:
+            _ANY_LEAGUE_LOOKUP.setdefault(_norm_any(_a), _kr)
+
+
+def _to_kr_any_league(name):
+    """to_kr()은 EPL 20개 팀만 아는데, 프리시즌 친선전 상대는 다른 리그
+    소속(예: 레알 마드리드, 바이에른 뮌헨)인 경우가 흔하다 — EPL 먼저
+    시도하고 실패하면 8개리그 팀명 맵도 찾아본다. 그래도 실패하면
+    (하위리그/아마추어팀 등 우리가 아예 모르는 팀) None — 이런 경기는
+    안전하게 건너뛴다(모르는 팀 데이터로 억지 예측 안 함)."""
+    kr = to_kr(name)
+    if kr:
+        return kr
+    return _ANY_LEAGUE_LOOKUP.get(_norm_any(name))
+
+
+def _find_friendlies_league_id(client):
+    """리그 목록에서 name에 'friendl'(friendly/friendlies 둘 다 매치)이
+    들어간 항목을 찾는다. _find_pl_league_id와 동일 패턴이지만, 친선전은
+    특정 국가 소속이 아니라(BSD 사이트에 "World > Club Friendlies"로
+    표시됨) country 조건은 안 건다."""
+    offset = 0
+    while True:
+        data = _unwrap(client.leagues(limit=PAGE_LIMIT, offset=offset))
+        if not data:
+            return None, None
+        results = data.get('results', [])
+        for lg in results:
+            name = (lg.get('name') or '').lower()
+            if 'friendl' in name and 'club' in name:
+                season = lg.get('current_season') or {}
+                return lg.get('id'), season.get('id')
+        total = data.get('count', len(results))
+        offset += PAGE_LIMIT
+        if offset >= total or not results:
+            return None, None
+
+
+def _fetch_friendlies_events(client, league_id):
+    """친선전은 EPL 20개 팀 외에 다양한 상대(하위리그/타국 클럽 등)가
+    섞여 나오는 게 정상이라, _fetch_all_league_events처럼 "팀 비중 30%"
+    검증을 걸면 안 된다 — 리그 필터 파라미터가 이미 확정돼있으면
+    (_LEAGUE_PARAM_NAME) 그걸 그대로 재사용해서 검증 없이 바로 가져온다."""
+    param_name = _LEAGUE_PARAM_NAME or 'league'
+    all_rows = []
+    offset = 0
+    pages = 0
+    while pages < _MAX_PAGES:
+        data = _unwrap(client.events(**{
+            param_name: league_id, 'date_from': DATE_FROM, 'date_to': DATE_TO,
+            'limit': PAGE_LIMIT, 'offset': offset}))
+        time.sleep(0.3)
+        if not data:
+            break
+        rows = data.get('results', [])
+        if not rows:
+            break
+        all_rows.extend(rows)
+        offset += PAGE_LIMIT
+        pages += 1
+        if len(rows) < PAGE_LIMIT:
+            break
+    return all_rows
+
+
 def main():
     client = BSDClient()
     if not client.enabled:
@@ -222,12 +299,44 @@ def main():
 
     print(f'[collect_fixtures] 고유 경기 {len(events_by_id)}건 수집', flush=True)
 
+    # 2026-08-01 추가: 프리시즌(Club Friendlies) — BSD에서 완전히 별도
+    # 리그로 분류돼있어서(사이트에 "World > Club Friendlies"로 표시) 새로
+    # 발견해서 합친다. 실패해도(리그를 못 찾거나 조회 실패) 정규시즌
+    # 로직에는 전혀 영향 없도록 try/except로 감싼다 — 이 기능 하나 때문에
+    # 기존에 잘 되던 정규시즌 일정 수집이 망가지면 안 되므로.
+    n_friendlies = 0
+    try:
+        friendlies_league_id, _ = _find_friendlies_league_id(client)
+        if friendlies_league_id:
+            print(f'[collect_fixtures] Club Friendlies league_id='
+                  f'{friendlies_league_id}', flush=True)
+            friendly_rows = _fetch_friendlies_events(client, friendlies_league_id)
+            for ev in friendly_rows:
+                eid = ev.get('id')
+                if eid is not None and eid not in events_by_id:
+                    ev['_is_friendly'] = True
+                    events_by_id[eid] = ev
+                    n_friendlies += 1
+            print(f'[collect_fixtures] 프리시즌 경기 {n_friendlies}건 추가 수집 '
+                  f'(팀 매칭 전 — 우리가 모르는 팀끼리 경기는 이후 단계에서 '
+                  f'자동 제외됨)', flush=True)
+        else:
+            print('[collect_fixtures] Club Friendlies 리그를 못 찾음 — '
+                  '프리시즌은 건너뜀(정규시즌 수집엔 영향 없음)', flush=True)
+    except Exception as e:
+        print(f'[collect_fixtures] 프리시즌 수집 중 오류(무시하고 계속): {e}', flush=True)
+
     schedule = []
     h2h_raw = {}  # "팀A|||팀B"(정렬됨) -> [record, ...]
 
     for ev in events_by_id.values():
-        home_kr = team_id_to_kr.get(ev.get('home_team_id')) or to_kr(ev.get('home_team'))
-        away_kr = team_id_to_kr.get(ev.get('away_team_id')) or to_kr(ev.get('away_team'))
+        is_friendly = ev.get('_is_friendly', False)
+        # 2026-08-01 수정: to_kr()은 EPL 20개 팀만 알아서 프리시즌 상대팀
+        # (다른 리그 소속)을 놓칠 수 있었다 — EPL+8개리그 전체를 아우르는
+        # _to_kr_any_league로 교체(정규시즌은 어차피 EPL 팀끼리라 결과
+        # 동일, 프리시즌만 새로 커버됨).
+        home_kr = team_id_to_kr.get(ev.get('home_team_id')) or _to_kr_any_league(ev.get('home_team'))
+        away_kr = team_id_to_kr.get(ev.get('away_team_id')) or _to_kr_any_league(ev.get('away_team'))
         if not (home_kr and away_kr):
             continue
         status = (ev.get('status') or '').lower()
@@ -236,6 +345,13 @@ def main():
             continue
 
         if status == 'finished':
+            if is_friendly:
+                # 2026-08-01 추가: 친선전은 진지도가 낮아서(주전 미출전,
+                # 실험적 라인업 등) 상대전적 통계에 섞으면 예측 정확도를
+                # 해칠 수 있다 — 종료된 친선전은 h2h에 안 넣는다(예정된
+                # 친선전만 schedule에 반영하는 게 목적이었으므로 이걸로
+                # 충분).
+                continue
             hs, as_ = ev.get('home_score'), ev.get('away_score')
             if hs is None or as_ is None:
                 continue
@@ -268,6 +384,9 @@ def main():
                 # 써야 한다 — 8개리그판(collect_fixtures_multileague.py)은
                 # 처음부터 이렇게 짜여있어서 버그가 없었다(대조 확인함).
                 'id': ev.get('id'),
+                'friendly': is_friendly,  # 2026-08-01 추가: 프리시즌 친선전
+                # 여부. 프론트엔드가 이 플래그로 "친선전" 표시를 하거나,
+                # 예측 신뢰도를 낮춰서 보여주는 등 구분해서 다룰 수 있게.
             })
 
     schedule.sort(key=lambda m: (m['date'], m['time']))

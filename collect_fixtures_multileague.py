@@ -23,6 +23,7 @@ from datetime import datetime, timedelta, timezone
 
 from api_clients import BSDClient
 from app_export_multileague import LEAGUE_TEAM_MAPS, to_kr_league, _ascii_fold
+from app_export import to_kr as to_kr_epl
 
 OUT_PATH = 'data/master/schedule_multileague.json'
 SQUADS_OUT_PATH = 'data/master/squads_multileague.json'
@@ -102,6 +103,37 @@ def _kst_date_time(iso_str):
 
 
 # ============================================================ 1) 리그 찾기
+def _find_friendlies_league_id(client):
+    """_find_leagues와 동일 패턴이지만 country 조건 없이 name만 본다
+    (친선전은 특정 국가 소속이 아니라 BSD 사이트에 "World > Club
+    Friendlies"로 표시됨 — EPL판 collect_fixtures.py와 동일 이유)."""
+    offset = 0
+    while True:
+        data = _unwrap(client.leagues(limit=PAGE_LIMIT, offset=offset))
+        if not data:
+            return None, None
+        results = data.get('results', [])
+        for lg in results:
+            name = (lg.get('name') or '').lower()
+            if 'friendl' in name and 'club' in name:
+                season = lg.get('current_season') or {}
+                return lg.get('id'), season.get('id')
+        total = data.get('count', len(results))
+        offset += PAGE_LIMIT
+        if offset >= total or not results:
+            return None, None
+
+
+def _to_kr_any(name, league_team_ids=None):
+    """친선전 상대팀 매칭: 이 리그 team_ids(BSD id 매칭은 호출부에서 이미
+    시도했다는 전제) 실패 시 8개리그 전체 → EPL 순으로 시도. 그래도 실패하면
+    (하위리그/아마추어팀 등 우리가 모르는 팀) None — 안전하게 건너뛴다."""
+    hit = to_kr_league(name)
+    if hit:
+        return hit[1]
+    return to_kr_epl(name)
+
+
 def _find_leagues(client):
     found = {}  # league_key -> (league_id, season_id, 실제이름)
     offset = 0
@@ -470,6 +502,25 @@ def main():
         print('[collect_fixtures_multileague] 리그를 하나도 못 찾음 → 중단', flush=True)
         return
 
+    # 2026-08-01 추가: 프리시즌(Club Friendlies) — 8개리그 전체에서 공유해서
+    # 쓸 거라 리그 순회 밖에서 딱 한 번만 조회한다. 실패해도(리그를 못
+    # 찾거나 조회 실패) 정규시즌 로직에는 전혀 영향 없도록 try/except로
+    # 감싼다.
+    friendly_rows = []
+    try:
+        friendlies_league_id, _ = _find_friendlies_league_id(client)
+        if friendlies_league_id:
+            print(f'[collect_fixtures_multileague] Club Friendlies league_id='
+                  f'{friendlies_league_id}', flush=True)
+            friendly_rows = _fetch_league_events(client, friendlies_league_id)
+            print(f'[collect_fixtures_multileague] 프리시즌 경기 {len(friendly_rows)}건 '
+                  f'수집(리그별 배분 전)', flush=True)
+        else:
+            print('[collect_fixtures_multileague] Club Friendlies 리그를 못 찾음 '
+                  '— 프리시즌은 건너뜀(정규시즌 수집엔 영향 없음)', flush=True)
+    except Exception as e:
+        print(f'[collect_fixtures_multileague] 프리시즌 수집 중 오류(무시): {e}', flush=True)
+
     out = {}
     squads_out = {}
     h2h_history_by_league = {}
@@ -595,6 +646,8 @@ def main():
                 'date': date_kst, 'time': time_kst or '00:00',
                 'id': ev.get('id'),  # 2026-07-31 추가: BSD 이벤트 id(EPL판과 동일 이유 —
                 # 배당 조회를 event_id로 직접 하면 팀명 매칭이 아예 불필요해짐).
+                'friendly': False,  # 2026-08-01 추가: 정규시즌 경기임을 명시
+                # (프리시즌 친선전과 구분 — 아래에서 추가되는 친선전은 True).
             }
             # 2026-07-24 수정: 종료경기를 통째로 버리던 걸 고침. 클라이언트의
             # computeStandingsTable()/StandingsTab이 SCHEDULE의 각 fixture에
@@ -612,6 +665,37 @@ def main():
                 # 그냥 날짜만 있는 채로 들어간다 — 클라이언트가
                 # Number.isFinite로 걸러서 "안 친 경기"로 안전하게 처리함.
             schedule.append(row)
+
+        # 2026-08-01 추가: 프리시즌 친선전 중 이 리그 팀이 관련된 것만
+        # 골라서 schedule에 추가한다. 종료된 친선전은 h2h에 안 넣는다
+        # (진지도 낮은 경기라 상대전적 통계 왜곡 방지 — EPL판과 동일 원칙,
+        # 예정된 친선전만 schedule에 반영하는 게 목적이므로 이걸로 충분).
+        n_friendlies_added = 0
+        for ev in friendly_rows:
+            home_kr = team_ids.get(ev.get('home_team_id')) or _to_kr_any(ev.get('home_team'))
+            away_kr = team_ids.get(ev.get('away_team_id')) or _to_kr_any(ev.get('away_team'))
+            if not (home_kr and away_kr):
+                continue
+            # 이 리그 소속 팀이 최소 한쪽에 있어야 이 리그의 schedule에 넣는다
+            # (양쪽 다 남의 리그 팀인 친선전은 그 팀들 리그 쪽에서 처리됨).
+            if home_kr not in team_ids.values() and away_kr not in team_ids.values():
+                continue
+            status = (ev.get('status') or '').lower()
+            if status == 'finished':
+                continue  # 종료된 친선전은 제외(위 코멘트 참고)
+            date_kst, time_kst = _kst_date_time(ev.get('event_date'))
+            if not date_kst:
+                continue
+            schedule.append({
+                'home': home_kr, 'away': away_kr,
+                'date': date_kst, 'time': time_kst or '00:00',
+                'id': ev.get('id'), 'friendly': True,
+            })
+            n_friendlies_added += 1
+        if n_friendlies_added:
+            print(f'[collect_fixtures_multileague] {league_key} 프리시즌 '
+                  f'{n_friendlies_added}건 추가', flush=True)
+
         schedule.sort(key=lambda m: (m['date'] or '', m['time'] or ''))
         out[league_key] = schedule
         print(f'[collect_fixtures_multileague] {league_key}: 팀 {len(team_ids)}개, '
