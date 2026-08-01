@@ -79,7 +79,16 @@
  },
  "players": {
   "G. Rutter": {
-   "_team": "브라이튼"
+   "_team": "브라이튼",
+   "shots": 0,
+   "sot": 0,
+   "tackles_won": 0,
+   "interceptions": 0,
+   "key_passes": 2,
+   "dribbles": 2,
+   "dribbles_won": 2,
+   "tackles": 0,
+   "_bsd_playerstats_enriched": true
   },
   "null": {
    "_team": "브라이튼"
