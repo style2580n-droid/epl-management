@@ -756,6 +756,13 @@ def render_js(name_cache):
     # 선수만 담겨있음(그 외는 결장 관련 알릴 게 없어서 파일에서 제외됨).
     card_suspensions = _load_json('data/master/card_suspensions.json', {})
     lines.append('const PIPELINE_CARD_SUSPENSIONS = ' + _js(card_suspensions) + ';')
+    # 2026-08-01 추가: EPL 앱은 원래 CLUB_LOGOS가 파일 안에 하드코딩된 로컬
+    # 이미지 경로(20개 팀만)라, 프리시즌 친선전 상대팀(정규 20개 팀 밖)은
+    # 로고가 아예 없었다(실측 확인 — 사용자 스크린샷). collect_logos_
+    # multileague.py가 '_friendly' 키에 모아둔 원격 로고 URL을 여기로도
+    # 전달해서, TeamCrest가 CLUB_LOGOS(하드코딩 1순위) 다음 폴백으로 쓴다.
+    logos_friendly = _load_json('data/master/logos_multileague.json', {}).get('_friendly', {})
+    lines.append('const PIPELINE_LOGOS_FRIENDLY = ' + _js(logos_friendly) + ';')
     ml_ensemble = _load_json(ML_ENSEMBLE_PATH, None)
     lines.append('const PIPELINE_ML_ENSEMBLE = ' + _js(ml_ensemble) + ';')
     # 2026-07-22 (A단계): 선수 능력치 기준선. EPL 앱도 club_en으로 팀 매칭하고

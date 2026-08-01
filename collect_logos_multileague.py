@@ -16,6 +16,18 @@ Eredivisie·Championship이 빠진다 — 반면 TheSportsDB 팀 검색은 리�
 strBadge를 쓰고 있었음, 2026-07-13 이전 코드). 여기선 후보 필드명을 순서대로
 다 시도하고, 첫 응답의 실제 키 목록을 로그로 남겨서 다음 실행 때 바로
 확인할 수 있게 해둔다.
+
+## 2026-08-01 추가: 프리시즌 친선전 상대팀 로고
+정규 8개리그(LEAGUE_TEAM_MAPS)+EPL(TEAM_NAME_MAP) 소속 팀만 순회하던 게
+원래 설계였는데, 프리시즌 친선전(collect_fixtures*.py가 만드는
+'friendly': true 경기)엔 이 목록에 없는 상대팀(SC 캄뷔르, 라싱
+스트라스부르 등)이 자주 나와서 로고가 항상 텍스트 약어로만 표시되고
+있었다(실측 확인 — 사용자 스크린샷). data/master/schedule.json +
+schedule_multileague.json에서 friendly 경기의 상대팀을 뽑아 같은
+TheSportsDB 검색으로 로고를 채우고, 리그 구분 없는 별도 키('_friendly')에
+저장한다 — app_export.py/app_export_multileague.py가 이 키를 모든 리그
+block에 공통으로 병합해서 EPL·8개리그 앱 둘 다 프리시즌 상대팀 로고를
+쓸 수 있게 한다.
 """
 import json
 import os
@@ -29,10 +41,17 @@ except ImportError as e:
     LEAGUE_TEAM_MAPS = {}
     print(f'[collect_logos_multileague] ⚠️ LEAGUE_TEAM_MAPS 임포트 실패: {e} '
           f'→ app_export_multileague.py와 같은 폴더에서 실행해야 한다', flush=True)
+try:
+    from app_export import TEAM_NAME_MAP
+except ImportError as e:
+    TEAM_NAME_MAP = {}
+    print(f'[collect_logos_multileague] ⚠️ TEAM_NAME_MAP(EPL) 임포트 실패: {e}',
+          flush=True)
 
 OUT_PATH = 'data/master/logos_multileague.json'
 _BADGE_KEYS = ('strTeamBadge', 'strBadge', 'strTeamLogo', 'strLogo')
 _diag_done = False
+MAX_NEW_FRIENDLY_TEAMS_PER_RUN = 40  # TheSportsDB 레이트리밋 보호(실행당 상한)
 
 
 def _load_existing():
@@ -51,6 +70,57 @@ def _extract_badge(team_obj):
         if val:
             return val
     return None
+
+
+def _load_json(path, default):
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, OSError):
+            return default
+    return default
+
+
+def _known_team_names():
+    """정규 8개리그+EPL 소속으로 이미 알려진 한글 팀명 전체(별칭 검색
+    대상에서 제외하기 위함 — 이미 위 루프에서 다뤄지니 중복 조회 방지)."""
+    names = set(TEAM_NAME_MAP.keys())
+    for team_map in LEAGUE_TEAM_MAPS.values():
+        names.update(team_map.keys())
+    return names
+
+
+def _friendly_opponent_names():
+    """schedule.json(EPL) + schedule_multileague.json(8개리그)에서 friendly
+    경기의 상대팀 이름을 뽑는다. 이미 정규 리그 소속으로 아는 팀은 제외
+    (예: EPL팀 vs EPL팀 친선전이면 둘 다 이미 커버되니 스킵)."""
+    known = _known_team_names()
+    names = set()
+
+    epl_schedule = _load_json('data/master/schedule.json', [])
+    if isinstance(epl_schedule, list):
+        for g in epl_schedule:
+            if not isinstance(g, dict) or not g.get('friendly'):
+                continue
+            for side in ('home', 'away'):
+                n = g.get(side)
+                if n and n not in known:
+                    names.add(n)
+
+    ml_schedule = _load_json('data/master/schedule_multileague.json', {})
+    if isinstance(ml_schedule, dict):
+        for games in ml_schedule.values():
+            if not isinstance(games, list):
+                continue
+            for g in games:
+                if not isinstance(g, dict) or not g.get('friendly'):
+                    continue
+                for side in ('home', 'away'):
+                    n = g.get(side)
+                    if n and n not in known:
+                        names.add(n)
+    return names
 
 
 def main():
@@ -96,6 +166,34 @@ def main():
             else:
                 n_failed += 1
                 failed_names.append(f'{league_key}:{kr}')
+
+    # 2026-08-01 추가: 친선전 상대팀(정규 리그 소속 아님) — 별도 '_friendly'
+    # 키에 저장, 리그 구분 없이 모든 앱이 공통으로 참조.
+    out.setdefault('_friendly', {})
+    friendly_names = _friendly_opponent_names()
+    todo = [n for n in friendly_names if not out['_friendly'].get(n)]
+    print(f'[collect_logos_multileague] 친선전 상대팀 {len(friendly_names)}명 '
+          f'중 로고 미보유 {len(todo)}명', flush=True)
+    n_friendly_new = n_friendly_failed = 0
+    for kr in todo[:MAX_NEW_FRIENDLY_TEAMS_PER_RUN]:
+        resp, ok = tsdb.search_team(kr)
+        time.sleep(0.3)
+        if not (ok and resp and resp.get('teams')):
+            n_friendly_failed += 1
+            continue
+        badge = _extract_badge(resp['teams'][0])
+        if badge:
+            out['_friendly'][kr] = badge
+            n_friendly_new += 1
+        else:
+            n_friendly_failed += 1
+    if len(todo) > MAX_NEW_FRIENDLY_TEAMS_PER_RUN:
+        print(f'[collect_logos_multileague] 친선전 상대팀도 실행당 상한'
+              f'({MAX_NEW_FRIENDLY_TEAMS_PER_RUN}명) 적용 → 나머지는 다음 실행',
+              flush=True)
+    print(f'[collect_logos_multileague] 친선전 상대팀: 신규 {n_friendly_new}건, '
+          f'실패 {n_friendly_failed}건(대부분 한글명 그대로라 TheSportsDB 검색이 '
+          f'안 될 수 있음 — 실측 확인 필요)', flush=True)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:

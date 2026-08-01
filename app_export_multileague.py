@@ -1323,7 +1323,12 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
     for league_key in LEAGUE_TEAM_MAPS:
         block = {
             'schedule': schedules.get(league_key, []),
-            'logos': logos_by_league.get(league_key, {}),
+            'logos': {**logos_by_league.get('_friendly', {}), **logos_by_league.get(league_key, {})},
+            # 2026-08-01 수정: 친선전 상대팀(정규 리그 소속 아닌 낯선 팀) 로고도
+            # 같이 전달 — collect_logos_multileague.py가 '_friendly' 키에
+            # 리그 구분 없이 모아둔 걸 모든 리그 block에 공통으로 병합한다.
+            # 정규 리그 로고를 뒤에 스프레드해서 혹시 이름이 겹치면 정규
+            # 쪽이 우선하도록(더 신뢰도 높은 소스이므로).
             'elo': elo_by_league.get(league_key, {}),
             'squads': squads.get(league_key, {}),
             'teamXg': xg_by_league.get(league_key, {}),
