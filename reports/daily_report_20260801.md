@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 16:24
+생성(UTC): 2026-08-01 17:32
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -76,8 +76,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 60건 (누적 358건)
+오늘 64건 (누적 362건)
 
 ## 📊 경기 고급 지표
 
@@ -11722,13 +11726,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| L. Miley | 0.0 | 26.7 | 50.0 | 0.0 | - |
-| K. Tete | - | 0.0 | 56.2 | 0.0 | - |
-| N. Clyne | - | 0.0 | 50.0 | 0.0 | - |
-| S. Longstaff | 0.0 | 23.3 | 25.0 | 0.0 | - |
-| D. McNeil | 0.0 | 13.3 | 25.0 | 0.0 | - |
-| P. M. Sarr | 0.0 | 0.0 | 37.5 | 0.0 | - |
-| Souza | - | 13.3 | 12.5 | 0.0 | - |
-| A. Tanaka | - | 4.4 | 20.8 | 0.0 | - |
-| M. Turner | - | 0.0 | 25.0 | 0.0 | - |
-| V. Mykolenko | - | 2.7 | 20.0 | 0.0 | - |
+| M. Ødegaard | 0.0 | 66.7 | 12.5 | 0.0 | - |
+| K. Ajer | - | 0.0 | 41.7 | 0.0 | - |
+| M. Nunes | - | 6.7 | 21.9 | 0.0 | - |
+| M. Wieffer | 0.0 | 5.7 | 30.4 | 0.0 | - |
+| D. Burn | - | 1.3 | 22.5 | 0.0 | - |
+| J. Doku | 0.0 | 20.0 | 9.4 | 0.0 | - |
+| J. Justin | 0.0 | 4.4 | 25.0 | 0.0 | - |
+| C. Cappis | - | 4.4 | 16.7 | 0.0 | - |
+| R. Kolo Muani | - | 13.3 | 6.2 | 0.0 | - |
+| A. Stach | 0.0 | 4.4 | 18.8 | 0.0 | - |
