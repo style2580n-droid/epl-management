@@ -298,7 +298,7 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
     rows = fetch_events_fn(client, league_id)
     prev_by_eid = prev_by_eid or {}
     matches = []
-    n_finished, n_with_goals, n_reused = 0, 0, 0
+    n_finished, n_with_goals, n_reused, n_schema_refresh = 0, 0, 0, 0
     for ev in rows:
         status = (ev.get('status') or '').lower()
         if status != 'finished':
@@ -314,14 +314,29 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
 
         # 2026-07-19 증분 수집: 골 확보 경기, 0-0 확정 경기, incidents까지
         # 확인했는데 BSD에 기록이 없던 경기(checked)는 재호출하지 않는다.
+        #
+        # 2026-08-02 버그 수정: goal_type/body 필드(2026-08-01 추가)가 생기기
+        # 전에 캐싱된 goals 항목엔 이 필드 자체가 없다. 위 조건만으로는 그런
+        # 옛 캐시도 "goals가 있으니 재사용"으로 판정해서 영구적으로
+        # goal_type/body가 채워질 기회가 없었다(실측: 2026-08-01 파이프라인
+        # 로그에서 [diag] 관측된 body/goal_type 값 전체가 둘 다 빈 리스트로
+        # 나온 근본 원인 — finished 경기 1092건 전부가 이 조건에 걸려
+        # 100% 재사용되고 단 한 건도 새로 파싱되지 않았음). goals가 있는데
+        # 그 안에 goal_type 키가 아예 없는 옛 캐시만 골라 재수집을 강제한다.
         prev_m = prev_by_eid.get(eid)
-        if prev_m and (prev_m.get('goals') or prev_m.get('nil')
-                       or prev_m.get('checked')):
+        prev_goals = prev_m.get('goals') if prev_m else None
+        stale_schema = bool(prev_goals) and not all(
+            isinstance(g, dict) and 'goal_type' in g for g in prev_goals)
+        if prev_m and not stale_schema and (prev_m.get('goals')
+                                             or prev_m.get('nil')
+                                             or prev_m.get('checked')):
             matches.append(prev_m)
             n_reused += 1
             if prev_m.get('goals'):
                 n_with_goals += 1
             continue
+        if stale_schema:
+            n_schema_refresh += 1
 
         total = _score_total(ev)
         goals = []
@@ -360,7 +375,8 @@ def _collect_league(client, league_key, league_id, team_ids, fetch_events_fn,
         if goals:
             n_with_goals += 1
     print(f'[collect_goalscorers] {league_key}: 종료경기 {n_finished}건 중 '
-          f'득점정보 확보 {n_with_goals}건 (기존 재사용 {n_reused}건)', flush=True)
+          f'득점정보 확보 {n_with_goals}건 (기존 재사용 {n_reused}건, '
+          f'구스키마 재수집 {n_schema_refresh}건)', flush=True)
     return matches
 
 
