@@ -77,6 +77,13 @@ METRICS_DIR = 'data/metrics'
 STATE_PATH = 'data/master/bsd_player_stats_state.json'
 PLAYER_NAME_CACHE_PATH = 'data/master/bsd_player_names_cache.json'
 BSD_BASE = 'https://sports.bzzoiro.com'
+# 2026-08-01 추가: 응답 파싱 로직이 바뀔 때마다(예: 이번에 player_stats
+# 키/total_contest 필드명을 뒤늦게 알아낸 것처럼) 이 번호를 올린다. 예전
+# 버전에서 파싱 버그 때문에 잘못 'no_data'로 마킹해둔 243건이 실측 확인
+# 됐는데, 그게 그대로 남아있으면 파싱을 고쳐도 "이미 처리됨"으로 취급돼
+# 재시도가 영원히 안 된다 — 버전이 바뀌면 done_matches를 자동으로 비워서
+# 이런 상태 오염이 다음에 또 생겨도 자동 복구되게 한다.
+STATE_VERSION = 2
 REQUEST_DELAY = 0.4  # collect_fixtures.py가 쓰던 BSD 요청 간 딜레이(0.3초)와 비슷한 수준
 # 2026-08-01 수정: player-stats 응답에 선수 "이름"이 없고 player_id(정수)만
 # 있는 게 실측 확인돼서, /api/v2/players/{id}/ 로 이름을 별도 조회해야 한다
@@ -410,6 +417,11 @@ def main():
         return
 
     state = _load_json(STATE_PATH, {})
+    if state.get('version') != STATE_VERSION:
+        print(f'[collect_bsd_player_stats] state 버전 변경 감지'
+              f'({state.get("version")} → {STATE_VERSION}) — done_matches 초기화 '
+              f'(예전 파싱버그 시절 잘못된 no_data 마킹 제거)', flush=True)
+        state = {'version': STATE_VERSION}
     done = state.setdefault('done_matches', {})
     player_names = _load_json(PLAYER_NAME_CACHE_PATH, {})  # {str(player_id): {name, short_name}}
     session = requests.Session()
