@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 12:21
+생성(UTC): 2026-08-01 13:08
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -64,8 +64,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 48건 (누적 346건)
+오늘 52건 (누적 350건)
 
 ## 📊 경기 고급 지표
 
@@ -11702,13 +11706,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| M. Boxall | - | 0.0 | 87.5 | 0.0 | - |
-| K. Tete | 0.0 | 0.0 | 93.8 | 0.0 | - |
-| D. Coppola | - | 0.0 | 56.2 | 0.0 | - |
-| B. Craig | 0.0 | 20.0 | 31.2 | 0.0 | - |
-| Morato | - | 0.0 | 37.5 | 0.0 | - |
-| F. Schär | 0.0 | 0.0 | 50.0 | 0.0 | - |
-| L. Hall | - | 3.3 | 25.0 | 0.0 | - |
-| Murillo | 0.0 | 2.2 | 33.3 | 0.0 | - |
-| C. Roldán | 0.0 | 8.9 | 25.0 | 0.0 | - |
-| A. Robinson | 0.0 | 4.4 | 29.2 | 0.0 | - |
+| J. Frimpong | - | 26.7 | 37.5 | 0.0 | - |
+| B. Davies | 0.0 | 13.3 | 62.5 | 0.0 | - |
+| R. Hollingshead | 0.0 | 6.7 | 37.5 | 0.0 | - |
+| S. Palencia | - | 4.4 | 25.0 | 0.0 | - |
+| D. Muñoz | - | 5.3 | 20.0 | 0.0 | - |
+| G. Vicario | - | 0.0 | 25.0 | 0.0 | - |
+| D. Cirkin | - | 0.0 | 25.0 | 0.0 | - |
+| J. Rodon | 0.0 | 4.4 | 25.0 | 0.0 | - |
+| C. Jones | 0.0 | 4.4 | 20.8 | 0.0 | - |
+| J. Palhinha | 0.0 | 1.7 | 23.4 | 0.0 | - |
