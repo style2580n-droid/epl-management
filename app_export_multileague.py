@@ -1374,10 +1374,24 @@ def render_js(schedules, elo_by_league, squads, xg_by_league, injuries_by_league
     lines = ['// 자동 생성 파일 — app_export_multileague.py, 수정하지 말고 파이프라인을 고치세요',
              f'// 생성 시각: {datetime.now(timezone.utc).isoformat()}',
              '']
+    # 2026-08-02 수정: 예전엔 '해당 리그 버킷 + _friendly'만 합쳤는데, 실측
+    # 확인된 버그 — 예: 레알 마드리드(라리가) vs 피오렌티나(세리에A) 같은
+    # "서로 다른 두 트래킹 리그끼리의" 친선전에서, 레알 마드리드는 이미
+    # known 팀이라 _friendly 필터(collect_logos_multileague.py)가 일부러
+    # 뺐음(로고가 라리가 버킷에 이미 있으니까 — 그 자체는 맞는 로직).
+    # 근데 세리에A 페이지는 라리가 버킷을 아예 안 보고 세리에A+_friendly만
+    # 봤어서, 로고가 있는데도 화면엔 안 뜨는 문제였다(사용자 스크린샷으로
+    # 실측 확인 — 원정팀 친선 로고만 빠짐). team_id→URL 매핑은 어느 리그
+    # 페이지에서 보든 동일하게 유효하니, 8개리그 버킷을 전부 합쳐서 모든
+    # 리그 block에 공통 전달한다(정규 리그 로고끼리는 팀명이 겹칠 일이
+    # 없어 병합 순서가 문제되지 않음).
+    _all_logos = {}
+    for _lk in LEAGUE_TEAM_MAPS:
+        _all_logos.update(logos_by_league.get(_lk, {}))
     for league_key in LEAGUE_TEAM_MAPS:
         block = {
             'schedule': schedules.get(league_key, []),
-            'logos': {**logos_by_league.get('_friendly', {}), **logos_by_league.get(league_key, {})},
+            'logos': {**logos_by_league.get('_friendly', {}), **_all_logos},
             # 2026-08-01 수정: 친선전 상대팀(정규 리그 소속 아닌 낯선 팀) 로고도
             # 같이 전달 — collect_logos_multileague.py가 '_friendly' 키에
             # 리그 구분 없이 모아둔 걸 모든 리그 block에 공통으로 병합한다.

@@ -96,15 +96,6 @@ def _load_existing():
     return {}
 
 
-def _known_team_names():
-    """정규 8개리그+EPL 소속으로 이미 알려진 한글 팀명 전체(친선전
-    상대팀 목록에서 제외하기 위함 — 이미 위 루프에서 다뤄지니 중복 방지)."""
-    names = set(TEAM_NAME_MAP.keys())
-    for team_map in LEAGUE_TEAM_MAPS.values():
-        names.update(team_map.keys())
-    return names
-
-
 def _fetch_upcoming_friendlies(bsd, league_id):
     """앞으로 60일 범위로만 좁혀서 Club Friendlies 이벤트를 받는다
     (collect_fixtures._fetch_friendlies_events는 3년치 과거까지 훑어서
@@ -131,10 +122,11 @@ def _friendly_team_ids(bsd, known_ids):
     실패 시 원문) -> BSD team_id 맵을 만든다. schedule.json을 거치지 않고
     원본 이벤트에서 바로 뽑아야 team_id가 안 사라진다(이전 설계의 한계
     였음). known_ids(EPL+8개리그 전체 team_id 집합)에 최소 한쪽이 껴있는
-    경기만 관련 있는 경기로 보고, 그 경기의 '모르는 쪽'만 기록한다 —
-    양쪽 다 우리 팀과 무관한 전세계 하위리그 친선전은 전부 스킵(2026-08-01
-    실행에서 이 필터 없이 2705명이 잡혔던 문제 수정)."""
-    known_names = _known_team_names()
+    경기만 관련 있는 경기로 보고, 그 경기의 양쪽 팀을 전부 기록한다(한쪽만
+    known이어도 관련 경기로 인정하지만, 기록 자체는 known 여부 무관하게
+    양쪽 다 — 이유는 아래 루프 안 주석 참고). 양쪽 다 우리 팀과 무관한
+    전세계 하위리그 친선전은 전부 스킵(2026-08-01 실행에서 이 필터 없이
+    2705명이 잡혔던 문제 수정)."""
     result = {}
     try:
         league_id, _season_id = _find_friendlies_league_id(bsd)
@@ -160,19 +152,26 @@ def _friendly_team_ids(bsd, known_ids):
         if not (home_known or away_known):
             continue  # 우리 8개리그+EPL과 무관한 친선전 — 스킵
         n_relevant += 1
-        if home_known and away_known:
-            continue  # 양쪽 다 이미 정규 리그 로고로 커버됨
-        tid = away_tid if home_known else home_tid
-        raw = ev.get('away_team') if home_known else ev.get('home_team')
-        if tid is None or not raw:
-            continue
-        kr = _to_kr_any_league(raw) or raw
-        if kr in known_names:
-            continue
-        result.setdefault(kr, tid)
+        # 2026-08-02 수정: 예전엔 "양쪽 다 known이면 스킵"이었는데, 이건
+        # EPL 앱 실측으로 확인된 버그였다 — EPL 앱(app_export.py)은
+        # '_friendly' 키 하나만 읽고 8개리그 각자의 버킷은 아예 안 본다.
+        # 그래서 레알 마드리드(라리가, known) vs 피오렌티나(세리에A,
+        # known) 같은 "서로 다른 두 트래킹 리그끼리의" 친선전에서, 두 팀
+        # 다 known이라는 이유로 스킵해버리면 EPL 페이지에서 이 경기를 볼
+        # 때 양쪽 다 로고가 없다(사용자 스크린샷으로 실측 확인). known
+        # 인지 아닌지와 무관하게, 관련 있는 경기라면 양쪽 팀을 전부
+        # 기록한다 — 8개리그 앱은 자기 리그 버킷을 뒤에 스프레드해서
+        # 우선시키니(app_export_multileague.py) 값이 겹쳐도 무해하고,
+        # EPL 앱은 이 키가 있어야만 뜨므로 반드시 필요하다.
+        for tid, raw in ((home_tid, ev.get('home_team')),
+                         (away_tid, ev.get('away_team'))):
+            if tid is None or not raw:
+                continue
+            kr = _to_kr_any_league(raw) or raw
+            result.setdefault(kr, tid)
     print(f'[collect_logos_multileague] Club Friendlies 앞으로 60일 '
-          f'{n_total}건 중 우리 팀 관련 {n_relevant}건, 로고 필요한 새 '
-          f'상대팀 {len(result)}명', flush=True)
+          f'{n_total}건 중 우리 팀 관련 {n_relevant}건, 로고 대상 팀 '
+          f'{len(result)}명(known 포함 — EPL 앱 크로스리그 표시용)', flush=True)
     return result
 
 
