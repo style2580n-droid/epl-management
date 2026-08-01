@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-01
 
-생성(UTC): 2026-08-01 17:32
+생성(UTC): 2026-08-01 18:32
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -80,8 +80,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 64건 (누적 362건)
+오늘 68건 (누적 366건)
 
 ## 📊 경기 고급 지표
 
@@ -1477,6 +1481,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | IK 스타트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.4% |
 | 보되글림트 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.6% |
+
+### IK스타트_비킹_207031
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| IK 스타트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 35.3% |
+| 비킹 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 64.7% |
 
 ### IK스타트_올레순_206910
 
@@ -10466,6 +10477,7 @@
 - **IK스타트_몰데_206943**: [heatmap(IK 스타트)](viz/IK스타트_몰데_206943_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_몰데_206943_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_몰데_206943_IK 스타트_shotmap.svg) · [heatmap(몰데)](viz/IK스타트_몰데_206943_몰데_heatmap.svg) · [network(몰데)](viz/IK스타트_몰데_206943_몰데_network.svg) · [shotmap(몰데)](viz/IK스타트_몰데_206943_몰데_shotmap.svg)
 - **IK스타트_발레렝가_206981**: [heatmap(IK 스타트)](viz/IK스타트_발레렝가_206981_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_발레렝가_206981_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_발레렝가_206981_IK 스타트_shotmap.svg) · [heatmap(발레렝가)](viz/IK스타트_발레렝가_206981_발레렝가_heatmap.svg) · [network(발레렝가)](viz/IK스타트_발레렝가_206981_발레렝가_network.svg) · [shotmap(발레렝가)](viz/IK스타트_발레렝가_206981_발레렝가_shotmap.svg)
 - **IK스타트_보되글림트_206969**: [heatmap(IK 스타트)](viz/IK스타트_보되글림트_206969_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_보되글림트_206969_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_보되글림트_206969_IK 스타트_shotmap.svg) · [heatmap(보되글림트)](viz/IK스타트_보되글림트_206969_보되글림트_heatmap.svg) · [network(보되글림트)](viz/IK스타트_보되글림트_206969_보되글림트_network.svg) · [shotmap(보되글림트)](viz/IK스타트_보되글림트_206969_보되글림트_shotmap.svg)
+- **IK스타트_비킹_207031**: [heatmap(IK 스타트)](viz/IK스타트_비킹_207031_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_비킹_207031_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_비킹_207031_IK 스타트_shotmap.svg) · [heatmap(비킹)](viz/IK스타트_비킹_207031_비킹_heatmap.svg) · [network(비킹)](viz/IK스타트_비킹_207031_비킹_network.svg) · [shotmap(비킹)](viz/IK스타트_비킹_207031_비킹_shotmap.svg)
 - **IK스타트_올레순_206910**: [heatmap(IK 스타트)](viz/IK스타트_올레순_206910_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_올레순_206910_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_올레순_206910_IK 스타트_shotmap.svg) · [heatmap(올레순)](viz/IK스타트_올레순_206910_올레순_heatmap.svg) · [network(올레순)](viz/IK스타트_올레순_206910_올레순_network.svg) · [shotmap(올레순)](viz/IK스타트_올레순_206910_올레순_shotmap.svg)
 - **IK스타트_트롬쇠_206956**: [heatmap(IK 스타트)](viz/IK스타트_트롬쇠_206956_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/IK스타트_트롬쇠_206956_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/IK스타트_트롬쇠_206956_IK 스타트_shotmap.svg) · [heatmap(트롬쇠)](viz/IK스타트_트롬쇠_206956_트롬쇠_heatmap.svg) · [network(트롬쇠)](viz/IK스타트_트롬쇠_206956_트롬쇠_network.svg) · [shotmap(트롬쇠)](viz/IK스타트_트롬쇠_206956_트롬쇠_shotmap.svg)
 - **IncheonUnited_BucheonFC1995_205111**: [heatmap(Bucheon FC 1995)](viz/IncheonUnited_BucheonFC1995_205111_Bucheon FC 1995_heatmap.svg) · [network(Bucheon FC 1995)](viz/IncheonUnited_BucheonFC1995_205111_Bucheon FC 1995_network.svg) · [shotmap(Bucheon FC 1995)](viz/IncheonUnited_BucheonFC1995_205111_Bucheon FC 1995_shotmap.svg) · [heatmap(Incheon United)](viz/IncheonUnited_BucheonFC1995_205111_Incheon United_heatmap.svg) · [network(Incheon United)](viz/IncheonUnited_BucheonFC1995_205111_Incheon United_network.svg) · [shotmap(Incheon United)](viz/IncheonUnited_BucheonFC1995_205111_Incheon United_shotmap.svg)
@@ -11726,13 +11738,13 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| M. Ødegaard | 0.0 | 66.7 | 12.5 | 0.0 | - |
-| K. Ajer | - | 0.0 | 41.7 | 0.0 | - |
-| M. Nunes | - | 6.7 | 21.9 | 0.0 | - |
-| M. Wieffer | 0.0 | 5.7 | 30.4 | 0.0 | - |
-| D. Burn | - | 1.3 | 22.5 | 0.0 | - |
-| J. Doku | 0.0 | 20.0 | 9.4 | 0.0 | - |
-| J. Justin | 0.0 | 4.4 | 25.0 | 0.0 | - |
-| C. Cappis | - | 4.4 | 16.7 | 0.0 | - |
-| R. Kolo Muani | - | 13.3 | 6.2 | 0.0 | - |
-| A. Stach | 0.0 | 4.4 | 18.8 | 0.0 | - |
+| F. Morato | - | 0.0 | 100.0 | 0.0 | - |
+| A. Khusanov | - | 0.0 | 50.0 | 0.0 | - |
+| A. Robinson | - | 4.4 | 29.2 | 0.0 | - |
+| S. Berge | - | 2.7 | 30.0 | 0.0 | - |
+| M. De Cuyper | - | 3.3 | 28.1 | 0.0 | - |
+| E. Pinnock | - | 0.0 | 31.2 | 0.0 | - |
+| P. Groß | 0.0 | 0.0 | 37.5 | 0.0 | - |
+| J. Tarkowski | - | 0.0 | 26.8 | 0.0 | - |
+| Rodri | - | 6.7 | 18.8 | 0.0 | - |
+| J. Andersen | - | 0.0 | 25.0 | 0.0 | - |

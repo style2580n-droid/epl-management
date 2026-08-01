@@ -12489,6 +12489,41 @@
  "eredivisie": [],
  "eliteserien": [
   {
+   "home": "IK 스타트",
+   "away": "비킹",
+   "date": "2026-08-02",
+   "eid": 207031,
+   "goals": [
+    {
+     "scorer": "E. Austbø",
+     "assist": "P. Christiansen",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Christiansen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Z. Tripić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 5,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "프레드릭스타",
    "away": "산네피오르",
    "date": "2026-08-01",
