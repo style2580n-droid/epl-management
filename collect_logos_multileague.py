@@ -35,15 +35,39 @@ _find_league_teams, PRIMARY_TEAM_IDS)을 그대로 재사용해서, 검색 없�
 football-data.org의 teams.json에도 'crest' 필드가 있지만 PL/PD/BL1/SA/
 FL1(5개 대회)만 커버해서 Eredivisie·Championship이 빠진다 — BSD는 이미
 전체 리그를 커버하는 메인 소스라 이 문제가 없다.
+
+## 2026-08-02 추가 수정: 친선전 상대팀 범위 문제 (배포 후 실측 발견)
+위 방식으로 첫 배포한 실행(2026-08-01 22:19~22:21 KST)에서 로그 확인
+결과, 정규 8개리그는 정상(180팀)이었지만 친선전 상대팀이 2705명이나
+잡히는 문제가 있었다 — collect_fixtures.py의 _fetch_friendlies_events를
+그대로 갖다 썼더니 과거 3년치까지 전세계 Club Friendlies 리그 전체를
+훑어버려서, 우리 8개리그+EPL과 무관한 나라의 친선전까지 전부 딸려왔다
+(관련성 필터가 없었던 게 원인). 수정: (1) 조회 범위를 앞으로 60일로
+직접 좁히고, (2) EPL+8개리그 전체 BSD team_id 집합을 먼저 만들어서
+그중 최소 한쪽이 낀 경기만 관련 있는 걸로 보고 '모르는 쪽'만 기록하도록
+고쳤다(_fetch_upcoming_friendlies + known_ids 필터).
 """
 import json
 import os
 import time
+from datetime import datetime, timedelta, timezone
 
 from api_clients import build_registry
-from collect_fixtures import (_find_friendlies_league_id,
-                               _fetch_friendlies_events, _to_kr_any_league)
+from collect_fixtures import (_find_friendlies_league_id, _find_pl_league_id,
+                               _find_pl_teams, _to_kr_any_league)
 import collect_fixtures_multileague as cfm
+
+# 2026-08-02 수정: 로고 용도로는 '앞으로 표시될 예정 경기'만 있으면
+# 충분한데, collect_fixtures.py의 _fetch_friendlies_events는 과거 3년치
+# 까지 전세계 Club Friendlies 리그 전체를 페이지네이션한다(실측 확인:
+# 2026-08-01 22:19~22:21 실행에서 상대팀 2705명이 나왔는데, 그중 우리
+# 8개리그+EPL과 실제로 관련 있는 친선전은 극소수이고 나머지는 전혀 무관한
+# 전세계 하위리그 클럽끼리의 과거 친선전이었다 — 관련성 필터가 아예
+# 없었던 게 원인). 앞으로 60일로 직접 좁혀서 조회하고, 우리 팀이 한쪽에
+# 낀 경기만 걸러낸다.
+_FRIENDLY_DATE_FROM = datetime.now(timezone.utc).strftime('%Y-%m-%d')
+_FRIENDLY_DATE_TO = (datetime.now(timezone.utc)
+                      + timedelta(days=60)).strftime('%Y-%m-%d')
 
 try:
     from app_export_multileague import LEAGUE_TEAM_MAPS
@@ -81,13 +105,36 @@ def _known_team_names():
     return names
 
 
-def _friendly_team_ids(bsd):
+def _fetch_upcoming_friendlies(bsd, league_id):
+    """앞으로 60일 범위로만 좁혀서 Club Friendlies 이벤트를 받는다
+    (collect_fixtures._fetch_friendlies_events는 3년치 과거까지 훑어서
+    로고 용도엔 과함 — 위 모듈 상단 주석 참고)."""
+    rows = []
+    offset = 0
+    while offset < 2000:  # 안전 상한(60일 범위면 이 정도로 충분)
+        resp = bsd.events(league=league_id, date_from=_FRIENDLY_DATE_FROM,
+                           date_to=_FRIENDLY_DATE_TO, limit=200, offset=offset)
+        data = resp[0] if isinstance(resp, tuple) else resp
+        if not data:
+            break
+        results = data.get('results', [])
+        rows.extend(results)
+        total = data.get('count', len(results))
+        offset += 200
+        if offset >= total or not results:
+            break
+    return rows
+
+
+def _friendly_team_ids(bsd, known_ids):
     """친선전(Club Friendlies) 이벤트 원문에서 상대팀명(한글 변환 또는
-    실패 시 원문) -> BSD team_id 맵을 직접 만든다. schedule.json을 거치지
-    않고 원본 이벤트에서 바로 뽑아야 team_id가 안 사라진다(이전 설계의
-    한계였음 — 위 모듈 docstring 참고). 정규 8개리그+EPL 소속 팀은 이미
-    위에서 다뤘으니 제외."""
-    known = _known_team_names()
+    실패 시 원문) -> BSD team_id 맵을 만든다. schedule.json을 거치지 않고
+    원본 이벤트에서 바로 뽑아야 team_id가 안 사라진다(이전 설계의 한계
+    였음). known_ids(EPL+8개리그 전체 team_id 집합)에 최소 한쪽이 껴있는
+    경기만 관련 있는 경기로 보고, 그 경기의 '모르는 쪽'만 기록한다 —
+    양쪽 다 우리 팀과 무관한 전세계 하위리그 친선전은 전부 스킵(2026-08-01
+    실행에서 이 필터 없이 2705명이 잡혔던 문제 수정)."""
+    known_names = _known_team_names()
     result = {}
     try:
         league_id, _season_id = _find_friendlies_league_id(bsd)
@@ -100,21 +147,32 @@ def _friendly_team_ids(bsd):
               '— 친선전 상대팀 로고는 이번 실행에서 건너뜀', flush=True)
         return result
     try:
-        rows = _fetch_friendlies_events(bsd, league_id)
+        rows = _fetch_upcoming_friendlies(bsd, league_id)
     except Exception as e:
         print(f'[collect_logos_multileague] 친선전 이벤트 조회 실패(무시): {e}',
               flush=True)
         return result
+    n_total, n_relevant = len(rows or []), 0
     for ev in rows or []:
-        for side in ('home', 'away'):
-            tid = ev.get(f'{side}_team_id')
-            raw = ev.get(f'{side}_team')
-            if tid is None or not raw:
-                continue
-            kr = _to_kr_any_league(raw) or raw
-            if kr in known:
-                continue  # 정규 리그 로고로 이미 커버됨
-            result.setdefault(kr, tid)
+        home_tid, away_tid = ev.get('home_team_id'), ev.get('away_team_id')
+        home_known = home_tid in known_ids
+        away_known = away_tid in known_ids
+        if not (home_known or away_known):
+            continue  # 우리 8개리그+EPL과 무관한 친선전 — 스킵
+        n_relevant += 1
+        if home_known and away_known:
+            continue  # 양쪽 다 이미 정규 리그 로고로 커버됨
+        tid = away_tid if home_known else home_tid
+        raw = ev.get('away_team') if home_known else ev.get('home_team')
+        if tid is None or not raw:
+            continue
+        kr = _to_kr_any_league(raw) or raw
+        if kr in known_names:
+            continue
+        result.setdefault(kr, tid)
+    print(f'[collect_logos_multileague] Club Friendlies 앞으로 60일 '
+          f'{n_total}건 중 우리 팀 관련 {n_relevant}건, 로고 필요한 새 '
+          f'상대팀 {len(result)}명', flush=True)
     return result
 
 
@@ -159,16 +217,35 @@ def main():
 
     # --- 2) 친선전 상대팀(정규 리그 소속 아님) — '_friendly' 키에 저장,
     # 리그 구분 없이 모든 앱(EPL·8개리그)이 공통으로 참조.
-    friendly_ids = _friendly_team_ids(bsd)
-    out.setdefault('_friendly', {})
-    n_friendly_new = 0
-    for kr, tid in friendly_ids.items():
-        if out['_friendly'].get(kr):
-            continue
-        out['_friendly'][kr] = IMG_TPL.format(tid=tid)
-        n_friendly_new += 1
+    # 관련성 판정을 위해 EPL 20개 팀의 BSD team_id도 필요(위 1번은
+    # 8개리그만 다뤘음 — EPL은 로컬 하드코딩 로고를 쓰니 로고 자체는
+    # 필요 없지만, "EPL팀 vs 하위리그팀" 친선전을 관련 있다고 인식하려면
+    # EPL team_id 집합이 있어야 한다).
+    known_ids = set()
+    for primary in cfm.PRIMARY_TEAM_IDS.values():
+        known_ids.update(primary.values())
+    try:
+        epl_league_id, epl_season_id = _find_pl_league_id(bsd)
+        if epl_league_id:
+            epl_team_ids = _find_pl_teams(bsd, epl_league_id, epl_season_id)
+            known_ids.update(epl_team_ids.keys())
+    except Exception as e:
+        print(f'[collect_logos_multileague] EPL team_id 조회 실패(무시, '
+              f'친선전 관련성 판정 일부만 됨): {e}', flush=True)
+
+    # 2026-08-02 추가 수정: '_friendly'를 기존 값에 누적 병합만 하면, 관련성
+    # 필터 도입 전에 잘못 쌓인 2705건짜리 오염 데이터가 새 버전을 올려도
+    # 영원히 안 지워지고 누적 카운트에 계속 남는다(실측 확인 — 필터 버그를
+    # 고친 버전을 올려도 '누적'에 옛날 무관 친선팀들이 그대로 남아있었음).
+    # 8개리그 로고(위 1번)와 똑같이, 이번 실행에서 새로 계산한 값으로
+    # 완전히 덮어쓴다 — 조회 자체가 이제 가볍기 때문에(60일 제한) 매번
+    # 새로 통째로 만들어도 문제없다.
+    friendly_ids = _friendly_team_ids(bsd, known_ids)
+    out['_friendly'] = {kr: IMG_TPL.format(tid=tid)
+                         for kr, tid in friendly_ids.items()}
+    n_friendly_new = len(friendly_ids)
     print(f'[collect_logos_multileague] 친선전 상대팀 {len(friendly_ids)}명 '
-          f'중 신규 {n_friendly_new}건', flush=True)
+          f'(이전 실행 데이터 포함 전부 새로 계산)', flush=True)
 
     os.makedirs(os.path.dirname(OUT_PATH), exist_ok=True)
     with open(OUT_PATH, 'w', encoding='utf-8') as f:
