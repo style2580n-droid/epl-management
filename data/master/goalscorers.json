@@ -16595,6 +16595,49 @@
  "laliga": [],
  "mls": [
   {
+   "home": "포틀랜드 팀버스",
+   "away": "시애틀 사운더스",
+   "date": "2026-08-02",
+   "eid": 5183,
+   "goals": [
+    {
+     "scorer": "B. Bye",
+     "assist": "D. Da Costa",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Kelsy",
+     "assist": "K. Velde",
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Kossa-Rienzi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "LA 갤럭시",
+   "away": "FC 댈러스",
+   "date": "2026-08-02",
+   "eid": 5182,
+   "goals": [],
+   "nil": true
+  },
+  {
    "home": "콜로라도 래피즈",
    "away": "오스틴 FC",
    "date": "2026-08-02",
@@ -16853,6 +16896,68 @@
      "minute": 32,
      "goal_type": "penalty",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 신시내티",
+   "away": "산호세 어스퀘이크스",
+   "date": "2026-08-02",
+   "eid": 5174,
+   "goals": [
+    {
+     "scorer": "A. Jabbari",
+     "assist": "T. Barlow",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Evander",
+     "assist": "O. Nwobodo",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Barlow",
+     "assist": "Evander",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Werner",
+     "assist": "P. Judd",
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Ramírez",
+     "assist": "Evander",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Munie",
+     "assist": "T. Werner",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "head"
     }
    ]
   },

@@ -33362,7 +33362,48 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 102053,
                     "logo": "https://highlightly.net/soccer/images/teams/102053.png",
@@ -33370,7 +33411,48 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 112265,
                     "logo": "https://highlightly.net/soccer/images/teams/112265.png",
@@ -33378,7 +33460,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-02T03:25:44.417509+00:00"
+        "collected_at": "2026-08-02T06:05:01.627823+00:00"
     },
     "1270581228": {
         "match": {
@@ -33654,5 +33736,78 @@
             }
         ],
         "collected_at": "2026-08-02T03:25:45.383267+00:00"
+    },
+    "1271055235": {
+        "match": {
+            "id": 1271055235,
+            "round": "Group Stage",
+            "date": "2026-08-02T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": "0 - 0",
+                    "penalties": null
+                },
+                "description": "First half"
+            },
+            "awayTeam": {
+                "id": 19450389,
+                "logo": null,
+                "name": "Rhode Island"
+            },
+            "homeTeam": {
+                "id": 3395423,
+                "logo": "https://highlightly.net/soccer/images/teams/3395423.png",
+                "name": "Birmingham Legion"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
+                "team": {
+                    "id": 3395423,
+                    "logo": "https://highlightly.net/soccer/images/teams/3395423.png",
+                    "name": "Birmingham Legion"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
+                "team": {
+                    "id": 19450389,
+                    "logo": null,
+                    "name": "Rhode Island"
+                }
+            }
+        ],
+        "collected_at": "2026-08-02T06:04:56.284339+00:00"
     }
 }
