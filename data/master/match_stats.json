@@ -33362,48 +33362,7 @@
         },
         "statistics": [
             {
-                "statistics": [
-                    {
-                        "displayName": "Shots accuracy",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Possession",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots on target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Corners",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Offsides",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots off target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Blocked shots",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Total passes",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Fouls",
-                        "value": 0
-                    }
-                ],
+                "statistics": [],
                 "team": {
                     "id": 102053,
                     "logo": "https://highlightly.net/soccer/images/teams/102053.png",
@@ -33411,48 +33370,7 @@
                 }
             },
             {
-                "statistics": [
-                    {
-                        "displayName": "Shots accuracy",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Possession",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots on target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Corners",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Offsides",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots off target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Blocked shots",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Total passes",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Fouls",
-                        "value": 0
-                    }
-                ],
+                "statistics": [],
                 "team": {
                     "id": 112265,
                     "logo": "https://highlightly.net/soccer/images/teams/112265.png",
@@ -33460,7 +33378,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-02T00:57:41.200221+00:00"
+        "collected_at": "2026-08-02T03:25:44.417509+00:00"
     },
     "1270581228": {
         "match": {
@@ -33681,5 +33599,60 @@
             }
         ],
         "collected_at": "2026-08-02T00:57:42.419957+00:00"
+    },
+    "1320459189": {
+        "match": {
+            "id": 1320459189,
+            "round": "Apertura - 2",
+            "date": "2026-08-02T22:00:00.000Z",
+            "country": {
+                "code": "CR",
+                "name": "Costa Rica",
+                "logo": "https://highlightly.net/soccer/images/countries/CR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 701157,
+                "logo": "https://highlightly.net/soccer/images/teams/701157.png",
+                "name": "San Carlos"
+            },
+            "homeTeam": {
+                "id": 695200,
+                "logo": "https://highlightly.net/soccer/images/teams/695200.png",
+                "name": "Deportivo Saprissa"
+            },
+            "league": {
+                "id": 138646,
+                "logo": "https://highlightly.net/soccer/images/leagues/138646.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 695200,
+                    "logo": "https://highlightly.net/soccer/images/teams/695200.png",
+                    "name": "Deportivo Saprissa"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 701157,
+                    "logo": "https://highlightly.net/soccer/images/teams/701157.png",
+                    "name": "San Carlos"
+                }
+            }
+        ],
+        "collected_at": "2026-08-02T03:25:45.383267+00:00"
     }
 }

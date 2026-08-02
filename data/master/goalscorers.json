@@ -16595,6 +16595,400 @@
  "laliga": [],
  "mls": [
   {
+   "home": "콜로라도 래피즈",
+   "away": "오스틴 FC",
+   "date": "2026-08-02",
+   "eid": 5181,
+   "goals": [
+    {
+     "scorer": "R. Navarro",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "세인트루이스 시티",
+   "away": "리얼 솔트레이크",
+   "date": "2026-08-02",
+   "eid": 5180,
+   "goals": [
+    {
+     "scorer": "M. Hartel",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Solans",
+     "assist": "S. Lobzhanidze",
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "스포르팅 캔자스시티",
+   "away": "휴스턴 다이나모",
+   "date": "2026-08-02",
+   "eid": 5179,
+   "goals": [
+    {
+     "scorer": "A. Bouzat",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Guilherme",
+     "assist": "J. McGlynn",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "미네소타 유나이티드",
+   "away": "샌디에이고 FC",
+   "date": "2026-08-02",
+   "eid": 5178,
+   "goals": [
+    {
+     "scorer": "A. Dreyer",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Chancalay",
+     "assist": "W. Trapp",
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "시카고 파이어",
+   "away": "샬럿 FC",
+   "date": "2026-08-02",
+   "eid": 5177,
+   "goals": [
+    {
+     "scorer": "R. Lewandowski",
+     "assist": "R. Lod",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Lewandowski",
+     "assist": "P. Zinckernagel",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Biel",
+     "assist": "I. Toklomati",
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "콜럼버스 크루",
+   "date": "2026-08-02",
+   "eid": 5170,
+   "goals": [
+    {
+     "scorer": "B. Méndez",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Allen",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "Casemiro",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "Y. Bright",
+     "team": null,
+     "is_home": true,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "CF 몬트리올",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-08-02",
+   "eid": 5176,
+   "goals": [
+    {
+     "scorer": "P. Owusu",
+     "assist": "L. Petrasso",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "B. Vera",
+     "assist": "E. Morales",
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "P. Miller",
+     "team": null,
+     "is_home": false,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Gil",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 30,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "DC 유나이티드",
+   "away": "내슈빌 SC",
+   "date": "2026-08-02",
+   "eid": 5175,
+   "goals": [
+    {
+     "scorer": "T. Baribo",
+     "assist": "L. Munteanu",
+     "team": null,
+     "is_home": true,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Hefti",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Mohammed",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Surridge",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 레드불스",
+   "away": "올랜도 시티",
+   "date": "2026-08-02",
+   "eid": 5173,
+   "goals": [
+    {
+     "scorer": "G. Dorsey",
+     "assist": "A. Griezmann",
+     "team": null,
+     "is_home": false,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Jiménez",
+     "assist": "C. Cowell",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Spicer",
+     "assist": "B. Ojeda",
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Forsberg",
+     "assist": "C. Cowell",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Jiménez",
+     "assist": "G. Berggren",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "필라델피아 유니온",
+   "away": "애틀랜타 유나이티드",
+   "date": "2026-08-02",
+   "eid": 5172,
+   "goals": [
+    {
+     "scorer": "E. Alladoh",
+     "assist": "K. Wagner",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Pierre",
+     "assist": "K. Wagner",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Iloski",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Muyumba",
+     "assist": "A. Miranchuk",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Almirón",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "밴쿠버 화이트캡스",
+   "away": "로스앤젤레스 FC",
+   "date": "2026-08-02",
+   "eid": 5171,
+   "goals": [
+    {
+     "scorer": "T. Müller",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Heung-min",
+     "assist": "D. Bouanga",
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "뉴욕 시티 FC",
    "away": "토론토 FC",
    "date": "2026-08-01",
