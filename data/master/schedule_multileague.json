@@ -41,14 +41,6 @@
    "friendly": true
   },
   {
-   "home": "선덜랜드",
-   "away": "렉섬",
-   "date": "2026-08-03",
-   "time": "01:00",
-   "id": 219619,
-   "friendly": true
-  },
-  {
    "home": "울버햄튼 원더러스",
    "away": "블랙번 로버스",
    "date": "2026-08-15",
@@ -16900,7 +16892,9 @@
    "date": "2026-08-03",
    "time": "00:00",
    "id": 207033,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 3
   },
   {
    "home": "KFUM 오슬로",
@@ -16908,7 +16902,9 @@
    "date": "2026-08-03",
    "time": "00:00",
    "id": 207032,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "올레순",
@@ -16916,7 +16912,9 @@
    "date": "2026-08-03",
    "time": "00:00",
    "id": 207028,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 6
   },
   {
    "home": "브란",
@@ -16924,7 +16922,9 @@
    "date": "2026-08-03",
    "time": "02:15",
    "id": 207034,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "산네피오르",

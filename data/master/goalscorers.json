@@ -12489,6 +12489,236 @@
  "eredivisie": [],
  "eliteserien": [
   {
+   "home": "브란",
+   "away": "로젠보르그",
+   "date": "2026-08-03",
+   "eid": 207034,
+   "goals": [
+    {
+     "scorer": "K. Eriksen",
+     "assist": "J. Soltvedt",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Mani Ingason",
+     "assist": "K. Eriksen",
+     "team": null,
+     "is_home": true,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Fossum",
+     "assist": "J. Svensson",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Chiakha",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Castro",
+     "assist": "N. Jensen Wassberg",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "몰데",
+   "away": "사르프스보르그 08",
+   "date": "2026-08-03",
+   "eid": 207033,
+   "goals": [
+    {
+     "scorer": "A. Posiadała",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "D. Daga",
+     "assist": "E. Breivik",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Hestad",
+     "assist": "E. Breivik",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Hansen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Karlsbakk",
+     "assist": "C. Niyukuri",
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. M. Granaas",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "KFUM 오슬로",
+   "away": "크리스티안순",
+   "date": "2026-08-03",
+   "eid": 207032,
+   "goals": [
+    {
+     "scorer": "T. H. Svendsen",
+     "assist": "S. H. Kilen",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Njie",
+     "assist": "H. H. Hoseth",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. W. Eikrem",
+     "assist": "R. Rasch",
+     "team": null,
+     "is_home": true,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "올레순",
+   "away": "트롬쇠",
+   "date": "2026-08-03",
+   "eid": 207028,
+   "goals": [
+    {
+     "scorer": "U. Syversen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. A. Larsen",
+     "assist": "D. Edvardsson",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Warneryd",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. H. Osenbroch",
+     "assist": "H. B. Hammer",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Warneryd",
+     "assist": "I. Dahlqvist",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Warneryd",
+     "assist": "L. O. Larsen",
+     "team": null,
+     "is_home": false,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Vadebu",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "D. Edvardsson",
+     "assist": "T. Nyhammer",
+     "team": null,
+     "is_home": false,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "IK 스타트",
    "away": "비킹",
    "date": "2026-08-02",
