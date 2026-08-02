@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-02
 
-생성(UTC): 2026-08-02 06:13
+생성(UTC): 2026-08-02 10:53
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -28,8 +28,12 @@
 | Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 
-오늘 12건 (누적 382건)
+오늘 16건 (누적 386건)
 
 ## 📊 경기 고급 지표
 
@@ -11794,13 +11798,11 @@
 
 | 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
 |---|---|---|---|---|---|
-| S. Ibeagha | 0.0 | 0.0 | 68.8 | 0.0 | - |
-| M. Lacroix | 0.0 | 0.0 | 35.0 | 0.0 | - |
-| J. Cuenca | - | 0.0 | 20.8 | 0.0 | - |
-| A. Rusnák | 0.0 | 22.2 | 4.2 | 0.0 | - |
-| J. Ferreira | 0.0 | 8.9 | 12.5 | 0.0 | - |
-| J. Garner | 0.0 | 4.4 | 16.7 | 0.0 | - |
-| V. van Dijk | - | 0.0 | 15.6 | 0.0 | - |
-| S. Longstaff | - | 0.0 | 15.6 | 0.0 | - |
-| J. O'Brien | 0.0 | 1.9 | 17.9 | 0.0 | - |
-| S. Tonali | - | 4.4 | 8.3 | 0.0 | - |
+| J. Zirkzee | 0.0 | 4.4 | 16.7 | 0.0 | - |
+| E. Nketiah | 0.0 | 4.4 | 12.5 | 0.0 | - |
+| M. Guéhi | - | 1.7 | 7.8 | 0.0 | - |
+| L. Shaw | - | 0.0 | 9.4 | 0.0 | - |
+| J. Mateta | 0.0 | 0.0 | 5.6 | 0.0 | - |
+| M. Mount | 0.0 | 2.7 | 2.5 | 0.0 | - |
+| J. Lerma | - | 0.0 | 0.0 | 0.0 | - |
+| B. Mbeumo | 0.0 | 0.0 | 0.0 | 0.0 | - |

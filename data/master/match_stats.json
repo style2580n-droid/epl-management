@@ -33750,10 +33750,10 @@
             "state": {
                 "clock": null,
                 "score": {
-                    "current": "0 - 0",
+                    "current": null,
                     "penalties": null
                 },
-                "description": "First half"
+                "description": "Not started"
             },
             "awayTeam": {
                 "id": 19450389,
@@ -33776,12 +33776,12 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0.5,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0.5
                     }
                 ],
                 "team": {
@@ -33793,12 +33793,12 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0.5,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0.5
                     }
                 ],
                 "team": {
@@ -33808,6 +33808,6 @@
                 }
             }
         ],
-        "collected_at": "2026-08-02T06:04:56.284339+00:00"
+        "collected_at": "2026-08-02T10:42:54.214133+00:00"
     }
 }
