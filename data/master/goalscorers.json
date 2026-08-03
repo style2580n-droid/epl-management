@@ -16868,6 +16868,68 @@
    "nil": true
   },
   {
+   "home": "FC 신시내티",
+   "away": "산호세 어스퀘이크스",
+   "date": "2026-08-02",
+   "eid": 5174,
+   "goals": [
+    {
+     "scorer": "A. Jabbari",
+     "assist": "T. Barlow",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Evander",
+     "assist": "O. Nwobodo",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Barlow",
+     "assist": "Evander",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Werner",
+     "assist": "P. Judd",
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Ramírez",
+     "assist": "Evander",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Munie",
+     "assist": "T. Werner",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "콜로라도 래피즈",
    "away": "오스틴 FC",
    "date": "2026-08-02",
@@ -17126,68 +17188,6 @@
      "minute": 32,
      "goal_type": "penalty",
      "body": "right-foot"
-    }
-   ]
-  },
-  {
-   "home": "FC 신시내티",
-   "away": "산호세 어스퀘이크스",
-   "date": "2026-08-02",
-   "eid": 5174,
-   "goals": [
-    {
-     "scorer": "A. Jabbari",
-     "assist": "T. Barlow",
-     "team": null,
-     "is_home": true,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "Evander",
-     "assist": "O. Nwobodo",
-     "team": null,
-     "is_home": true,
-     "minute": 82,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "T. Barlow",
-     "assist": "Evander",
-     "team": null,
-     "is_home": true,
-     "minute": 80,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "T. Werner",
-     "assist": "P. Judd",
-     "team": null,
-     "is_home": false,
-     "minute": 56,
-     "goal_type": "regular",
-     "body": "left-foot"
-    },
-    {
-     "scorer": "B. Ramírez",
-     "assist": "Evander",
-     "team": null,
-     "is_home": true,
-     "minute": 33,
-     "goal_type": "regular",
-     "body": "left-foot"
-    },
-    {
-     "scorer": "D. Munie",
-     "assist": "T. Werner",
-     "team": null,
-     "is_home": false,
-     "minute": 26,
-     "goal_type": "regular",
-     "body": "head"
     }
    ]
   },

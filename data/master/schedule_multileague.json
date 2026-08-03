@@ -1,38 +1,6 @@
 {
  "championship": [
   {
-   "home": "볼턴 원더러스",
-   "away": "NAC 브레다",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219553,
-   "friendly": true
-  },
-  {
-   "home": "미들즈브러",
-   "away": "에스파뇰",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219547,
-   "friendly": true
-  },
-  {
-   "home": "노리치 시티",
-   "away": "오사수나",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219546,
-   "friendly": true
-  },
-  {
-   "home": "카디프 시티",
-   "away": "AS로마",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219539,
-   "friendly": true
-  },
-  {
    "home": "울버햄튼 원더러스",
    "away": "라싱 산탄데르",
    "date": "2026-08-02",
@@ -7157,14 +7125,6 @@
    "friendly": true
   },
   {
-   "home": "1.FSV 마인츠05",
-   "away": "우디네세",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 220433,
-   "friendly": true
-  },
-  {
    "home": "라싱 스트라스부르",
    "away": "SV 엘버스베르크",
    "date": "2026-08-05",
@@ -9855,22 +9815,6 @@
  ],
  "seriea": [
   {
-   "home": "1.FSV 마인츠05",
-   "away": "우디네세",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 220433,
-   "friendly": true
-  },
-  {
-   "home": "카디프 시티",
-   "away": "AS로마",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219539,
-   "friendly": true
-  },
-  {
    "home": "본머스",
    "away": "제노아",
    "date": "2026-08-04",
@@ -9991,19 +9935,19 @@
    "friendly": true
   },
   {
+   "home": "제노아",
+   "away": "데포르티보 라코루냐",
+   "date": "2026-08-09",
+   "time": "03:45",
+   "id": 219684,
+   "friendly": true
+  },
+  {
    "home": "나폴리",
    "away": "셀타 비고",
    "date": "2026-08-09",
    "time": "04:00",
    "id": 219940,
-   "friendly": true
-  },
-  {
-   "home": "제노아",
-   "away": "데포르티보 라코루냐",
-   "date": "2026-08-09",
-   "time": "04:00",
-   "id": 219684,
    "friendly": true
   },
   {
@@ -13112,14 +13056,6 @@
   }
  ],
  "eredivisie": [
-  {
-   "home": "볼턴 원더러스",
-   "away": "NAC 브레다",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219553,
-   "friendly": true
-  },
   {
    "home": "FC 볼렌담",
    "away": "아약스",
@@ -17873,22 +17809,6 @@
  ],
  "laliga": [
   {
-   "home": "미들즈브러",
-   "away": "에스파뇰",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219547,
-   "friendly": true
-  },
-  {
-   "home": "노리치 시티",
-   "away": "오사수나",
-   "date": "2026-08-01",
-   "time": "23:00",
-   "id": 219546,
-   "friendly": true
-  },
-  {
    "home": "울버햄튼 원더러스",
    "away": "라싱 산탄데르",
    "date": "2026-08-02",
@@ -18017,6 +17937,14 @@
    "friendly": true
   },
   {
+   "home": "제노아",
+   "away": "데포르티보 라코루냐",
+   "date": "2026-08-09",
+   "time": "03:45",
+   "id": 219684,
+   "friendly": true
+  },
+  {
    "home": "바르셀로나",
    "away": "노팅엄 포레스트",
    "date": "2026-08-09",
@@ -18030,14 +17958,6 @@
    "date": "2026-08-09",
    "time": "04:00",
    "id": 219940,
-   "friendly": true
-  },
-  {
-   "home": "제노아",
-   "away": "데포르티보 라코루냐",
-   "date": "2026-08-09",
-   "time": "04:00",
-   "id": 219684,
    "friendly": true
   },
   {
@@ -23739,16 +23659,6 @@
    "awayGoals": 2
   },
   {
-   "home": "FC 신시내티",
-   "away": "산호세 어스퀘이크스",
-   "date": "2026-08-02",
-   "time": "08:30",
-   "id": 5174,
-   "friendly": false,
-   "homeGoals": 4,
-   "awayGoals": 2
-  },
-  {
    "home": "뉴욕 레드불스",
    "away": "올랜도 시티",
    "date": "2026-08-02",
@@ -23837,6 +23747,16 @@
    "friendly": false,
    "homeGoals": 1,
    "awayGoals": 0
+  },
+  {
+   "home": "FC 신시내티",
+   "away": "산호세 어스퀘이크스",
+   "date": "2026-08-02",
+   "time": "10:45",
+   "id": 5174,
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 2
   },
   {
    "home": "LA 갤럭시",
