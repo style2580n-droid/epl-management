@@ -37163,48 +37163,7 @@
         },
         "statistics": [
             {
-                "statistics": [
-                    {
-                        "displayName": "Shots accuracy",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Possession",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots on target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Corners",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Offsides",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots off target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Blocked shots",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Total passes",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Fouls",
-                        "value": 0
-                    }
-                ],
+                "statistics": [],
                 "team": {
                     "id": 1246648,
                     "logo": "https://highlightly.net/soccer/images/teams/1246648.png",
@@ -37212,48 +37171,7 @@
                 }
             },
             {
-                "statistics": [
-                    {
-                        "displayName": "Shots accuracy",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Possession",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots on target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Corners",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Offsides",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Shots off target",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Blocked shots",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Total passes",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
-                    },
-                    {
-                        "displayName": "Fouls",
-                        "value": 0
-                    }
-                ],
+                "statistics": [],
                 "team": {
                     "id": 976881,
                     "logo": "https://highlightly.net/soccer/images/teams/976881.png",
@@ -37261,7 +37179,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-04T03:35:43.988265+00:00"
+        "collected_at": "2026-08-04T05:44:30.984966+00:00"
     },
     "1370894555": {
         "match": {
@@ -37757,5 +37675,60 @@
             }
         ],
         "collected_at": "2026-08-04T03:35:47.192637+00:00"
+    },
+    "1313916701": {
+        "match": {
+            "id": 1313916701,
+            "round": "Regular Season - 10",
+            "date": "2026-08-04T19:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21954031,
+                "logo": null,
+                "name": "Juventude U17"
+            },
+            "homeTeam": {
+                "id": 20836668,
+                "logo": null,
+                "name": "Palmeiras U17"
+            },
+            "league": {
+                "id": 960712,
+                "logo": null,
+                "name": "Brasileiro U17",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 20836668,
+                    "logo": null,
+                    "name": "Palmeiras U17"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21954031,
+                    "logo": null,
+                    "name": "Juventude U17"
+                }
+            }
+        ],
+        "collected_at": "2026-08-04T05:44:43.099159+00:00"
     }
 }
