@@ -37163,7 +37163,48 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1246648,
                     "logo": "https://highlightly.net/soccer/images/teams/1246648.png",
@@ -37171,7 +37212,48 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 976881,
                     "logo": "https://highlightly.net/soccer/images/teams/976881.png",
@@ -37179,7 +37261,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-04T05:44:30.984966+00:00"
+        "collected_at": "2026-08-04T11:25:18.722487+00:00"
     },
     "1370894555": {
         "match": {
@@ -37730,5 +37812,170 @@
             }
         ],
         "collected_at": "2026-08-04T05:44:43.099159+00:00"
+    },
+    "1370923489": {
+        "match": {
+            "id": 1370923489,
+            "round": "Semi-finals",
+            "date": "2026-08-04T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 14405661,
+                "logo": null,
+                "name": "El Salvador Women"
+            },
+            "homeTeam": {
+                "id": 1472163,
+                "logo": "https://highlightly.net/soccer/images/teams/1472163.png",
+                "name": "Mexico Women"
+            },
+            "league": {
+                "id": 1053471,
+                "logo": null,
+                "name": "Central American and Caribbean Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1472163,
+                    "logo": "https://highlightly.net/soccer/images/teams/1472163.png",
+                    "name": "Mexico Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14405661,
+                    "logo": null,
+                    "name": "El Salvador Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-04T11:25:16.292963+00:00"
+    },
+    "1370901363": {
+        "match": {
+            "id": 1370901363,
+            "round": "Clausura - 2",
+            "date": "2026-08-04T22:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2392945,
+                "logo": "https://highlightly.net/soccer/images/teams/2392945.png",
+                "name": "Monagas SC"
+            },
+            "homeTeam": {
+                "id": 2417624,
+                "logo": "https://highlightly.net/soccer/images/teams/2417624.png",
+                "name": "UCV"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2417624,
+                    "logo": "https://highlightly.net/soccer/images/teams/2417624.png",
+                    "name": "UCV"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2392945,
+                    "logo": "https://highlightly.net/soccer/images/teams/2392945.png",
+                    "name": "Monagas SC"
+                }
+            }
+        ],
+        "collected_at": "2026-08-04T11:25:17.665252+00:00"
+    },
+    "1370922638": {
+        "match": {
+            "id": 1370922638,
+            "round": "Semi-finals",
+            "date": "2026-08-04T19:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1478971,
+                "logo": "https://highlightly.net/soccer/images/teams/1478971.png",
+                "name": "Colombia Women"
+            },
+            "homeTeam": {
+                "id": 15543448,
+                "logo": null,
+                "name": "Venezuela Women"
+            },
+            "league": {
+                "id": 1053471,
+                "logo": null,
+                "name": "Central American and Caribbean Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15543448,
+                    "logo": null,
+                    "name": "Venezuela Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1478971,
+                    "logo": "https://highlightly.net/soccer/images/teams/1478971.png",
+                    "name": "Colombia Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-04T11:25:20.815957+00:00"
     }
 }
