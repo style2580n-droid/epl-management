@@ -90,4 +90,49 @@
 - 리그: 프리미어리그
 - 감지 시각: 2026-08-05T11:22:18.116190+00:00
 
-누적 감지 이적: 501건
+## Kasper Boogaard
+- 이동: **AZ → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-08-05T16:46:07.177833+00:00
+
+## Dirk Proper
+- 이동: **NEC → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-05T16:46:07.177865+00:00
+
+## Isaiah Ahmed
+- 이동: **Telstar 1963 → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-05T16:46:07.177871+00:00
+
+## Calvin Stengs
+- 이동: **AZ → Feyenoord Rotterdam**
+- 리그: DED
+- 감지 시각: 2026-08-05T16:46:07.177908+00:00
+
+## Rafik el Arguioui
+- 이동: **SC Cambuur-Leeuwarden → FC Utrecht**
+- 리그: DED
+- 감지 시각: 2026-08-05T16:46:07.177935+00:00
+
+## Karlan Ahearne-Grant
+- 이동: **Charlton Athletic FC → West Bromwich Albion FC**
+- 리그: ELC
+- 감지 시각: 2026-08-05T16:45:18.741177+00:00
+
+## Morgan Rogers
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-05T16:43:33.521135+00:00
+
+## Alejandro Garnacho
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-05T16:43:33.521172+00:00
+
+## Issa Diop
+- 이동: **Ipswich Town FC → Fulham FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-05T16:43:33.521229+00:00
+
+누적 감지 이적: 510건
