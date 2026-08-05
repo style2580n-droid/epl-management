@@ -39236,5 +39236,115 @@
             }
         ],
         "collected_at": "2026-08-05T05:48:07.421247+00:00"
+    },
+    "1371191554": {
+        "match": {
+            "id": 1371191554,
+            "round": "Torneo Intermedio - Final",
+            "date": "2026-08-05T23:00:00.000Z",
+            "country": {
+                "code": "UY",
+                "name": "Uruguay",
+                "logo": "https://highlightly.net/soccer/images/countries/UY.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2009144,
+                "logo": "https://highlightly.net/soccer/images/teams/2009144.png",
+                "name": "Wanderers"
+            },
+            "homeTeam": {
+                "id": 1998932,
+                "logo": "https://highlightly.net/soccer/images/teams/1998932.png",
+                "name": "Peñarol Montevideo"
+            },
+            "league": {
+                "id": 228852,
+                "logo": "https://highlightly.net/soccer/images/leagues/228852.png",
+                "name": "Primera División - Apertura",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1998932,
+                    "logo": "https://highlightly.net/soccer/images/teams/1998932.png",
+                    "name": "Peñarol Montevideo"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2009144,
+                    "logo": "https://highlightly.net/soccer/images/teams/2009144.png",
+                    "name": "Wanderers"
+                }
+            }
+        ],
+        "collected_at": "2026-08-05T11:22:34.610897+00:00"
+    },
+    "1371233253": {
+        "match": {
+            "id": 1371233253,
+            "round": "Semi-finals",
+            "date": "2026-08-05T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 23872185,
+                "logo": null,
+                "name": "Venezuela U21"
+            },
+            "homeTeam": {
+                "id": 23867930,
+                "logo": null,
+                "name": "Colombia U21"
+            },
+            "league": {
+                "id": 865400,
+                "logo": null,
+                "name": "CAC Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23867930,
+                    "logo": null,
+                    "name": "Colombia U21"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23872185,
+                    "logo": null,
+                    "name": "Venezuela U21"
+                }
+            }
+        ],
+        "collected_at": "2026-08-05T11:22:34.776292+00:00"
     }
 }
