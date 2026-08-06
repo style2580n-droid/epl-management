@@ -40772,7 +40772,48 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 116520,
                     "logo": "https://highlightly.net/soccer/images/teams/116520.png",
@@ -40780,7 +40821,48 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 114818,
                     "logo": "https://highlightly.net/soccer/images/teams/114818.png",
@@ -40788,7 +40870,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-06T05:51:21.801980+00:00"
+        "collected_at": "2026-08-06T11:28:36.531133+00:00"
     },
     "1370900512": {
         "match": {
@@ -41614,5 +41696,60 @@
             }
         ],
         "collected_at": "2026-08-06T05:51:26.056197+00:00"
+    },
+    "1371737045": {
+        "match": {
+            "id": 1371737045,
+            "round": "3rd place",
+            "date": "2026-08-06T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 14405661,
+                "logo": null,
+                "name": "El Salvador Women"
+            },
+            "homeTeam": {
+                "id": 15543448,
+                "logo": null,
+                "name": "Venezuela Women"
+            },
+            "league": {
+                "id": 1053471,
+                "logo": null,
+                "name": "Central American and Caribbean Games",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15543448,
+                    "logo": null,
+                    "name": "Venezuela Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14405661,
+                    "logo": null,
+                    "name": "El Salvador Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-06T11:28:40.740353+00:00"
     }
 }
