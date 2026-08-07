@@ -42176,28 +42176,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -42209,28 +42209,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -42240,7 +42240,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-07T01:02:53.963837+00:00"
+        "collected_at": "2026-08-07T10:05:26.938443+00:00"
     },
     "1305497758": {
         "match": {
@@ -42554,7 +42554,32 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1975955,
                     "logo": "https://highlightly.net/soccer/images/teams/1975955.png",
@@ -42562,7 +42587,32 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1981061,
                     "logo": "https://highlightly.net/soccer/images/teams/1981061.png",
@@ -42570,7 +42620,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-07T04:57:28.012278+00:00"
+        "collected_at": "2026-08-07T10:05:28.634494+00:00"
     },
     "1316847545": {
         "match": {
@@ -42901,5 +42951,60 @@
             }
         ],
         "collected_at": "2026-08-07T01:02:58.288693+00:00"
+    },
+    "1357733840": {
+        "match": {
+            "id": 1357733840,
+            "round": "Regular Season - 13",
+            "date": "2026-08-07T20:15:00.000Z",
+            "country": {
+                "code": "PE",
+                "name": "Peru",
+                "logo": "https://highlightly.net/soccer/images/countries/PE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2164877,
+                "logo": "https://highlightly.net/soccer/images/teams/2164877.png",
+                "name": "Academia Cantolao"
+            },
+            "homeTeam": {
+                "id": 2172536,
+                "logo": "https://highlightly.net/soccer/images/teams/2172536.png",
+                "name": "Union Comercio"
+            },
+            "league": {
+                "id": 240766,
+                "logo": "https://highlightly.net/soccer/images/leagues/240766.png",
+                "name": "Segunda División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2172536,
+                    "logo": "https://highlightly.net/soccer/images/teams/2172536.png",
+                    "name": "Union Comercio"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2164877,
+                    "logo": "https://highlightly.net/soccer/images/teams/2164877.png",
+                    "name": "Academia Cantolao"
+                }
+            }
+        ],
+        "collected_at": "2026-08-07T10:05:31.100519+00:00"
     }
 }
