@@ -1209,14 +1209,6 @@
    "friendly": false
   },
   {
-   "home": "사우샘프턴",
-   "away": "QPR",
-   "date": "2026-11-01",
-   "time": "00:00",
-   "id": 214125,
-   "friendly": false
-  },
-  {
    "home": "밀월",
    "away": "더비 카운티",
    "date": "2026-11-01",
@@ -1246,6 +1238,14 @@
    "date": "2026-11-01",
    "time": "00:00",
    "id": 214118,
+   "friendly": false
+  },
+  {
+   "home": "사우샘프턴",
+   "away": "QPR",
+   "date": "2026-11-01",
+   "time": "23:00",
+   "id": 214125,
    "friendly": false
   },
   {
@@ -4471,6 +4471,14 @@
    "away": "릴OSC",
    "date": "2026-08-08",
    "time": "22:00",
+   "id": 580443,
+   "friendly": true
+  },
+  {
+   "home": "함부르크SV",
+   "away": "릴OSC",
+   "date": "2026-08-08",
+   "time": "22:00",
    "id": 274861,
    "friendly": true
   },
@@ -4491,11 +4499,11 @@
    "friendly": true
   },
   {
-   "home": "앙제SCO",
-   "away": "FC 로리앙",
+   "home": "1.FSV 마인츠05",
+   "away": "파리 FC",
    "date": "2026-08-09",
    "time": "00:00",
-   "id": 219672,
+   "id": 580444,
    "friendly": true
   },
   {
@@ -4504,6 +4512,14 @@
    "date": "2026-08-09",
    "time": "00:00",
    "id": 219668,
+   "friendly": true
+  },
+  {
+   "home": "앙제SCO",
+   "away": "FC 로리앙",
+   "date": "2026-08-09",
+   "time": "00:30",
+   "id": 219672,
    "friendly": true
   },
   {
@@ -7109,6 +7125,14 @@
    "friendly": true
   },
   {
+   "home": "TSG 호펜하임",
+   "away": "보루시아 묀헨글라드바흐",
+   "date": "2026-08-07",
+   "time": "23:00",
+   "id": 580422,
+   "friendly": true
+  },
+  {
    "home": "1.FC 쾰른",
    "away": "레알 소시에다드",
    "date": "2026-08-08",
@@ -7117,19 +7141,19 @@
    "friendly": true
   },
   {
-   "home": "마요르카",
-   "away": "SV 엘버스베르크",
-   "date": "2026-08-08",
-   "time": "21:00",
-   "id": 221038,
-   "friendly": true
-  },
-  {
    "home": "베르더 브레멘",
    "away": "SC 파더보른07",
    "date": "2026-08-08",
    "time": "21:00",
    "id": 219656,
+   "friendly": true
+  },
+  {
+   "home": "함부르크SV",
+   "away": "릴OSC",
+   "date": "2026-08-08",
+   "time": "22:00",
+   "id": 580443,
    "friendly": true
   },
   {
@@ -7197,6 +7221,14 @@
    "friendly": true
   },
   {
+   "home": "1.FSV 마인츠05",
+   "away": "파리 FC",
+   "date": "2026-08-09",
+   "time": "00:00",
+   "id": 580444,
+   "friendly": true
+  },
+  {
    "home": "VfB 슈투트가르트",
    "away": "에버튼",
    "date": "2026-08-09",
@@ -7210,6 +7242,14 @@
    "date": "2026-08-09",
    "time": "00:00",
    "id": 219669,
+   "friendly": true
+  },
+  {
+   "home": "마요르카",
+   "away": "SV 엘버스베르크",
+   "date": "2026-08-09",
+   "time": "04:00",
+   "id": 221038,
    "friendly": true
   },
   {
@@ -9791,6 +9831,14 @@
  ],
  "seriea": [
   {
+   "home": "엘라스 베로나",
+   "away": "크레모네세",
+   "date": "2026-08-07",
+   "time": "23:30",
+   "id": 580423,
+   "friendly": true
+  },
+  {
    "home": "유벤투스",
    "away": "인테르",
    "date": "2026-08-08",
@@ -9932,6 +9980,14 @@
    "date": "2026-08-16",
    "time": "00:30",
    "id": 219708,
+   "friendly": true
+  },
+  {
+   "home": "인테르",
+   "away": "레알 베티스",
+   "date": "2026-08-16",
+   "time": "02:30",
+   "id": 580469,
    "friendly": true
   },
   {
@@ -17753,14 +17809,6 @@
    "friendly": true
   },
   {
-   "home": "마요르카",
-   "away": "SV 엘버스베르크",
-   "date": "2026-08-08",
-   "time": "21:00",
-   "id": 221038,
-   "friendly": true
-  },
-  {
    "home": "1.FC 쾰른",
    "away": "레알 소시에다드",
    "date": "2026-08-08",
@@ -17822,6 +17870,14 @@
    "date": "2026-08-09",
    "time": "04:00",
    "id": 221042,
+   "friendly": true
+  },
+  {
+   "home": "마요르카",
+   "away": "SV 엘버스베르크",
+   "date": "2026-08-09",
+   "time": "04:00",
+   "id": 221038,
    "friendly": true
   },
   {
@@ -17887,6 +17943,14 @@
    "time": "02:30",
    "id": 213522,
    "friendly": false
+  },
+  {
+   "home": "인테르",
+   "away": "레알 베티스",
+   "date": "2026-08-16",
+   "time": "02:30",
+   "id": 580469,
+   "friendly": true
   },
   {
    "home": "세비야",
