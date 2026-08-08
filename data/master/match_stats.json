@@ -44161,5 +44161,60 @@
             }
         ],
         "collected_at": "2026-08-08T15:34:13.169870+00:00"
+    },
+    "1362077344": {
+        "match": {
+            "id": 1362077344,
+            "round": "Apertura - 4",
+            "date": "2026-08-08T23:00:00.000Z",
+            "country": {
+                "code": "SV",
+                "name": "El Salvador",
+                "logo": "https://highlightly.net/soccer/images/countries/SV.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3659233,
+                "logo": "https://highlightly.net/soccer/images/teams/3659233.png",
+                "name": "Alianza"
+            },
+            "homeTeam": {
+                "id": 22257838,
+                "logo": null,
+                "name": "Inter"
+            },
+            "league": {
+                "id": 315654,
+                "logo": "https://highlightly.net/soccer/images/leagues/315654.png",
+                "name": "Primera Division",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22257838,
+                    "logo": null,
+                    "name": "Inter"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3659233,
+                    "logo": "https://highlightly.net/soccer/images/teams/3659233.png",
+                    "name": "Alianza"
+                }
+            }
+        ],
+        "collected_at": "2026-08-08T19:56:13.810459+00:00"
     }
 }

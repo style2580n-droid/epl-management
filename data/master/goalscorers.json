@@ -24674,6 +24674,138 @@
  "seriea": [],
  "eredivisie": [
   {
+   "home": "PSV 에인트호번",
+   "away": "포르투나 시타르드",
+   "date": "2026-08-09",
+   "eid": 210802,
+   "goals": [
+    {
+     "scorer": "É. Michut",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Fernandez",
+     "assist": "A. Pléa",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Flamingo",
+     "assist": "I. Perišić",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "O. Romeny",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "호 어헤드 이글스",
+   "away": "빌럼II",
+   "date": "2026-08-09",
+   "eid": 210801,
+   "goals": [
+    {
+     "scorer": "J. Dirksen",
+     "assist": "M. Suray",
+     "team": null,
+     "is_home": true,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Flataker",
+     "assist": "V. Edvardsen",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Meulensteen",
+     "assist": "M. Suray",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Tengstedt",
+     "assist": "M. Meulensteen",
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Haen",
+     "assist": "N. Tjoe-A-On",
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "텔스타르",
+   "date": "2026-08-08",
+   "eid": 210800,
+   "goals": [
+    {
+     "scorer": "K. Sierhuis",
+     "assist": "D. Tadić",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Mendes",
+     "assist": "P. Brouwer",
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Brouwer",
+     "assist": "A. Soualhia",
+     "team": null,
+     "is_home": false,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "SC 캄뷔르",
    "away": "엑셀시오르 로테르담",
    "date": "2026-08-08",
@@ -24719,6 +24851,58 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "IK 스타트",
+   "away": "프레드릭스타",
+   "date": "2026-08-09",
+   "eid": 207038,
+   "goals": [
+    {
+     "scorer": "G. Wesseh",
+     "assist": "S. Leach Holm",
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "비킹",
+   "away": "사르프스보르그 08",
+   "date": "2026-08-08",
+   "eid": 207042,
+   "goals": [
+    {
+     "scorer": "Z. Tripić",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Sörli",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Heggheim",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "발레렝가",
    "away": "보되글림트",
