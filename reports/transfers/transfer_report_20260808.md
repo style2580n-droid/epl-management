@@ -220,4 +220,59 @@
 - 리그: 세리에 A
 - 감지 시각: 2026-08-08T19:56:27.556518+00:00
 
-누적 감지 이적: 630건
+## Kasper Boogaard
+- 이동: **AZ → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-08-08T21:35:42.857632+00:00
+
+## Dirk Proper
+- 이동: **NEC → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-08T21:35:42.857670+00:00
+
+## Isaiah Ahmed
+- 이동: **Telstar 1963 → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-08T21:35:42.857678+00:00
+
+## Calvin Stengs
+- 이동: **AZ → Feyenoord Rotterdam**
+- 리그: DED
+- 감지 시각: 2026-08-08T21:35:42.857723+00:00
+
+## Rafik el Arguioui
+- 이동: **SC Cambuur-Leeuwarden → FC Utrecht**
+- 리그: DED
+- 감지 시각: 2026-08-08T21:35:42.857757+00:00
+
+## Karlan Ahearne-Grant
+- 이동: **Charlton Athletic FC → West Bromwich Albion FC**
+- 리그: ELC
+- 감지 시각: 2026-08-08T21:33:09.540615+00:00
+
+## Morgan Rogers
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-08T21:31:33.552022+00:00
+
+## Alejandro Garnacho
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-08T21:31:33.552042+00:00
+
+## Issa Diop
+- 이동: **Ipswich Town FC → Fulham FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-08T21:31:33.552098+00:00
+
+## Tommaso Pobega
+- 이동: **Bologna FC 1909 → AC Milan**
+- 리그: 세리에 A
+- 감지 시각: 2026-08-08T21:32:18.589886+00:00
+
+## Giovanni Simeone
+- 이동: **Torino FC → SSC Napoli**
+- 리그: 세리에 A
+- 감지 시각: 2026-08-08T21:32:18.590201+00:00
+
+누적 감지 이적: 641건
