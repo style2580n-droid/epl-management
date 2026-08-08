@@ -44106,5 +44106,60 @@
             }
         ],
         "collected_at": "2026-08-08T04:12:29.216814+00:00"
+    },
+    "1364418445": {
+        "match": {
+            "id": 1364418445,
+            "round": "Regular Season - 2",
+            "date": "2026-08-08T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 12666217,
+                "logo": null,
+                "name": "Santos Laguna Women"
+            },
+            "homeTeam": {
+                "id": 12656005,
+                "logo": null,
+                "name": "Querétaro Women"
+            },
+            "league": {
+                "id": 573507,
+                "logo": "https://highlightly.net/soccer/images/leagues/573507.png",
+                "name": "Liga MX Femenil",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12656005,
+                    "logo": null,
+                    "name": "Querétaro Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12666217,
+                    "logo": null,
+                    "name": "Santos Laguna Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-08T15:34:13.169870+00:00"
     }
 }

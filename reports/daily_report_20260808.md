@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-08
 
-생성(UTC): 2026-08-08 09:51
+생성(UTC): 2026-08-08 15:53
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -38,8 +38,19 @@
 | Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
+| Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
 
-오늘 22건 (누적 608건)
+오늘 33건 (누적 619건)
 
 ## 📊 경기 고급 지표
 
@@ -6342,6 +6353,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 발레렝가 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 45.5% |
 | 릴레스트룀 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 54.5% |
+
+### 발레렝가_보되글림트_207043
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 발레렝가 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.8% |
+| 보되글림트 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.2% |
 
 ### 발레렝가_비킹_206920
 
@@ -14422,6 +14440,7 @@
 - **미네소타유나이티드_포틀랜드팀버스_5029**: [heatmap(미네소타 유나이티드)](viz/미네소타유나이티드_포틀랜드팀버스_5029_미네소타 유나이티드_heatmap.svg) · [network(미네소타 유나이티드)](viz/미네소타유나이티드_포틀랜드팀버스_5029_미네소타 유나이티드_network.svg) · [shotmap(미네소타 유나이티드)](viz/미네소타유나이티드_포틀랜드팀버스_5029_미네소타 유나이티드_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/미네소타유나이티드_포틀랜드팀버스_5029_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/미네소타유나이티드_포틀랜드팀버스_5029_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/미네소타유나이티드_포틀랜드팀버스_5029_포틀랜드 팀버스_shotmap.svg)
 - **발레렝가_KFUM오슬로_206959**: [heatmap(KFUM 오슬로)](viz/발레렝가_KFUM오슬로_206959_KFUM 오슬로_heatmap.svg) · [network(KFUM 오슬로)](viz/발레렝가_KFUM오슬로_206959_KFUM 오슬로_network.svg) · [shotmap(KFUM 오슬로)](viz/발레렝가_KFUM오슬로_206959_KFUM 오슬로_shotmap.svg) · [heatmap(발레렝가)](viz/발레렝가_KFUM오슬로_206959_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_KFUM오슬로_206959_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_KFUM오슬로_206959_발레렝가_shotmap.svg)
 - **발레렝가_릴레스트룀_206939**: [heatmap(릴레스트룀)](viz/발레렝가_릴레스트룀_206939_릴레스트룀_heatmap.svg) · [network(릴레스트룀)](viz/발레렝가_릴레스트룀_206939_릴레스트룀_network.svg) · [shotmap(릴레스트룀)](viz/발레렝가_릴레스트룀_206939_릴레스트룀_shotmap.svg) · [heatmap(발레렝가)](viz/발레렝가_릴레스트룀_206939_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_릴레스트룀_206939_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_릴레스트룀_206939_발레렝가_shotmap.svg)
+- **발레렝가_보되글림트_207043**: [heatmap(발레렝가)](viz/발레렝가_보되글림트_207043_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_보되글림트_207043_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_보되글림트_207043_발레렝가_shotmap.svg) · [heatmap(보되글림트)](viz/발레렝가_보되글림트_207043_보되글림트_heatmap.svg) · [network(보되글림트)](viz/발레렝가_보되글림트_207043_보되글림트_network.svg) · [shotmap(보되글림트)](viz/발레렝가_보되글림트_207043_보되글림트_shotmap.svg)
 - **발레렝가_비킹_206920**: [heatmap(발레렝가)](viz/발레렝가_비킹_206920_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_비킹_206920_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_비킹_206920_발레렝가_shotmap.svg) · [heatmap(비킹)](viz/발레렝가_비킹_206920_비킹_heatmap.svg) · [network(비킹)](viz/발레렝가_비킹_206920_비킹_network.svg) · [shotmap(비킹)](viz/발레렝가_비킹_206920_비킹_shotmap.svg)
 - **발레렝가_사르프스보르그08_206978**: [heatmap(발레렝가)](viz/발레렝가_사르프스보르그08_206978_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_사르프스보르그08_206978_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_사르프스보르그08_206978_발레렝가_shotmap.svg) · [heatmap(사르프스보르그 08)](viz/발레렝가_사르프스보르그08_206978_사르프스보르그 08_heatmap.svg) · [network(사르프스보르그 08)](viz/발레렝가_사르프스보르그08_206978_사르프스보르그 08_network.svg) · [shotmap(사르프스보르그 08)](viz/발레렝가_사르프스보르그08_206978_사르프스보르그 08_shotmap.svg)
 - **발레렝가_산네피오르_206907**: [heatmap(발레렝가)](viz/발레렝가_산네피오르_206907_발레렝가_heatmap.svg) · [network(발레렝가)](viz/발레렝가_산네피오르_206907_발레렝가_network.svg) · [shotmap(발레렝가)](viz/발레렝가_산네피오르_206907_발레렝가_shotmap.svg) · [heatmap(산네피오르)](viz/발레렝가_산네피오르_206907_산네피오르_heatmap.svg) · [network(산네피오르)](viz/발레렝가_산네피오르_206907_산네피오르_network.svg) · [shotmap(산네피오르)](viz/발레렝가_산네피오르_206907_산네피오르_shotmap.svg)
