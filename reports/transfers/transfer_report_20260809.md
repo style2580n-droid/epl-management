@@ -245,4 +245,99 @@
 - 리그: 세리에 A
 - 감지 시각: 2026-08-09T15:34:27.867658+00:00
 
-누적 감지 이적: 690건
+## Kasper Boogaard
+- 이동: **AZ → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-08-09T21:35:58.425214+00:00
+
+## Dirk Proper
+- 이동: **NEC → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-09T21:35:58.425248+00:00
+
+## Isaiah Ahmed
+- 이동: **Telstar 1963 → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-08-09T21:35:58.425255+00:00
+
+## Calvin Stengs
+- 이동: **AZ → Feyenoord Rotterdam**
+- 리그: DED
+- 감지 시각: 2026-08-09T21:35:58.425298+00:00
+
+## Rafik el Arguioui
+- 이동: **SC Cambuur-Leeuwarden → FC Utrecht**
+- 리그: DED
+- 감지 시각: 2026-08-09T21:35:58.425330+00:00
+
+## Karlan Ahearne-Grant
+- 이동: **Charlton Athletic FC → West Bromwich Albion FC**
+- 리그: ELC
+- 감지 시각: 2026-08-09T21:35:33.347661+00:00
+
+## Bruno Guimarães
+- 이동: **Newcastle United FC → Arsenal FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043240+00:00
+
+## Christian Nørgaard
+- 이동: **Everton FC → Arsenal FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043259+00:00
+
+## Morgan Rogers
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043284+00:00
+
+## Alejandro Garnacho
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043293+00:00
+
+## Maxence Lacroix
+- 이동: **Crystal Palace FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043306+00:00
+
+## Jordan Henderson
+- 이동: **Brentford FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043315+00:00
+
+## Danny Welbeck
+- 이동: **Brighton & Hove Albion FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043323+00:00
+
+## Issa Diop
+- 이동: **Ipswich Town FC → Fulham FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043347+00:00
+
+## Saša Lukić
+- 이동: **Ipswich Town FC → Fulham FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043354+00:00
+
+## James Trafford
+- 이동: **Leeds United FC → Manchester City FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043393+00:00
+
+## Carl Rushworth
+- 이동: **Coventry City FC → Brighton & Hove Albion FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-08-09T21:33:43.043563+00:00
+
+## Tommaso Pobega
+- 이동: **Bologna FC 1909 → AC Milan**
+- 리그: 세리에 A
+- 감지 시각: 2026-08-09T21:34:46.498273+00:00
+
+## Giovanni Simeone
+- 이동: **Torino FC → SSC Napoli**
+- 리그: 세리에 A
+- 감지 시각: 2026-08-09T21:34:46.498537+00:00
+
+누적 감지 이적: 709건

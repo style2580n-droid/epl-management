@@ -24674,6 +24674,23 @@
  "seriea": [],
  "eredivisie": [
   {
+   "home": "sc 헤렌베인",
+   "away": "FC 트벤테",
+   "date": "2026-08-09",
+   "eid": 210807,
+   "goals": [
+    {
+     "scorer": "L. Oyen",
+     "assist": "J. Trenskow",
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "PEC 즈볼레",
    "away": "아약스",
    "date": "2026-08-09",
@@ -24955,6 +24972,67 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "크리스티안순",
+   "away": "몰데",
+   "date": "2026-08-10",
+   "eid": 207039,
+   "goals": [
+    {
+     "scorer": "T. K. Doherty",
+     "assist": "V. Bender",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Alvheim",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. H. Kilen",
+     "assist": "S. Svendsen",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "함캄",
+   "away": "올레순",
+   "date": "2026-08-10",
+   "eid": 207037,
+   "goals": [
+    {
+     "scorer": "M. Gjone",
+     "assist": "P. Metcalfe",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. H. Osenbroch",
+     "assist": "M. Christensen",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "릴레스트룀",
    "away": "로젠보르그",
