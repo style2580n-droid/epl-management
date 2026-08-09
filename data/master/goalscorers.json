@@ -24674,6 +24674,84 @@
  "seriea": [],
  "eredivisie": [
   {
+   "home": "PEC 즈볼레",
+   "away": "아약스",
+   "date": "2026-08-09",
+   "eid": 210806,
+   "goals": [
+    {
+     "scorer": "J. Brandt",
+     "assist": "M. Godts",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Mokio",
+     "assist": "T. Arokodare",
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 흐로닝언",
+   "away": "FC 위트레흐트",
+   "date": "2026-08-09",
+   "eid": 210805,
+   "goals": [
+    {
+     "scorer": "A. Blake",
+     "assist": "D. v. d. Berg",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. v. Bergen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Darri Willumsson",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "스파르타 로테르담",
+   "away": "페예노르트",
+   "date": "2026-08-09",
+   "eid": 210804,
+   "goals": [
+    {
+     "scorer": "L. Valente",
+     "assist": "G. Zechiël",
+     "team": null,
+     "is_home": false,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "AZ 알크마르",
    "away": "ADO 덴하흐",
    "date": "2026-08-09",
@@ -24877,6 +24955,32 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "릴레스트룀",
+   "away": "로젠보르그",
+   "date": "2026-08-09",
+   "eid": 207040,
+   "goals": [
+    {
+     "scorer": "A. Chiakha",
+     "assist": "M. Bomholt",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Sahsah",
+     "assist": "A. Chiakha",
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "IK 스타트",
    "away": "프레드릭스타",
