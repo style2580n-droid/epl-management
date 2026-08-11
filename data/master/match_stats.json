@@ -49657,5 +49657,115 @@
             }
         ],
         "collected_at": "2026-08-11T04:22:24.316608+00:00"
+    },
+    "1318705278": {
+        "match": {
+            "id": 1318705278,
+            "round": "Clausura - 4",
+            "date": "2026-08-11T19:00:00.000Z",
+            "country": {
+                "code": "CO",
+                "name": "Colombia",
+                "logo": "https://highlightly.net/soccer/images/countries/CO.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Postponed"
+            },
+            "awayTeam": {
+                "id": 961563,
+                "logo": "https://highlightly.net/soccer/images/teams/961563.png",
+                "name": "Envigado"
+            },
+            "homeTeam": {
+                "id": 975179,
+                "logo": "https://highlightly.net/soccer/images/teams/975179.png",
+                "name": "Tigres FC"
+            },
+            "league": {
+                "id": 205024,
+                "logo": "https://highlightly.net/soccer/images/leagues/205024.png",
+                "name": "Primera B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 975179,
+                    "logo": "https://highlightly.net/soccer/images/teams/975179.png",
+                    "name": "Tigres FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 961563,
+                    "logo": "https://highlightly.net/soccer/images/teams/961563.png",
+                    "name": "Envigado"
+                }
+            }
+        ],
+        "collected_at": "2026-08-11T10:02:35.706353+00:00"
+    },
+    "1331663455": {
+        "match": {
+            "id": 1331663455,
+            "round": "Regular Season - 2",
+            "date": "2026-08-11T18:45:00.000Z",
+            "country": {
+                "code": "GB-NIR",
+                "name": "Northern Ireland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-NIR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 9455394,
+                "logo": "https://highlightly.net/soccer/images/teams/9455394.png",
+                "name": "Armagh City"
+            },
+            "homeTeam": {
+                "id": 4557889,
+                "logo": "https://highlightly.net/soccer/images/teams/4557889.png",
+                "name": "Warrenpoint Town"
+            },
+            "league": {
+                "id": 347141,
+                "logo": "https://highlightly.net/soccer/images/leagues/347141.png",
+                "name": "Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4557889,
+                    "logo": "https://highlightly.net/soccer/images/teams/4557889.png",
+                    "name": "Warrenpoint Town"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 9455394,
+                    "logo": "https://highlightly.net/soccer/images/teams/9455394.png",
+                    "name": "Armagh City"
+                }
+            }
+        ],
+        "collected_at": "2026-08-11T10:02:36.239163+00:00"
     }
 }
