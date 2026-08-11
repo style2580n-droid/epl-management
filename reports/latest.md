@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-11
 
-생성(UTC): 2026-08-11 10:12
+생성(UTC): 2026-08-11 16:14
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -54,8 +54,27 @@
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
+| Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
 
-오늘 38건 (누적 823건)
+오늘 57건 (누적 842건)
 
 ## 📊 경기 고급 지표
 
