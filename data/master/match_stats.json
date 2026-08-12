@@ -51052,7 +51052,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 906248,
                     "logo": "https://highlightly.net/soccer/images/teams/906248.png",
@@ -51060,7 +51069,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 1983614,
                     "logo": "https://highlightly.net/soccer/images/teams/1983614.png",
@@ -51068,7 +51086,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-12T04:49:12.440013+00:00"
+        "collected_at": "2026-08-12T21:47:35.358454+00:00"
     },
     "1317146246": {
         "match": {
@@ -51107,7 +51125,20 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 103755,
                     "logo": "https://highlightly.net/soccer/images/teams/103755.png",
@@ -51115,7 +51146,20 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 1001560,
                     "logo": "https://highlightly.net/soccer/images/teams/1001560.png",
@@ -51123,7 +51167,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-12T04:49:12.695703+00:00"
+        "collected_at": "2026-08-12T21:47:36.225449+00:00"
     },
     "1367725431": {
         "match": {
@@ -51162,7 +51206,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 676478,
                     "logo": "https://highlightly.net/soccer/images/teams/676478.png",
@@ -51170,7 +51223,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 904546,
                     "logo": "https://highlightly.net/soccer/images/teams/904546.png",
@@ -51178,7 +51240,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-12T04:49:13.129408+00:00"
+        "collected_at": "2026-08-12T21:47:36.729360+00:00"
     },
     "1366772311": {
         "match": {
@@ -51217,7 +51279,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 385436,
                     "logo": "https://highlightly.net/soccer/images/teams/385436.png",
@@ -51225,7 +51296,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 2013399,
                     "logo": "https://highlightly.net/soccer/images/teams/2013399.png",
@@ -51233,7 +51313,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-12T04:49:13.378349+00:00"
+        "collected_at": "2026-08-12T21:47:35.018787+00:00"
     },
     "1370863068": {
         "match": {
@@ -51382,7 +51462,60 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 104,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 16,
+                        "displayName": "Free Kicks"
+                    },
+                    {
+                        "value": 34,
+                        "displayName": "Throw-Ins"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Goal Kicks"
+                    },
+                    {
+                        "value": 0.13,
+                        "displayName": "Shots accuracy"
+                    },
+                    {
+                        "value": 0.63,
+                        "displayName": "Possession"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Shots on target"
+                    },
+                    {
+                        "value": 6,
+                        "displayName": "Corners"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Offsides"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Red cards"
+                    },
+                    {
+                        "value": 6,
+                        "displayName": "Shots off target"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Blocked shots"
+                    },
+                    {
+                        "value": 2,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 12307095,
                     "logo": "https://highlightly.net/soccer/images/teams/12307095.png",
@@ -51390,7 +51523,60 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 95,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 19,
+                        "displayName": "Free Kicks"
+                    },
+                    {
+                        "value": 25,
+                        "displayName": "Throw-Ins"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Goal Kicks"
+                    },
+                    {
+                        "value": 0.25,
+                        "displayName": "Shots accuracy"
+                    },
+                    {
+                        "value": 0.37,
+                        "displayName": "Possession"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Shots on target"
+                    },
+                    {
+                        "value": 2,
+                        "displayName": "Corners"
+                    },
+                    {
+                        "value": 3,
+                        "displayName": "Offsides"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Red cards"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Shots off target"
+                    },
+                    {
+                        "value": 2,
+                        "displayName": "Blocked shots"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 1479822,
                     "logo": "https://highlightly.net/soccer/images/teams/1479822.png",
@@ -51398,6 +51584,6 @@
                 }
             }
         ],
-        "collected_at": "2026-08-12T04:49:14.428548+00:00"
+        "collected_at": "2026-08-12T21:47:37.044766+00:00"
     }
 }
