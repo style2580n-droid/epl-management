@@ -52735,5 +52735,60 @@
             }
         ],
         "collected_at": "2026-08-13T04:52:48.931382+00:00"
+    },
+    "1367711815": {
+        "match": {
+            "id": 1367711815,
+            "round": "3rd Qualifying Round",
+            "date": "2026-08-13T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 296081,
+                "logo": "https://highlightly.net/soccer/images/teams/296081.png",
+                "name": "Lech Poznan"
+            },
+            "homeTeam": {
+                "id": 597335,
+                "logo": "https://highlightly.net/soccer/images/teams/597335.png",
+                "name": "KÍ Klaksvík"
+            },
+            "league": {
+                "id": 3337,
+                "logo": "https://highlightly.net/soccer/images/leagues/3337.png",
+                "name": "UEFA Europa League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 597335,
+                    "logo": "https://highlightly.net/soccer/images/teams/597335.png",
+                    "name": "KÍ Klaksvík"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 296081,
+                    "logo": "https://highlightly.net/soccer/images/teams/296081.png",
+                    "name": "Lech Poznan"
+                }
+            }
+        ],
+        "collected_at": "2026-08-13T16:01:16.727537+00:00"
     }
 }
