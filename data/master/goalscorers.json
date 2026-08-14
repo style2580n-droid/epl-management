@@ -24484,11 +24484,100 @@
    ]
   }
  ],
- "championship": [],
+ "championship": [
+  {
+   "home": "울버햄튼 원더러스",
+   "away": "블랙번 로버스",
+   "date": "2026-08-15",
+   "eid": 213974,
+   "goals": [
+    {
+     "scorer": "R. Jiménez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Guðjohnsen",
+     "assist": "O. Afolayan",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. McLoughlin",
+     "assist": "R. Morishita",
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Munetsi",
+     "assist": "F. López",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  }
+ ],
  "ligue1": [],
  "bundesliga": [],
  "seriea": [],
  "eredivisie": [
+  {
+   "home": "텔스타르",
+   "away": "스파르타 로테르담",
+   "date": "2026-08-15",
+   "eid": 210808,
+   "goals": [
+    {
+     "scorer": "R. van Cruijsen",
+     "assist": "B. Kuipers",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Soualhia",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Þórisson",
+     "assist": "S. Mito",
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Young",
+     "assist": "N. Þórisson",
+     "team": null,
+     "is_home": false,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "sc 헤렌베인",
    "away": "FC 트벤테",
@@ -24788,6 +24877,41 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "로젠보르그",
+   "away": "비킹",
+   "date": "2026-08-15",
+   "eid": 207049,
+   "goals": [
+    {
+     "scorer": "A. Chiakha",
+     "assist": "M. Bomholt",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Christiansen",
+     "assist": "Z. Tripić",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Ceide",
+     "assist": "A. Chiakha",
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "크리스티안순",
    "away": "몰데",
