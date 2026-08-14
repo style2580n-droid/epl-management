@@ -53879,28 +53879,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Red cards"
+                        "displayName": "Red cards",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Yellow cards"
+                        "displayName": "Yellow cards",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -53912,28 +53912,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Red cards"
+                        "displayName": "Red cards",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Yellow cards"
+                        "displayName": "Yellow cards",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -53943,7 +53943,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-14T04:49:08.666433+00:00"
+        "collected_at": "2026-08-14T10:04:42.066375+00:00"
     },
     "1294217753": {
         "match": {
@@ -55016,5 +55016,60 @@
             }
         ],
         "collected_at": "2026-08-14T04:49:24.244510+00:00"
+    },
+    "1317576852": {
+        "match": {
+            "id": 1317576852,
+            "round": "Regular Season - 7",
+            "date": "2026-08-14T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 23656882,
+                "logo": null,
+                "name": "Doze"
+            },
+            "homeTeam": {
+                "id": 11002512,
+                "logo": "https://highlightly.net/soccer/images/teams/11002512.png",
+                "name": "Linhares"
+            },
+            "league": {
+                "id": 976881,
+                "logo": null,
+                "name": "Capixaba B",
+                "season": 2027
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 11002512,
+                    "logo": "https://highlightly.net/soccer/images/teams/11002512.png",
+                    "name": "Linhares"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23656882,
+                    "logo": null,
+                    "name": "Doze"
+                }
+            }
+        ],
+        "collected_at": "2026-08-14T10:04:46.200574+00:00"
     }
 }
