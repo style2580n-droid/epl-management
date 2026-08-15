@@ -56575,5 +56575,170 @@
             }
         ],
         "collected_at": "2026-08-15T15:23:21.358840+00:00"
+    },
+    "1364426104": {
+        "match": {
+            "id": 1364426104,
+            "round": "Regular Season - 3",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 12655154,
+                "logo": null,
+                "name": "Pumas UNAM Women"
+            },
+            "homeTeam": {
+                "id": 12664515,
+                "logo": null,
+                "name": "Pachuca Women"
+            },
+            "league": {
+                "id": 573507,
+                "logo": "https://highlightly.net/soccer/images/leagues/573507.png",
+                "name": "Liga MX Femenil",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12664515,
+                    "logo": null,
+                    "name": "Pachuca Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12655154,
+                    "logo": null,
+                    "name": "Pumas UNAM Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T21:23:30.264346+00:00"
+    },
+    "1271078212": {
+        "match": {
+            "id": 1271078212,
+            "round": "Group Stage",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3403933,
+                "logo": "https://highlightly.net/soccer/images/teams/3403933.png",
+                "name": "Loudoun United FC"
+            },
+            "homeTeam": {
+                "id": 7696377,
+                "logo": "https://highlightly.net/soccer/images/teams/7696377.png",
+                "name": "Detroit City"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7696377,
+                    "logo": "https://highlightly.net/soccer/images/teams/7696377.png",
+                    "name": "Detroit City"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3403933,
+                    "logo": "https://highlightly.net/soccer/images/teams/3403933.png",
+                    "name": "Loudoun United FC"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T21:23:31.235011+00:00"
+    },
+    "1271079063": {
+        "match": {
+            "id": 1271079063,
+            "round": "Group Stage",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 7685314,
+                "logo": "https://highlightly.net/soccer/images/teams/7685314.png",
+                "name": "Miami FC"
+            },
+            "homeTeam": {
+                "id": 3400529,
+                "logo": "https://highlightly.net/soccer/images/teams/3400529.png",
+                "name": "Hartford Athletic"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3400529,
+                    "logo": "https://highlightly.net/soccer/images/teams/3400529.png",
+                    "name": "Hartford Athletic"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7685314,
+                    "logo": "https://highlightly.net/soccer/images/teams/7685314.png",
+                    "name": "Miami FC"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T21:23:31.729147+00:00"
     }
 }
