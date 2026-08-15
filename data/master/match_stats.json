@@ -56410,5 +56410,60 @@
             }
         ],
         "collected_at": "2026-08-15T03:41:25.401057+00:00"
+    },
+    "1271347128": {
+        "match": {
+            "id": 1271347128,
+            "round": "Group Stage",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16088939,
+                "logo": "https://highlightly.net/soccer/images/teams/16088939.png",
+                "name": "One Knoxville"
+            },
+            "homeTeam": {
+                "id": 7681910,
+                "logo": "https://highlightly.net/soccer/images/teams/7681910.png",
+                "name": "Greenville Triumph"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7681910,
+                    "logo": "https://highlightly.net/soccer/images/teams/7681910.png",
+                    "name": "Greenville Triumph"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16088939,
+                    "logo": "https://highlightly.net/soccer/images/teams/16088939.png",
+                    "name": "One Knoxville"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T09:28:01.730441+00:00"
     }
 }
