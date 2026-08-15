@@ -56465,5 +56465,115 @@
             }
         ],
         "collected_at": "2026-08-15T09:28:01.730441+00:00"
+    },
+    "1271347979": {
+        "match": {
+            "id": 1271347979,
+            "round": "Group Stage",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21988922,
+                "logo": null,
+                "name": "Alta"
+            },
+            "homeTeam": {
+                "id": 7687867,
+                "logo": "https://highlightly.net/soccer/images/teams/7687867.png",
+                "name": "NY Cosmos"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7687867,
+                    "logo": "https://highlightly.net/soccer/images/teams/7687867.png",
+                    "name": "NY Cosmos"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21988922,
+                    "logo": null,
+                    "name": "Alta"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T15:23:20.980419+00:00"
+    },
+    "1271345426": {
+        "match": {
+            "id": 1271345426,
+            "round": "Group Stage",
+            "date": "2026-08-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 18117723,
+                "logo": "https://highlightly.net/soccer/images/teams/18117723.png",
+                "name": "Sarasota Paradise"
+            },
+            "homeTeam": {
+                "id": 3397125,
+                "logo": "https://highlightly.net/soccer/images/teams/3397125.png",
+                "name": "Charlotte Independence"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3397125,
+                    "logo": "https://highlightly.net/soccer/images/teams/3397125.png",
+                    "name": "Charlotte Independence"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 18117723,
+                    "logo": "https://highlightly.net/soccer/images/teams/18117723.png",
+                    "name": "Sarasota Paradise"
+                }
+            }
+        ],
+        "collected_at": "2026-08-15T15:23:21.358840+00:00"
     }
 }

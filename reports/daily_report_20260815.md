@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-15
 
-생성(UTC): 2026-08-15 09:42
+생성(UTC): 2026-08-15 15:34
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -54,8 +54,27 @@
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
+| Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
 
-오늘 38건 (누적 1127건)
+오늘 57건 (누적 1146건)
 
 ## 📊 경기 고급 지표
 
@@ -7114,6 +7133,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 본머스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
 | 풀럼 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
+
+### 볼턴원더러스_프레스턴노스엔드_213975
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 볼턴 원더러스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+| 프레스턴 노스엔드 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 
 ### 브라이튼_노팅엄포레스트_160067
 
@@ -14672,6 +14698,7 @@
 - **본머스_풀럼_306971**: [heatmap(본머스)](viz/본머스_풀럼_306971_본머스_heatmap.svg) · [network(본머스)](viz/본머스_풀럼_306971_본머스_network.svg) · [shotmap(본머스)](viz/본머스_풀럼_306971_본머스_shotmap.svg) · [heatmap(풀럼)](viz/본머스_풀럼_306971_풀럼_heatmap.svg) · [network(풀럼)](viz/본머스_풀럼_306971_풀럼_network.svg) · [shotmap(풀럼)](viz/본머스_풀럼_306971_풀럼_shotmap.svg)
 - **본머스_풀럼_312304**: [heatmap(본머스)](viz/본머스_풀럼_312304_본머스_heatmap.svg) · [network(본머스)](viz/본머스_풀럼_312304_본머스_network.svg) · [shotmap(본머스)](viz/본머스_풀럼_312304_본머스_shotmap.svg) · [heatmap(풀럼)](viz/본머스_풀럼_312304_풀럼_heatmap.svg) · [network(풀럼)](viz/본머스_풀럼_312304_풀럼_network.svg) · [shotmap(풀럼)](viz/본머스_풀럼_312304_풀럼_shotmap.svg)
 - **본머스_풀럼_61**: [heatmap(본머스)](viz/본머스_풀럼_61_본머스_heatmap.svg) · [network(본머스)](viz/본머스_풀럼_61_본머스_network.svg) · [shotmap(본머스)](viz/본머스_풀럼_61_본머스_shotmap.svg) · [heatmap(풀럼)](viz/본머스_풀럼_61_풀럼_heatmap.svg) · [network(풀럼)](viz/본머스_풀럼_61_풀럼_network.svg) · [shotmap(풀럼)](viz/본머스_풀럼_61_풀럼_shotmap.svg)
+- **볼턴원더러스_프레스턴노스엔드_213975**: [heatmap(볼턴 원더러스)](viz/볼턴원더러스_프레스턴노스엔드_213975_볼턴 원더러스_heatmap.svg) · [network(볼턴 원더러스)](viz/볼턴원더러스_프레스턴노스엔드_213975_볼턴 원더러스_network.svg) · [shotmap(볼턴 원더러스)](viz/볼턴원더러스_프레스턴노스엔드_213975_볼턴 원더러스_shotmap.svg) · [heatmap(프레스턴 노스엔드)](viz/볼턴원더러스_프레스턴노스엔드_213975_프레스턴 노스엔드_heatmap.svg) · [network(프레스턴 노스엔드)](viz/볼턴원더러스_프레스턴노스엔드_213975_프레스턴 노스엔드_network.svg) · [shotmap(프레스턴 노스엔드)](viz/볼턴원더러스_프레스턴노스엔드_213975_프레스턴 노스엔드_shotmap.svg)
 - **브라이튼_노팅엄포레스트_160067**: [heatmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160067_노팅엄 포레스트_heatmap.svg) · [network(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160067_노팅엄 포레스트_network.svg) · [shotmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160067_노팅엄 포레스트_shotmap.svg) · [heatmap(브라이튼)](viz/브라이튼_노팅엄포레스트_160067_브라이튼_heatmap.svg) · [network(브라이튼)](viz/브라이튼_노팅엄포레스트_160067_브라이튼_network.svg) · [shotmap(브라이튼)](viz/브라이튼_노팅엄포레스트_160067_브라이튼_shotmap.svg)
 - **브라이튼_노팅엄포레스트_160221**: [heatmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160221_노팅엄 포레스트_heatmap.svg) · [network(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160221_노팅엄 포레스트_network.svg) · [shotmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_160221_노팅엄 포레스트_shotmap.svg) · [heatmap(브라이튼)](viz/브라이튼_노팅엄포레스트_160221_브라이튼_heatmap.svg) · [network(브라이튼)](viz/브라이튼_노팅엄포레스트_160221_브라이튼_network.svg) · [shotmap(브라이튼)](viz/브라이튼_노팅엄포레스트_160221_브라이튼_shotmap.svg)
 - **브라이튼_노팅엄포레스트_276**: [heatmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_276_노팅엄 포레스트_heatmap.svg) · [network(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_276_노팅엄 포레스트_network.svg) · [shotmap(노팅엄 포레스트)](viz/브라이튼_노팅엄포레스트_276_노팅엄 포레스트_shotmap.svg) · [heatmap(브라이튼)](viz/브라이튼_노팅엄포레스트_276_브라이튼_heatmap.svg) · [network(브라이튼)](viz/브라이튼_노팅엄포레스트_276_브라이튼_network.svg) · [shotmap(브라이튼)](viz/브라이튼_노팅엄포레스트_276_브라이튼_shotmap.svg)

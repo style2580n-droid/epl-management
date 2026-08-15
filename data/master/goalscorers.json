@@ -24486,6 +24486,41 @@
  ],
  "championship": [
   {
+   "home": "볼턴 원더러스",
+   "away": "프레스턴 노스엔드",
+   "date": "2026-08-15",
+   "eid": 213975,
+   "goals": [
+    {
+     "scorer": "J. Erabi",
+     "assist": "A. Vukčević",
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "T. Gale",
+     "assist": "J. McAtee",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Dalby",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "울버햄튼 원더러스",
    "away": "블랙번 로버스",
    "date": "2026-08-15",
