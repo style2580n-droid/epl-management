@@ -106,7 +106,9 @@
    "date": "2026-08-17",
    "time": "00:00",
    "id": 213984,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "카디프 시티",
@@ -4503,14 +4505,6 @@
    "friendly": true
   },
   {
-   "home": "뉴캐슬",
-   "away": "라싱 스트라스부르",
-   "date": "2026-08-17",
-   "time": "00:00",
-   "id": 220512,
-   "friendly": true
-  },
-  {
    "home": "올랭피크 마르세유",
    "away": "라싱 스트라스부르",
    "date": "2026-08-22",
@@ -7006,14 +7000,6 @@
    "date": "2026-08-15",
    "time": "23:00",
    "id": 219704,
-   "friendly": true
-  },
-  {
-   "home": "샬케04",
-   "away": "레알 마드리드",
-   "date": "2026-08-17",
-   "time": "00:00",
-   "id": 223384,
    "friendly": true
   },
   {
@@ -12684,7 +12670,9 @@
    "date": "2026-08-16",
    "time": "23:45",
    "id": 210816,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "포르투나 시타르드",
@@ -16446,7 +16434,9 @@
    "date": "2026-08-17",
    "time": "00:00",
    "id": 207051,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "브란",
@@ -16454,7 +16444,9 @@
    "date": "2026-08-17",
    "time": "00:00",
    "id": 207050,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "몰데",
@@ -16462,7 +16454,9 @@
    "date": "2026-08-17",
    "time": "00:00",
    "id": 207048,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "프레드릭스타",
@@ -16470,7 +16464,9 @@
    "date": "2026-08-17",
    "time": "02:15",
    "id": 207046,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "발레렝가",
@@ -17348,15 +17344,9 @@
    "date": "2026-08-17",
    "time": "00:00",
    "id": 213527,
-   "friendly": false
-  },
-  {
-   "home": "샬케04",
-   "away": "레알 마드리드",
-   "date": "2026-08-17",
-   "time": "00:00",
-   "id": 223384,
-   "friendly": true
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "에스파뇰",
@@ -17364,7 +17354,9 @@
    "date": "2026-08-17",
    "time": "02:00",
    "id": 213524,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "셀타 비고",

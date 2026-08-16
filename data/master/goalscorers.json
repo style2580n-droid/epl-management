@@ -24486,6 +24486,50 @@
  ],
  "championship": [
   {
+   "home": "번리",
+   "away": "웨스트햄 유나이티드",
+   "date": "2026-08-17",
+   "eid": 213984,
+   "goals": [
+    {
+     "scorer": "Z. Flemming",
+     "assist": "M. Alleyne",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Z. Flemming",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Solomon",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Kilman",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "왓포드",
    "away": "사우샘프턴",
    "date": "2026-08-16",
@@ -24822,6 +24866,50 @@
  "bundesliga": [],
  "seriea": [],
  "eredivisie": [
+  {
+   "home": "아약스",
+   "away": "sc 헤렌베인",
+   "date": "2026-08-16",
+   "eid": 210816,
+   "goals": [
+    {
+     "scorer": "M. Rivera",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Trenskow",
+     "assist": "S. Kersten",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Ouazane",
+     "assist": "C. Henrique",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Klaverboer",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "ownGoal",
+     "body": "other"
+    }
+   ]
+  },
   {
    "home": "페예노르트",
    "away": "호 어헤드 이글스",
@@ -25491,6 +25579,146 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "프레드릭스타",
+   "away": "크리스티안순",
+   "date": "2026-08-17",
+   "eid": 207046,
+   "goals": [
+    {
+     "scorer": "O. Öhlenschlaeger",
+     "assist": "S. Rafn",
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "사르프스보르그 08",
+   "away": "산네피오르",
+   "date": "2026-08-17",
+   "eid": 207051,
+   "goals": [
+    {
+     "scorer": "A. Foster",
+     "assist": "O. Kapskarmo",
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Karlsbakk",
+     "assist": "S. Sörli",
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Kapskarmo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "브란",
+   "away": "함캄",
+   "date": "2026-08-17",
+   "eid": 207050,
+   "goals": [
+    {
+     "scorer": "B. Finne",
+     "assist": "K. Eriksen",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Holm",
+     "assist": "K. Mani Ingason",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Soltvedt",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "몰데",
+   "away": "트롬쇠",
+   "date": "2026-08-17",
+   "eid": 207048,
+   "goals": [
+    {
+     "scorer": "I. Camoes",
+     "assist": "S. Innvær",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. K. Doherty",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "O. Spiten-Nysæter",
+     "assist": "J. Abdullai",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. A. Larsen",
+     "assist": "T. Nyhammer",
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Hestad",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "올레순",
    "away": "발레렝가",
@@ -30176,6 +30404,85 @@
   }
  ],
  "laliga": [
+  {
+   "home": "에스파뇰",
+   "away": "레반테",
+   "date": "2026-08-17",
+   "eid": 213524,
+   "goals": [
+    {
+     "scorer": "T. Dolan",
+     "assist": "R. Bauza",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Fernández",
+     "assist": "J. Hernández",
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Fernández",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "라싱 산탄데르",
+   "away": "비야레알",
+   "date": "2026-08-17",
+   "eid": 213527,
+   "goals": [
+    {
+     "scorer": "N. Pépé",
+     "assist": "G. Mikautadze",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Gueye",
+     "assist": "A. Moleiro",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Martínez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Martín",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "세비야",
    "away": "라요 바예카노",

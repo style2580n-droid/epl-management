@@ -1,1 +1,86 @@
-{}
+{
+    "W. G. Igor": {
+        "team": "크리스티안순",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 1.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 1.0,
+            "key_passes": 1.0,
+            "dribbles": 0.0,
+            "dribbles_won": 0.0,
+            "yellow_cards": 0.0,
+            "red_cards": 0.0,
+            "saves": 0.0,
+            "goals_conceded": 0.0,
+            "clearances": 1.0,
+            "fouls": 3.0,
+            "was_fouled": 1.0,
+            "touches": 40.0,
+            "total_pass": 31.0,
+            "accurate_pass": 28.0,
+            "total_long_balls": 3.0,
+            "accurate_long_balls": 2.0,
+            "total_cross": 0.0,
+            "accurate_cross": 0.0,
+            "duel_won": 4.0,
+            "duel_lost": 6.0,
+            "aerial_won": 2.0,
+            "aerial_lost": 2.0,
+            "ball_recovery": 4.0,
+            "blocked_scoring_attempt": 1.0,
+            "minutes_played": 67.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.2,
+            "tackles": 0.2,
+            "interceptions": 0.2
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    },
+    "O. Öhlenschlaeger": {
+        "team": "프레드릭스타",
+        "matches": 5,
+        "minutes_fpl": null,
+        "totals": {
+            "shots": 0.0,
+            "sot": 0.0,
+            "tackles_won": 1.0,
+            "interceptions": 0.0,
+            "key_passes": 2.0,
+            "dribbles": 2.0,
+            "dribbles_won": 1.0,
+            "yellow_cards": 1.0,
+            "red_cards": 0.0,
+            "saves": 0.0,
+            "goals_conceded": 0.0,
+            "clearances": 0.0,
+            "fouls": 2.0,
+            "was_fouled": 3.0,
+            "touches": 31.0,
+            "total_pass": 14.0,
+            "accurate_pass": 8.0,
+            "total_long_balls": 3.0,
+            "accurate_long_balls": 3.0,
+            "total_cross": 3.0,
+            "accurate_cross": 1.0,
+            "duel_won": 6.0,
+            "duel_lost": 6.0,
+            "aerial_won": 0.0,
+            "aerial_lost": 3.0,
+            "ball_recovery": 4.0,
+            "blocked_scoring_attempt": 0.0,
+            "minutes_played": 57.0,
+            "tackles": 1.0
+        },
+        "per90": {
+            "key_passes": 0.4,
+            "tackles": 0.2,
+            "interceptions": 0.0
+        },
+        "per90_basis": "per_match (출전시간 미확보, 5경기 기준)"
+    }
+}
