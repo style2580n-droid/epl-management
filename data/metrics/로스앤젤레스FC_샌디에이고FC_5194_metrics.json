@@ -1,6 +1,6 @@
 {
     "teams": {
-        "엑셀시오르 로테르담": {
+        "로스앤젤레스 FC": {
             "buildup_attempts": 0,
             "buildup_success_pct": null,
             "buildup_disruption_pct": null,
@@ -11,7 +11,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 53.3,
+            "possession_pct": 45.0,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -35,7 +35,7 @@
             "launch_accuracy_pct": null,
             "field_tilt_pct": null
         },
-        "PSV 에인트호번": {
+        "샌디에이고 FC": {
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -52,7 +52,7 @@
             "press_resistance_pct": null,
             "press_intensity": null,
             "counterpress_success_pct": null,
-            "possession_pct": 46.7,
+            "possession_pct": 55.0,
             "territory_pct": null,
             "pass_completion_pct": null,
             "progressive_pass_pct": null,
@@ -78,20 +78,35 @@
         }
     },
     "players": {
+        "S. Heung-min": {
+            "_team": "로스앤젤레스 FC"
+        },
+        "A. Dreyer": {
+            "_team": "샌디에이고 FC"
+        },
         "null": {
-            "_team": "PSV 에인트호번"
+            "_team": "로스앤젤레스 FC"
         },
-        "J. Plug": {
-            "_team": "엑셀시오르 로테르담"
+        "J. Tverskov": {
+            "_team": "샌디에이고 FC"
         },
-        "R. Pepi": {
-            "_team": "PSV 에인트호번"
+        "M. Choinière": {
+            "_team": "로스앤젤레스 FC"
         },
-        "C. Widell": {
-            "_team": "엑셀시오르 로테르담"
+        "M. Delgado": {
+            "_team": "로스앤젤레스 FC"
         },
-        "R. van Bommel": {
-            "_team": "PSV 에인트호번"
+        "O. Valakari": {
+            "_team": "샌디에이고 FC"
+        },
+        "E. Segura": {
+            "_team": "로스앤젤레스 FC"
+        },
+        "A. Alvarado Jr": {
+            "_team": "샌디에이고 FC"
+        },
+        "D. Bouanga": {
+            "_team": "로스앤젤레스 FC"
         }
     }
 }
