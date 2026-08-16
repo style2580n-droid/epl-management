@@ -4341,9 +4341,9 @@
  },
  "6060": {
   "name": "Divin Mubama",
-  "team_id": 12,
-  "team_kr": "맨체스터 시티",
-  "league": "epl",
+  "team_id": 205,
+  "team_kr": "사우샘프턴",
+  "league": "championship",
   "last_seen": "2026-08-16"
  },
  "6079": {
@@ -4589,7 +4589,7 @@
   "team_id": 202,
   "team_kr": "왓포드",
   "league": "championship",
-  "last_seen": "2026-08-12"
+  "last_seen": "2026-08-16"
  },
  "6779": {
   "name": "Alfie Marriott",
@@ -19573,9 +19573,9 @@
  },
  "946": {
   "name": "Federico Ravaglia",
-  "team_id": 66,
-  "team_kr": "볼로냐",
-  "league": "seriea",
+  "team_id": 202,
+  "team_kr": "왓포드",
+  "league": "championship",
   "last_seen": "2026-08-16"
  },
  "8708": {
@@ -19797,8 +19797,8 @@
  },
  "8383": {
   "name": "Alberto Dossena",
-  "team_id": 67,
-  "team_kr": "칼리아리",
+  "team_id": 69,
+  "team_kr": "코모",
   "league": "seriea",
   "last_seen": "2026-08-16"
  },
@@ -19986,9 +19986,9 @@
  },
  "9036": {
   "name": "Othniël Raterink",
-  "team_id": 67,
-  "team_kr": "칼리아리",
-  "league": "seriea",
+  "team_id": 1319,
+  "team_kr": "ADO 덴하흐",
+  "league": "eredivisie",
   "last_seen": "2026-08-16"
  },
  "9037": {
@@ -23475,7 +23475,7 @@
   "team_id": 202,
   "team_kr": "왓포드",
   "league": "championship",
-  "last_seen": "2026-08-14"
+  "last_seen": "2026-08-16"
  },
  "8801": {
   "name": "Juan Arizala",
@@ -24910,7 +24910,7 @@
   "team_id": 181,
   "team_kr": "FC 흐로닝언",
   "league": "eredivisie",
-  "last_seen": "2026-08-12"
+  "last_seen": "2026-08-16"
  },
  "5559": {
   "name": "Jismerai Dillema",
@@ -26233,7 +26233,7 @@
   "team_id": 139,
   "team_kr": "호 어헤드 이글스",
   "league": "eredivisie",
-  "last_seen": "2026-08-14"
+  "last_seen": "2026-08-16"
  },
  "4719": {
   "name": "Eus Waayers",
@@ -34108,7 +34108,7 @@
   "team_id": 202,
   "team_kr": "왓포드",
   "league": "championship",
-  "last_seen": "2026-08-12"
+  "last_seen": "2026-08-16"
  },
  "8376": {
   "name": "Nikoloz Chikovani",
@@ -39400,7 +39400,7 @@
   "team_id": 2080,
   "team_kr": "올레순",
   "league": "eliteserien",
-  "last_seen": "2026-08-07"
+  "last_seen": "2026-08-16"
  },
  "50157": {
   "name": "Tor Erik Larsen",
@@ -42057,9 +42057,9 @@
  },
  "50094": {
   "name": "Filip Thorvaldsen",
-  "team_id": 2084,
-  "team_kr": "발레렝가",
-  "league": "eliteserien",
+  "team_id": 178,
+  "team_kr": "FC 트벤테",
+  "league": "eredivisie",
   "last_seen": "2026-08-16"
  },
  "50104": {
@@ -83542,7 +83542,7 @@
   "team_id": 181,
   "team_kr": "FC 흐로닝언",
   "league": "eredivisie",
-  "last_seen": "2026-08-14"
+  "last_seen": "2026-08-16"
  },
  "141371": {
   "name": "Sergio Esteban Sánchez",
@@ -88805,6 +88805,790 @@
   "name": "Colton Storm",
   "team_id": 299,
   "team_kr": "스포르팅 캔자스시티",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "174906": {
+  "name": "Paul Robinson",
+  "team_id": 199,
+  "team_kr": "버밍엄 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174907": {
+  "name": "Tomasz Kuszczak",
+  "team_id": 199,
+  "team_kr": "버밍엄 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174941": {
+  "name": "Johnnie Jackson",
+  "team_id": 201,
+  "team_kr": "찰턴 애슬레틱",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "175231": {
+  "name": "Chris Baird",
+  "team_id": 216,
+  "team_kr": "더비 카운티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "175084": {
+  "name": "Cameron Stewart",
+  "team_id": 1415,
+  "team_kr": "링컨 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174642": {
+  "name": "Declan O'Hare",
+  "team_id": 1415,
+  "team_kr": "링컨 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "171826": {
+  "name": "Tim Cahill",
+  "team_id": 210,
+  "team_kr": "밀월",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174934": {
+  "name": "Albie Hopkins",
+  "team_id": 211,
+  "team_kr": "옥스퍼드 유나이티드",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174932": {
+  "name": "Ricardinho",
+  "team_id": 211,
+  "team_kr": "옥스퍼드 유나이티드",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "175531": {
+  "name": "Almen Abdi",
+  "team_id": 222,
+  "team_kr": "셰필드 웬즈데이",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174571": {
+  "name": "Glen Johnson",
+  "team_id": 215,
+  "team_kr": "스토크 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174570": {
+  "name": "Stephen Ireland",
+  "team_id": 215,
+  "team_kr": "스토크 시티",
+  "league": "championship",
+  "last_seen": "2026-08-16"
+ },
+ "174566": {
+  "name": "Per Mertesacker",
+  "team_id": 18,
+  "team_kr": "아스날",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175622": {
+  "name": "Liam Rosenior",
+  "team_id": 5,
+  "team_kr": "브라이튼",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175299": {
+  "name": "Callum Nicell Galbraith",
+  "team_id": 19,
+  "team_kr": "리즈 유나이티드",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175727": {
+  "name": "Romario Vieira",
+  "team_id": 19,
+  "team_kr": "리즈 유나이티드",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "75051": {
+  "name": "Lucas Pitt",
+  "team_id": 1,
+  "team_kr": "리버풀",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "174567": {
+  "name": "Michael Carrick",
+  "team_id": 17,
+  "team_kr": "맨체스터 유나이티드",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "174560": {
+  "name": "Jesús Gámez",
+  "team_id": 4,
+  "team_kr": "뉴캐슬",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "167544": {
+  "name": "Ashkan Dejagah",
+  "team_id": 15,
+  "team_kr": "노팅엄 포레스트",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175083": {
+  "name": "Chris Cohen",
+  "team_id": 15,
+  "team_kr": "노팅엄 포레스트",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175116": {
+  "name": "Juan Rafael Fuentes",
+  "team_id": 15,
+  "team_kr": "노팅엄 포레스트",
+  "league": "epl",
+  "last_seen": "2026-08-16"
+ },
+ "175405": {
+  "name": "Loïc Puyo",
+  "team_id": 107,
+  "team_kr": "앙제SCO",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175104": {
+  "name": "Issa Samba",
+  "team_id": 109,
+  "team_kr": "AJ 오세르",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175708": {
+  "name": "Ludovic Obraniak",
+  "team_id": 109,
+  "team_kr": "AJ 오세르",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "174738": {
+  "name": "Gaël Danic",
+  "team_id": 110,
+  "team_kr": "FC 로리앙",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175653": {
+  "name": "Bilal Hadraoui",
+  "team_id": 111,
+  "team_kr": "FC 메스",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175620": {
+  "name": "Yann Jouffre",
+  "team_id": 111,
+  "team_kr": "FC 메스",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175080": {
+  "name": "Najib Gandi",
+  "team_id": 113,
+  "team_kr": "FC 낭트",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "174747": {
+  "name": "Henri Bedimo",
+  "team_id": 98,
+  "team_kr": "올랭피크 마르세유",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175561": {
+  "name": "Dorian Grange",
+  "team_id": 100,
+  "team_kr": "올랭피크 리옹",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "175167": {
+  "name": "Morgan Amalfitano",
+  "team_id": 97,
+  "team_kr": "스타드 렌",
+  "league": "ligue1",
+  "last_seen": "2026-08-16"
+ },
+ "174658": {
+  "name": "Dominic Maroh",
+  "team_id": 94,
+  "team_kr": "1.FC 쾰른",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174645": {
+  "name": "Nigel de Jong",
+  "team_id": 93,
+  "team_kr": "1.FSV 마인츠05",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175054": {
+  "name": "René Adler",
+  "team_id": 93,
+  "team_kr": "1.FSV 마인츠05",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174649": {
+  "name": "Stefan Kießling",
+  "team_id": 85,
+  "team_kr": "바이어 레버쿠젠",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174644": {
+  "name": "Roman Weidenfeller",
+  "team_id": 92,
+  "team_kr": "보루시아 도르트문트",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174989": {
+  "name": "Alexander Meier",
+  "team_id": 87,
+  "team_kr": "아인트라흐트 프랑크푸르트",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174655": {
+  "name": "Gojko Kačar",
+  "team_id": 90,
+  "team_kr": "FC 아우크스부르크",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174650": {
+  "name": "Tom Starke",
+  "team_id": 79,
+  "team_kr": "바이에른 뮌헨",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174652": {
+  "name": "Sejad Salihović",
+  "team_id": 96,
+  "team_kr": "함부르크SV",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "174653": {
+  "name": "Julian Schuster",
+  "team_id": 89,
+  "team_kr": "SC 프라이부르크",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175712": {
+  "name": "Kwame Yeboah",
+  "team_id": 1293,
+  "team_kr": "SC 파더보른07",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175711": {
+  "name": "Leon Fesser",
+  "team_id": 1293,
+  "team_kr": "SC 파더보른07",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175709": {
+  "name": "Massih Wassey",
+  "team_id": 1293,
+  "team_kr": "SC 파더보른07",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175710": {
+  "name": "Thomas Bertels",
+  "team_id": 1293,
+  "team_kr": "SC 파더보른07",
+  "league": "bundesliga",
+  "last_seen": "2026-08-16"
+ },
+ "175449": {
+  "name": "Luca Rizzo",
+  "team_id": 71,
+  "team_kr": "아탈란타",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "174890": {
+  "name": "Thomas Bolis",
+  "team_id": 71,
+  "team_kr": "아탈란타",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "175202": {
+  "name": "Joseph Tetteh",
+  "team_id": 67,
+  "team_kr": "칼리아리",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "174580": {
+  "name": "Luca Crosta",
+  "team_id": 67,
+  "team_kr": "칼리아리",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "175563": {
+  "name": "Davide Astori",
+  "team_id": 68,
+  "team_kr": "피오렌티나",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "175193": {
+  "name": "Simon Laner",
+  "team_id": 76,
+  "team_kr": "엘라스 베로나",
+  "league": "seriea",
+  "last_seen": "2026-08-16"
+ },
+ "175345": {
+  "name": "Alexander Veselov",
+  "team_id": 1319,
+  "team_kr": "ADO 덴하흐",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175412": {
+  "name": "Guy Smith",
+  "team_id": 1319,
+  "team_kr": "ADO 덴하흐",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174629": {
+  "name": "Joe van der Sar",
+  "team_id": 1319,
+  "team_kr": "ADO 덴하흐",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174898": {
+  "name": "Gino Coutinho",
+  "team_id": 180,
+  "team_kr": "AZ 알크마르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175195": {
+  "name": "Joeri Church",
+  "team_id": 180,
+  "team_kr": "AZ 알크마르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175307": {
+  "name": "Gerald Postma",
+  "team_id": 181,
+  "team_kr": "FC 흐로닝언",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175576": {
+  "name": "Tim Riksman",
+  "team_id": 181,
+  "team_kr": "FC 흐로닝언",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174900": {
+  "name": "Dylan George",
+  "team_id": 178,
+  "team_kr": "FC 트벤테",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175649": {
+  "name": "Jonatan Frimann",
+  "team_id": 178,
+  "team_kr": "FC 트벤테",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175057": {
+  "name": "Jos Hooiveld",
+  "team_id": 178,
+  "team_kr": "FC 트벤테",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175056": {
+  "name": "Oussama Assaidi",
+  "team_id": 178,
+  "team_kr": "FC 트벤테",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174893": {
+  "name": "Harm Zeinstra",
+  "team_id": 182,
+  "team_kr": "헤라클레스 알멜로",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175194": {
+  "name": "Bodi Brusselers",
+  "team_id": 173,
+  "team_kr": "NAC 브레다",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175354": {
+  "name": "Bradley Vliet",
+  "team_id": 173,
+  "team_kr": "NAC 브레다",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174901": {
+  "name": "Diego Snepvangers",
+  "team_id": 173,
+  "team_kr": "NAC 브레다",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174583": {
+  "name": "Michael Den Heijer",
+  "team_id": 171,
+  "team_kr": "N.E.C. 네이메헌",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174582": {
+  "name": "Steeven Langil",
+  "team_id": 171,
+  "team_kr": "N.E.C. 네이메헌",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175707": {
+  "name": "Kevin Reimink",
+  "team_id": 177,
+  "team_kr": "PEC 즈볼레",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174899": {
+  "name": "Shaquile Woudstra",
+  "team_id": 177,
+  "team_kr": "PEC 즈볼레",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174920": {
+  "name": "Alvin Daniels",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174913": {
+  "name": "Darren Rosheuvel",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174910": {
+  "name": "Erik Cummins",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174915": {
+  "name": "Jesse Bertrams",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174911": {
+  "name": "Jurjan Mannes",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174912": {
+  "name": "Martijn Barto",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174916": {
+  "name": "Martijn Van der Laan",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174918": {
+  "name": "Mathias Schils",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174917": {
+  "name": "Omar El Baad",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174919": {
+  "name": "Ricardo Kip",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174914": {
+  "name": "Xander Houtkoop",
+  "team_id": 1324,
+  "team_kr": "SC 캄뷔르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174585": {
+  "name": "Donny Van Iperen",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174591": {
+  "name": "Edo Knol",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174586": {
+  "name": "Frank Korpershoek",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174587": {
+  "name": "Júnior",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174588": {
+  "name": "Oussama Zamouri",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174590": {
+  "name": "Sven van der Maaten",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174589": {
+  "name": "Wesley Zonneveld",
+  "team_id": 179,
+  "team_kr": "텔스타르",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175228": {
+  "name": "Mark Veenhoven",
+  "team_id": 176,
+  "team_kr": "스파르타 로테르담",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174902": {
+  "name": "Bartholomew Ogbeche",
+  "team_id": 2053,
+  "team_kr": "빌럼II",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174904": {
+  "name": "Eyong Enoh",
+  "team_id": 2053,
+  "team_kr": "빌럼II",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "174903": {
+  "name": "Jop Van der Linden",
+  "team_id": 2053,
+  "team_kr": "빌럼II",
+  "league": "eredivisie",
+  "last_seen": "2026-08-16"
+ },
+ "175047": {
+  "name": "Håkon Suggelia",
+  "team_id": 2083,
+  "team_kr": "IK 스타트",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "175046": {
+  "name": "Mathias Myhre Madsen",
+  "team_id": 2083,
+  "team_kr": "IK 스타트",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "175130": {
+  "name": "Roger Berntzen",
+  "team_id": 2079,
+  "team_kr": "크리스티안순",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "175302": {
+  "name": "Tobias Larsen Lys",
+  "team_id": 2079,
+  "team_kr": "크리스티안순",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "174865": {
+  "name": "Tobias Gran",
+  "team_id": 2081,
+  "team_kr": "릴레스트룀",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "175618": {
+  "name": "Abdoulie Jatta",
+  "team_id": 2084,
+  "team_kr": "발레렝가",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "22687": {
+  "name": "Ghayas Zahid",
+  "team_id": 2084,
+  "team_kr": "발레렝가",
+  "league": "eliteserien",
+  "last_seen": "2026-08-16"
+ },
+ "175615": {
+  "name": "Kike Sola",
+  "team_id": 51,
+  "team_kr": "아틀레틱 빌바오",
+  "league": "laliga",
+  "last_seen": "2026-08-16"
+ },
+ "174887": {
+  "name": "Arona Sané",
+  "team_id": 54,
+  "team_kr": "아틀레티코 마드리드",
+  "league": "laliga",
+  "last_seen": "2026-08-16"
+ },
+ "175475": {
+  "name": "Marcel Lizak",
+  "team_id": 39,
+  "team_kr": "지로나",
+  "league": "laliga",
+  "last_seen": "2026-08-16"
+ },
+ "175138": {
+  "name": "Imanol Agirretxe",
+  "team_id": 48,
+  "team_kr": "레알 소시에다드",
+  "league": "laliga",
+  "last_seen": "2026-08-16"
+ },
+ "175537": {
+  "name": "David Choiniere",
+  "team_id": 297,
+  "team_kr": "CF 몬트리올",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "174785": {
+  "name": "Paul Christensen",
+  "team_id": 277,
+  "team_kr": "애틀랜타 유나이티드",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175350": {
+  "name": "Stefan Aigner",
+  "team_id": 303,
+  "team_kr": "콜로라도 래피즈",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175380": {
+  "name": "Hugo Arellano",
+  "team_id": 300,
+  "team_kr": "LA 갤럭시",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175154": {
+  "name": "Rodrigo Pacheco",
+  "team_id": 292,
+  "team_kr": "로스앤젤레스 FC",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175381": {
+  "name": "Bertrand Owundi Eko'o",
+  "team_id": 291,
+  "team_kr": "미네소타 유나이티드",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175356": {
+  "name": "Tommy Redding",
+  "team_id": 281,
+  "team_kr": "뉴욕 레드불스",
+  "league": "mls",
+  "last_seen": "2026-08-16"
+ },
+ "175311": {
+  "name": "Demar Phillips",
+  "team_id": 279,
+  "team_kr": "리얼 솔트레이크",
   "league": "mls",
   "last_seen": "2026-08-16"
  }

@@ -1,0 +1,112 @@
+{
+    "teams": {
+        "올레순": {
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 47.6,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        },
+        "발레렝가": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 52.4,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        }
+    },
+    "players": {
+        "null": {
+            "_team": "올레순"
+        },
+        "C. Lange": {
+            "_team": "발레렝가"
+        },
+        "K. Tshiembe": {
+            "_team": "발레렝가"
+        },
+        "M. Grundetjern": {
+            "_team": "발레렝가"
+        },
+        "P. Strand": {
+            "_team": "발레렝가"
+        },
+        "M. Christensen": {
+            "_team": "올레순"
+        },
+        "J. N. Örsahl": {
+            "_team": "올레순"
+        },
+        "L. Haren": {
+            "_team": "발레렝가"
+        },
+        "E. K. Hagen": {
+            "_team": "올레순"
+        },
+        "M. H. Reed": {
+            "_team": "올레순"
+        }
+    }
+}
