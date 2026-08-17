@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-17
 
-생성(UTC): 2026-08-17 05:23
+생성(UTC): 2026-08-17 09:55
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -35,8 +35,27 @@
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
+| Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
 
-오늘 19건 (누적 1260건)
+오늘 38건 (누적 1279건)
 
 ## 📊 경기 고급 지표
 
@@ -8972,6 +8991,13 @@
 | 시애틀 사운더스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 38.9% |
 | LA 갤럭시 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 61.1% |
 
+### 시애틀사운더스_밴쿠버화이트캡스_5198
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 시애틀 사운더스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 57.1% |
+| 밴쿠버 화이트캡스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 42.9% |
+
 ### 시애틀사운더스_산호세어스퀘이크스_5100
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -15215,6 +15241,7 @@
 - **스포르팅캔자스시티_휴스턴다이나모_5179**: [heatmap(스포르팅 캔자스시티)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_스포르팅 캔자스시티_heatmap.svg) · [network(스포르팅 캔자스시티)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_스포르팅 캔자스시티_network.svg) · [shotmap(스포르팅 캔자스시티)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_스포르팅 캔자스시티_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/스포르팅캔자스시티_휴스턴다이나모_5179_휴스턴 다이나모_shotmap.svg)
 - **시애틀사운더스_FC댈러스_5056**: [heatmap(FC 댈러스)](viz/시애틀사운더스_FC댈러스_5056_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/시애틀사운더스_FC댈러스_5056_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/시애틀사운더스_FC댈러스_5056_FC 댈러스_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_FC댈러스_5056_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_FC댈러스_5056_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_FC댈러스_5056_시애틀 사운더스_shotmap.svg)
 - **시애틀사운더스_LA갤럭시_5112**: [heatmap(LA 갤럭시)](viz/시애틀사운더스_LA갤럭시_5112_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/시애틀사운더스_LA갤럭시_5112_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/시애틀사운더스_LA갤럭시_5112_LA 갤럭시_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_LA갤럭시_5112_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_LA갤럭시_5112_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_LA갤럭시_5112_시애틀 사운더스_shotmap.svg)
+- **시애틀사운더스_밴쿠버화이트캡스_5198**: [heatmap(밴쿠버 화이트캡스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_밴쿠버화이트캡스_5198_시애틀 사운더스_shotmap.svg)
 - **시애틀사운더스_산호세어스퀘이크스_5100**: [heatmap(산호세 어스퀘이크스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_산호세 어스퀘이크스_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_산호세어스퀘이크스_5100_시애틀 사운더스_shotmap.svg)
 - **시애틀사운더스_샌디에이고FC_5083**: [heatmap(샌디에이고 FC)](viz/시애틀사운더스_샌디에이고FC_5083_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/시애틀사운더스_샌디에이고FC_5083_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/시애틀사운더스_샌디에이고FC_5083_샌디에이고 FC_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_샌디에이고FC_5083_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_샌디에이고FC_5083_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_샌디에이고FC_5083_시애틀 사운더스_shotmap.svg)
 - **시애틀사운더스_세인트루이스시티_5030**: [heatmap(세인트루이스 시티)](viz/시애틀사운더스_세인트루이스시티_5030_세인트루이스 시티_heatmap.svg) · [network(세인트루이스 시티)](viz/시애틀사운더스_세인트루이스시티_5030_세인트루이스 시티_network.svg) · [shotmap(세인트루이스 시티)](viz/시애틀사운더스_세인트루이스시티_5030_세인트루이스 시티_shotmap.svg) · [heatmap(시애틀 사운더스)](viz/시애틀사운더스_세인트루이스시티_5030_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/시애틀사운더스_세인트루이스시티_5030_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/시애틀사운더스_세인트루이스시티_5030_시애틀 사운더스_shotmap.svg)
@@ -15924,10 +15951,3 @@
 - **휴스턴다이나모_오스틴FC_5163**: [heatmap(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/휴스턴다이나모_오스틴FC_5163_오스틴 FC_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_오스틴FC_5163_휴스턴 다이나모_shotmap.svg)
 - **휴스턴다이나모_콜로라도래피즈_5069**: [heatmap(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/휴스턴다이나모_콜로라도래피즈_5069_콜로라도 래피즈_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_콜로라도래피즈_5069_휴스턴 다이나모_shotmap.svg)
 - **휴스턴다이나모_포틀랜드팀버스_4966**: [heatmap(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/휴스턴다이나모_포틀랜드팀버스_4966_포틀랜드 팀버스_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/휴스턴다이나모_포틀랜드팀버스_4966_휴스턴 다이나모_shotmap.svg)
-
-## 🧬 선수 능력치 프로파일 (V2 고급화 매핑)
-
-| 선수 | 슈팅정밀도 | 패스창의성 | 수비기여도 | 피지컬 | 심리안정성 |
-|---|---|---|---|---|---|
-| O. Öhlenschlaeger | - | 5.3 | 2.5 | 0.0 | - |
-| W. G. Igor | 0.0 | 2.7 | 7.5 | 0.0 | - |
