@@ -24486,6 +24486,32 @@
  ],
  "championship": [
   {
+   "home": "카디프 시티",
+   "away": "렉섬",
+   "date": "2026-08-18",
+   "eid": 213985,
+   "goals": [
+    {
+     "scorer": "R. Colwill",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Moore",
+     "assist": "D. Imray",
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "번리",
    "away": "웨스트햄 유나이티드",
    "date": "2026-08-17",
@@ -30404,6 +30430,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "데포르티보 라코루냐",
+   "away": "엘체",
+   "date": "2026-08-18",
+   "eid": 213523,
+   "goals": [
+    {
+     "scorer": "M. Aguado",
+     "assist": "G. Villar",
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "P. Aubameyang",
+     "assist": "L. Amatucci",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "에스파뇰",
    "away": "레반테",

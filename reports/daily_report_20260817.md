@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-17
 
-생성(UTC): 2026-08-17 15:36
+생성(UTC): 2026-08-17 21:38
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -73,8 +73,27 @@
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
+| Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
 
-오늘 57건 (누적 1298건)
+오늘 76건 (누적 1317건)
 
 ## 📊 경기 고급 지표
 
@@ -4459,6 +4478,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 뉴캐슬 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 | 풀럼 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+
+### 데포르티보라코루냐_엘체_213523
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 데포르티보 라코루냐 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+| 엘체 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 
 ### 라싱산탄데르_비야레알_213527
 
@@ -11768,6 +11794,13 @@
 | 첼시 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | 풀럼 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### 카디프시티_렉섬_213985
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 카디프 시티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
+| 렉섬 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+
 ### 콜럼버스크루_FC신시내티_5154
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -14610,6 +14643,7 @@
 - **뉴캐슬_풀럼_306886**: [heatmap(뉴캐슬)](viz/뉴캐슬_풀럼_306886_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/뉴캐슬_풀럼_306886_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/뉴캐슬_풀럼_306886_뉴캐슬_shotmap.svg) · [heatmap(풀럼)](viz/뉴캐슬_풀럼_306886_풀럼_heatmap.svg) · [network(풀럼)](viz/뉴캐슬_풀럼_306886_풀럼_network.svg) · [shotmap(풀럼)](viz/뉴캐슬_풀럼_306886_풀럼_shotmap.svg)
 - **뉴캐슬_풀럼_312286**: [heatmap(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_shotmap.svg) · [heatmap(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_heatmap.svg) · [network(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_network.svg) · [shotmap(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_shotmap.svg)
 - **뉴캐슬_풀럼_83**: [heatmap(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_shotmap.svg) · [heatmap(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_heatmap.svg) · [network(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_network.svg) · [shotmap(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_shotmap.svg)
+- **데포르티보라코루냐_엘체_213523**: [heatmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_heatmap.svg) · [network(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_network.svg) · [shotmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_shotmap.svg) · [heatmap(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_heatmap.svg) · [network(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_network.svg) · [shotmap(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_shotmap.svg)
 - **라싱산탄데르_비야레알_213527**: [heatmap(라싱 산탄데르)](viz/라싱산탄데르_비야레알_213527_라싱 산탄데르_heatmap.svg) · [network(라싱 산탄데르)](viz/라싱산탄데르_비야레알_213527_라싱 산탄데르_network.svg) · [shotmap(라싱 산탄데르)](viz/라싱산탄데르_비야레알_213527_라싱 산탄데르_shotmap.svg) · [heatmap(비야레알)](viz/라싱산탄데르_비야레알_213527_비야레알_heatmap.svg) · [network(비야레알)](viz/라싱산탄데르_비야레알_213527_비야레알_network.svg) · [shotmap(비야레알)](viz/라싱산탄데르_비야레알_213527_비야레알_shotmap.svg)
 - **로스앤젤레스FC_FC댈러스_4954**: [heatmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_shotmap.svg) · [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_shotmap.svg)
 - **로스앤젤레스FC_리얼솔트레이크_5150**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_shotmap.svg) · [heatmap(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_heatmap.svg) · [network(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_network.svg) · [shotmap(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_shotmap.svg)
@@ -15654,6 +15688,7 @@
 - **첼시_풀럼_21**: [heatmap(첼시)](viz/첼시_풀럼_21_첼시_heatmap.svg) · [network(첼시)](viz/첼시_풀럼_21_첼시_network.svg) · [shotmap(첼시)](viz/첼시_풀럼_21_첼시_shotmap.svg) · [heatmap(풀럼)](viz/첼시_풀럼_21_풀럼_heatmap.svg) · [network(풀럼)](viz/첼시_풀럼_21_풀럼_network.svg) · [shotmap(풀럼)](viz/첼시_풀럼_21_풀럼_shotmap.svg)
 - **첼시_풀럼_306824**: [heatmap(첼시)](viz/첼시_풀럼_306824_첼시_heatmap.svg) · [network(첼시)](viz/첼시_풀럼_306824_첼시_network.svg) · [shotmap(첼시)](viz/첼시_풀럼_306824_첼시_shotmap.svg) · [heatmap(풀럼)](viz/첼시_풀럼_306824_풀럼_heatmap.svg) · [network(풀럼)](viz/첼시_풀럼_306824_풀럼_network.svg) · [shotmap(풀럼)](viz/첼시_풀럼_306824_풀럼_shotmap.svg)
 - **첼시_풀럼_312324**: [heatmap(첼시)](viz/첼시_풀럼_312324_첼시_heatmap.svg) · [network(첼시)](viz/첼시_풀럼_312324_첼시_network.svg) · [shotmap(첼시)](viz/첼시_풀럼_312324_첼시_shotmap.svg) · [heatmap(풀럼)](viz/첼시_풀럼_312324_풀럼_heatmap.svg) · [network(풀럼)](viz/첼시_풀럼_312324_풀럼_network.svg) · [shotmap(풀럼)](viz/첼시_풀럼_312324_풀럼_shotmap.svg)
+- **카디프시티_렉섬_213985**: [heatmap(렉섬)](viz/카디프시티_렉섬_213985_렉섬_heatmap.svg) · [network(렉섬)](viz/카디프시티_렉섬_213985_렉섬_network.svg) · [shotmap(렉섬)](viz/카디프시티_렉섬_213985_렉섬_shotmap.svg) · [heatmap(카디프 시티)](viz/카디프시티_렉섬_213985_카디프 시티_heatmap.svg) · [network(카디프 시티)](viz/카디프시티_렉섬_213985_카디프 시티_network.svg) · [shotmap(카디프 시티)](viz/카디프시티_렉섬_213985_카디프 시티_shotmap.svg)
 - **콜럼버스크루_FC신시내티_5154**: [heatmap(FC 신시내티)](viz/콜럼버스크루_FC신시내티_5154_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/콜럼버스크루_FC신시내티_5154_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/콜럼버스크루_FC신시내티_5154_FC 신시내티_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/콜럼버스크루_FC신시내티_5154_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/콜럼버스크루_FC신시내티_5154_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/콜럼버스크루_FC신시내티_5154_콜럼버스 크루_shotmap.svg)
 - **콜럼버스크루_LA갤럭시_5033**: [heatmap(LA 갤럭시)](viz/콜럼버스크루_LA갤럭시_5033_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/콜럼버스크루_LA갤럭시_5033_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/콜럼버스크루_LA갤럭시_5033_LA 갤럭시_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/콜럼버스크루_LA갤럭시_5033_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/콜럼버스크루_LA갤럭시_5033_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/콜럼버스크루_LA갤럭시_5033_콜럼버스 크루_shotmap.svg)
 - **콜럼버스크루_내슈빌SC_4960**: [heatmap(내슈빌 SC)](viz/콜럼버스크루_내슈빌SC_4960_내슈빌 SC_heatmap.svg) · [network(내슈빌 SC)](viz/콜럼버스크루_내슈빌SC_4960_내슈빌 SC_network.svg) · [shotmap(내슈빌 SC)](viz/콜럼버스크루_내슈빌SC_4960_내슈빌 SC_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/콜럼버스크루_내슈빌SC_4960_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/콜럼버스크루_내슈빌SC_4960_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/콜럼버스크루_내슈빌SC_4960_콜럼버스 크루_shotmap.svg)
