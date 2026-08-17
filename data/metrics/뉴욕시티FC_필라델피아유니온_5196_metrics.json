@@ -1,0 +1,115 @@
+{
+    "teams": {
+        "뉴욕 시티 FC": {
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 50.0,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        },
+        "필라델피아 유니온": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 50.0,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        }
+    },
+    "players": {
+        "M. Jones": {
+            "_team": "뉴욕 시티 FC"
+        },
+        "K. Wagner": {
+            "_team": "필라델피아 유니온"
+        },
+        "null": {
+            "_team": "필라델피아 유니온"
+        },
+        "T. Gray": {
+            "_team": "뉴욕 시티 FC"
+        },
+        "B. Damiani": {
+            "_team": "필라델피아 유니온"
+        },
+        "M. Iloski": {
+            "_team": "필라델피아 유니온"
+        },
+        "D. Jean Jacques": {
+            "_team": "필라델피아 유니온"
+        },
+        "Luighi": {
+            "_team": "뉴욕 시티 FC"
+        },
+        "J. Lukić": {
+            "_team": "필라델피아 유니온"
+        },
+        "N. Harriel": {
+            "_team": "필라델피아 유니온"
+        },
+        "B. Traore": {
+            "_team": "뉴욕 시티 FC"
+        }
+    }
+}

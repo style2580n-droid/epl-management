@@ -30556,6 +30556,155 @@
  ],
  "mls": [
   {
+   "home": "시애틀 사운더스",
+   "away": "밴쿠버 화이트캡스",
+   "date": "2026-08-17",
+   "eid": 5198,
+   "goals": [
+    {
+     "scorer": "T. Müller",
+     "assist": "O. Larraz",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Elloumi",
+     "assist": "E. Sabbi",
+     "team": null,
+     "is_home": false,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "오스틴 FC",
+   "away": "FC 댈러스",
+   "date": "2026-08-17",
+   "eid": 5191,
+   "goals": [
+    {
+     "scorer": "P. Musa",
+     "assist": "J. Valiente",
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Torres",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Abubakar",
+     "assist": "S. Moreno",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "시카고 파이어",
+   "away": "포틀랜드 팀버스",
+   "date": "2026-08-17",
+   "eid": 5197,
+   "goals": [
+    {
+     "scorer": "F. Surman",
+     "assist": "B. Bye",
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. T. D'Avilla",
+     "assist": "M. Haile-Selassie",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Lod",
+     "assist": "A. Gutman",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 시티 FC",
+   "away": "필라델피아 유니온",
+   "date": "2026-08-17",
+   "eid": 5196,
+   "goals": [
+    {
+     "scorer": "B. Damiani",
+     "assist": "Q. Sullivan",
+     "team": null,
+     "is_home": false,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Damiani",
+     "assist": "C. Sullivan",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Jean Jacques",
+     "assist": "C. Sullivan",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Luighi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Traore",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "산호세 어스퀘이크스",
    "away": "세인트루이스 시티",
    "date": "2026-08-16",
