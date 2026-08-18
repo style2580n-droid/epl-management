@@ -62339,5 +62339,115 @@
             }
         ],
         "collected_at": "2026-08-18T03:46:39.371430+00:00"
+    },
+    "1328253498": {
+        "match": {
+            "id": 1328253498,
+            "round": "Round 1 - Group C",
+            "date": "2026-08-18T20:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2390392,
+                "logo": "https://highlightly.net/soccer/images/teams/2390392.png",
+                "name": "Caracas FC"
+            },
+            "homeTeam": {
+                "id": 2408263,
+                "logo": "https://highlightly.net/soccer/images/teams/2408263.png",
+                "name": "Yaracuyanos FC"
+            },
+            "league": {
+                "id": 947947,
+                "logo": null,
+                "name": "Copa Venezuela",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2408263,
+                    "logo": "https://highlightly.net/soccer/images/teams/2408263.png",
+                    "name": "Yaracuyanos FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2390392,
+                    "logo": "https://highlightly.net/soccer/images/teams/2390392.png",
+                    "name": "Caracas FC"
+                }
+            }
+        ],
+        "collected_at": "2026-08-18T09:36:08.766168+00:00"
+    },
+    "1328252647": {
+        "match": {
+            "id": 1328252647,
+            "round": "Round 1 - Group D",
+            "date": "2026-08-18T20:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2397200,
+                "logo": "https://highlightly.net/soccer/images/teams/2397200.png",
+                "name": "Urena SC"
+            },
+            "homeTeam": {
+                "id": 2396349,
+                "logo": "https://highlightly.net/soccer/images/teams/2396349.png",
+                "name": "Trujillanos FC"
+            },
+            "league": {
+                "id": 947947,
+                "logo": null,
+                "name": "Copa Venezuela",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2396349,
+                    "logo": "https://highlightly.net/soccer/images/teams/2396349.png",
+                    "name": "Trujillanos FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2397200,
+                    "logo": "https://highlightly.net/soccer/images/teams/2397200.png",
+                    "name": "Urena SC"
+                }
+            }
+        ],
+        "collected_at": "2026-08-18T09:36:09.010830+00:00"
     }
 }
