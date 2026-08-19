@@ -1692,7 +1692,44 @@
    "away": "에버튼",
    "date": "2026-04-11",
    "eid": 315,
-   "goals": []
+   "goals": [
+    {
+     "scorer": "K. Dewsbury-Hall",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Thiago",
+     "assist": "M. Kayode",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Beto",
+     "assist": "I. Gueye",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "I. Thiago",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
   },
   {
    "home": "아스날",
