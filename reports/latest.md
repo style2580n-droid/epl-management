@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-19
 
-생성(UTC): 2026-08-19 03:58
+생성(UTC): 2026-08-19 09:57
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -35,8 +35,60 @@
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Tommaso Pobega | Bologna FC 1909 | AC Milan | 세리에 A |
 | Giovanni Simeone | Torino FC | SSC Napoli | 세리에 A |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Julen Agirrezabala | Athletic Club | Real Racing Club de Santander | 라리가 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Dwight McNeil | Everton FC | Crystal Palace FC | 프리미어리그 |
+| Evann Guessand | Aston Villa FC | Crystal Palace FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Taiwo Awoniyi | Nottingham Forest FC | Coventry City FC | 프리미어리그 |
+| João Mário Lopes | Juventus FC | ACF Fiorentina | 세리에 A |
+| Marco Brescianini | Atalanta BC | ACF Fiorentina | 세리에 A |
+| Giovanni Fabbian | Bologna FC 1909 | ACF Fiorentina | 세리에 A |
+| Mateo Pellegrino | Parma Calcio 1913 | ACF Fiorentina | 세리에 A |
+| Thomas Kristensen | Udinese Calcio | Atalanta BC | 세리에 A |
+| Roberto Piccoli | ACF Fiorentina | Bologna FC 1909 | 세리에 A |
+| Daniel Maldini | Atalanta BC | Cagliari Calcio | 세리에 A |
+| Sebastiano Esposito | FC Internazionale Milano | Cagliari Calcio | 세리에 A |
+| Tommaso Baldanzi | AS Roma | Genoa CFC | 세리에 A |
+| Lorenzo Colombo | AC Milan | Genoa CFC | 세리에 A |
+| Jhon Lucumí | Bologna FC 1909 | Juventus FC | 세리에 A |
+| Davide Frattesi | FC Internazionale Milano | SS Lazio | 세리에 A |
+| Giovanni Daffara | Juventus FC | Parma Calcio 1913 | 세리에 A |
+| Hans Nicolussi Caviglia | Venezia FC | Parma Calcio 1913 | 세리에 A |
+| El Bilal Touré | Atalanta BC | Parma Calcio 1913 | 세리에 A |
+| Alessandro Zanoli | SSC Napoli | Udinese Calcio | 세리에 A |
+| Simon Sohm | ACF Fiorentina | Venezia FC | 세리에 A |
+| Alessio Zerbin | SSC Napoli | Frosinone Calcio | 세리에 A |
+| Patrizio Masini | Genoa CFC | Frosinone Calcio | 세리에 A |
+| Luis Hasa | SSC Napoli | Frosinone Calcio | 세리에 A |
+| Antonio Raimondo | Bologna FC 1909 | Frosinone Calcio | 세리에 A |
+| Sebastian Walukiewicz | Torino FC | US Sassuolo Calcio | 세리에 A |
+| Vasilije Adzic | Juventus FC | US Sassuolo Calcio | 세리에 A |
+| Benjamín Domínguez | Bologna FC 1909 | US Sassuolo Calcio | 세리에 A |
+| Lorenzo Lucchesi | ACF Fiorentina | AC Monza | 세리에 A |
+| Ebenezer Akinsanmiro | FC Internazionale Milano | AC Monza | 세리에 A |
+| Patrick Cutrone | Como 1907 | AC Monza | 세리에 A |
+| Álvaro Morata | AC Milan | Como 1907 | 세리에 A |
 
-오늘 19건 (누적 1412건)
+오늘 71건 (누적 1464건)
 
 ## 📊 경기 고급 지표
 
