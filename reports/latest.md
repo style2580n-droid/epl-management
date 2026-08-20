@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-20
 
-생성(UTC): 2026-08-20 03:59
+생성(UTC): 2026-08-20 09:47
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -40,8 +40,32 @@
 | Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
 | Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 
-오늘 24건 (누적 1536건)
+오늘 48건 (누적 1560건)
 
 ## 📊 경기 고급 지표
 
@@ -1843,6 +1867,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | LA 갤럭시 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.4% |
 | 밴쿠버 화이트캡스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.6% |
+
+### LA갤럭시_산호세어스퀘이크스_5211
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| LA 갤럭시 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+| 산호세 어스퀘이크스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 
 ### LA갤럭시_샬럿FC_4938
 
@@ -6659,6 +6690,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 밴쿠버 화이트캡스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 | 포틀랜드 팀버스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+
+### 밴쿠버화이트캡스_휴스턴다이나모_5212
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 밴쿠버 화이트캡스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+| 휴스턴 다이나모 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 
 ### 번리_웨스트햄유나이티드_213984
 
@@ -13254,6 +13292,13 @@
 | 포틀랜드 팀버스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 36.8% |
 | 산호세 어스퀘이크스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 63.2% |
 
+### 포틀랜드팀버스_샌디에이고FC_5213
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 포틀랜드 팀버스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 58.8% |
+| 샌디에이고 FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 41.2% |
+
 ### 포틀랜드팀버스_스포르팅캔자스시티_5085
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -14313,6 +14358,7 @@
 - **LA갤럭시_리얼솔트레이크_5058**: [heatmap(LA 갤럭시)](viz/LA갤럭시_리얼솔트레이크_5058_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_리얼솔트레이크_5058_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_리얼솔트레이크_5058_LA 갤럭시_shotmap.svg) · [heatmap(리얼 솔트레이크)](viz/LA갤럭시_리얼솔트레이크_5058_리얼 솔트레이크_heatmap.svg) · [network(리얼 솔트레이크)](viz/LA갤럭시_리얼솔트레이크_5058_리얼 솔트레이크_network.svg) · [shotmap(리얼 솔트레이크)](viz/LA갤럭시_리얼솔트레이크_5058_리얼 솔트레이크_shotmap.svg)
 - **LA갤럭시_미네소타유나이티드_5000**: [heatmap(LA 갤럭시)](viz/LA갤럭시_미네소타유나이티드_5000_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_미네소타유나이티드_5000_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_미네소타유나이티드_5000_LA 갤럭시_shotmap.svg) · [heatmap(미네소타 유나이티드)](viz/LA갤럭시_미네소타유나이티드_5000_미네소타 유나이티드_heatmap.svg) · [network(미네소타 유나이티드)](viz/LA갤럭시_미네소타유나이티드_5000_미네소타 유나이티드_network.svg) · [shotmap(미네소타 유나이티드)](viz/LA갤럭시_미네소타유나이티드_5000_미네소타 유나이티드_shotmap.svg)
 - **LA갤럭시_밴쿠버화이트캡스_5071**: [heatmap(LA 갤럭시)](viz/LA갤럭시_밴쿠버화이트캡스_5071_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_밴쿠버화이트캡스_5071_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_밴쿠버화이트캡스_5071_LA 갤럭시_shotmap.svg) · [heatmap(밴쿠버 화이트캡스)](viz/LA갤럭시_밴쿠버화이트캡스_5071_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/LA갤럭시_밴쿠버화이트캡스_5071_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/LA갤럭시_밴쿠버화이트캡스_5071_밴쿠버 화이트캡스_shotmap.svg)
+- **LA갤럭시_산호세어스퀘이크스_5211**: [heatmap(LA 갤럭시)](viz/LA갤럭시_산호세어스퀘이크스_5211_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_산호세어스퀘이크스_5211_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_산호세어스퀘이크스_5211_LA 갤럭시_shotmap.svg) · [heatmap(산호세 어스퀘이크스)](viz/LA갤럭시_산호세어스퀘이크스_5211_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/LA갤럭시_산호세어스퀘이크스_5211_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/LA갤럭시_산호세어스퀘이크스_5211_산호세 어스퀘이크스_shotmap.svg)
 - **LA갤럭시_샬럿FC_4938**: [heatmap(LA 갤럭시)](viz/LA갤럭시_샬럿FC_4938_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_샬럿FC_4938_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_샬럿FC_4938_LA 갤럭시_shotmap.svg) · [heatmap(샬럿 FC)](viz/LA갤럭시_샬럿FC_4938_샬럿 FC_heatmap.svg) · [network(샬럿 FC)](viz/LA갤럭시_샬럿FC_4938_샬럿 FC_network.svg) · [shotmap(샬럿 FC)](viz/LA갤럭시_샬럿FC_4938_샬럿 FC_shotmap.svg)
 - **LA갤럭시_세인트루이스시티_5151**: [heatmap(LA 갤럭시)](viz/LA갤럭시_세인트루이스시티_5151_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_세인트루이스시티_5151_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_세인트루이스시티_5151_LA 갤럭시_shotmap.svg) · [heatmap(세인트루이스 시티)](viz/LA갤럭시_세인트루이스시티_5151_세인트루이스 시티_heatmap.svg) · [network(세인트루이스 시티)](viz/LA갤럭시_세인트루이스시티_5151_세인트루이스 시티_network.svg) · [shotmap(세인트루이스 시티)](viz/LA갤럭시_세인트루이스시티_5151_세인트루이스 시티_shotmap.svg)
 - **LA갤럭시_스포르팅캔자스시티_4967**: [heatmap(LA 갤럭시)](viz/LA갤럭시_스포르팅캔자스시티_4967_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/LA갤럭시_스포르팅캔자스시티_4967_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/LA갤럭시_스포르팅캔자스시티_4967_LA 갤럭시_shotmap.svg) · [heatmap(스포르팅 캔자스시티)](viz/LA갤럭시_스포르팅캔자스시티_4967_스포르팅 캔자스시티_heatmap.svg) · [network(스포르팅 캔자스시티)](viz/LA갤럭시_스포르팅캔자스시티_4967_스포르팅 캔자스시티_network.svg) · [shotmap(스포르팅 캔자스시티)](viz/LA갤럭시_스포르팅캔자스시티_4967_스포르팅 캔자스시티_shotmap.svg)
@@ -15001,6 +15047,7 @@
 - **밴쿠버화이트캡스_콜로라도래피즈_5057**: [heatmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(콜로라도 래피즈)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/밴쿠버화이트캡스_콜로라도래피즈_5057_콜로라도 래피즈_shotmap.svg)
 - **밴쿠버화이트캡스_토론토FC_4937**: [heatmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_토론토FC_4937_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_토론토FC_4937_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_토론토FC_4937_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(토론토 FC)](viz/밴쿠버화이트캡스_토론토FC_4937_토론토 FC_heatmap.svg) · [network(토론토 FC)](viz/밴쿠버화이트캡스_토론토FC_4937_토론토 FC_network.svg) · [shotmap(토론토 FC)](viz/밴쿠버화이트캡스_토론토FC_4937_토론토 FC_shotmap.svg)
 - **밴쿠버화이트캡스_포틀랜드팀버스_5001**: [heatmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/밴쿠버화이트캡스_포틀랜드팀버스_5001_포틀랜드 팀버스_shotmap.svg)
+- **밴쿠버화이트캡스_휴스턴다이나모_5212**: [heatmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/밴쿠버화이트캡스_휴스턴다이나모_5212_휴스턴 다이나모_shotmap.svg)
 - **번리_웨스트햄유나이티드_213984**: [heatmap(번리)](viz/번리_웨스트햄유나이티드_213984_번리_heatmap.svg) · [network(번리)](viz/번리_웨스트햄유나이티드_213984_번리_network.svg) · [shotmap(번리)](viz/번리_웨스트햄유나이티드_213984_번리_shotmap.svg) · [heatmap(웨스트햄 유나이티드)](viz/번리_웨스트햄유나이티드_213984_웨스트햄 유나이티드_heatmap.svg) · [network(웨스트햄 유나이티드)](viz/번리_웨스트햄유나이티드_213984_웨스트햄 유나이티드_network.svg) · [shotmap(웨스트햄 유나이티드)](viz/번리_웨스트햄유나이티드_213984_웨스트햄 유나이티드_shotmap.svg)
 - **보되글림트_IK스타트_207044**: [heatmap(IK 스타트)](viz/보되글림트_IK스타트_207044_IK 스타트_heatmap.svg) · [network(IK 스타트)](viz/보되글림트_IK스타트_207044_IK 스타트_network.svg) · [shotmap(IK 스타트)](viz/보되글림트_IK스타트_207044_IK 스타트_shotmap.svg) · [heatmap(보되글림트)](viz/보되글림트_IK스타트_207044_보되글림트_heatmap.svg) · [network(보되글림트)](viz/보되글림트_IK스타트_207044_보되글림트_network.svg) · [shotmap(보되글림트)](viz/보되글림트_IK스타트_207044_보되글림트_shotmap.svg)
 - **보되글림트_릴레스트룀_207029**: [heatmap(릴레스트룀)](viz/보되글림트_릴레스트룀_207029_릴레스트룀_heatmap.svg) · [network(릴레스트룀)](viz/보되글림트_릴레스트룀_207029_릴레스트룀_network.svg) · [shotmap(릴레스트룀)](viz/보되글림트_릴레스트룀_207029_릴레스트룀_shotmap.svg) · [heatmap(보되글림트)](viz/보되글림트_릴레스트룀_207029_보되글림트_heatmap.svg) · [network(보되글림트)](viz/보되글림트_릴레스트룀_207029_보되글림트_network.svg) · [shotmap(보되글림트)](viz/보되글림트_릴레스트룀_207029_보되글림트_shotmap.svg)
@@ -15943,6 +15990,7 @@
 - **포틀랜드팀버스_리얼솔트레이크_5168**: [heatmap(리얼 솔트레이크)](viz/포틀랜드팀버스_리얼솔트레이크_5168_리얼 솔트레이크_heatmap.svg) · [network(리얼 솔트레이크)](viz/포틀랜드팀버스_리얼솔트레이크_5168_리얼 솔트레이크_network.svg) · [shotmap(리얼 솔트레이크)](viz/포틀랜드팀버스_리얼솔트레이크_5168_리얼 솔트레이크_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_리얼솔트레이크_5168_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_리얼솔트레이크_5168_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_리얼솔트레이크_5168_포틀랜드 팀버스_shotmap.svg)
 - **포틀랜드팀버스_밴쿠버화이트캡스_4955**: [heatmap(밴쿠버 화이트캡스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_밴쿠버화이트캡스_4955_포틀랜드 팀버스_shotmap.svg)
 - **포틀랜드팀버스_산호세어스퀘이크스_5128**: [heatmap(산호세 어스퀘이크스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_산호세 어스퀘이크스_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_산호세어스퀘이크스_5128_포틀랜드 팀버스_shotmap.svg)
+- **포틀랜드팀버스_샌디에이고FC_5213**: [heatmap(샌디에이고 FC)](viz/포틀랜드팀버스_샌디에이고FC_5213_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/포틀랜드팀버스_샌디에이고FC_5213_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/포틀랜드팀버스_샌디에이고FC_5213_샌디에이고 FC_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_샌디에이고FC_5213_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_샌디에이고FC_5213_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_샌디에이고FC_5213_포틀랜드 팀버스_shotmap.svg)
 - **포틀랜드팀버스_스포르팅캔자스시티_5085**: [heatmap(스포르팅 캔자스시티)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_스포르팅 캔자스시티_heatmap.svg) · [network(스포르팅 캔자스시티)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_스포르팅 캔자스시티_network.svg) · [shotmap(스포르팅 캔자스시티)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_스포르팅 캔자스시티_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_스포르팅캔자스시티_5085_포틀랜드 팀버스_shotmap.svg)
 - **포틀랜드팀버스_시애틀사운더스_5183**: [heatmap(시애틀 사운더스)](viz/포틀랜드팀버스_시애틀사운더스_5183_시애틀 사운더스_heatmap.svg) · [network(시애틀 사운더스)](viz/포틀랜드팀버스_시애틀사운더스_5183_시애틀 사운더스_network.svg) · [shotmap(시애틀 사운더스)](viz/포틀랜드팀버스_시애틀사운더스_5183_시애틀 사운더스_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_시애틀사운더스_5183_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_시애틀사운더스_5183_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_시애틀사운더스_5183_포틀랜드 팀버스_shotmap.svg)
 - **포틀랜드팀버스_콜럼버스크루_4923**: [heatmap(콜럼버스 크루)](viz/포틀랜드팀버스_콜럼버스크루_4923_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/포틀랜드팀버스_콜럼버스크루_4923_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/포틀랜드팀버스_콜럼버스크루_4923_콜럼버스 크루_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_콜럼버스크루_4923_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/포틀랜드팀버스_콜럼버스크루_4923_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/포틀랜드팀버스_콜럼버스크루_4923_포틀랜드 팀버스_shotmap.svg)
