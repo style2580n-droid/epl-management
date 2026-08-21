@@ -1,6 +1,41 @@
 {
  "epl": [
   {
+   "home": "아스날",
+   "away": "코번트리 시티",
+   "date": "2026-08-22",
+   "eid": 209535,
+   "goals": [
+    {
+     "scorer": "M. Ødegaard",
+     "assist": "B. White",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Saka",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Havertz",
+     "assist": "R. Calafiori",
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "토트넘",
    "away": "에버튼",
    "date": "2026-05-25",
@@ -24705,7 +24740,52 @@
    ]
   }
  ],
- "ligue1": [],
+ "ligue1": [
+  {
+   "home": "올랭피크 마르세유",
+   "away": "라싱 스트라스부르",
+   "date": "2026-08-22",
+   "eid": 210441,
+   "goals": [
+    {
+     "scorer": "P. Højbjerg",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Abdallah",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Gouiri",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Gouiri",
+     "assist": "A. Gomes",
+     "team": null,
+     "is_home": true,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  }
+ ],
  "bundesliga": [],
  "seriea": [],
  "eredivisie": [
@@ -30247,6 +30327,23 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레알 베티스",
+   "away": "레알 소시에다드",
+   "date": "2026-08-22",
+   "eid": 213538,
+   "goals": [
+    {
+     "scorer": "R. Riquelme",
+     "assist": "C. Hernández",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "라요 바예카노",
    "away": "알라베스",
