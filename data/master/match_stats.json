@@ -69725,5 +69725,60 @@
             }
         ],
         "collected_at": "2026-08-22T03:43:27.499901+00:00"
+    },
+    "1325169474": {
+        "match": {
+            "id": 1325169474,
+            "round": "Group Stage",
+            "date": "2026-08-22T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 20988997,
+                "logo": null,
+                "name": "Tampa Bay Sun Women"
+            },
+            "homeTeam": {
+                "id": 22003389,
+                "logo": null,
+                "name": "Sporting JAX"
+            },
+            "league": {
+                "id": 962414,
+                "logo": null,
+                "name": "USL Super League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22003389,
+                    "logo": null,
+                    "name": "Sporting JAX"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 20988997,
+                    "logo": null,
+                    "name": "Tampa Bay Sun Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-22T21:23:49.039222+00:00"
     }
 }
