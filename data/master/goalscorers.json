@@ -1,6 +1,32 @@
 {
  "epl": [
   {
+   "home": "헐 시티",
+   "away": "맨체스터 유나이티드",
+   "date": "2026-08-22",
+   "eid": 209536,
+   "goals": [
+    {
+     "scorer": "N. Mendy",
+     "assist": "R. Slater",
+     "team": null,
+     "is_home": true,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Ajayi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "아스날",
    "away": "코번트리 시티",
    "date": "2026-08-22",
@@ -24337,6 +24363,129 @@
   }
  ],
  "championship": [
+  {
+   "home": "밀월",
+   "away": "노리치 시티",
+   "date": "2026-08-22",
+   "eid": 213988,
+   "goals": [
+    {
+     "scorer": "L. Cundle",
+     "assist": "C. Neghli",
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Arconte",
+     "assist": "J. Cooper",
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Arconte",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "링컨 시티",
+   "away": "포츠머스",
+   "date": "2026-08-22",
+   "eid": 213987,
+   "goals": [
+    {
+     "scorer": "E. Adams",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Hackett-Fairchild",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Segecic",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. K.-McQueen",
+     "assist": "A. Kamara",
+     "team": null,
+     "is_home": false,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "버밍엄 시티",
+   "away": "브리스톨 시티",
+   "date": "2026-08-22",
+   "eid": 213986,
+   "goals": [
+    {
+     "scorer": "D. Gray",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Ballard",
+     "assist": "R. Cardines",
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Tickle",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Twine",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "카디프 시티",
    "away": "렉섬",
