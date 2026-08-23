@@ -1,6 +1,85 @@
 {
  "epl": [
   {
+   "home": "맨체스터 시티",
+   "away": "본머스",
+   "date": "2026-08-23",
+   "eid": 209542,
+   "goals": [
+    {
+     "scorer": "J. Gvardiol",
+     "assist": "R. Cherki",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Guéhi",
+     "assist": "R. Cherki",
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Tavernier",
+     "assist": "Evanilson",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "브라이튼",
+   "away": "아스톤 빌라",
+   "date": "2026-08-23",
+   "eid": 209541,
+   "goals": [
+    {
+     "scorer": "J. Hinshelwood",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Hinshelwood",
+     "assist": "D. Gómez",
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. De Cuyper",
+     "assist": "G. Rutter",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "V. Lindelöf",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "ownGoal",
+     "body": "other"
+    }
+   ]
+  },
+  {
    "home": "브렌트포드",
    "away": "토트넘",
    "date": "2026-08-23",
@@ -24477,6 +24556,50 @@
  ],
  "championship": [
   {
+   "home": "웨스트브롬위치 알비온",
+   "away": "번리",
+   "date": "2026-08-23",
+   "eid": 213997,
+   "goals": [
+    {
+     "scorer": "I. Price",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Price",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Whitwell",
+     "assist": "J. Morgan",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Styles",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "렉섬",
    "away": "왓포드",
    "date": "2026-08-22",
@@ -25248,6 +25371,32 @@
  ],
  "ligue1": [
   {
+   "home": "앙제SCO",
+   "away": "릴OSC",
+   "date": "2026-08-23",
+   "eid": 210437,
+   "goals": [
+    {
+     "scorer": "T. Santos",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Giroud",
+     "assist": "N. Bentaleb",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "ESTAC 트루아",
    "away": "파리 FC",
    "date": "2026-08-23",
@@ -25575,6 +25724,112 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "PSV 에인트호번",
+   "away": "FC 흐로닝언",
+   "date": "2026-08-23",
+   "eid": 210822,
+   "goals": [
+    {
+     "scorer": "S. Dest",
+     "assist": "R. van Bommel",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Perišić",
+     "assist": "M. Júnior",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Pepi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Perišić",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Blokzijl",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Darri Willumsson",
+     "assist": "T. v. Bergen",
+     "team": null,
+     "is_home": false,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "호 어헤드 이글스",
+   "away": "ADO 덴하흐",
+   "date": "2026-08-23",
+   "eid": 210821,
+   "goals": [
+    {
+     "scorer": "S. I. Sigurðarson",
+     "assist": "D. James",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Rottier",
+     "assist": "M. Hokke",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "V. Edvardsen",
+     "assist": "S. Tengstedt",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Tengstedt",
+     "assist": "A. Sampsted",
+     "team": null,
+     "is_home": true,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "sc 헤렌베인",
    "away": "PEC 즈볼레",
