@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-23
 
-생성(UTC): 2026-08-23 04:04
+생성(UTC): 2026-08-23 09:39
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -60,8 +60,52 @@
 | Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
+| Deniz Zeitler | SC Paderborn 07 | TSG 1899 Hoffenheim | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Laurin Ulrich | SC Paderborn 07 | VfB Stuttgart | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Noel Futkeu | SV 07 Elversberg | Eintracht Frankfurt | 분데스리가 |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Alex Mowatt | Derby County FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| Delano Burgzorg | Preston North End FC | Middlesbrough FC | ELC |
+| Lyndon Dykes | Millwall FC | Charlton Athletic FC | ELC |
+| Isaac Olaofe | Lincoln City FC | Charlton Athletic FC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Charlie Cresswell | Stade Rennais FC 1901 | Toulouse FC | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Rayan Bamba | Le Mans FC | Stade Rennais FC 1901 | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
 
-오늘 44건 (누적 1978건)
+오늘 88건 (누적 2022건)
 
 ## 📊 경기 고급 지표
 
@@ -4657,6 +4701,13 @@
 | 로스앤젤레스 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 | 콜로라도 래피즈 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
 
+### 로스앤젤레스FC_포틀랜드팀버스_5224
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 로스앤젤레스 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 40.0% |
+| 포틀랜드 팀버스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 60.0% |
+
 ### 로스앤젤레스FC_휴스턴다이나모_5088
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -8731,6 +8782,13 @@
 | 산호세 어스퀘이크스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
 | LA 갤럭시 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 
+### 산호세어스퀘이크스_미네소타유나이티드_5226
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 산호세 어스퀘이크스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 41.2% |
+| 미네소타 유나이티드 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 58.8% |
+
 ### 산호세어스퀘이크스_밴쿠버화이트캡스_5084
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -8849,6 +8907,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 샌디에이고 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 68.8% |
 | 오스틴 FC | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 31.2% |
+
+### 샌디에이고FC_콜로라도래피즈_5225
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 샌디에이고 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+| 콜로라도 래피즈 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 
 ### 샌디에이고FC_포틀랜드팀버스_5055
 
@@ -15068,6 +15133,7 @@
 - **로스앤젤레스FC_올랜도시티_4999**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_올랜도시티_4999_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_올랜도시티_4999_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_올랜도시티_4999_로스앤젤레스 FC_shotmap.svg) · [heatmap(올랜도 시티)](viz/로스앤젤레스FC_올랜도시티_4999_올랜도 시티_heatmap.svg) · [network(올랜도 시티)](viz/로스앤젤레스FC_올랜도시티_4999_올랜도 시티_network.svg) · [shotmap(올랜도 시티)](viz/로스앤젤레스FC_올랜도시티_4999_올랜도 시티_shotmap.svg)
 - **로스앤젤레스FC_인터마이애미_4922**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_인터마이애미_4922_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_인터마이애미_4922_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_인터마이애미_4922_로스앤젤레스 FC_shotmap.svg) · [heatmap(인터 마이애미)](viz/로스앤젤레스FC_인터마이애미_4922_인터 마이애미_heatmap.svg) · [network(인터 마이애미)](viz/로스앤젤레스FC_인터마이애미_4922_인터 마이애미_network.svg) · [shotmap(인터 마이애미)](viz/로스앤젤레스FC_인터마이애미_4922_인터 마이애미_shotmap.svg)
 - **로스앤젤레스FC_콜로라도래피즈_5042**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_콜로라도래피즈_5042_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_콜로라도래피즈_5042_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_콜로라도래피즈_5042_로스앤젤레스 FC_shotmap.svg) · [heatmap(콜로라도 래피즈)](viz/로스앤젤레스FC_콜로라도래피즈_5042_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/로스앤젤레스FC_콜로라도래피즈_5042_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/로스앤젤레스FC_콜로라도래피즈_5042_콜로라도 래피즈_shotmap.svg)
+- **로스앤젤레스FC_포틀랜드팀버스_5224**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_로스앤젤레스 FC_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/로스앤젤레스FC_포틀랜드팀버스_5224_포틀랜드 팀버스_shotmap.svg)
 - **로스앤젤레스FC_휴스턴다이나모_5088**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_휴스턴다이나모_5088_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_휴스턴다이나모_5088_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_휴스턴다이나모_5088_로스앤젤레스 FC_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/로스앤젤레스FC_휴스턴다이나모_5088_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/로스앤젤레스FC_휴스턴다이나모_5088_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/로스앤젤레스FC_휴스턴다이나모_5088_휴스턴 다이나모_shotmap.svg)
 - **로젠보르그_릴레스트룀_206963**: [heatmap(로젠보르그)](viz/로젠보르그_릴레스트룀_206963_로젠보르그_heatmap.svg) · [network(로젠보르그)](viz/로젠보르그_릴레스트룀_206963_로젠보르그_network.svg) · [shotmap(로젠보르그)](viz/로젠보르그_릴레스트룀_206963_로젠보르그_shotmap.svg) · [heatmap(릴레스트룀)](viz/로젠보르그_릴레스트룀_206963_릴레스트룀_heatmap.svg) · [network(릴레스트룀)](viz/로젠보르그_릴레스트룀_206963_릴레스트룀_network.svg) · [shotmap(릴레스트룀)](viz/로젠보르그_릴레스트룀_206963_릴레스트룀_shotmap.svg)
 - **로젠보르그_발레렝가_206914**: [heatmap(로젠보르그)](viz/로젠보르그_발레렝가_206914_로젠보르그_heatmap.svg) · [network(로젠보르그)](viz/로젠보르그_발레렝가_206914_로젠보르그_network.svg) · [shotmap(로젠보르그)](viz/로젠보르그_발레렝가_206914_로젠보르그_shotmap.svg) · [heatmap(발레렝가)](viz/로젠보르그_발레렝가_206914_발레렝가_heatmap.svg) · [network(발레렝가)](viz/로젠보르그_발레렝가_206914_발레렝가_network.svg) · [shotmap(발레렝가)](viz/로젠보르그_발레렝가_206914_발레렝가_shotmap.svg)
@@ -15650,6 +15716,7 @@
 - **산네피오르_함캄_207009**: [heatmap(산네피오르)](viz/산네피오르_함캄_207009_산네피오르_heatmap.svg) · [network(산네피오르)](viz/산네피오르_함캄_207009_산네피오르_network.svg) · [shotmap(산네피오르)](viz/산네피오르_함캄_207009_산네피오르_shotmap.svg) · [heatmap(함캄)](viz/산네피오르_함캄_207009_함캄_heatmap.svg) · [network(함캄)](viz/산네피오르_함캄_207009_함캄_network.svg) · [shotmap(함캄)](viz/산네피오르_함캄_207009_함캄_shotmap.svg)
 - **산호세어스퀘이크스_FC댈러스_5115**: [heatmap(FC 댈러스)](viz/산호세어스퀘이크스_FC댈러스_5115_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/산호세어스퀘이크스_FC댈러스_5115_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/산호세어스퀘이크스_FC댈러스_5115_FC 댈러스_shotmap.svg) · [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_FC댈러스_5115_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_FC댈러스_5115_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_FC댈러스_5115_산호세 어스퀘이크스_shotmap.svg)
 - **산호세어스퀘이크스_LA갤럭시_5167**: [heatmap(LA 갤럭시)](viz/산호세어스퀘이크스_LA갤럭시_5167_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/산호세어스퀘이크스_LA갤럭시_5167_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/산호세어스퀘이크스_LA갤럭시_5167_LA 갤럭시_shotmap.svg) · [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_LA갤럭시_5167_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_LA갤럭시_5167_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_LA갤럭시_5167_산호세 어스퀘이크스_shotmap.svg)
+- **산호세어스퀘이크스_미네소타유나이티드_5226**: [heatmap(미네소타 유나이티드)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_미네소타 유나이티드_heatmap.svg) · [network(미네소타 유나이티드)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_미네소타 유나이티드_network.svg) · [shotmap(미네소타 유나이티드)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_미네소타 유나이티드_shotmap.svg) · [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_미네소타유나이티드_5226_산호세 어스퀘이크스_shotmap.svg)
 - **산호세어스퀘이크스_밴쿠버화이트캡스_5084**: [heatmap(밴쿠버 화이트캡스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_밴쿠버화이트캡스_5084_산호세 어스퀘이크스_shotmap.svg)
 - **산호세어스퀘이크스_샌디에이고FC_5002**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_샌디에이고FC_5002_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_샌디에이고FC_5002_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_샌디에이고FC_5002_산호세 어스퀘이크스_shotmap.svg) · [heatmap(샌디에이고 FC)](viz/산호세어스퀘이크스_샌디에이고FC_5002_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/산호세어스퀘이크스_샌디에이고FC_5002_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/산호세어스퀘이크스_샌디에이고FC_5002_샌디에이고 FC_shotmap.svg)
 - **산호세어스퀘이크스_세인트루이스시티_5195**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_세인트루이스시티_5195_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_세인트루이스시티_5195_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_세인트루이스시티_5195_산호세 어스퀘이크스_shotmap.svg) · [heatmap(세인트루이스 시티)](viz/산호세어스퀘이크스_세인트루이스시티_5195_세인트루이스 시티_heatmap.svg) · [network(세인트루이스 시티)](viz/산호세어스퀘이크스_세인트루이스시티_5195_세인트루이스 시티_network.svg) · [shotmap(세인트루이스 시티)](viz/산호세어스퀘이크스_세인트루이스시티_5195_세인트루이스 시티_shotmap.svg)
@@ -15667,6 +15734,7 @@
 - **샌디에이고FC_밴쿠버화이트캡스_5126**: [heatmap(밴쿠버 화이트캡스)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_밴쿠버 화이트캡스_shotmap.svg) · [heatmap(샌디에이고 FC)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_밴쿠버화이트캡스_5126_샌디에이고 FC_shotmap.svg)
 - **샌디에이고FC_세인트루이스시티_4942**: [heatmap(샌디에이고 FC)](viz/샌디에이고FC_세인트루이스시티_4942_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_세인트루이스시티_4942_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_세인트루이스시티_4942_샌디에이고 FC_shotmap.svg) · [heatmap(세인트루이스 시티)](viz/샌디에이고FC_세인트루이스시티_4942_세인트루이스 시티_heatmap.svg) · [network(세인트루이스 시티)](viz/샌디에이고FC_세인트루이스시티_4942_세인트루이스 시티_network.svg) · [shotmap(세인트루이스 시티)](viz/샌디에이고FC_세인트루이스시티_4942_세인트루이스 시티_shotmap.svg)
 - **샌디에이고FC_오스틴FC_5101**: [heatmap(샌디에이고 FC)](viz/샌디에이고FC_오스틴FC_5101_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_오스틴FC_5101_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_오스틴FC_5101_샌디에이고 FC_shotmap.svg) · [heatmap(오스틴 FC)](viz/샌디에이고FC_오스틴FC_5101_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/샌디에이고FC_오스틴FC_5101_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/샌디에이고FC_오스틴FC_5101_오스틴 FC_shotmap.svg)
+- **샌디에이고FC_콜로라도래피즈_5225**: [heatmap(샌디에이고 FC)](viz/샌디에이고FC_콜로라도래피즈_5225_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_콜로라도래피즈_5225_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_콜로라도래피즈_5225_샌디에이고 FC_shotmap.svg) · [heatmap(콜로라도 래피즈)](viz/샌디에이고FC_콜로라도래피즈_5225_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/샌디에이고FC_콜로라도래피즈_5225_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/샌디에이고FC_콜로라도래피즈_5225_콜로라도 래피즈_shotmap.svg)
 - **샌디에이고FC_포틀랜드팀버스_5055**: [heatmap(샌디에이고 FC)](viz/샌디에이고FC_포틀랜드팀버스_5055_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_포틀랜드팀버스_5055_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_포틀랜드팀버스_5055_샌디에이고 FC_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/샌디에이고FC_포틀랜드팀버스_5055_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/샌디에이고FC_포틀랜드팀버스_5055_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/샌디에이고FC_포틀랜드팀버스_5055_포틀랜드 팀버스_shotmap.svg)
 - **샬럿FC_DC유나이티드_5219**: [heatmap(DC 유나이티드)](viz/샬럿FC_DC유나이티드_5219_DC 유나이티드_heatmap.svg) · [network(DC 유나이티드)](viz/샬럿FC_DC유나이티드_5219_DC 유나이티드_network.svg) · [shotmap(DC 유나이티드)](viz/샬럿FC_DC유나이티드_5219_DC 유나이티드_shotmap.svg) · [heatmap(샬럿 FC)](viz/샬럿FC_DC유나이티드_5219_샬럿 FC_heatmap.svg) · [network(샬럿 FC)](viz/샬럿FC_DC유나이티드_5219_샬럿 FC_network.svg) · [shotmap(샬럿 FC)](viz/샬럿FC_DC유나이티드_5219_샬럿 FC_shotmap.svg)
 - **샬럿FC_FC신시내티_5078**: [heatmap(FC 신시내티)](viz/샬럿FC_FC신시내티_5078_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/샬럿FC_FC신시내티_5078_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/샬럿FC_FC신시내티_5078_FC 신시내티_shotmap.svg) · [heatmap(샬럿 FC)](viz/샬럿FC_FC신시내티_5078_샬럿 FC_heatmap.svg) · [network(샬럿 FC)](viz/샬럿FC_FC신시내티_5078_샬럿 FC_network.svg) · [shotmap(샬럿 FC)](viz/샬럿FC_FC신시내티_5078_샬럿 FC_shotmap.svg)
