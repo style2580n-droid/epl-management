@@ -1,6 +1,50 @@
 {
  "epl": [
   {
+   "home": "뉴캐슬",
+   "away": "리버풀",
+   "date": "2026-08-24",
+   "eid": 209543,
+   "goals": [
+    {
+     "scorer": "D. Szoboszlai",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Willock",
+     "assist": "Y. Wissa",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Gakpo",
+     "assist": "R. Gravenberch",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Elanga",
+     "assist": "W. Osula",
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "맨체스터 시티",
    "away": "본머스",
    "date": "2026-08-23",
@@ -25371,6 +25415,67 @@
  ],
  "ligue1": [
   {
+   "home": "스타드 렌",
+   "away": "파리 생제르맹",
+   "date": "2026-08-24",
+   "eid": 210641,
+   "goals": [
+    {
+     "scorer": "F. Torres",
+     "assist": "F. Ruiz",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. Torres",
+     "assist": "F. Ruiz",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Lepaul",
+     "assist": "P. Frankowski",
+     "team": null,
+     "is_home": true,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Szymański",
+     "assist": "A. Thomasson",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "르아브르AC",
+   "away": "AS 모나코",
+   "date": "2026-08-24",
+   "eid": 210438,
+   "goals": [
+    {
+     "scorer": "E. Dier",
+     "assist": "F. Nazinho",
+     "team": null,
+     "is_home": false,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "앙제SCO",
    "away": "릴OSC",
    "date": "2026-08-23",
@@ -25601,6 +25706,119 @@
  "bundesliga": [],
  "seriea": [
   {
+   "home": "토리노",
+   "away": "AC밀란",
+   "date": "2026-08-24",
+   "eid": 210064,
+   "goals": [
+    {
+     "scorer": "C. Adams",
+     "assist": "G. Gineitis",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Rabiot",
+     "assist": "S. Chukwueze",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Cissè",
+     "assist": "A. Rabiot",
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "아탈란타",
+   "away": "사수올로",
+   "date": "2026-08-24",
+   "eid": 210058,
+   "goals": [
+    {
+     "scorer": "N. Krstović",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Odenthal",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "G. Raspadori",
+     "assist": "G. Gaetano",
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "베네치아",
+   "away": "레체",
+   "date": "2026-08-24",
+   "eid": 210066,
+   "goals": [
+    {
+     "scorer": "T. Gabriel",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "O. Gorter",
+     "assist": "L. Coulibaly",
+     "team": null,
+     "is_home": false,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "프로시노네",
+   "away": "유벤투스",
+   "date": "2026-08-24",
+   "eid": 210060,
+   "goals": [
+    {
+     "scorer": "Bremer",
+     "assist": "F. Conceição",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "파르마",
    "away": "칼리아리",
    "date": "2026-08-23",
@@ -25724,6 +25942,77 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "SC 캄뷔르",
+   "away": "페예노르트",
+   "date": "2026-08-23",
+   "eid": 210823,
+   "goals": [
+    {
+     "scorer": "G. Zechiël",
+     "assist": "J. Lotomba",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. E. Arguioui",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. E. Arguioui",
+     "assist": "N. Binder",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Ueda",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Jansen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 42,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "L. Valente",
+     "assist": "G. Diarra",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Zechiël",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "PSV 에인트호번",
    "away": "FC 흐로닝언",
@@ -31482,6 +31771,120 @@
   }
  ],
  "laliga": [
+  {
+   "home": "엘체",
+   "away": "바르셀로나",
+   "date": "2026-08-24",
+   "eid": 213532,
+   "goals": [
+    {
+     "scorer": "F. López",
+     "assist": "X. Espart",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. López",
+     "assist": "A. Gordon",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "A. Gordon",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Adeyemi",
+     "assist": "Raphinha",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 14,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "헤타페",
+   "away": "라싱 산탄데르",
+   "date": "2026-08-24",
+   "eid": 213534,
+   "goals": [
+    {
+     "scorer": "E. Ünal",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "아틀레티코 마드리드",
+   "away": "비야레알",
+   "date": "2026-08-24",
+   "eid": 213531,
+   "goals": [
+    {
+     "scorer": "G. Simeone",
+     "assist": "A. Baena",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Mikautadze",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Moreno",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Pubill",
+     "assist": "G. Simeone",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "에스파뇰",
    "away": "레알 마드리드",

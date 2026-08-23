@@ -69873,7 +69873,32 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1971700,
                     "logo": "https://highlightly.net/soccer/images/teams/1971700.png",
@@ -69881,7 +69906,32 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1992124,
                     "logo": "https://highlightly.net/soccer/images/teams/1992124.png",
@@ -69889,7 +69939,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-23T15:25:22.508703+00:00"
+        "collected_at": "2026-08-23T21:23:55.614383+00:00"
     },
     "1318593797": {
         "match": {
@@ -71044,5 +71094,78 @@
             }
         ],
         "collected_at": "2026-08-23T03:52:47.273965+00:00"
+    },
+    "1283750453": {
+        "match": {
+            "id": 1283750453,
+            "round": "Group Stage",
+            "date": "2026-08-23T22:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2552082,
+                "logo": "https://highlightly.net/soccer/images/teams/2552082.png",
+                "name": "Houston Dash"
+            },
+            "homeTeam": {
+                "id": 19525277,
+                "logo": null,
+                "name": "Bay FC"
+            },
+            "league": {
+                "id": 216938,
+                "logo": "https://highlightly.net/soccer/images/leagues/216938.png",
+                "name": "NWSL Women",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 19525277,
+                    "logo": null,
+                    "name": "Bay FC"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 2552082,
+                    "logo": "https://highlightly.net/soccer/images/teams/2552082.png",
+                    "name": "Houston Dash"
+                }
+            }
+        ],
+        "collected_at": "2026-08-23T21:24:00.608561+00:00"
     }
 }

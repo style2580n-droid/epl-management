@@ -62,20 +62,20 @@
         }
     },
     "리버풀": {
-        "matches": 148,
+        "matches": 149,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 148.0,
+            "clean_sheet": 149.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
-            "possession_pct": 1525.8
+            "possession_pct": 1568.7
         },
         "per_match": {
             "buildup_attempts": 0.0,
@@ -89,7 +89,7 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0,
-            "possession_pct": 10.309
+            "possession_pct": 10.528
         }
     },
     "본머스": {
@@ -434,7 +434,7 @@
         }
     },
     "뉴캐슬": {
-        "matches": 148,
+        "matches": 149,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -446,8 +446,8 @@
             "counter_attacks": 0.0,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 148.0,
-            "possession_pct": 1557.1
+            "clean_sheet": 149.0,
+            "possession_pct": 1614.2
         },
         "per_match": {
             "passes": 0.0,
@@ -461,7 +461,7 @@
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
-            "possession_pct": 10.521
+            "possession_pct": 10.834
         }
     },
     "아스톤 빌라": {
@@ -1247,7 +1247,7 @@
         }
     },
     "SC 캄뷔르": {
-        "matches": 2,
+        "matches": 3,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -1257,10 +1257,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 78.6,
+            "possession_pct": 117.5,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0
+            "clean_sheet": 3.0
         },
         "per_match": {
             "passes": 0.0,
@@ -1271,7 +1271,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 39.3,
+            "possession_pct": 39.167,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -4969,6 +4969,56 @@
             "clean_sheet": 1.0
         }
     },
+    "르아브르AC": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 52.9,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 52.9,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "AS 모나코": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 47.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 47.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Servette FC": {
         "matches": 1,
         "totals": {
@@ -7378,26 +7428,38 @@
         }
     },
     "라싱 산탄데르": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 47.6,
+            "possession_pct": 104.7,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         },
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 47.6,
+            "possession_pct": 52.35,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 1.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         }
     },
     "비야레알": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -7407,10 +7469,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 52.4,
+            "possession_pct": 97.9,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0
         },
         "per_match": {
             "passes": 0.0,
@@ -7421,7 +7483,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 52.4,
+            "possession_pct": 48.95,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -8543,6 +8605,56 @@
             "clean_sheet": 1.0
         }
     },
+    "토리노": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 42.9,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 42.9,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "AC밀란": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 57.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 57.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "ADO Den Haag": {
         "matches": 1,
         "totals": {
@@ -9067,6 +9179,37 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "페예노르트": {
+        "matches": 3,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 157.8,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 3.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 52.6,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -10160,6 +10303,56 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "프로시노네": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 46.7,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 46.7,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "유벤투스": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 53.3,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 53.3,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -11273,37 +11466,6 @@
             "clean_sheet": 1.0
         }
     },
-    "페예노르트": {
-        "matches": 2,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 96.7,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0,
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 48.35,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0,
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0
-        }
-    },
     "호 어헤드 이글스": {
         "matches": 3,
         "totals": {
@@ -11782,6 +11944,56 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "아탈란타": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 53.8,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 53.8,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "사수올로": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 46.2,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 46.2,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -13031,7 +13243,7 @@
         }
     },
     "헤타페": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -13041,10 +13253,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 47.8,
+            "possession_pct": 90.7,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0
         },
         "per_match": {
             "passes": 0.0,
@@ -13055,7 +13267,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 47.8,
+            "possession_pct": 45.35,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -14748,6 +14960,56 @@
             "clean_sheet": 1.0
         }
     },
+    "베네치아": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 37.5,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 37.5,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "레체": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 62.5,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 62.5,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "Avaí": {
         "matches": 2,
         "totals": {
@@ -14899,19 +15161,19 @@
         }
     },
     "아틀레티코 마드리드": {
-        "matches": 1,
+        "matches": 2,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 52.9,
+            "possession_pct": 107.4,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
+            "clean_sheet": 2.0
         },
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 52.9,
+            "possession_pct": 53.7,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -16332,6 +16594,56 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "스타드 렌": {
+        "matches": 1,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 47.4,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 47.4,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
+    "파리 생제르맹": {
+        "matches": 1,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 52.6,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 52.6,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
