@@ -1,6 +1,59 @@
 {
  "epl": [
   {
+   "home": "풀럼",
+   "away": "첼시",
+   "date": "2026-08-25",
+   "eid": 209544,
+   "goals": [
+    {
+     "scorer": "G. García",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "C. Palmer",
+     "assist": "J. Pedro",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Rogers",
+     "assist": "M. Lacroix",
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. King",
+     "assist": "T. Castagne",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Pedro",
+     "assist": "C. Palmer",
+     "team": null,
+     "is_home": false,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "뉴캐슬",
    "away": "리버풀",
    "date": "2026-08-24",
@@ -25706,6 +25759,67 @@
  "bundesliga": [],
  "seriea": [
   {
+   "home": "AS로마",
+   "away": "피오렌티나",
+   "date": "2026-08-25",
+   "eid": 210057,
+   "goals": [
+    {
+     "scorer": "N. Pisilli",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": "P. Dybala",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": "P. Dybala",
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": "P. Dybala",
+     "team": null,
+     "is_home": true,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "볼로냐",
+   "away": "라치오",
+   "date": "2026-08-25",
+   "eid": 210059,
+   "goals": [
+    {
+     "scorer": "D. Frattesi",
+     "assist": "B. Dia",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "토리노",
    "away": "AC밀란",
    "date": "2026-08-24",
@@ -31771,6 +31885,40 @@
   }
  ],
  "laliga": [
+  {
+   "home": "말라가",
+   "away": "데포르티보 라코루냐",
+   "date": "2026-08-25",
+   "eid": 213535,
+   "goals": [
+    {
+     "scorer": "Chupete",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Aubameyang",
+     "assist": "L. Cruz",
+     "team": null,
+     "is_home": false,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "오사수나",
+   "away": "레반테",
+   "date": "2026-08-25",
+   "eid": 213536,
+   "goals": [],
+   "nil": true
+  },
   {
    "home": "엘체",
    "away": "바르셀로나",
