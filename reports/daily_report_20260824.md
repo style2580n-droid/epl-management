@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-24
 
-생성(UTC): 2026-08-24 10:01
+생성(UTC): 2026-08-24 15:51
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -104,8 +104,52 @@
 | Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
+| Deniz Zeitler | SC Paderborn 07 | TSG 1899 Hoffenheim | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Laurin Ulrich | SC Paderborn 07 | VfB Stuttgart | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Noel Futkeu | SV 07 Elversberg | Eintracht Frankfurt | 분데스리가 |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Alex Mowatt | Derby County FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| Delano Burgzorg | Preston North End FC | Middlesbrough FC | ELC |
+| Lyndon Dykes | Millwall FC | Charlton Athletic FC | ELC |
+| Isaac Olaofe | Lincoln City FC | Charlton Athletic FC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Charlie Cresswell | Stade Rennais FC 1901 | Toulouse FC | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Rayan Bamba | Le Mans FC | Stade Rennais FC 1901 | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
 
-오늘 88건 (누적 2198건)
+오늘 132건 (누적 2242건)
 
 ## 📊 경기 고급 지표
 
