@@ -32219,6 +32219,67 @@
  ],
  "mls": [
   {
+   "home": "애틀랜타 유나이티드",
+   "away": "스포르팅 캔자스시티",
+   "date": "2026-08-24",
+   "eid": 5228,
+   "goals": [
+    {
+     "scorer": "S. Afrifa",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Picault",
+     "assist": "E. Báez",
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Jacob",
+     "assist": "M. Almirón",
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴잉글랜드 레볼루션",
+   "away": "뉴욕 시티 FC",
+   "date": "2026-08-24",
+   "eid": 5227,
+   "goals": [
+    {
+     "scorer": "J. Sands",
+     "assist": "T. Magno",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "P. Miller",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "산호세 어스퀘이크스",
    "away": "미네소타 유나이티드",
    "date": "2026-08-23",

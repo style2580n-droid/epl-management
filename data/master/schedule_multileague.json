@@ -4467,14 +4467,6 @@
  ],
  "ligue1": [
   {
-   "home": "볼프스부르크",
-   "away": "올랭피크 리옹",
-   "date": "2026-07-24",
-   "time": "22:00",
-   "id": 219304,
-   "friendly": true
-  },
-  {
    "home": "브라이튼",
    "away": "라싱 스트라스부르",
    "date": "2026-08-01",
@@ -6982,14 +6974,6 @@
   }
  ],
  "bundesliga": [
-  {
-   "home": "볼프스부르크",
-   "away": "올랭피크 리옹",
-   "date": "2026-07-24",
-   "time": "22:00",
-   "id": 219304,
-   "friendly": true
-  },
   {
    "home": "1.FC 쾰른",
    "away": "레알 소시에다드",
@@ -23586,7 +23570,9 @@
    "date": "2026-08-24",
    "time": "05:30",
    "id": 5227,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "애틀랜타 유나이티드",
@@ -23594,7 +23580,9 @@
    "date": "2026-08-24",
    "time": "08:00",
    "id": 5228,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "시애틀 사운더스",
