@@ -69180,7 +69180,7 @@
         "match": {
             "id": 1271090126,
             "round": "Group Stage",
-            "date": "2026-08-22T23:30:00.000Z",
+            "date": "2026-08-24T23:00:00.000Z",
             "country": {
                 "code": "US",
                 "name": "USA",
@@ -69213,7 +69213,24 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0.5
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 3396274,
                     "logo": "https://highlightly.net/soccer/images/teams/3396274.png",
@@ -69221,7 +69238,24 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0.5
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 7685314,
                     "logo": "https://highlightly.net/soccer/images/teams/7685314.png",
@@ -69229,7 +69263,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-22T03:43:26.062804+00:00"
+        "collected_at": "2026-08-24T09:50:48.646890+00:00"
     },
     "1268337992": {
         "match": {
@@ -71367,44 +71401,44 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Shots accuracy"
+                        "displayName": "Shots accuracy",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Blocked shots"
+                        "displayName": "Blocked shots",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Total passes"
+                        "displayName": "Total passes",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Goalkeeper saves"
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Fouls"
+                        "displayName": "Fouls",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -71416,44 +71450,44 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Shots accuracy"
+                        "displayName": "Shots accuracy",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Blocked shots"
+                        "displayName": "Blocked shots",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Total passes"
+                        "displayName": "Total passes",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Goalkeeper saves"
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Fouls"
+                        "displayName": "Fouls",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -71463,7 +71497,7 @@
                 }
             }
         ],
-        "collected_at": "2026-08-24T03:56:25.476487+00:00"
+        "collected_at": "2026-08-24T09:50:48.313333+00:00"
     },
     "1389097445": {
         "match": {
