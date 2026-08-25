@@ -73976,5 +73976,60 @@
             }
         ],
         "collected_at": "2026-08-25T03:51:09.559663+00:00"
+    },
+    "1389174886": {
+        "match": {
+            "id": 1389174886,
+            "round": "Round of 32",
+            "date": "2026-08-25T21:15:00.000Z",
+            "country": {
+                "code": "UY",
+                "name": "Uruguay",
+                "logo": "https://highlightly.net/soccer/images/countries/UY.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2018505,
+                "logo": "https://highlightly.net/soccer/images/teams/2018505.png",
+                "name": "Rentistas Montevideo"
+            },
+            "homeTeam": {
+                "id": 2000634,
+                "logo": "https://highlightly.net/soccer/images/teams/2000634.png",
+                "name": "Defensor Sporting"
+            },
+            "league": {
+                "id": 792214,
+                "logo": "https://highlightly.net/soccer/images/leagues/792214.png",
+                "name": "Copa Uruguay",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2000634,
+                    "logo": "https://highlightly.net/soccer/images/teams/2000634.png",
+                    "name": "Defensor Sporting"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2018505,
+                    "logo": "https://highlightly.net/soccer/images/teams/2018505.png",
+                    "name": "Rentistas Montevideo"
+                }
+            }
+        ],
+        "collected_at": "2026-08-25T09:37:36.122603+00:00"
     }
 }
