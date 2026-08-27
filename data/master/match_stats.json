@@ -78503,5 +78503,60 @@
             }
         ],
         "collected_at": "2026-08-27T00:32:00.429562+00:00"
+    },
+    "1377763827": {
+        "match": {
+            "id": 1377763827,
+            "round": "Apertura - 17",
+            "date": "2026-08-27T19:00:00.000Z",
+            "country": {
+                "code": "BO",
+                "name": "Bolivia",
+                "logo": "https://highlightly.net/soccer/images/countries/BO.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3095871,
+                "logo": "https://highlightly.net/soccer/images/teams/3095871.png",
+                "name": "Aurora"
+            },
+            "homeTeam": {
+                "id": 3149484,
+                "logo": "https://highlightly.net/soccer/images/teams/3149484.png",
+                "name": "Always Ready"
+            },
+            "league": {
+                "id": 293528,
+                "logo": "https://highlightly.net/soccer/images/leagues/293528.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3149484,
+                    "logo": "https://highlightly.net/soccer/images/teams/3149484.png",
+                    "name": "Always Ready"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3095871,
+                    "logo": "https://highlightly.net/soccer/images/teams/3095871.png",
+                    "name": "Aurora"
+                }
+            }
+        ],
+        "collected_at": "2026-08-27T13:54:02.766767+00:00"
     }
 }
