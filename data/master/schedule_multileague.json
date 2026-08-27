@@ -12903,6 +12903,14 @@
    "friendly": false
   },
   {
+   "home": "N.E.C. 네이메헌",
+   "away": "엑셀시오르 로테르담",
+   "date": "2026-09-09",
+   "time": "01:45",
+   "id": 601008,
+   "friendly": false
+  },
+  {
    "home": "FC 트벤테",
    "away": "텔스타르",
    "date": "2026-09-10",
@@ -12943,11 +12951,11 @@
    "friendly": false
   },
   {
-   "home": "sc 헤렌베인",
-   "away": "텔스타르",
+   "home": "SC 캄뷔르",
+   "away": "N.E.C. 네이메헌",
    "date": "2026-09-13",
    "time": "04:00",
-   "id": 210848,
+   "id": 210851,
    "friendly": false
   },
   {
@@ -12959,19 +12967,19 @@
    "friendly": false
   },
   {
-   "home": "SC 캄뷔르",
-   "away": "N.E.C. 네이메헌",
-   "date": "2026-09-13",
-   "time": "21:30",
-   "id": 210851,
-   "friendly": false
-  },
-  {
    "home": "PSV 에인트호번",
    "away": "스파르타 로테르담",
    "date": "2026-09-13",
    "time": "21:30",
    "id": 210850,
+   "friendly": false
+  },
+  {
+   "home": "sc 헤렌베인",
+   "away": "텔스타르",
+   "date": "2026-09-13",
+   "time": "21:30",
+   "id": 210848,
    "friendly": false
   },
   {
@@ -13151,14 +13159,6 @@
    "friendly": false
   },
   {
-   "home": "N.E.C. 네이메헌",
-   "away": "포르투나 시타르드",
-   "date": "2026-10-18",
-   "time": "01:45",
-   "id": 210873,
-   "friendly": false
-  },
-  {
    "home": "텔스타르",
    "away": "페예노르트",
    "date": "2026-10-18",
@@ -13204,6 +13204,14 @@
    "date": "2026-10-18",
    "time": "23:45",
    "id": 210879,
+   "friendly": false
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "포르투나 시타르드",
+   "date": "2026-10-19",
+   "time": "03:00",
+   "id": 210873,
    "friendly": false
   },
   {
@@ -17522,7 +17530,9 @@
    "date": "2026-08-27",
    "time": "04:00",
    "id": 213526,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 1
   },
   {
    "home": "셀타 비고",

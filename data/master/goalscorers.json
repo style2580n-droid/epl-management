@@ -24465,41 +24465,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "뉴캐슬",
-   "away": "리버풀",
-   "date": "2023-08-28",
-   "eid": 312152,
-   "goals": [
-    {
-     "scorer": "D. Núñez",
-     "assist": "M. Salah",
-     "team": null,
-     "is_home": false,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "D. Núñez",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 81,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "A. Gordon",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 25,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -31736,6 +31701,59 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레알 마드리드",
+   "away": "레알 소시에다드",
+   "date": "2026-08-27",
+   "eid": 213526,
+   "goals": [
+    {
+     "scorer": "K. Mbappé",
+     "assist": "Vinícius Jr.",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Vinícius Jr.",
+     "assist": "J. Bellingham",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": "J. Bellingham",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Sučić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": "F. Valverde",
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "발렌시아",
    "away": "레알 베티스",
