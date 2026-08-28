@@ -31702,6 +31702,76 @@
  ],
  "laliga": [
   {
+   "home": "바르셀로나",
+   "away": "아틀레틱 빌바오",
+   "date": "2026-08-28",
+   "eid": 213525,
+   "goals": [
+    {
+     "scorer": "F. López",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "Pedri",
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "셀타 비고",
+   "away": "오사수나",
+   "date": "2026-08-28",
+   "eid": 587840,
+   "goals": [
+    {
+     "scorer": "A. Budimir",
+     "assist": "R. García",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Budimir",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Barja",
+     "assist": "R. García",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Aspas",
+     "assist": "M. Román",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "레알 마드리드",
    "away": "레알 소시에다드",
    "date": "2026-08-27",

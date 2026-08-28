@@ -17540,7 +17540,9 @@
    "date": "2026-08-28",
    "time": "03:30",
    "id": 587840,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "바르셀로나",
@@ -17548,7 +17550,9 @@
    "date": "2026-08-28",
    "time": "04:00",
    "id": 213525,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "라싱 산탄데르",
@@ -23613,14 +23617,6 @@
    "friendly": false
   },
   {
-   "home": "콜럼버스 크루",
-   "away": "뉴잉글랜드 레볼루션",
-   "date": "2026-08-30",
-   "time": "08:30",
-   "id": 5235,
-   "friendly": false
-  },
-  {
    "home": "애틀랜타 유나이티드",
    "away": "샬럿 FC",
    "date": "2026-08-30",
@@ -23714,6 +23710,14 @@
    "date": "2026-08-30",
    "time": "11:30",
    "id": 5241,
+   "friendly": false
+  },
+  {
+   "home": "콜럼버스 크루",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-08-31",
+   "time": "05:30",
+   "id": 5235,
    "friendly": false
   },
   {
