@@ -81004,5 +81004,335 @@
             }
         ],
         "collected_at": "2026-08-29T00:01:34.101250+00:00"
+    },
+    "1364440571": {
+        "match": {
+            "id": 1364440571,
+            "round": "Regular Season - 5",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 12662813,
+                "logo": null,
+                "name": "Monterrey Women"
+            },
+            "homeTeam": {
+                "id": 12656005,
+                "logo": null,
+                "name": "Querétaro Women"
+            },
+            "league": {
+                "id": 573507,
+                "logo": "https://highlightly.net/soccer/images/leagues/573507.png",
+                "name": "Liga MX Femenil",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12656005,
+                    "logo": null,
+                    "name": "Querétaro Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12662813,
+                    "logo": null,
+                    "name": "Monterrey Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:56.857214+00:00"
+    },
+    "1271365850": {
+        "match": {
+            "id": 1271365850,
+            "round": "Group Stage",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 14194613,
+                "logo": "https://highlightly.net/soccer/images/teams/14194613.png",
+                "name": "Fort Wayne"
+            },
+            "homeTeam": {
+                "id": 21689370,
+                "logo": null,
+                "name": "Portland Hearts of Pine"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21689370,
+                    "logo": null,
+                    "name": "Portland Hearts of Pine"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14194613,
+                    "logo": "https://highlightly.net/soccer/images/teams/14194613.png",
+                    "name": "Fort Wayne"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:57.297135+00:00"
+    },
+    "1283755559": {
+        "match": {
+            "id": 1283755559,
+            "round": "Group Stage",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2557188,
+                "logo": "https://highlightly.net/soccer/images/teams/2557188.png",
+                "name": "Utah Royals Women"
+            },
+            "homeTeam": {
+                "id": 2553784,
+                "logo": "https://highlightly.net/soccer/images/teams/2553784.png",
+                "name": "Orlando Pride Women"
+            },
+            "league": {
+                "id": 216938,
+                "logo": "https://highlightly.net/soccer/images/leagues/216938.png",
+                "name": "NWSL Women",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2553784,
+                    "logo": "https://highlightly.net/soccer/images/teams/2553784.png",
+                    "name": "Orlando Pride Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2557188,
+                    "logo": "https://highlightly.net/soccer/images/teams/2557188.png",
+                    "name": "Utah Royals Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:57.721460+00:00"
+    },
+    "1388497490": {
+        "match": {
+            "id": 1388497490,
+            "round": "Apertura - 1",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22462929,
+                "logo": null,
+                "name": "Gorilas de Juanacatlan"
+            },
+            "homeTeam": {
+                "id": 24082382,
+                "logo": null,
+                "name": "Cruz Azul Lagunas"
+            },
+            "league": {
+                "id": 742856,
+                "logo": "https://highlightly.net/soccer/images/leagues/742856.png",
+                "name": "Liga Premier Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 24082382,
+                    "logo": null,
+                    "name": "Cruz Azul Lagunas"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22462929,
+                    "logo": null,
+                    "name": "Gorilas de Juanacatlan"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:59.180389+00:00"
+    },
+    "1287838657": {
+        "match": {
+            "id": 1287838657,
+            "round": "Group Stage",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3408188,
+                "logo": "https://highlightly.net/soccer/images/teams/3408188.png",
+                "name": "New York Red Bulls II"
+            },
+            "homeTeam": {
+                "id": 23335204,
+                "logo": null,
+                "name": "Connecticut Fc"
+            },
+            "league": {
+                "id": 774343,
+                "logo": "https://highlightly.net/soccer/images/leagues/774343.png",
+                "name": "MLS Next Pro",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23335204,
+                    "logo": null,
+                    "name": "Connecticut Fc"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3408188,
+                    "logo": "https://highlightly.net/soccer/images/teams/3408188.png",
+                    "name": "New York Red Bulls II"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:59.406257+00:00"
+    },
+    "1325174580": {
+        "match": {
+            "id": 1325174580,
+            "round": "Group Stage",
+            "date": "2026-08-29T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 20986444,
+                "logo": null,
+                "name": "Dallas Trinity Women"
+            },
+            "homeTeam": {
+                "id": 22003389,
+                "logo": null,
+                "name": "Sporting JAX"
+            },
+            "league": {
+                "id": 962414,
+                "logo": null,
+                "name": "USL Super League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22003389,
+                    "logo": null,
+                    "name": "Sporting JAX"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 20986444,
+                    "logo": null,
+                    "name": "Dallas Trinity Women"
+                }
+            }
+        ],
+        "collected_at": "2026-08-29T09:48:59.834263+00:00"
     }
 }
