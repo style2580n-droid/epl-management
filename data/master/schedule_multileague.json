@@ -246,7 +246,9 @@
    "date": "2026-08-29",
    "time": "04:00",
    "id": 213998,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "울버햄튼 원더러스",
@@ -4602,7 +4604,9 @@
    "date": "2026-08-29",
    "time": "03:45",
    "id": 210448,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "라싱 스트라스부르",
@@ -7004,7 +7008,9 @@
    "date": "2026-08-29",
    "time": "03:30",
    "id": 213668,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 5,
+   "awayGoals": 1
   },
   {
    "home": "SV 엘버스베르크",
@@ -9554,7 +9560,9 @@
    "date": "2026-08-29",
    "time": "03:45",
    "id": 210067,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "사수올로",
@@ -12764,7 +12772,9 @@
    "date": "2026-08-29",
    "time": "03:00",
    "id": 210826,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 3
   },
   {
    "home": "엑셀시오르 로테르담",
@@ -16609,6 +16619,14 @@
    "friendly": false
   },
   {
+   "home": "사르프스보르그 08",
+   "away": "발레렝가",
+   "date": "2026-09-07",
+   "time": "00:00",
+   "id": 207067,
+   "friendly": false
+  },
+  {
    "home": "몰데",
    "away": "KFUM 오슬로",
    "date": "2026-09-07",
@@ -16622,14 +16640,6 @@
    "date": "2026-09-07",
    "time": "02:15",
    "id": 207062,
-   "friendly": false
-  },
-  {
-   "home": "사르프스보르그 08",
-   "away": "발레렝가",
-   "date": "2026-09-08",
-   "time": "02:00",
-   "id": 207067,
    "friendly": false
   },
   {
@@ -17560,7 +17570,9 @@
    "date": "2026-08-29",
    "time": "02:00",
    "id": 213547,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "알라베스",
@@ -17568,7 +17580,9 @@
    "date": "2026-08-29",
    "time": "04:30",
    "id": 213541,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "레반테",

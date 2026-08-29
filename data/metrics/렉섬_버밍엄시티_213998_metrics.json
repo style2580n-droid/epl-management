@@ -1,0 +1,100 @@
+{
+    "teams": {
+        "렉섬": {
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 43.8,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        },
+        "버밍엄 시티": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0,
+            "buildup_success_pct": null,
+            "buildup_disruption_pct": null,
+            "buildup_speed_sec": null,
+            "counter_attacks": 0,
+            "counter_attack_freq_pct": null,
+            "transition_efficiency_pct": null,
+            "press_resistance_pct": null,
+            "press_intensity": null,
+            "counterpress_success_pct": null,
+            "possession_pct": 56.2,
+            "territory_pct": null,
+            "pass_completion_pct": null,
+            "progressive_pass_pct": null,
+            "forward_pass_ratio": null,
+            "cross_accuracy_pct": null,
+            "defensive_duel_pct": null,
+            "aerial_duel_pct": null,
+            "xGA": 0.0,
+            "shots_on_target_pct": null,
+            "distance_per_shot": null,
+            "goals_minus_xG": 0.0,
+            "dribble_success_pct": null,
+            "long_ball_accuracy_pct": null,
+            "clean_sheet": 1,
+            "defensive_line_height": null,
+            "width_est": null,
+            "compactness_area_est": null,
+            "PPDA": null,
+            "save_pct": null,
+            "PSxG_plus_minus": null,
+            "launch_accuracy_pct": null,
+            "field_tilt_pct": null
+        }
+    },
+    "players": {
+        "B. Cadamarteri": {
+            "_team": "렉섬"
+        },
+        "null": {
+            "_team": "버밍엄 시티"
+        },
+        "P. Neumann": {
+            "_team": "버밍엄 시티"
+        },
+        "C. Doyle": {
+            "_team": "렉섬"
+        },
+        "B. Osayi-Samuel": {
+            "_team": "버밍엄 시티"
+        },
+        "A. Cochrane": {
+            "_team": "버밍엄 시티"
+        }
+    }
+}
