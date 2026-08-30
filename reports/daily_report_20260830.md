@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-30
 
-생성(UTC): 2026-08-30 09:09
+생성(UTC): 2026-08-30 14:35
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -60,8 +60,62 @@
 | Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
 | Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
 | Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
+| Deniz Zeitler | SC Paderborn 07 | TSG 1899 Hoffenheim | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Laurin Ulrich | SC Paderborn 07 | VfB Stuttgart | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Noel Futkeu | SV 07 Elversberg | Eintracht Frankfurt | 분데스리가 |
+| Joël Drommel | PSV | FC Twente '65 | DED |
+| Aymen Sliti | Feyenoord Rotterdam | SBV Excelsior | DED |
+| Calvin Twigt | Go Ahead Eagles | Willem II Tilburg | DED |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Kodai Sano | NEC | PSV | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Sem van Duijn | AZ | FC Utrecht | DED |
+| Stije Resink | FC Groningen | AZ | DED |
+| Billy van Duijl | AZ | SC Cambuur-Leeuwarden | DED |
+| Harrie Kuster | FC Twente '65 | Telstar 1963 | DED |
+| Nökkvi Þórisson | Sparta Rotterdam | Telstar 1963 | DED |
+| Ahmetcan Kaplan | AFC Ajax | NEC | DED |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Alex Mowatt | Derby County FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| Delano Burgzorg | Preston North End FC | Middlesbrough FC | ELC |
+| Lyndon Dykes | Millwall FC | Charlton Athletic FC | ELC |
+| Isaac Olaofe | Lincoln City FC | Charlton Athletic FC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Charlie Cresswell | Stade Rennais FC 1901 | Toulouse FC | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Rayan Bamba | Le Mans FC | Stade Rennais FC 1901 | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
 
-오늘 44건 (누적 2990건)
+오늘 98건 (누적 3044건)
 
 ## 📊 경기 고급 지표
 
@@ -1205,6 +1259,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 위트레흐트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.6% |
 | AZ 알크마르 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.4% |
+
+### FC위트레흐트_PSV에인트호번_210830
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 위트레흐트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.8% |
+| PSV 에인트호번 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.2% |
 
 ### FC트벤테_PEC즈볼레_210814
 
@@ -15191,6 +15252,7 @@
 - **FC신시내티_인터마이애미_5090**: [heatmap(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_shotmap.svg) · [heatmap(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_heatmap.svg) · [network(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_network.svg) · [shotmap(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_shotmap.svg)
 - **FC신시내티_토론토FC_4957**: [heatmap(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_shotmap.svg) · [heatmap(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_heatmap.svg) · [network(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_network.svg) · [shotmap(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_shotmap.svg)
 - **FC위트레흐트_AZ알크마르_210810**: [heatmap(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_heatmap.svg) · [network(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_network.svg) · [shotmap(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_shotmap.svg) · [heatmap(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_shotmap.svg)
+- **FC위트레흐트_PSV에인트호번_210830**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_shotmap.svg) · [heatmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_shotmap.svg)
 - **FC트벤테_PEC즈볼레_210814**: [heatmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_shotmap.svg) · [heatmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_shotmap.svg)
 - **FC흐로닝언_FC위트레흐트_210805**: [heatmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_shotmap.svg)
 - **FC흐로닝언_포르투나시타르드_210826**: [heatmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_shotmap.svg) · [heatmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_heatmap.svg) · [network(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_network.svg) · [shotmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_shotmap.svg)

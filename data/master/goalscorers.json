@@ -27198,6 +27198,165 @@
  ],
  "eredivisie": [
   {
+   "home": "빌럼II",
+   "away": "sc 헤렌베인",
+   "date": "2026-08-30",
+   "eid": 210832,
+   "goals": [
+    {
+     "scorer": "D. Haen",
+     "assist": "C. Twigt",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Braude",
+     "assist": "L. Smans",
+     "team": null,
+     "is_home": false,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Trenskow",
+     "assist": "D. Vente",
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "U. v. Aalst",
+     "assist": "N. Tjoe-A-On",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "페예노르트",
+   "away": "ADO 덴하흐",
+   "date": "2026-08-30",
+   "eid": 210831,
+   "goals": [
+    {
+     "scorer": "A. H. Moussa",
+     "assist": "S. Steijn",
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Ueda",
+     "assist": "O. Targhalline",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Sylla",
+     "assist": "N. Thomas",
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Thomas",
+     "assist": "E. Rottier",
+     "team": null,
+     "is_home": false,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 위트레흐트",
+   "away": "PSV 에인트호번",
+   "date": "2026-08-30",
+   "eid": 210830,
+   "goals": [
+    {
+     "scorer": "S. Dest",
+     "assist": "A. Bouhamdi",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Til",
+     "assist": "A. Bouhamdi",
+     "team": null,
+     "is_home": false,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Mijnans",
+     "assist": "P. Wanner",
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Júnior",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Til",
+     "assist": "S. Dest",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. van Bommel",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Stepanov",
+     "assist": "N. Vesterlund",
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "PEC 즈볼레",
    "away": "N.E.C. 네이메헌",
    "date": "2026-08-30",
@@ -28404,6 +28563,68 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "보되글림트",
+   "away": "로젠보르그",
+   "date": "2026-08-30",
+   "eid": 207052,
+   "goals": [
+    {
+     "scorer": "E. Ceide",
+     "assist": "O. Selnaes",
+     "team": null,
+     "is_home": false,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": "S. Auklend",
+     "team": null,
+     "is_home": true,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": "F. A. Bjørkan",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. A. Bjørkan",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "other"
+    },
+    {
+     "scorer": "F. A. Bjørkan",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Nordli",
+     "assist": "E. Ceide",
+     "team": null,
+     "is_home": false,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "프레드릭스타",
    "away": "크리스티안순",
