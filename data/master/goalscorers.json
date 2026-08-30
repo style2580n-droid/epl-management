@@ -26091,6 +26091,32 @@
  ],
  "ligue1": [
   {
+   "home": "AS 모나코",
+   "away": "올랭피크 마르세유",
+   "date": "2026-08-31",
+   "eid": 210446,
+   "goals": [
+    {
+     "scorer": "P. Brunner",
+     "assist": "E. Dier",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Brunner",
+     "assist": "A. Golovin",
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "스타드 렌",
    "away": "르망FC",
    "date": "2026-08-31",
@@ -27086,6 +27112,40 @@
  ],
  "seriea": [
   {
+   "home": "라치오",
+   "away": "제노아",
+   "date": "2026-08-31",
+   "eid": 210072,
+   "goals": [
+    {
+     "scorer": "D. Frattesi",
+     "assist": "N. Tavares",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "칼리아리",
+   "away": "인테르",
+   "date": "2026-08-31",
+   "eid": 210069,
+   "goals": [
+    {
+     "scorer": "H. Çalhanoğlu",
+     "assist": "N. Barella",
+     "team": null,
+     "is_home": false,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "나폴리",
    "away": "코모",
    "date": "2026-08-31",
@@ -27593,6 +27653,59 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "SC 캄뷔르",
+   "away": "FC 트벤테",
+   "date": "2026-08-31",
+   "eid": 210834,
+   "goals": [
+    {
+     "scorer": "I. Hamache",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Y. Taha",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Pjaca",
+     "assist": "S. Ørjasæter",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "W. Weghorst",
+     "assist": "J. Drommel",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Nijstad",
+     "assist": "B. van Rooij",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "텔스타르",
    "away": "아약스",
@@ -29003,6 +29116,59 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "릴레스트룀",
+   "away": "프레드릭스타",
+   "date": "2026-08-31",
+   "eid": 207055,
+   "goals": [
+    {
+     "scorer": "B. Faraas",
+     "assist": "G. Wesseh",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Faraas",
+     "assist": "H. Skogvold",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Gulbrandsen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Nilsson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Owusu",
+     "assist": "S. Sørløkk",
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "발레렝가",
    "away": "몰데",
@@ -34110,6 +34276,76 @@
  ],
  "laliga": [
   {
+   "home": "셀타 비고",
+   "away": "아틀레틱 빌바오",
+   "date": "2026-08-31",
+   "eid": 213540,
+   "goals": [
+    {
+     "scorer": "R. Navarro",
+     "assist": "I. R. d. Galarreta",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Á. Berenguer",
+     "assist": "I. Williams",
+     "team": null,
+     "is_home": false,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "데포르티보 라코루냐",
+   "away": "발렌시아",
+   "date": "2026-08-31",
+   "eid": 213542,
+   "goals": [
+    {
+     "scorer": "M. Diakhaby",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "U. Sadiq",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Aubameyang",
+     "assist": "M. Soriano",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Tárrega",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "ownGoal",
+     "body": "other"
+    }
+   ]
+  },
+  {
    "home": "레알 마드리드",
    "away": "말라가",
    "date": "2026-08-31",
@@ -34994,6 +35230,50 @@
   }
  ],
  "mls": [
+  {
+   "home": "콜럼버스 크루",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-08-31",
+   "eid": 5235,
+   "goals": [
+    {
+     "scorer": "C. Gil",
+     "assist": "P. Miller",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "C. Gil",
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Polster",
+     "assist": "M. Fofana",
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Méndez",
+     "assist": "M. Farsi",
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "포틀랜드 팀버스",
    "away": "오스틴 FC",

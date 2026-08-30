@@ -745,6 +745,14 @@
    "friendly": false
   },
   {
+   "home": "울버햄튼 원더러스",
+   "away": "포츠머스",
+   "date": "2026-09-17",
+   "time": "03:45",
+   "id": 601853,
+   "friendly": false
+  },
+  {
    "home": "브리스톨 시티",
    "away": "왓포드",
    "date": "2026-09-19",
@@ -4706,7 +4714,9 @@
    "date": "2026-08-31",
    "time": "03:45",
    "id": 210446,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "툴루즈",
@@ -9672,7 +9682,9 @@
    "date": "2026-08-31",
    "time": "03:45",
    "id": 210072,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "칼리아리",
@@ -9680,7 +9692,9 @@
    "date": "2026-08-31",
    "time": "03:45",
    "id": 210069,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "레체",
@@ -12914,7 +12928,9 @@
    "date": "2026-08-31",
    "time": "03:00",
    "id": 210834,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 4
   },
   {
    "home": "스파르타 로테르담",
@@ -16666,7 +16682,9 @@
    "date": "2026-08-31",
    "time": "02:15",
    "id": 207055,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 4
   },
   {
    "home": "프레드릭스타",
@@ -17720,7 +17738,9 @@
    "date": "2026-08-31",
    "time": "02:30",
    "id": 213542,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "셀타 비고",
@@ -17728,7 +17748,9 @@
    "date": "2026-08-31",
    "time": "04:30",
    "id": 213540,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 2
   },
   {
    "home": "오사수나",
@@ -17835,6 +17857,22 @@
    "friendly": false
   },
   {
+   "home": "아틀레틱 빌바오",
+   "away": "엘체",
+   "date": "2026-09-13",
+   "time": "01:30",
+   "id": 213560,
+   "friendly": false
+  },
+  {
+   "home": "셀타 비고",
+   "away": "말라가",
+   "date": "2026-09-13",
+   "time": "21:00",
+   "id": 213561,
+   "friendly": false
+  },
+  {
    "home": "비야레알",
    "away": "레알 베티스",
    "date": "2026-09-14",
@@ -17899,30 +17937,6 @@
    "friendly": false
   },
   {
-   "home": "셀타 비고",
-   "away": "말라가",
-   "date": "2026-09-14",
-   "time": "04:00",
-   "id": 213561,
-   "friendly": false
-  },
-  {
-   "home": "아틀레틱 빌바오",
-   "away": "엘체",
-   "date": "2026-09-14",
-   "time": "04:00",
-   "id": 213560,
-   "friendly": false
-  },
-  {
-   "home": "레알 베티스",
-   "away": "헤타페",
-   "date": "2026-09-17",
-   "time": "04:00",
-   "id": 213578,
-   "friendly": false
-  },
-  {
    "home": "라요 바예카노",
    "away": "에스파뇰",
    "date": "2026-09-17",
@@ -17984,6 +17998,14 @@
    "date": "2026-09-17",
    "time": "04:00",
    "id": 213570,
+   "friendly": false
+  },
+  {
+   "home": "레알 베티스",
+   "away": "헤타페",
+   "date": "2026-09-18",
+   "time": "02:00",
+   "id": 213578,
    "friendly": false
   },
   {
@@ -23856,7 +23878,9 @@
    "date": "2026-08-31",
    "time": "05:30",
    "id": 5235,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "세인트루이스 시티",
