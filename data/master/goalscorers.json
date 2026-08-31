@@ -35231,6 +35231,68 @@
  ],
  "mls": [
   {
+   "home": "세인트루이스 시티",
+   "away": "FC 댈러스",
+   "date": "2026-08-31",
+   "eid": 5243,
+   "goals": [
+    {
+     "scorer": "L. Farrington",
+     "assist": "P. Musa",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Ibeagha",
+     "assist": "J. Valiente",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "C. Holse",
+     "assist": "C. Wallem",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Edelman",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Moore",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Becher",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "콜럼버스 크루",
    "away": "뉴잉글랜드 레볼루션",
    "date": "2026-08-31",
