@@ -577,27 +577,11 @@
    "friendly": false
   },
   {
-   "home": "미들즈브러",
-   "away": "밀월",
-   "date": "2026-09-09",
-   "time": "03:45",
-   "id": 214037,
-   "friendly": false
-  },
-  {
    "home": "카디프 시티",
    "away": "스토크 시티",
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214036,
-   "friendly": false
-  },
-  {
-   "home": "브리스톨 시티",
-   "away": "링컨 시티",
-   "date": "2026-09-09",
-   "time": "03:45",
-   "id": 214035,
    "friendly": false
   },
   {
@@ -742,6 +726,22 @@
    "date": "2026-09-13",
    "time": "20:00",
    "id": 214057,
+   "friendly": false
+  },
+  {
+   "home": "미들즈브러",
+   "away": "밀월",
+   "date": "2026-09-16",
+   "time": "03:45",
+   "id": 214037,
+   "friendly": false
+  },
+  {
+   "home": "브리스톨 시티",
+   "away": "링컨 시티",
+   "date": "2026-09-16",
+   "time": "03:45",
+   "id": 214035,
    "friendly": false
   },
   {
@@ -1134,6 +1134,14 @@
    "date": "2026-10-17",
    "time": "23:00",
    "id": 214094,
+   "friendly": false
+  },
+  {
+   "home": "울버햄튼 원더러스",
+   "away": "포츠머스",
+   "date": "2026-10-21",
+   "time": "03:45",
+   "id": 601933,
    "friendly": false
   },
   {
@@ -9702,7 +9710,9 @@
    "date": "2026-09-01",
    "time": "01:30",
    "id": 210073,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 4
   },
   {
    "home": "아탈란타",
@@ -9710,7 +9720,9 @@
    "date": "2026-09-01",
    "time": "03:45",
    "id": 210068,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "제노아",
@@ -9809,14 +9821,6 @@
    "friendly": false
   },
   {
-   "home": "사수올로",
-   "away": "유벤투스",
-   "date": "2026-09-13",
-   "time": "01:00",
-   "id": 210094,
-   "friendly": false
-  },
-  {
    "home": "아탈란타",
    "away": "칼리아리",
    "date": "2026-09-13",
@@ -9854,6 +9858,14 @@
    "date": "2026-09-14",
    "time": "01:00",
    "id": 210093,
+   "friendly": false
+  },
+  {
+   "home": "사수올로",
+   "away": "유벤투스",
+   "date": "2026-09-14",
+   "time": "03:45",
+   "id": 210094,
    "friendly": false
   },
   {
@@ -17758,7 +17770,9 @@
    "date": "2026-09-01",
    "time": "02:30",
    "id": 213545,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "바르셀로나",

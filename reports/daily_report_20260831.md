@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-08-31
 
-생성(UTC): 2026-08-31 09:35
+생성(UTC): 2026-08-31 20:51
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -93,8 +93,85 @@
 | Michael Folorunsho | AC Monza | SSC Napoli | 세리에 A |
 | Cyril Ngonge | AC Monza | SSC Napoli | 세리에 A |
 | Ivan Ilić | US Lecce | Torino FC | 세리에 A |
+| Ellyes Skhiri | Eintracht Frankfurt | 1. FC Köln | 분데스리가 |
+| Deniz Zeitler | SC Paderborn 07 | TSG 1899 Hoffenheim | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Laurin Ulrich | SC Paderborn 07 | VfB Stuttgart | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Noah Atubolu | Eintracht Frankfurt | SC Freiburg | 분데스리가 |
+| Noel Futkeu | SV 07 Elversberg | Eintracht Frankfurt | 분데스리가 |
+| Joël Drommel | PSV | FC Twente '65 | DED |
+| Harrie Kuster | Telstar 1963 | FC Twente '65 | DED |
+| Aymen Sliti | Feyenoord Rotterdam | SBV Excelsior | DED |
+| Calvin Twigt | Go Ahead Eagles | Willem II Tilburg | DED |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Kodai Sano | NEC | PSV | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Sem van Duijn | AZ | FC Utrecht | DED |
+| Stije Resink | AZ | FC Groningen | DED |
+| Ahmetcan Kaplan | NEC | AFC Ajax | DED |
+| Billy van Duijl | SC Cambuur-Leeuwarden | AZ | DED |
+| Nökkvi Þórisson | Sparta Rotterdam | Telstar 1963 | DED |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Alex Mowatt | Derby County FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| Delano Burgzorg | Preston North End FC | Middlesbrough FC | ELC |
+| Lyndon Dykes | Millwall FC | Charlton Athletic FC | ELC |
+| Isaac Olaofe | Lincoln City FC | Charlton Athletic FC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Charlie Cresswell | Stade Rennais FC 1901 | Toulouse FC | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Rayan Bamba | Le Mans FC | Stade Rennais FC 1901 | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Héctor Fort | Real Sociedad de Fútbol | FC Barcelona | 라리가 |
+| Pedrosa | Sevilla FC | Rayo Vallecano de Madrid | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Ezri Konsa | Aston Villa FC | Arsenal FC | 프리미어리그 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Emiliano Martínez | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Nicolas Jackson | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Axel Disasi | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Liam Delap | Nottingham Forest FC | Chelsea FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Nico Gonzalez | Newcastle United FC | Manchester City FC | 프리미어리그 |
+| Omar Marmoush | Tottenham Hotspur FC | Manchester City FC | 프리미어리그 |
+| Sávio | Tottenham Hotspur FC | Manchester City FC | 프리미어리그 |
+| Carlos Baleba | Brighton & Hove Albion FC | Manchester United FC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Ethan Pinnock | Coventry City FC | Brentford FC | 프리미어리그 |
+| Samuele Ricci | Como 1907 | AC Milan | 세리에 A |
+| Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
+| Giovanni Fabbian | Parma Calcio 1913 | ACF Fiorentina | 세리에 A |
+| Sebastiano Esposito | US Sassuolo Calcio | Cagliari Calcio | 세리에 A |
+| Riccardo Ciervo | US Sassuolo Calcio | Cagliari Calcio | 세리에 A |
+| Alieu Fadera | Como 1907 | Cagliari Calcio | 세리에 A |
+| Andrea Pinamonti | US Sassuolo Calcio | SS Lazio | 세리에 A |
+| Michael Folorunsho | AC Monza | SSC Napoli | 세리에 A |
+| Cyril Ngonge | AC Monza | SSC Napoli | 세리에 A |
+| Ivan Ilić | US Lecce | Torino FC | 세리에 A |
 
-오늘 77건 (누적 3275건)
+오늘 154건 (누적 3352건)
 
 ## 📊 경기 고급 지표
 
@@ -4857,6 +4934,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 레알 소시에다드 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
 | 에스파뇰 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 50.0% |
+
+### 레체_AS로마_210073
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 레체 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 37.5% |
+| AS로마 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 62.5% |
 
 ### 렉섬_버밍엄시티_213998
 
@@ -11004,6 +11088,13 @@
 | 아약스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 62.5% |
 | sc 헤렌베인 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 37.5% |
 
+### 아탈란타_볼로냐_210068
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 아탈란타 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.8% |
+| 볼로냐 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.2% |
+
 ### 아탈란타_사수올로_210058
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -11696,6 +11787,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 오사수나 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 58.3% |
 | 레반테 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 41.7% |
+
+### 오사수나_헤타페_213545
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 오사수나 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 60.0% |
+| 헤타페 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 40.0% |
 
 ### 오스틴FC_DC유나이티드_4939
 
@@ -15951,6 +16049,7 @@
 - **레알마드리드_말라가_213546**: [heatmap(레알 마드리드)](viz/레알마드리드_말라가_213546_레알 마드리드_heatmap.svg) · [network(레알 마드리드)](viz/레알마드리드_말라가_213546_레알 마드리드_network.svg) · [shotmap(레알 마드리드)](viz/레알마드리드_말라가_213546_레알 마드리드_shotmap.svg) · [heatmap(말라가)](viz/레알마드리드_말라가_213546_말라가_heatmap.svg) · [network(말라가)](viz/레알마드리드_말라가_213546_말라가_network.svg) · [shotmap(말라가)](viz/레알마드리드_말라가_213546_말라가_shotmap.svg)
 - **레알베티스_레알소시에다드_213538**: [heatmap(레알 베티스)](viz/레알베티스_레알소시에다드_213538_레알 베티스_heatmap.svg) · [network(레알 베티스)](viz/레알베티스_레알소시에다드_213538_레알 베티스_network.svg) · [shotmap(레알 베티스)](viz/레알베티스_레알소시에다드_213538_레알 베티스_shotmap.svg) · [heatmap(레알 소시에다드)](viz/레알베티스_레알소시에다드_213538_레알 소시에다드_heatmap.svg) · [network(레알 소시에다드)](viz/레알베티스_레알소시에다드_213538_레알 소시에다드_network.svg) · [shotmap(레알 소시에다드)](viz/레알베티스_레알소시에다드_213538_레알 소시에다드_shotmap.svg)
 - **레알소시에다드_에스파뇰_213548**: [heatmap(레알 소시에다드)](viz/레알소시에다드_에스파뇰_213548_레알 소시에다드_heatmap.svg) · [network(레알 소시에다드)](viz/레알소시에다드_에스파뇰_213548_레알 소시에다드_network.svg) · [shotmap(레알 소시에다드)](viz/레알소시에다드_에스파뇰_213548_레알 소시에다드_shotmap.svg) · [heatmap(에스파뇰)](viz/레알소시에다드_에스파뇰_213548_에스파뇰_heatmap.svg) · [network(에스파뇰)](viz/레알소시에다드_에스파뇰_213548_에스파뇰_network.svg) · [shotmap(에스파뇰)](viz/레알소시에다드_에스파뇰_213548_에스파뇰_shotmap.svg)
+- **레체_AS로마_210073**: [heatmap(AS로마)](viz/레체_AS로마_210073_AS로마_heatmap.svg) · [network(AS로마)](viz/레체_AS로마_210073_AS로마_network.svg) · [shotmap(AS로마)](viz/레체_AS로마_210073_AS로마_shotmap.svg) · [heatmap(레체)](viz/레체_AS로마_210073_레체_heatmap.svg) · [network(레체)](viz/레체_AS로마_210073_레체_network.svg) · [shotmap(레체)](viz/레체_AS로마_210073_레체_shotmap.svg)
 - **렉섬_버밍엄시티_213998**: [heatmap(렉섬)](viz/렉섬_버밍엄시티_213998_렉섬_heatmap.svg) · [network(렉섬)](viz/렉섬_버밍엄시티_213998_렉섬_network.svg) · [shotmap(렉섬)](viz/렉섬_버밍엄시티_213998_렉섬_shotmap.svg) · [heatmap(버밍엄 시티)](viz/렉섬_버밍엄시티_213998_버밍엄 시티_heatmap.svg) · [network(버밍엄 시티)](viz/렉섬_버밍엄시티_213998_버밍엄 시티_network.svg) · [shotmap(버밍엄 시티)](viz/렉섬_버밍엄시티_213998_버밍엄 시티_shotmap.svg)
 - **렉섬_왓포드_213996**: [heatmap(렉섬)](viz/렉섬_왓포드_213996_렉섬_heatmap.svg) · [network(렉섬)](viz/렉섬_왓포드_213996_렉섬_network.svg) · [shotmap(렉섬)](viz/렉섬_왓포드_213996_렉섬_shotmap.svg) · [heatmap(왓포드)](viz/렉섬_왓포드_213996_왓포드_heatmap.svg) · [network(왓포드)](viz/렉섬_왓포드_213996_왓포드_network.svg) · [shotmap(왓포드)](viz/렉섬_왓포드_213996_왓포드_shotmap.svg)
 - **로스앤젤레스FC_FC댈러스_4954**: [heatmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_shotmap.svg) · [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_shotmap.svg)
@@ -16829,6 +16928,7 @@
 - **아스톤빌라_풀럼_312238**: [heatmap(아스톤 빌라)](viz/아스톤빌라_풀럼_312238_아스톤 빌라_heatmap.svg) · [network(아스톤 빌라)](viz/아스톤빌라_풀럼_312238_아스톤 빌라_network.svg) · [shotmap(아스톤 빌라)](viz/아스톤빌라_풀럼_312238_아스톤 빌라_shotmap.svg) · [heatmap(풀럼)](viz/아스톤빌라_풀럼_312238_풀럼_heatmap.svg) · [network(풀럼)](viz/아스톤빌라_풀럼_312238_풀럼_network.svg) · [shotmap(풀럼)](viz/아스톤빌라_풀럼_312238_풀럼_shotmap.svg)
 - **아스톤빌라_풀럼_58**: [heatmap(아스톤 빌라)](viz/아스톤빌라_풀럼_58_아스톤 빌라_heatmap.svg) · [network(아스톤 빌라)](viz/아스톤빌라_풀럼_58_아스톤 빌라_network.svg) · [shotmap(아스톤 빌라)](viz/아스톤빌라_풀럼_58_아스톤 빌라_shotmap.svg) · [heatmap(풀럼)](viz/아스톤빌라_풀럼_58_풀럼_heatmap.svg) · [network(풀럼)](viz/아스톤빌라_풀럼_58_풀럼_network.svg) · [shotmap(풀럼)](viz/아스톤빌라_풀럼_58_풀럼_shotmap.svg)
 - **아약스_sc헤렌베인_210816**: [heatmap(sc 헤렌베인)](viz/아약스_sc헤렌베인_210816_sc 헤렌베인_heatmap.svg) · [network(sc 헤렌베인)](viz/아약스_sc헤렌베인_210816_sc 헤렌베인_network.svg) · [shotmap(sc 헤렌베인)](viz/아약스_sc헤렌베인_210816_sc 헤렌베인_shotmap.svg) · [heatmap(아약스)](viz/아약스_sc헤렌베인_210816_아약스_heatmap.svg) · [network(아약스)](viz/아약스_sc헤렌베인_210816_아약스_network.svg) · [shotmap(아약스)](viz/아약스_sc헤렌베인_210816_아약스_shotmap.svg)
+- **아탈란타_볼로냐_210068**: [heatmap(볼로냐)](viz/아탈란타_볼로냐_210068_볼로냐_heatmap.svg) · [network(볼로냐)](viz/아탈란타_볼로냐_210068_볼로냐_network.svg) · [shotmap(볼로냐)](viz/아탈란타_볼로냐_210068_볼로냐_shotmap.svg) · [heatmap(아탈란타)](viz/아탈란타_볼로냐_210068_아탈란타_heatmap.svg) · [network(아탈란타)](viz/아탈란타_볼로냐_210068_아탈란타_network.svg) · [shotmap(아탈란타)](viz/아탈란타_볼로냐_210068_아탈란타_shotmap.svg)
 - **아탈란타_사수올로_210058**: [heatmap(사수올로)](viz/아탈란타_사수올로_210058_사수올로_heatmap.svg) · [network(사수올로)](viz/아탈란타_사수올로_210058_사수올로_network.svg) · [shotmap(사수올로)](viz/아탈란타_사수올로_210058_사수올로_shotmap.svg) · [heatmap(아탈란타)](viz/아탈란타_사수올로_210058_아탈란타_heatmap.svg) · [network(아탈란타)](viz/아탈란타_사수올로_210058_아탈란타_network.svg) · [shotmap(아탈란타)](viz/아탈란타_사수올로_210058_아탈란타_shotmap.svg)
 - **아틀레티코마드리드_말라가_213520**: [heatmap(말라가)](viz/아틀레티코마드리드_말라가_213520_말라가_heatmap.svg) · [network(말라가)](viz/아틀레티코마드리드_말라가_213520_말라가_network.svg) · [shotmap(말라가)](viz/아틀레티코마드리드_말라가_213520_말라가_shotmap.svg) · [heatmap(아틀레티코 마드리드)](viz/아틀레티코마드리드_말라가_213520_아틀레티코 마드리드_heatmap.svg) · [network(아틀레티코 마드리드)](viz/아틀레티코마드리드_말라가_213520_아틀레티코 마드리드_network.svg) · [shotmap(아틀레티코 마드리드)](viz/아틀레티코마드리드_말라가_213520_아틀레티코 마드리드_shotmap.svg)
 - **아틀레티코마드리드_비야레알_213531**: [heatmap(비야레알)](viz/아틀레티코마드리드_비야레알_213531_비야레알_heatmap.svg) · [network(비야레알)](viz/아틀레티코마드리드_비야레알_213531_비야레알_network.svg) · [shotmap(비야레알)](viz/아틀레티코마드리드_비야레알_213531_비야레알_shotmap.svg) · [heatmap(아틀레티코 마드리드)](viz/아틀레티코마드리드_비야레알_213531_아틀레티코 마드리드_heatmap.svg) · [network(아틀레티코 마드리드)](viz/아틀레티코마드리드_비야레알_213531_아틀레티코 마드리드_network.svg) · [shotmap(아틀레티코 마드리드)](viz/아틀레티코마드리드_비야레알_213531_아틀레티코 마드리드_shotmap.svg)
@@ -16928,6 +17028,7 @@
 - **엑셀시오르로테르담_스파르타로테르담_210827**: [heatmap(스파르타 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_스파르타 로테르담_heatmap.svg) · [network(스파르타 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_스파르타 로테르담_network.svg) · [shotmap(스파르타 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_스파르타 로테르담_shotmap.svg) · [heatmap(엑셀시오르 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_엑셀시오르 로테르담_heatmap.svg) · [network(엑셀시오르 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_엑셀시오르 로테르담_network.svg) · [shotmap(엑셀시오르 로테르담)](viz/엑셀시오르로테르담_스파르타로테르담_210827_엑셀시오르 로테르담_shotmap.svg)
 - **엘체_바르셀로나_213532**: [heatmap(바르셀로나)](viz/엘체_바르셀로나_213532_바르셀로나_heatmap.svg) · [network(바르셀로나)](viz/엘체_바르셀로나_213532_바르셀로나_network.svg) · [shotmap(바르셀로나)](viz/엘체_바르셀로나_213532_바르셀로나_shotmap.svg) · [heatmap(엘체)](viz/엘체_바르셀로나_213532_엘체_heatmap.svg) · [network(엘체)](viz/엘체_바르셀로나_213532_엘체_network.svg) · [shotmap(엘체)](viz/엘체_바르셀로나_213532_엘체_shotmap.svg)
 - **오사수나_레반테_213536**: [heatmap(레반테)](viz/오사수나_레반테_213536_레반테_heatmap.svg) · [network(레반테)](viz/오사수나_레반테_213536_레반테_network.svg) · [shotmap(레반테)](viz/오사수나_레반테_213536_레반테_shotmap.svg) · [heatmap(오사수나)](viz/오사수나_레반테_213536_오사수나_heatmap.svg) · [network(오사수나)](viz/오사수나_레반테_213536_오사수나_network.svg) · [shotmap(오사수나)](viz/오사수나_레반테_213536_오사수나_shotmap.svg)
+- **오사수나_헤타페_213545**: [heatmap(오사수나)](viz/오사수나_헤타페_213545_오사수나_heatmap.svg) · [network(오사수나)](viz/오사수나_헤타페_213545_오사수나_network.svg) · [shotmap(오사수나)](viz/오사수나_헤타페_213545_오사수나_shotmap.svg) · [heatmap(헤타페)](viz/오사수나_헤타페_213545_헤타페_heatmap.svg) · [network(헤타페)](viz/오사수나_헤타페_213545_헤타페_network.svg) · [shotmap(헤타페)](viz/오사수나_헤타페_213545_헤타페_shotmap.svg)
 - **오스틴FC_DC유나이티드_4939**: [heatmap(DC 유나이티드)](viz/오스틴FC_DC유나이티드_4939_DC 유나이티드_heatmap.svg) · [network(DC 유나이티드)](viz/오스틴FC_DC유나이티드_4939_DC 유나이티드_network.svg) · [shotmap(DC 유나이티드)](viz/오스틴FC_DC유나이티드_4939_DC 유나이티드_shotmap.svg) · [heatmap(오스틴 FC)](viz/오스틴FC_DC유나이티드_4939_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/오스틴FC_DC유나이티드_4939_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/오스틴FC_DC유나이티드_4939_오스틴 FC_shotmap.svg)
 - **오스틴FC_FC댈러스_5191**: [heatmap(FC 댈러스)](viz/오스틴FC_FC댈러스_5191_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/오스틴FC_FC댈러스_5191_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/오스틴FC_FC댈러스_5191_FC 댈러스_shotmap.svg) · [heatmap(오스틴 FC)](viz/오스틴FC_FC댈러스_5191_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/오스틴FC_FC댈러스_5191_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/오스틴FC_FC댈러스_5191_오스틴 FC_shotmap.svg)
 - **오스틴FC_LA갤럭시_5004**: [heatmap(LA 갤럭시)](viz/오스틴FC_LA갤럭시_5004_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/오스틴FC_LA갤럭시_5004_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/오스틴FC_LA갤럭시_5004_LA 갤럭시_shotmap.svg) · [heatmap(오스틴 FC)](viz/오스틴FC_LA갤럭시_5004_오스틴 FC_heatmap.svg) · [network(오스틴 FC)](viz/오스틴FC_LA갤럭시_5004_오스틴 FC_network.svg) · [shotmap(오스틴 FC)](viz/오스틴FC_LA갤럭시_5004_오스틴 FC_shotmap.svg)

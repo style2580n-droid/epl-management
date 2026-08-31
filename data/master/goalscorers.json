@@ -27112,6 +27112,67 @@
  ],
  "seriea": [
   {
+   "home": "아탈란타",
+   "away": "볼로냐",
+   "date": "2026-09-01",
+   "eid": 210068,
+   "goals": [
+    {
+     "scorer": "L. Samardžić",
+     "assist": "N. Zalewski",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "레체",
+   "away": "AS로마",
+   "date": "2026-09-01",
+   "eid": 210073,
+   "goals": [
+    {
+     "scorer": "R. Mora",
+     "assist": "G. Mancini",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Soulé",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": "Wesley",
+     "team": null,
+     "is_home": false,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "라치오",
    "away": "제노아",
    "date": "2026-08-31",
@@ -34275,6 +34336,23 @@
   }
  ],
  "laliga": [
+  {
+   "home": "오사수나",
+   "away": "헤타페",
+   "date": "2026-09-01",
+   "eid": 213545,
+   "goals": [
+    {
+     "scorer": "A. Budimir",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "셀타 비고",
    "away": "아틀레틱 빌바오",
