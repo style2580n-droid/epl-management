@@ -366,7 +366,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214016,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 2
   },
   {
    "home": "스완지 시티",
@@ -374,7 +376,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214015,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "셰필드 유나이티드",
@@ -382,7 +386,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214014,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "프레스턴 노스엔드",
@@ -390,7 +396,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214013,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "포츠머스",
@@ -398,7 +406,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214012,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 2
   },
   {
    "home": "링컨 시티",
@@ -406,7 +416,9 @@
    "date": "2026-09-02",
    "time": "03:45",
    "id": 214011,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
   },
   {
    "home": "스토크 시티",
@@ -414,7 +426,9 @@
    "date": "2026-09-02",
    "time": "04:00",
    "id": 214017,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "버밍엄 시티",
@@ -422,7 +436,9 @@
    "date": "2026-09-02",
    "time": "04:00",
    "id": 214010,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "웨스트브롬위치 알비온",
@@ -4927,211 +4943,211 @@
    "friendly": false
   },
   {
-   "home": "ESTAC 트루아",
-   "away": "올랭피크 마르세유",
-   "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210490,
+   "home": "RC 랑스",
+   "away": "올랭피크 리옹",
+   "date": "2026-10-10",
+   "time": "03:45",
+   "id": 210487,
    "friendly": false
   },
   {
-   "home": "스타드 렌",
-   "away": "AJ 오세르",
+   "home": "릴OSC",
+   "away": "르아브르AC",
    "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210489,
+   "time": "00:15",
+   "id": 210483,
    "friendly": false
   },
   {
    "home": "스타드 브레스투아29",
    "away": "앙제SCO",
    "date": "2026-10-11",
-   "time": "04:00",
+   "time": "03:45",
    "id": 210488,
-   "friendly": false
-  },
-  {
-   "home": "RC 랑스",
-   "away": "올랭피크 리옹",
-   "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210487,
    "friendly": false
   },
   {
    "home": "파리 생제르맹",
    "away": "르망FC",
    "date": "2026-10-11",
-   "time": "04:00",
+   "time": "03:45",
    "id": 210486,
+   "friendly": false
+  },
+  {
+   "home": "FC 로리앙",
+   "away": "파리 FC",
+   "date": "2026-10-11",
+   "time": "03:45",
+   "id": 210484,
+   "friendly": false
+  },
+  {
+   "home": "AS 모나코",
+   "away": "툴루즈",
+   "date": "2026-10-11",
+   "time": "03:45",
+   "id": 210482,
    "friendly": false
   },
   {
    "home": "OGC 니스",
    "away": "라싱 스트라스부르",
    "date": "2026-10-11",
-   "time": "04:00",
+   "time": "22:00",
    "id": 210485,
    "friendly": false
   },
   {
-   "home": "FC 로리앙",
-   "away": "파리 FC",
-   "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210484,
-   "friendly": false
-  },
-  {
-   "home": "릴OSC",
-   "away": "르아브르AC",
-   "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210483,
-   "friendly": false
-  },
-  {
-   "home": "AS 모나코",
-   "away": "툴루즈",
-   "date": "2026-10-11",
-   "time": "04:00",
-   "id": 210482,
+   "home": "스타드 렌",
+   "away": "AJ 오세르",
+   "date": "2026-10-12",
+   "time": "00:15",
+   "id": 210489,
    "friendly": false
   },
   {
    "home": "ESTAC 트루아",
-   "away": "RC 랑스",
-   "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210499,
+   "away": "올랭피크 마르세유",
+   "date": "2026-10-12",
+   "time": "03:45",
+   "id": 210490,
+   "friendly": false
+  },
+  {
+   "home": "르망FC",
+   "away": "툴루즈",
+   "date": "2026-10-17",
+   "time": "03:45",
+   "id": 210493,
    "friendly": false
   },
   {
    "home": "라싱 스트라스부르",
    "away": "파리 생제르맹",
    "date": "2026-10-18",
-   "time": "04:00",
+   "time": "00:15",
    "id": 210498,
    "friendly": false
   },
   {
-   "home": "파리 FC",
-   "away": "스타드 렌",
+   "home": "ESTAC 트루아",
+   "away": "RC 랑스",
    "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210497,
-   "friendly": false
-  },
-  {
-   "home": "올랭피크 리옹",
-   "away": "OGC 니스",
-   "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210496,
-   "friendly": false
-  },
-  {
-   "home": "FC 로리앙",
-   "away": "AS 모나코",
-   "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210495,
+   "time": "03:45",
+   "id": 210499,
    "friendly": false
   },
   {
    "home": "릴OSC",
    "away": "스타드 브레스투아29",
    "date": "2026-10-18",
-   "time": "04:00",
+   "time": "03:45",
    "id": 210494,
-   "friendly": false
-  },
-  {
-   "home": "르망FC",
-   "away": "툴루즈",
-   "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210493,
-   "friendly": false
-  },
-  {
-   "home": "르아브르AC",
-   "away": "AJ 오세르",
-   "date": "2026-10-18",
-   "time": "04:00",
-   "id": 210492,
    "friendly": false
   },
   {
    "home": "앙제SCO",
    "away": "올랭피크 마르세유",
    "date": "2026-10-18",
-   "time": "04:00",
+   "time": "22:00",
    "id": 210491,
+   "friendly": false
+  },
+  {
+   "home": "파리 FC",
+   "away": "스타드 렌",
+   "date": "2026-10-19",
+   "time": "00:15",
+   "id": 210497,
+   "friendly": false
+  },
+  {
+   "home": "FC 로리앙",
+   "away": "AS 모나코",
+   "date": "2026-10-19",
+   "time": "00:15",
+   "id": 210495,
+   "friendly": false
+  },
+  {
+   "home": "르아브르AC",
+   "away": "AJ 오세르",
+   "date": "2026-10-19",
+   "time": "00:15",
+   "id": 210492,
+   "friendly": false
+  },
+  {
+   "home": "올랭피크 리옹",
+   "away": "OGC 니스",
+   "date": "2026-10-19",
+   "time": "03:45",
+   "id": 210496,
+   "friendly": false
+  },
+  {
+   "home": "스타드 브레스투아29",
+   "away": "OGC 니스",
+   "date": "2026-10-24",
+   "time": "03:45",
+   "id": 210506,
    "friendly": false
   },
   {
    "home": "툴루즈",
    "away": "ESTAC 트루아",
    "date": "2026-10-25",
-   "time": "04:00",
+   "time": "00:15",
    "id": 210508,
-   "friendly": false
-  },
-  {
-   "home": "스타드 렌",
-   "away": "라싱 스트라스부르",
-   "date": "2026-10-25",
-   "time": "04:00",
-   "id": 210507,
-   "friendly": false
-  },
-  {
-   "home": "스타드 브레스투아29",
-   "away": "OGC 니스",
-   "date": "2026-10-25",
-   "time": "04:00",
-   "id": 210506,
    "friendly": false
   },
   {
    "home": "RC 랑스",
    "away": "파리 FC",
    "date": "2026-10-25",
-   "time": "04:00",
+   "time": "03:45",
    "id": 210505,
-   "friendly": false
-  },
-  {
-   "home": "올랭피크 마르세유",
-   "away": "르아브르AC",
-   "date": "2026-10-25",
-   "time": "04:00",
-   "id": 210503,
-   "friendly": false
-  },
-  {
-   "home": "AJ 오세르",
-   "away": "르망FC",
-   "date": "2026-10-25",
-   "time": "04:00",
-   "id": 210502,
-   "friendly": false
-  },
-  {
-   "home": "앙제SCO",
-   "away": "FC 로리앙",
-   "date": "2026-10-25",
-   "time": "04:00",
-   "id": 210501,
    "friendly": false
   },
   {
    "home": "AS 모나코",
    "away": "릴OSC",
    "date": "2026-10-25",
-   "time": "04:00",
+   "time": "23:00",
    "id": 210500,
+   "friendly": false
+  },
+  {
+   "home": "스타드 렌",
+   "away": "라싱 스트라스부르",
+   "date": "2026-10-26",
+   "time": "01:15",
+   "id": 210507,
+   "friendly": false
+  },
+  {
+   "home": "올랭피크 마르세유",
+   "away": "르아브르AC",
+   "date": "2026-10-26",
+   "time": "01:15",
+   "id": 210503,
+   "friendly": false
+  },
+  {
+   "home": "AJ 오세르",
+   "away": "르망FC",
+   "date": "2026-10-26",
+   "time": "01:15",
+   "id": 210502,
+   "friendly": false
+  },
+  {
+   "home": "앙제SCO",
+   "away": "FC 로리앙",
+   "date": "2026-10-26",
+   "time": "01:15",
+   "id": 210501,
    "friendly": false
   },
   {
@@ -18009,6 +18025,14 @@
    "friendly": false
   },
   {
+   "home": "에스파뇰",
+   "away": "엘체",
+   "date": "2026-09-19",
+   "time": "04:00",
+   "id": 213584,
+   "friendly": false
+  },
+  {
    "home": "비야레알",
    "away": "레반테",
    "date": "2026-09-21",
@@ -18046,14 +18070,6 @@
    "date": "2026-09-21",
    "time": "04:00",
    "id": 213585,
-   "friendly": false
-  },
-  {
-   "home": "에스파뇰",
-   "away": "엘체",
-   "date": "2026-09-21",
-   "time": "04:00",
-   "id": 213584,
    "friendly": false
   },
   {

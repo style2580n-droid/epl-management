@@ -24837,6 +24837,268 @@
  ],
  "championship": [
   {
+   "home": "스토크 시티",
+   "away": "노리치 시티",
+   "date": "2026-09-02",
+   "eid": 214017,
+   "goals": [
+    {
+     "scorer": "E. Galbraith",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "버밍엄 시티",
+   "away": "사우샘프턴",
+   "date": "2026-09-02",
+   "eid": 214010,
+   "goals": [
+    {
+     "scorer": "A. Priske",
+     "assist": "P. Roberts",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Schlotterbeck",
+     "assist": "L. Scienza",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "웨스트햄 유나이티드",
+   "away": "울버햄튼 원더러스",
+   "date": "2026-09-02",
+   "eid": 214016,
+   "goals": [
+    {
+     "scorer": "K. Mavropanos",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Mavropanos",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Mukasa",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Munetsi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Bowen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Mukasa",
+     "assist": "A. Engels",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "스완지 시티",
+   "away": "왓포드",
+   "date": "2026-09-02",
+   "eid": 214015,
+   "goals": [
+    {
+     "scorer": "A. Idah",
+     "assist": "J. Eom",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Eom",
+     "assist": "A. Idah",
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "셰필드 유나이티드",
+   "away": "볼턴 원더러스",
+   "date": "2026-09-02",
+   "eid": 214014,
+   "goals": [
+    {
+     "scorer": "R. Donovan",
+     "assist": "K. Phillips",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Bamford",
+     "assist": "S. McCallum",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Dalby",
+     "assist": "T. Gale",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Tanganga",
+     "assist": "S. Peck",
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "X. Simons",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "프레스턴 노스엔드",
+   "away": "브리스톨 시티",
+   "date": "2026-09-02",
+   "eid": 214013,
+   "goals": [
+    {
+     "scorer": "D. Ballard",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. N. Eissat",
+     "assist": "R. Cardines",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "C. Wiley",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Twine",
+     "assist": "L. Tolaj",
+     "team": null,
+     "is_home": false,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "포츠머스",
+   "away": "더비 카운티",
+   "date": "2026-09-02",
+   "eid": 214012,
+   "goals": [
+    {
+     "scorer": "L. Salvesen",
+     "assist": "O. Fraulo",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Szmodics",
+     "assist": "B. Clark",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "링컨 시티",
+   "away": "블랙번 로버스",
+   "date": "2026-09-02",
+   "eid": 214011,
+   "goals": [],
+   "nil": true
+  },
+  {
    "home": "왓포드",
    "away": "웨스트햄 유나이티드",
    "date": "2026-08-29",
