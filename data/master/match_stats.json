@@ -88084,7 +88084,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 46738,
                     "logo": "https://highlightly.net/soccer/images/teams/46738.png",
@@ -88092,7 +88101,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 35675,
                     "logo": "https://highlightly.net/soccer/images/teams/35675.png",
@@ -88100,7 +88118,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-01T00:26:18.337138+00:00"
+        "collected_at": "2026-09-01T18:13:55.149686+00:00"
     },
     "1386189578": {
         "match": {
@@ -88249,7 +88267,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 64609,
                     "logo": "https://highlightly.net/soccer/images/teams/64609.png",
@@ -88257,7 +88284,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 61205,
                     "logo": "https://highlightly.net/soccer/images/teams/61205.png",
@@ -88265,7 +88301,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-01T00:26:19.207216+00:00"
+        "collected_at": "2026-09-01T18:13:54.881299+00:00"
     },
     "1330215904": {
         "match": {
@@ -88431,5 +88467,60 @@
             }
         ],
         "collected_at": "2026-09-01T08:24:14.383646+00:00"
+    },
+    "1330728206": {
+        "match": {
+            "id": 1330728206,
+            "round": "Regular Season - 4",
+            "date": "2026-09-01T18:45:00.000Z",
+            "country": {
+                "code": "GB-ENG",
+                "name": "England",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-ENG.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1147081,
+                "logo": "https://highlightly.net/soccer/images/teams/1147081.png",
+                "name": "Gillingham"
+            },
+            "homeTeam": {
+                "id": 1145379,
+                "logo": "https://highlightly.net/soccer/images/teams/1145379.png",
+                "name": "Chesterfield"
+            },
+            "league": {
+                "id": 36526,
+                "logo": "https://highlightly.net/soccer/images/leagues/36526.png",
+                "name": "League Two",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1145379,
+                    "logo": "https://highlightly.net/soccer/images/teams/1145379.png",
+                    "name": "Chesterfield"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1147081,
+                    "logo": "https://highlightly.net/soccer/images/teams/1147081.png",
+                    "name": "Gillingham"
+                }
+            }
+        ],
+        "collected_at": "2026-09-01T18:13:55.792231+00:00"
     }
 }
