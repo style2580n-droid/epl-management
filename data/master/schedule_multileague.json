@@ -4507,22 +4507,6 @@
  ],
  "ligue1": [
   {
-   "home": "브라이튼",
-   "away": "라싱 스트라스부르",
-   "date": "2026-08-01",
-   "time": "19:00",
-   "id": 219520,
-   "friendly": true
-  },
-  {
-   "home": "브라이튼",
-   "away": "라싱 스트라스부르",
-   "date": "2026-08-01",
-   "time": "21:15",
-   "id": 219536,
-   "friendly": true
-  },
-  {
    "home": "스타드 렌",
    "away": "브렌트포드",
    "date": "2026-08-08",
@@ -17780,7 +17764,9 @@
    "date": "2026-09-01",
    "time": "04:30",
    "id": 213543,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 5,
+   "awayGoals": 2
   },
   {
    "home": "레알 소시에다드",

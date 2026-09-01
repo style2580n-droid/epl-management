@@ -1,6 +1,23 @@
 {
  "epl": [
   {
+   "home": "아스톤 빌라",
+   "away": "아스날",
+   "date": "2026-09-01",
+   "eid": 209545,
+   "goals": [
+    {
+     "scorer": "B. Saka",
+     "assist": "R. Calafiori",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "맨체스터 유나이티드",
    "away": "입스위치 타운",
    "date": "2026-08-31",
@@ -34336,6 +34353,77 @@
   }
  ],
  "laliga": [
+  {
+   "home": "바르셀로나",
+   "away": "라요 바예카노",
+   "date": "2026-09-01",
+   "eid": 213543,
+   "goals": [
+    {
+     "scorer": "L. Yamal",
+     "assist": "K. Adeyemi",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "A. Gordon",
+     "team": null,
+     "is_home": true,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Camello",
+     "assist": "U. López",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. Lejeune",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Yamal",
+     "assist": "M. Bernal",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "X. Espart",
+     "team": null,
+     "is_home": true,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Camello",
+     "assist": "Á. García",
+     "team": null,
+     "is_home": false,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "오사수나",
    "away": "헤타페",
