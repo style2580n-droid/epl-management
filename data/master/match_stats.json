@@ -91133,5 +91133,115 @@
             }
         ],
         "collected_at": "2026-09-02T07:43:16.784455+00:00"
+    },
+    "1393989844": {
+        "match": {
+            "id": 1393989844,
+            "round": "Clausura - 7",
+            "date": "2026-09-02T23:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2395498,
+                "logo": "https://highlightly.net/soccer/images/teams/2395498.png",
+                "name": "Portuguesa FC"
+            },
+            "homeTeam": {
+                "id": 2390392,
+                "logo": "https://highlightly.net/soccer/images/teams/2390392.png",
+                "name": "Caracas FC"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2390392,
+                    "logo": "https://highlightly.net/soccer/images/teams/2390392.png",
+                    "name": "Caracas FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2395498,
+                    "logo": "https://highlightly.net/soccer/images/teams/2395498.png",
+                    "name": "Portuguesa FC"
+                }
+            }
+        ],
+        "collected_at": "2026-09-02T13:21:11.117131+00:00"
+    },
+    "1393988993": {
+        "match": {
+            "id": 1393988993,
+            "round": "Clausura - 7",
+            "date": "2026-09-02T20:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2389541,
+                "logo": "https://highlightly.net/soccer/images/teams/2389541.png",
+                "name": "Deportivo Táchira"
+            },
+            "homeTeam": {
+                "id": 2388690,
+                "logo": "https://highlightly.net/soccer/images/teams/2388690.png",
+                "name": "Zamora"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2388690,
+                    "logo": "https://highlightly.net/soccer/images/teams/2388690.png",
+                    "name": "Zamora"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2389541,
+                    "logo": "https://highlightly.net/soccer/images/teams/2389541.png",
+                    "name": "Deportivo Táchira"
+                }
+            }
+        ],
+        "collected_at": "2026-09-02T13:21:15.753653+00:00"
     }
 }

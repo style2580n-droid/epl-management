@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-09-02
 
-생성(UTC): 2026-09-02 07:52
+생성(UTC): 2026-09-02 13:30
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -135,8 +135,127 @@
 | Saba Goglichidze | Udinese Calcio | AC Monza | 세리에 A |
 | Jan Ziółkowski | AS Roma | AC Monza | 세리에 A |
 | Moise Kean | ACF Fiorentina | Como 1907 | 세리에 A |
+| Ellyes Skhiri | Eintracht Frankfurt | 1. FC Köln | 분데스리가 |
+| Deniz Zeitler | SC Paderborn 07 | TSG 1899 Hoffenheim | 분데스리가 |
+| Arthur Augusto | SV Werder Bremen | Bayer 04 Leverkusen | 분데스리가 |
+| Arijon Ibrahimovic | FC Augsburg | FC Bayern München | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Rayan Philippe | SC Paderborn 07 | Hamburger SV | 분데스리가 |
+| Laurin Ulrich | SC Paderborn 07 | VfB Stuttgart | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Noah Atubolu | Eintracht Frankfurt | SC Freiburg | 분데스리가 |
+| Noel Futkeu | SV 07 Elversberg | Eintracht Frankfurt | 분데스리가 |
+| Joël Drommel | PSV | FC Twente '65 | DED |
+| Mees Hilgers | SC Heerenveen | FC Twente '65 | DED |
+| Harrie Kuster | Telstar 1963 | FC Twente '65 | DED |
+| Aymen Sliti | Feyenoord Rotterdam | SBV Excelsior | DED |
+| Vito van Crooij | NEC | Willem II Tilburg | DED |
+| Calvin Twigt | Go Ahead Eagles | Willem II Tilburg | DED |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Isaiah Ahmed | Telstar 1963 | SC Heerenveen | DED |
+| Kodai Sano | NEC | PSV | DED |
+| Sami Ouaissa | NEC | PSV | DED |
+| Calvin Stengs | AZ | Feyenoord Rotterdam | DED |
+| Michael Brouwer | Sparta Rotterdam | FC Utrecht | DED |
+| Rafik el Arguioui | SC Cambuur-Leeuwarden | FC Utrecht | DED |
+| Sem van Duijn | AZ | FC Utrecht | DED |
+| Stije Resink | AZ | FC Groningen | DED |
+| Ahmetcan Kaplan | NEC | AFC Ajax | DED |
+| Matěj Šín | AZ | ADO Den Haag | DED |
+| Billy van Duijl | SC Cambuur-Leeuwarden | AZ | DED |
+| Nökkvi Þórisson | Sparta Rotterdam | Telstar 1963 | DED |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Alex Mowatt | Derby County FC | West Bromwich Albion FC | ELC |
+| Karlan Ahearne-Grant | Charlton Athletic FC | West Bromwich Albion FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| Delano Burgzorg | Preston North End FC | Middlesbrough FC | ELC |
+| Lyndon Dykes | Millwall FC | Charlton Athletic FC | ELC |
+| Isaac Olaofe | Lincoln City FC | Charlton Athletic FC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Charlie Cresswell | Stade Rennais FC 1901 | Toulouse FC | 리그 1 |
+| Mathis Amougou | RC Strasbourg Alsace | Toulouse FC | 리그 1 |
+| Noah Edjouma | Lille OSC | Stade Brestois 29 | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Rayan Bamba | Le Mans FC | Stade Rennais FC 1901 | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Rayan Fofana | Racing Club de Lens | Le Havre AC | 리그 1 |
+| Julen Agirrezabala | Real Racing Club de Santander | Athletic Club | 라리가 |
+| Andoni Gorosabel | RCD Espanyol de Barcelona | Athletic Club | 라리가 |
+| José Giménez | RC Deportivo La Coruña | Club Atlético de Madrid | 라리가 |
+| Thomas Lemar | Elche CF | Club Atlético de Madrid | 라리가 |
+| Rubén Sánchez | Elche CF | RCD Espanyol de Barcelona | 라리가 |
+| Héctor Fort | Real Sociedad de Fútbol | FC Barcelona | 라리가 |
+| Marc Casado | RC Deportivo La Coruña | FC Barcelona | 라리가 |
+| Juan Berrocal | Málaga CF | Getafe CF | 라리가 |
+| Pedrosa | Sevilla FC | Rayo Vallecano de Madrid | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Pablo García | Real Racing Club de Santander | Real Betis Balompié | 라리가 |
+| André Almeida | Real Racing Club de Santander | Valencia CF | 라리가 |
+| Ezri Konsa | Aston Villa FC | Arsenal FC | 프리미어리그 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Christian Nørgaard | Everton FC | Arsenal FC | 프리미어리그 |
+| Emiliano Martínez | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Morgan Rogers | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Evann Guessand | Crystal Palace FC | Aston Villa FC | 프리미어리그 |
+| Nicolas Jackson | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Axel Disasi | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Tosin Adarabioyo | Tottenham Hotspur FC | Chelsea FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Enzo Fernández | Manchester City FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Mykhailo Mudryk | Tottenham Hotspur FC | Chelsea FC | 프리미어리그 |
+| Liam Delap | Nottingham Forest FC | Chelsea FC | 프리미어리그 |
+| Tim Iroegbunam | Hull City AFC | Everton FC | 프리미어리그 |
+| Jack Grealish | Manchester City FC | Everton FC | 프리미어리그 |
+| Dwight McNeil | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Iliman Ndiaye | Manchester City FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Issa Diop | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| Saša Lukić | Ipswich Town FC | Fulham FC | 프리미어리그 |
+| James Trafford | Leeds United FC | Manchester City FC | 프리미어리그 |
+| Nico Gonzalez | Newcastle United FC | Manchester City FC | 프리미어리그 |
+| Omar Marmoush | Tottenham Hotspur FC | Manchester City FC | 프리미어리그 |
+| Sávio | Tottenham Hotspur FC | Manchester City FC | 프리미어리그 |
+| Carlos Baleba | Brighton & Hove Albion FC | Manchester United FC | 프리미어리그 |
+| Kevin Danso | Tottenham Hotspur FC | Sunderland AFC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Daniel Muñoz | Crystal Palace FC | Nottingham Forest FC | 프리미어리그 |
+| Taiwo Awoniyi | Coventry City FC | Nottingham Forest FC | 프리미어리그 |
+| Carl Rushworth | Coventry City FC | Brighton & Hove Albion FC | 프리미어리그 |
+| Ethan Pinnock | Coventry City FC | Brentford FC | 프리미어리그 |
+| Samuele Ricci | Como 1907 | AC Milan | 세리에 A |
+| Niccolò Fortini | Torino FC | ACF Fiorentina | 세리에 A |
+| Rolando Mandragora | Torino FC | ACF Fiorentina | 세리에 A |
+| Giovanni Fabbian | Parma Calcio 1913 | ACF Fiorentina | 세리에 A |
+| Moise Kean | Como 1907 | ACF Fiorentina | 세리에 A |
+| Mbala N'Zola | Cagliari Calcio | ACF Fiorentina | 세리에 A |
+| Albert Guðmundsson | SS Lazio | ACF Fiorentina | 세리에 A |
+| Alieu Njie | Torino FC | ACF Fiorentina | 세리에 A |
+| Jan Ziółkowski | AC Monza | AS Roma | 세리에 A |
+| Marten de Roon | Atalanta BC | AS Roma | 세리에 A |
+| Ibrahim Sulemana | US Sassuolo Calcio | Atalanta BC | 세리에 A |
+| Jonathan Rowe | Bologna FC 1909 | Atalanta BC | 세리에 A |
+| Yanis Massolin | FC Internazionale Milano | Cagliari Calcio | 세리에 A |
+| Sebastiano Esposito | US Sassuolo Calcio | Cagliari Calcio | 세리에 A |
+| Riccardo Ciervo | US Sassuolo Calcio | Cagliari Calcio | 세리에 A |
+| Alieu Fadera | Como 1907 | Cagliari Calcio | 세리에 A |
+| Andrea Pinamonti | US Sassuolo Calcio | SS Lazio | 세리에 A |
+| Pasquale Mazzocchi | Venezia FC | SSC Napoli | 세리에 A |
+| Michael Folorunsho | AC Monza | SSC Napoli | 세리에 A |
+| Cyril Ngonge | AC Monza | SSC Napoli | 세리에 A |
+| Saba Goglichidze | AC Monza | Udinese Calcio | 세리에 A |
+| Ignace Van Der Brempt | Como 1907 | US Sassuolo Calcio | 세리에 A |
+| Ali Dembele | US Lecce | Torino FC | 세리에 A |
+| Ivan Ilić | US Lecce | Torino FC | 세리에 A |
+| Noel Törnqvist | Como 1907 | AC Monza | 세리에 A |
 
-오늘 119건 (누적 3856건)
+오늘 238건 (누적 3975건)
 
 ## 📊 경기 고급 지표
 
