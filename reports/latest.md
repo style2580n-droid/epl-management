@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-09-02
 
-생성(UTC): 2026-09-02 13:30
+생성(UTC): 2026-09-02 18:38
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -254,8 +254,65 @@
 | Ali Dembele | US Lecce | Torino FC | 세리에 A |
 | Ivan Ilić | US Lecce | Torino FC | 세리에 A |
 | Noel Törnqvist | Como 1907 | AC Monza | 세리에 A |
+| Ellyes Skhiri | Eintracht Frankfurt | 1. FC Köln | 분데스리가 |
+| Dina Ebimbe | Eintracht Frankfurt | FC Schalke 04 | 분데스리가 |
+| Eren Dinkci | SC Freiburg | SV Werder Bremen | 분데스리가 |
+| Joël Drommel | PSV | FC Twente '65 | DED |
+| Aymen Sliti | Feyenoord Rotterdam | SBV Excelsior | DED |
+| Vito van Crooij | NEC | Willem II Tilburg | DED |
+| Calvin Twigt | Go Ahead Eagles | Willem II Tilburg | DED |
+| Kasper Boogaard | AZ | Willem II Tilburg | DED |
+| Dirk Proper | NEC | SC Heerenveen | DED |
+| Kodai Sano | NEC | PSV | DED |
+| Sami Ouaissa | NEC | PSV | DED |
+| Sem van Duijn | AZ | FC Utrecht | DED |
+| Matěj Šín | AZ | ADO Den Haag | DED |
+| Nökkvi Þórisson | Sparta Rotterdam | Telstar 1963 | DED |
+| Gavin Bazunu | Southampton FC | Bolton Wanderers FC | ELC |
+| Lewis Brunt | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Ryan Hardie | Wrexham AFC | Bolton Wanderers FC | ELC |
+| Max Bird | Bristol City FC | Birmingham City FC | ELC |
+| James Ward-Prowse | West Ham United FC | Southampton FC | ELC |
+| Arthur Okonkwo | Wrexham AFC | Charlton Athletic FC | ELC |
+| Ben Brereton | Southampton FC | Sheffield United FC | ELC |
+| Joe Worrall | Burnley FC | Wrexham AFC | ELC |
+| Callum O'Hare | Sheffield United FC | Wrexham AFC | ELC |
+| Ben Whiteman | Preston North End FC | Wrexham AFC | ELC |
+| Krystian Bielik | West Bromwich Albion FC | Cardiff City FC | ELC |
+| Jack Moylan | Lincoln City FC | Cardiff City FC | ELC |
+| Liam Gibbs | Norwich City FC | Preston North End FC | ELC |
+| Mathis Amougou | RC Strasbourg Alsace | Toulouse FC | 리그 1 |
+| Noah Edjouma | Lille OSC | Stade Brestois 29 | 리그 1 |
+| Rémy Labeau Lascary | Racing Club de Lens | AJ Auxerre | 리그 1 |
+| Maghnes Akliouche | AS Monaco FC | Paris Saint-Germain FC | 리그 1 |
+| Junior Mwanga | RC Strasbourg Alsace | Le Havre AC | 리그 1 |
+| Rayan Fofana | Racing Club de Lens | Le Havre AC | 리그 1 |
+| Pedrosa | Sevilla FC | Rayo Vallecano de Madrid | 라리가 |
+| Thiago Fernandez | Villarreal CF | Levante UD | 라리가 |
+| Ezri Konsa | Aston Villa FC | Arsenal FC | 프리미어리그 |
+| Bruno Guimarães | Newcastle United FC | Arsenal FC | 프리미어리그 |
+| Nicolas Jackson | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Alejandro Garnacho | Chelsea FC | Aston Villa FC | 프리미어리그 |
+| Maxence Lacroix | Crystal Palace FC | Chelsea FC | 프리미어리그 |
+| Jordan Henderson | Brentford FC | Chelsea FC | 프리미어리그 |
+| Danny Welbeck | Brighton & Hove Albion FC | Chelsea FC | 프리미어리그 |
+| Jack Grealish | Manchester City FC | Everton FC | 프리미어리그 |
+| Brennan Johnson | Crystal Palace FC | Everton FC | 프리미어리그 |
+| Carlos Baleba | Brighton & Hove Albion FC | Manchester United FC | 프리미어리그 |
+| Kevin Danso | Tottenham Hotspur FC | Sunderland AFC | 프리미어리그 |
+| Joe Gelhardt | Leeds United FC | Hull City AFC | 프리미어리그 |
+| Daniel Muñoz | Crystal Palace FC | Nottingham Forest FC | 프리미어리그 |
+| Alieu Njie | Torino FC | ACF Fiorentina | 세리에 A |
+| Marten de Roon | Atalanta BC | AS Roma | 세리에 A |
+| Jonathan Rowe | Bologna FC 1909 | Atalanta BC | 세리에 A |
+| Yanis Massolin | FC Internazionale Milano | Cagliari Calcio | 세리에 A |
+| Riccardo Ciervo | US Sassuolo Calcio | Cagliari Calcio | 세리에 A |
+| Alieu Fadera | Como 1907 | Cagliari Calcio | 세리에 A |
+| Andrea Pinamonti | US Sassuolo Calcio | SS Lazio | 세리에 A |
+| Ignace Van Der Brempt | Como 1907 | US Sassuolo Calcio | 세리에 A |
+| Noel Törnqvist | Como 1907 | AC Monza | 세리에 A |
 
-오늘 238건 (누적 3975건)
+오늘 295건 (누적 4032건)
 
 ## 📊 경기 고급 지표
 

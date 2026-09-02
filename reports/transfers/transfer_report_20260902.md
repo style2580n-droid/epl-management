@@ -1190,4 +1190,289 @@
 - 리그: 세리에 A
 - 감지 시각: 2026-09-02T13:21:31.353339+00:00
 
-누적 감지 이적: 3975건
+## Ellyes Skhiri
+- 이동: **Eintracht Frankfurt → 1. FC Köln**
+- 리그: 분데스리가
+- 감지 시각: 2026-09-02T18:29:13.396802+00:00
+
+## Dina Ebimbe
+- 이동: **Eintracht Frankfurt → FC Schalke 04**
+- 리그: 분데스리가
+- 감지 시각: 2026-09-02T18:29:13.396912+00:00
+
+## Eren Dinkci
+- 이동: **SC Freiburg → SV Werder Bremen**
+- 리그: 분데스리가
+- 감지 시각: 2026-09-02T18:29:13.396991+00:00
+
+## Joël Drommel
+- 이동: **PSV → FC Twente '65**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388172+00:00
+
+## Aymen Sliti
+- 이동: **Feyenoord Rotterdam → SBV Excelsior**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388235+00:00
+
+## Vito van Crooij
+- 이동: **NEC → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388251+00:00
+
+## Calvin Twigt
+- 이동: **Go Ahead Eagles → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388257+00:00
+
+## Kasper Boogaard
+- 이동: **AZ → Willem II Tilburg**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388261+00:00
+
+## Dirk Proper
+- 이동: **NEC → SC Heerenveen**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388296+00:00
+
+## Kodai Sano
+- 이동: **NEC → PSV**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388322+00:00
+
+## Sami Ouaissa
+- 이동: **NEC → PSV**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388331+00:00
+
+## Sem van Duijn
+- 이동: **AZ → FC Utrecht**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388380+00:00
+
+## Matěj Šín
+- 이동: **AZ → ADO Den Haag**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388454+00:00
+
+## Nökkvi Þórisson
+- 이동: **Sparta Rotterdam → Telstar 1963**
+- 리그: DED
+- 감지 시각: 2026-09-02T18:30:43.388559+00:00
+
+## Gavin Bazunu
+- 이동: **Southampton FC → Bolton Wanderers FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.996797+00:00
+
+## Lewis Brunt
+- 이동: **Wrexham AFC → Bolton Wanderers FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.996819+00:00
+
+## Ryan Hardie
+- 이동: **Wrexham AFC → Bolton Wanderers FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.996834+00:00
+
+## Max Bird
+- 이동: **Bristol City FC → Birmingham City FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997059+00:00
+
+## James Ward-Prowse
+- 이동: **West Ham United FC → Southampton FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997087+00:00
+
+## Arthur Okonkwo
+- 이동: **Wrexham AFC → Charlton Athletic FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997168+00:00
+
+## Ben Brereton
+- 이동: **Southampton FC → Sheffield United FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997205+00:00
+
+## Joe Worrall
+- 이동: **Burnley FC → Wrexham AFC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997258+00:00
+
+## Callum O'Hare
+- 이동: **Sheffield United FC → Wrexham AFC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997266+00:00
+
+## Ben Whiteman
+- 이동: **Preston North End FC → Wrexham AFC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997271+00:00
+
+## Krystian Bielik
+- 이동: **West Bromwich Albion FC → Cardiff City FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997305+00:00
+
+## Jack Moylan
+- 이동: **Lincoln City FC → Cardiff City FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997317+00:00
+
+## Liam Gibbs
+- 이동: **Norwich City FC → Preston North End FC**
+- 리그: ELC
+- 감지 시각: 2026-09-02T18:29:54.997341+00:00
+
+## Mathis Amougou
+- 이동: **RC Strasbourg Alsace → Toulouse FC**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.118908+00:00
+
+## Noah Edjouma
+- 이동: **Lille OSC → Stade Brestois 29**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.118938+00:00
+
+## Rémy Labeau Lascary
+- 이동: **Racing Club de Lens → AJ Auxerre**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.118979+00:00
+
+## Maghnes Akliouche
+- 이동: **AS Monaco FC → Paris Saint-Germain FC**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.119061+00:00
+
+## Junior Mwanga
+- 이동: **RC Strasbourg Alsace → Le Havre AC**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.119150+00:00
+
+## Rayan Fofana
+- 이동: **Racing Club de Lens → Le Havre AC**
+- 리그: 리그 1
+- 감지 시각: 2026-09-02T18:29:51.119160+00:00
+
+## Pedrosa
+- 이동: **Sevilla FC → Rayo Vallecano de Madrid**
+- 리그: 라리가
+- 감지 시각: 2026-09-02T18:28:24.064666+00:00
+
+## Thiago Fernandez
+- 이동: **Villarreal CF → Levante UD**
+- 리그: 라리가
+- 감지 시각: 2026-09-02T18:28:24.064708+00:00
+
+## Ezri Konsa
+- 이동: **Aston Villa FC → Arsenal FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609330+00:00
+
+## Bruno Guimarães
+- 이동: **Newcastle United FC → Arsenal FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609346+00:00
+
+## Nicolas Jackson
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609377+00:00
+
+## Alejandro Garnacho
+- 이동: **Chelsea FC → Aston Villa FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609380+00:00
+
+## Maxence Lacroix
+- 이동: **Crystal Palace FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609390+00:00
+
+## Jordan Henderson
+- 이동: **Brentford FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609398+00:00
+
+## Danny Welbeck
+- 이동: **Brighton & Hove Albion FC → Chelsea FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609418+00:00
+
+## Jack Grealish
+- 이동: **Manchester City FC → Everton FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609436+00:00
+
+## Brennan Johnson
+- 이동: **Crystal Palace FC → Everton FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609439+00:00
+
+## Carlos Baleba
+- 이동: **Brighton & Hove Albion FC → Manchester United FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609512+00:00
+
+## Kevin Danso
+- 이동: **Tottenham Hotspur FC → Sunderland AFC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609543+00:00
+
+## Joe Gelhardt
+- 이동: **Leeds United FC → Hull City AFC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609600+00:00
+
+## Daniel Muñoz
+- 이동: **Crystal Palace FC → Nottingham Forest FC**
+- 리그: 프리미어리그
+- 감지 시각: 2026-09-02T18:28:19.609646+00:00
+
+## Alieu Njie
+- 이동: **Torino FC → ACF Fiorentina**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434398+00:00
+
+## Marten de Roon
+- 이동: **Atalanta BC → AS Roma**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434426+00:00
+
+## Jonathan Rowe
+- 이동: **Bologna FC 1909 → Atalanta BC**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434448+00:00
+
+## Yanis Massolin
+- 이동: **FC Internazionale Milano → Cagliari Calcio**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434474+00:00
+
+## Riccardo Ciervo
+- 이동: **US Sassuolo Calcio → Cagliari Calcio**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434480+00:00
+
+## Alieu Fadera
+- 이동: **Como 1907 → Cagliari Calcio**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434484+00:00
+
+## Andrea Pinamonti
+- 이동: **US Sassuolo Calcio → SS Lazio**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434554+00:00
+
+## Ignace Van Der Brempt
+- 이동: **Como 1907 → US Sassuolo Calcio**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434642+00:00
+
+## Noel Törnqvist
+- 이동: **Como 1907 → AC Monza**
+- 리그: 세리에 A
+- 감지 시각: 2026-09-02T18:29:13.434681+00:00
+
+누적 감지 이적: 4032건
