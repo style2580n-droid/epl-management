@@ -3476,7 +3476,7 @@
         }
     },
     "밀월": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -3486,10 +3486,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 145.9,
+            "possession_pct": 192.6,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0
+            "clean_sheet": 4.0
         },
         "per_match": {
             "passes": 0.0,
@@ -3500,7 +3500,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 48.633,
+            "possession_pct": 48.15,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -4523,14 +4523,14 @@
         }
     },
     "웨스트브롬위치 알비온": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 149.6,
+            "possession_pct": 191.3,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0,
+            "clean_sheet": 4.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -4541,7 +4541,7 @@
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 49.867,
+            "possession_pct": 47.825,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
@@ -4554,7 +4554,7 @@
         }
     },
     "번리": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -4564,10 +4564,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 138.5,
+            "possession_pct": 191.8,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0
+            "clean_sheet": 4.0
         },
         "per_match": {
             "passes": 0.0,
@@ -4578,7 +4578,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 46.167,
+            "possession_pct": 47.95,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -7842,14 +7842,14 @@
         }
     },
     "카디프 시티": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 135.6,
+            "possession_pct": 188.9,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0,
+            "clean_sheet": 4.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -7860,7 +7860,7 @@
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 45.2,
+            "possession_pct": 47.225,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
@@ -9930,14 +9930,14 @@
         }
     },
     "미들즈브러": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 139.1,
+            "possession_pct": 185.8,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0,
+            "clean_sheet": 4.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -9948,7 +9948,7 @@
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 46.367,
+            "possession_pct": 46.45,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
@@ -9989,6 +9989,37 @@
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
+        }
+    },
+    "QPR": {
+        "matches": 4,
+        "totals": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 206.7,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 4.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
+        },
+        "per_match": {
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 51.675,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0,
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0
         }
     },
     "Ceará": {
@@ -11606,6 +11637,37 @@
             "clean_sheet": 1.0
         }
     },
+    "찰턴 애슬레틱": {
+        "matches": 4,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 220.4,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 4.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 55.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "스파르타 로테르담": {
         "matches": 4,
         "totals": {
@@ -11743,37 +11805,6 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0
-        }
-    },
-    "찰턴 애슬레틱": {
-        "matches": 3,
-        "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 162.1,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0
-        },
-        "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 54.033,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
         }
     },
     "Crystal Palace": {
@@ -12695,37 +12726,6 @@
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
-        }
-    },
-    "QPR": {
-        "matches": 3,
-        "totals": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 160.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0,
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0
-        },
-        "per_match": {
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 53.333,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0,
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0
         }
     },
     "볼턴 원더러스": {
@@ -14137,7 +14137,7 @@
         }
     },
     "렉섬": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -14147,10 +14147,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 154.2,
+            "possession_pct": 207.5,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0
+            "clean_sheet": 4.0
         },
         "per_match": {
             "passes": 0.0,
@@ -14161,7 +14161,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 51.4,
+            "possession_pct": 51.875,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0

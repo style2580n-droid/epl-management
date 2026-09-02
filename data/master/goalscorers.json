@@ -24670,6 +24670,128 @@
  ],
  "championship": [
   {
+   "home": "번리",
+   "away": "미들즈브러",
+   "date": "2026-09-03",
+   "eid": 214021,
+   "goals": [
+    {
+     "scorer": "U. Raghouber",
+     "assist": "Z. Amdouni",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Morris",
+     "assist": "S. Berhalter",
+     "team": null,
+     "is_home": false,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "웨스트브롬위치 알비온",
+   "away": "찰턴 애슬레틱",
+   "date": "2026-09-03",
+   "eid": 214020,
+   "goals": [
+    {
+     "scorer": "T. Campbell",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Styles",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "QPR",
+   "away": "카디프 시티",
+   "date": "2026-09-03",
+   "eid": 214019,
+   "goals": [
+    {
+     "scorer": "P. Ng",
+     "assist": "O. Tanner",
+     "team": null,
+     "is_home": false,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Burrell",
+     "assist": "R. Edwards",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Burrell",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "밀월",
+   "away": "렉섬",
+   "date": "2026-09-03",
+   "eid": 214018,
+   "goals": [
+    {
+     "scorer": "J. Ekomie",
+     "assist": "D. Imray",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Moore",
+     "assist": "J. Windass",
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Z. Sturge",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 28,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "스토크 시티",
    "away": "노리치 시티",
    "date": "2026-09-02",
