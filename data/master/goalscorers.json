@@ -26246,6 +26246,23 @@
  ],
  "ligue1": [
   {
+   "home": "툴루즈",
+   "away": "릴OSC",
+   "date": "2026-09-04",
+   "eid": 210462,
+   "goals": [
+    {
+     "scorer": "A. Ueda",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "AS 모나코",
    "away": "올랭피크 마르세유",
    "date": "2026-08-31",
@@ -34491,6 +34508,14 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레알 소시에다드",
+   "away": "셀타 비고",
+   "date": "2026-09-04",
+   "eid": 213579,
+   "goals": [],
+   "nil": true
+  },
   {
    "home": "바르셀로나",
    "away": "라요 바예카노",
