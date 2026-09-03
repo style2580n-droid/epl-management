@@ -5218,7 +5218,7 @@
    "home": "라싱 스트라스부르",
    "away": "AJ 오세르",
    "date": "2026-11-01",
-   "time": "05:00",
+   "time": "23:00",
    "id": 210516,
    "friendly": false
   },
@@ -5239,75 +5239,75 @@
    "friendly": false
   },
   {
-   "home": "RC 랑스",
-   "away": "올랭피크 마르세유",
-   "date": "2026-11-08",
-   "time": "04:45",
-   "id": 210523,
-   "friendly": false
-  },
-  {
    "home": "툴루즈",
    "away": "라싱 스트라스부르",
-   "date": "2026-11-08",
-   "time": "05:00",
+   "date": "2026-11-07",
+   "time": "04:45",
    "id": 210526,
-   "friendly": false
-  },
-  {
-   "home": "스타드 렌",
-   "away": "릴OSC",
-   "date": "2026-11-08",
-   "time": "05:00",
-   "id": 210525,
-   "friendly": false
-  },
-  {
-   "home": "스타드 브레스투아29",
-   "away": "올랭피크 리옹",
-   "date": "2026-11-08",
-   "time": "05:00",
-   "id": 210524,
-   "friendly": false
-  },
-  {
-   "home": "파리 생제르맹",
-   "away": "ESTAC 트루아",
-   "date": "2026-11-08",
-   "time": "05:00",
-   "id": 210522,
-   "friendly": false
-  },
-  {
-   "home": "르망FC",
-   "away": "AS 모나코",
-   "date": "2026-11-08",
-   "time": "05:00",
-   "id": 210521,
-   "friendly": false
-  },
-  {
-   "home": "르아브르AC",
-   "away": "FC 로리앙",
-   "date": "2026-11-08",
-   "time": "05:00",
-   "id": 210520,
    "friendly": false
   },
   {
    "home": "AJ 오세르",
    "away": "파리 FC",
    "date": "2026-11-08",
-   "time": "05:00",
+   "time": "01:15",
    "id": 210519,
+   "friendly": false
+  },
+  {
+   "home": "파리 생제르맹",
+   "away": "ESTAC 트루아",
+   "date": "2026-11-08",
+   "time": "04:45",
+   "id": 210522,
+   "friendly": false
+  },
+  {
+   "home": "스타드 렌",
+   "away": "릴OSC",
+   "date": "2026-11-08",
+   "time": "23:00",
+   "id": 210525,
+   "friendly": false
+  },
+  {
+   "home": "스타드 브레스투아29",
+   "away": "올랭피크 리옹",
+   "date": "2026-11-09",
+   "time": "01:15",
+   "id": 210524,
+   "friendly": false
+  },
+  {
+   "home": "르망FC",
+   "away": "AS 모나코",
+   "date": "2026-11-09",
+   "time": "01:15",
+   "id": 210521,
+   "friendly": false
+  },
+  {
+   "home": "르아브르AC",
+   "away": "FC 로리앙",
+   "date": "2026-11-09",
+   "time": "01:15",
+   "id": 210520,
    "friendly": false
   },
   {
    "home": "앙제SCO",
    "away": "OGC 니스",
-   "date": "2026-11-08",
-   "time": "05:00",
+   "date": "2026-11-09",
+   "time": "01:15",
    "id": 210518,
+   "friendly": false
+  },
+  {
+   "home": "RC 랑스",
+   "away": "올랭피크 마르세유",
+   "date": "2026-11-09",
+   "time": "04:45",
+   "id": 210523,
    "friendly": false
   },
   {
@@ -9981,27 +9981,11 @@
    "friendly": false
   },
   {
-   "home": "사수올로",
-   "away": "AC밀란",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "id": 210115,
-   "friendly": false
-  },
-  {
    "home": "나폴리",
    "away": "프로시노네",
    "date": "2026-10-10",
    "time": "22:00",
    "id": 210114,
-   "friendly": false
-  },
-  {
-   "home": "레체",
-   "away": "볼로냐",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "id": 210113,
    "friendly": false
   },
   {
@@ -10029,27 +10013,43 @@
    "friendly": false
   },
   {
-   "home": "코모",
-   "away": "AS로마",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "id": 210109,
-   "friendly": false
-  },
-  {
-   "home": "칼리아리",
-   "away": "유벤투스",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "id": 210108,
-   "friendly": false
-  },
-  {
    "home": "아탈란타",
    "away": "베네치아",
    "date": "2026-10-10",
    "time": "22:00",
    "id": 210107,
+   "friendly": false
+  },
+  {
+   "home": "코모",
+   "away": "AS로마",
+   "date": "2026-10-11",
+   "time": "19:30",
+   "id": 210109,
+   "friendly": false
+  },
+  {
+   "home": "레체",
+   "away": "볼로냐",
+   "date": "2026-10-11",
+   "time": "22:00",
+   "id": 210113,
+   "friendly": false
+  },
+  {
+   "home": "사수올로",
+   "away": "AC밀란",
+   "date": "2026-10-12",
+   "time": "01:00",
+   "id": 210115,
+   "friendly": false
+  },
+  {
+   "home": "칼리아리",
+   "away": "유벤투스",
+   "date": "2026-10-12",
+   "time": "03:45",
+   "id": 210108,
    "friendly": false
   },
   {
@@ -10127,8 +10127,8 @@
   {
    "home": "AC밀란",
    "away": "아탈란타",
-   "date": "2026-10-17",
-   "time": "22:00",
+   "date": "2026-10-19",
+   "time": "01:00",
    "id": 210117,
    "friendly": false
   },
@@ -10181,14 +10181,6 @@
    "friendly": false
   },
   {
-   "home": "제노아",
-   "away": "베네치아",
-   "date": "2026-10-24",
-   "time": "22:00",
-   "id": 210130,
-   "friendly": false
-  },
-  {
    "home": "코모",
    "away": "사수올로",
    "date": "2026-10-24",
@@ -10205,10 +10197,18 @@
    "friendly": false
   },
   {
+   "home": "제노아",
+   "away": "베네치아",
+   "date": "2026-10-25",
+   "time": "23:00",
+   "id": 210130,
+   "friendly": false
+  },
+  {
    "home": "아탈란타",
    "away": "프로시노네",
-   "date": "2026-10-24",
-   "time": "22:00",
+   "date": "2026-10-25",
+   "time": "23:00",
    "id": 210127,
    "friendly": false
   },
