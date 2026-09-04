@@ -5315,16 +5315,24 @@
   {
    "home": "ESTAC 트루아",
    "away": "르아브르AC",
-   "date": "2026-11-22",
-   "time": "05:00",
+   "date": "2026-11-21",
+   "time": "04:45",
    "id": 210535,
+   "friendly": false
+  },
+  {
+   "home": "OGC 니스",
+   "away": "파리 생제르맹",
+   "date": "2026-11-22",
+   "time": "01:15",
+   "id": 210530,
    "friendly": false
   },
   {
    "home": "라싱 스트라스부르",
    "away": "스타드 브레스투아29",
    "date": "2026-11-22",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210534,
    "friendly": false
   },
@@ -5332,47 +5340,15 @@
    "home": "RC 랑스",
    "away": "툴루즈",
    "date": "2026-11-22",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210533,
-   "friendly": false
-  },
-  {
-   "home": "파리 FC",
-   "away": "앙제SCO",
-   "date": "2026-11-22",
-   "time": "05:00",
-   "id": 210532,
-   "friendly": false
-  },
-  {
-   "home": "올랭피크 마르세유",
-   "away": "르망FC",
-   "date": "2026-11-22",
-   "time": "05:00",
-   "id": 210531,
-   "friendly": false
-  },
-  {
-   "home": "OGC 니스",
-   "away": "파리 생제르맹",
-   "date": "2026-11-22",
-   "time": "05:00",
-   "id": 210530,
-   "friendly": false
-  },
-  {
-   "home": "FC 로리앙",
-   "away": "스타드 렌",
-   "date": "2026-11-22",
-   "time": "05:00",
-   "id": 210529,
    "friendly": false
   },
   {
    "home": "릴OSC",
    "away": "올랭피크 리옹",
    "date": "2026-11-22",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210528,
    "friendly": false
   },
@@ -5380,47 +5356,63 @@
    "home": "AS 모나코",
    "away": "AJ 오세르",
    "date": "2026-11-22",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210527,
    "friendly": false
   },
   {
-   "home": "툴루즈",
+   "home": "파리 FC",
+   "away": "앙제SCO",
+   "date": "2026-11-22",
+   "time": "23:00",
+   "id": 210532,
+   "friendly": false
+  },
+  {
+   "home": "FC 로리앙",
    "away": "스타드 렌",
-   "date": "2026-11-29",
-   "time": "05:00",
-   "id": 210544,
+   "date": "2026-11-23",
+   "time": "01:15",
+   "id": 210529,
+   "friendly": false
+  },
+  {
+   "home": "올랭피크 마르세유",
+   "away": "르망FC",
+   "date": "2026-11-23",
+   "time": "04:45",
+   "id": 210531,
    "friendly": false
   },
   {
    "home": "스타드 브레스투아29",
    "away": "파리 FC",
-   "date": "2026-11-29",
-   "time": "05:00",
+   "date": "2026-11-28",
+   "time": "04:45",
    "id": 210543,
+   "friendly": false
+  },
+  {
+   "home": "앙제SCO",
+   "away": "RC 랑스",
+   "date": "2026-11-29",
+   "time": "01:15",
+   "id": 210536,
    "friendly": false
   },
   {
    "home": "파리 생제르맹",
    "away": "FC 로리앙",
    "date": "2026-11-29",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210542,
-   "friendly": false
-  },
-  {
-   "home": "올랭피크 리옹",
-   "away": "AS 모나코",
-   "date": "2026-11-29",
-   "time": "05:00",
-   "id": 210541,
    "friendly": false
   },
   {
    "home": "OGC 니스",
    "away": "ESTAC 트루아",
    "date": "2026-11-29",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210540,
    "friendly": false
   },
@@ -5428,7 +5420,7 @@
    "home": "르망FC",
    "away": "릴OSC",
    "date": "2026-11-29",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210539,
    "friendly": false
   },
@@ -5436,7 +5428,7 @@
    "home": "르아브르AC",
    "away": "라싱 스트라스부르",
    "date": "2026-11-29",
-   "time": "05:00",
+   "time": "04:45",
    "id": 210538,
    "friendly": false
   },
@@ -5444,16 +5436,24 @@
    "home": "AJ 오세르",
    "away": "올랭피크 마르세유",
    "date": "2026-11-29",
-   "time": "05:00",
+   "time": "23:00",
    "id": 210537,
    "friendly": false
   },
   {
-   "home": "앙제SCO",
-   "away": "RC 랑스",
-   "date": "2026-11-29",
-   "time": "05:00",
-   "id": 210536,
+   "home": "툴루즈",
+   "away": "스타드 렌",
+   "date": "2026-11-30",
+   "time": "01:15",
+   "id": 210544,
+   "friendly": false
+  },
+  {
+   "home": "올랭피크 리옹",
+   "away": "AS 모나코",
+   "date": "2026-11-30",
+   "time": "04:45",
+   "id": 210541,
    "friendly": false
   },
   {
