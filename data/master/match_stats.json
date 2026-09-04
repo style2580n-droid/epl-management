@@ -97423,5 +97423,60 @@
             }
         ],
         "collected_at": "2026-09-04T07:48:03.151631+00:00"
+    },
+    "1392776318": {
+        "match": {
+            "id": 1392776318,
+            "round": "Regular Season - 22",
+            "date": "2026-09-04T22:00:00.000Z",
+            "country": {
+                "code": "PY",
+                "name": "Paraguay",
+                "logo": "https://highlightly.net/soccer/images/countries/PY.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1820222,
+                "logo": "https://highlightly.net/soccer/images/teams/1820222.png",
+                "name": "Guairena FC"
+            },
+            "homeTeam": {
+                "id": 1817669,
+                "logo": "https://highlightly.net/soccer/images/teams/1817669.png",
+                "name": "Resistencia SC"
+            },
+            "league": {
+                "id": 214385,
+                "logo": "https://highlightly.net/soccer/images/leagues/214385.png",
+                "name": "Division Intermedia",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1817669,
+                    "logo": "https://highlightly.net/soccer/images/teams/1817669.png",
+                    "name": "Resistencia SC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1820222,
+                    "logo": "https://highlightly.net/soccer/images/teams/1820222.png",
+                    "name": "Guairena FC"
+                }
+            }
+        ],
+        "collected_at": "2026-09-04T13:14:32.734037+00:00"
     }
 }
