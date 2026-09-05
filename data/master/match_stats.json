@@ -99659,5 +99659,115 @@
             }
         ],
         "collected_at": "2026-09-05T07:30:08.532732+00:00"
+    },
+    "1271376062": {
+        "match": {
+            "id": 1271376062,
+            "round": "Group Stage",
+            "date": "2026-09-05T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 7681910,
+                "logo": "https://highlightly.net/soccer/images/teams/7681910.png",
+                "name": "Greenville Triumph"
+            },
+            "homeTeam": {
+                "id": 7673400,
+                "logo": "https://highlightly.net/soccer/images/teams/7673400.png",
+                "name": "Chattanooga Red Wolves"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7673400,
+                    "logo": "https://highlightly.net/soccer/images/teams/7673400.png",
+                    "name": "Chattanooga Red Wolves"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7681910,
+                    "logo": "https://highlightly.net/soccer/images/teams/7681910.png",
+                    "name": "Greenville Triumph"
+                }
+            }
+        ],
+        "collected_at": "2026-09-05T12:28:51.872254+00:00"
+    },
+    "1318603158": {
+        "match": {
+            "id": 1318603158,
+            "round": "Clausura - 8",
+            "date": "2026-09-05T23:00:00.000Z",
+            "country": {
+                "code": "PE",
+                "name": "Peru",
+                "logo": "https://highlightly.net/soccer/images/countries/PE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 19138923,
+                "logo": null,
+                "name": "UCV Moquegua"
+            },
+            "homeTeam": {
+                "id": 8521847,
+                "logo": "https://highlightly.net/soccer/images/teams/8521847.png",
+                "name": "Cusco"
+            },
+            "league": {
+                "id": 239915,
+                "logo": "https://highlightly.net/soccer/images/leagues/239915.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8521847,
+                    "logo": "https://highlightly.net/soccer/images/teams/8521847.png",
+                    "name": "Cusco"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19138923,
+                    "logo": null,
+                    "name": "UCV Moquegua"
+                }
+            }
+        ],
+        "collected_at": "2026-09-05T12:28:52.420869+00:00"
     }
 }
