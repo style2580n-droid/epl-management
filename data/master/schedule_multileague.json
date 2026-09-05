@@ -486,7 +486,9 @@
    "date": "2026-09-05",
    "time": "20:30",
    "id": 214024,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 0
   },
   {
    "home": "프레스턴 노스엔드",
@@ -494,7 +496,9 @@
    "date": "2026-09-05",
    "time": "20:30",
    "id": 214023,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "링컨 시티",
@@ -502,7 +506,9 @@
    "date": "2026-09-05",
    "time": "20:30",
    "id": 214022,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "웨스트햄 유나이티드",
@@ -510,7 +516,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214031,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "웨스트브롬위치 알비온",
@@ -518,7 +526,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214030,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "셰필드 유나이티드",
@@ -526,7 +536,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214029,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "QPR",
@@ -534,7 +546,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214028,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "포츠머스",
@@ -542,7 +556,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214027,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "밀월",
@@ -550,7 +566,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214026,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 0
   },
   {
    "home": "번리",
@@ -558,7 +576,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 214025,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "스완지 시티",
@@ -4770,7 +4790,9 @@
    "date": "2026-09-06",
    "time": "00:15",
    "id": 210461,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "OGC 니스",
@@ -7176,7 +7198,9 @@
    "date": "2026-09-05",
    "time": "22:30",
    "id": 213684,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 3
   },
   {
    "home": "베르더 브레멘",
@@ -7184,7 +7208,9 @@
    "date": "2026-09-05",
    "time": "22:30",
    "id": 213683,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "SC 파더보른07",
@@ -7192,7 +7218,9 @@
    "date": "2026-09-05",
    "time": "22:30",
    "id": 213682,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "보루시아 묀헨글라드바흐",
@@ -7200,7 +7228,9 @@
    "date": "2026-09-05",
    "time": "22:30",
    "id": 213678,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 4
   },
   {
    "home": "바이어 레버쿠젠",
@@ -7208,7 +7238,9 @@
    "date": "2026-09-05",
    "time": "22:30",
    "id": 213677,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 0
   },
   {
    "home": "샬케04",
@@ -9756,7 +9788,9 @@
    "date": "2026-09-05",
    "time": "22:00",
    "id": 210080,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "인테르",
@@ -9983,14 +10017,6 @@
    "friendly": false
   },
   {
-   "home": "토리노",
-   "away": "우디네세",
-   "date": "2026-10-10",
-   "time": "22:00",
-   "id": 210116,
-   "friendly": false
-  },
-  {
    "home": "나폴리",
    "away": "프로시노네",
    "date": "2026-10-10",
@@ -10060,6 +10086,14 @@
    "date": "2026-10-12",
    "time": "03:45",
    "id": 210108,
+   "friendly": false
+  },
+  {
+   "home": "토리노",
+   "away": "우디네세",
+   "date": "2026-10-13",
+   "time": "03:45",
+   "id": 210116,
    "friendly": false
   },
   {
@@ -12978,7 +13012,9 @@
    "date": "2026-09-05",
    "time": "23:30",
    "id": 210836,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "FC 위트레흐트",
@@ -16754,7 +16790,9 @@
    "date": "2026-09-05",
    "time": "23:00",
    "id": 207064,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 0
   },
   {
    "home": "브란",
@@ -17836,7 +17874,9 @@
    "date": "2026-09-05",
    "time": "23:15",
    "id": 213550,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "라요 바예카노",
