@@ -98708,7 +98708,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 3422655,
                     "logo": "https://highlightly.net/soccer/images/teams/3422655.png",
@@ -98716,7 +98725,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 23192236,
                     "logo": null,
@@ -98724,7 +98742,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-05T07:29:53.453336+00:00"
+        "collected_at": "2026-09-05T22:42:20.631290+00:00"
     },
     "1271378615": {
         "match": {
@@ -99397,44 +99415,52 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Shots accuracy"
+                        "displayName": "Big Chances Created",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Shots accuracy",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Blocked shots"
+                        "displayName": "Shots off target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Total passes"
+                        "displayName": "Blocked shots",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Goalkeeper saves"
+                        "displayName": "Total passes",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Fouls"
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -99446,44 +99472,52 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Shots accuracy"
+                        "displayName": "Big Chances Created",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Shots accuracy",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Blocked shots"
+                        "displayName": "Shots off target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Total passes"
+                        "displayName": "Blocked shots",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Goalkeeper saves"
+                        "displayName": "Total passes",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Fouls"
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -99493,7 +99527,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-05T17:13:05.316091+00:00"
+        "collected_at": "2026-09-05T22:42:22.292492+00:00"
     },
     "1305507970": {
         "match": {
@@ -99807,7 +99841,56 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1969998,
                     "logo": "https://highlightly.net/soccer/images/teams/1969998.png",
@@ -99815,7 +99898,56 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1939362,
                     "logo": "https://highlightly.net/soccer/images/teams/1939362.png",
@@ -99823,7 +99955,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-05T17:13:15.801957+00:00"
+        "collected_at": "2026-09-05T22:42:22.804295+00:00"
     },
     "1319860085": {
         "match": {

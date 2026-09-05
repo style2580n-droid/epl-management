@@ -586,7 +586,9 @@
    "date": "2026-09-06",
    "time": "04:00",
    "id": 214032,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
   },
   {
    "home": "버밍엄 시티",
@@ -4800,7 +4802,9 @@
    "date": "2026-09-06",
    "time": "03:45",
    "id": 210457,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "르아브르AC",
@@ -4808,7 +4812,9 @@
    "date": "2026-09-06",
    "time": "03:45",
    "id": 210456,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "ESTAC 트루아",
@@ -7248,7 +7254,9 @@
    "date": "2026-09-06",
    "time": "01:30",
    "id": 213680,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
   },
   {
    "home": "함부르크SV",
@@ -8059,6 +8067,14 @@
    "friendly": false
   },
   {
+   "home": "SV 엘버스베르크",
+   "away": "함부르크SV",
+   "date": "2026-12-19",
+   "time": "19:00",
+   "id": 213793,
+   "friendly": false
+  },
+  {
    "home": "SC 프라이부르크",
    "away": "VfB 슈투트가르트",
    "date": "2026-12-19",
@@ -8072,6 +8088,14 @@
    "date": "2026-12-19",
    "time": "19:00",
    "id": 213791,
+   "friendly": false
+  },
+  {
+   "home": "샬케04",
+   "away": "보루시아 묀헨글라드바흐",
+   "date": "2026-12-19",
+   "time": "19:00",
+   "id": 213790,
    "friendly": false
   },
   {
@@ -8099,26 +8123,10 @@
    "friendly": false
   },
   {
-   "home": "SV 엘버스베르크",
-   "away": "함부르크SV",
-   "date": "2026-12-19",
-   "time": "23:30",
-   "id": 213793,
-   "friendly": false
-  },
-  {
-   "home": "샬케04",
-   "away": "보루시아 묀헨글라드바흐",
-   "date": "2026-12-19",
-   "time": "23:30",
-   "id": 213790,
-   "friendly": false
-  },
-  {
    "home": "1.FSV 마인츠05",
    "away": "1.FC 쾰른",
    "date": "2026-12-19",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213786,
    "friendly": false
   },
@@ -8126,7 +8134,7 @@
    "home": "우니온 베를린",
    "away": "TSG 호펜하임",
    "date": "2026-12-19",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213785,
    "friendly": false
   },
@@ -8571,11 +8579,35 @@
    "friendly": false
   },
   {
+   "home": "SV 엘버스베르크",
+   "away": "샬케04",
+   "date": "2027-02-13",
+   "time": "19:00",
+   "id": 213855,
+   "friendly": false
+  },
+  {
+   "home": "SC 프라이부르크",
+   "away": "아인트라흐트 프랑크푸르트",
+   "date": "2027-02-13",
+   "time": "19:00",
+   "id": 213854,
+   "friendly": false
+  },
+  {
    "home": "RB 라이프치히",
    "away": "바이어 레버쿠젠",
    "date": "2027-02-13",
    "time": "19:00",
    "id": 213853,
+   "friendly": false
+  },
+  {
+   "home": "FC 아우크스부르크",
+   "away": "베르더 브레멘",
+   "date": "2027-02-13",
+   "time": "19:00",
+   "id": 213852,
    "friendly": false
   },
   {
@@ -8587,34 +8619,10 @@
    "friendly": false
   },
   {
-   "home": "SV 엘버스베르크",
-   "away": "샬케04",
-   "date": "2027-02-13",
-   "time": "23:30",
-   "id": 213855,
-   "friendly": false
-  },
-  {
-   "home": "SC 프라이부르크",
-   "away": "아인트라흐트 프랑크푸르트",
-   "date": "2027-02-13",
-   "time": "23:30",
-   "id": 213854,
-   "friendly": false
-  },
-  {
-   "home": "FC 아우크스부르크",
-   "away": "베르더 브레멘",
-   "date": "2027-02-13",
-   "time": "23:30",
-   "id": 213852,
-   "friendly": false
-  },
-  {
    "home": "1.FSV 마인츠05",
    "away": "보루시아 묀헨글라드바흐",
    "date": "2027-02-13",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213850,
    "friendly": false
   },
@@ -8622,7 +8630,7 @@
    "home": "우니온 베를린",
    "away": "바이에른 뮌헨",
    "date": "2027-02-13",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213849,
    "friendly": false
   },
@@ -8630,8 +8638,16 @@
    "home": "1.FC 쾰른",
    "away": "함부르크SV",
    "date": "2027-02-13",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213848,
+   "friendly": false
+  },
+  {
+   "home": "VfB 슈투트가르트",
+   "away": "SC 파더보른07",
+   "date": "2027-02-20",
+   "time": "19:00",
+   "id": 213865,
    "friendly": false
   },
   {
@@ -8667,6 +8683,22 @@
    "friendly": false
   },
   {
+   "home": "바이에른 뮌헨",
+   "away": "FC 아우크스부르크",
+   "date": "2027-02-20",
+   "time": "19:00",
+   "id": 213860,
+   "friendly": false
+  },
+  {
+   "home": "아인트라흐트 프랑크푸르트",
+   "away": "RB 라이프치히",
+   "date": "2027-02-20",
+   "time": "19:00",
+   "id": 213859,
+   "friendly": false
+  },
+  {
    "home": "보루시아 묀헨글라드바흐",
    "away": "1.FC 쾰른",
    "date": "2027-02-20",
@@ -8675,34 +8707,10 @@
    "friendly": false
   },
   {
-   "home": "VfB 슈투트가르트",
-   "away": "SC 파더보른07",
-   "date": "2027-02-20",
-   "time": "23:30",
-   "id": 213865,
-   "friendly": false
-  },
-  {
-   "home": "바이에른 뮌헨",
-   "away": "FC 아우크스부르크",
-   "date": "2027-02-20",
-   "time": "23:30",
-   "id": 213860,
-   "friendly": false
-  },
-  {
-   "home": "아인트라흐트 프랑크푸르트",
-   "away": "RB 라이프치히",
-   "date": "2027-02-20",
-   "time": "23:30",
-   "id": 213859,
-   "friendly": false
-  },
-  {
    "home": "바이어 레버쿠젠",
    "away": "1.FSV 마인츠05",
    "date": "2027-02-20",
-   "time": "23:30",
+   "time": "19:00",
    "id": 213857,
    "friendly": false
   },
@@ -9363,6 +9371,14 @@
    "friendly": false
   },
   {
+   "home": "SC 프라이부르크",
+   "away": "1.FC 쾰른",
+   "date": "2027-05-08",
+   "time": "19:00",
+   "id": 213954,
+   "friendly": false
+  },
+  {
    "home": "RB 라이프치히",
    "away": "SC 파더보른07",
    "date": "2027-05-08",
@@ -9387,6 +9403,14 @@
    "friendly": false
   },
   {
+   "home": "FC 아우크스부르크",
+   "away": "VfB 슈투트가르트",
+   "date": "2027-05-08",
+   "time": "19:00",
+   "id": 213950,
+   "friendly": false
+  },
+  {
    "home": "바이어 레버쿠젠",
    "away": "함부르크SV",
    "date": "2027-05-08",
@@ -9395,26 +9419,10 @@
    "friendly": false
   },
   {
-   "home": "SC 프라이부르크",
-   "away": "1.FC 쾰른",
-   "date": "2027-05-08",
-   "time": "22:30",
-   "id": 213954,
-   "friendly": false
-  },
-  {
-   "home": "FC 아우크스부르크",
-   "away": "VfB 슈투트가르트",
-   "date": "2027-05-08",
-   "time": "22:30",
-   "id": 213950,
-   "friendly": false
-  },
-  {
    "home": "1.FSV 마인츠05",
    "away": "보루시아 도르트문트",
    "date": "2027-05-08",
-   "time": "22:30",
+   "time": "19:00",
    "id": 213948,
    "friendly": false
   },
@@ -9798,7 +9806,9 @@
    "date": "2026-09-06",
    "time": "01:00",
    "id": 210083,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "AS로마",
@@ -9806,7 +9816,9 @@
    "date": "2026-09-06",
    "time": "03:45",
    "id": 210077,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "파르마",
@@ -13030,7 +13042,9 @@
    "date": "2026-09-06",
    "time": "03:00",
    "id": 210838,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "빌럼II",
@@ -13038,7 +13052,9 @@
    "date": "2026-09-06",
    "time": "04:00",
    "id": 210839,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 3
   },
   {
    "home": "FC 흐로닝언",
@@ -16800,7 +16816,9 @@
    "date": "2026-09-06",
    "time": "01:00",
    "id": 207065,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "사르프스보르그 08",
@@ -17884,7 +17902,9 @@
    "date": "2026-09-06",
    "time": "01:30",
    "id": 213556,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 2
   },
   {
    "home": "비야레알",
@@ -17892,7 +17912,9 @@
    "date": "2026-09-06",
    "time": "04:00",
    "id": 213559,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 3
   },
   {
    "home": "발렌시아",
