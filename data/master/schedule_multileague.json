@@ -24016,7 +24016,9 @@
    "date": "2026-09-06",
    "time": "08:30",
    "id": 5251,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
   },
   {
    "home": "토론토 FC",
@@ -24024,7 +24026,9 @@
    "date": "2026-09-06",
    "time": "08:30",
    "id": 5250,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 4,
+   "awayGoals": 4
   },
   {
    "home": "콜럼버스 크루",
@@ -24032,7 +24036,9 @@
    "date": "2026-09-06",
    "time": "08:30",
    "id": 5249,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "올랜도 시티",
@@ -24040,7 +24046,9 @@
    "date": "2026-09-06",
    "time": "08:30",
    "id": 5248,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "FC 신시내티",
@@ -24056,15 +24064,9 @@
    "date": "2026-09-06",
    "time": "08:30",
    "id": 5246,
-   "friendly": false
-  },
-  {
-   "home": "인터 마이애미",
-   "away": "애틀랜타 유나이티드",
-   "date": "2026-09-06",
-   "time": "08:30",
-   "id": 5245,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "오스틴 FC",
@@ -24072,7 +24074,9 @@
    "date": "2026-09-06",
    "time": "09:30",
    "id": 5254,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "FC 댈러스",
@@ -24080,7 +24084,9 @@
    "date": "2026-09-06",
    "time": "09:30",
    "id": 5253,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 5,
+   "awayGoals": 3
   },
   {
    "home": "시애틀 사운더스",
@@ -24088,7 +24094,19 @@
    "date": "2026-09-06",
    "time": "09:30",
    "id": 5252,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "애틀랜타 유나이티드",
+   "date": "2026-09-06",
+   "time": "10:05",
+   "id": 5245,
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "LA 갤럭시",
@@ -24096,7 +24114,9 @@
    "date": "2026-09-06",
    "time": "10:30",
    "id": 5256,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "리얼 솔트레이크",
@@ -24104,7 +24124,9 @@
    "date": "2026-09-06",
    "time": "10:30",
    "id": 5255,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "포틀랜드 팀버스",
@@ -24112,7 +24134,9 @@
    "date": "2026-09-06",
    "time": "11:30",
    "id": 5258,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 5,
+   "awayGoals": 4
   },
   {
    "home": "밴쿠버 화이트캡스",
@@ -24120,7 +24144,9 @@
    "date": "2026-09-06",
    "time": "11:30",
    "id": 5257,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "CF 몬트리올",
@@ -24158,7 +24184,7 @@
    "home": "필라델피아 유니온",
    "away": "FC 신시내티",
    "date": "2026-09-10",
-   "time": "08:30",
+   "time": "08:45",
    "id": 5259,
    "friendly": false
   },
