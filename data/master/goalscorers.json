@@ -26908,6 +26908,59 @@
  ],
  "ligue1": [
   {
+   "home": "올랭피크 마르세유",
+   "away": "파리 FC",
+   "date": "2026-09-07",
+   "eid": 210459,
+   "goals": [
+    {
+     "scorer": "L. Sinayoko",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Gouiri",
+     "assist": "A. Harit",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Sinayoko",
+     "assist": "P. Pagis",
+     "team": null,
+     "is_home": false,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Gouiri",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Sinayoko",
+     "assist": "L. Koleosho",
+     "team": null,
+     "is_home": false,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "앙제SCO",
    "away": "스타드 렌",
    "date": "2026-09-07",
@@ -28613,6 +28666,76 @@
   }
  ],
  "seriea": [
+  {
+   "home": "유벤투스",
+   "away": "AC밀란",
+   "date": "2026-09-07",
+   "eid": 210084,
+   "goals": [
+    {
+     "scorer": "F. Gatti",
+     "assist": "T. Koopmeiners",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Cissè",
+     "assist": "S. Chukwueze",
+     "team": null,
+     "is_home": false,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "볼로냐",
+   "away": "사수올로",
+   "date": "2026-09-07",
+   "eid": 210078,
+   "goals": [
+    {
+     "scorer": "A. Dovbyk",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "V. Adžić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Piccoli",
+     "assist": "J. Miranda",
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Doig",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "파르마",
    "away": "몬차",
@@ -31295,6 +31418,32 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "크리스티안순",
+   "away": "트롬쇠",
+   "date": "2026-09-07",
+   "eid": 207062,
+   "goals": [
+    {
+     "scorer": "L. Alvheim",
+     "assist": "W. G. Igor",
+     "team": null,
+     "is_home": true,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Alvheim",
+     "assist": "M. Elvius",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "사르프스보르그 08",
    "away": "발레렝가",
@@ -36690,6 +36839,111 @@
   }
  ],
  "laliga": [
+  {
+   "home": "에스파뇰",
+   "away": "세비야",
+   "date": "2026-09-07",
+   "eid": 213553,
+   "goals": [
+    {
+     "scorer": "M. Fernández",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Stassin",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "말라가",
+   "away": "레반테",
+   "date": "2026-09-07",
+   "eid": 213555,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "알라베스",
+   "away": "오사수나",
+   "date": "2026-09-07",
+   "eid": 213551,
+   "goals": [
+    {
+     "scorer": "P. Ibáñez",
+     "assist": "Á. Pérez",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Boyé",
+     "assist": "Á. Pérez",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Budimir",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Boyé",
+     "assist": "C. Aleñá",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Budimir",
+     "assist": "M. Gómez",
+     "team": null,
+     "is_home": false,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Díaz",
+     "assist": "A. Sivera",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Boyé",
+     "assist": "M. Díaz",
+     "team": null,
+     "is_home": true,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "발렌시아",
    "away": "바르셀로나",
