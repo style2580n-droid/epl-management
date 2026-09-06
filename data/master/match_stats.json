@@ -100353,44 +100353,44 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Shots accuracy",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots accuracy"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     },
                     {
-                        "displayName": "Blocked shots",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Blocked shots"
                     },
                     {
-                        "displayName": "Total passes",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Total passes"
                     },
                     {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Goalkeeper saves"
                     },
                     {
-                        "displayName": "Fouls",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Fouls"
                     }
                 ],
                 "team": {
@@ -100402,44 +100402,44 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Shots accuracy",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots accuracy"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     },
                     {
-                        "displayName": "Blocked shots",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Blocked shots"
                     },
                     {
-                        "displayName": "Total passes",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Total passes"
                     },
                     {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Goalkeeper saves"
                     },
                     {
-                        "displayName": "Fouls",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Fouls"
                     }
                 ],
                 "team": {
@@ -100449,7 +100449,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-06T12:43:23.250123+00:00"
+        "collected_at": "2026-09-06T17:32:19.276206+00:00"
     },
     "1345778141": {
         "match": {
@@ -101494,5 +101494,115 @@
             }
         ],
         "collected_at": "2026-09-06T12:43:29.379944+00:00"
+    },
+    "1393995801": {
+        "match": {
+            "id": 1393995801,
+            "round": "Third place",
+            "date": "2026-09-06T22:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1947021,
+                "logo": "https://highlightly.net/soccer/images/teams/1947021.png",
+                "name": "Club América"
+            },
+            "homeTeam": {
+                "id": 1948723,
+                "logo": "https://highlightly.net/soccer/images/teams/1948723.png",
+                "name": "León FC"
+            },
+            "league": {
+                "id": 657756,
+                "logo": "https://highlightly.net/soccer/images/leagues/657756.png",
+                "name": "Leagues Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1948723,
+                    "logo": "https://highlightly.net/soccer/images/teams/1948723.png",
+                    "name": "León FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1947021,
+                    "logo": "https://highlightly.net/soccer/images/teams/1947021.png",
+                    "name": "Club América"
+                }
+            }
+        ],
+        "collected_at": "2026-09-06T17:32:27.759349+00:00"
+    },
+    "1271381168": {
+        "match": {
+            "id": 1271381168,
+            "round": "Group Stage",
+            "date": "2026-09-06T22:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21691072,
+                "logo": null,
+                "name": "Westchester SC"
+            },
+            "homeTeam": {
+                "id": 21689370,
+                "logo": null,
+                "name": "Portland Hearts of Pine"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21689370,
+                    "logo": null,
+                    "name": "Portland Hearts of Pine"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21691072,
+                    "logo": null,
+                    "name": "Westchester SC"
+                }
+            }
+        ],
+        "collected_at": "2026-09-06T17:32:37.967729+00:00"
     }
 }
