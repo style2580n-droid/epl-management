@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-09-06
 
-생성(UTC): 2026-09-06 07:51
+생성(UTC): 2026-09-06 12:51
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -1207,6 +1207,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 흐로닝언 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 | FC 위트레흐트 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+
+### FC흐로닝언_FC트벤테_210840
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 흐로닝언 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+| FC 트벤테 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 
 ### FC흐로닝언_포르투나시타르드_210826
 
@@ -15928,6 +15935,7 @@
 - **FC위트레흐트_PSV에인트호번_210830**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_shotmap.svg) · [heatmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_shotmap.svg)
 - **FC트벤테_PEC즈볼레_210814**: [heatmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_shotmap.svg) · [heatmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_shotmap.svg)
 - **FC흐로닝언_FC위트레흐트_210805**: [heatmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_shotmap.svg)
+- **FC흐로닝언_FC트벤테_210840**: [heatmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_shotmap.svg)
 - **FC흐로닝언_포르투나시타르드_210826**: [heatmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_shotmap.svg) · [heatmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_heatmap.svg) · [network(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_network.svg) · [shotmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_shotmap.svg)
 - **FFJaro_InterTurku_207271**: [heatmap(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_heatmap.svg) · [network(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_network.svg) · [shotmap(FF Jaro)](viz/FFJaro_InterTurku_207271_FF Jaro_shotmap.svg) · [heatmap(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_heatmap.svg) · [network(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_network.svg) · [shotmap(Inter Turku)](viz/FFJaro_InterTurku_207271_Inter Turku_shotmap.svg)
 - **FFJaro_SJK_207274**: [heatmap(FF Jaro)](viz/FFJaro_SJK_207274_FF Jaro_heatmap.svg) · [network(FF Jaro)](viz/FFJaro_SJK_207274_FF Jaro_network.svg) · [shotmap(FF Jaro)](viz/FFJaro_SJK_207274_FF Jaro_shotmap.svg) · [heatmap(SJK)](viz/FFJaro_SJK_207274_SJK_heatmap.svg) · [network(SJK)](viz/FFJaro_SJK_207274_SJK_network.svg) · [shotmap(SJK)](viz/FFJaro_SJK_207274_SJK_shotmap.svg)
