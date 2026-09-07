@@ -103983,5 +103983,60 @@
             }
         ],
         "collected_at": "2026-09-07T08:01:23.948710+00:00"
+    },
+    "1331207319": {
+        "match": {
+            "id": 1331207319,
+            "round": "Regular Season - 5",
+            "date": "2026-09-07T19:00:00.000Z",
+            "country": {
+                "code": "GB-ENG",
+                "name": "England",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-ENG.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1135167,
+                "logo": "https://highlightly.net/soccer/images/teams/1135167.png",
+                "name": "AFC Wimbledon"
+            },
+            "homeTeam": {
+                "id": 1559816,
+                "logo": "https://highlightly.net/soccer/images/teams/1559816.png",
+                "name": "Bromley"
+            },
+            "league": {
+                "id": 35675,
+                "logo": "https://highlightly.net/soccer/images/leagues/35675.png",
+                "name": "League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1559816,
+                    "logo": "https://highlightly.net/soccer/images/teams/1559816.png",
+                    "name": "Bromley"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1135167,
+                    "logo": "https://highlightly.net/soccer/images/teams/1135167.png",
+                    "name": "AFC Wimbledon"
+                }
+            }
+        ],
+        "collected_at": "2026-09-07T14:53:14.418580+00:00"
     }
 }
