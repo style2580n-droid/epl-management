@@ -28667,6 +28667,41 @@
  ],
  "seriea": [
   {
+   "home": "우디네세",
+   "away": "라치오",
+   "date": "2026-09-08",
+   "eid": 210086,
+   "goals": [
+    {
+     "scorer": "A. Guðmundsson",
+     "assist": "D. Doekhi",
+     "team": null,
+     "is_home": false,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Frattesi",
+     "assist": "M. Zaccagni",
+     "team": null,
+     "is_home": false,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Karlström",
+     "assist": "K. Davis",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "칼리아리",
    "away": "레체",
    "date": "2026-09-08",
@@ -36856,6 +36891,59 @@
   }
  ],
  "laliga": [
+  {
+   "home": "엘체",
+   "away": "레알 소시에다드",
+   "date": "2026-09-08",
+   "eid": 213552,
+   "goals": [
+    {
+     "scorer": "L. Sučić",
+     "assist": "J. Ochieng",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Niño",
+     "assist": "T. Morente",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "other"
+    },
+    {
+     "scorer": "T. Lemar",
+     "assist": "V. Chust",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Y. Herrera",
+     "assist": "J. Ochieng",
+     "team": null,
+     "is_home": false,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Ochieng",
+     "assist": "C. Soler",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "헤타페",
    "away": "셀타 비고",
