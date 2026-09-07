@@ -7083,14 +7083,6 @@
  ],
  "bundesliga": [
   {
-   "home": "1.FC 쾰른",
-   "away": "레알 소시에다드",
-   "date": "2026-08-08",
-   "time": "01:00",
-   "id": 219651,
-   "friendly": true
-  },
-  {
    "home": "베르더 브레멘",
    "away": "SC 파더보른07",
    "date": "2026-08-08",
@@ -17585,14 +17577,6 @@
  ],
  "laliga": [
   {
-   "home": "1.FC 쾰른",
-   "away": "레알 소시에다드",
-   "date": "2026-08-08",
-   "time": "01:00",
-   "id": 219651,
-   "friendly": true
-  },
-  {
    "home": "알라베스",
    "away": "헤타페",
    "date": "2026-08-16",
@@ -24093,14 +24077,6 @@
    "awayGoals": 0
   },
   {
-   "home": "FC 신시내티",
-   "away": "DC 유나이티드",
-   "date": "2026-09-06",
-   "time": "08:30",
-   "id": 5247,
-   "friendly": false
-  },
-  {
    "home": "필라델피아 유니온",
    "away": "CF 몬트리올",
    "date": "2026-09-06",
@@ -24127,7 +24103,7 @@
    "time": "09:30",
    "id": 5253,
    "friendly": false,
-   "homeGoals": 5,
+   "homeGoals": 4,
    "awayGoals": 3
   },
   {
@@ -24169,6 +24145,14 @@
    "friendly": false,
    "homeGoals": 2,
    "awayGoals": 2
+  },
+  {
+   "home": "FC 신시내티",
+   "away": "DC 유나이티드",
+   "date": "2026-09-06",
+   "time": "10:31",
+   "id": 5247,
+   "friendly": false
   },
   {
    "home": "포틀랜드 팀버스",
