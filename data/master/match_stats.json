@@ -103318,28 +103318,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -103351,28 +103351,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -103382,7 +103382,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-07T08:01:17.780154+00:00"
+        "collected_at": "2026-09-07T19:02:24.096787+00:00"
     },
     "1362181166": {
         "match": {
@@ -103643,28 +103643,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -103676,28 +103676,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Red cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Red cards"
                     },
                     {
-                        "displayName": "Yellow cards",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Yellow cards"
                     }
                 ],
                 "team": {
@@ -103707,7 +103707,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-07T08:01:19.546907+00:00"
+        "collected_at": "2026-09-07T19:02:25.058106+00:00"
     },
     "1336382250": {
         "match": {
@@ -103746,7 +103746,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 679031,
                     "logo": "https://highlightly.net/soccer/images/teams/679031.png",
@@ -103754,7 +103763,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 467132,
                     "logo": "https://highlightly.net/soccer/images/teams/467132.png",
@@ -103762,7 +103780,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-07T08:01:19.790879+00:00"
+        "collected_at": "2026-09-07T19:02:25.257084+00:00"
     },
     "1340736817": {
         "match": {
@@ -103966,7 +103984,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 2231255,
                     "logo": "https://highlightly.net/soccer/images/teams/2231255.png",
@@ -103974,7 +104001,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 2229553,
                     "logo": "https://highlightly.net/soccer/images/teams/2229553.png",
@@ -103982,7 +104018,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-07T08:01:23.948710+00:00"
+        "collected_at": "2026-09-07T19:02:25.876683+00:00"
     },
     "1331207319": {
         "match": {
@@ -103995,12 +104031,12 @@
                 "logo": "https://highlightly.net/soccer/images/countries/GB-ENG.svg"
             },
             "state": {
-                "clock": null,
+                "clock": 2,
                 "score": {
-                    "current": null,
+                    "current": "0 - 0",
                     "penalties": null
                 },
-                "description": "Not started"
+                "description": "First half"
             },
             "awayTeam": {
                 "id": 1135167,
@@ -104021,22 +104057,96 @@
         },
         "statistics": [
             {
-                "statistics": [],
                 "team": {
                     "id": 1559816,
                     "logo": "https://highlightly.net/soccer/images/teams/1559816.png",
                     "name": "Bromley"
-                }
+                },
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Corners"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Shots off target"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Red cards"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Shots on target"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Blocked shots"
+                    }
+                ]
             },
             {
-                "statistics": [],
                 "team": {
                     "id": 1135167,
                     "logo": "https://highlightly.net/soccer/images/teams/1135167.png",
                     "name": "AFC Wimbledon"
-                }
+                },
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Corners"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Shots off target"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Red cards"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Shots on target"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Blocked shots"
+                    }
+                ]
             }
         ],
-        "collected_at": "2026-09-07T14:53:14.418580+00:00"
+        "collected_at": "2026-09-07T19:02:26.069536+00:00"
     }
 }

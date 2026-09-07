@@ -28667,6 +28667,23 @@
  ],
  "seriea": [
   {
+   "home": "칼리아리",
+   "away": "레체",
+   "date": "2026-09-08",
+   "eid": 210079,
+   "goals": [
+    {
+     "scorer": "D. Maldini",
+     "assist": "J. Fazzini",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "유벤투스",
    "away": "AC밀란",
    "date": "2026-09-07",
@@ -36839,6 +36856,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "헤타페",
+   "away": "셀타 비고",
+   "date": "2026-09-08",
+   "eid": 213554,
+   "goals": [
+    {
+     "scorer": "C. Starfelt",
+     "assist": "H. González",
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Satriano",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "에스파뇰",
    "away": "세비야",

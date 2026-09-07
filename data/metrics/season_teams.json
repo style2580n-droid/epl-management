@@ -4834,7 +4834,7 @@
         }
     },
     "헤타페": {
-        "matches": 3,
+        "matches": 4,
         "totals": {
             "passes": 0.0,
             "xG": 0.0,
@@ -4844,10 +4844,10 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 130.7,
+            "possession_pct": 183.6,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 3.0
+            "clean_sheet": 4.0
         },
         "per_match": {
             "passes": 0.0,
@@ -4858,7 +4858,7 @@
             "passes_into_final_third": 0.0,
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 43.567,
+            "possession_pct": 45.9,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0
@@ -7917,14 +7917,14 @@
         }
     },
     "레체": {
-        "matches": 2,
+        "matches": 3,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 100.0,
+            "possession_pct": 153.3,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0,
+            "clean_sheet": 3.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -7935,7 +7935,7 @@
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 50.0,
+            "possession_pct": 51.1,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
@@ -9444,6 +9444,37 @@
             "clean_sheet": 1.0
         }
     },
+    "셀타 비고": {
+        "matches": 5,
+        "totals": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 234.1,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 5.0
+        },
+        "per_match": {
+            "passes": 0.0,
+            "xG": 0.0,
+            "goals": 0.0,
+            "passes_own40": 0.0,
+            "shots_on_target": 0.0,
+            "passes_into_final_third": 0.0,
+            "buildup_attempts": 0.0,
+            "counter_attacks": 0.0,
+            "possession_pct": 46.82,
+            "xGA": 0.0,
+            "goals_minus_xG": 0.0,
+            "clean_sheet": 1.0
+        }
+    },
     "레알 마드리드": {
         "matches": 4,
         "totals": {
@@ -9719,37 +9750,6 @@
             "passes_own40": 0.0,
             "shots_on_target": 0.0,
             "passes_into_final_third": 0.0
-        }
-    },
-    "셀타 비고": {
-        "matches": 4,
-        "totals": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 187.0,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 4.0
-        },
-        "per_match": {
-            "passes": 0.0,
-            "xG": 0.0,
-            "goals": 0.0,
-            "passes_own40": 0.0,
-            "shots_on_target": 0.0,
-            "passes_into_final_third": 0.0,
-            "buildup_attempts": 0.0,
-            "counter_attacks": 0.0,
-            "possession_pct": 46.75,
-            "xGA": 0.0,
-            "goals_minus_xG": 0.0,
-            "clean_sheet": 1.0
         }
     },
     "호 어헤드 이글스": {
@@ -14226,14 +14226,14 @@
         }
     },
     "칼리아리": {
-        "matches": 2,
+        "matches": 3,
         "totals": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 111.5,
+            "possession_pct": 158.2,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
-            "clean_sheet": 2.0,
+            "clean_sheet": 3.0,
             "passes": 0.0,
             "xG": 0.0,
             "goals": 0.0,
@@ -14244,7 +14244,7 @@
         "per_match": {
             "buildup_attempts": 0.0,
             "counter_attacks": 0.0,
-            "possession_pct": 55.75,
+            "possession_pct": 52.733,
             "xGA": 0.0,
             "goals_minus_xG": 0.0,
             "clean_sheet": 1.0,
