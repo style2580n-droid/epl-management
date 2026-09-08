@@ -606,7 +606,9 @@
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214040,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "왓포드",
@@ -614,7 +616,9 @@
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214039,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "사우샘프턴",
@@ -622,7 +626,9 @@
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214038,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "카디프 시티",
@@ -630,7 +636,9 @@
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214036,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "블랙번 로버스",
@@ -638,7 +646,9 @@
    "date": "2026-09-09",
    "time": "03:45",
    "id": 214034,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "볼턴 원더러스",
@@ -646,7 +656,9 @@
    "date": "2026-09-09",
    "time": "04:00",
    "id": 214041,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 3
   },
   {
    "home": "울버햄튼 원더러스",
@@ -13088,7 +13100,9 @@
    "date": "2026-09-09",
    "time": "01:45",
    "id": 601008,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "FC 트벤테",
@@ -13563,14 +13577,6 @@
    "friendly": false
   },
   {
-   "home": "SC 캄뷔르",
-   "away": "PSV 에인트호번",
-   "date": "2026-11-08",
-   "time": "04:00",
-   "id": 210901,
-   "friendly": false
-  },
-  {
    "home": "엑셀시오르 로테르담",
    "away": "호 어헤드 이글스",
    "date": "2026-11-08",
@@ -13584,14 +13590,6 @@
    "date": "2026-11-08",
    "time": "20:15",
    "id": 210903,
-   "friendly": false
-  },
-  {
-   "home": "FC 위트레흐트",
-   "away": "N.E.C. 네이메헌",
-   "date": "2026-11-08",
-   "time": "22:30",
-   "id": 210905,
    "friendly": false
   },
   {
@@ -13611,42 +13609,34 @@
    "friendly": false
   },
   {
-   "home": "스파르타 로테르담",
-   "away": "AZ 알크마르",
-   "date": "2026-11-22",
-   "time": "02:00",
-   "id": 210915,
+   "home": "SC 캄뷔르",
+   "away": "PSV 에인트호번",
+   "date": "2026-11-09",
+   "time": "00:45",
+   "id": 210901,
    "friendly": false
   },
   {
-   "home": "텔스타르",
-   "away": "PEC 즈볼레",
-   "date": "2026-11-22",
-   "time": "02:00",
-   "id": 210914,
+   "home": "FC 위트레흐트",
+   "away": "N.E.C. 네이메헌",
+   "date": "2026-11-09",
+   "time": "04:00",
+   "id": 210905,
    "friendly": false
   },
   {
    "home": "N.E.C. 네이메헌",
    "away": "PSV 에인트호번",
    "date": "2026-11-22",
-   "time": "02:00",
+   "time": "00:30",
    "id": 210913,
-   "friendly": false
-  },
-  {
-   "home": "호 어헤드 이글스",
-   "away": "포르투나 시타르드",
-   "date": "2026-11-22",
-   "time": "02:00",
-   "id": 210912,
    "friendly": false
   },
   {
    "home": "페예노르트",
    "away": "엑셀시오르 로테르담",
    "date": "2026-11-22",
-   "time": "02:00",
+   "time": "02:45",
    "id": 210911,
    "friendly": false
   },
@@ -13654,87 +13644,63 @@
    "home": "FC 위트레흐트",
    "away": "SC 캄뷔르",
    "date": "2026-11-22",
-   "time": "02:00",
+   "time": "02:45",
    "id": 210910,
+   "friendly": false
+  },
+  {
+   "home": "텔스타르",
+   "away": "PEC 즈볼레",
+   "date": "2026-11-22",
+   "time": "05:00",
+   "id": 210914,
+   "friendly": false
+  },
+  {
+   "home": "FC 흐로닝언",
+   "away": "sc 헤렌베인",
+   "date": "2026-11-22",
+   "time": "05:00",
+   "id": 210908,
    "friendly": false
   },
   {
    "home": "FC 트벤테",
    "away": "빌럼II",
    "date": "2026-11-22",
-   "time": "02:00",
+   "time": "20:15",
    "id": 210909,
    "friendly": false
   },
   {
-   "home": "FC 흐로닝언",
-   "away": "sc 헤렌베인",
+   "home": "스파르타 로테르담",
+   "away": "AZ 알크마르",
    "date": "2026-11-22",
-   "time": "02:00",
-   "id": 210908,
+   "time": "22:30",
+   "id": 210915,
    "friendly": false
   },
   {
    "home": "아약스",
    "away": "ADO 덴하흐",
    "date": "2026-11-22",
-   "time": "02:00",
+   "time": "22:30",
    "id": 210907,
    "friendly": false
   },
   {
-   "home": "SC 캄뷔르",
-   "away": "스파르타 로테르담",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210924,
-   "friendly": false
-  },
-  {
-   "home": "PSV 에인트호번",
-   "away": "호 어헤드 이글스",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210923,
-   "friendly": false
-  },
-  {
-   "home": "PEC 즈볼레",
-   "away": "AZ 알크마르",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210922,
-   "friendly": false
-  },
-  {
-   "home": "N.E.C. 네이메헌",
-   "away": "FC 트벤테",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210921,
-   "friendly": false
-  },
-  {
-   "home": "포르투나 시타르드",
-   "away": "sc 헤렌베인",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210920,
-   "friendly": false
-  },
-  {
-   "home": "페예노르트",
-   "away": "아약스",
-   "date": "2026-11-29",
-   "time": "02:00",
-   "id": 210919,
+   "home": "호 어헤드 이글스",
+   "away": "포르투나 시타르드",
+   "date": "2026-11-23",
+   "time": "00:45",
+   "id": 210912,
    "friendly": false
   },
   {
    "home": "FC 흐로닝언",
    "away": "빌럼II",
-   "date": "2026-11-29",
-   "time": "02:00",
+   "date": "2026-11-28",
+   "time": "04:00",
    "id": 210918,
    "friendly": false
   },
@@ -13742,23 +13708,79 @@
    "home": "엑셀시오르 로테르담",
    "away": "텔스타르",
    "date": "2026-11-29",
-   "time": "02:00",
+   "time": "00:30",
    "id": 210917,
+   "friendly": false
+  },
+  {
+   "home": "PSV 에인트호번",
+   "away": "호 어헤드 이글스",
+   "date": "2026-11-29",
+   "time": "02:45",
+   "id": 210923,
+   "friendly": false
+  },
+  {
+   "home": "SC 캄뷔르",
+   "away": "스파르타 로테르담",
+   "date": "2026-11-29",
+   "time": "05:00",
+   "id": 210924,
    "friendly": false
   },
   {
    "home": "ADO 덴하흐",
    "away": "FC 위트레흐트",
    "date": "2026-11-29",
-   "time": "02:00",
+   "time": "20:15",
    "id": 210916,
+   "friendly": false
+  },
+  {
+   "home": "포르투나 시타르드",
+   "away": "sc 헤렌베인",
+   "date": "2026-11-29",
+   "time": "22:30",
+   "id": 210920,
+   "friendly": false
+  },
+  {
+   "home": "페예노르트",
+   "away": "아약스",
+   "date": "2026-11-29",
+   "time": "22:30",
+   "id": 210919,
+   "friendly": false
+  },
+  {
+   "home": "PEC 즈볼레",
+   "away": "AZ 알크마르",
+   "date": "2026-11-30",
+   "time": "00:45",
+   "id": 210922,
+   "friendly": false
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "FC 트벤테",
+   "date": "2026-11-30",
+   "time": "04:00",
+   "id": 210921,
+   "friendly": false
+  },
+  {
+   "home": "텔스타르",
+   "away": "FC 흐로닝언",
+   "date": "2026-12-05",
+   "time": "04:00",
+   "id": 210931,
    "friendly": false
   },
   {
    "home": "빌럼II",
    "away": "페예노르트",
    "date": "2026-12-06",
-   "time": "02:00",
+   "time": "00:30",
    "id": 210933,
    "friendly": false
   },
@@ -13766,23 +13788,31 @@
    "home": "스파르타 로테르담",
    "away": "N.E.C. 네이메헌",
    "date": "2026-12-06",
-   "time": "02:00",
+   "time": "02:45",
    "id": 210932,
    "friendly": false
   },
   {
-   "home": "텔스타르",
-   "away": "FC 흐로닝언",
+   "home": "AZ 알크마르",
+   "away": "PSV 에인트호번",
    "date": "2026-12-06",
-   "time": "02:00",
-   "id": 210931,
+   "time": "04:00",
+   "id": 210927,
+   "friendly": false
+  },
+  {
+   "home": "포르투나 시타르드",
+   "away": "PEC 즈볼레",
+   "date": "2026-12-06",
+   "time": "05:00",
+   "id": 210928,
    "friendly": false
   },
   {
    "home": "sc 헤렌베인",
    "away": "SC 캄뷔르",
    "date": "2026-12-06",
-   "time": "02:00",
+   "time": "20:15",
    "id": 210930,
    "friendly": false
   },
@@ -13790,31 +13820,15 @@
    "home": "호 어헤드 이글스",
    "away": "FC 트벤테",
    "date": "2026-12-06",
-   "time": "02:00",
+   "time": "22:30",
    "id": 210929,
-   "friendly": false
-  },
-  {
-   "home": "포르투나 시타르드",
-   "away": "PEC 즈볼레",
-   "date": "2026-12-06",
-   "time": "02:00",
-   "id": 210928,
-   "friendly": false
-  },
-  {
-   "home": "AZ 알크마르",
-   "away": "PSV 에인트호번",
-   "date": "2026-12-06",
-   "time": "02:00",
-   "id": 210927,
    "friendly": false
   },
   {
    "home": "아약스",
    "away": "FC 위트레흐트",
    "date": "2026-12-06",
-   "time": "02:00",
+   "time": "22:30",
    "id": 210926,
    "friendly": false
   },
