@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-09-08
 
-생성(UTC): 2026-09-08 08:04
+생성(UTC): 2026-09-08 13:32
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -1207,6 +1207,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 위트레흐트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.8% |
 | PSV 에인트호번 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.2% |
+
+### FC위트레흐트_호어헤드이글스_210837
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 위트레흐트 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 64.3% |
+| 호 어헤드 이글스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 35.7% |
 
 ### FC트벤테_PEC즈볼레_210814
 
@@ -16117,6 +16124,7 @@
 - **FC아우크스부르크_샬케04_213673**: [heatmap(FC 아우크스부르크)](viz/FC아우크스부르크_샬케04_213673_FC 아우크스부르크_heatmap.svg) · [network(FC 아우크스부르크)](viz/FC아우크스부르크_샬케04_213673_FC 아우크스부르크_network.svg) · [shotmap(FC 아우크스부르크)](viz/FC아우크스부르크_샬케04_213673_FC 아우크스부르크_shotmap.svg) · [heatmap(샬케04)](viz/FC아우크스부르크_샬케04_213673_샬케04_heatmap.svg) · [network(샬케04)](viz/FC아우크스부르크_샬케04_213673_샬케04_network.svg) · [shotmap(샬케04)](viz/FC아우크스부르크_샬케04_213673_샬케04_shotmap.svg)
 - **FC위트레흐트_AZ알크마르_210810**: [heatmap(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_heatmap.svg) · [network(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_network.svg) · [shotmap(AZ 알크마르)](viz/FC위트레흐트_AZ알크마르_210810_AZ 알크마르_shotmap.svg) · [heatmap(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_AZ알크마르_210810_FC 위트레흐트_shotmap.svg)
 - **FC위트레흐트_PSV에인트호번_210830**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_shotmap.svg) · [heatmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_shotmap.svg)
+- **FC위트레흐트_호어헤드이글스_210837**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_shotmap.svg) · [heatmap(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_heatmap.svg) · [network(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_network.svg) · [shotmap(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_shotmap.svg)
 - **FC트벤테_PEC즈볼레_210814**: [heatmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_shotmap.svg) · [heatmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_shotmap.svg)
 - **FC흐로닝언_FC위트레흐트_210805**: [heatmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_shotmap.svg)
 - **FC흐로닝언_FC트벤테_210840**: [heatmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_shotmap.svg)

@@ -107638,28 +107638,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     }
                 ],
                 "team": {
@@ -107671,28 +107671,28 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     }
                 ],
                 "team": {
@@ -107702,7 +107702,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-08T07:53:55.343665+00:00"
+        "collected_at": "2026-09-08T13:23:02.308166+00:00"
     },
     "1294256048": {
         "match": {
@@ -108843,5 +108843,115 @@
             }
         ],
         "collected_at": "2026-09-08T07:54:01.765301+00:00"
+    },
+    "1391993398": {
+        "match": {
+            "id": 1391993398,
+            "round": "League Stage - 1",
+            "date": "2026-09-08T19:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 430539,
+                "logo": "https://highlightly.net/soccer/images/teams/430539.png",
+                "name": "Inter"
+            },
+            "homeTeam": {
+                "id": 461175,
+                "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                "name": "Real Madrid"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 461175,
+                    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                    "name": "Real Madrid"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 430539,
+                    "logo": "https://highlightly.net/soccer/images/teams/430539.png",
+                    "name": "Inter"
+                }
+            }
+        ],
+        "collected_at": "2026-09-08T13:23:07.843564+00:00"
+    },
+    "1330236328": {
+        "match": {
+            "id": 1330236328,
+            "round": "Regular Season - 6",
+            "date": "2026-09-08T19:00:00.000Z",
+            "country": {
+                "code": "GB-ENG",
+                "name": "England",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-ENG.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 41632,
+                "logo": "https://highlightly.net/soccer/images/teams/41632.png",
+                "name": "West Ham"
+            },
+            "homeTeam": {
+                "id": 58652,
+                "logo": "https://highlightly.net/soccer/images/teams/58652.png",
+                "name": "Bolton"
+            },
+            "league": {
+                "id": 34824,
+                "logo": "https://highlightly.net/soccer/images/leagues/34824.png",
+                "name": "Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 58652,
+                    "logo": "https://highlightly.net/soccer/images/teams/58652.png",
+                    "name": "Bolton"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 41632,
+                    "logo": "https://highlightly.net/soccer/images/teams/41632.png",
+                    "name": "West Ham"
+                }
+            }
+        ],
+        "collected_at": "2026-09-08T13:23:09.501742+00:00"
     }
 }

@@ -29647,6 +29647,68 @@
  ],
  "eredivisie": [
   {
+   "home": "FC 위트레흐트",
+   "away": "호 어헤드 이글스",
+   "date": "2026-09-08",
+   "eid": 210837,
+   "goals": [
+    {
+     "scorer": "A. Stepanov",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Didden",
+     "assist": "D. v. d. Berg",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. De Wit",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "V. Edvardsen",
+     "assist": "S. Tengstedt",
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Tengstedt",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Suray",
+     "assist": "V. Edvardsen",
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "ADO 덴하흐",
    "away": "포르투나 시타르드",
    "date": "2026-09-06",
