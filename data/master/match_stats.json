@@ -107638,28 +107638,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -107671,28 +107671,28 @@
             {
                 "statistics": [
                     {
-                        "value": 0,
-                        "displayName": "Attacks"
+                        "displayName": "Attacks",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Possession"
+                        "displayName": "Possession",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots on target"
+                        "displayName": "Shots on target",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Corners"
+                        "displayName": "Corners",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Offsides"
+                        "displayName": "Offsides",
+                        "value": 0
                     },
                     {
-                        "value": 0,
-                        "displayName": "Shots off target"
+                        "displayName": "Shots off target",
+                        "value": 0
                     }
                 ],
                 "team": {
@@ -107702,7 +107702,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-08T13:23:02.308166+00:00"
+        "collected_at": "2026-09-08T18:23:00.771237+00:00"
     },
     "1294256048": {
         "match": {
@@ -108826,7 +108826,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 50142,
                     "logo": "https://highlightly.net/soccer/images/teams/50142.png",
@@ -108834,7 +108843,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 29718,
                     "logo": "https://highlightly.net/soccer/images/teams/29718.png",
@@ -108842,7 +108860,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-08T07:54:01.765301+00:00"
+        "collected_at": "2026-09-08T18:23:08.922662+00:00"
     },
     "1391993398": {
         "match": {
@@ -108953,5 +108971,60 @@
             }
         ],
         "collected_at": "2026-09-08T13:23:09.501742+00:00"
+    },
+    "1393488605": {
+        "match": {
+            "id": 1393488605,
+            "round": "Friendly International Women",
+            "date": "2026-09-08T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 19966946,
+                "logo": null,
+                "name": "Uruguay U20 Women"
+            },
+            "homeTeam": {
+                "id": 19964393,
+                "logo": null,
+                "name": "Chile U20 Women"
+            },
+            "league": {
+                "id": 567550,
+                "logo": "https://highlightly.net/soccer/images/leagues/567550.png",
+                "name": "Friendlies Women",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19964393,
+                    "logo": null,
+                    "name": "Chile U20 Women"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19966946,
+                    "logo": null,
+                    "name": "Uruguay U20 Women"
+                }
+            }
+        ],
+        "collected_at": "2026-09-08T18:23:07.606028+00:00"
     }
 }
