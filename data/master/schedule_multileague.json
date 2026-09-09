@@ -13268,7 +13268,7 @@
    "home": "PSV 에인트호번",
    "away": "sc 헤렌베인",
    "date": "2026-10-10",
-   "time": "03:00",
+   "time": "00:00",
    "id": 210862,
    "friendly": false
   },
@@ -14060,7 +14060,7 @@
    "home": "텔스타르",
    "away": "N.E.C. 네이메헌",
    "date": "2027-01-17",
-   "time": "02:00",
+   "time": "00:30",
    "id": 210969,
    "friendly": false
   },
@@ -14073,26 +14073,26 @@
    "friendly": false
   },
   {
-   "home": "SC 캄뷔르",
-   "away": "빌럼II",
+   "home": "엑셀시오르 로테르담",
+   "away": "페예노르트",
    "date": "2027-01-17",
-   "time": "02:00",
-   "id": 210967,
+   "time": "02:45",
+   "id": 210963,
    "friendly": false
   },
   {
-   "home": "호 어헤드 이글스",
-   "away": "AZ 알크마르",
+   "home": "ADO 덴하흐",
+   "away": "PEC 즈볼레",
    "date": "2027-01-17",
-   "time": "02:00",
-   "id": 210966,
+   "time": "04:00",
+   "id": 210961,
    "friendly": false
   },
   {
    "home": "포르투나 시타르드",
    "away": "PSV 에인트호번",
    "date": "2027-01-17",
-   "time": "02:00",
+   "time": "05:00",
    "id": 210965,
    "friendly": false
   },
@@ -14100,71 +14100,55 @@
    "home": "FC 위트레흐트",
    "away": "FC 트벤테",
    "date": "2027-01-17",
-   "time": "02:00",
+   "time": "20:15",
    "id": 210964,
    "friendly": false
   },
   {
-   "home": "엑셀시오르 로테르담",
-   "away": "페예노르트",
+   "home": "호 어헤드 이글스",
+   "away": "AZ 알크마르",
    "date": "2027-01-17",
-   "time": "02:00",
-   "id": 210963,
+   "time": "22:30",
+   "id": 210966,
    "friendly": false
   },
   {
    "home": "아약스",
    "away": "FC 흐로닝언",
    "date": "2027-01-17",
-   "time": "02:00",
+   "time": "22:30",
    "id": 210962,
    "friendly": false
   },
   {
-   "home": "ADO 덴하흐",
-   "away": "PEC 즈볼레",
-   "date": "2027-01-17",
-   "time": "02:00",
-   "id": 210961,
-   "friendly": false
-  },
-  {
-   "home": "스파르타 로테르담",
-   "away": "FC 흐로닝언",
-   "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210978,
-   "friendly": false
-  },
-  {
-   "home": "PSV 에인트호번",
-   "away": "ADO 덴하흐",
-   "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210977,
-   "friendly": false
-  },
-  {
-   "home": "N.E.C. 네이메헌",
+   "home": "SC 캄뷔르",
    "away": "빌럼II",
-   "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210976,
+   "date": "2027-01-18",
+   "time": "00:45",
+   "id": 210967,
    "friendly": false
   },
   {
-   "home": "호 어헤드 이글스",
-   "away": "SC 캄뷔르",
+   "home": "엑셀시오르 로테르담",
+   "away": "포르투나 시타르드",
+   "date": "2027-01-23",
+   "time": "04:00",
+   "id": 210972,
+   "friendly": false
+  },
+  {
+   "home": "아약스",
+   "away": "텔스타르",
    "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210975,
+   "time": "00:30",
+   "id": 210970,
    "friendly": false
   },
   {
    "home": "페예노르트",
    "away": "PEC 즈볼레",
    "date": "2027-01-24",
-   "time": "02:00",
+   "time": "02:45",
    "id": 210974,
    "friendly": false
   },
@@ -14172,104 +14156,120 @@
    "home": "FC 트벤테",
    "away": "sc 헤렌베인",
    "date": "2027-01-24",
-   "time": "02:00",
+   "time": "04:00",
    "id": 210973,
    "friendly": false
   },
   {
-   "home": "엑셀시오르 로테르담",
-   "away": "포르투나 시타르드",
+   "home": "PSV 에인트호번",
+   "away": "ADO 덴하흐",
    "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210972,
+   "time": "05:00",
+   "id": 210977,
+   "friendly": false
+  },
+  {
+   "home": "호 어헤드 이글스",
+   "away": "SC 캄뷔르",
+   "date": "2027-01-24",
+   "time": "20:15",
+   "id": 210975,
+   "friendly": false
+  },
+  {
+   "home": "스파르타 로테르담",
+   "away": "FC 흐로닝언",
+   "date": "2027-01-24",
+   "time": "22:30",
+   "id": 210978,
+   "friendly": false
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "빌럼II",
+   "date": "2027-01-24",
+   "time": "22:30",
+   "id": 210976,
    "friendly": false
   },
   {
    "home": "AZ 알크마르",
    "away": "FC 위트레흐트",
-   "date": "2027-01-24",
-   "time": "02:00",
+   "date": "2027-01-25",
+   "time": "00:45",
    "id": 210971,
    "friendly": false
   },
   {
-   "home": "아약스",
-   "away": "텔스타르",
-   "date": "2027-01-24",
-   "time": "02:00",
-   "id": 210970,
-   "friendly": false
-  },
-  {
-   "home": "빌럼II",
-   "away": "PSV 에인트호번",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210987,
+   "home": "FC 위트레흐트",
+   "away": "엑셀시오르 로테르담",
+   "date": "2027-01-30",
+   "time": "04:00",
+   "id": 210983,
    "friendly": false
   },
   {
    "home": "스파르타 로테르담",
    "away": "텔스타르",
    "date": "2027-01-31",
-   "time": "02:00",
+   "time": "00:30",
    "id": 210986,
-   "friendly": false
-  },
-  {
-   "home": "sc 헤렌베인",
-   "away": "아약스",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210985,
-   "friendly": false
-  },
-  {
-   "home": "PEC 즈볼레",
-   "away": "포르투나 시타르드",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210984,
-   "friendly": false
-  },
-  {
-   "home": "FC 위트레흐트",
-   "away": "엑셀시오르 로테르담",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210983,
-   "friendly": false
-  },
-  {
-   "home": "FC 트벤테",
-   "away": "SC 캄뷔르",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210982,
-   "friendly": false
-  },
-  {
-   "home": "FC 흐로닝언",
-   "away": "N.E.C. 네이메헌",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210981,
-   "friendly": false
-  },
-  {
-   "home": "AZ 알크마르",
-   "away": "페예노르트",
-   "date": "2027-01-31",
-   "time": "02:00",
-   "id": 210980,
    "friendly": false
   },
   {
    "home": "ADO 덴하흐",
    "away": "호 어헤드 이글스",
    "date": "2027-01-31",
-   "time": "02:00",
+   "time": "02:45",
    "id": 210979,
+   "friendly": false
+  },
+  {
+   "home": "빌럼II",
+   "away": "PSV 에인트호번",
+   "date": "2027-01-31",
+   "time": "04:00",
+   "id": 210987,
+   "friendly": false
+  },
+  {
+   "home": "PEC 즈볼레",
+   "away": "포르투나 시타르드",
+   "date": "2027-01-31",
+   "time": "05:00",
+   "id": 210984,
+   "friendly": false
+  },
+  {
+   "home": "sc 헤렌베인",
+   "away": "아약스",
+   "date": "2027-01-31",
+   "time": "20:15",
+   "id": 210985,
+   "friendly": false
+  },
+  {
+   "home": "FC 트벤테",
+   "away": "SC 캄뷔르",
+   "date": "2027-01-31",
+   "time": "22:30",
+   "id": 210982,
+   "friendly": false
+  },
+  {
+   "home": "AZ 알크마르",
+   "away": "페예노르트",
+   "date": "2027-01-31",
+   "time": "22:30",
+   "id": 210980,
+   "friendly": false
+  },
+  {
+   "home": "FC 흐로닝언",
+   "away": "N.E.C. 네이메헌",
+   "date": "2027-02-01",
+   "time": "00:45",
+   "id": 210981,
    "friendly": false
   },
   {
