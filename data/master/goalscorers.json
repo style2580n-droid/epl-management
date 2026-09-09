@@ -24878,6 +24878,66 @@
  ],
  "championship": [
   {
+   "home": "찰턴 애슬레틱",
+   "away": "QPR",
+   "date": "2026-09-10",
+   "eid": 214045,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "노리치 시티",
+   "away": "버밍엄 시티",
+   "date": "2026-09-10",
+   "eid": 214043,
+   "goals": [
+    {
+     "scorer": "C. Vicente",
+     "assist": "L. Millar",
+     "team": null,
+     "is_home": false,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Diallo",
+     "assist": "A. Brooks",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Schwartau",
+     "assist": "M. Kvistgaarden",
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "더비 카운티",
+   "away": "웨스트브롬위치 알비온",
+   "date": "2026-09-10",
+   "eid": 214042,
+   "goals": [
+    {
+     "scorer": "A. S. Heggebø",
+     "assist": "J. Morgan",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "볼턴 원더러스",
    "away": "웨스트햄 유나이티드",
    "date": "2026-09-09",
@@ -29865,6 +29925,23 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "FC 트벤테",
+   "away": "텔스타르",
+   "date": "2026-09-10",
+   "eid": 210824,
+   "goals": [
+    {
+     "scorer": "S. Ørjasæter",
+     "assist": "Y. Taha",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "N.E.C. 네이메헌",
    "away": "엑셀시오르 로테르담",

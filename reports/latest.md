@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-09-09
 
-생성(UTC): 2026-09-09 18:35
+생성(UTC): 2026-09-09 23:10
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -1221,6 +1221,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 트벤테 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 57.1% |
 | PEC 즈볼레 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 42.9% |
+
+### FC트벤테_텔스타르_210824
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 트벤테 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 42.9% |
+| 텔스타르 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 57.1% |
 
 ### FC흐로닝언_FC위트레흐트_210805
 
@@ -3490,6 +3497,13 @@
 | 내슈빌 SC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.9% |
 | 콜럼버스 크루 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.1% |
 
+### 노리치시티_버밍엄시티_214043
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 노리치 시티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 65.0% |
+| 버밍엄 시티 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 35.0% |
+
 ### 노리치시티_번리_214007
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -4826,6 +4840,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 더비 카운티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 47.4% |
 | 스완지 시티 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 52.6% |
+
+### 더비카운티_웨스트브롬위치알비온_214042
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 더비 카운티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 33.3% |
+| 웨스트브롬위치 알비온 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 66.7% |
 
 ### 더비카운티_카디프시티_213990
 
@@ -12870,6 +12891,13 @@
 | 제노아 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 44.4% |
 | 코모 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 55.6% |
 
+### 찰턴애슬레틱_QPR_214045
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 찰턴 애슬레틱 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 33.3% |
+| QPR | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 66.7% |
+
 ### 찰턴애슬레틱_더비카운티_213977
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -16175,6 +16203,7 @@
 - **FC위트레흐트_PSV에인트호번_210830**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_PSV에인트호번_210830_FC 위트레흐트_shotmap.svg) · [heatmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/FC위트레흐트_PSV에인트호번_210830_PSV 에인트호번_shotmap.svg)
 - **FC위트레흐트_호어헤드이글스_210837**: [heatmap(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC위트레흐트_호어헤드이글스_210837_FC 위트레흐트_shotmap.svg) · [heatmap(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_heatmap.svg) · [network(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_network.svg) · [shotmap(호 어헤드 이글스)](viz/FC위트레흐트_호어헤드이글스_210837_호 어헤드 이글스_shotmap.svg)
 - **FC트벤테_PEC즈볼레_210814**: [heatmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC트벤테_PEC즈볼레_210814_FC 트벤테_shotmap.svg) · [heatmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/FC트벤테_PEC즈볼레_210814_PEC 즈볼레_shotmap.svg)
+- **FC트벤테_텔스타르_210824**: [heatmap(FC 트벤테)](viz/FC트벤테_텔스타르_210824_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC트벤테_텔스타르_210824_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC트벤테_텔스타르_210824_FC 트벤테_shotmap.svg) · [heatmap(텔스타르)](viz/FC트벤테_텔스타르_210824_텔스타르_heatmap.svg) · [network(텔스타르)](viz/FC트벤테_텔스타르_210824_텔스타르_network.svg) · [shotmap(텔스타르)](viz/FC트벤테_텔스타르_210824_텔스타르_shotmap.svg)
 - **FC흐로닝언_FC위트레흐트_210805**: [heatmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_heatmap.svg) · [network(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_network.svg) · [shotmap(FC 위트레흐트)](viz/FC흐로닝언_FC위트레흐트_210805_FC 위트레흐트_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC위트레흐트_210805_FC 흐로닝언_shotmap.svg)
 - **FC흐로닝언_FC트벤테_210840**: [heatmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_heatmap.svg) · [network(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_network.svg) · [shotmap(FC 트벤테)](viz/FC흐로닝언_FC트벤테_210840_FC 트벤테_shotmap.svg) · [heatmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_FC트벤테_210840_FC 흐로닝언_shotmap.svg)
 - **FC흐로닝언_포르투나시타르드_210826**: [heatmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/FC흐로닝언_포르투나시타르드_210826_FC 흐로닝언_shotmap.svg) · [heatmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_heatmap.svg) · [network(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_network.svg) · [shotmap(포르투나 시타르드)](viz/FC흐로닝언_포르투나시타르드_210826_포르투나 시타르드_shotmap.svg)
@@ -16499,6 +16528,7 @@
 - **내슈빌SC_올랜도시티_4975**: [heatmap(내슈빌 SC)](viz/내슈빌SC_올랜도시티_4975_내슈빌 SC_heatmap.svg) · [network(내슈빌 SC)](viz/내슈빌SC_올랜도시티_4975_내슈빌 SC_network.svg) · [shotmap(내슈빌 SC)](viz/내슈빌SC_올랜도시티_4975_내슈빌 SC_shotmap.svg) · [heatmap(올랜도 시티)](viz/내슈빌SC_올랜도시티_4975_올랜도 시티_heatmap.svg) · [network(올랜도 시티)](viz/내슈빌SC_올랜도시티_4975_올랜도 시티_network.svg) · [shotmap(올랜도 시티)](viz/내슈빌SC_올랜도시티_4975_올랜도 시티_shotmap.svg)
 - **내슈빌SC_인터마이애미_5189**: [heatmap(내슈빌 SC)](viz/내슈빌SC_인터마이애미_5189_내슈빌 SC_heatmap.svg) · [network(내슈빌 SC)](viz/내슈빌SC_인터마이애미_5189_내슈빌 SC_network.svg) · [shotmap(내슈빌 SC)](viz/내슈빌SC_인터마이애미_5189_내슈빌 SC_shotmap.svg) · [heatmap(인터 마이애미)](viz/내슈빌SC_인터마이애미_5189_인터 마이애미_heatmap.svg) · [network(인터 마이애미)](viz/내슈빌SC_인터마이애미_5189_인터 마이애미_network.svg) · [shotmap(인터 마이애미)](viz/내슈빌SC_인터마이애미_5189_인터 마이애미_shotmap.svg)
 - **내슈빌SC_콜럼버스크루_5220**: [heatmap(내슈빌 SC)](viz/내슈빌SC_콜럼버스크루_5220_내슈빌 SC_heatmap.svg) · [network(내슈빌 SC)](viz/내슈빌SC_콜럼버스크루_5220_내슈빌 SC_network.svg) · [shotmap(내슈빌 SC)](viz/내슈빌SC_콜럼버스크루_5220_내슈빌 SC_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/내슈빌SC_콜럼버스크루_5220_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/내슈빌SC_콜럼버스크루_5220_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/내슈빌SC_콜럼버스크루_5220_콜럼버스 크루_shotmap.svg)
+- **노리치시티_버밍엄시티_214043**: [heatmap(노리치 시티)](viz/노리치시티_버밍엄시티_214043_노리치 시티_heatmap.svg) · [network(노리치 시티)](viz/노리치시티_버밍엄시티_214043_노리치 시티_network.svg) · [shotmap(노리치 시티)](viz/노리치시티_버밍엄시티_214043_노리치 시티_shotmap.svg) · [heatmap(버밍엄 시티)](viz/노리치시티_버밍엄시티_214043_버밍엄 시티_heatmap.svg) · [network(버밍엄 시티)](viz/노리치시티_버밍엄시티_214043_버밍엄 시티_network.svg) · [shotmap(버밍엄 시티)](viz/노리치시티_버밍엄시티_214043_버밍엄 시티_shotmap.svg)
 - **노리치시티_번리_214007**: [heatmap(노리치 시티)](viz/노리치시티_번리_214007_노리치 시티_heatmap.svg) · [network(노리치 시티)](viz/노리치시티_번리_214007_노리치 시티_network.svg) · [shotmap(노리치 시티)](viz/노리치시티_번리_214007_노리치 시티_shotmap.svg) · [heatmap(번리)](viz/노리치시티_번리_214007_번리_heatmap.svg) · [network(번리)](viz/노리치시티_번리_214007_번리_network.svg) · [shotmap(번리)](viz/노리치시티_번리_214007_번리_shotmap.svg)
 - **노리치시티_웨스트브롬위치알비온_213979**: [heatmap(노리치 시티)](viz/노리치시티_웨스트브롬위치알비온_213979_노리치 시티_heatmap.svg) · [network(노리치 시티)](viz/노리치시티_웨스트브롬위치알비온_213979_노리치 시티_network.svg) · [shotmap(노리치 시티)](viz/노리치시티_웨스트브롬위치알비온_213979_노리치 시티_shotmap.svg) · [heatmap(웨스트브롬위치 알비온)](viz/노리치시티_웨스트브롬위치알비온_213979_웨스트브롬위치 알비온_heatmap.svg) · [network(웨스트브롬위치 알비온)](viz/노리치시티_웨스트브롬위치알비온_213979_웨스트브롬위치 알비온_network.svg) · [shotmap(웨스트브롬위치 알비온)](viz/노리치시티_웨스트브롬위치알비온_213979_웨스트브롬위치 알비온_shotmap.svg)
 - **노팅엄포레스트_뉴캐슬_160027**: [heatmap(노팅엄 포레스트)](viz/노팅엄포레스트_뉴캐슬_160027_노팅엄 포레스트_heatmap.svg) · [network(노팅엄 포레스트)](viz/노팅엄포레스트_뉴캐슬_160027_노팅엄 포레스트_network.svg) · [shotmap(노팅엄 포레스트)](viz/노팅엄포레스트_뉴캐슬_160027_노팅엄 포레스트_shotmap.svg) · [heatmap(뉴캐슬)](viz/노팅엄포레스트_뉴캐슬_160027_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/노팅엄포레스트_뉴캐슬_160027_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/노팅엄포레스트_뉴캐슬_160027_뉴캐슬_shotmap.svg)
@@ -16690,6 +16720,7 @@
 - **뉴캐슬_풀럼_312286**: [heatmap(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/뉴캐슬_풀럼_312286_뉴캐슬_shotmap.svg) · [heatmap(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_heatmap.svg) · [network(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_network.svg) · [shotmap(풀럼)](viz/뉴캐슬_풀럼_312286_풀럼_shotmap.svg)
 - **뉴캐슬_풀럼_83**: [heatmap(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_heatmap.svg) · [network(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_network.svg) · [shotmap(뉴캐슬)](viz/뉴캐슬_풀럼_83_뉴캐슬_shotmap.svg) · [heatmap(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_heatmap.svg) · [network(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_network.svg) · [shotmap(풀럼)](viz/뉴캐슬_풀럼_83_풀럼_shotmap.svg)
 - **더비카운티_스완지시티_213999**: [heatmap(더비 카운티)](viz/더비카운티_스완지시티_213999_더비 카운티_heatmap.svg) · [network(더비 카운티)](viz/더비카운티_스완지시티_213999_더비 카운티_network.svg) · [shotmap(더비 카운티)](viz/더비카운티_스완지시티_213999_더비 카운티_shotmap.svg) · [heatmap(스완지 시티)](viz/더비카운티_스완지시티_213999_스완지 시티_heatmap.svg) · [network(스완지 시티)](viz/더비카운티_스완지시티_213999_스완지 시티_network.svg) · [shotmap(스완지 시티)](viz/더비카운티_스완지시티_213999_스완지 시티_shotmap.svg)
+- **더비카운티_웨스트브롬위치알비온_214042**: [heatmap(더비 카운티)](viz/더비카운티_웨스트브롬위치알비온_214042_더비 카운티_heatmap.svg) · [network(더비 카운티)](viz/더비카운티_웨스트브롬위치알비온_214042_더비 카운티_network.svg) · [shotmap(더비 카운티)](viz/더비카운티_웨스트브롬위치알비온_214042_더비 카운티_shotmap.svg) · [heatmap(웨스트브롬위치 알비온)](viz/더비카운티_웨스트브롬위치알비온_214042_웨스트브롬위치 알비온_heatmap.svg) · [network(웨스트브롬위치 알비온)](viz/더비카운티_웨스트브롬위치알비온_214042_웨스트브롬위치 알비온_network.svg) · [shotmap(웨스트브롬위치 알비온)](viz/더비카운티_웨스트브롬위치알비온_214042_웨스트브롬위치 알비온_shotmap.svg)
 - **더비카운티_카디프시티_213990**: [heatmap(더비 카운티)](viz/더비카운티_카디프시티_213990_더비 카운티_heatmap.svg) · [network(더비 카운티)](viz/더비카운티_카디프시티_213990_더비 카운티_network.svg) · [shotmap(더비 카운티)](viz/더비카운티_카디프시티_213990_더비 카운티_shotmap.svg) · [heatmap(카디프 시티)](viz/더비카운티_카디프시티_213990_카디프 시티_heatmap.svg) · [network(카디프 시티)](viz/더비카운티_카디프시티_213990_카디프 시티_network.svg) · [shotmap(카디프 시티)](viz/더비카운티_카디프시티_213990_카디프 시티_shotmap.svg)
 - **데포르티보라코루냐_발렌시아_213542**: [heatmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_발렌시아_213542_데포르티보 라코루냐_heatmap.svg) · [network(데포르티보 라코루냐)](viz/데포르티보라코루냐_발렌시아_213542_데포르티보 라코루냐_network.svg) · [shotmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_발렌시아_213542_데포르티보 라코루냐_shotmap.svg) · [heatmap(발렌시아)](viz/데포르티보라코루냐_발렌시아_213542_발렌시아_heatmap.svg) · [network(발렌시아)](viz/데포르티보라코루냐_발렌시아_213542_발렌시아_network.svg) · [shotmap(발렌시아)](viz/데포르티보라코루냐_발렌시아_213542_발렌시아_shotmap.svg)
 - **데포르티보라코루냐_엘체_213523**: [heatmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_heatmap.svg) · [network(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_network.svg) · [shotmap(데포르티보 라코루냐)](viz/데포르티보라코루냐_엘체_213523_데포르티보 라코루냐_shotmap.svg) · [heatmap(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_heatmap.svg) · [network(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_network.svg) · [shotmap(엘체)](viz/데포르티보라코루냐_엘체_213523_엘체_shotmap.svg)
@@ -17839,6 +17870,7 @@
 - **입스위치타운_풀럼_306674**: [heatmap(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_heatmap.svg) · [network(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_network.svg) · [shotmap(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_shotmap.svg) · [heatmap(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_heatmap.svg) · [network(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_network.svg) · [shotmap(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_shotmap.svg)
 - **제노아_나폴리_210061**: [heatmap(나폴리)](viz/제노아_나폴리_210061_나폴리_heatmap.svg) · [network(나폴리)](viz/제노아_나폴리_210061_나폴리_network.svg) · [shotmap(나폴리)](viz/제노아_나폴리_210061_나폴리_shotmap.svg) · [heatmap(제노아)](viz/제노아_나폴리_210061_제노아_heatmap.svg) · [network(제노아)](viz/제노아_나폴리_210061_제노아_network.svg) · [shotmap(제노아)](viz/제노아_나폴리_210061_제노아_shotmap.svg)
 - **제노아_코모_210082**: [heatmap(제노아)](viz/제노아_코모_210082_제노아_heatmap.svg) · [network(제노아)](viz/제노아_코모_210082_제노아_network.svg) · [shotmap(제노아)](viz/제노아_코모_210082_제노아_shotmap.svg) · [heatmap(코모)](viz/제노아_코모_210082_코모_heatmap.svg) · [network(코모)](viz/제노아_코모_210082_코모_network.svg) · [shotmap(코모)](viz/제노아_코모_210082_코모_shotmap.svg)
+- **찰턴애슬레틱_QPR_214045**: [heatmap(QPR)](viz/찰턴애슬레틱_QPR_214045_QPR_heatmap.svg) · [network(QPR)](viz/찰턴애슬레틱_QPR_214045_QPR_network.svg) · [shotmap(QPR)](viz/찰턴애슬레틱_QPR_214045_QPR_shotmap.svg) · [heatmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_QPR_214045_찰턴 애슬레틱_heatmap.svg) · [network(찰턴 애슬레틱)](viz/찰턴애슬레틱_QPR_214045_찰턴 애슬레틱_network.svg) · [shotmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_QPR_214045_찰턴 애슬레틱_shotmap.svg)
 - **찰턴애슬레틱_더비카운티_213977**: [heatmap(더비 카운티)](viz/찰턴애슬레틱_더비카운티_213977_더비 카운티_heatmap.svg) · [network(더비 카운티)](viz/찰턴애슬레틱_더비카운티_213977_더비 카운티_network.svg) · [shotmap(더비 카운티)](viz/찰턴애슬레틱_더비카운티_213977_더비 카운티_shotmap.svg) · [heatmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_더비카운티_213977_찰턴 애슬레틱_heatmap.svg) · [network(찰턴 애슬레틱)](viz/찰턴애슬레틱_더비카운티_213977_찰턴 애슬레틱_network.svg) · [shotmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_더비카운티_213977_찰턴 애슬레틱_shotmap.svg)
 - **찰턴애슬레틱_프레스턴노스엔드_214006**: [heatmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_찰턴 애슬레틱_heatmap.svg) · [network(찰턴 애슬레틱)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_찰턴 애슬레틱_network.svg) · [shotmap(찰턴 애슬레틱)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_찰턴 애슬레틱_shotmap.svg) · [heatmap(프레스턴 노스엔드)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_프레스턴 노스엔드_heatmap.svg) · [network(프레스턴 노스엔드)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_프레스턴 노스엔드_network.svg) · [shotmap(프레스턴 노스엔드)](viz/찰턴애슬레틱_프레스턴노스엔드_214006_프레스턴 노스엔드_shotmap.svg)
 - **첼시_노팅엄포레스트_159826**: [heatmap(노팅엄 포레스트)](viz/첼시_노팅엄포레스트_159826_노팅엄 포레스트_heatmap.svg) · [network(노팅엄 포레스트)](viz/첼시_노팅엄포레스트_159826_노팅엄 포레스트_network.svg) · [shotmap(노팅엄 포레스트)](viz/첼시_노팅엄포레스트_159826_노팅엄 포레스트_shotmap.svg) · [heatmap(첼시)](viz/첼시_노팅엄포레스트_159826_첼시_heatmap.svg) · [network(첼시)](viz/첼시_노팅엄포레스트_159826_첼시_network.svg) · [shotmap(첼시)](viz/첼시_노팅엄포레스트_159826_첼시_shotmap.svg)
