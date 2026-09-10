@@ -113544,5 +113544,60 @@
             }
         ],
         "collected_at": "2026-09-10T07:56:38.277437+00:00"
+    },
+    "1318297649": {
+        "match": {
+            "id": 1318297649,
+            "round": "Group Stage - 4",
+            "date": "2026-09-10T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6812188,
+                "logo": null,
+                "name": "Cibao"
+            },
+            "homeTeam": {
+                "id": 21748940,
+                "logo": null,
+                "name": "Salcedo"
+            },
+            "league": {
+                "id": 729240,
+                "logo": "https://highlightly.net/soccer/images/leagues/729240.png",
+                "name": "CONCACAF Caribbean Club Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21748940,
+                    "logo": null,
+                    "name": "Salcedo"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6812188,
+                    "logo": null,
+                    "name": "Cibao"
+                }
+            }
+        ],
+        "collected_at": "2026-09-10T13:22:19.805173+00:00"
     }
 }
