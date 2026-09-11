@@ -114916,7 +114916,48 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 964967,
                     "logo": "https://highlightly.net/soccer/images/teams/964967.png",
@@ -114924,7 +114965,48 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Shots accuracy",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Blocked shots",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Fouls",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 976881,
                     "logo": "https://highlightly.net/soccer/images/teams/976881.png",
@@ -114932,7 +115014,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-11T07:52:29.350673+00:00"
+        "collected_at": "2026-09-11T13:21:08.884309+00:00"
     },
     "1271382870": {
         "match": {
@@ -115923,5 +116005,60 @@
             }
         ],
         "collected_at": "2026-09-11T07:52:36.338703+00:00"
+    },
+    "1367059098": {
+        "match": {
+            "id": 1367059098,
+            "round": "Winners Stage - 8",
+            "date": "2026-09-11T22:00:00.000Z",
+            "country": {
+                "code": "AR",
+                "name": "Argentina",
+                "logo": "https://highlightly.net/soccer/images/countries/AR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3389466,
+                "logo": "https://highlightly.net/soccer/images/teams/3389466.png",
+                "name": "Sol de América"
+            },
+            "homeTeam": {
+                "id": 21920842,
+                "logo": null,
+                "name": "Gimnasia Chivilcoy"
+            },
+            "league": {
+                "id": 114818,
+                "logo": "https://highlightly.net/soccer/images/leagues/114818.png",
+                "name": "Torneo Federal A",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21920842,
+                    "logo": null,
+                    "name": "Gimnasia Chivilcoy"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3389466,
+                    "logo": "https://highlightly.net/soccer/images/teams/3389466.png",
+                    "name": "Sol de América"
+                }
+            }
+        ],
+        "collected_at": "2026-09-11T13:21:11.031957+00:00"
     }
 }
