@@ -704,7 +704,9 @@
    "date": "2026-09-12",
    "time": "04:00",
    "id": 214046,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 6,
+   "awayGoals": 0
   },
   {
    "home": "웨스트브롬위치 알비온",
@@ -4848,7 +4850,9 @@
    "date": "2026-09-12",
    "time": "03:45",
    "id": 210472,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "라싱 스트라스부르",
@@ -4923,19 +4927,19 @@
    "friendly": false
   },
   {
+   "home": "파리 FC",
+   "away": "라싱 스트라스부르",
+   "date": "2026-09-20",
+   "time": "00:15",
+   "id": 210480,
+   "friendly": false
+  },
+  {
    "home": "툴루즈",
    "away": "르아브르AC",
    "date": "2026-09-20",
    "time": "03:45",
    "id": 210481,
-   "friendly": false
-  },
-  {
-   "home": "파리 FC",
-   "away": "라싱 스트라스부르",
-   "date": "2026-09-20",
-   "time": "04:00",
-   "id": 210480,
    "friendly": false
   },
   {
@@ -7270,7 +7274,9 @@
    "date": "2026-09-12",
    "time": "03:30",
    "id": 213687,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 3
   },
   {
    "home": "TSG 호펜하임",
@@ -9876,7 +9882,9 @@
    "date": "2026-09-12",
    "time": "03:45",
    "id": 210096,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 4
   },
   {
    "home": "제노아",
@@ -13126,7 +13134,9 @@
    "date": "2026-09-12",
    "time": "03:00",
    "id": 210844,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "FC 트벤테",
@@ -17996,7 +18006,9 @@
    "date": "2026-09-12",
    "time": "04:00",
    "id": 213568,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 0
   },
   {
    "home": "라싱 산탄데르",
