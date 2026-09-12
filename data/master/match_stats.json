@@ -119344,5 +119344,60 @@
             }
         ],
         "collected_at": "2026-09-12T07:45:18.134527+00:00"
+    },
+    "1388594504": {
+        "match": {
+            "id": 1388594504,
+            "round": "Apertura - 3",
+            "date": "2026-09-12T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 15133266,
+                "logo": "https://highlightly.net/soccer/images/teams/15133266.png",
+                "name": "Correcaminos UAT II"
+            },
+            "homeTeam": {
+                "id": 13547853,
+                "logo": "https://highlightly.net/soccer/images/teams/13547853.png",
+                "name": "Atlético Saltillo"
+            },
+            "league": {
+                "id": 615206,
+                "logo": "https://highlightly.net/soccer/images/leagues/615206.png",
+                "name": "Liga Premier Serie A",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13547853,
+                    "logo": "https://highlightly.net/soccer/images/teams/13547853.png",
+                    "name": "Atlético Saltillo"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15133266,
+                    "logo": "https://highlightly.net/soccer/images/teams/15133266.png",
+                    "name": "Correcaminos UAT II"
+                }
+            }
+        ],
+        "collected_at": "2026-09-12T17:42:53.791163+00:00"
     }
 }
