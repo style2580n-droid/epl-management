@@ -4946,8 +4946,24 @@
    "home": "올랭피크 리옹",
    "away": "스타드 렌",
    "date": "2026-09-20",
-   "time": "04:00",
+   "time": "03:45",
    "id": 210478,
+   "friendly": false
+  },
+  {
+   "home": "르망FC",
+   "away": "FC 로리앙",
+   "date": "2026-09-20",
+   "time": "03:45",
+   "id": 210476,
+   "friendly": false
+  },
+  {
+   "home": "앙제SCO",
+   "away": "ESTAC 트루아",
+   "date": "2026-09-20",
+   "time": "03:45",
+   "id": 210474,
    "friendly": false
   },
   {
@@ -4959,27 +4975,11 @@
    "friendly": false
   },
   {
-   "home": "르망FC",
-   "away": "FC 로리앙",
-   "date": "2026-09-20",
-   "time": "04:00",
-   "id": 210476,
-   "friendly": false
-  },
-  {
    "home": "AJ 오세르",
    "away": "스타드 브레스투아29",
    "date": "2026-09-20",
    "time": "04:00",
    "id": 210475,
-   "friendly": false
-  },
-  {
-   "home": "앙제SCO",
-   "away": "ESTAC 트루아",
-   "date": "2026-09-20",
-   "time": "04:00",
-   "id": 210474,
    "friendly": false
   },
   {
@@ -7415,6 +7415,14 @@
    "friendly": false
   },
   {
+   "home": "DC 유나이티드",
+   "away": "SC 파더보른07",
+   "date": "2026-10-01",
+   "time": "08:30",
+   "id": 603677,
+   "friendly": true
+  },
+  {
    "home": "보루시아 도르트문트",
    "away": "베르더 브레멘",
    "date": "2026-10-10",
@@ -7778,7 +7786,7 @@
    "home": "바이에른 뮌헨",
    "away": "1.FC 쾰른",
    "date": "2026-11-21",
-   "time": "19:00",
+   "time": "04:30",
    "id": 213754,
    "friendly": false
   },
@@ -24701,6 +24709,14 @@
    "time": "08:00",
    "id": 5318,
    "friendly": false
+  },
+  {
+   "home": "DC 유나이티드",
+   "away": "SC 파더보른07",
+   "date": "2026-10-01",
+   "time": "08:30",
+   "id": 603677,
+   "friendly": true
   },
   {
    "home": "시애틀 사운더스",
