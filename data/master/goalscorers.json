@@ -27904,6 +27904,23 @@
  ],
  "ligue1": [
   {
+   "home": "스타드 브레스투아29",
+   "away": "파리 생제르맹",
+   "date": "2026-09-14",
+   "eid": 210471,
+   "goals": [
+    {
+     "scorer": "F. Torres",
+     "assist": "O. Dembélé",
+     "team": null,
+     "is_home": false,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "르망FC",
    "away": "RC 랑스",
    "date": "2026-09-14",
@@ -30222,6 +30239,59 @@
  ],
  "seriea": [
   {
+   "home": "사수올로",
+   "away": "유벤투스",
+   "date": "2026-09-14",
+   "eid": 210094,
+   "goals": [
+    {
+     "scorer": "V. Adžić",
+     "assist": "A. Laurienté",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Zhegrova",
+     "assist": "R. Kolo Muani",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Bowie",
+     "assist": "D. Bakola",
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Zhegrova",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Esposito",
+     "assist": "N. Matić",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "나폴리",
    "away": "볼로냐",
    "date": "2026-09-14",
@@ -31438,6 +31508,59 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "PSV 에인트호번",
+   "away": "스파르타 로테르담",
+   "date": "2026-09-14",
+   "eid": 210850,
+   "goals": [
+    {
+     "scorer": "S. Mijnans",
+     "assist": "L. Geertruida",
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Mijnans",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Sano",
+     "assist": "E. Bajraktarević",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Mijnans",
+     "assist": "E. Bajraktarević",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Zonneveld",
+     "assist": "B. Kuipers",
+     "team": null,
+     "is_home": false,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "PEC 즈볼레",
    "away": "페예노르트",
@@ -33674,6 +33797,32 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "프레드릭스타",
+   "away": "사르프스보르그 08",
+   "date": "2026-09-14",
+   "eid": 207069,
+   "goals": [
+    {
+     "scorer": "O. Skarsem",
+     "assist": "S. Sörli",
+     "team": null,
+     "is_home": false,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Nilsson",
+     "assist": "I. H. Amundsen",
+     "team": null,
+     "is_home": true,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "KFUM 오슬로",
    "away": "올레순",
@@ -39413,6 +39562,67 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레알 소시에다드",
+   "away": "아틀레티코 마드리드",
+   "date": "2026-09-14",
+   "eid": 213567,
+   "goals": [
+    {
+     "scorer": "G. Simeone",
+     "assist": "D. Hancko",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. David",
+     "assist": "A. Grimaldo",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Grimaldo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "헤타페",
+   "away": "데포르티보 라코루냐",
+   "date": "2026-09-14",
+   "eid": 213562,
+   "goals": [
+    {
+     "scorer": "P. Aubameyang",
+     "assist": "Y. Hernández",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Terrats",
+     "assist": "I. A. Monzón",
+     "team": null,
+     "is_home": true,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "레반테",
    "away": "바르셀로나",
