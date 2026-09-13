@@ -1,6 +1,70 @@
 {
  "epl": [
   {
+   "home": "맨체스터 유나이티드",
+   "away": "맨체스터 시티",
+   "date": "2026-09-14",
+   "eid": 209572,
+   "home_starters": [
+    "Senne Lammens",
+    "Diogo Dalot",
+    "Harry Maguire",
+    "Lisandro Martínez",
+    "Patrick Dorgu",
+    "Youri Tielemans",
+    "Kobbie Mainoo",
+    "Bryan Mbeumo",
+    "Bruno Fernandes",
+    "Marcus Rashford",
+    "Matheus Cunha"
+   ],
+   "away_starters": [
+    "Gianluigi Donnarumma",
+    "Matheus Nunes",
+    "Marc Guéhi",
+    "Rúben Dias",
+    "Joško Gvardiol",
+    "Elliot Anderson",
+    "Enzo Fernández",
+    "Phil Foden",
+    "Rayan Cherki",
+    "Antoine Semenyo",
+    "Erling Haaland"
+   ]
+  },
+  {
+   "home": "코번트리 시티",
+   "away": "브라이튼",
+   "date": "2026-09-13",
+   "eid": 209568,
+   "home_starters": [
+    "Carl Rushworth",
+    "Aurèle Amenda",
+    "Bobby Thomas",
+    "Ethan Pinnock",
+    "Milan van Ewijk",
+    "Frank Onyeka",
+    "Matt Grimes",
+    "Jay DaSilva",
+    "Jack Rudoni",
+    "Ephron Mason-Clark",
+    "Taiwo Awoniyi"
+   ],
+   "away_starters": [
+    "Bart Verbruggen",
+    "Ferdi Kadıoğlu",
+    "Luka Vušković",
+    "Lewis Dunk",
+    "Olivier Boscagli",
+    "Pascal Groß",
+    "Yasin Ayari",
+    "Diego Gómez",
+    "Malick Yalcouyé",
+    "Maxim De Cuyper",
+    "Charalampos Kostoulas"
+   ]
+  },
+  {
    "home": "선덜랜드",
    "away": "아스날",
    "date": "2026-09-13",
@@ -26181,6 +26245,70 @@
  ],
  "ligue1": [
   {
+   "home": "르망FC",
+   "away": "RC 랑스",
+   "date": "2026-09-14",
+   "eid": 210466,
+   "home_starters": [
+    "Ewan Hatfout",
+    "Noa Boissé",
+    "Samuel Yohou",
+    "Harold Voyer",
+    "Lucas Bretelle",
+    "Rayan Bamba",
+    "Adil Bourabaa",
+    "Jean Vercruysse",
+    "Lucas Calodat",
+    "Louis Mafouta",
+    "Dame Gueye"
+   ],
+   "away_starters": [
+    "Robin Risser",
+    "Jonathan Gradit",
+    "Kyllian Antonio",
+    "Matthieu Udol",
+    "Ruben Aguilar",
+    "Michaël Cuisance",
+    "Andrija Bulatović",
+    "Michal Skoras",
+    "Abdallah Sima",
+    "Florian Thauvin",
+    "Odsonne Édouard"
+   ]
+  },
+  {
+   "home": "릴OSC",
+   "away": "ESTAC 트루아",
+   "date": "2026-09-13",
+   "eid": 210467,
+   "home_starters": [
+    "Berke Özer",
+    "Tiago Santos",
+    "Nathan Ngoy",
+    "Alexsandro Ribeiro",
+    "Romain Perraud",
+    "Ngal'ayel Mukau",
+    "Nabil Bentaleb",
+    "Dilane Bakwa",
+    "Hakon Arnar Haraldsson",
+    "Başar Önal",
+    "Ayase Ueda"
+   ],
+   "away_starters": [
+    "Patrick Beach",
+    "Lucas Maronnier",
+    "Adrien Monfray",
+    "Michel Diaz",
+    "Anis Ouzenadji",
+    "Mouhamed Diop",
+    "Karim Dermane",
+    "Kandet Diawara",
+    "Antoine Mille",
+    "Hugo Picard",
+    "Jérémy Le Douaron"
+   ]
+  },
+  {
    "home": "파리 FC",
    "away": "올랭피크 리옹",
    "date": "2026-09-13",
@@ -27239,6 +27367,70 @@
  ],
  "bundesliga": [
   {
+   "home": "SV 엘버스베르크",
+   "away": "바이에른 뮌헨",
+   "date": "2026-09-14",
+   "eid": 213693,
+   "home_starters": [
+    "Nicolas Kristof",
+    "Jan Gyamerah",
+    "Lukas Finn Pinckert",
+    "Maximilian Rohr",
+    "Lasse Günther",
+    "Felix Keidel",
+    "Łukasz Poręba",
+    "Lukas Petkov",
+    "Francis Onyeka",
+    "Cole Campbell",
+    "David Mokwa"
+   ],
+   "away_starters": [
+    "Jonas Urbig",
+    "Josip Stanišić",
+    "Dayot Upamecano",
+    "Kim Min-jae",
+    "Nathaniel Brown",
+    "Aleksandar Pavlović",
+    "Tom Bischof",
+    "Lennart Karl",
+    "Michael Olise",
+    "Ismael Saibari",
+    "Harry Kane"
+   ]
+  },
+  {
+   "home": "RB 라이프치히",
+   "away": "함부르크SV",
+   "date": "2026-09-13",
+   "eid": 213691,
+   "home_starters": [
+    "Maarten Vandevoordt",
+    "Benjamin Henrichs",
+    "Willi Orbán",
+    "Castello Lukeba",
+    "David Raum",
+    "Ezechiel Banzuzi",
+    "Neil El Aynaoui",
+    "Assan Ouédraogo",
+    "Brajan Gruda",
+    "Tidiam Gomis",
+    "Antonio Nusa"
+   ],
+   "away_starters": [
+    "Daniel Fernandes",
+    "Shafiq Nandja",
+    "Jordan Torunarigha",
+    "Nicolás Capaldo",
+    "Zakaria El Ouahdi",
+    "Albert Sambi Lokonga",
+    "Nicolai Remberg",
+    "David Møller Wolfe",
+    "Patson Daka",
+    "Albert Grønbæk",
+    "Yussuf Poulsen"
+   ]
+  },
+  {
    "home": "1.FC 쾰른",
    "away": "베르더 브레멘",
    "date": "2026-09-13",
@@ -28040,6 +28232,70 @@
   }
  ],
  "seriea": [
+  {
+   "home": "나폴리",
+   "away": "볼로냐",
+   "date": "2026-09-14",
+   "eid": 210093,
+   "home_starters": [
+    "Vanja Milinković-Savić",
+    "Giovanni Di Lorenzo",
+    "Amir Rrahmani",
+    "Rafa Marín",
+    "Leonardo Spinazzola",
+    "Billy Gilmour",
+    "Stanislav Lobotka",
+    "Matteo Politano",
+    "Kevin De Bruyne",
+    "Antonio Vergara",
+    "Rasmus Højlund"
+   ],
+   "away_starters": [
+    "Massimo Pessina",
+    "Emil Holm",
+    "Torbjørn Heggem",
+    "Arthur Theate",
+    "Juan Miranda",
+    "Lewis Ferguson",
+    "Tommaso Pobega",
+    "Federico Bernardeschi",
+    "Mikel Amondarain",
+    "Nicolò Cambiaghi",
+    "Roberto Piccoli"
+   ]
+  },
+  {
+   "home": "레체",
+   "away": "몬차",
+   "date": "2026-09-13",
+   "eid": 210092,
+   "home_starters": [
+    "Wladimiro Falcone",
+    "Danilo Veiga",
+    "Jamil Siebert",
+    "Tiago Gabriel",
+    "Antonino Gallo",
+    "Lassana Coulibaly",
+    "Ivan Ilić",
+    "Youssef Maleh",
+    "N'Dri Konan",
+    "Nikola Štulić",
+    "Joël Monteiro"
+   ],
+   "away_starters": [
+    "Demba Thiam",
+    "Eddy Kouadio",
+    "Lorenzo Lucchesi",
+    "Andrea Carboni",
+    "Samuele Birindelli",
+    "Michael Folorunsho",
+    "Ebenezer Akinsanmiro",
+    "Ricardo Mangas",
+    "Andrea Colpani",
+    "Jay Robinson",
+    "Gustavo Varela"
+   ]
+  },
   {
    "home": "아탈란타",
    "away": "칼리아리",
@@ -29130,6 +29386,70 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "PEC 즈볼레",
+   "away": "페예노르트",
+   "date": "2026-09-13",
+   "eid": 210852,
+   "home_starters": [
+    "Jasper Schendelaar",
+    "Olivier Aertssen",
+    "Simon Graves",
+    "Nick Viergever",
+    "Damian van der Haar",
+    "Nick Fichtinger",
+    "Tobias Sommer",
+    "Dylan Mbayo",
+    "Odysseus Velanas",
+    "Ibrahim Cissoko",
+    "Koen Kostons"
+   ],
+   "away_starters": [
+    "Tjark Ernst",
+    "Givairo Read",
+    "Tsuyoshi Watanabe",
+    "Jeremiah St Juste",
+    "Mika Mármol",
+    "Gjivai Zechiël",
+    "Charles Vanhoutte",
+    "Oussama Targhalline",
+    "Anis Hadj Moussa",
+    "Nacho Ferri",
+    "Luciano Valente"
+   ]
+  },
+  {
+   "home": "sc 헤렌베인",
+   "away": "텔스타르",
+   "date": "2026-09-13",
+   "eid": 210848,
+   "home_starters": [
+    "Bernt Klaverboer",
+    "Oliver Braude",
+    "Sam Kersten",
+    "Maas Willemsen",
+    "Vasilios Zagaritis",
+    "Levi Smans",
+    "Nolhan Courtens",
+    "Jacob Trenskow",
+    "Ringo Meerveld",
+    "Maxence Rivera",
+    "Dylan Vente"
+   ],
+   "away_starters": [
+    "Ronald Koeman Jr",
+    "Sem Valk",
+    "Abdelnour Soualhia",
+    "Marvin Peersman",
+    "Gerald Alders",
+    "Tyrone Owusu",
+    "Nils Rossen",
+    "Jeff Hardeveld",
+    "Rui Mendes",
+    "Patrick Brouwer",
+    "Nökkvi Þórisson"
+   ]
+  },
   {
    "home": "엑셀시오르 로테르담",
    "away": "FC 위트레흐트",
@@ -30732,6 +31052,134 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "KFUM 오슬로",
+   "away": "올레순",
+   "date": "2026-09-14",
+   "eid": 207072,
+   "home_starters": [
+    "Emil Odegaard",
+    "Håkon Røsten",
+    "Fredrik Tobias Berglie",
+    "Brage Skaret",
+    "Hakon Helland Hoseth",
+    "Martin Tangen Vinjor",
+    "Eirik Franke Saunes",
+    "Jonas Lange Hjorth",
+    "David Hickson Gyedu",
+    "Bjorn Martin Kristensen",
+    "Bilal Njie"
+   ],
+   "away_starters": [
+    "Luca Podlech",
+    "Kristoffer Nessø",
+    "Marius Andresen",
+    "Cheick Mbacke Diop",
+    "Ólafur Guðmundsson",
+    "Uba Charles",
+    "Mathias Christensen",
+    "Elias Kristoffersen Hagen",
+    "Sander Erik Kartum",
+    "Isak Gabriel Skotheim",
+    "Marcus Haagensen Reed"
+   ]
+  },
+  {
+   "home": "IK 스타트",
+   "away": "브란",
+   "date": "2026-09-14",
+   "eid": 207071,
+   "home_starters": [
+    "Filip Manojlović",
+    "Erlend Dahl Reitan",
+    "Sander Aske Granheim",
+    "Jens Berland Husebø",
+    "Altin Ujkani",
+    "Ousmane Diallo Toure",
+    "Steve Mvoué",
+    "Erlend Segberg",
+    "Mikael Ugland",
+    "Hakon Lorentzen",
+    "Nikolas Koutsakos"
+   ],
+   "away_starters": [
+    "Mathias Dyngeland",
+    "Leo Cornic",
+    "Fredrik Pallesen Knudsen",
+    "Thore Pedersen",
+    "Joachim Soltvedt",
+    "Jacob Lungi Sørensen",
+    "Bård Finne",
+    "Niklas Jensen Wassberg",
+    "Kristall Máni Ingason",
+    "Ulrik Mathisen",
+    "Niklas Castro"
+   ]
+  },
+  {
+   "home": "함캄",
+   "away": "몰데",
+   "date": "2026-09-14",
+   "eid": 207070,
+   "home_starters": [
+    "Marcus Sandberg",
+    "Snorre Strand Nilsen",
+    "Martin Gjone",
+    "Fredrik Sjolstad",
+    "Ethan Amundsen-Day",
+    "Viðar Ari Jónsson",
+    "Markus Johnsgard",
+    "Luc Mares",
+    "William Osnes-Ringen",
+    "David Benjamin",
+    "Mohamed Ofkir"
+   ],
+   "away_starters": [
+    "Albert Posiadała",
+    "Mathias Løvik",
+    "Niklas Odegard",
+    "Birk Risa",
+    "Samukelo Kabini",
+    "Emil Breivik",
+    "Daniel Daga",
+    "Trent Kone Doherty",
+    "Sondre Milian Granaas",
+    "Sander Hestetun Kilen",
+    "Jalal Abdullai"
+   ]
+  },
+  {
+   "home": "비킹",
+   "away": "크리스티안순",
+   "date": "2026-09-13",
+   "eid": 207075,
+   "home_starters": [
+    "Arild Østbø",
+    "Henrik Heggheim",
+    "Gianni Stensness",
+    "Henrik Sælebakke Falchener",
+    "Kristoffer Haugen",
+    "Henrik Bjørdal",
+    "Joe Bell",
+    "Kristoffer Askildsen",
+    "Peter Christiansen",
+    "Erik Botheim",
+    "Zlatko Tripić"
+   ],
+   "away_starters": [
+    "Michael Lansing",
+    "Marius Elvius",
+    "Julius Mar Juliusson",
+    "Max Normann Williamsen",
+    "John Kitolano",
+    "Sander Svendsen",
+    "Heine Gikling Bruseth",
+    "Jesper Isaksen",
+    "Gustav Christensen",
+    "Leander Alvheim",
+    "Zymer Bytyqi"
+   ]
+  },
   {
    "home": "로젠보르그",
    "away": "트롬쇠",
@@ -35662,6 +36110,70 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레반테",
+   "away": "바르셀로나",
+   "date": "2026-09-13",
+   "eid": 213563,
+   "home_starters": [
+    "Mathew Ryan",
+    "Jeremy Toljan",
+    "Adrián de la Fuente",
+    "Aïssa Mandi",
+    "Manuel Sánchez",
+    "Víctor García",
+    "Hugo Sotelo",
+    "Jon Ander Olasagasti",
+    "Roger Brugué",
+    "Daniel Requena",
+    "Petar Ratkov"
+   ],
+   "away_starters": [
+    "Joan García",
+    "Eric García",
+    "Pau Cubarsí",
+    "Gerard Martín",
+    "Xavi Espart",
+    "Fermín López",
+    "Rodri",
+    "Pedri",
+    "Lamine Yamal",
+    "Raphinha",
+    "Anthony Gordon"
+   ]
+  },
+  {
+   "home": "셀타 비고",
+   "away": "말라가",
+   "date": "2026-09-13",
+   "eid": 213561,
+   "home_starters": [
+    "Ionuț Radu",
+    "Sebastián Cáceres",
+    "Yoel Lago",
+    "Marcos Alonso",
+    "Javier Rueda",
+    "Miguel Román",
+    "Ilaix Moriba",
+    "Sergio Carreira",
+    "Hugo González",
+    "Ferrán Jutglà",
+    "Hugo Álvarez"
+   ],
+   "away_starters": [
+    "Alfonso Herrero",
+    "Rafa Garrido",
+    "Ángel Recio",
+    "Einar Galilea",
+    "Jose Salinas",
+    "Izan Merino",
+    "David Larrubia",
+    "Pablo Martínez",
+    "Dani Lorenzo",
+    "Joaquín Muñoz",
+    "Chupete"
+   ]
+  },
   {
    "home": "레알 마드리드",
    "away": "라요 바예카노",
