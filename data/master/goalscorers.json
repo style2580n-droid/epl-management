@@ -25096,6 +25096,23 @@
  ],
  "championship": [
   {
+   "home": "셰필드 유나이티드",
+   "away": "울버햄튼 원더러스",
+   "date": "2026-09-13",
+   "eid": 214057,
+   "goals": [
+    {
+     "scorer": "R. Jiménez",
+     "assist": "T. Doyle",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "왓포드",
    "away": "스토크 시티",
    "date": "2026-09-12",
@@ -31123,6 +31140,41 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "엑셀시오르 로테르담",
+   "away": "FC 위트레흐트",
+   "date": "2026-09-13",
+   "eid": 210849,
+   "goals": [
+    {
+     "scorer": "D. De Wit",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Sliti",
+     "assist": "Á. O. Thorsteinsson",
+     "team": null,
+     "is_home": true,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Stepanov",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "SC 캄뷔르",
    "away": "N.E.C. 네이메헌",
