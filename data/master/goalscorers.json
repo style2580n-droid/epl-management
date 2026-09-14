@@ -1,6 +1,59 @@
 {
  "epl": [
   {
+   "home": "리즈 유나이티드",
+   "away": "뉴캐슬",
+   "date": "2026-09-15",
+   "eid": 209570,
+   "goals": [
+    {
+     "scorer": "B. Touré",
+     "assist": "T. Livramento",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Okafor",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Calvert-Lewin",
+     "assist": "T. Muharemović",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Bogle",
+     "assist": "D. Calvert-Lewin",
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Miley",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "맨체스터 유나이티드",
    "away": "맨체스터 시티",
    "date": "2026-09-14",
@@ -30239,6 +30292,147 @@
  ],
  "seriea": [
   {
+   "home": "인테르",
+   "away": "우디네세",
+   "date": "2026-09-15",
+   "eid": 210090,
+   "goals": [
+    {
+     "scorer": "I. Gueye",
+     "assist": "V. Bayo",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Bonny",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. P. Esposito",
+     "assist": "P. Zieliński",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Thuram",
+     "assist": "A. Diouf",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Barella",
+     "assist": "M. Thuram",
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Augusto",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Ekkelenkamp",
+     "assist": "K. Davis",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Abankwah",
+     "assist": "U. Gómez",
+     "team": null,
+     "is_home": false,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "토리노",
+   "away": "AS로마",
+   "date": "2026-09-15",
+   "eid": 210095,
+   "goals": [
+    {
+     "scorer": "N. Pisilli",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Malen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "코모",
+   "away": "파르마",
+   "date": "2026-09-15",
+   "eid": 210088,
+   "goals": [
+    {
+     "scorer": "D. Romero",
+     "assist": "P. Almqvist",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Kaiki",
+     "assist": "M. Perrone",
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Ramón",
+     "assist": "N. Paz",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "사수올로",
    "away": "유벤투스",
    "date": "2026-09-14",
@@ -33797,6 +33991,59 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "보되글림트",
+   "away": "산네피오르",
+   "date": "2026-09-15",
+   "eid": 207068,
+   "goals": [
+    {
+     "scorer": "E. Patoulidis",
+     "assist": "E. Gigović",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. M. Dunsby",
+     "assist": "M. Sauer",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": "J. Hauge",
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Hauge",
+     "assist": "O. Blomberg",
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "프레드릭스타",
    "away": "사르프스보르그 08",
@@ -39562,6 +39809,41 @@
   }
  ],
  "laliga": [
+  {
+   "home": "비야레알",
+   "away": "레알 베티스",
+   "date": "2026-09-15",
+   "eid": 213569,
+   "goals": [
+    {
+     "scorer": "Natan",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Hernández",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Moreno",
+     "assist": "R. Veiga",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "레알 소시에다드",
    "away": "아틀레티코 마드리드",
