@@ -41315,6 +41315,129 @@
  ],
  "mls": [
   {
+   "home": "샌디에이고 FC",
+   "away": "필라델피아 유니온",
+   "date": "2026-09-14",
+   "eid": 5288,
+   "goals": [
+    {
+     "scorer": "M. Jakupovic",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Godoy",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "ownGoal",
+     "body": "head"
+    },
+    {
+     "scorer": "B. Damiani",
+     "assist": "F. Westfield",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Sullivan",
+     "assist": "I. Vassilev",
+     "team": null,
+     "is_home": false,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Sullivan",
+     "assist": "I. Vassilev",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "밴쿠버 화이트캡스",
+   "away": "오스틴 FC",
+   "date": "2026-09-14",
+   "eid": 5286,
+   "goals": [
+    {
+     "scorer": "C. Ramirez",
+     "assist": "J. Rosales",
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. White",
+     "assist": "R. Gauld",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Ramirez",
+     "assist": "F. Torres",
+     "team": null,
+     "is_home": false,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "시카고 파이어",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-09-14",
+   "eid": 5287,
+   "goals": [
+    {
+     "scorer": "M. Haile-Selassie",
+     "assist": "R. Lod",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Miller",
+     "assist": "D. Turgeman",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "J. Yueill",
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "산호세 어스퀘이크스",
    "away": "휴스턴 다이나모",
    "date": "2026-09-13",
