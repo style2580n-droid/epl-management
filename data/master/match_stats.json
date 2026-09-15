@@ -127138,5 +127138,1205 @@
             }
         ],
         "collected_at": "2026-09-14T23:43:18.800215+00:00"
+    },
+    "1286454080": {
+        "match": {
+            "id": 1286454080,
+            "round": "Regular Season - 26",
+            "date": "2026-09-15T23:30:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1972551,
+                "logo": "https://highlightly.net/soccer/images/teams/1972551.png",
+                "name": "Deportes Temuco"
+            },
+            "homeTeam": {
+                "id": 1975955,
+                "logo": "https://highlightly.net/soccer/images/teams/1975955.png",
+                "name": "Unión Española"
+            },
+            "league": {
+                "id": 227150,
+                "logo": "https://highlightly.net/soccer/images/leagues/227150.png",
+                "name": "Primera B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 1975955,
+                    "logo": "https://highlightly.net/soccer/images/teams/1975955.png",
+                    "name": "Unión Española"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 1972551,
+                    "logo": "https://highlightly.net/soccer/images/teams/1972551.png",
+                    "name": "Deportes Temuco"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:27:58.187975+00:00"
+    },
+    "1394588948": {
+        "match": {
+            "id": 1394588948,
+            "round": "Clausura - 10",
+            "date": "2026-09-15T23:30:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16004690,
+                "logo": null,
+                "name": "Academia Anzoátegui"
+            },
+            "homeTeam": {
+                "id": 2417624,
+                "logo": "https://highlightly.net/soccer/images/teams/2417624.png",
+                "name": "UCV"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2417624,
+                    "logo": "https://highlightly.net/soccer/images/teams/2417624.png",
+                    "name": "UCV"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16004690,
+                    "logo": null,
+                    "name": "Academia Anzoátegui"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:27:58.596340+00:00"
+    },
+    "1271006728": {
+        "match": {
+            "id": 1271006728,
+            "round": "Group Stage",
+            "date": "2026-09-15T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 23192236,
+                "logo": null,
+                "name": "Brooklyn"
+            },
+            "homeTeam": {
+                "id": 3401380,
+                "logo": "https://highlightly.net/soccer/images/teams/3401380.png",
+                "name": "Indy Eleven"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3401380,
+                    "logo": "https://highlightly.net/soccer/images/teams/3401380.png",
+                    "name": "Indy Eleven"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23192236,
+                    "logo": null,
+                    "name": "Brooklyn"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:27:59.019098+00:00"
+    },
+    "1380971246": {
+        "match": {
+            "id": 1380971246,
+            "round": "Semi-finals",
+            "date": "2026-09-15T23:00:00.000Z",
+            "country": {
+                "code": "CA",
+                "name": "Canada",
+                "logo": "https://highlightly.net/soccer/images/countries/CA.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3260114,
+                "logo": "https://highlightly.net/soccer/images/teams/3260114.png",
+                "name": "Forge"
+            },
+            "homeTeam": {
+                "id": 23370095,
+                "logo": null,
+                "name": "Supra Du Quebec"
+            },
+            "league": {
+                "id": 221193,
+                "logo": "https://highlightly.net/soccer/images/leagues/221193.png",
+                "name": "Canadian Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23370095,
+                    "logo": null,
+                    "name": "Supra Du Quebec"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3260114,
+                    "logo": "https://highlightly.net/soccer/images/teams/3260114.png",
+                    "name": "Forge"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:27:59.286650+00:00"
+    },
+    "1370936254": {
+        "match": {
+            "id": 1370936254,
+            "round": "Group Stage - 5",
+            "date": "2026-09-15T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 10691897,
+                "logo": "https://highlightly.net/soccer/images/teams/10691897.png",
+                "name": "Defence Force"
+            },
+            "homeTeam": {
+                "id": 13735073,
+                "logo": null,
+                "name": "Delfines del Este"
+            },
+            "league": {
+                "id": 729240,
+                "logo": "https://highlightly.net/soccer/images/leagues/729240.png",
+                "name": "CONCACAF Caribbean Club Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13735073,
+                    "logo": null,
+                    "name": "Delfines del Este"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 10691897,
+                    "logo": "https://highlightly.net/soccer/images/teams/10691897.png",
+                    "name": "Defence Force"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:27:59.698099+00:00"
+    },
+    "1318298500": {
+        "match": {
+            "id": 1318298500,
+            "round": "Group Stage - 5",
+            "date": "2026-09-15T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 10690195,
+                "logo": "https://highlightly.net/soccer/images/teams/10690195.png",
+                "name": "Club Sando"
+            },
+            "homeTeam": {
+                "id": 3780075,
+                "logo": "https://highlightly.net/soccer/images/teams/3780075.png",
+                "name": "Violette AC"
+            },
+            "league": {
+                "id": 729240,
+                "logo": "https://highlightly.net/soccer/images/leagues/729240.png",
+                "name": "CONCACAF Caribbean Club Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3780075,
+                    "logo": "https://highlightly.net/soccer/images/teams/3780075.png",
+                    "name": "Violette AC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 10690195,
+                    "logo": "https://highlightly.net/soccer/images/teams/10690195.png",
+                    "name": "Club Sando"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:00.107860+00:00"
+    },
+    "1294267111": {
+        "match": {
+            "id": 1294267111,
+            "round": "Regular Season - 28",
+            "date": "2026-09-15T22:30:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 119073,
+                "logo": "https://highlightly.net/soccer/images/teams/119073.png",
+                "name": "Ponte Preta"
+            },
+            "homeTeam": {
+                "id": 126732,
+                "logo": "https://highlightly.net/soccer/images/teams/126732.png",
+                "name": "Londrina"
+            },
+            "league": {
+                "id": 62056,
+                "logo": "https://highlightly.net/soccer/images/leagues/62056.png",
+                "name": "Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 126732,
+                    "logo": "https://highlightly.net/soccer/images/teams/126732.png",
+                    "name": "Londrina"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 119073,
+                    "logo": "https://highlightly.net/soccer/images/teams/119073.png",
+                    "name": "Ponte Preta"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:00.532662+00:00"
+    },
+    "1394586395": {
+        "match": {
+            "id": 1394586395,
+            "round": "Clausura - 10",
+            "date": "2026-09-15T22:30:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2406561,
+                "logo": "https://highlightly.net/soccer/images/teams/2406561.png",
+                "name": "Puerto Cabello"
+            },
+            "homeTeam": {
+                "id": 2389541,
+                "logo": "https://highlightly.net/soccer/images/teams/2389541.png",
+                "name": "Deportivo Táchira"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2389541,
+                    "logo": "https://highlightly.net/soccer/images/teams/2389541.png",
+                    "name": "Deportivo Táchira"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2406561,
+                    "logo": "https://highlightly.net/soccer/images/teams/2406561.png",
+                    "name": "Puerto Cabello"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:00.939221+00:00"
+    },
+    "1294267962": {
+        "match": {
+            "id": 1294267962,
+            "round": "Regular Season - 28",
+            "date": "2026-09-15T22:30:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1041557,
+                "logo": "https://highlightly.net/soccer/images/teams/1041557.png",
+                "name": "Operário-PR"
+            },
+            "homeTeam": {
+                "id": 643289,
+                "logo": "https://highlightly.net/soccer/images/teams/643289.png",
+                "name": "Nautico Recife"
+            },
+            "league": {
+                "id": 62056,
+                "logo": "https://highlightly.net/soccer/images/leagues/62056.png",
+                "name": "Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 643289,
+                    "logo": "https://highlightly.net/soccer/images/teams/643289.png",
+                    "name": "Nautico Recife"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1041557,
+                    "logo": "https://highlightly.net/soccer/images/teams/1041557.png",
+                    "name": "Operário-PR"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:01.361326+00:00"
+    },
+    "1394509805": {
+        "match": {
+            "id": 1394509805,
+            "round": "Quarter-finals",
+            "date": "2026-09-15T22:30:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6677730,
+                "logo": "https://highlightly.net/soccer/images/teams/6677730.png",
+                "name": "Linense"
+            },
+            "homeTeam": {
+                "id": 17627547,
+                "logo": null,
+                "name": "Grêmio Prudente"
+            },
+            "league": {
+                "id": 632226,
+                "logo": "https://highlightly.net/soccer/images/leagues/632226.png",
+                "name": "Copa Paulista",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 17627547,
+                    "logo": null,
+                    "name": "Grêmio Prudente"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6677730,
+                    "logo": "https://highlightly.net/soccer/images/teams/6677730.png",
+                    "name": "Linense"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:01.789837+00:00"
+    },
+    "1391876811": {
+        "match": {
+            "id": 1391876811,
+            "round": "Quarter-finals",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 970073,
+                "logo": "https://highlightly.net/soccer/images/teams/970073.png",
+                "name": "Santa Fe"
+            },
+            "homeTeam": {
+                "id": 113967,
+                "logo": "https://highlightly.net/soccer/images/teams/113967.png",
+                "name": "Vasco DA Gama"
+            },
+            "league": {
+                "id": 10145,
+                "logo": "https://highlightly.net/soccer/images/leagues/10145.png",
+                "name": "CONMEBOL Sudamericana",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 113967,
+                    "logo": "https://highlightly.net/soccer/images/teams/113967.png",
+                    "name": "Vasco DA Gama"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 970073,
+                    "logo": "https://highlightly.net/soccer/images/teams/970073.png",
+                    "name": "Santa Fe"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:02.072490+00:00"
+    },
+    "1359883466": {
+        "match": {
+            "id": 1359883466,
+            "round": "Group Stage - 3",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 16710169,
+                "logo": null,
+                "name": "Blumenau"
+            },
+            "homeTeam": {
+                "id": 15549405,
+                "logo": null,
+                "name": "Barra"
+            },
+            "league": {
+                "id": 882420,
+                "logo": null,
+                "name": "Copa Santa Catarina",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15549405,
+                    "logo": null,
+                    "name": "Barra"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16710169,
+                    "logo": null,
+                    "name": "Blumenau"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:02.325979+00:00"
+    },
+    "1387792862": {
+        "match": {
+            "id": 1387792862,
+            "round": "Quarter-finals",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 906248,
+                "logo": "https://highlightly.net/soccer/images/teams/906248.png",
+                "name": "Platense"
+            },
+            "homeTeam": {
+                "id": 106308,
+                "logo": "https://highlightly.net/soccer/images/teams/106308.png",
+                "name": "Fluminense"
+            },
+            "league": {
+                "id": 11847,
+                "logo": "https://highlightly.net/soccer/images/leagues/11847.png",
+                "name": "CONMEBOL Libertadores",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 106308,
+                    "logo": "https://highlightly.net/soccer/images/teams/106308.png",
+                    "name": "Fluminense"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 906248,
+                    "logo": "https://highlightly.net/soccer/images/teams/906248.png",
+                    "name": "Platense"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:02.597568+00:00"
+    },
+    "1394587246": {
+        "match": {
+            "id": 1394587246,
+            "round": "Clausura - 10",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2394647,
+                "logo": "https://highlightly.net/soccer/images/teams/2394647.png",
+                "name": "Real Esppor Club"
+            },
+            "homeTeam": {
+                "id": 2392094,
+                "logo": "https://highlightly.net/soccer/images/teams/2392094.png",
+                "name": "Carabobo FC"
+            },
+            "league": {
+                "id": 255233,
+                "logo": "https://highlightly.net/soccer/images/leagues/255233.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2392094,
+                    "logo": "https://highlightly.net/soccer/images/teams/2392094.png",
+                    "name": "Carabobo FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2394647,
+                    "logo": "https://highlightly.net/soccer/images/teams/2394647.png",
+                    "name": "Real Esppor Club"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:03.041652+00:00"
+    },
+    "1318733361": {
+        "match": {
+            "id": 1318733361,
+            "round": "Clausura - 9",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "CO",
+                "name": "Colombia",
+                "logo": "https://highlightly.net/soccer/images/countries/CO.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 23327545,
+                "logo": null,
+                "name": "Ind. Yumbo"
+            },
+            "homeTeam": {
+                "id": 1248350,
+                "logo": "https://highlightly.net/soccer/images/teams/1248350.png",
+                "name": "Barranquilla"
+            },
+            "league": {
+                "id": 205024,
+                "logo": "https://highlightly.net/soccer/images/leagues/205024.png",
+                "name": "Primera B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1248350,
+                    "logo": "https://highlightly.net/soccer/images/teams/1248350.png",
+                    "name": "Barranquilla"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23327545,
+                    "logo": null,
+                    "name": "Ind. Yumbo"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:03.297506+00:00"
+    },
+    "1382041804": {
+        "match": {
+            "id": 1382041804,
+            "round": "Regular Season - 3",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 11144629,
+                "logo": "https://highlightly.net/soccer/images/teams/11144629.png",
+                "name": "Picos"
+            },
+            "homeTeam": {
+                "id": 22857793,
+                "logo": null,
+                "name": "Caicara"
+            },
+            "league": {
+                "id": 1024537,
+                "logo": null,
+                "name": "Piauiense - 2",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22857793,
+                    "logo": null,
+                    "name": "Caicara"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 11144629,
+                    "logo": "https://highlightly.net/soccer/images/teams/11144629.png",
+                    "name": "Picos"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:03.544439+00:00"
+    },
+    "1392792487": {
+        "match": {
+            "id": 1392792487,
+            "round": "Regular Season - 24",
+            "date": "2026-09-15T22:00:00.000Z",
+            "country": {
+                "code": "PY",
+                "name": "Paraguay",
+                "logo": "https://highlightly.net/soccer/images/countries/PY.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 19704838,
+                "logo": null,
+                "name": "12 de Junio VH"
+            },
+            "homeTeam": {
+                "id": 8928625,
+                "logo": null,
+                "name": "Tacuary"
+            },
+            "league": {
+                "id": 214385,
+                "logo": "https://highlightly.net/soccer/images/leagues/214385.png",
+                "name": "Division Intermedia",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8928625,
+                    "logo": null,
+                    "name": "Tacuary"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19704838,
+                    "logo": null,
+                    "name": "12 de Junio VH"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:03.967507+00:00"
+    },
+    "1377780847": {
+        "match": {
+            "id": 1377780847,
+            "round": "Apertura - 20",
+            "date": "2026-09-15T21:15:00.000Z",
+            "country": {
+                "code": "BO",
+                "name": "Bolivia",
+                "logo": "https://highlightly.net/soccer/images/countries/BO.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3158845,
+                "logo": "https://highlightly.net/soccer/images/teams/3158845.png",
+                "name": "The Strongest"
+            },
+            "homeTeam": {
+                "id": 15100077,
+                "logo": null,
+                "name": "ABB"
+            },
+            "league": {
+                "id": 293528,
+                "logo": "https://highlightly.net/soccer/images/leagues/293528.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15100077,
+                    "logo": null,
+                    "name": "ABB"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3158845,
+                    "logo": "https://highlightly.net/soccer/images/teams/3158845.png",
+                    "name": "The Strongest"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:04.229292+00:00"
+    },
+    "1286452378": {
+        "match": {
+            "id": 1286452378,
+            "round": "Regular Season - 26",
+            "date": "2026-09-15T21:00:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1981061,
+                "logo": "https://highlightly.net/soccer/images/teams/1981061.png",
+                "name": "Antofagasta"
+            },
+            "homeTeam": {
+                "id": 1976806,
+                "logo": "https://highlightly.net/soccer/images/teams/1976806.png",
+                "name": "San Luis FC"
+            },
+            "league": {
+                "id": 227150,
+                "logo": "https://highlightly.net/soccer/images/leagues/227150.png",
+                "name": "Primera B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 1976806,
+                    "logo": "https://highlightly.net/soccer/images/teams/1976806.png",
+                    "name": "San Luis FC"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "displayName": "Attacks",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Offsides",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 1981061,
+                    "logo": "https://highlightly.net/soccer/images/teams/1981061.png",
+                    "name": "Antofagasta"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:04.659836+00:00"
+    },
+    "1336400972": {
+        "match": {
+            "id": 1336400972,
+            "round": "Regular Season - 6",
+            "date": "2026-09-15T19:30:00.000Z",
+            "country": {
+                "code": "ES",
+                "name": "Spain",
+                "logo": "https://highlightly.net/soccer/images/countries/ES.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 461175,
+                "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                "name": "Real Madrid"
+            },
+            "homeTeam": {
+                "id": 679031,
+                "logo": "https://highlightly.net/soccer/images/teams/679031.png",
+                "name": "Elche"
+            },
+            "league": {
+                "id": 119924,
+                "logo": "https://highlightly.net/soccer/images/leagues/119924.png",
+                "name": "La Liga",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 679031,
+                    "logo": "https://highlightly.net/soccer/images/teams/679031.png",
+                    "name": "Elche"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 461175,
+                    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                    "name": "Real Madrid"
+                }
+            }
+        ],
+        "collected_at": "2026-09-15T08:28:05.080200+00:00"
     }
 }
