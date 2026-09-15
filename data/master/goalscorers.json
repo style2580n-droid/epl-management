@@ -25219,6 +25219,67 @@
  ],
  "championship": [
   {
+   "home": "미들즈브러",
+   "away": "밀월",
+   "date": "2026-09-16",
+   "eid": 214037,
+   "goals": [
+    {
+     "scorer": "W. Lankshear",
+     "assist": "L. Ayling",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Cozier-Duberry",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Dykes",
+     "assist": "C. Taylor",
+     "team": null,
+     "is_home": false,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Arconte",
+     "assist": "C. Neghli",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "브리스톨 시티",
+   "away": "링컨 시티",
+   "date": "2026-09-16",
+   "eid": 214035,
+   "goals": [
+    {
+     "scorer": "F. Draper",
+     "assist": "B. House",
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "셰필드 유나이티드",
    "away": "울버햄튼 원더러스",
    "date": "2026-09-13",
@@ -31702,6 +31763,68 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "아약스",
+   "away": "빌럼II",
+   "date": "2026-09-16",
+   "eid": 210825,
+   "goals": [
+    {
+     "scorer": "K. Dolberg",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Ciranni",
+     "assist": "U. v. Aalst",
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Gloukh",
+     "assist": "K. Dolberg",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "V. Tsygankov",
+     "assist": "O. Gloukh",
+     "team": null,
+     "is_home": true,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Brandt",
+     "assist": "L. Rosa",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Klaassen",
+     "assist": "K. Dolberg",
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "PSV 에인트호번",
    "away": "스파르타 로테르담",
@@ -39809,6 +39932,111 @@
   }
  ],
  "laliga": [
+  {
+   "home": "엘체",
+   "away": "레알 마드리드",
+   "date": "2026-09-16",
+   "eid": 213573,
+   "goals": [
+    {
+     "scorer": "C. Espí",
+     "assist": "K. Mbappé",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Niño",
+     "assist": "Josan",
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Osorio",
+     "assist": "L. Cepeda",
+     "team": null,
+     "is_home": true,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": "Y. Diomande",
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Dituro",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 25,
+     "goal_type": "ownGoal",
+     "body": "other"
+    }
+   ]
+  },
+  {
+   "home": "알라베스",
+   "away": "발렌시아",
+   "date": "2026-09-16",
+   "eid": 213571,
+   "goals": [
+    {
+     "scorer": "L. Rioja",
+     "assist": "J. Guerra",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "라요 바예카노",
+   "away": "에스파뇰",
+   "date": "2026-09-16",
+   "eid": 213577,
+   "goals": [
+    {
+     "scorer": "R. Fernández",
+     "assist": "J. Hernández",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Pedrosa",
+     "assist": "Á. García",
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Á. García",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "비야레알",
    "away": "레알 베티스",
