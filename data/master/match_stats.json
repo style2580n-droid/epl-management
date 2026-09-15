@@ -128321,7 +128321,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 679031,
                     "logo": "https://highlightly.net/soccer/images/teams/679031.png",
@@ -128329,7 +128338,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 461175,
                     "logo": "https://highlightly.net/soccer/images/teams/461175.png",
@@ -128337,6 +128355,6 @@
                 }
             }
         ],
-        "collected_at": "2026-09-15T08:28:05.080200+00:00"
+        "collected_at": "2026-09-15T18:45:29.861124+00:00"
     }
 }
