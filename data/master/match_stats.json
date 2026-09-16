@@ -132308,5 +132308,60 @@
             }
         ],
         "collected_at": "2026-09-16T08:21:55.813267+00:00"
+    },
+    "1392174661": {
+        "match": {
+            "id": 1392174661,
+            "round": "Regular Season - 29",
+            "date": "2026-09-16T23:00:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2410816,
+                "logo": "https://highlightly.net/soccer/images/teams/2410816.png",
+                "name": "Atlético El Vigía"
+            },
+            "homeTeam": {
+                "id": 2393796,
+                "logo": "https://highlightly.net/soccer/images/teams/2393796.png",
+                "name": "Deportivo Lara"
+            },
+            "league": {
+                "id": 256084,
+                "logo": "https://highlightly.net/soccer/images/leagues/256084.png",
+                "name": "Segunda División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2393796,
+                    "logo": "https://highlightly.net/soccer/images/teams/2393796.png",
+                    "name": "Deportivo Lara"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2410816,
+                    "logo": "https://highlightly.net/soccer/images/teams/2410816.png",
+                    "name": "Atlético El Vigía"
+                }
+            }
+        ],
+        "collected_at": "2026-09-16T14:05:29.055066+00:00"
     }
 }
