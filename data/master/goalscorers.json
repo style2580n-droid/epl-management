@@ -39828,6 +39828,156 @@
  ],
  "laliga": [
   {
+   "home": "바르셀로나",
+   "away": "라싱 산탄데르",
+   "date": "2026-09-17",
+   "eid": 213574,
+   "goals": [
+    {
+     "scorer": "L. Yamal",
+     "assist": "K. Adeyemi",
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Jesus",
+     "assist": "L. Yamal",
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Y. Zabiri",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "D. Olmo",
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Villalibre",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "M. Gueye",
+     "assist": "A. Villalibre",
+     "team": null,
+     "is_home": false,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Cancelo",
+     "assist": "L. Yamal",
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "데포르티보 라코루냐",
+   "away": "세비야",
+   "date": "2026-09-17",
+   "eid": 213572,
+   "goals": [
+    {
+     "scorer": "Miguel Sierra",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "아틀레티코 마드리드",
+   "away": "오사수나",
+   "date": "2026-09-17",
+   "eid": 213570,
+   "goals": [
+    {
+     "scorer": "A. Baena",
+     "assist": "J. Cardoso",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Le Normand",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Lee",
+     "assist": "J. David",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. David",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "엘체",
    "away": "레알 마드리드",
    "date": "2026-09-16",
