@@ -39803,6 +39803,50 @@
  ],
  "laliga": [
   {
+   "home": "말라가",
+   "away": "비야레알",
+   "date": "2026-09-18",
+   "eid": 213576,
+   "goals": [
+    {
+     "scorer": "P. Gueye",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Gueye",
+     "assist": "A. Pérez",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Moleiro",
+     "assist": "I. Akhomach",
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Dotor",
+     "assist": "J. Cruz",
+     "team": null,
+     "is_home": true,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "레알 베티스",
    "away": "헤타페",
    "date": "2026-09-18",
