@@ -1,6 +1,41 @@
 {
  "epl": [
   {
+   "home": "브렌트포드",
+   "away": "첼시",
+   "date": "2026-09-19",
+   "eid": 209576,
+   "goals": [
+    {
+     "scorer": "F. Carvalho",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Thiago",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Anthony",
+     "assist": "J. Schuster",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "리즈 유나이티드",
    "away": "뉴캐슬",
    "date": "2026-09-15",
@@ -25089,6 +25124,23 @@
  ],
  "championship": [
   {
+   "home": "브리스톨 시티",
+   "away": "왓포드",
+   "date": "2026-09-19",
+   "eid": 214058,
+   "goals": [
+    {
+     "scorer": "D. Ballard",
+     "assist": "R. Cardines",
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "미들즈브러",
    "away": "밀월",
    "date": "2026-09-16",
@@ -27888,6 +27940,41 @@
  ],
  "ligue1": [
   {
+   "home": "AS 모나코",
+   "away": "RC 랑스",
+   "date": "2026-09-19",
+   "eid": 210473,
+   "goals": [
+    {
+     "scorer": "J. Gradit",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "ownGoal",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Udol",
+     "assist": "F. Thauvin",
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "P. Brunner",
+     "assist": "M. Abline",
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "스타드 브레스투아29",
    "away": "파리 생제르맹",
    "date": "2026-09-14",
@@ -29069,6 +29156,77 @@
  ],
  "bundesliga": [
   {
+   "home": "바이에른 뮌헨",
+   "away": "우니온 베를린",
+   "date": "2026-09-19",
+   "eid": 213698,
+   "goals": [
+    {
+     "scorer": "M. Olise",
+     "assist": "T. Bischof",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Olise",
+     "assist": "T. Bischof",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Saibari",
+     "assist": "A. Davies",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. Kane",
+     "assist": "M. Olise",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Olise",
+     "assist": "J. Musiala",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. Kane",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Musiala",
+     "assist": "A. Davies",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "SV 엘버스베르크",
    "away": "바이에른 뮌헨",
    "date": "2026-09-14",
@@ -30222,6 +30380,41 @@
   }
  ],
  "seriea": [
+  {
+   "home": "몬차",
+   "away": "사수올로",
+   "date": "2026-09-19",
+   "eid": 210103,
+   "goals": [
+    {
+     "scorer": "V. Adžić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": "S. Birindelli",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "인테르",
    "away": "우디네세",
@@ -31633,6 +31826,41 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "FC 흐로닝언",
+   "away": "PEC 즈볼레",
+   "date": "2026-09-19",
+   "eid": 210853,
+   "goals": [
+    {
+     "scorer": "T. Land",
+     "assist": "D. v. d. Werff",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Schreuders",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. v. Bergen",
+     "assist": "D. v. d. Werff",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "아약스",
    "away": "빌럼II",
@@ -33984,6 +34212,50 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "사르프스보르그 08",
+   "away": "KFUM 오슬로",
+   "date": "2026-09-19",
+   "eid": 207080,
+   "goals": [
+    {
+     "scorer": "J. B. Gonstad",
+     "assist": "B. Njie",
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. H. Hoseth",
+     "assist": "J. L. Hjorth",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Karlsbakk",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. M. Kristensen",
+     "assist": "M. T. Vinjor",
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "보되글림트",
    "away": "산네피오르",
@@ -39802,6 +40074,50 @@
   }
  ],
  "laliga": [
+  {
+   "home": "에스파뇰",
+   "away": "엘체",
+   "date": "2026-09-19",
+   "eid": 213584,
+   "goals": [
+    {
+     "scorer": "G. Valera",
+     "assist": "T. Morente",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "V. Chust",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "F. Niño",
+     "assist": "R. Revivo",
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Niño",
+     "assist": "R. Revivo",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "말라가",
    "away": "비야레알",
