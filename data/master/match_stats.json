@@ -143486,5 +143486,60 @@
             }
         ],
         "collected_at": "2026-09-19T12:58:32.729173+00:00"
+    },
+    "1392210403": {
+        "match": {
+            "id": 1392210403,
+            "round": "Regular Season - 4",
+            "date": "2026-09-19T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22573559,
+                "logo": null,
+                "name": "Chapulineros"
+            },
+            "homeTeam": {
+                "id": 10887627,
+                "logo": null,
+                "name": "Inter Playa del Carmen"
+            },
+            "league": {
+                "id": 1057726,
+                "logo": null,
+                "name": "Primera Premier",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 10887627,
+                    "logo": null,
+                    "name": "Inter Playa del Carmen"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22573559,
+                    "logo": null,
+                    "name": "Chapulineros"
+                }
+            }
+        ],
+        "collected_at": "2026-09-19T17:50:44.133323+00:00"
     }
 }
