@@ -25281,6 +25281,23 @@
  ],
  "championship": [
   {
+   "home": "울버햄튼 원더러스",
+   "away": "웨스트브롬위치 알비온",
+   "date": "2026-09-20",
+   "eid": 214069,
+   "goals": [
+    {
+     "scorer": "F. López",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "렉섬",
    "away": "사우샘프턴",
    "date": "2026-09-19",
@@ -31302,6 +31319,32 @@
  ],
  "seriea": [
   {
+   "home": "피오렌티나",
+   "away": "나폴리",
+   "date": "2026-09-20",
+   "eid": 210100,
+   "goals": [
+    {
+     "scorer": "A. Jiménez",
+     "assist": "C. Ndour",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Gilmour",
+     "assist": "M. Politano",
+     "team": null,
+     "is_home": false,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "베네치아",
    "away": "라치오",
    "date": "2026-09-20",
@@ -32860,6 +32903,59 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "페예노르트",
+   "away": "FC 위트레흐트",
+   "date": "2026-09-20",
+   "eid": 210858,
+   "goals": [
+    {
+     "scorer": "G. Diarra",
+     "assist": "G. Zechiël",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Valente",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. H. Moussa",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Ferri",
+     "assist": "M. Mármol",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. H. Moussa",
+     "assist": "G. Read",
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "빌럼II",
    "away": "포르투나 시타르드",
