@@ -44655,6 +44655,50 @@
  ],
  "mls": [
   {
+   "home": "인터 마이애미",
+   "away": "샌디에이고 FC",
+   "date": "2026-09-21",
+   "eid": 5303,
+   "goals": [
+    {
+     "scorer": "A. Dreyer",
+     "assist": "J. Tverskov",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Dreyer",
+     "assist": "J. Tverskov",
+     "team": null,
+     "is_home": false,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "애틀랜타 유나이티드",
    "date": "2026-09-20",
@@ -44665,6 +44709,68 @@
      "assist": null,
      "team": null,
      "is_home": false,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "콜로라도 래피즈",
+   "away": "시애틀 사운더스",
+   "date": "2026-09-20",
+   "eid": 5299,
+   "goals": [
+    {
+     "scorer": "C. Clark",
+     "assist": "A. Rusnák",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Joveljić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Whittaker",
+     "assist": "P. Aaronson",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Phillip",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Roldán",
+     "assist": "A. Rusnák",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Whittaker",
+     "assist": "P. Aaronson",
+     "team": null,
+     "is_home": true,
      "minute": 28,
      "goal_type": "regular",
      "body": "left-foot"
@@ -44738,68 +44844,6 @@
      "minute": 9,
      "goal_type": "regular",
      "body": "other"
-    }
-   ]
-  },
-  {
-   "home": "콜로라도 래피즈",
-   "away": "시애틀 사운더스",
-   "date": "2026-09-20",
-   "eid": 5299,
-   "goals": [
-    {
-     "scorer": "C. Clark",
-     "assist": "A. Rusnák",
-     "team": null,
-     "is_home": false,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "D. Joveljić",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 79,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "M. Whittaker",
-     "assist": "P. Aaronson",
-     "team": null,
-     "is_home": true,
-     "minute": 76,
-     "goal_type": "regular",
-     "body": "left-foot"
-    },
-    {
-     "scorer": "D. Phillip",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 55,
-     "goal_type": "regular",
-     "body": "left-foot"
-    },
-    {
-     "scorer": "C. Roldán",
-     "assist": "A. Rusnák",
-     "team": null,
-     "is_home": false,
-     "minute": 49,
-     "goal_type": "regular",
-     "body": "head"
-    },
-    {
-     "scorer": "M. Whittaker",
-     "assist": "P. Aaronson",
-     "team": null,
-     "is_home": true,
-     "minute": 28,
-     "goal_type": "regular",
-     "body": "left-foot"
     }
    ]
   },

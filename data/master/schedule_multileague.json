@@ -18513,6 +18513,14 @@
    "awayGoals": 3
   },
   {
+   "home": "바르셀로나",
+   "away": "헤타페",
+   "date": "2026-10-11",
+   "time": "01:30",
+   "id": 213592,
+   "friendly": false
+  },
+  {
    "home": "레알 마드리드",
    "away": "비야레알",
    "date": "2026-10-11",
@@ -18558,14 +18566,6 @@
    "date": "2026-10-12",
    "time": "04:00",
    "id": 213594,
-   "friendly": false
-  },
-  {
-   "home": "바르셀로나",
-   "away": "헤타페",
-   "date": "2026-10-12",
-   "time": "04:00",
-   "id": 213592,
    "friendly": false
   },
   {
@@ -24891,16 +24891,6 @@
    "awayGoals": 3
   },
   {
-   "home": "콜로라도 래피즈",
-   "away": "시애틀 사운더스",
-   "date": "2026-09-20",
-   "time": "10:30",
-   "id": 5299,
-   "friendly": false,
-   "homeGoals": 3,
-   "awayGoals": 3
-  },
-  {
    "home": "포틀랜드 팀버스",
    "away": "애틀랜타 유나이티드",
    "date": "2026-09-20",
@@ -24911,12 +24901,24 @@
    "awayGoals": 1
   },
   {
+   "home": "콜로라도 래피즈",
+   "away": "시애틀 사운더스",
+   "date": "2026-09-20",
+   "time": "11:30",
+   "id": 5299,
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 3
+  },
+  {
    "home": "인터 마이애미",
    "away": "샌디에이고 FC",
    "date": "2026-09-21",
    "time": "08:00",
    "id": 5303,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 2
   },
   {
    "home": "시애틀 사운더스",
