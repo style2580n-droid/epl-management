@@ -146591,5 +146591,115 @@
             }
         ],
         "collected_at": "2026-09-21T08:40:51.383739+00:00"
+    },
+    "1395812686": {
+        "match": {
+            "id": 1395812686,
+            "round": "Round of 32",
+            "date": "2026-09-21T18:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 15604720,
+                "logo": null,
+                "name": "Ibrachina U20"
+            },
+            "homeTeam": {
+                "id": 23656031,
+                "logo": null,
+                "name": "Sc Paulinense Sp U20"
+            },
+            "league": {
+                "id": 924970,
+                "logo": null,
+                "name": "Paulista - U20",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 23656031,
+                    "logo": null,
+                    "name": "Sc Paulinense Sp U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15604720,
+                    "logo": null,
+                    "name": "Ibrachina U20"
+                }
+            }
+        ],
+        "collected_at": "2026-09-21T15:44:00.768005+00:00"
+    },
+    "1276599500": {
+        "match": {
+            "id": 1276599500,
+            "round": "Regular Season - 29",
+            "date": "2026-09-21T18:00:00.000Z",
+            "country": {
+                "code": "AR",
+                "name": "Argentina",
+                "logo": "https://highlightly.net/soccer/images/countries/AR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 7143227,
+                "logo": "https://highlightly.net/soccer/images/teams/7143227.png",
+                "name": "Deportivo Muñiz"
+            },
+            "homeTeam": {
+                "id": 7127058,
+                "logo": "https://highlightly.net/soccer/images/teams/7127058.png",
+                "name": "Fénix"
+            },
+            "league": {
+                "id": 113116,
+                "logo": "https://highlightly.net/soccer/images/leagues/113116.png",
+                "name": "Primera C",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7127058,
+                    "logo": "https://highlightly.net/soccer/images/teams/7127058.png",
+                    "name": "Fénix"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7143227,
+                    "logo": "https://highlightly.net/soccer/images/teams/7143227.png",
+                    "name": "Deportivo Muñiz"
+                }
+            }
+        ],
+        "collected_at": "2026-09-21T15:44:01.199383+00:00"
     }
 }
