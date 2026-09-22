@@ -149477,7 +149477,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 1605770,
                     "logo": "https://highlightly.net/soccer/images/teams/1605770.png",
@@ -149485,7 +149494,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
                 "team": {
                     "id": 13187029,
                     "logo": null,
@@ -149493,7 +149511,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-22T08:19:38.734247+00:00"
+        "collected_at": "2026-09-22T18:35:18.799237+00:00"
     },
     "1394183872": {
         "match": {
@@ -149532,7 +149550,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 1575134,
                     "logo": "https://highlightly.net/soccer/images/teams/1575134.png",
@@ -149540,7 +149567,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 11899466,
                     "logo": null,
@@ -149548,7 +149584,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-22T08:19:39.426905+00:00"
+        "collected_at": "2026-09-22T18:35:18.406289+00:00"
     },
     "1396293501": {
         "match": {
@@ -149879,5 +149915,151 @@
             }
         ],
         "collected_at": "2026-09-22T13:56:44.219158+00:00"
+    },
+    "1356160341": {
+        "match": {
+            "id": 1356160341,
+            "round": "Group Stage - 4",
+            "date": "2026-09-22T18:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6328820,
+                "logo": "https://highlightly.net/soccer/images/teams/6328820.png",
+                "name": "Cumbernauld Colts"
+            },
+            "homeTeam": {
+                "id": 3974103,
+                "logo": "https://highlightly.net/soccer/images/teams/3974103.png",
+                "name": "Stirling Albion"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 3974103,
+                    "logo": "https://highlightly.net/soccer/images/teams/3974103.png",
+                    "name": "Stirling Albion"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 6328820,
+                    "logo": "https://highlightly.net/soccer/images/teams/6328820.png",
+                    "name": "Cumbernauld Colts"
+                }
+            }
+        ],
+        "collected_at": "2026-09-22T18:35:19.410814+00:00"
+    },
+    "1356156937": {
+        "match": {
+            "id": 1356156937,
+            "round": "Group Stage - 4",
+            "date": "2026-09-22T18:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5756097,
+                "logo": "https://highlightly.net/soccer/images/teams/5756097.png",
+                "name": "Cove Rangers"
+            },
+            "homeTeam": {
+                "id": 5761203,
+                "logo": "https://highlightly.net/soccer/images/teams/5761203.png",
+                "name": "Fraserburgh"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 5761203,
+                    "logo": "https://highlightly.net/soccer/images/teams/5761203.png",
+                    "name": "Fraserburgh"
+                }
+            },
+            {
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    }
+                ],
+                "team": {
+                    "id": 5756097,
+                    "logo": "https://highlightly.net/soccer/images/teams/5756097.png",
+                    "name": "Cove Rangers"
+                }
+            }
+        ],
+        "collected_at": "2026-09-22T18:35:19.780837+00:00"
     }
 }
