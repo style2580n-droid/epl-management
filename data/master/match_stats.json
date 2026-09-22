@@ -149769,5 +149769,115 @@
             }
         ],
         "collected_at": "2026-09-22T08:19:40.714210+00:00"
+    },
+    "1356159490": {
+        "match": {
+            "id": 1356159490,
+            "round": "Group Stage - 4",
+            "date": "2026-09-22T18:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5750991,
+                "logo": "https://highlightly.net/soccer/images/teams/5750991.png",
+                "name": "Annan Athletic"
+            },
+            "homeTeam": {
+                "id": 1178568,
+                "logo": "https://highlightly.net/soccer/images/teams/1178568.png",
+                "name": "Queen of the South"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1178568,
+                    "logo": "https://highlightly.net/soccer/images/teams/1178568.png",
+                    "name": "Queen of the South"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5750991,
+                    "logo": "https://highlightly.net/soccer/images/teams/5750991.png",
+                    "name": "Annan Athletic"
+                }
+            }
+        ],
+        "collected_at": "2026-09-22T13:56:43.838726+00:00"
+    },
+    "1356158639": {
+        "match": {
+            "id": 1356158639,
+            "round": "Group Stage - 4",
+            "date": "2026-09-22T18:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5762905,
+                "logo": null,
+                "name": "Hearts U21"
+            },
+            "homeTeam": {
+                "id": 5764607,
+                "logo": "https://highlightly.net/soccer/images/teams/5764607.png",
+                "name": "Kelty Hearts"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5764607,
+                    "logo": "https://highlightly.net/soccer/images/teams/5764607.png",
+                    "name": "Kelty Hearts"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5762905,
+                    "logo": null,
+                    "name": "Hearts U21"
+                }
+            }
+        ],
+        "collected_at": "2026-09-22T13:56:44.219158+00:00"
     }
 }
