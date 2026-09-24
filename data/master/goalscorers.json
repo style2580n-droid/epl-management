@@ -25225,111 +25225,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "첼시",
-   "away": "아스톤 빌라",
-   "date": "2023-09-24",
-   "eid": 312180,
-   "goals": [
-    {
-     "scorer": "O. Watkins",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 73,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "브라이튼",
-   "away": "본머스",
-   "date": "2023-09-24",
-   "eid": 312179,
-   "goals": [
-    {
-     "scorer": "K. Mitoma",
-     "assist": "P. Estupiñán",
-     "team": null,
-     "is_home": true,
-     "minute": 77,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "K. Mitoma",
-     "assist": "M. Dahoud",
-     "team": null,
-     "is_home": true,
-     "minute": 46,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "M. Kerkez",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 45,
-     "goal_type": "ownGoal",
-     "body": null
-    },
-    {
-     "scorer": "D. Solanke",
-     "assist": "R. Christie",
-     "team": null,
-     "is_home": false,
-     "minute": 25,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "아스날",
-   "away": "토트넘",
-   "date": "2023-09-24",
-   "eid": 312178,
-   "goals": [
-    {
-     "scorer": "S. Heung-min",
-     "assist": "J. Maddison",
-     "team": null,
-     "is_home": false,
-     "minute": 55,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "B. Saka",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 54,
-     "goal_type": "penalty",
-     "body": null
-    },
-    {
-     "scorer": "S. Heung-min",
-     "assist": "J. Maddison",
-     "team": null,
-     "is_home": false,
-     "minute": 42,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "C. Romero",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 26,
-     "goal_type": "ownGoal",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -44576,6 +44471,32 @@
   }
  ],
  "mls": [
+  {
+   "home": "시애틀 사운더스",
+   "away": "리얼 솔트레이크",
+   "date": "2026-09-24",
+   "eid": 10313,
+   "goals": [
+    {
+     "scorer": "A. Rusnák",
+     "assist": "P. Arriola",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Musovski",
+     "assist": "P. Arriola",
+     "team": null,
+     "is_home": true,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "인터 마이애미",
    "away": "샌디에이고 FC",
