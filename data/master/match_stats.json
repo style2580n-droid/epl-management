@@ -163070,44 +163070,44 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Shots accuracy",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots accuracy"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     },
                     {
-                        "displayName": "Blocked shots",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Blocked shots"
                     },
                     {
-                        "displayName": "Total passes",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Total passes"
                     },
                     {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Goalkeeper saves"
                     },
                     {
-                        "displayName": "Fouls",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Fouls"
                     }
                 ],
                 "team": {
@@ -163119,44 +163119,44 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Shots accuracy",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots accuracy"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Possession"
                     },
                     {
-                        "displayName": "Shots on target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots on target"
                     },
                     {
-                        "displayName": "Corners",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Corners"
                     },
                     {
-                        "displayName": "Offsides",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Offsides"
                     },
                     {
-                        "displayName": "Shots off target",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Shots off target"
                     },
                     {
-                        "displayName": "Blocked shots",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Blocked shots"
                     },
                     {
-                        "displayName": "Total passes",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Total passes"
                     },
                     {
-                        "displayName": "Goalkeeper saves",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Goalkeeper saves"
                     },
                     {
-                        "displayName": "Fouls",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Fouls"
                     }
                 ],
                 "team": {
@@ -163166,7 +163166,7 @@
                 }
             }
         ],
-        "collected_at": "2026-09-26T08:23:31.414119+00:00"
+        "collected_at": "2026-09-26T13:39:44.396593+00:00"
     },
     "1319882211": {
         "match": {
@@ -164014,5 +164014,225 @@
             }
         ],
         "collected_at": "2026-09-26T08:23:35.550859+00:00"
+    },
+    "1291269889": {
+        "match": {
+            "id": 1291269889,
+            "round": "Group Stage",
+            "date": "2026-09-26T23:00:00.000Z",
+            "country": {
+                "code": "CA",
+                "name": "Canada",
+                "logo": "https://highlightly.net/soccer/images/countries/CA.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3260114,
+                "logo": "https://highlightly.net/soccer/images/teams/3260114.png",
+                "name": "Forge"
+            },
+            "homeTeam": {
+                "id": 17770515,
+                "logo": "https://highlightly.net/soccer/images/teams/17770515.png",
+                "name": "Vancouver FC"
+            },
+            "league": {
+                "id": 408413,
+                "logo": "https://highlightly.net/soccer/images/leagues/408413.png",
+                "name": "Canadian Premier League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 17770515,
+                    "logo": "https://highlightly.net/soccer/images/teams/17770515.png",
+                    "name": "Vancouver FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3260114,
+                    "logo": "https://highlightly.net/soccer/images/teams/3260114.png",
+                    "name": "Forge"
+                }
+            }
+        ],
+        "collected_at": "2026-09-26T13:39:47.393474+00:00"
+    },
+    "1394269823": {
+        "match": {
+            "id": 1394269823,
+            "round": "Round of 16",
+            "date": "2026-09-26T23:00:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1980210,
+                "logo": "https://highlightly.net/soccer/images/teams/1980210.png",
+                "name": "Union La Calera"
+            },
+            "homeTeam": {
+                "id": 2548678,
+                "logo": "https://highlightly.net/soccer/images/teams/2548678.png",
+                "name": "Universidad Católica"
+            },
+            "league": {
+                "id": 228001,
+                "logo": "https://highlightly.net/soccer/images/leagues/228001.png",
+                "name": "Copa Chile",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2548678,
+                    "logo": "https://highlightly.net/soccer/images/teams/2548678.png",
+                    "name": "Universidad Católica"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1980210,
+                    "logo": "https://highlightly.net/soccer/images/teams/1980210.png",
+                    "name": "Union La Calera"
+                }
+            }
+        ],
+        "collected_at": "2026-09-26T13:39:47.791309+00:00"
+    },
+    "1271406698": {
+        "match": {
+            "id": 1271406698,
+            "round": "Group Stage",
+            "date": "2026-09-26T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3425208,
+                "logo": "https://highlightly.net/soccer/images/teams/3425208.png",
+                "name": "Richmond Kickers"
+            },
+            "homeTeam": {
+                "id": 7687867,
+                "logo": "https://highlightly.net/soccer/images/teams/7687867.png",
+                "name": "NY Cosmos"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7687867,
+                    "logo": "https://highlightly.net/soccer/images/teams/7687867.png",
+                    "name": "NY Cosmos"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3425208,
+                    "logo": "https://highlightly.net/soccer/images/teams/3425208.png",
+                    "name": "Richmond Kickers"
+                }
+            }
+        ],
+        "collected_at": "2026-09-26T13:39:48.210260+00:00"
+    },
+    "1271146292": {
+        "match": {
+            "id": 1271146292,
+            "round": "Group Stage",
+            "date": "2026-09-26T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 3397976,
+                "logo": "https://highlightly.net/soccer/images/teams/3397976.png",
+                "name": "Colorado Springs"
+            },
+            "homeTeam": {
+                "id": 7696377,
+                "logo": "https://highlightly.net/soccer/images/teams/7696377.png",
+                "name": "Detroit City"
+            },
+            "league": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/leagues/217789.png",
+                "name": "USL Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7696377,
+                    "logo": "https://highlightly.net/soccer/images/teams/7696377.png",
+                    "name": "Detroit City"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 3397976,
+                    "logo": "https://highlightly.net/soccer/images/teams/3397976.png",
+                    "name": "Colorado Springs"
+                }
+            }
+        ],
+        "collected_at": "2026-09-26T13:39:48.599561+00:00"
     }
 }
