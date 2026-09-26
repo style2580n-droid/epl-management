@@ -5075,6 +5075,14 @@
    "awayGoals": 2
   },
   {
+   "home": "르망FC",
+   "away": "FC 낭트",
+   "date": "2026-09-26",
+   "time": "19:00",
+   "id": 605008,
+   "friendly": true
+  },
+  {
    "home": "RC 랑스",
    "away": "올랭피크 리옹",
    "date": "2026-10-10",
@@ -10718,24 +10726,24 @@
    "home": "사수올로",
    "away": "제노아",
    "date": "2026-11-22",
-   "time": "20:30",
-   "id": 210176,
-   "friendly": false
-  },
-  {
-   "home": "AC밀란",
-   "away": "프로시노네",
-   "date": "2026-11-22",
    "time": "23:00",
-   "id": 210167,
+   "id": 210176,
    "friendly": false
   },
   {
    "home": "볼로냐",
    "away": "우디네세",
+   "date": "2026-11-22",
+   "time": "23:00",
+   "id": 210169,
+   "friendly": false
+  },
+  {
+   "home": "AC밀란",
+   "away": "프로시노네",
    "date": "2026-11-23",
    "time": "02:00",
-   "id": 210169,
+   "id": 210167,
    "friendly": false
   },
   {
@@ -10766,32 +10774,8 @@
    "home": "베네치아",
    "away": "볼로냐",
    "date": "2026-11-28",
-   "time": "22:00",
+   "time": "04:45",
    "id": 210186,
-   "friendly": false
-  },
-  {
-   "home": "우디네세",
-   "away": "피오렌티나",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210185,
-   "friendly": false
-  },
-  {
-   "home": "토리노",
-   "away": "라치오",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210184,
-   "friendly": false
-  },
-  {
-   "home": "사수올로",
-   "away": "나폴리",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210183,
    "friendly": false
   },
   {
@@ -10803,30 +10787,6 @@
    "friendly": false
   },
   {
-   "home": "인테르",
-   "away": "제노아",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210181,
-   "friendly": false
-  },
-  {
-   "home": "프로시노네",
-   "away": "파르마",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210180,
-   "friendly": false
-  },
-  {
-   "home": "코모",
-   "away": "유벤투스",
-   "date": "2026-11-28",
-   "time": "22:00",
-   "id": 210179,
-   "friendly": false
-  },
-  {
    "home": "칼리아리",
    "away": "AC밀란",
    "date": "2026-11-28",
@@ -10835,11 +10795,67 @@
    "friendly": false
   },
   {
+   "home": "프로시노네",
+   "away": "파르마",
+   "date": "2026-11-28",
+   "time": "23:00",
+   "id": 210180,
+   "friendly": false
+  },
+  {
+   "home": "토리노",
+   "away": "라치오",
+   "date": "2026-11-29",
+   "time": "02:00",
+   "id": 210184,
+   "friendly": false
+  },
+  {
+   "home": "인테르",
+   "away": "제노아",
+   "date": "2026-11-29",
+   "time": "04:45",
+   "id": 210181,
+   "friendly": false
+  },
+  {
+   "home": "우디네세",
+   "away": "피오렌티나",
+   "date": "2026-11-29",
+   "time": "20:30",
+   "id": 210185,
+   "friendly": false
+  },
+  {
+   "home": "사수올로",
+   "away": "나폴리",
+   "date": "2026-11-29",
+   "time": "23:00",
+   "id": 210183,
+   "friendly": false
+  },
+  {
    "home": "AS로마",
    "away": "몬차",
-   "date": "2026-11-28",
-   "time": "22:00",
+   "date": "2026-11-30",
+   "time": "02:00",
    "id": 210177,
+   "friendly": false
+  },
+  {
+   "home": "코모",
+   "away": "유벤투스",
+   "date": "2026-11-30",
+   "time": "04:45",
+   "id": 210179,
+   "friendly": false
+  },
+  {
+   "home": "볼로냐",
+   "away": "AS로마",
+   "date": "2026-12-05",
+   "time": "04:45",
+   "id": 210188,
    "friendly": false
   },
   {
@@ -10851,54 +10867,6 @@
    "friendly": false
   },
   {
-   "home": "나폴리",
-   "away": "레체",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210195,
-   "friendly": false
-  },
-  {
-   "home": "몬차",
-   "away": "코모",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210194,
-   "friendly": false
-  },
-  {
-   "home": "라치오",
-   "away": "아탈란타",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210193,
-   "friendly": false
-  },
-  {
-   "home": "유벤투스",
-   "away": "우디네세",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210192,
-   "friendly": false
-  },
-  {
-   "home": "제노아",
-   "away": "토리노",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210191,
-   "friendly": false
-  },
-  {
-   "home": "프로시노네",
-   "away": "인테르",
-   "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210190,
-   "friendly": false
-  },
-  {
    "home": "피오렌티나",
    "away": "칼리아리",
    "date": "2026-12-05",
@@ -10907,18 +10875,58 @@
    "friendly": false
   },
   {
-   "home": "볼로냐",
-   "away": "AS로마",
+   "home": "몬차",
+   "away": "코모",
    "date": "2026-12-05",
-   "time": "22:00",
-   "id": 210188,
+   "time": "23:00",
+   "id": 210194,
+   "friendly": false
+  },
+  {
+   "home": "프로시노네",
+   "away": "인테르",
+   "date": "2026-12-06",
+   "time": "02:00",
+   "id": 210190,
+   "friendly": false
+  },
+  {
+   "home": "나폴리",
+   "away": "레체",
+   "date": "2026-12-06",
+   "time": "04:45",
+   "id": 210195,
+   "friendly": false
+  },
+  {
+   "home": "제노아",
+   "away": "토리노",
+   "date": "2026-12-06",
+   "time": "20:30",
+   "id": 210191,
+   "friendly": false
+  },
+  {
+   "home": "라치오",
+   "away": "아탈란타",
+   "date": "2026-12-06",
+   "time": "23:00",
+   "id": 210193,
+   "friendly": false
+  },
+  {
+   "home": "유벤투스",
+   "away": "우디네세",
+   "date": "2026-12-07",
+   "time": "02:00",
+   "id": 210192,
    "friendly": false
   },
   {
    "home": "AC밀란",
    "away": "파르마",
-   "date": "2026-12-05",
-   "time": "22:00",
+   "date": "2026-12-07",
+   "time": "04:45",
    "id": 210187,
    "friendly": false
   },
@@ -10987,14 +10995,6 @@
    "friendly": false
   },
   {
-   "home": "칼리아리",
-   "away": "베네치아",
-   "date": "2026-12-12",
-   "time": "22:00",
-   "id": 210198,
-   "friendly": false
-  },
-  {
    "home": "아탈란타",
    "away": "제노아",
    "date": "2026-12-12",
@@ -11003,19 +11003,19 @@
    "friendly": false
   },
   {
-   "home": "베네치아",
-   "away": "몬차",
-   "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210216,
+   "home": "칼리아리",
+   "away": "베네치아",
+   "date": "2026-12-12",
+   "time": "23:00",
+   "id": 210198,
    "friendly": false
   },
   {
-   "home": "토리노",
-   "away": "칼리아리",
+   "home": "프로시노네",
+   "away": "라치오",
    "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210215,
+   "time": "02:30",
+   "id": 210211,
    "friendly": false
   },
   {
@@ -11035,38 +11035,6 @@
    "friendly": false
   },
   {
-   "home": "제노아",
-   "away": "우디네세",
-   "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210212,
-   "friendly": false
-  },
-  {
-   "home": "프로시노네",
-   "away": "라치오",
-   "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210211,
-   "friendly": false
-  },
-  {
-   "home": "피오렌티나",
-   "away": "볼로냐",
-   "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210210,
-   "friendly": false
-  },
-  {
-   "home": "아탈란타",
-   "away": "나폴리",
-   "date": "2026-12-19",
-   "time": "22:00",
-   "id": 210209,
-   "friendly": false
-  },
-  {
    "home": "AS로마",
    "away": "유벤투스",
    "date": "2026-12-19",
@@ -11083,83 +11051,123 @@
    "friendly": false
   },
   {
-   "home": "우디네세",
-   "away": "아탈란타",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210226,
+   "home": "피오렌티나",
+   "away": "볼로냐",
+   "date": "2026-12-20",
+   "time": "20:30",
+   "id": 210210,
+   "friendly": false
+  },
+  {
+   "home": "베네치아",
+   "away": "몬차",
+   "date": "2026-12-20",
+   "time": "23:00",
+   "id": 210216,
    "friendly": false
   },
   {
    "home": "토리노",
-   "away": "베네치아",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210225,
+   "away": "칼리아리",
+   "date": "2026-12-20",
+   "time": "23:00",
+   "id": 210215,
    "friendly": false
   },
   {
-   "home": "파르마",
+   "home": "제노아",
+   "away": "우디네세",
+   "date": "2026-12-21",
+   "time": "02:00",
+   "id": 210212,
+   "friendly": false
+  },
+  {
+   "home": "아탈란타",
    "away": "나폴리",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210224,
-   "friendly": false
-  },
-  {
-   "home": "몬차",
-   "away": "AC밀란",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210223,
-   "friendly": false
-  },
-  {
-   "home": "인테르",
-   "away": "사수올로",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210222,
-   "friendly": false
-  },
-  {
-   "home": "피오렌티나",
-   "away": "라치오",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210221,
-   "friendly": false
-  },
-  {
-   "home": "코모",
-   "away": "레체",
-   "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210220,
+   "date": "2026-12-21",
+   "time": "04:45",
+   "id": 210209,
    "friendly": false
   },
   {
    "home": "칼리아리",
    "away": "제노아",
    "date": "2027-01-02",
-   "time": "22:00",
+   "time": "20:30",
    "id": 210219,
    "friendly": false
   },
   {
-   "home": "볼로냐",
-   "away": "유벤투스",
+   "home": "토리노",
+   "away": "베네치아",
    "date": "2027-01-02",
-   "time": "22:00",
-   "id": 210218,
+   "time": "23:00",
+   "id": 210225,
+   "friendly": false
+  },
+  {
+   "home": "피오렌티나",
+   "away": "라치오",
+   "date": "2027-01-02",
+   "time": "23:00",
+   "id": 210221,
    "friendly": false
   },
   {
    "home": "AS로마",
    "away": "프로시노네",
-   "date": "2027-01-02",
-   "time": "22:00",
+   "date": "2027-01-03",
+   "time": "02:00",
    "id": 210217,
+   "friendly": false
+  },
+  {
+   "home": "몬차",
+   "away": "AC밀란",
+   "date": "2027-01-03",
+   "time": "04:45",
+   "id": 210223,
+   "friendly": false
+  },
+  {
+   "home": "인테르",
+   "away": "사수올로",
+   "date": "2027-01-03",
+   "time": "20:30",
+   "id": 210222,
+   "friendly": false
+  },
+  {
+   "home": "우디네세",
+   "away": "아탈란타",
+   "date": "2027-01-03",
+   "time": "23:00",
+   "id": 210226,
+   "friendly": false
+  },
+  {
+   "home": "코모",
+   "away": "레체",
+   "date": "2027-01-03",
+   "time": "23:00",
+   "id": 210220,
+   "friendly": false
+  },
+  {
+   "home": "파르마",
+   "away": "나폴리",
+   "date": "2027-01-04",
+   "time": "02:00",
+   "id": 210224,
+   "friendly": false
+  },
+  {
+   "home": "볼로냐",
+   "away": "유벤투스",
+   "date": "2027-01-04",
+   "time": "04:45",
+   "id": 210218,
    "friendly": false
   },
   {
@@ -11203,43 +11211,43 @@
    "friendly": false
   },
   {
-   "home": "유벤투스",
-   "away": "토리노",
+   "home": "AC밀란",
+   "away": "피오렌티나",
    "date": "2027-01-05",
    "time": "22:00",
-   "id": 210231,
+   "id": 210227,
    "friendly": false
   },
   {
    "home": "제노아",
    "away": "몬차",
-   "date": "2027-01-05",
-   "time": "22:00",
+   "date": "2027-01-06",
+   "time": "02:30",
    "id": 210230,
+   "friendly": false
+  },
+  {
+   "home": "유벤투스",
+   "away": "토리노",
+   "date": "2027-01-06",
+   "time": "20:30",
+   "id": 210231,
    "friendly": false
   },
   {
    "home": "프로시노네",
    "away": "볼로냐",
-   "date": "2027-01-05",
-   "time": "22:00",
+   "date": "2027-01-06",
+   "time": "23:00",
    "id": 210229,
    "friendly": false
   },
   {
    "home": "아탈란타",
    "away": "코모",
-   "date": "2027-01-05",
-   "time": "22:00",
+   "date": "2027-01-07",
+   "time": "02:00",
    "id": 210228,
-   "friendly": false
-  },
-  {
-   "home": "AC밀란",
-   "away": "피오렌티나",
-   "date": "2027-01-05",
-   "time": "22:00",
-   "id": 210227,
    "friendly": false
   },
   {
