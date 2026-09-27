@@ -168053,5 +168053,60 @@
             }
         ],
         "collected_at": "2026-09-27T09:01:28.929775+00:00"
+    },
+    "1294281578": {
+        "match": {
+            "id": 1294281578,
+            "round": "Regular Season - 30",
+            "date": "2026-09-27T21:30:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 11893509,
+                "logo": "https://highlightly.net/soccer/images/teams/11893509.png",
+                "name": "Athletic Club"
+            },
+            "homeTeam": {
+                "id": 131838,
+                "logo": "https://highlightly.net/soccer/images/teams/131838.png",
+                "name": "Fortaleza"
+            },
+            "league": {
+                "id": 62056,
+                "logo": "https://highlightly.net/soccer/images/leagues/62056.png",
+                "name": "Serie B",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 131838,
+                    "logo": "https://highlightly.net/soccer/images/teams/131838.png",
+                    "name": "Fortaleza"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 11893509,
+                    "logo": "https://highlightly.net/soccer/images/teams/11893509.png",
+                    "name": "Athletic Club"
+                }
+            }
+        ],
+        "collected_at": "2026-09-27T18:56:03.666753+00:00"
     }
 }
