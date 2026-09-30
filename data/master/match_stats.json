@@ -177889,5 +177889,60 @@
             }
         ],
         "collected_at": "2026-09-30T00:06:55.719622+00:00"
+    },
+    "1398350368": {
+        "match": {
+            "id": 1398350368,
+            "round": "Quarter-finals",
+            "date": "2026-09-30T23:00:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1975104,
+                "logo": "https://highlightly.net/soccer/images/teams/1975104.png",
+                "name": "O'Higgins"
+            },
+            "homeTeam": {
+                "id": 4796169,
+                "logo": "https://highlightly.net/soccer/images/teams/4796169.png",
+                "name": "Concepción"
+            },
+            "league": {
+                "id": 228001,
+                "logo": "https://highlightly.net/soccer/images/leagues/228001.png",
+                "name": "Copa Chile",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4796169,
+                    "logo": "https://highlightly.net/soccer/images/teams/4796169.png",
+                    "name": "Concepción"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1975104,
+                    "logo": "https://highlightly.net/soccer/images/teams/1975104.png",
+                    "name": "O'Higgins"
+                }
+            }
+        ],
+        "collected_at": "2026-09-30T09:25:12.660958+00:00"
     }
 }
