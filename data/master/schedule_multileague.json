@@ -7533,14 +7533,6 @@
    "awayGoals": 1
   },
   {
-   "home": "DC 유나이티드",
-   "away": "SC 파더보른07",
-   "date": "2026-10-01",
-   "time": "08:30",
-   "id": 603677,
-   "friendly": true
-  },
-  {
    "home": "상트파울리",
    "away": "보루시아 묀헨글라드바흐",
    "date": "2026-10-03",
@@ -25140,15 +25132,9 @@
    "date": "2026-10-01",
    "time": "08:30",
    "id": 605013,
-   "friendly": false
-  },
-  {
-   "home": "DC 유나이티드",
-   "away": "SC 파더보른07",
-   "date": "2026-10-01",
-   "time": "08:30",
-   "id": 603677,
-   "friendly": true
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 3
   },
   {
    "home": "시애틀 사운더스",

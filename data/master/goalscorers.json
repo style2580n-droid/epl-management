@@ -44279,6 +44279,41 @@
  ],
  "mls": [
   {
+   "home": "뉴욕 레드불스",
+   "away": "세인트루이스 시티",
+   "date": "2026-10-01",
+   "eid": 605013,
+   "goals": [
+    {
+     "scorer": "T. Ostrák",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Becher",
+     "assist": "C. Durkin",
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Navarro",
+     "assist": "C. Wallem",
+     "team": null,
+     "is_home": false,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "콜럼버스 크루",
    "away": "인터 마이애미",
    "date": "2026-09-28",
