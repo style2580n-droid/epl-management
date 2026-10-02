@@ -44253,6 +44253,41 @@
  ],
  "mls": [
   {
+   "home": "시애틀 사운더스",
+   "away": "스포르팅 캔자스시티",
+   "date": "2026-10-02",
+   "eid": 209462,
+   "goals": [
+    {
+     "scorer": "C. Roldán",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Gomez",
+     "assist": "J. Morris",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "André Luiz",
+     "assist": "S. Afrifa",
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "뉴욕 레드불스",
    "away": "세인트루이스 시티",
    "date": "2026-10-01",

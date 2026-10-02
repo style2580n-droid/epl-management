@@ -181449,5 +181449,115 @@
             }
         ],
         "collected_at": "2026-10-02T00:35:30.291475+00:00"
+    },
+    "1276619924": {
+        "match": {
+            "id": 1276619924,
+            "round": "Regular Season - 31",
+            "date": "2026-10-02T21:30:00.000Z",
+            "country": {
+                "code": "AR",
+                "name": "Argentina",
+                "logo": "https://highlightly.net/soccer/images/countries/AR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1672148,
+                "logo": "https://highlightly.net/soccer/images/teams/1672148.png",
+                "name": "Victoriano Arenas"
+            },
+            "homeTeam": {
+                "id": 7142376,
+                "logo": null,
+                "name": "Defensores de Cambaceres"
+            },
+            "league": {
+                "id": 113116,
+                "logo": "https://highlightly.net/soccer/images/leagues/113116.png",
+                "name": "Primera C",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7142376,
+                    "logo": null,
+                    "name": "Defensores de Cambaceres"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1672148,
+                    "logo": "https://highlightly.net/soccer/images/teams/1672148.png",
+                    "name": "Victoriano Arenas"
+                }
+            }
+        ],
+        "collected_at": "2026-10-02T09:28:16.257125+00:00"
+    },
+    "1388622587": {
+        "match": {
+            "id": 1388622587,
+            "round": "Apertura - 6",
+            "date": "2026-10-02T21:30:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 18766185,
+                "logo": null,
+                "name": "CDM"
+            },
+            "homeTeam": {
+                "id": 15151988,
+                "logo": "https://highlightly.net/soccer/images/teams/15151988.png",
+                "name": "Calor de San Pedro"
+            },
+            "league": {
+                "id": 615206,
+                "logo": "https://highlightly.net/soccer/images/leagues/615206.png",
+                "name": "Liga Premier Serie A",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 15151988,
+                    "logo": "https://highlightly.net/soccer/images/teams/15151988.png",
+                    "name": "Calor de San Pedro"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 18766185,
+                    "logo": null,
+                    "name": "CDM"
+                }
+            }
+        ],
+        "collected_at": "2026-10-02T09:28:16.467792+00:00"
     }
 }
