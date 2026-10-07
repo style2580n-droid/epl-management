@@ -7999,12 +7999,12 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0.5
+                        "value": 0.5,
+                        "displayName": "Possession"
                     }
                 ],
                 "team": {
@@ -8016,12 +8016,12 @@
             {
                 "statistics": [
                     {
-                        "displayName": "Attacks",
-                        "value": 0
+                        "value": 0,
+                        "displayName": "Attacks"
                     },
                     {
-                        "displayName": "Possession",
-                        "value": 0.5
+                        "value": 0.5,
+                        "displayName": "Possession"
                     }
                 ],
                 "team": {
@@ -8031,7 +8031,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-07T00:25:57.258908+00:00"
+        "collected_at": "2026-10-07T09:57:42.348582+00:00"
     },
     "1305490099": {
         "match": {
@@ -192988,5 +192988,60 @@
             }
         ],
         "collected_at": "2026-10-07T00:26:00.070259+00:00"
+    },
+    "1387406508": {
+        "match": {
+            "id": 1387406508,
+            "round": "Regular Season - 6",
+            "date": "2026-10-07T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6694750,
+                "logo": "https://highlightly.net/soccer/images/teams/6694750.png",
+                "name": "São Paulo RS"
+            },
+            "homeTeam": {
+                "id": 22761630,
+                "logo": null,
+                "name": "Clube 1992"
+            },
+            "league": {
+                "id": 979434,
+                "logo": null,
+                "name": "Gaúcho - 3",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22761630,
+                    "logo": null,
+                    "name": "Clube 1992"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6694750,
+                    "logo": "https://highlightly.net/soccer/images/teams/6694750.png",
+                    "name": "São Paulo RS"
+                }
+            }
+        ],
+        "collected_at": "2026-10-07T09:57:44.228741+00:00"
     }
 }
