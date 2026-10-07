@@ -193043,5 +193043,60 @@
             }
         ],
         "collected_at": "2026-10-07T09:57:44.228741+00:00"
+    },
+    "1366988465": {
+        "match": {
+            "id": 1366988465,
+            "round": "Regular Season - 17",
+            "date": "2026-10-07T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21080905,
+                "logo": null,
+                "name": "Rio Verde"
+            },
+            "homeTeam": {
+                "id": 21082607,
+                "logo": null,
+                "name": "Tupy FC"
+            },
+            "league": {
+                "id": 877314,
+                "logo": null,
+                "name": "Goiano - 2",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21082607,
+                    "logo": null,
+                    "name": "Tupy FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21080905,
+                    "logo": null,
+                    "name": "Rio Verde"
+                }
+            }
+        ],
+        "collected_at": "2026-10-07T20:27:41.540548+00:00"
     }
 }
