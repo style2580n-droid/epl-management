@@ -195815,5 +195815,60 @@
             }
         ],
         "collected_at": "2026-10-09T01:02:26.500120+00:00"
+    },
+    "1366995273": {
+        "match": {
+            "id": 1366995273,
+            "round": "Regular Season - 18",
+            "date": "2026-10-09T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21082607,
+                "logo": null,
+                "name": "Tupy FC"
+            },
+            "homeTeam": {
+                "id": 19835041,
+                "logo": null,
+                "name": "Trindade"
+            },
+            "league": {
+                "id": 877314,
+                "logo": null,
+                "name": "Goiano - 2",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19835041,
+                    "logo": null,
+                    "name": "Trindade"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21082607,
+                    "logo": null,
+                    "name": "Tupy FC"
+                }
+            }
+        ],
+        "collected_at": "2026-10-09T10:11:42.634940+00:00"
     }
 }
