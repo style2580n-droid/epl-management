@@ -32870,6 +32870,32 @@
  ],
  "eredivisie": [
   {
+   "home": "PSV 에인트호번",
+   "away": "sc 헤렌베인",
+   "date": "2026-10-10",
+   "eid": 210862,
+   "goals": [
+    {
+     "scorer": "M. Linday",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Til",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "N.E.C. 네이메헌",
    "away": "호 어헤드 이글스",
    "date": "2026-09-20",
@@ -35535,6 +35561,32 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "브란",
+   "away": "비킹",
+   "date": "2026-10-10",
+   "eid": 207091,
+   "goals": [
+    {
+     "scorer": "P. Christiansen",
+     "assist": "H. Heggheim",
+     "team": null,
+     "is_home": false,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "other"
+    },
+    {
+     "scorer": "H. Heggheim",
+     "assist": "H. Bjørdal",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "브란",
    "away": "보되글림트",

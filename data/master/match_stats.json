@@ -195413,7 +195413,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 978583,
                     "logo": "https://highlightly.net/soccer/images/teams/978583.png",
@@ -195421,7 +195430,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 989646,
                     "logo": "https://highlightly.net/soccer/images/teams/989646.png",
@@ -195429,7 +195447,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-09T01:02:23.801718+00:00"
+        "collected_at": "2026-10-09T20:01:43.171762+00:00"
     },
     "1394563418": {
         "match": {
@@ -195497,12 +195515,12 @@
                 "logo": "https://highlightly.net/soccer/images/countries/PY.svg"
             },
             "state": {
-                "clock": null,
+                "clock": 1,
                 "score": {
-                    "current": null,
+                    "current": "0 - 0",
                     "penalties": null
                 },
-                "description": "Not started"
+                "description": "First half"
             },
             "awayTeam": {
                 "id": 23511361,
@@ -195523,7 +195541,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 8928625,
                     "logo": null,
@@ -195531,7 +195558,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 23511361,
                     "logo": null,
@@ -195539,7 +195575,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-09T01:02:24.653109+00:00"
+        "collected_at": "2026-10-09T20:01:44.200370+00:00"
     },
     "1359714117": {
         "match": {
@@ -195607,12 +195643,12 @@
                 "logo": "https://highlightly.net/soccer/images/countries/MA.svg"
             },
             "state": {
-                "clock": null,
+                "clock": 1,
                 "score": {
-                    "current": null,
+                    "current": "0 - 0",
                     "penalties": null
                 },
-                "description": "Not started"
+                "description": "First half"
             },
             "awayTeam": {
                 "id": 832211,
@@ -195633,7 +195669,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 1,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 1,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 821999,
                     "logo": "https://highlightly.net/soccer/images/teams/821999.png",
@@ -195641,7 +195686,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 832211,
                     "logo": "https://highlightly.net/soccer/images/teams/832211.png",
@@ -195649,7 +195703,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-09T01:02:25.513037+00:00"
+        "collected_at": "2026-10-09T20:01:44.515099+00:00"
     },
     "1318711235": {
         "match": {
@@ -195743,7 +195797,16 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 2013399,
                     "logo": "https://highlightly.net/soccer/images/teams/2013399.png",
@@ -195751,7 +195814,16 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0.5,
+                        "displayName": "Possession"
+                    }
+                ],
                 "team": {
                     "id": 2002336,
                     "logo": "https://highlightly.net/soccer/images/teams/2002336.png",
@@ -195759,7 +195831,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-09T01:02:26.062633+00:00"
+        "collected_at": "2026-10-09T20:01:43.994135+00:00"
     },
     "1394434917": {
         "match": {

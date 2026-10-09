@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-09
 
-생성(UTC): 2026-10-09 10:21
+생성(UTC): 2026-10-09 20:12
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -2579,6 +2579,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | PSV 에인트호번 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 63.2% |
 | FC 흐로닝언 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 36.8% |
+
+### PSV에인트호번_sc헤렌베인_210862
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| PSV 에인트호번 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+| sc 헤렌베인 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 
 ### PSV에인트호번_스파르타로테르담_210850
 
@@ -9474,6 +9481,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 브란 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 66.7% |
 | 보되글림트 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 33.3% |
+
+### 브란_비킹_207091
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 브란 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 37.5% |
+| 비킹 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 62.5% |
 
 ### 브란_사르프스보르그08_206991
 
@@ -17986,6 +18000,7 @@
 - **PEC즈볼레_아약스_210806**: [heatmap(PEC 즈볼레)](viz/PEC즈볼레_아약스_210806_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/PEC즈볼레_아약스_210806_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/PEC즈볼레_아약스_210806_PEC 즈볼레_shotmap.svg) · [heatmap(아약스)](viz/PEC즈볼레_아약스_210806_아약스_heatmap.svg) · [network(아약스)](viz/PEC즈볼레_아약스_210806_아약스_network.svg) · [shotmap(아약스)](viz/PEC즈볼레_아약스_210806_아약스_shotmap.svg)
 - **PEC즈볼레_페예노르트_210852**: [heatmap(PEC 즈볼레)](viz/PEC즈볼레_페예노르트_210852_PEC 즈볼레_heatmap.svg) · [network(PEC 즈볼레)](viz/PEC즈볼레_페예노르트_210852_PEC 즈볼레_network.svg) · [shotmap(PEC 즈볼레)](viz/PEC즈볼레_페예노르트_210852_PEC 즈볼레_shotmap.svg) · [heatmap(페예노르트)](viz/PEC즈볼레_페예노르트_210852_페예노르트_heatmap.svg) · [network(페예노르트)](viz/PEC즈볼레_페예노르트_210852_페예노르트_network.svg) · [shotmap(페예노르트)](viz/PEC즈볼레_페예노르트_210852_페예노르트_shotmap.svg)
 - **PSV에인트호번_FC흐로닝언_210822**: [heatmap(FC 흐로닝언)](viz/PSV에인트호번_FC흐로닝언_210822_FC 흐로닝언_heatmap.svg) · [network(FC 흐로닝언)](viz/PSV에인트호번_FC흐로닝언_210822_FC 흐로닝언_network.svg) · [shotmap(FC 흐로닝언)](viz/PSV에인트호번_FC흐로닝언_210822_FC 흐로닝언_shotmap.svg) · [heatmap(PSV 에인트호번)](viz/PSV에인트호번_FC흐로닝언_210822_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/PSV에인트호번_FC흐로닝언_210822_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/PSV에인트호번_FC흐로닝언_210822_PSV 에인트호번_shotmap.svg)
+- **PSV에인트호번_sc헤렌베인_210862**: [heatmap(PSV 에인트호번)](viz/PSV에인트호번_sc헤렌베인_210862_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/PSV에인트호번_sc헤렌베인_210862_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/PSV에인트호번_sc헤렌베인_210862_PSV 에인트호번_shotmap.svg) · [heatmap(sc 헤렌베인)](viz/PSV에인트호번_sc헤렌베인_210862_sc 헤렌베인_heatmap.svg) · [network(sc 헤렌베인)](viz/PSV에인트호번_sc헤렌베인_210862_sc 헤렌베인_network.svg) · [shotmap(sc 헤렌베인)](viz/PSV에인트호번_sc헤렌베인_210862_sc 헤렌베인_shotmap.svg)
 - **PSV에인트호번_스파르타로테르담_210850**: [heatmap(PSV 에인트호번)](viz/PSV에인트호번_스파르타로테르담_210850_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/PSV에인트호번_스파르타로테르담_210850_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/PSV에인트호번_스파르타로테르담_210850_PSV 에인트호번_shotmap.svg) · [heatmap(스파르타 로테르담)](viz/PSV에인트호번_스파르타로테르담_210850_스파르타 로테르담_heatmap.svg) · [network(스파르타 로테르담)](viz/PSV에인트호번_스파르타로테르담_210850_스파르타 로테르담_network.svg) · [shotmap(스파르타 로테르담)](viz/PSV에인트호번_스파르타로테르담_210850_스파르타 로테르담_shotmap.svg)
 - **PSV에인트호번_포르투나시타르드_210802**: [heatmap(PSV 에인트호번)](viz/PSV에인트호번_포르투나시타르드_210802_PSV 에인트호번_heatmap.svg) · [network(PSV 에인트호번)](viz/PSV에인트호번_포르투나시타르드_210802_PSV 에인트호번_network.svg) · [shotmap(PSV 에인트호번)](viz/PSV에인트호번_포르투나시타르드_210802_PSV 에인트호번_shotmap.svg) · [heatmap(포르투나 시타르드)](viz/PSV에인트호번_포르투나시타르드_210802_포르투나 시타르드_heatmap.svg) · [network(포르투나 시타르드)](viz/PSV에인트호번_포르투나시타르드_210802_포르투나 시타르드_network.svg) · [shotmap(포르투나 시타르드)](viz/PSV에인트호번_포르투나시타르드_210802_포르투나 시타르드_shotmap.svg)
 - **Padova_OspitalettoFranciacorta_219344**: [heatmap(Ospitaletto Franciacorta)](viz/Padova_OspitalettoFranciacorta_219344_Ospitaletto Franciacorta_heatmap.svg) · [network(Ospitaletto Franciacorta)](viz/Padova_OspitalettoFranciacorta_219344_Ospitaletto Franciacorta_network.svg) · [shotmap(Ospitaletto Franciacorta)](viz/Padova_OspitalettoFranciacorta_219344_Ospitaletto Franciacorta_shotmap.svg) · [heatmap(Padova)](viz/Padova_OspitalettoFranciacorta_219344_Padova_heatmap.svg) · [network(Padova)](viz/Padova_OspitalettoFranciacorta_219344_Padova_network.svg) · [shotmap(Padova)](viz/Padova_OspitalettoFranciacorta_219344_Padova_shotmap.svg)
@@ -18971,6 +18986,7 @@
 - **브란_릴레스트룀_207065**: [heatmap(릴레스트룀)](viz/브란_릴레스트룀_207065_릴레스트룀_heatmap.svg) · [network(릴레스트룀)](viz/브란_릴레스트룀_207065_릴레스트룀_network.svg) · [shotmap(릴레스트룀)](viz/브란_릴레스트룀_207065_릴레스트룀_shotmap.svg) · [heatmap(브란)](viz/브란_릴레스트룀_207065_브란_heatmap.svg) · [network(브란)](viz/브란_릴레스트룀_207065_브란_network.svg) · [shotmap(브란)](viz/브란_릴레스트룀_207065_브란_shotmap.svg)
 - **브란_발레렝가_207025**: [heatmap(발레렝가)](viz/브란_발레렝가_207025_발레렝가_heatmap.svg) · [network(발레렝가)](viz/브란_발레렝가_207025_발레렝가_network.svg) · [shotmap(발레렝가)](viz/브란_발레렝가_207025_발레렝가_shotmap.svg) · [heatmap(브란)](viz/브란_발레렝가_207025_브란_heatmap.svg) · [network(브란)](viz/브란_발레렝가_207025_브란_network.svg) · [shotmap(브란)](viz/브란_발레렝가_207025_브란_shotmap.svg)
 - **브란_보되글림트_207078**: [heatmap(보되글림트)](viz/브란_보되글림트_207078_보되글림트_heatmap.svg) · [network(보되글림트)](viz/브란_보되글림트_207078_보되글림트_network.svg) · [shotmap(보되글림트)](viz/브란_보되글림트_207078_보되글림트_shotmap.svg) · [heatmap(브란)](viz/브란_보되글림트_207078_브란_heatmap.svg) · [network(브란)](viz/브란_보되글림트_207078_브란_network.svg) · [shotmap(브란)](viz/브란_보되글림트_207078_브란_shotmap.svg)
+- **브란_비킹_207091**: [heatmap(브란)](viz/브란_비킹_207091_브란_heatmap.svg) · [network(브란)](viz/브란_비킹_207091_브란_network.svg) · [shotmap(브란)](viz/브란_비킹_207091_브란_shotmap.svg) · [heatmap(비킹)](viz/브란_비킹_207091_비킹_heatmap.svg) · [network(비킹)](viz/브란_비킹_207091_비킹_network.svg) · [shotmap(비킹)](viz/브란_비킹_207091_비킹_shotmap.svg)
 - **브란_사르프스보르그08_206991**: [heatmap(브란)](viz/브란_사르프스보르그08_206991_브란_heatmap.svg) · [network(브란)](viz/브란_사르프스보르그08_206991_브란_network.svg) · [shotmap(브란)](viz/브란_사르프스보르그08_206991_브란_shotmap.svg) · [heatmap(사르프스보르그 08)](viz/브란_사르프스보르그08_206991_사르프스보르그 08_heatmap.svg) · [network(사르프스보르그 08)](viz/브란_사르프스보르그08_206991_사르프스보르그 08_network.svg) · [shotmap(사르프스보르그 08)](viz/브란_사르프스보르그08_206991_사르프스보르그 08_shotmap.svg)
 - **브란_산네피오르_206935**: [heatmap(브란)](viz/브란_산네피오르_206935_브란_heatmap.svg) · [network(브란)](viz/브란_산네피오르_206935_브란_network.svg) · [shotmap(브란)](viz/브란_산네피오르_206935_브란_shotmap.svg) · [heatmap(산네피오르)](viz/브란_산네피오르_206935_산네피오르_heatmap.svg) · [network(산네피오르)](viz/브란_산네피오르_206935_산네피오르_network.svg) · [shotmap(산네피오르)](viz/브란_산네피오르_206935_산네피오르_shotmap.svg)
 - **브란_트롬쇠_206916**: [heatmap(브란)](viz/브란_트롬쇠_206916_브란_heatmap.svg) · [network(브란)](viz/브란_트롬쇠_206916_브란_network.svg) · [shotmap(브란)](viz/브란_트롬쇠_206916_브란_shotmap.svg) · [heatmap(트롬쇠)](viz/브란_트롬쇠_206916_트롬쇠_heatmap.svg) · [network(트롬쇠)](viz/브란_트롬쇠_206916_트롬쇠_network.svg) · [shotmap(트롬쇠)](viz/브란_트롬쇠_206916_트롬쇠_shotmap.svg)
