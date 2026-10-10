@@ -197042,5 +197042,115 @@
             }
         ],
         "collected_at": "2026-10-10T00:32:41.185411+00:00"
+    },
+    "1271426271": {
+        "match": {
+            "id": 1271426271,
+            "round": "Group Stage",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "US",
+                "name": "USA",
+                "logo": "https://highlightly.net/soccer/images/countries/US.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 7681059,
+                "logo": "https://highlightly.net/soccer/images/teams/7681059.png",
+                "name": "Forward Madison"
+            },
+            "homeTeam": {
+                "id": 21691072,
+                "logo": null,
+                "name": "Westchester SC"
+            },
+            "league": {
+                "id": 416923,
+                "logo": "https://highlightly.net/soccer/images/leagues/416923.png",
+                "name": "USL League One",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21691072,
+                    "logo": null,
+                    "name": "Westchester SC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 7681059,
+                    "logo": "https://highlightly.net/soccer/images/teams/7681059.png",
+                    "name": "Forward Madison"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T09:33:02.470986+00:00"
+    },
+    "1319889019": {
+        "match": {
+            "id": 1319889019,
+            "round": "Apertura - 11",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1968296,
+                "logo": "https://highlightly.net/soccer/images/teams/1968296.png",
+                "name": "Atlante FC"
+            },
+            "homeTeam": {
+                "id": 1949574,
+                "logo": "https://highlightly.net/soccer/images/teams/1949574.png",
+                "name": "Querétaro"
+            },
+            "league": {
+                "id": 223746,
+                "logo": "https://highlightly.net/soccer/images/leagues/223746.png",
+                "name": "Liga MX",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1949574,
+                    "logo": "https://highlightly.net/soccer/images/teams/1949574.png",
+                    "name": "Querétaro"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1968296,
+                    "logo": "https://highlightly.net/soccer/images/teams/1968296.png",
+                    "name": "Atlante FC"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T09:33:02.678596+00:00"
     }
 }
