@@ -24871,6 +24871,32 @@
  ],
  "championship": [
   {
+   "home": "웨스트햄 유나이티드",
+   "away": "QPR",
+   "date": "2026-10-10",
+   "eid": 214081,
+   "goals": [
+    {
+     "scorer": "J. Bowen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Madsen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "노리치 시티",
    "away": "볼턴 원더러스",
    "date": "2026-09-20",
@@ -28126,6 +28152,41 @@
  ],
  "ligue1": [
   {
+   "home": "RC 랑스",
+   "away": "올랭피크 리옹",
+   "date": "2026-10-10",
+   "eid": 210487,
+   "goals": [
+    {
+     "scorer": "K. Merah",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Udol",
+     "assist": "F. Thauvin",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. Sotoca",
+     "assist": "F. Thauvin",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "올랭피크 마르세유",
    "away": "파리 생제르맹",
    "date": "2026-09-21",
@@ -29639,6 +29700,50 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "보루시아 도르트문트",
+   "away": "베르더 브레멘",
+   "date": "2026-10-10",
+   "eid": 213707,
+   "goals": [
+    {
+     "scorer": "N. Füllkrug",
+     "assist": "M. Grüll",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Reis",
+     "assist": "O. Wojcik",
+     "team": null,
+     "is_home": false,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Schlotterbeck",
+     "assist": "J. Veerman",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Svensson",
+     "assist": "F. Silva",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "SC 파더보른07",
    "away": "TSG 호펜하임",
@@ -41712,6 +41817,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "말라가",
+   "away": "에스파뇰",
+   "date": "2026-10-10",
+   "eid": 213594,
+   "goals": [
+    {
+     "scorer": "A. Niño",
+     "assist": "R. Garrido",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Zaragoza",
+     "assist": "J. Hernández",
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "발렌시아",
    "away": "레알 소시에다드",
