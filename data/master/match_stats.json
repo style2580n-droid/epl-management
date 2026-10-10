@@ -197152,5 +197152,225 @@
             }
         ],
         "collected_at": "2026-10-10T09:33:02.678596+00:00"
+    },
+    "1399231153": {
+        "match": {
+            "id": 1399231153,
+            "round": "Regular Season - 1",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 9342211,
+                "logo": "https://highlightly.net/soccer/images/teams/9342211.png",
+                "name": "Hoppers"
+            },
+            "homeTeam": {
+                "id": 19395925,
+                "logo": null,
+                "name": "All Saints United"
+            },
+            "league": {
+                "id": 892632,
+                "logo": null,
+                "name": "Premier Division",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19395925,
+                    "logo": null,
+                    "name": "All Saints United"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 9342211,
+                    "logo": "https://highlightly.net/soccer/images/teams/9342211.png",
+                    "name": "Hoppers"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T19:10:28.906360+00:00"
+    },
+    "1392229976": {
+        "match": {
+            "id": 1392229976,
+            "round": "Regular Season - 7",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 13562320,
+                "logo": null,
+                "name": "Pioneros de Cancún"
+            },
+            "homeTeam": {
+                "id": 16941641,
+                "logo": null,
+                "name": "Deportiva Venados"
+            },
+            "league": {
+                "id": 1057726,
+                "logo": null,
+                "name": "Primera Premier",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 16941641,
+                    "logo": null,
+                    "name": "Deportiva Venados"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13562320,
+                    "logo": null,
+                    "name": "Pioneros de Cancún"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T19:10:29.302744+00:00"
+    },
+    "1345808777": {
+        "match": {
+            "id": 1345808777,
+            "round": "Apertura - 12",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "MX",
+                "name": "Mexico",
+                "logo": "https://highlightly.net/soccer/images/countries/MX.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1964041,
+                "logo": "https://highlightly.net/soccer/images/teams/1964041.png",
+                "name": "Leones Negros UDG"
+            },
+            "homeTeam": {
+                "id": 1967445,
+                "logo": "https://highlightly.net/soccer/images/teams/1967445.png",
+                "name": "Venados FC"
+            },
+            "league": {
+                "id": 224597,
+                "logo": "https://highlightly.net/soccer/images/leagues/224597.png",
+                "name": "Liga de Expansión MX",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1967445,
+                    "logo": "https://highlightly.net/soccer/images/teams/1967445.png",
+                    "name": "Venados FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1964041,
+                    "logo": "https://highlightly.net/soccer/images/teams/1964041.png",
+                    "name": "Leones Negros UDG"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T19:10:29.688137+00:00"
+    },
+    "1320493229": {
+        "match": {
+            "id": 1320493229,
+            "round": "Apertura - 10",
+            "date": "2026-10-10T23:00:00.000Z",
+            "country": {
+                "code": "CR",
+                "name": "Costa Rica",
+                "logo": "https://highlightly.net/soccer/images/countries/CR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 700306,
+                "logo": "https://highlightly.net/soccer/images/teams/700306.png",
+                "name": "LD Alajuelense"
+            },
+            "homeTeam": {
+                "id": 1741079,
+                "logo": "https://highlightly.net/soccer/images/teams/1741079.png",
+                "name": "Puntarenas FC"
+            },
+            "league": {
+                "id": 138646,
+                "logo": "https://highlightly.net/soccer/images/leagues/138646.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1741079,
+                    "logo": "https://highlightly.net/soccer/images/teams/1741079.png",
+                    "name": "Puntarenas FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 700306,
+                    "logo": "https://highlightly.net/soccer/images/teams/700306.png",
+                    "name": "LD Alajuelense"
+                }
+            }
+        ],
+        "collected_at": "2026-10-10T19:10:30.636324+00:00"
     }
 }
