@@ -28667,6 +28667,173 @@
  ],
  "ligue1": [
   {
+   "home": "스타드 브레스투아29",
+   "away": "앙제SCO",
+   "date": "2026-10-11",
+   "eid": 210488,
+   "goals": [
+    {
+     "scorer": "P. Mboup",
+     "assist": "L. Ajorque",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Peter",
+     "assist": "J. Kalulu",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Baldé",
+     "assist": "P. Mboup",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Lala",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Tousart",
+     "assist": "J. Chotard",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Ajorque",
+     "assist": "H. Magnetti",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "파리 생제르맹",
+   "away": "르망FC",
+   "date": "2026-10-11",
+   "eid": 210486,
+   "goals": [
+    {
+     "scorer": "M. Akliouche",
+     "assist": "W. Zaïre-Emery",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Kvaratskhelia",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Mafouta",
+     "assist": "L. Calodat",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Beraldo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 19,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 로리앙",
+   "away": "파리 FC",
+   "date": "2026-10-11",
+   "eid": 210484,
+   "goals": [
+    {
+     "scorer": "G. Bernardeau",
+     "assist": "J. Makengo",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "AS 모나코",
+   "away": "툴루즈",
+   "date": "2026-10-11",
+   "eid": 210482,
+   "goals": [
+    {
+     "scorer": "S. Oppong",
+     "assist": "C. Tengstedt",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Tengstedt",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Abline",
+     "assist": "E. Diop",
+     "team": null,
+     "is_home": true,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Diop",
+     "assist": "A. Golovin",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "릴OSC",
    "away": "르아브르AC",
    "date": "2026-10-11",
@@ -32073,6 +32240,41 @@
  ],
  "seriea": [
   {
+   "home": "나폴리",
+   "away": "프로시노네",
+   "date": "2026-10-11",
+   "eid": 210114,
+   "goals": [
+    {
+     "scorer": "K. De Bruyne",
+     "assist": "Giovane",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Lang",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. De Bruyne",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "인테르",
    "away": "파르마",
    "date": "2026-10-11",
@@ -33849,6 +34051,58 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "아약스",
+   "away": "N.E.C. 네이메헌",
+   "date": "2026-10-11",
+   "eid": 210865,
+   "goals": [
+    {
+     "scorer": "T. Chery",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 19,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Arokodare",
+     "assist": "J. Mokio",
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "포르투나 시타르드",
+   "away": "FC 트벤테",
+   "date": "2026-10-11",
+   "eid": 210866,
+   "goals": [
+    {
+     "scorer": "R. Pröpper",
+     "assist": "W. Weghorst",
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Descotte",
+     "assist": "M. Ihattaren",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "페예노르트",
    "away": "AZ 알크마르",
@@ -42851,6 +43105,23 @@
  ],
  "laliga": [
   {
+   "home": "레알 마드리드",
+   "away": "비야레알",
+   "date": "2026-10-11",
+   "eid": 213597,
+   "goals": [
+    {
+     "scorer": "Y. Diomande",
+     "assist": "F. Valverde",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "바르셀로나",
    "away": "헤타페",
    "date": "2026-10-11",
@@ -45399,6 +45670,41 @@
   }
  ],
  "mls": [
+  {
+   "home": "시카고 파이어",
+   "away": "뉴욕 시티 FC",
+   "date": "2026-10-11",
+   "eid": 5319,
+   "goals": [
+    {
+     "scorer": "M. Haile-Selassie",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Salétros",
+     "assist": "M. Haile-Selassie",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "H. Wolf",
+     "assist": "A. Ojeda",
+     "team": null,
+     "is_home": false,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "토론토 FC",
    "away": "CF 몬트리올",
