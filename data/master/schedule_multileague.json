@@ -10332,7 +10332,9 @@
    "date": "2026-10-13",
    "time": "01:30",
    "id": 210107,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "토리노",
@@ -10340,7 +10342,9 @@
    "date": "2026-10-13",
    "time": "03:45",
    "id": 210116,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "프로시노네",
@@ -10775,6 +10779,14 @@
    "friendly": false
   },
   {
+   "home": "유벤투스",
+   "away": "베네치아",
+   "date": "2026-11-22",
+   "time": "20:30",
+   "id": 210171,
+   "friendly": false
+  },
+  {
    "home": "사수올로",
    "away": "제노아",
    "date": "2026-11-22",
@@ -10812,14 +10824,6 @@
    "date": "2026-11-24",
    "time": "04:45",
    "id": 210173,
-   "friendly": false
-  },
-  {
-   "home": "유벤투스",
-   "away": "베네치아",
-   "date": "2026-11-24",
-   "time": "04:45",
-   "id": 210171,
    "friendly": false
   },
   {
@@ -17398,7 +17402,9 @@
    "date": "2026-10-13",
    "time": "02:00",
    "id": 207088,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "함캄",
@@ -18714,7 +18720,9 @@
    "date": "2026-10-13",
    "time": "04:00",
    "id": 213593,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 3
   },
   {
    "home": "데포르티보 라코루냐",

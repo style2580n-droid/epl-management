@@ -1,6 +1,59 @@
 {
  "epl": [
   {
+   "home": "코번트리 시티",
+   "away": "뉴캐슬",
+   "date": "2026-10-13",
+   "eid": 209588,
+   "goals": [
+    {
+     "scorer": "S. Mfuni",
+     "assist": "J. DaSilva",
+     "team": null,
+     "is_home": true,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Simms",
+     "assist": "B. Thomas-Asante",
+     "team": null,
+     "is_home": true,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Botman",
+     "assist": "N. González",
+     "team": null,
+     "is_home": false,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Cherif",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Rudoni",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "리버풀",
    "away": "맨체스터 시티",
    "date": "2026-10-12",
@@ -32564,6 +32617,85 @@
  ],
  "seriea": [
   {
+   "home": "토리노",
+   "away": "우디네세",
+   "date": "2026-10-13",
+   "eid": 210116,
+   "goals": [
+    {
+     "scorer": "S. Kulenović",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Ekkelenkamp",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Bragança",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "아탈란타",
+   "away": "베네치아",
+   "date": "2026-10-13",
+   "eid": 210107,
+   "goals": [
+    {
+     "scorer": "A. Hainaut",
+     "assist": "R. Sagrado",
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "N. Krstović",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Krstović",
+     "assist": "E. Elmas",
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. Kessié",
+     "assist": "N. Krstović",
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "칼리아리",
    "away": "유벤투스",
    "date": "2026-10-12",
@@ -37513,6 +37645,41 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "KFUM 오슬로",
+   "away": "발레렝가",
+   "date": "2026-10-13",
+   "eid": 207088,
+   "goals": [
+    {
+     "scorer": "B. M. Kristensen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Njie",
+     "assist": "J. L. Hjorth",
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. K. Olsen",
+     "assist": "G. Zahid",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "릴레스트룀",
    "away": "몰데",
@@ -43928,6 +44095,68 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레반테",
+   "away": "세비야",
+   "date": "2026-10-13",
+   "eid": 213593,
+   "goals": [
+    {
+     "scorer": "I. Ndukwe",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Romero",
+     "assist": "Y. Fofana",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Adri",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Romero",
+     "assist": "R. Brugué",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Correia",
+     "assist": "R. Ure",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Ure",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "라싱 산탄데르",
    "away": "발렌시아",
