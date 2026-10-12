@@ -46671,6 +46671,86 @@
  ],
  "mls": [
   {
+   "home": "세인트루이스 시티",
+   "away": "LA 갤럭시",
+   "date": "2026-10-12",
+   "eid": 5333,
+   "goals": [
+    {
+     "scorer": "J. Klauss",
+     "assist": "M. Reus",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Navarro",
+     "assist": "C. Durkin",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. MacNaughton",
+     "assist": "A. Mățan",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Navarro",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Taylor",
+     "assist": "E. Thommy",
+     "team": null,
+     "is_home": false,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Holse",
+     "assist": "C. Durkin",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Holse",
+     "assist": "R. Navarro",
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Holse",
+     "assist": "R. Navarro",
+     "team": null,
+     "is_home": true,
+     "minute": 2,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "로스앤젤레스 FC",
    "away": "밴쿠버 화이트캡스",
    "date": "2026-10-11",
