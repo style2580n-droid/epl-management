@@ -28807,6 +28807,32 @@
  ],
  "ligue1": [
   {
+   "home": "ESTAC 트루아",
+   "away": "올랭피크 마르세유",
+   "date": "2026-10-12",
+   "eid": 210490,
+   "goals": [
+    {
+     "scorer": "H. Abdelli",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Harit",
+     "assist": "Emerson",
+     "team": null,
+     "is_home": false,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "스타드 렌",
    "away": "AJ 오세르",
    "date": "2026-10-12",
@@ -32537,6 +32563,32 @@
   }
  ],
  "seriea": [
+  {
+   "home": "칼리아리",
+   "away": "유벤투스",
+   "date": "2026-10-12",
+   "eid": 210108,
+   "goals": [
+    {
+     "scorer": "R. Kolo Muani",
+     "assist": "K. Alajbegović",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Maldini",
+     "assist": "P. Mendy",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "사수올로",
    "away": "AC밀란",
@@ -43876,6 +43928,50 @@
   }
  ],
  "laliga": [
+  {
+   "home": "라싱 산탄데르",
+   "away": "발렌시아",
+   "date": "2026-10-12",
+   "eid": 213598,
+   "goals": [
+    {
+     "scorer": "D. Otorbi",
+     "assist": "J. Guerra",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Martín",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Y. Zabiri",
+     "assist": "I. Vicente",
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Raba",
+     "assist": "J. De Haas",
+     "team": null,
+     "is_home": false,
+     "minute": 2,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "레알 베티스",
    "away": "오사수나",
