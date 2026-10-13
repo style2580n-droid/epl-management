@@ -25275,6 +25275,225 @@
  ],
  "championship": [
   {
+   "home": "렉섬",
+   "away": "웨스트브롬위치 알비온",
+   "date": "2026-10-14",
+   "eid": 214089,
+   "goals": [
+    {
+     "scorer": "A. S. Heggebø",
+     "assist": "I. Price",
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Price",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Moore",
+     "assist": "O. Rathbone",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "울버햄튼 원더러스",
+   "away": "볼턴 원더러스",
+   "date": "2026-10-14",
+   "eid": 214088,
+   "goals": [
+    {
+     "scorer": "J. Sheehan",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Dalby",
+     "assist": "G. Larrazabal",
+     "team": null,
+     "is_home": false,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Bellegarde",
+     "assist": "L. Krejčí",
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Ito",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "밀월",
+   "away": "스완지 시티",
+   "date": "2026-10-14",
+   "eid": 214086,
+   "goals": [
+    {
+     "scorer": "Ronald",
+     "assist": "J. Opoku",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "카디프 시티",
+   "away": "왓포드",
+   "date": "2026-10-14",
+   "eid": 214085,
+   "goals": [
+    {
+     "scorer": "H. Kyprianou",
+     "assist": "I. Bravo",
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "C. Robinson",
+     "assist": "D. Turnbull",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Tanner",
+     "assist": "P. Ng",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Pollock",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "ownGoal",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Moylan",
+     "assist": "C. Ashford",
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Moylan",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "번리",
+   "away": "찰턴 애슬레틱",
+   "date": "2026-10-14",
+   "eid": 214084,
+   "goals": [
+    {
+     "scorer": "I. Mesík",
+     "assist": "H. Knibbs",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Ramazani",
+     "assist": "I. Júlio",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Ramsay",
+     "assist": "L. Jones",
+     "team": null,
+     "is_home": false,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Bruun Larsen",
+     "assist": "J. Laurent",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "브리스톨 시티",
+   "away": "블랙번 로버스",
+   "date": "2026-10-14",
+   "eid": 214083,
+   "goals": [
+    {
+     "scorer": "O. Afolayan",
+     "assist": "S. McLoughlin",
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "사우샘프턴",
    "away": "포츠머스",
    "date": "2026-10-11",
