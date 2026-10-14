@@ -25275,6 +25275,103 @@
  ],
  "championship": [
   {
+   "home": "스토크 시티",
+   "away": "미들즈브러",
+   "date": "2026-10-14",
+   "eid": 214087,
+   "goals": [
+    {
+     "scorer": "N. Borges",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Boženík",
+     "assist": "G. Hirst",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "W. Lankshear",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Borges",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Brittain",
+     "assist": "A. Cozier-Duberry",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "버밍엄 시티",
+   "away": "프레스턴 노스엔드",
+   "date": "2026-10-14",
+   "eid": 214082,
+   "goals": [
+    {
+     "scorer": "D. Gray",
+     "assist": "M. Bird",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Priske",
+     "assist": "J. Stansfield",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Priske",
+     "assist": "A. Cochrane",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Millar",
+     "assist": "P. Roberts",
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "렉섬",
    "away": "웨스트브롬위치 알비온",
    "date": "2026-10-14",
