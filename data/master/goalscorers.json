@@ -47401,6 +47401,576 @@
  ],
  "mls": [
   {
+   "home": "샌디에이고 FC",
+   "away": "휴스턴 다이나모",
+   "date": "2026-10-15",
+   "eid": 5348,
+   "goals": [
+    {
+     "scorer": "Gabriel Pirani",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Guilherme",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Bogusz",
+     "assist": "Guilherme",
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Guilherme",
+     "assist": "L. Ennali",
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Bakambu",
+     "assist": "O. Valakari",
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Dreyer",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "LA 갤럭시",
+   "away": "포틀랜드 팀버스",
+   "date": "2026-10-15",
+   "eid": 5347,
+   "goals": [
+    {
+     "scorer": "J. Haak",
+     "assist": "M. Reus",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Reus",
+     "assist": "R. Taylor",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "로스앤젤레스 FC",
+   "away": "오스틴 FC",
+   "date": "2026-10-15",
+   "eid": 5346,
+   "goals": [
+    {
+     "scorer": "S. Heung-min",
+     "assist": "J. Shaffelburg",
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Bouanga",
+     "assist": "S. Heung-min",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Vázquez",
+     "assist": "M. Uzuni",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Bouanga",
+     "assist": "S. Heung-min",
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "리얼 솔트레이크",
+   "away": "산호세 어스퀘이크스",
+   "date": "2026-10-15",
+   "eid": 5345,
+   "goals": [
+    {
+     "scorer": "J. Jasinski",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. D. Fougerolles",
+     "assist": "J. Sanabria",
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "콜로라도 래피즈",
+   "away": "미네소타 유나이티드",
+   "date": "2026-10-15",
+   "eid": 5344,
+   "goals": [
+    {
+     "scorer": "L. Williams",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Minoungou",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Yeboah",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Yapi",
+     "assist": "K. Rosenberry",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "내슈빌 SC",
+   "away": "스포르팅 캔자스시티",
+   "date": "2026-10-15",
+   "eid": 5343,
+   "goals": [
+    {
+     "scorer": "W. Madrigal",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Najar",
+     "assist": "C. Espinoza",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Surridge",
+     "assist": "H. Mukhtar",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. Mukhtar",
+     "assist": "A. Najar",
+     "team": null,
+     "is_home": true,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "세인트루이스 시티",
+   "away": "밴쿠버 화이트캡스",
+   "date": "2026-10-15",
+   "eid": 5342,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "시카고 파이어",
+   "away": "필라델피아 유니온",
+   "date": "2026-10-15",
+   "eid": 5341,
+   "goals": [
+    {
+     "scorer": "B. Damiani",
+     "assist": "J. Lukić",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Damiani",
+     "assist": "C. Sullivan",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Iloski",
+     "assist": "B. Damiani",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Haile-Selassie",
+     "assist": "N. Allen",
+     "team": null,
+     "is_home": true,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 댈러스",
+   "away": "시애틀 사운더스",
+   "date": "2026-10-15",
+   "eid": 5340,
+   "goals": [
+    {
+     "scorer": "Kaick",
+     "assist": "O. Urhoghide",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "DC 유나이티드",
+   "away": "뉴욕 레드불스",
+   "date": "2026-10-15",
+   "eid": 5339,
+   "goals": [
+    {
+     "scorer": "E. M. Choupo-Moting",
+     "assist": "E. Forsberg",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Hefti",
+     "assist": "T. Baribo",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "T. Baribo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "CF 몬트리올",
+   "away": "애틀랜타 유나이티드",
+   "date": "2026-10-15",
+   "eid": 5338,
+   "goals": [
+    {
+     "scorer": "B. Embolo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Galoppo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Almirón",
+     "assist": "E. Báez",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "토론토 FC",
+   "away": "올랜도 시티",
+   "date": "2026-10-15",
+   "eid": 5337,
+   "goals": [
+    {
+     "scorer": "M. Pereira",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Dike",
+     "assist": "I. Angulo",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Griezmann",
+     "assist": "Iago",
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Corbeanu",
+     "assist": "D. Sallói",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Morgan",
+     "assist": "T. Corbeanu",
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "FC 신시내티",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-10-15",
+   "eid": 5336,
+   "goals": [
+    {
+     "scorer": "K. Denkey",
+     "assist": "T. Malacia",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "P. Miller",
+     "team": null,
+     "is_home": false,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Wynder",
+     "assist": "C. Gil",
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Turgeman",
+     "assist": "P. Miller",
+     "team": null,
+     "is_home": false,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Barlow",
+     "assist": "T. Malacia",
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "콜럼버스 크루",
+   "away": "샬럿 FC",
+   "date": "2026-10-15",
+   "eid": 5335,
+   "goals": [
+    {
+     "scorer": "T. Habroune",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Zaroury",
+     "assist": "M. Farsi",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Méndez",
+     "assist": "S. Rodríguez",
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Toklomati",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "뉴욕 시티 FC",
+   "date": "2026-10-15",
+   "eid": 5334,
+   "goals": [
+    {
+     "scorer": "R. De Paul",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "세인트루이스 시티",
    "away": "LA 갤럭시",
    "date": "2026-10-12",
