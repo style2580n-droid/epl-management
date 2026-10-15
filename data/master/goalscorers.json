@@ -25275,6 +25275,191 @@
  ],
  "championship": [
   {
+   "home": "링컨 시티",
+   "away": "웨스트햄 유나이티드",
+   "date": "2026-10-15",
+   "eid": 214090,
+   "goals": [
+    {
+     "scorer": "T. Souček",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Souček",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Felipe",
+     "assist": "E. Austbø",
+     "team": null,
+     "is_home": false,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Bowen",
+     "assist": "A. Engels",
+     "team": null,
+     "is_home": false,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Austbø",
+     "assist": "J. Piroe",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Mavropanos",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "QPR",
+   "away": "더비 카운티",
+   "date": "2026-10-15",
+   "eid": 214093,
+   "goals": [
+    {
+     "scorer": "L. Salvesen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Smyth",
+     "assist": "N. Madsen",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Vale",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Madsen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Lloyd",
+     "assist": "B. Kemper",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "포츠머스",
+   "away": "셰필드 유나이티드",
+   "date": "2026-10-15",
+   "eid": 214092,
+   "goals": [
+    {
+     "scorer": "E. Adams",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Cannon",
+     "assist": "K. Phillips",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Tanganga",
+     "assist": "T. Chong",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Segecic",
+     "assist": "R. K.-McQueen",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Z. Swanson",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "노리치 시티",
+   "away": "사우샘프턴",
+   "date": "2026-10-15",
+   "eid": 214091,
+   "goals": [
+    {
+     "scorer": "K. Matsuki",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "스토크 시티",
    "away": "미들즈브러",
    "date": "2026-10-14",
