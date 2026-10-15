@@ -209638,7 +209638,20 @@
         },
         "statistics": [
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 353949,
                     "logo": "https://highlightly.net/soccer/images/teams/353949.png",
@@ -209646,7 +209659,20 @@
                 }
             },
             {
-                "statistics": [],
+                "statistics": [
+                    {
+                        "value": 0,
+                        "displayName": "Big Chances Created"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Attacks"
+                    },
+                    {
+                        "value": 0,
+                        "displayName": "Yellow cards"
+                    }
+                ],
                 "team": {
                     "id": 861996,
                     "logo": "https://highlightly.net/soccer/images/teams/861996.png",
@@ -209654,7 +209680,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-15T08:04:08.571492+00:00"
+        "collected_at": "2026-10-15T18:55:47.760342+00:00"
     },
     "1392637605": {
         "match": {
