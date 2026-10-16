@@ -212400,5 +212400,60 @@
             }
         ],
         "collected_at": "2026-10-16T07:58:09.617253+00:00"
+    },
+    "1401100800": {
+        "match": {
+            "id": 1401100800,
+            "round": "Regular Season - 1",
+            "date": "2026-10-16T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 24230456,
+                "logo": null,
+                "name": "Freemansville"
+            },
+            "homeTeam": {
+                "id": 19398478,
+                "logo": null,
+                "name": "Green City"
+            },
+            "league": {
+                "id": 892632,
+                "logo": null,
+                "name": "Premier Division",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19398478,
+                    "logo": null,
+                    "name": "Green City"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 24230456,
+                    "logo": null,
+                    "name": "Freemansville"
+                }
+            }
+        ],
+        "collected_at": "2026-10-16T13:47:44.114898+00:00"
     }
 }
