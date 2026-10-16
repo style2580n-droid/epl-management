@@ -25275,6 +25275,41 @@
  ],
  "championship": [
   {
+   "home": "번리",
+   "away": "울버햄튼 원더러스",
+   "date": "2026-10-17",
+   "eid": 214096,
+   "goals": [
+    {
+     "scorer": "T. Chirewa",
+     "assist": "M. Mané",
+     "team": null,
+     "is_home": false,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. López",
+     "assist": "S. Neave",
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Vardy",
+     "assist": "J. Bruun Larsen",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "링컨 시티",
    "away": "웨스트햄 유나이티드",
    "date": "2026-10-15",
@@ -29361,6 +29396,41 @@
  ],
  "ligue1": [
   {
+   "home": "르망FC",
+   "away": "툴루즈",
+   "date": "2026-10-17",
+   "eid": 210493,
+   "goals": [
+    {
+     "scorer": "C. Tengstedt",
+     "assist": "C. Cásseres Jr.",
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Dønnum",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Russell Rowe",
+     "assist": "A. Dønnum",
+     "team": null,
+     "is_home": false,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "ESTAC 트루아",
    "away": "올랭피크 마르세유",
    "date": "2026-10-12",
@@ -31207,6 +31277,23 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "아인트라흐트 프랑크푸르트",
+   "away": "1.FC 쾰른",
+   "date": "2026-10-17",
+   "eid": 213716,
+   "goals": [
+    {
+     "scorer": "Y. Ebnoutalib",
+     "assist": "N. Aséko",
+     "team": null,
+     "is_home": true,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "SC 프라이부르크",
    "away": "샬케04",
@@ -33117,6 +33204,68 @@
   }
  ],
  "seriea": [
+  {
+   "home": "프로시노네",
+   "away": "사수올로",
+   "date": "2026-10-17",
+   "eid": 210121,
+   "goals": [
+    {
+     "scorer": "A. Raimondo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Thorstvedt",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Raimondo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Raimondo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Berardi",
+     "assist": "D. Bakola",
+     "team": null,
+     "is_home": false,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Calò",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "토리노",
    "away": "우디네세",
@@ -35147,6 +35296,50 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "sc 헤렌베인",
+   "away": "엑셀시오르 로테르담",
+   "date": "2026-10-17",
+   "eid": 210871,
+   "goals": [
+    {
+     "scorer": "J. Trenskow",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Oyen",
+     "assist": "R. Meerveld",
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Braude",
+     "assist": "J. Trenskow",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Vente",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "엑셀시오르 로테르담",
    "away": "FC 흐로닝언",
@@ -44596,6 +44789,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "데포르티보 라코루냐",
+   "away": "레반테",
+   "date": "2026-10-17",
+   "eid": 213601,
+   "goals": [
+    {
+     "scorer": "D. Requena",
+     "assist": "P. Ratkov",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Nsongo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "레반테",
    "away": "세비야",
