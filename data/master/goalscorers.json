@@ -29997,6 +29997,41 @@
  ],
  "ligue1": [
   {
+   "home": "올랭피크 리옹",
+   "away": "OGC 니스",
+   "date": "2026-10-19",
+   "eid": 210496,
+   "goals": [
+    {
+     "scorer": "T. Tessmann",
+     "assist": "Z. Athekame",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "P. Šulc",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Wahi",
+     "assist": "J. Clauss",
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "파리 FC",
    "away": "스타드 렌",
    "date": "2026-10-19",
@@ -34421,6 +34456,41 @@
  ],
  "seriea": [
   {
+   "home": "유벤투스",
+   "away": "라치오",
+   "date": "2026-10-19",
+   "eid": 210122,
+   "goals": [
+    {
+     "scorer": "F. Dele-Bashiru",
+     "assist": "A. Pinamonti",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Isaksen",
+     "assist": "N. Tavares",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Provstgaard",
+     "assist": "M. Zaccagni",
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "AC밀란",
    "away": "아탈란타",
    "date": "2026-10-19",
@@ -36731,6 +36801,85 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "FC 트벤테",
+   "away": "FC 위트레흐트",
+   "date": "2026-10-19",
+   "eid": 210877,
+   "goals": [
+    {
+     "scorer": "Á. Alarcón",
+     "assist": "A. Zagre",
+     "team": null,
+     "is_home": false,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Á. Alarcón",
+     "assist": "A. Zagre",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Weidmann",
+     "assist": "A. Adelgaard",
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "포르투나 시타르드",
+   "date": "2026-10-19",
+   "eid": 210873,
+   "goals": [
+    {
+     "scorer": "W. Willumsson",
+     "assist": "P. Schuurs",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Descotte",
+     "assist": "S. '. Zand",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Kers",
+     "assist": "D. Geiger",
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Descotte",
+     "assist": "R. Guth",
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "FC 흐로닝언",
    "away": "아약스",
@@ -40101,6 +40250,32 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "트롬쇠",
+   "away": "KFUM 오슬로",
+   "date": "2026-10-19",
+   "eid": 207097,
+   "goals": [
+    {
+     "scorer": "F. T. Berglie",
+     "assist": "R. Rasch",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "T. Nyhammer",
+     "assist": "A. Warneryd",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "발레렝가",
    "away": "브란",
@@ -46859,6 +47034,130 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레알 마드리드",
+   "away": "세비야",
+   "date": "2026-10-19",
+   "eid": 213607,
+   "goals": [
+    {
+     "scorer": "Y. Diomande",
+     "assist": "A. Tchouaméni",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Bueno",
+     "assist": "L. Stassin",
+     "team": null,
+     "is_home": false,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": "J. Bellingham",
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Güler",
+     "assist": "Y. Diomande",
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "말라가",
+   "away": "레알 소시에다드",
+   "date": "2026-10-19",
+   "eid": 213604,
+   "goals": [
+    {
+     "scorer": "G. Guedes",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Oyarzabal",
+     "assist": "J. Martin",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Martínez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Oyarzabal",
+     "assist": "T. Kubo",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Niño",
+     "assist": "P. Martínez",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. S. Óskarsson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Kubo",
+     "assist": "H. Fort",
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "셀타 비고",
    "away": "알라베스",
