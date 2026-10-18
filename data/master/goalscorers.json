@@ -34026,6 +34026,41 @@
  ],
  "seriea": [
   {
+   "home": "우디네세",
+   "away": "레체",
+   "date": "2026-10-18",
+   "eid": 210125,
+   "goals": [
+    {
+     "scorer": "J. Siebert",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. N’Dri",
+     "assist": "T. Gabriel",
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "other"
+    },
+    {
+     "scorer": "K. Gaspar",
+     "assist": "A. Gallo",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "AS로마",
    "away": "제노아",
    "date": "2026-10-18",
@@ -36204,6 +36239,59 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "PEC 즈볼레",
+   "away": "호 어헤드 이글스",
+   "date": "2026-10-18",
+   "eid": 210876,
+   "goals": [
+    {
+     "scorer": "K. Kostons",
+     "assist": "I. Cissoko",
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Oosting",
+     "assist": "D. v. d. Haar",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Oosting",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. v. Hooijdonk",
+     "assist": "D. Mbayo",
+     "team": null,
+     "is_home": true,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. I. Sigurðarson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "스파르타 로테르담",
    "away": "빌럼II",
