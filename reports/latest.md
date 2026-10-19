@@ -1,6 +1,6 @@
-# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-18
+# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-19
 
-생성(UTC): 2026-10-18 23:02
+생성(UTC): 2026-10-19 08:47
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -1424,6 +1424,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 신시내티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.4% |
 | 인터 마이애미 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.6% |
+
+### FC신시내티_콜럼버스크루_5363
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 신시내티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 43.8% |
+| 콜럼버스 크루 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 56.2% |
 
 ### FC신시내티_토론토FC_4957
 
@@ -19256,6 +19263,7 @@
 - **FC신시내티_애틀랜타유나이티드_4914**: [heatmap(FC 신시내티)](viz/FC신시내티_애틀랜타유나이티드_4914_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_애틀랜타유나이티드_4914_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_애틀랜타유나이티드_4914_FC 신시내티_shotmap.svg) · [heatmap(애틀랜타 유나이티드)](viz/FC신시내티_애틀랜타유나이티드_4914_애틀랜타 유나이티드_heatmap.svg) · [network(애틀랜타 유나이티드)](viz/FC신시내티_애틀랜타유나이티드_4914_애틀랜타 유나이티드_network.svg) · [shotmap(애틀랜타 유나이티드)](viz/FC신시내티_애틀랜타유나이티드_4914_애틀랜타 유나이티드_shotmap.svg)
 - **FC신시내티_올랜도시티_5119**: [heatmap(FC 신시내티)](viz/FC신시내티_올랜도시티_5119_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_올랜도시티_5119_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_올랜도시티_5119_FC 신시내티_shotmap.svg) · [heatmap(올랜도 시티)](viz/FC신시내티_올랜도시티_5119_올랜도 시티_heatmap.svg) · [network(올랜도 시티)](viz/FC신시내티_올랜도시티_5119_올랜도 시티_network.svg) · [shotmap(올랜도 시티)](viz/FC신시내티_올랜도시티_5119_올랜도 시티_shotmap.svg)
 - **FC신시내티_인터마이애미_5090**: [heatmap(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_인터마이애미_5090_FC 신시내티_shotmap.svg) · [heatmap(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_heatmap.svg) · [network(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_network.svg) · [shotmap(인터 마이애미)](viz/FC신시내티_인터마이애미_5090_인터 마이애미_shotmap.svg)
+- **FC신시내티_콜럼버스크루_5363**: [heatmap(FC 신시내티)](viz/FC신시내티_콜럼버스크루_5363_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_콜럼버스크루_5363_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_콜럼버스크루_5363_FC 신시내티_shotmap.svg) · [heatmap(콜럼버스 크루)](viz/FC신시내티_콜럼버스크루_5363_콜럼버스 크루_heatmap.svg) · [network(콜럼버스 크루)](viz/FC신시내티_콜럼버스크루_5363_콜럼버스 크루_network.svg) · [shotmap(콜럼버스 크루)](viz/FC신시내티_콜럼버스크루_5363_콜럼버스 크루_shotmap.svg)
 - **FC신시내티_토론토FC_4957**: [heatmap(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_토론토FC_4957_FC 신시내티_shotmap.svg) · [heatmap(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_heatmap.svg) · [network(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_network.svg) · [shotmap(토론토 FC)](viz/FC신시내티_토론토FC_4957_토론토 FC_shotmap.svg)
 - **FC아우크스부르크_바이어레버쿠젠_213690**: [heatmap(FC 아우크스부르크)](viz/FC아우크스부르크_바이어레버쿠젠_213690_FC 아우크스부르크_heatmap.svg) · [network(FC 아우크스부르크)](viz/FC아우크스부르크_바이어레버쿠젠_213690_FC 아우크스부르크_network.svg) · [shotmap(FC 아우크스부르크)](viz/FC아우크스부르크_바이어레버쿠젠_213690_FC 아우크스부르크_shotmap.svg) · [heatmap(바이어 레버쿠젠)](viz/FC아우크스부르크_바이어레버쿠젠_213690_바이어 레버쿠젠_heatmap.svg) · [network(바이어 레버쿠젠)](viz/FC아우크스부르크_바이어레버쿠젠_213690_바이어 레버쿠젠_network.svg) · [shotmap(바이어 레버쿠젠)](viz/FC아우크스부르크_바이어레버쿠젠_213690_바이어 레버쿠젠_shotmap.svg)
 - **FC아우크스부르크_바이에른뮌헨_213708**: [heatmap(FC 아우크스부르크)](viz/FC아우크스부르크_바이에른뮌헨_213708_FC 아우크스부르크_heatmap.svg) · [network(FC 아우크스부르크)](viz/FC아우크스부르크_바이에른뮌헨_213708_FC 아우크스부르크_network.svg) · [shotmap(FC 아우크스부르크)](viz/FC아우크스부르크_바이에른뮌헨_213708_FC 아우크스부르크_shotmap.svg) · [heatmap(바이에른 뮌헨)](viz/FC아우크스부르크_바이에른뮌헨_213708_바이에른 뮌헨_heatmap.svg) · [network(바이에른 뮌헨)](viz/FC아우크스부르크_바이에른뮌헨_213708_바이에른 뮌헨_network.svg) · [shotmap(바이에른 뮌헨)](viz/FC아우크스부르크_바이에른뮌헨_213708_바이에른 뮌헨_shotmap.svg)
