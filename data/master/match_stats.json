@@ -190851,7 +190851,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:19.008906+00:00"
+        "collected_at": "2026-10-20T19:01:05.701648+00:00"
     },
     "1396080751": {
         "match": {
@@ -218732,7 +218732,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:15.157305+00:00"
+        "collected_at": "2026-10-20T19:00:54.602391+00:00"
     },
     "1318905263": {
         "match": {
@@ -218787,7 +218787,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:15.534902+00:00"
+        "collected_at": "2026-10-20T19:00:56.531063+00:00"
     },
     "1400278734": {
         "match": {
@@ -218842,7 +218842,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:15.898304+00:00"
+        "collected_at": "2026-10-20T19:00:57.541936+00:00"
     },
     "1400219164": {
         "match": {
@@ -218897,7 +218897,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:16.256010+00:00"
+        "collected_at": "2026-10-20T19:00:58.273974+00:00"
     },
     "1396111387": {
         "match": {
@@ -218915,7 +218915,7 @@
                     "current": null,
                     "penalties": null
                 },
-                "description": "Postponed"
+                "description": "Not started"
             },
             "awayTeam": {
                 "id": 2930777,
@@ -218952,7 +218952,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:16.664536+00:00"
+        "collected_at": "2026-10-20T19:00:59.373679+00:00"
     },
     "1400304264": {
         "match": {
@@ -219007,7 +219007,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:17.100515+00:00"
+        "collected_at": "2026-10-20T19:00:59.870404+00:00"
     },
     "1294316469": {
         "match": {
@@ -219062,7 +219062,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:17.484799+00:00"
+        "collected_at": "2026-10-20T19:01:01.740095+00:00"
     },
     "1400610624": {
         "match": {
@@ -219117,7 +219117,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:17.833360+00:00"
+        "collected_at": "2026-10-20T19:01:03.243345+00:00"
     },
     "1400609773": {
         "match": {
@@ -219172,7 +219172,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:18.233542+00:00"
+        "collected_at": "2026-10-20T19:01:04.054821+00:00"
     },
     "1318907816": {
         "match": {
@@ -219227,7 +219227,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:18.629671+00:00"
+        "collected_at": "2026-10-20T19:01:04.871138+00:00"
     },
     "1318767401": {
         "match": {
@@ -219282,7 +219282,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:19.626389+00:00"
+        "collected_at": "2026-10-20T19:01:06.166485+00:00"
     },
     "1318769954": {
         "match": {
@@ -219337,7 +219337,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:19.994714+00:00"
+        "collected_at": "2026-10-20T19:01:06.550222+00:00"
     },
     "1318773358": {
         "match": {
@@ -219392,7 +219392,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:20.415238+00:00"
+        "collected_at": "2026-10-20T19:01:07.180209+00:00"
     },
     "1395719076": {
         "match": {
@@ -219447,7 +219447,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:20.795121+00:00"
+        "collected_at": "2026-10-20T19:01:08.046626+00:00"
     },
     "1392013822": {
         "match": {
@@ -219486,23 +219486,117 @@
         },
         "statistics": [
             {
-                "statistics": [],
                 "team": {
                     "id": 147156,
                     "logo": "https://highlightly.net/soccer/images/teams/147156.png",
                     "name": "VfB Stuttgart"
-                }
+                },
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Successful passes",
+                        "value": 2
+                    },
+                    {
+                        "displayName": "Shots within penalty area",
+                        "value": 1
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 1
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 3
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 1
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Red cards",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0.45
+                    },
+                    {
+                        "displayName": "Failed passes",
+                        "value": 1
+                    }
+                ]
             },
             {
-                "statistics": [],
                 "team": {
                     "id": 451814,
                     "logo": "https://highlightly.net/soccer/images/teams/451814.png",
                     "name": "Atlético Madrid"
-                }
+                },
+                "statistics": [
+                    {
+                        "displayName": "Big Chances Created",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Yellow cards",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Successful passes",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots within penalty area",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots on target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Total passes",
+                        "value": 1
+                    },
+                    {
+                        "displayName": "Corners",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Goalkeeper saves",
+                        "value": 1
+                    },
+                    {
+                        "displayName": "Red cards",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Shots off target",
+                        "value": 0
+                    },
+                    {
+                        "displayName": "Possession",
+                        "value": 0.55
+                    }
+                ]
             }
         ],
-        "collected_at": "2026-10-20T14:10:21.235697+00:00"
+        "collected_at": "2026-10-20T19:01:10.652792+00:00"
     },
     "1391983186": {
         "match": {
@@ -219557,7 +219651,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:21.615921+00:00"
+        "collected_at": "2026-10-20T19:01:14.380718+00:00"
     },
     "1391981484": {
         "match": {
@@ -219612,7 +219706,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:22.014502+00:00"
+        "collected_at": "2026-10-20T19:01:14.832033+00:00"
     },
     "1391975527": {
         "match": {
@@ -219667,7 +219761,7 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:22.361723+00:00"
+        "collected_at": "2026-10-20T19:01:15.676083+00:00"
     },
     "1391971272": {
         "match": {
@@ -219722,6 +219816,6 @@
                 }
             }
         ],
-        "collected_at": "2026-10-20T14:10:22.836990+00:00"
+        "collected_at": "2026-10-20T19:01:16.200954+00:00"
     }
 }
