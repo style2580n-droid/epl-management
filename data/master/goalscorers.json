@@ -1,6 +1,50 @@
 {
  "epl": [
   {
+   "home": "토트넘",
+   "away": "코번트리 시티",
+   "date": "2026-10-20",
+   "eid": 209604,
+   "goals": [
+    {
+     "scorer": "B. Davies",
+     "assist": "D. Solanke",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Marmoush",
+     "assist": "A. Robertson",
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Rudoni",
+     "assist": "B. Thomas-Asante",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Maddison",
+     "assist": "M. Kudus",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "노팅엄 포레스트",
    "away": "아스날",
    "date": "2026-10-19",
@@ -34456,6 +34500,85 @@
  ],
  "seriea": [
   {
+   "home": "파르마",
+   "away": "토리노",
+   "date": "2026-10-20",
+   "eid": 210124,
+   "goals": [
+    {
+     "scorer": "G. Simeone",
+     "assist": "R. Belghali",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Adams",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "G. Simeone",
+     "assist": "R. Belghali",
+     "team": null,
+     "is_home": false,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "몬차",
+   "away": "칼리아리",
+   "date": "2026-10-20",
+   "eid": 210123,
+   "goals": [
+    {
+     "scorer": "G. Varela",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Robinson",
+     "assist": "G. Varela",
+     "team": null,
+     "is_home": true,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": "M. Foe Ondoa",
+     "team": null,
+     "is_home": true,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Kouadio",
+     "assist": "D. Mota",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "유벤투스",
    "away": "라치오",
    "date": "2026-10-19",
@@ -47034,6 +47157,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "헤타페",
+   "away": "라요 바예카노",
+   "date": "2026-10-20",
+   "eid": 213603,
+   "goals": [
+    {
+     "scorer": "M. Satriano",
+     "assist": "F. Serrano",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Á. García",
+     "assist": "J. de Frutos",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "레알 마드리드",
    "away": "세비야",
