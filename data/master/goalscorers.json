@@ -25436,158 +25436,35 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "첼시",
-   "away": "아스날",
-   "date": "2023-10-22",
-   "eid": 312209,
-   "goals": [
-    {
-     "scorer": "L. Trossard",
-     "assist": "B. Saka",
-     "team": null,
-     "is_home": false,
-     "minute": 84,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "D. Rice",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 77,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "M. Mudryk",
-     "assist": "C. Gallagher",
-     "team": null,
-     "is_home": true,
-     "minute": 48,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "C. Palmer",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 15,
-     "goal_type": "penalty",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "뉴캐슬",
-   "away": "크리스탈 팰리스",
-   "date": "2023-10-21",
-   "eid": 312207,
-   "goals": [
-    {
-     "scorer": "C. Wilson",
-     "assist": "J. Murphy",
-     "team": null,
-     "is_home": true,
-     "minute": 66,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "S. Longstaff",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 45,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "A. Gordon",
-     "assist": "J. Murphy",
-     "team": null,
-     "is_home": true,
-     "minute": 44,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "J. Murphy",
-     "assist": "K. Trippier",
-     "team": null,
-     "is_home": true,
-     "minute": 4,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "맨체스터 시티",
-   "away": "브라이튼",
-   "date": "2023-10-21",
-   "eid": 312206,
-   "goals": [
-    {
-     "scorer": "A. Fati",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 73,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Haaland",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 19,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "J. Álvarez",
-     "assist": "J. Doku",
-     "team": null,
-     "is_home": true,
-     "minute": 7,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "리버풀",
-   "away": "에버튼",
-   "date": "2023-10-21",
-   "eid": 312203,
-   "goals": [
-    {
-     "scorer": "M. Salah",
-     "assist": "D. Núñez",
-     "team": null,
-     "is_home": true,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "M. Salah",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 75,
-     "goal_type": "penalty",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
+  {
+   "home": "울버햄튼 원더러스",
+   "away": "포츠머스",
+   "date": "2026-10-21",
+   "eid": 601933,
+   "goals": [
+    {
+     "scorer": "T. Devlin",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. James",
+     "assist": "F. López",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "렉섬",
    "away": "프레스턴 노스엔드",
