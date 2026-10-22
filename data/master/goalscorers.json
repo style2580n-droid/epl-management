@@ -50225,6 +50225,41 @@
  "mls": [
   {
    "home": "FC 신시내티",
+   "away": "DC 유나이티드",
+   "date": "2026-10-22",
+   "eid": 604411,
+   "goals": [
+    {
+     "scorer": "T. Hadebe",
+     "assist": "Evander",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Nono",
+     "assist": "Peglow",
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Doudera",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 신시내티",
    "away": "콜럼버스 크루",
    "date": "2026-10-19",
    "eid": 5363,

@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-22
 
-생성(UTC): 2026-10-22 00:08
+생성(UTC): 2026-10-22 08:32
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -1347,6 +1347,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | FC 신시내티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 60.9% |
 | CF 몬트리올 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 39.1% |
+
+### FC신시내티_DC유나이티드_604411
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| FC 신시내티 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 56.2% |
+| DC 유나이티드 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 43.8% |
 
 ### FC신시내티_뉴욕레드불스_5049
 
@@ -19294,6 +19301,7 @@
 - **FC로리앙_툴루즈_210468**: [heatmap(FC 로리앙)](viz/FC로리앙_툴루즈_210468_FC 로리앙_heatmap.svg) · [network(FC 로리앙)](viz/FC로리앙_툴루즈_210468_FC 로리앙_network.svg) · [shotmap(FC 로리앙)](viz/FC로리앙_툴루즈_210468_FC 로리앙_shotmap.svg) · [heatmap(툴루즈)](viz/FC로리앙_툴루즈_210468_툴루즈_heatmap.svg) · [network(툴루즈)](viz/FC로리앙_툴루즈_210468_툴루즈_network.svg) · [shotmap(툴루즈)](viz/FC로리앙_툴루즈_210468_툴루즈_shotmap.svg)
 - **FC로리앙_파리FC_210484**: [heatmap(FC 로리앙)](viz/FC로리앙_파리FC_210484_FC 로리앙_heatmap.svg) · [network(FC 로리앙)](viz/FC로리앙_파리FC_210484_FC 로리앙_network.svg) · [shotmap(FC 로리앙)](viz/FC로리앙_파리FC_210484_FC 로리앙_shotmap.svg) · [heatmap(파리 FC)](viz/FC로리앙_파리FC_210484_파리 FC_heatmap.svg) · [network(파리 FC)](viz/FC로리앙_파리FC_210484_파리 FC_network.svg) · [shotmap(파리 FC)](viz/FC로리앙_파리FC_210484_파리 FC_shotmap.svg)
 - **FC신시내티_CF몬트리올_4984**: [heatmap(CF 몬트리올)](viz/FC신시내티_CF몬트리올_4984_CF 몬트리올_heatmap.svg) · [network(CF 몬트리올)](viz/FC신시내티_CF몬트리올_4984_CF 몬트리올_network.svg) · [shotmap(CF 몬트리올)](viz/FC신시내티_CF몬트리올_4984_CF 몬트리올_shotmap.svg) · [heatmap(FC 신시내티)](viz/FC신시내티_CF몬트리올_4984_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_CF몬트리올_4984_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_CF몬트리올_4984_FC 신시내티_shotmap.svg)
+- **FC신시내티_DC유나이티드_604411**: [heatmap(DC 유나이티드)](viz/FC신시내티_DC유나이티드_604411_DC 유나이티드_heatmap.svg) · [network(DC 유나이티드)](viz/FC신시내티_DC유나이티드_604411_DC 유나이티드_network.svg) · [shotmap(DC 유나이티드)](viz/FC신시내티_DC유나이티드_604411_DC 유나이티드_shotmap.svg) · [heatmap(FC 신시내티)](viz/FC신시내티_DC유나이티드_604411_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_DC유나이티드_604411_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_DC유나이티드_604411_FC 신시내티_shotmap.svg)
 - **FC신시내티_뉴욕레드불스_5049**: [heatmap(FC 신시내티)](viz/FC신시내티_뉴욕레드불스_5049_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_뉴욕레드불스_5049_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_뉴욕레드불스_5049_FC 신시내티_shotmap.svg) · [heatmap(뉴욕 레드불스)](viz/FC신시내티_뉴욕레드불스_5049_뉴욕 레드불스_heatmap.svg) · [network(뉴욕 레드불스)](viz/FC신시내티_뉴욕레드불스_5049_뉴욕 레드불스_network.svg) · [shotmap(뉴욕 레드불스)](viz/FC신시내티_뉴욕레드불스_5049_뉴욕 레드불스_shotmap.svg)
 - **FC신시내티_뉴욕시티FC_5200**: [heatmap(FC 신시내티)](viz/FC신시내티_뉴욕시티FC_5200_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_뉴욕시티FC_5200_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_뉴욕시티FC_5200_FC 신시내티_shotmap.svg) · [heatmap(뉴욕 시티 FC)](viz/FC신시내티_뉴욕시티FC_5200_뉴욕 시티 FC_heatmap.svg) · [network(뉴욕 시티 FC)](viz/FC신시내티_뉴욕시티FC_5200_뉴욕 시티 FC_network.svg) · [shotmap(뉴욕 시티 FC)](viz/FC신시내티_뉴욕시티FC_5200_뉴욕 시티 FC_shotmap.svg)
 - **FC신시내티_뉴잉글랜드레볼루션_5336**: [heatmap(FC 신시내티)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_FC 신시내티_shotmap.svg) · [heatmap(뉴잉글랜드 레볼루션)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_뉴잉글랜드 레볼루션_heatmap.svg) · [network(뉴잉글랜드 레볼루션)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_뉴잉글랜드 레볼루션_network.svg) · [shotmap(뉴잉글랜드 레볼루션)](viz/FC신시내티_뉴잉글랜드레볼루션_5336_뉴잉글랜드 레볼루션_shotmap.svg)
