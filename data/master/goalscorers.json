@@ -47035,6 +47035,50 @@
  ],
  "laliga": [
   {
+   "home": "레반테",
+   "away": "아틀레틱 빌바오",
+   "date": "2026-10-22",
+   "eid": 604445,
+   "goals": [
+    {
+     "scorer": "E. Eyong",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Á. Berenguer",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Brugué",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Brugué",
+     "assist": "D. Requena",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "헤타페",
    "away": "라요 바예카노",
    "date": "2026-10-20",

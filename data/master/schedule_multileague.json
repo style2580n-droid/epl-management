@@ -5337,14 +5337,6 @@
    "friendly": false
   },
   {
-   "home": "툴루즈",
-   "away": "ESTAC 트루아",
-   "date": "2026-10-25",
-   "time": "00:15",
-   "id": 210508,
-   "friendly": false
-  },
-  {
    "home": "RC 랑스",
    "away": "파리 FC",
    "date": "2026-10-25",
@@ -5358,6 +5350,14 @@
    "date": "2026-10-25",
    "time": "23:00",
    "id": 210500,
+   "friendly": false
+  },
+  {
+   "home": "툴루즈",
+   "away": "ESTAC 트루아",
+   "date": "2026-10-26",
+   "time": "01:15",
+   "id": 210508,
    "friendly": false
   },
   {
@@ -18970,7 +18970,9 @@
    "date": "2026-10-22",
    "time": "03:00",
    "id": 604445,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "알라베스",
