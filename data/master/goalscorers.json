@@ -1,6 +1,32 @@
 {
  "epl": [
   {
+   "home": "입스위치 타운",
+   "away": "노팅엄 포레스트",
+   "date": "2026-10-24",
+   "eid": 209611,
+   "goals": [
+    {
+     "scorer": "J. Enciso",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Williams",
+     "assist": "D. Muñoz",
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "토트넘",
    "away": "코번트리 시티",
    "date": "2026-10-20",
@@ -25414,6 +25440,68 @@
  ],
  "championship": [
   {
+   "home": "볼턴 원더러스",
+   "away": "미들즈브러",
+   "date": "2026-10-24",
+   "eid": 214107,
+   "goals": [
+    {
+     "scorer": "W. Lankshear",
+     "assist": "R. McGree",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Cozier-Duberry",
+     "assist": "R. McGree",
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Bair",
+     "assist": "G. Larrazabal",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Brunt",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "W. Lankshear",
+     "assist": "T. Conway",
+     "team": null,
+     "is_home": false,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Morris",
+     "assist": "A. Cozier-Duberry",
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "울버햄튼 원더러스",
    "away": "포츠머스",
    "date": "2026-10-21",
@@ -29892,6 +29980,41 @@
  ],
  "ligue1": [
   {
+   "home": "스타드 브레스투아29",
+   "away": "OGC 니스",
+   "date": "2026-10-24",
+   "eid": 210506,
+   "goals": [
+    {
+     "scorer": "S. Diop",
+     "assist": "E. Wahi",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Wahi",
+     "assist": "M. E. A. Amoura",
+     "team": null,
+     "is_home": false,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Ajorque",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "올랭피크 리옹",
    "away": "OGC 니스",
    "date": "2026-10-19",
@@ -32126,6 +32249,59 @@
  ],
  "bundesliga": [
   {
+   "home": "VfB 슈투트가르트",
+   "away": "보루시아 묀헨글라드바흐",
+   "date": "2026-10-24",
+   "eid": 213730,
+   "goals": [
+    {
+     "scorer": "E. Demirović",
+     "assist": "J. Leweling",
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "W. Mohya",
+     "assist": "J. Scally",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Machino",
+     "assist": "W. Mohya",
+     "team": null,
+     "is_home": false,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Scally",
+     "assist": "Z. Uno",
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Demirović",
+     "assist": "D. Pejčinović",
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "보루시아 묀헨글라드바흐",
    "away": "TSG 호펜하임",
    "date": "2026-10-19",
@@ -34350,6 +34526,59 @@
   }
  ],
  "seriea": [
+  {
+   "home": "토리노",
+   "away": "몬차",
+   "date": "2026-10-24",
+   "eid": 210135,
+   "goals": [
+    {
+     "scorer": "N. Patterson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Vlašić",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Belghali",
+     "assist": "G. Gineitis",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Fitz-Jim",
+     "assist": "G. Simeone",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "파르마",
    "away": "토리노",
@@ -36775,6 +37004,59 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "호 어헤드 이글스",
+   "away": "텔스타르",
+   "date": "2026-10-24",
+   "eid": 210880,
+   "goals": [
+    {
+     "scorer": "S. Valk",
+     "assist": "P. Brouwer",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Linthorst",
+     "assist": "T. Galvez",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "T. Owusu",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Tengstedt",
+     "assist": "M. Suray",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Tengstedt",
+     "assist": "O. S. Sivertsen",
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "FC 트벤테",
    "away": "FC 위트레흐트",
@@ -47008,6 +47290,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "알라베스",
+   "away": "말라가",
+   "date": "2026-10-24",
+   "eid": 213613,
+   "goals": [
+    {
+     "scorer": "A. Mañas",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Niño",
+     "assist": "R. Enríquez",
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "레반테",
    "away": "아틀레틱 빌바오",
