@@ -1,4 +1,122 @@
 {
+ "코번트리 시티|||풀럼": [
+  {
+   "date": "2026-10-24",
+   "home": "코번트리 시티",
+   "away": "풀럼",
+   "homeGoals": 0,
+   "awayGoals": 1,
+   "id": 209608
+  }
+ ],
+ "아스날|||에버튼": [
+  {
+   "date": "2026-10-24",
+   "home": "아스날",
+   "away": "에버튼",
+   "homeGoals": 2,
+   "awayGoals": 0,
+   "id": 209605
+  },
+  {
+   "date": "2026-03-15",
+   "home": "아스날",
+   "away": "에버튼",
+   "homeGoals": 2,
+   "awayGoals": 0,
+   "id": 294
+  },
+  {
+   "date": "2025-12-21",
+   "home": "에버튼",
+   "away": "아스날",
+   "homeGoals": 0,
+   "awayGoals": 1,
+   "id": 167
+  },
+  {
+   "date": "2025-04-05",
+   "home": "에버튼",
+   "away": "아스날",
+   "homeGoals": 1,
+   "awayGoals": 1,
+   "id": 306952
+  },
+  {
+   "date": "2024-12-15",
+   "home": "아스날",
+   "away": "에버튼",
+   "homeGoals": 0,
+   "awayGoals": 0,
+   "id": 306802
+  },
+  {
+   "date": "2024-05-20",
+   "home": "아스날",
+   "away": "에버튼",
+   "homeGoals": 2,
+   "awayGoals": 1,
+   "id": 312493
+  }
+ ],
+ "맨체스터 시티|||아스톤 빌라": [
+  {
+   "date": "2026-10-24",
+   "home": "아스톤 빌라",
+   "away": "맨체스터 시티",
+   "homeGoals": 2,
+   "awayGoals": 1,
+   "id": 209606
+  },
+  {
+   "date": "2026-05-25",
+   "home": "맨체스터 시티",
+   "away": "아스톤 빌라",
+   "homeGoals": 1,
+   "awayGoals": 2,
+   "id": 379
+  },
+  {
+   "date": "2025-10-26",
+   "home": "아스톤 빌라",
+   "away": "맨체스터 시티",
+   "homeGoals": 1,
+   "awayGoals": 0,
+   "id": 87
+  },
+  {
+   "date": "2025-04-23",
+   "home": "맨체스터 시티",
+   "away": "아스톤 빌라",
+   "homeGoals": 2,
+   "awayGoals": 1,
+   "id": 306982
+  },
+  {
+   "date": "2024-12-21",
+   "home": "아스톤 빌라",
+   "away": "맨체스터 시티",
+   "homeGoals": 2,
+   "awayGoals": 1,
+   "id": 306812
+  },
+  {
+   "date": "2024-04-04",
+   "home": "맨체스터 시티",
+   "away": "아스톤 빌라",
+   "homeGoals": 4,
+   "awayGoals": 1,
+   "id": 312430
+  },
+  {
+   "date": "2023-12-07",
+   "home": "아스톤 빌라",
+   "away": "맨체스터 시티",
+   "homeGoals": 1,
+   "awayGoals": 0,
+   "id": 312269
+  }
+ ],
  "노팅엄 포레스트|||입스위치 타운": [
   {
    "date": "2026-10-24",
@@ -2779,56 +2897,6 @@
    "id": 312298
   }
  ],
- "맨체스터 시티|||아스톤 빌라": [
-  {
-   "date": "2026-05-25",
-   "home": "맨체스터 시티",
-   "away": "아스톤 빌라",
-   "homeGoals": 1,
-   "awayGoals": 2,
-   "id": 379
-  },
-  {
-   "date": "2025-10-26",
-   "home": "아스톤 빌라",
-   "away": "맨체스터 시티",
-   "homeGoals": 1,
-   "awayGoals": 0,
-   "id": 87
-  },
-  {
-   "date": "2025-04-23",
-   "home": "맨체스터 시티",
-   "away": "아스톤 빌라",
-   "homeGoals": 2,
-   "awayGoals": 1,
-   "id": 306982
-  },
-  {
-   "date": "2024-12-21",
-   "home": "아스톤 빌라",
-   "away": "맨체스터 시티",
-   "homeGoals": 2,
-   "awayGoals": 1,
-   "id": 306812
-  },
-  {
-   "date": "2024-04-04",
-   "home": "맨체스터 시티",
-   "away": "아스톤 빌라",
-   "homeGoals": 4,
-   "awayGoals": 1,
-   "id": 312430
-  },
-  {
-   "date": "2023-12-07",
-   "home": "아스톤 빌라",
-   "away": "맨체스터 시티",
-   "homeGoals": 1,
-   "awayGoals": 0,
-   "id": 312269
-  }
- ],
  "뉴캐슬|||풀럼": [
   {
    "date": "2026-05-25",
@@ -5463,48 +5531,6 @@
    "homeGoals": 4,
    "awayGoals": 1,
    "id": 312246
-  }
- ],
- "아스날|||에버튼": [
-  {
-   "date": "2026-03-15",
-   "home": "아스날",
-   "away": "에버튼",
-   "homeGoals": 2,
-   "awayGoals": 0,
-   "id": 294
-  },
-  {
-   "date": "2025-12-21",
-   "home": "에버튼",
-   "away": "아스날",
-   "homeGoals": 0,
-   "awayGoals": 1,
-   "id": 167
-  },
-  {
-   "date": "2025-04-05",
-   "home": "에버튼",
-   "away": "아스날",
-   "homeGoals": 1,
-   "awayGoals": 1,
-   "id": 306952
-  },
-  {
-   "date": "2024-12-15",
-   "home": "아스날",
-   "away": "에버튼",
-   "homeGoals": 0,
-   "awayGoals": 0,
-   "id": 306802
-  },
-  {
-   "date": "2024-05-20",
-   "home": "아스날",
-   "away": "에버튼",
-   "homeGoals": 2,
-   "awayGoals": 1,
-   "id": 312493
   }
  ],
  "번리|||본머스": [
