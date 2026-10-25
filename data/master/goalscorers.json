@@ -1,6 +1,14 @@
 {
  "epl": [
   {
+   "home": "선덜랜드",
+   "away": "리즈 유나이티드",
+   "date": "2026-10-26",
+   "eid": 209614,
+   "goals": [],
+   "nil": true
+  },
+  {
    "home": "맨체스터 유나이티드",
    "away": "본머스",
    "date": "2026-10-25",
@@ -33033,6 +33041,50 @@
  ],
  "bundesliga": [
   {
+   "home": "SC 프라이부르크",
+   "away": "바이에른 뮌헨",
+   "date": "2026-10-26",
+   "eid": 213727,
+   "goals": [
+    {
+     "scorer": "M. Olise",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Bischof",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "S. Gnabry",
+     "assist": "N. Brown",
+     "team": null,
+     "is_home": false,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Upamecano",
+     "assist": "M. Olise",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "TSG 호펜하임",
    "away": "바이어 레버쿠젠",
    "date": "2026-10-25",
@@ -35510,6 +35562,58 @@
   }
  ],
  "seriea": [
+  {
+   "home": "우디네세",
+   "away": "AC밀란",
+   "date": "2026-10-26",
+   "eid": 210136,
+   "goals": [
+    {
+     "scorer": "O. Hutchinson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Pulišić",
+     "assist": "L. Modrić",
+     "team": null,
+     "is_home": false,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "레체",
+   "away": "유벤투스",
+   "date": "2026-10-26",
+   "eid": 210133,
+   "goals": [
+    {
+     "scorer": "D. Luiz",
+     "assist": "F. Gatti",
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "W. McKennie",
+     "assist": "D. Luiz",
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "제노아",
    "away": "베네치아",
@@ -38269,6 +38373,32 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "AZ 알크마르",
+   "away": "FC 트벤테",
+   "date": "2026-10-26",
+   "eid": 210888,
+   "goals": [
+    {
+     "scorer": "L. V. o. Hesselink",
+     "assist": "J. Drommel",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Ørjasæter",
+     "assist": "Y. Taha",
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "스파르타 로테르담",
    "away": "아약스",
@@ -42043,6 +42173,68 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "몰데",
+   "away": "프레드릭스타",
+   "date": "2026-10-26",
+   "eid": 207419,
+   "goals": [
+    {
+     "scorer": "K. Lonebu",
+     "assist": "E. Breivik",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Lonebu",
+     "assist": "S. M. Granaas",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Breivik",
+     "assist": "M. Linnes",
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Lonebu",
+     "assist": "M. F. Løvik",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Lonebu",
+     "assist": "S. H. Kilen",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Fiabema",
+     "assist": "S. Sørløkk",
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "릴레스트룀",
    "away": "브란",
@@ -49072,6 +49264,76 @@
   }
  ],
  "laliga": [
+  {
+   "home": "바르셀로나",
+   "away": "레알 마드리드",
+   "date": "2026-10-26",
+   "eid": 213614,
+   "goals": [
+    {
+     "scorer": "K. Mbappé",
+     "assist": "E. Camavinga",
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Raphinha",
+     "assist": "Pedri",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Mbappé",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "레알 소시에다드",
+   "away": "레반테",
+   "date": "2026-10-26",
+   "eid": 213617,
+   "goals": [
+    {
+     "scorer": "B. Turrientes",
+     "assist": "G. Guedes",
+     "team": null,
+     "is_home": true,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Pérez",
+     "assist": "T. Fernández",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. S. Óskarsson",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "셀타 비고",
    "away": "레알 베티스",
