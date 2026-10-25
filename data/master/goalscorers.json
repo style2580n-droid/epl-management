@@ -35189,6 +35189,41 @@
  ],
  "seriea": [
   {
+   "home": "인테르",
+   "away": "피오렌티나",
+   "date": "2026-10-25",
+   "eid": 210131,
+   "goals": [
+    {
+     "scorer": "P. Zieliński",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Thuram",
+     "assist": "A. Diouf",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "À. Jiménez",
+     "assist": "N. Fagioli",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "라치오",
    "away": "파르마",
    "date": "2026-10-25",
@@ -37815,6 +37850,23 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "포르투나 시타르드",
+   "away": "엑셀시오르 로테르담",
+   "date": "2026-10-25",
+   "eid": 210884,
+   "goals": [
+    {
+     "scorer": "R. Guth",
+     "assist": "M. Ihattaren",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "ADO 덴하흐",
    "away": "sc 헤렌베인",
