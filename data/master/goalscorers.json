@@ -1,6 +1,119 @@
 {
  "epl": [
   {
+   "home": "맨체스터 유나이티드",
+   "away": "본머스",
+   "date": "2026-10-25",
+   "eid": 209613,
+   "goals": [
+    {
+     "scorer": "Evanilson",
+     "assist": "L. Cook",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Tavernier",
+     "assist": "A. Truffert",
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Rayan",
+     "assist": "J. Kluivert",
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "리버풀",
+   "away": "브라이튼",
+   "date": "2026-10-25",
+   "eid": 209612,
+   "goals": [
+    {
+     "scorer": "A. Isak",
+     "assist": "B. Barcola",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Groß",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "헐 시티",
+   "away": "브렌트포드",
+   "date": "2026-10-25",
+   "eid": 209610,
+   "goals": [
+    {
+     "scorer": "D. Ouattara",
+     "assist": "I. Thiago",
+     "team": null,
+     "is_home": false,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. McBurnie",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "크리스탈 팰리스",
+   "away": "뉴캐슬",
+   "date": "2026-10-25",
+   "eid": 209609,
+   "goals": [
+    {
+     "scorer": "H. Barnes",
+     "assist": "A. Dedić",
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "W. Osula",
+     "assist": "J. Murphy",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "첼시",
    "away": "토트넘",
    "date": "2026-10-25",
@@ -30442,6 +30555,180 @@
  ],
  "ligue1": [
   {
+   "home": "툴루즈",
+   "away": "ESTAC 트루아",
+   "date": "2026-10-26",
+   "eid": 210508,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "스타드 렌",
+   "away": "라싱 스트라스부르",
+   "date": "2026-10-26",
+   "eid": 210507,
+   "goals": [
+    {
+     "scorer": "S. Szymański",
+     "assist": "M. Tamari",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Szymański",
+     "assist": "M. Nagida",
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Dia",
+     "assist": "P. Frankowski",
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "올랭피크 마르세유",
+   "away": "르아브르AC",
+   "date": "2026-10-26",
+   "eid": 210503,
+   "goals": [
+    {
+     "scorer": "J. Maja",
+     "assist": "K. Mizuta",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. N'Diaye",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Maja",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 77,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Abdelli",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Paixão",
+     "assist": "A. Gouiri",
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Weah",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Egan-Riley",
+     "assist": "Emerson",
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "AJ 오세르",
+   "away": "르망FC",
+   "date": "2026-10-26",
+   "eid": 210502,
+   "goals": [
+    {
+     "scorer": "C. Archer",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Buades",
+     "assist": "L. Bretelle",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "앙제SCO",
+   "away": "FC 로리앙",
+   "date": "2026-10-26",
+   "eid": 210501,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "AS 모나코",
+   "away": "릴OSC",
+   "date": "2026-10-25",
+   "eid": 210500,
+   "goals": [
+    {
+     "scorer": "E. Diop",
+     "assist": "J. Teze",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Mbappé",
+     "assist": "S. Diaoune",
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "RC 랑스",
    "away": "파리 FC",
    "date": "2026-10-25",
@@ -32745,6 +33032,41 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "TSG 호펜하임",
+   "away": "바이어 레버쿠젠",
+   "date": "2026-10-25",
+   "eid": 213729,
+   "goals": [
+    {
+     "scorer": "M. Moerstedt",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Prass",
+     "assist": "A. Kramarić",
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Kramarić",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "보루시아 도르트문트",
    "away": "아인트라흐트 프랑크푸르트",
@@ -35188,6 +35510,103 @@
   }
  ],
  "seriea": [
+  {
+   "home": "제노아",
+   "away": "베네치아",
+   "date": "2026-10-25",
+   "eid": 210130,
+   "goals": [
+    {
+     "scorer": "M. Ellertsson",
+     "assist": "S. El Shaarawy",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "아탈란타",
+   "away": "프로시노네",
+   "date": "2026-10-25",
+   "eid": 210127,
+   "goals": [
+    {
+     "scorer": "A. Terzić",
+     "assist": "F. Ghedjemis",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Elmas",
+     "assist": "N. Krstović",
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Calò",
+     "assist": "F. Ghedjemis",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Krstović",
+     "assist": "D. Zappacosta",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Éderson",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Schmid",
+     "assist": "F. Ghedjemis",
+     "team": null,
+     "is_home": false,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Krstović",
+     "assist": "C. De Ketelaere",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Schmid",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "인테르",
    "away": "피오렌티나",
@@ -37850,6 +38269,111 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "스파르타 로테르담",
+   "away": "아약스",
+   "date": "2026-10-26",
+   "eid": 210887,
+   "goals": [
+    {
+     "scorer": "T. Arokodare",
+     "assist": "J. Brandt",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Toornstra",
+     "assist": "I. Babadi",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Ouazane",
+     "assist": "J. Brandt",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "PSV 에인트호번",
+   "away": "페예노르트",
+   "date": "2026-10-25",
+   "eid": 210886,
+   "goals": [
+    {
+     "scorer": "A. Hadj Moussa",
+     "assist": "L. Valente",
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Til",
+     "assist": "L. Geertruida",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "N.E.C. 네이메헌",
+   "away": "FC 흐로닝언",
+   "date": "2026-10-25",
+   "eid": 210885,
+   "goals": [
+    {
+     "scorer": "N. Lebreton",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Bischoff",
+     "assist": "D. Nejašmić",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Darri Willumsson",
+     "assist": "T. v. Bergen",
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. Darri Willumsson",
+     "assist": "M. Rente",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "포르투나 시타르드",
    "away": "엑셀시오르 로테르담",
@@ -41519,6 +42043,199 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "릴레스트룀",
+   "away": "브란",
+   "date": "2026-10-26",
+   "eid": 207433,
+   "goals": [
+    {
+     "scorer": "N. Holm",
+     "assist": "K. Mani Ingason",
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Vá",
+     "assist": "G. K. Nyheim",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Vá",
+     "assist": "L. Ranger",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Eriksen",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Gulbrandsen",
+     "assist": "G. K. Nyheim",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "사르프스보르그 08",
+   "away": "올레순",
+   "date": "2026-10-26",
+   "eid": 207420,
+   "goals": [
+    {
+     "scorer": "A. Hiim",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Mmaee",
+     "assist": "D. Karlsbakk",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Christensen",
+     "assist": "S. E. Kartum",
+     "team": null,
+     "is_home": false,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "크리스티안순",
+   "away": "KFUM 오슬로",
+   "date": "2026-10-26",
+   "eid": 207418,
+   "goals": [
+    {
+     "scorer": "R. Rasch",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 70,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Njie",
+     "assist": "H. H. Hoseth",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Tufekcic",
+     "assist": "H. G. Bruseth",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Alvheim",
+     "assist": "Z. Bytyqi",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "IK 스타트",
+   "away": "산네피오르",
+   "date": "2026-10-26",
+   "eid": 207417,
+   "goals": [
+    {
+     "scorer": "H. Lorentzen",
+     "assist": "E. Schulze",
+     "team": null,
+     "is_home": true,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "비킹",
+   "away": "트롬쇠",
+   "date": "2026-10-25",
+   "eid": 207421,
+   "goals": [
+    {
+     "scorer": "J. A. Grundt",
+     "assist": "D. Edvardsson",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Botheim",
+     "assist": "K. Haugen",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "H. Heggheim",
+     "assist": "K. Haugen",
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Christiansen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "함캄",
    "away": "로젠보르그",
@@ -48355,6 +49072,58 @@
   }
  ],
  "laliga": [
+  {
+   "home": "셀타 비고",
+   "away": "레알 베티스",
+   "date": "2026-10-26",
+   "eid": 213612,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "아틀레틱 빌바오",
+   "away": "헤타페",
+   "date": "2026-10-25",
+   "eid": 213610,
+   "goals": [
+    {
+     "scorer": "Y. Berchiche",
+     "assist": "Á. Berenguer",
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Paredes",
+     "assist": "Á. Berenguer",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "I. Williams",
+     "assist": "Á. Berenguer",
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Á. Berenguer",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "아틀레티코 마드리드",
    "away": "데포르티보 라코루냐",
