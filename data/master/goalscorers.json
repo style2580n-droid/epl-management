@@ -52724,6 +52724,50 @@
  ],
  "mls": [
   {
+   "home": "로스앤젤레스 FC",
+   "away": "LA 갤럭시",
+   "date": "2026-10-26",
+   "eid": 5378,
+   "goals": [
+    {
+     "scorer": "L. Walta",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Bouanga",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Paintsil",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Paintsil",
+     "assist": "R. Taylor",
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "샬럿 FC",
    "date": "2026-10-25",

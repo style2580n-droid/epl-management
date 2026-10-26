@@ -1,6 +1,6 @@
-# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-25
+# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-26
 
-생성(UTC): 2026-10-25 23:12
+생성(UTC): 2026-10-26 08:46
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -6100,6 +6100,13 @@
 |---|---|---|---|---|---|---|---|---|---|
 | 로스앤젤레스 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 46.2% |
 | FC 댈러스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 53.8% |
+
+### 로스앤젤레스FC_LA갤럭시_5378
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 로스앤젤레스 FC | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.3% |
+| LA 갤럭시 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.7% |
 
 ### 로스앤젤레스FC_뉴욕레드불스_5269
 
@@ -20603,6 +20610,7 @@
 - **렉섬_웨스트브롬위치알비온_214089**: [heatmap(렉섬)](viz/렉섬_웨스트브롬위치알비온_214089_렉섬_heatmap.svg) · [network(렉섬)](viz/렉섬_웨스트브롬위치알비온_214089_렉섬_network.svg) · [shotmap(렉섬)](viz/렉섬_웨스트브롬위치알비온_214089_렉섬_shotmap.svg) · [heatmap(웨스트브롬위치 알비온)](viz/렉섬_웨스트브롬위치알비온_214089_웨스트브롬위치 알비온_heatmap.svg) · [network(웨스트브롬위치 알비온)](viz/렉섬_웨스트브롬위치알비온_214089_웨스트브롬위치 알비온_network.svg) · [shotmap(웨스트브롬위치 알비온)](viz/렉섬_웨스트브롬위치알비온_214089_웨스트브롬위치 알비온_shotmap.svg)
 - **렉섬_프레스턴노스엔드_214105**: [heatmap(렉섬)](viz/렉섬_프레스턴노스엔드_214105_렉섬_heatmap.svg) · [network(렉섬)](viz/렉섬_프레스턴노스엔드_214105_렉섬_network.svg) · [shotmap(렉섬)](viz/렉섬_프레스턴노스엔드_214105_렉섬_shotmap.svg) · [heatmap(프레스턴 노스엔드)](viz/렉섬_프레스턴노스엔드_214105_프레스턴 노스엔드_heatmap.svg) · [network(프레스턴 노스엔드)](viz/렉섬_프레스턴노스엔드_214105_프레스턴 노스엔드_network.svg) · [shotmap(프레스턴 노스엔드)](viz/렉섬_프레스턴노스엔드_214105_프레스턴 노스엔드_shotmap.svg)
 - **로스앤젤레스FC_FC댈러스_4954**: [heatmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/로스앤젤레스FC_FC댈러스_4954_FC 댈러스_shotmap.svg) · [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_FC댈러스_4954_로스앤젤레스 FC_shotmap.svg)
+- **로스앤젤레스FC_LA갤럭시_5378**: [heatmap(LA 갤럭시)](viz/로스앤젤레스FC_LA갤럭시_5378_LA 갤럭시_heatmap.svg) · [network(LA 갤럭시)](viz/로스앤젤레스FC_LA갤럭시_5378_LA 갤럭시_network.svg) · [shotmap(LA 갤럭시)](viz/로스앤젤레스FC_LA갤럭시_5378_LA 갤럭시_shotmap.svg) · [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_LA갤럭시_5378_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_LA갤럭시_5378_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_LA갤럭시_5378_로스앤젤레스 FC_shotmap.svg)
 - **로스앤젤레스FC_뉴욕레드불스_5269**: [heatmap(뉴욕 레드불스)](viz/로스앤젤레스FC_뉴욕레드불스_5269_뉴욕 레드불스_heatmap.svg) · [network(뉴욕 레드불스)](viz/로스앤젤레스FC_뉴욕레드불스_5269_뉴욕 레드불스_network.svg) · [shotmap(뉴욕 레드불스)](viz/로스앤젤레스FC_뉴욕레드불스_5269_뉴욕 레드불스_shotmap.svg) · [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_뉴욕레드불스_5269_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_뉴욕레드불스_5269_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_뉴욕레드불스_5269_로스앤젤레스 FC_shotmap.svg)
 - **로스앤젤레스FC_리얼솔트레이크_5150**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_리얼솔트레이크_5150_로스앤젤레스 FC_shotmap.svg) · [heatmap(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_heatmap.svg) · [network(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_network.svg) · [shotmap(리얼 솔트레이크)](viz/로스앤젤레스FC_리얼솔트레이크_5150_리얼 솔트레이크_shotmap.svg)
 - **로스앤젤레스FC_밴쿠버화이트캡스_5332**: [heatmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_로스앤젤레스 FC_heatmap.svg) · [network(로스앤젤레스 FC)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_로스앤젤레스 FC_network.svg) · [shotmap(로스앤젤레스 FC)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_로스앤젤레스 FC_shotmap.svg) · [heatmap(밴쿠버 화이트캡스)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_밴쿠버 화이트캡스_heatmap.svg) · [network(밴쿠버 화이트캡스)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_밴쿠버 화이트캡스_network.svg) · [shotmap(밴쿠버 화이트캡스)](viz/로스앤젤레스FC_밴쿠버화이트캡스_5332_밴쿠버 화이트캡스_shotmap.svg)
