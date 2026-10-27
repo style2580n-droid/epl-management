@@ -25626,41 +25626,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "크리스탈 팰리스",
-   "away": "토트넘",
-   "date": "2023-10-28",
-   "eid": 312213,
-   "goals": [
-    {
-     "scorer": "J. Ayew",
-     "assist": "J. Andersen",
-     "team": null,
-     "is_home": true,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "S. Heung-min",
-     "assist": "B. Johnson",
-     "team": null,
-     "is_home": false,
-     "minute": 66,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "J. Ward",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 53,
-     "goal_type": "ownGoal",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -30562,6 +30527,32 @@
   }
  ],
  "ligue1": [
+  {
+   "home": "파리 생제르맹",
+   "away": "올랭피크 리옹",
+   "date": "2026-10-27",
+   "eid": 210504,
+   "goals": [
+    {
+     "scorer": "M. Godts",
+     "assist": "Q. Ndjantou",
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Mayulu",
+     "assist": "M. Godts",
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "툴루즈",
    "away": "ESTAC 트루아",
@@ -49264,6 +49255,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "세비야",
+   "away": "오사수나",
+   "date": "2026-10-27",
+   "eid": 213618,
+   "goals": [
+    {
+     "scorer": "F. Correia",
+     "assist": "Y. Fofana",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Romero",
+     "assist": "Y. Fofana",
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "바르셀로나",
    "away": "레알 마드리드",
