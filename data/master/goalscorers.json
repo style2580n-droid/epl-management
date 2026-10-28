@@ -35528,6 +35528,102 @@
  ],
  "seriea": [
   {
+   "home": "베네치아",
+   "away": "인테르",
+   "date": "2026-10-29",
+   "eid": 210146,
+   "goals": [
+    {
+     "scorer": "R. Halhal",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "M. Moreno",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "파르마",
+   "away": "우디네세",
+   "date": "2026-10-29",
+   "eid": 210143,
+   "goals": [],
+   "nil": true
+  },
+  {
+   "home": "AC밀란",
+   "away": "볼로냐",
+   "date": "2026-10-29",
+   "eid": 210137,
+   "goals": [
+    {
+     "scorer": "S. Mbangula",
+     "assist": "J. Odgaard",
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Mbangula",
+     "assist": "J. Miranda",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Bartesaghi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Cisse",
+     "assist": "F. Tomori",
+     "team": null,
+     "is_home": true,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Cisse",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Mbangula",
+     "assist": "N. Zortea",
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "토리노",
    "away": "코모",
    "date": "2026-10-28",

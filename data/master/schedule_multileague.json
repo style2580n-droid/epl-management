@@ -10728,7 +10728,9 @@
    "date": "2026-10-29",
    "time": "02:30",
    "id": 210146,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 2
   },
   {
    "home": "파르마",
@@ -10736,7 +10738,9 @@
    "date": "2026-10-29",
    "time": "02:30",
    "id": 210143,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 0
   },
   {
    "home": "AC밀란",
@@ -10744,7 +10748,9 @@
    "date": "2026-10-29",
    "time": "02:30",
    "id": 210137,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 4
   },
   {
    "home": "몬차",
@@ -26337,19 +26343,19 @@
    "friendly": false
   },
   {
+   "home": "밴쿠버 화이트캡스",
+   "away": "시애틀 사운더스",
+   "date": "2026-11-02",
+   "time": "05:30",
+   "id": 5399,
+   "friendly": false
+  },
+  {
    "home": "애틀랜타 유나이티드",
    "away": "토론토 FC",
    "date": "2026-11-02",
    "time": "06:30",
    "id": 5405,
-   "friendly": false
-  },
-  {
-   "home": "밴쿠버 화이트캡스",
-   "away": "시애틀 사운더스",
-   "date": "2026-11-02",
-   "time": "06:30",
-   "id": 5399,
    "friendly": false
   },
   {
