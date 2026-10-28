@@ -25600,32 +25600,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "첼시",
-   "away": "브렌트포드",
-   "date": "2023-10-28",
-   "eid": 312214,
-   "goals": [
-    {
-     "scorer": "B. Mbeumo",
-     "assist": "N. Maupay",
-     "team": null,
-     "is_home": false,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Pinnock",
-     "assist": "B. Mbeumo",
-     "team": null,
-     "is_home": false,
-     "minute": 58,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -35553,6 +35527,192 @@
   }
  ],
  "seriea": [
+  {
+   "home": "토리노",
+   "away": "코모",
+   "date": "2026-10-28",
+   "eid": 210145,
+   "goals": [
+    {
+     "scorer": "M. Baturina",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Paz",
+     "assist": "Y. Couto",
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Ramón",
+     "assist": "N. Paz",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "C. Adams",
+     "assist": "K. Fitz-Jim",
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "AS로마",
+   "away": "칼리아리",
+   "date": "2026-10-28",
+   "eid": 210138,
+   "goals": [
+    {
+     "scorer": "D. Malen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Mora",
+     "assist": "D. Ghilardi",
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Maldini",
+     "assist": "A. Obert",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Pisilli",
+     "assist": "E. Lulli",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Lulli",
+     "assist": "N. Molina",
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Nzola",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "사수올로",
+   "away": "라치오",
+   "date": "2026-10-28",
+   "eid": 210144,
+   "goals": [
+    {
+     "scorer": "T. Noslin",
+     "assist": "F. Dele-Bashiru",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Noslin",
+     "assist": "M. Zaccagni",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Zaccagni",
+     "assist": "G. Isaksen",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Esposito",
+     "assist": "S. Cinquegrano",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. F. Mussolini",
+     "assist": "K. Taylor",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Isaksen",
+     "assist": "M. Zaccagni",
+     "team": null,
+     "is_home": false,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Thorstvedt",
+     "assist": "J. Doig",
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Taylor",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 2,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "우디네세",
    "away": "AC밀란",
