@@ -10778,7 +10778,9 @@
    "date": "2026-10-30",
    "time": "02:30",
    "id": 210140,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 5,
+   "awayGoals": 1
   },
   {
    "home": "피오렌티나",
@@ -17869,19 +17871,35 @@
    "friendly": false
   },
   {
-   "home": "비킹",
-   "away": "KFUM 오슬로",
-   "date": "2026-11-09",
-   "time": "01:00",
-   "id": 207115,
+   "home": "크리스티안순",
+   "away": "발레렝가",
+   "date": "2026-11-08",
+   "time": "00:00",
+   "id": 207110,
+   "friendly": false
+  },
+  {
+   "home": "로젠보르그",
+   "away": "IK 스타트",
+   "date": "2026-11-08",
+   "time": "02:00",
+   "id": 207112,
    "friendly": false
   },
   {
    "home": "트롬쇠",
    "away": "보되글림트",
+   "date": "2026-11-08",
+   "time": "22:30",
+   "id": 207114,
+   "friendly": false
+  },
+  {
+   "home": "비킹",
+   "away": "KFUM 오슬로",
    "date": "2026-11-09",
    "time": "01:00",
-   "id": 207114,
+   "id": 207115,
    "friendly": false
   },
   {
@@ -17893,27 +17911,11 @@
    "friendly": false
   },
   {
-   "home": "로젠보르그",
-   "away": "IK 스타트",
-   "date": "2026-11-09",
-   "time": "01:00",
-   "id": 207112,
-   "friendly": false
-  },
-  {
    "home": "릴레스트룀",
    "away": "올레순",
    "date": "2026-11-09",
    "time": "01:00",
    "id": 207111,
-   "friendly": false
-  },
-  {
-   "home": "크리스티안순",
-   "away": "발레렝가",
-   "date": "2026-11-09",
-   "time": "01:00",
-   "id": 207110,
    "friendly": false
   },
   {
@@ -17928,7 +17930,7 @@
    "home": "프레드릭스타",
    "away": "브란",
    "date": "2026-11-09",
-   "time": "01:00",
+   "time": "03:15",
    "id": 207108,
    "friendly": false
   },
