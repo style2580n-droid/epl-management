@@ -1,6 +1,6 @@
-# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-28
+# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-29
 
-생성(UTC): 2026-10-28 20:17
+생성(UTC): 2026-10-29 00:49
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -8439,6 +8439,13 @@
 | 맨체스터 유나이티드 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | - |
 | 풀럼 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | - |
 
+### 몬차_나폴리_210142
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 몬차 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.6% |
+| 나폴리 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.4% |
+
 ### 몬차_사수올로_210103
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -15922,6 +15929,13 @@
 | 제노아 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 63.6% |
 | 베네치아 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 36.4% |
 
+### 제노아_유벤투스_210141
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 제노아 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 53.8% |
+| 유벤투스 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 46.2% |
+
 ### 제노아_코모_210082
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -21000,6 +21014,7 @@
 - **맨체스터유나이티드_풀럼_240**: [heatmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_240_맨체스터 유나이티드_heatmap.svg) · [network(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_240_맨체스터 유나이티드_network.svg) · [shotmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_240_맨체스터 유나이티드_shotmap.svg) · [heatmap(풀럼)](viz/맨체스터유나이티드_풀럼_240_풀럼_heatmap.svg) · [network(풀럼)](viz/맨체스터유나이티드_풀럼_240_풀럼_network.svg) · [shotmap(풀럼)](viz/맨체스터유나이티드_풀럼_240_풀럼_shotmap.svg)
 - **맨체스터유나이티드_풀럼_306651**: [heatmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_306651_맨체스터 유나이티드_heatmap.svg) · [network(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_306651_맨체스터 유나이티드_network.svg) · [shotmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_306651_맨체스터 유나이티드_shotmap.svg) · [heatmap(풀럼)](viz/맨체스터유나이티드_풀럼_306651_풀럼_heatmap.svg) · [network(풀럼)](viz/맨체스터유나이티드_풀럼_306651_풀럼_network.svg) · [shotmap(풀럼)](viz/맨체스터유나이티드_풀럼_306651_풀럼_shotmap.svg)
 - **맨체스터유나이티드_풀럼_312377**: [heatmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_312377_맨체스터 유나이티드_heatmap.svg) · [network(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_312377_맨체스터 유나이티드_network.svg) · [shotmap(맨체스터 유나이티드)](viz/맨체스터유나이티드_풀럼_312377_맨체스터 유나이티드_shotmap.svg) · [heatmap(풀럼)](viz/맨체스터유나이티드_풀럼_312377_풀럼_heatmap.svg) · [network(풀럼)](viz/맨체스터유나이티드_풀럼_312377_풀럼_network.svg) · [shotmap(풀럼)](viz/맨체스터유나이티드_풀럼_312377_풀럼_shotmap.svg)
+- **몬차_나폴리_210142**: [heatmap(나폴리)](viz/몬차_나폴리_210142_나폴리_heatmap.svg) · [network(나폴리)](viz/몬차_나폴리_210142_나폴리_network.svg) · [shotmap(나폴리)](viz/몬차_나폴리_210142_나폴리_shotmap.svg) · [heatmap(몬차)](viz/몬차_나폴리_210142_몬차_heatmap.svg) · [network(몬차)](viz/몬차_나폴리_210142_몬차_network.svg) · [shotmap(몬차)](viz/몬차_나폴리_210142_몬차_shotmap.svg)
 - **몬차_사수올로_210103**: [heatmap(몬차)](viz/몬차_사수올로_210103_몬차_heatmap.svg) · [network(몬차)](viz/몬차_사수올로_210103_몬차_network.svg) · [shotmap(몬차)](viz/몬차_사수올로_210103_몬차_shotmap.svg) · [heatmap(사수올로)](viz/몬차_사수올로_210103_사수올로_heatmap.svg) · [network(사수올로)](viz/몬차_사수올로_210103_사수올로_network.svg) · [shotmap(사수올로)](viz/몬차_사수올로_210103_사수올로_shotmap.svg)
 - **몬차_우디네세_210074**: [heatmap(몬차)](viz/몬차_우디네세_210074_몬차_heatmap.svg) · [network(몬차)](viz/몬차_우디네세_210074_몬차_network.svg) · [shotmap(몬차)](viz/몬차_우디네세_210074_몬차_shotmap.svg) · [heatmap(우디네세)](viz/몬차_우디네세_210074_우디네세_heatmap.svg) · [network(우디네세)](viz/몬차_우디네세_210074_우디네세_network.svg) · [shotmap(우디네세)](viz/몬차_우디네세_210074_우디네세_shotmap.svg)
 - **몬차_칼리아리_210123**: [heatmap(몬차)](viz/몬차_칼리아리_210123_몬차_heatmap.svg) · [network(몬차)](viz/몬차_칼리아리_210123_몬차_network.svg) · [shotmap(몬차)](viz/몬차_칼리아리_210123_몬차_shotmap.svg) · [heatmap(칼리아리)](viz/몬차_칼리아리_210123_칼리아리_heatmap.svg) · [network(칼리아리)](viz/몬차_칼리아리_210123_칼리아리_network.svg) · [shotmap(칼리아리)](viz/몬차_칼리아리_210123_칼리아리_shotmap.svg)
@@ -22069,6 +22084,7 @@
 - **입스위치타운_풀럼_306674**: [heatmap(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_heatmap.svg) · [network(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_network.svg) · [shotmap(입스위치 타운)](viz/입스위치타운_풀럼_306674_입스위치 타운_shotmap.svg) · [heatmap(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_heatmap.svg) · [network(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_network.svg) · [shotmap(풀럼)](viz/입스위치타운_풀럼_306674_풀럼_shotmap.svg)
 - **제노아_나폴리_210061**: [heatmap(나폴리)](viz/제노아_나폴리_210061_나폴리_heatmap.svg) · [network(나폴리)](viz/제노아_나폴리_210061_나폴리_network.svg) · [shotmap(나폴리)](viz/제노아_나폴리_210061_나폴리_shotmap.svg) · [heatmap(제노아)](viz/제노아_나폴리_210061_제노아_heatmap.svg) · [network(제노아)](viz/제노아_나폴리_210061_제노아_network.svg) · [shotmap(제노아)](viz/제노아_나폴리_210061_제노아_shotmap.svg)
 - **제노아_베네치아_210130**: [heatmap(베네치아)](viz/제노아_베네치아_210130_베네치아_heatmap.svg) · [network(베네치아)](viz/제노아_베네치아_210130_베네치아_network.svg) · [shotmap(베네치아)](viz/제노아_베네치아_210130_베네치아_shotmap.svg) · [heatmap(제노아)](viz/제노아_베네치아_210130_제노아_heatmap.svg) · [network(제노아)](viz/제노아_베네치아_210130_제노아_network.svg) · [shotmap(제노아)](viz/제노아_베네치아_210130_제노아_shotmap.svg)
+- **제노아_유벤투스_210141**: [heatmap(유벤투스)](viz/제노아_유벤투스_210141_유벤투스_heatmap.svg) · [network(유벤투스)](viz/제노아_유벤투스_210141_유벤투스_network.svg) · [shotmap(유벤투스)](viz/제노아_유벤투스_210141_유벤투스_shotmap.svg) · [heatmap(제노아)](viz/제노아_유벤투스_210141_제노아_heatmap.svg) · [network(제노아)](viz/제노아_유벤투스_210141_제노아_network.svg) · [shotmap(제노아)](viz/제노아_유벤투스_210141_제노아_shotmap.svg)
 - **제노아_코모_210082**: [heatmap(제노아)](viz/제노아_코모_210082_제노아_heatmap.svg) · [network(제노아)](viz/제노아_코모_210082_제노아_network.svg) · [shotmap(제노아)](viz/제노아_코모_210082_제노아_shotmap.svg) · [heatmap(코모)](viz/제노아_코모_210082_코모_heatmap.svg) · [network(코모)](viz/제노아_코모_210082_코모_network.svg) · [shotmap(코모)](viz/제노아_코모_210082_코모_shotmap.svg)
 - **제노아_프로시노네_210089**: [heatmap(제노아)](viz/제노아_프로시노네_210089_제노아_heatmap.svg) · [network(제노아)](viz/제노아_프로시노네_210089_제노아_network.svg) · [shotmap(제노아)](viz/제노아_프로시노네_210089_제노아_shotmap.svg) · [heatmap(프로시노네)](viz/제노아_프로시노네_210089_프로시노네_heatmap.svg) · [network(프로시노네)](viz/제노아_프로시노네_210089_프로시노네_network.svg) · [shotmap(프로시노네)](viz/제노아_프로시노네_210089_프로시노네_shotmap.svg)
 - **제노아_피오렌티나_210110**: [heatmap(제노아)](viz/제노아_피오렌티나_210110_제노아_heatmap.svg) · [network(제노아)](viz/제노아_피오렌티나_210110_제노아_network.svg) · [shotmap(제노아)](viz/제노아_피오렌티나_210110_제노아_shotmap.svg) · [heatmap(피오렌티나)](viz/제노아_피오렌티나_210110_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/제노아_피오렌티나_210110_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/제노아_피오렌티나_210110_피오렌티나_shotmap.svg)

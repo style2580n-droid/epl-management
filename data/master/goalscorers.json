@@ -25504,102 +25504,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "맨체스터 유나이티드",
-   "away": "맨체스터 시티",
-   "date": "2023-10-30",
-   "eid": 312222,
-   "goals": [
-    {
-     "scorer": "P. Foden",
-     "assist": "E. Haaland",
-     "team": null,
-     "is_home": false,
-     "minute": 80,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Haaland",
-     "assist": "B. Silva",
-     "team": null,
-     "is_home": false,
-     "minute": 49,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Haaland",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 26,
-     "goal_type": "penalty",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "리버풀",
-   "away": "노팅엄 포레스트",
-   "date": "2023-10-29",
-   "eid": 312221,
-   "goals": [
-    {
-     "scorer": "M. Salah",
-     "assist": "D. Szoboszlai",
-     "team": null,
-     "is_home": true,
-     "minute": 77,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "D. Núñez",
-     "assist": "D. Szoboszlai",
-     "team": null,
-     "is_home": true,
-     "minute": 35,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "D. Jota",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 31,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "브라이튼",
-   "away": "풀럼",
-   "date": "2023-10-29",
-   "eid": 312220,
-   "goals": [
-    {
-     "scorer": "J. Palhinha",
-     "assist": "H. Wilson",
-     "team": null,
-     "is_home": false,
-     "minute": 65,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Ferguson",
-     "assist": "P. Groß",
-     "team": null,
-     "is_home": true,
-     "minute": 26,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -35527,6 +35431,85 @@
   }
  ],
  "seriea": [
+  {
+   "home": "몬차",
+   "away": "나폴리",
+   "date": "2026-10-29",
+   "eid": 210142,
+   "goals": [
+    {
+     "scorer": "K. De Bruyne",
+     "assist": "N. Lang",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Marín",
+     "assist": "M. Politano",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Politano",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": "J. Robinson",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Højlund",
+     "assist": "G. Di Lorenzo",
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "제노아",
+   "away": "유벤투스",
+   "date": "2026-10-29",
+   "eid": 210141,
+   "goals": [
+    {
+     "scorer": "T. Baldanzi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Ehizibue",
+     "assist": "T. Baldanzi",
+     "team": null,
+     "is_home": true,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "베네치아",
    "away": "인테르",
