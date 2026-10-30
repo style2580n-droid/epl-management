@@ -30406,6 +30406,139 @@
  ],
  "ligue1": [
   {
+   "home": "OGC 니스",
+   "away": "스타드 렌",
+   "date": "2026-10-31",
+   "eid": 210512,
+   "goals": [
+    {
+     "scorer": "E. Wahi",
+     "assist": "G. Hein",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Dia",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. E. A. Amoura",
+     "assist": "S. Diop",
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Clauss",
+     "assist": "E. Wahi",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Wahi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Szymański",
+     "assist": "M. Nagida",
+     "team": null,
+     "is_home": false,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Wahi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 12,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "르아브르AC",
+   "away": "파리 생제르맹",
+   "date": "2026-10-31",
+   "eid": 210509,
+   "goals": [
+    {
+     "scorer": "A. Hakimi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "other"
+    },
+    {
+     "scorer": "S. Mayulu",
+     "assist": "A. Hakimi",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Hakimi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Hakimi",
+     "assist": "S. Mayulu",
+     "team": null,
+     "is_home": false,
+     "minute": 28,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Godts",
+     "assist": "A. Hakimi",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Maja",
+     "assist": "R. Fofana",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "파리 생제르맹",
    "away": "올랭피크 리옹",
    "date": "2026-10-27",
@@ -42509,6 +42642,59 @@
   }
  ],
  "eliteserien": [
+  {
+   "home": "보되글림트",
+   "away": "비킹",
+   "date": "2026-10-31",
+   "eid": 207101,
+   "goals": [
+    {
+     "scorer": "J. Hauge",
+     "assist": "U. Saltnes",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Botheim",
+     "assist": "K. Haugen",
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "K. Haugen",
+     "assist": "Z. Tripić",
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "H. S. Falchener",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "몰데",
    "away": "프레드릭스타",
