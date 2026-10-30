@@ -1,6 +1,6 @@
-# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-29
+# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-10-30
 
-생성(UTC): 2026-10-29 20:16
+생성(UTC): 2026-10-30 00:50
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -19464,6 +19464,13 @@
 | 피오렌티나 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 64.3% |
 | 나폴리 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 35.7% |
 
+### 피오렌티나_아탈란타_210139
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 피오렌티나 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.9% |
+| 아탈란타 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.1% |
+
 ### 피오렌티나_코모_210120
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -22694,6 +22701,7 @@
 - **프로시노네_유벤투스_210060**: [heatmap(유벤투스)](viz/프로시노네_유벤투스_210060_유벤투스_heatmap.svg) · [network(유벤투스)](viz/프로시노네_유벤투스_210060_유벤투스_network.svg) · [shotmap(유벤투스)](viz/프로시노네_유벤투스_210060_유벤투스_shotmap.svg) · [heatmap(프로시노네)](viz/프로시노네_유벤투스_210060_프로시노네_heatmap.svg) · [network(프로시노네)](viz/프로시노네_유벤투스_210060_프로시노네_network.svg) · [shotmap(프로시노네)](viz/프로시노네_유벤투스_210060_프로시노네_shotmap.svg)
 - **프로시노네_코모_210101**: [heatmap(코모)](viz/프로시노네_코모_210101_코모_heatmap.svg) · [network(코모)](viz/프로시노네_코모_210101_코모_network.svg) · [shotmap(코모)](viz/프로시노네_코모_210101_코모_shotmap.svg) · [heatmap(프로시노네)](viz/프로시노네_코모_210101_프로시노네_heatmap.svg) · [network(프로시노네)](viz/프로시노네_코모_210101_프로시노네_network.svg) · [shotmap(프로시노네)](viz/프로시노네_코모_210101_프로시노네_shotmap.svg)
 - **피오렌티나_나폴리_210100**: [heatmap(나폴리)](viz/피오렌티나_나폴리_210100_나폴리_heatmap.svg) · [network(나폴리)](viz/피오렌티나_나폴리_210100_나폴리_network.svg) · [shotmap(나폴리)](viz/피오렌티나_나폴리_210100_나폴리_shotmap.svg) · [heatmap(피오렌티나)](viz/피오렌티나_나폴리_210100_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/피오렌티나_나폴리_210100_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/피오렌티나_나폴리_210100_피오렌티나_shotmap.svg)
+- **피오렌티나_아탈란타_210139**: [heatmap(아탈란타)](viz/피오렌티나_아탈란타_210139_아탈란타_heatmap.svg) · [network(아탈란타)](viz/피오렌티나_아탈란타_210139_아탈란타_network.svg) · [shotmap(아탈란타)](viz/피오렌티나_아탈란타_210139_아탈란타_shotmap.svg) · [heatmap(피오렌티나)](viz/피오렌티나_아탈란타_210139_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/피오렌티나_아탈란타_210139_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/피오렌티나_아탈란타_210139_피오렌티나_shotmap.svg)
 - **피오렌티나_코모_210120**: [heatmap(코모)](viz/피오렌티나_코모_210120_코모_heatmap.svg) · [network(코모)](viz/피오렌티나_코모_210120_코모_network.svg) · [shotmap(코모)](viz/피오렌티나_코모_210120_코모_shotmap.svg) · [heatmap(피오렌티나)](viz/피오렌티나_코모_210120_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/피오렌티나_코모_210120_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/피오렌티나_코모_210120_피오렌티나_shotmap.svg)
 - **피오렌티나_토리노_210080**: [heatmap(토리노)](viz/피오렌티나_토리노_210080_토리노_heatmap.svg) · [network(토리노)](viz/피오렌티나_토리노_210080_토리노_network.svg) · [shotmap(토리노)](viz/피오렌티나_토리노_210080_토리노_shotmap.svg) · [heatmap(피오렌티나)](viz/피오렌티나_토리노_210080_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/피오렌티나_토리노_210080_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/피오렌티나_토리노_210080_피오렌티나_shotmap.svg)
 - **피오렌티나_프로시노네_210070**: [heatmap(프로시노네)](viz/피오렌티나_프로시노네_210070_프로시노네_heatmap.svg) · [network(프로시노네)](viz/피오렌티나_프로시노네_210070_프로시노네_network.svg) · [shotmap(프로시노네)](viz/피오렌티나_프로시노네_210070_프로시노네_shotmap.svg) · [heatmap(피오렌티나)](viz/피오렌티나_프로시노네_210070_피오렌티나_heatmap.svg) · [network(피오렌티나)](viz/피오렌티나_프로시노네_210070_피오렌티나_network.svg) · [shotmap(피오렌티나)](viz/피오렌티나_프로시노네_210070_피오렌티나_shotmap.svg)
