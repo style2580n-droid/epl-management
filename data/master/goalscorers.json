@@ -25508,6 +25508,23 @@
  ],
  "championship": [
   {
+   "home": "셰필드 유나이티드",
+   "away": "렉섬",
+   "date": "2026-10-31",
+   "eid": 214124,
+   "goals": [
+    {
+     "scorer": "B. Brereton Díaz",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "울버햄튼 원더러스",
    "away": "왓포드",
    "date": "2026-10-24",
@@ -30406,6 +30423,23 @@
  ],
  "ligue1": [
   {
+   "home": "릴OSC",
+   "away": "RC 랑스",
+   "date": "2026-10-31",
+   "eid": 210510,
+   "goals": [
+    {
+     "scorer": "O. Giroud",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "OGC 니스",
    "away": "스타드 렌",
    "date": "2026-10-31",
@@ -33042,6 +33076,59 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "SV 엘버스베르크",
+   "away": "1.FSV 마인츠05",
+   "date": "2026-10-31",
+   "eid": 213738,
+   "goals": [
+    {
+     "scorer": "B. Hollerbach",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Campbell",
+     "assist": "N. Mickelson",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Krattenmacher",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Onyeka",
+     "assist": "D. Mokwa",
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Keidel",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "SC 프라이부르크",
    "away": "바이에른 뮌헨",
@@ -49786,6 +49873,23 @@
   }
  ],
  "laliga": [
+  {
+   "home": "비야레알",
+   "away": "에스파뇰",
+   "date": "2026-10-31",
+   "eid": 213629,
+   "goals": [
+    {
+     "scorer": "L. Cabrera",
+     "assist": "B. Zaragoza",
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "세비야",
    "away": "오사수나",
