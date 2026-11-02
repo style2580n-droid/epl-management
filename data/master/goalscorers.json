@@ -31123,6 +31123,32 @@
  ],
  "ligue1": [
   {
+   "home": "올랭피크 마르세유",
+   "away": "툴루즈",
+   "date": "2026-11-02",
+   "eid": 210514,
+   "goals": [
+    {
+     "scorer": "A. Gouiri",
+     "assist": "I. Paixão",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Harit",
+     "assist": "A. Gouiri",
+     "team": null,
+     "is_home": true,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "파리 FC",
    "away": "AS 모나코",
    "date": "2026-11-02",
@@ -36780,6 +36806,32 @@
   }
  ],
  "seriea": [
+  {
+   "home": "유벤투스",
+   "away": "나폴리",
+   "date": "2026-11-02",
+   "eid": 210152,
+   "goals": [
+    {
+     "scorer": "J. Boga",
+     "assist": "A. Cambiaso",
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Alajbegović",
+     "assist": "E. Zhegrova",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "레체",
    "away": "제노아",
@@ -44474,6 +44526,50 @@
  ],
  "eliteserien": [
   {
+   "home": "발레렝가",
+   "away": "트롬쇠",
+   "date": "2026-11-02",
+   "eid": 207107,
+   "goals": [
+    {
+     "scorer": "G. Rajkovic",
+     "assist": "P. Strand",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Grundetjern",
+     "assist": "D. Gjengaar",
+     "team": null,
+     "is_home": true,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "O. C. Saeter",
+     "assist": "D. Gjengaar",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. C. Saeter",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "사르프스보르그 08",
    "away": "크리스티안순",
    "date": "2026-11-02",
@@ -51900,6 +51996,41 @@
  ],
  "laliga": [
   {
+   "home": "아틀레틱 빌바오",
+   "away": "레알 소시에다드",
+   "date": "2026-11-02",
+   "eid": 213620,
+   "goals": [
+    {
+     "scorer": "Á. Berenguer",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Sučić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Williams",
+     "assist": "N. Williams",
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "엘체",
    "away": "발렌시아",
    "date": "2026-11-02",
@@ -55664,6 +55795,165 @@
   }
  ],
  "mls": [
+  {
+   "home": "애틀랜타 유나이티드",
+   "away": "토론토 FC",
+   "date": "2026-11-02",
+   "eid": 5405,
+   "goals": [
+    {
+     "scorer": "L. Morgan",
+     "assist": "J. Sargent",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Miranchuk",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Sanchez",
+     "assist": "M. Almirón",
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Almirón",
+     "assist": "A. Miranchuk",
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "내슈빌 SC",
+   "away": "뉴욕 레드불스",
+   "date": "2026-11-02",
+   "eid": 5394,
+   "goals": [
+    {
+     "scorer": "S. Surridge",
+     "assist": "C. Espinoza",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Bazán",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 78,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Parker",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Mosquera",
+     "assist": "C. Cowell",
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Hall",
+     "assist": "A. Mehmeti",
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "밴쿠버 화이트캡스",
+   "away": "시애틀 사운더스",
+   "date": "2026-11-02",
+   "eid": 5399,
+   "goals": [
+    {
+     "scorer": "A. Cvetković",
+     "assist": "C. T. Sabaly",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Morris",
+     "assist": "A. Rusnák",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. White",
+     "assist": "B. Quiñonez",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Laborda",
+     "assist": "R. Gauld",
+     "team": null,
+     "is_home": true,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Gauld",
+     "assist": "É. Ocampo",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "B. White",
+     "assist": "B. Quiñonez",
+     "team": null,
+     "is_home": true,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "콜로라도 래피즈",
    "away": "시카고 파이어",
