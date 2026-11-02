@@ -40595,6 +40595,50 @@
    ]
   },
   {
+   "home": "SC 캄뷔르",
+   "away": "호 어헤드 이글스",
+   "date": "2026-11-01",
+   "eid": 210893,
+   "goals": [
+    {
+     "scorer": "R. E. Arguioui",
+     "assist": "S. Bouhoudane",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. v. Duijl",
+     "assist": "I. Hamache",
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Ceka",
+     "assist": "D. E. Bouah",
+     "team": null,
+     "is_home": true,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Baouf",
+     "assist": "R. E. Arguioui",
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "아약스",
    "away": "AZ 알크마르",
    "date": "2026-11-01",
@@ -55795,6 +55839,129 @@
   }
  ],
  "mls": [
+  {
+   "home": "포틀랜드 팀버스",
+   "away": "휴스턴 다이나모",
+   "date": "2026-11-02",
+   "eid": 5407,
+   "goals": [
+    {
+     "scorer": "V. Janssen",
+     "assist": "D. Da Costa",
+     "team": null,
+     "is_home": true,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Bouzat",
+     "assist": "D. McGuire",
+     "team": null,
+     "is_home": false,
+     "minute": 71,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Velde",
+     "assist": "V. Janssen",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Da Costa",
+     "assist": "V. Janssen",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "로스앤젤레스 FC",
+   "away": "미네소타 유나이티드",
+   "date": "2026-11-02",
+   "eid": 5398,
+   "goals": [
+    {
+     "scorer": "S. Vásquez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Pereyra",
+     "assist": "M. González",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Valerius",
+     "assist": "K. Yeboah",
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Pereyra",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴잉글랜드 레볼루션",
+   "away": "인터 마이애미",
+   "date": "2026-11-02",
+   "eid": 5406,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Gazdag",
+     "assist": "I. Feingold",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "애틀랜타 유나이티드",
    "away": "토론토 FC",
