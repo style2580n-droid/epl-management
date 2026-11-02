@@ -1,6 +1,23 @@
 {
  "epl": [
   {
+   "home": "뉴캐슬",
+   "away": "에버튼",
+   "date": "2026-11-03",
+   "eid": 209623,
+   "goals": [
+    {
+     "scorer": "T. Barry",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "리버풀",
    "away": "아스날",
    "date": "2026-11-02",
@@ -31123,6 +31140,32 @@
  ],
  "ligue1": [
   {
+   "home": "FC 로리앙",
+   "away": "스타드 브레스투아29",
+   "date": "2026-11-03",
+   "eid": 210511,
+   "goals": [
+    {
+     "scorer": "N. Edjouma",
+     "assist": "G. Versini",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Ajorque",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "올랭피크 마르세유",
    "away": "툴루즈",
    "date": "2026-11-02",
@@ -36806,6 +36849,103 @@
   }
  ],
  "seriea": [
+  {
+   "home": "아탈란타",
+   "away": "파르마",
+   "date": "2026-11-03",
+   "eid": 210148,
+   "goals": [
+    {
+     "scorer": "S. Lontani",
+     "assist": "G. Fabbian",
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Zappacosta",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Fabbian",
+     "assist": "V. Sierro",
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "사수올로",
+   "away": "피오렌티나",
+   "date": "2026-11-03",
+   "eid": 210155,
+   "goals": [
+    {
+     "scorer": "V. Valdepeñas",
+     "assist": "C. Ndour",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Mastantuono",
+     "assist": "P. Gonçalves",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Laurienté",
+     "assist": "N. Matić",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Njie",
+     "assist": "M. Brescianini",
+     "team": null,
+     "is_home": false,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Pellegrino",
+     "assist": "A. Njie",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Laurienté",
+     "assist": "S. Esposito",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "유벤투스",
    "away": "나폴리",
@@ -52039,6 +52179,41 @@
   }
  ],
  "laliga": [
+  {
+   "home": "데포르티보 라코루냐",
+   "away": "오사수나",
+   "date": "2026-11-03",
+   "eid": 213621,
+   "goals": [
+    {
+     "scorer": "B. Nsongo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Soriano",
+     "assist": "L. Cruz",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Budimir",
+     "assist": "M. Gómez",
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "아틀레틱 빌바오",
    "away": "레알 소시에다드",
