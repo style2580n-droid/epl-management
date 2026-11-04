@@ -25642,140 +25642,306 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "뉴캐슬",
-   "away": "아스날",
-   "date": "2023-11-05",
-   "eid": 312229,
-   "goals": [
-    {
-     "scorer": "A. Gordon",
-     "assist": "Joelinton",
-     "team": null,
-     "is_home": true,
-     "minute": 64,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "맨체스터 시티",
-   "away": "본머스",
-   "date": "2023-11-05",
-   "eid": 312227,
-   "goals": [
-    {
-     "scorer": "N. Aké",
-     "assist": "O. Bobb",
-     "team": null,
-     "is_home": true,
-     "minute": 88,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "B. Silva",
-     "assist": "J. Doku",
-     "team": null,
-     "is_home": true,
-     "minute": 83,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "L. Sinisterra",
-     "assist": "M. Aarons",
-     "team": null,
-     "is_home": false,
-     "minute": 74,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "P. Foden",
-     "assist": "J. Doku",
-     "team": null,
-     "is_home": true,
-     "minute": 64,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "M. Akanji",
-     "assist": "J. Doku",
-     "team": null,
-     "is_home": true,
-     "minute": 37,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "B. Silva",
-     "assist": "J. Doku",
-     "team": null,
-     "is_home": true,
-     "minute": 33,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "J. Doku",
-     "assist": "Rodri",
-     "team": null,
-     "is_home": true,
-     "minute": 30,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "에버튼",
-   "away": "브라이튼",
-   "date": "2023-11-05",
-   "eid": 312226,
-   "goals": [
-    {
-     "scorer": "A. Young",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 84,
-     "goal_type": "ownGoal",
-     "body": null
-    },
-    {
-     "scorer": "V. Mykolenko",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 7,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "풀럼",
-   "away": "맨체스터 유나이티드",
-   "date": "2023-11-04",
-   "eid": 312223,
-   "goals": [
-    {
-     "scorer": "B. Fernandes",
-     "assist": "F. Pellistri",
-     "team": null,
-     "is_home": false,
-     "minute": 90,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
+  {
+   "home": "웨스트브롬위치 알비온",
+   "away": "사우샘프턴",
+   "date": "2026-11-04",
+   "eid": 214137,
+   "goals": [
+    {
+     "scorer": "S. Edozie",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Price",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 22,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "버밍엄 시티",
+   "away": "밀월",
+   "date": "2026-11-04",
+   "eid": 214130,
+   "goals": [
+    {
+     "scorer": "J. Stansfield",
+     "assist": "M. Bird",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Bird",
+     "assist": "J. Solís",
+     "team": null,
+     "is_home": true,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Cochrane",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "찰턴 애슬레틱",
+   "away": "볼턴 원더러스",
+   "date": "2026-11-04",
+   "eid": 214140,
+   "goals": [
+    {
+     "scorer": "S. Dalby",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "왓포드",
+   "away": "링컨 시티",
+   "date": "2026-11-04",
+   "eid": 214136,
+   "goals": [
+    {
+     "scorer": "S. Mavididi",
+     "assist": "M. Boadu",
+     "team": null,
+     "is_home": true,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "QPR",
+   "away": "번리",
+   "date": "2026-11-04",
+   "eid": 214135,
+   "goals": [
+    {
+     "scorer": "J. Varane",
+     "assist": "I. Chair",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Ramazani",
+     "assist": "J. Vardy",
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "프레스턴 노스엔드",
+   "away": "셰필드 유나이티드",
+   "date": "2026-11-04",
+   "eid": 214134,
+   "goals": [
+    {
+     "scorer": "C. Lang",
+     "assist": "A. Devine",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Peck",
+     "assist": "R. Donovan",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Peck",
+     "assist": "B. Brereton Díaz",
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Peck",
+     "assist": "H. Burrows",
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Leroy",
+     "assist": "A. Vukčević",
+     "team": null,
+     "is_home": true,
+     "minute": 2,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "포츠머스",
+   "away": "스완지 시티",
+   "date": "2026-11-04",
+   "eid": 214133,
+   "goals": [
+    {
+     "scorer": "T. Waddingham",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Devlin",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Ž. Vipotnik",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Devlin",
+     "assist": "O. Bailey",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "더비 카운티",
+   "away": "노리치 시티",
+   "date": "2026-11-04",
+   "eid": 214132,
+   "goals": [
+    {
+     "scorer": "J. Makama",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Yongwa",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Maghoma",
+     "assist": "J. Stacey",
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Musaba",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "블랙번 로버스",
+   "away": "스토크 시티",
+   "date": "2026-11-04",
+   "eid": 214131,
+   "goals": [
+    {
+     "scorer": "A. Guðjohnsen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Baradji",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 68,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "J. McGlynn",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "울버햄튼 원더러스",
    "away": "카디프 시티",
