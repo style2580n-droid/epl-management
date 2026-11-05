@@ -1672,7 +1672,9 @@
    "date": "2026-11-05",
    "time": "04:45",
    "id": 214141,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 0
   },
   {
    "home": "카디프 시티",
@@ -1680,7 +1682,9 @@
    "date": "2026-11-05",
    "time": "04:45",
    "id": 214139,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 3
   },
   {
    "home": "브리스톨 시티",
@@ -1688,7 +1692,9 @@
    "date": "2026-11-05",
    "time": "05:00",
    "id": 214138,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 2
   },
   {
    "home": "더비 카운티",
@@ -5586,7 +5592,7 @@
    "home": "AJ 오세르",
    "away": "파리 FC",
    "date": "2026-11-08",
-   "time": "01:15",
+   "time": "03:00",
    "id": 210519,
    "friendly": false
   },
@@ -5594,7 +5600,7 @@
    "home": "파리 생제르맹",
    "away": "ESTAC 트루아",
    "date": "2026-11-08",
-   "time": "04:45",
+   "time": "05:05",
    "id": 210522,
    "friendly": false
   },
@@ -19035,14 +19041,6 @@
    "awayGoals": 1
   },
   {
-   "home": "라요 바예카노",
-   "away": "아틀레틱 빌바오",
-   "date": "2026-10-10",
-   "time": "21:00",
-   "id": 213595,
-   "friendly": false
-  },
-  {
    "home": "알라베스",
    "away": "아틀레티코 마드리드",
    "date": "2026-10-10",
@@ -19750,6 +19748,14 @@
    "date": "2026-12-07",
    "time": "04:00",
    "id": 215660,
+   "friendly": false
+  },
+  {
+   "home": "라요 바예카노",
+   "away": "아틀레틱 빌바오",
+   "date": "2026-12-10",
+   "time": "04:00",
+   "id": 213595,
    "friendly": false
   },
   {

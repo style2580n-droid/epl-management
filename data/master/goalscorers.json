@@ -25616,35 +25616,132 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "노팅엄 포레스트",
-   "away": "아스톤 빌라",
-   "date": "2023-11-05",
-   "eid": 312230,
-   "goals": [
-    {
-     "scorer": "O. Mangala",
-     "assist": "H. Toffolo",
-     "team": null,
-     "is_home": true,
-     "minute": 47,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "O. Aina",
-     "assist": "H. Toffolo",
-     "team": null,
-     "is_home": true,
-     "minute": 5,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
+  {
+   "home": "브리스톨 시티",
+   "away": "울버햄튼 원더러스",
+   "date": "2026-11-05",
+   "eid": 214138,
+   "goals": [
+    {
+     "scorer": "S. Neave",
+     "assist": "L. Krejčí",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Neave",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Twine",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "렉섬",
+   "away": "미들즈브러",
+   "date": "2026-11-05",
+   "eid": 214141,
+   "goals": [
+    {
+     "scorer": "O. Rathbone",
+     "assist": "L. O'Brien",
+     "team": null,
+     "is_home": true,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "G. Thomason",
+     "assist": "K. Moore",
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "카디프 시티",
+   "away": "웨스트햄 유나이티드",
+   "date": "2026-11-05",
+   "eid": 214139,
+   "goals": [
+    {
+     "scorer": "M. Kilman",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Engels",
+     "assist": "J. Piroe",
+     "team": null,
+     "is_home": false,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Mukasa",
+     "assist": "J. Bowen",
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Moylan",
+     "assist": "J. Bagan",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Moylan",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Moylan",
+     "assist": "A. Robertson",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "웨스트브롬위치 알비온",
    "away": "사우샘프턴",
