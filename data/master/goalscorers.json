@@ -1,6 +1,50 @@
 {
  "epl": [
   {
+   "home": "에버튼",
+   "away": "코번트리 시티",
+   "date": "2026-11-07",
+   "eid": 209628,
+   "goals": [
+    {
+     "scorer": "K. Dewsbury-Hall",
+     "assist": "T. Barry",
+     "team": null,
+     "is_home": true,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Barry",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Barry",
+     "assist": "V. Mykolenko",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "Y. Gboho",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "뉴캐슬",
    "away": "에버튼",
    "date": "2026-11-03",
@@ -25567,6 +25611,50 @@
  ],
  "championship": [
   {
+   "home": "더비 카운티",
+   "away": "볼턴 원더러스",
+   "date": "2026-11-07",
+   "eid": 214147,
+   "goals": [
+    {
+     "scorer": "R. Brewster",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Robinson",
+     "assist": "C. Morris",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Nyambe",
+     "assist": "M. Fuseini",
+     "team": null,
+     "is_home": true,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Rodrigues",
+     "assist": "G. Larrazabal",
+     "team": null,
+     "is_home": false,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "브리스톨 시티",
    "away": "울버햄튼 원더러스",
    "date": "2026-11-05",
@@ -31350,6 +31438,50 @@
  ],
  "ligue1": [
   {
+   "home": "툴루즈",
+   "away": "라싱 스트라스부르",
+   "date": "2026-11-07",
+   "eid": 210526,
+   "goals": [
+    {
+     "scorer": "T. Jørgensen",
+     "assist": "R. Nicolaisen",
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Reyna",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. McKenzie",
+     "assist": "C. Cásseres Jr.",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Hidalgo",
+     "assist": "S. Oppong",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "FC 로리앙",
    "away": "스타드 브레스투아29",
    "date": "2026-11-03",
@@ -34214,6 +34346,50 @@
  ],
  "bundesliga": [
   {
+   "home": "함부르크SV",
+   "away": "보루시아 묀헨글라드바흐",
+   "date": "2026-11-07",
+   "eid": 213743,
+   "goals": [
+    {
+     "scorer": "A. Grønbæk",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Nandja",
+     "assist": "A. Grønbæk",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Hack",
+     "assist": "J. Scally",
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Muheim",
+     "assist": "A. Sambi Lokonga",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "아인트라흐트 프랑크푸르트",
    "away": "함부르크SV",
    "date": "2026-11-02",
@@ -37059,6 +37235,41 @@
   }
  ],
  "seriea": [
+  {
+   "home": "베네치아",
+   "away": "우디네세",
+   "date": "2026-11-07",
+   "eid": 210166,
+   "goals": [
+    {
+     "scorer": "K. Pérez",
+     "assist": "P. Mazzocchi",
+     "team": null,
+     "is_home": true,
+     "minute": 65,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Moreno",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "T. Bašić",
+     "assist": "A. Hainaut",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "아탈란타",
    "away": "파르마",
@@ -40723,6 +40934,32 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "빌럼II",
+   "away": "PEC 즈볼레",
+   "date": "2026-11-07",
+   "eid": 210898,
+   "goals": [
+    {
+     "scorer": "H. ter Avest",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. v. Hooijdonk",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 2,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "FC 흐로닝언",
    "away": "스파르타 로테르담",
@@ -52389,6 +52626,14 @@
   }
  ],
  "laliga": [
+  {
+   "home": "세비야",
+   "away": "알라베스",
+   "date": "2026-11-07",
+   "eid": 213637,
+   "goals": [],
+   "nil": true
+  },
   {
    "home": "데포르티보 라코루냐",
    "away": "오사수나",
