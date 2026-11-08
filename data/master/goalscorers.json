@@ -57588,6 +57588,224 @@
  ],
  "mls": [
   {
+   "home": "휴스턴 다이나모",
+   "away": "세인트루이스 시티",
+   "date": "2026-11-08",
+   "eid": 5422,
+   "goals": [
+    {
+     "scorer": "L. MacNaughton",
+     "assist": "A. Mățan",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "미네소타 유나이티드",
+   "away": "산호세 어스퀘이크스",
+   "date": "2026-11-08",
+   "eid": 5421,
+   "goals": [
+    {
+     "scorer": "N. Triantis",
+     "assist": "M. Duggan",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Gunn",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "ownGoal",
+     "body": "other"
+    },
+    {
+     "scorer": "T. Chancalay",
+     "assist": "J. Pereyra",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Judd",
+     "assist": "N. Tsakiris",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "샌디에이고 FC",
+   "away": "스포르팅 캔자스시티",
+   "date": "2026-11-08",
+   "eid": 5420,
+   "goals": [
+    {
+     "scorer": "André Luiz",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "오스틴 FC",
+   "away": "포틀랜드 팀버스",
+   "date": "2026-11-08",
+   "eid": 5419,
+   "goals": [
+    {
+     "scorer": "K. Velde",
+     "assist": "I. Smith",
+     "team": null,
+     "is_home": false,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Lassiter",
+     "assist": "V. Janssen",
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 댈러스",
+   "away": "콜로라도 래피즈",
+   "date": "2026-11-08",
+   "eid": 5418,
+   "goals": [
+    {
+     "scorer": "S. Moreno",
+     "assist": "L. Farrington",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Kaick",
+     "assist": "N. Norris",
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Valiente",
+     "assist": "Kaick",
+     "team": null,
+     "is_home": true,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Whittaker",
+     "assist": "G. Minoungou",
+     "team": null,
+     "is_home": false,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "리얼 솔트레이크",
+   "away": "LA 갤럭시",
+   "date": "2026-11-08",
+   "eid": 5417,
+   "goals": [
+    {
+     "scorer": "L. D. Fougerolles",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Z. Booth",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Solans",
+     "assist": "N. Caliskan",
+     "team": null,
+     "is_home": true,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "시애틀 사운더스",
+   "away": "로스앤젤레스 FC",
+   "date": "2026-11-08",
+   "eid": 5416,
+   "goals": [
+    {
+     "scorer": "E. Segura",
+     "assist": "R. Porteous",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Gomez",
+     "assist": "A. Rusnák",
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Rusnák",
+     "assist": "C. Roldán",
+     "team": null,
+     "is_home": true,
+     "minute": 1,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "DC 유나이티드",
    "away": "뉴욕 시티 FC",
    "date": "2026-11-08",

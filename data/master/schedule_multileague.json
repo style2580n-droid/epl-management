@@ -8217,6 +8217,14 @@
    "friendly": false
   },
   {
+   "home": "볼프스부르크",
+   "away": "우니온 베를린",
+   "date": "2026-11-12",
+   "time": "22:30",
+   "id": 654059,
+   "friendly": true
+  },
+  {
    "home": "바이에른 뮌헨",
    "away": "1.FC 쾰른",
    "date": "2026-11-21",
@@ -26772,7 +26780,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5422,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "미네소타 유나이티드",
@@ -26780,7 +26790,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5421,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "샌디에이고 FC",
@@ -26788,7 +26800,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5420,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 1
   },
   {
    "home": "오스틴 FC",
@@ -26796,7 +26810,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5419,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 0,
+   "awayGoals": 2
   },
   {
    "home": "FC 댈러스",
@@ -26804,7 +26820,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5418,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 1
   },
   {
    "home": "리얼 솔트레이크",
@@ -26812,7 +26830,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5417,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   },
   {
    "home": "시애틀 사운더스",
@@ -26820,7 +26840,9 @@
    "date": "2026-11-08",
    "time": "09:00",
    "id": 5416,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 2,
+   "awayGoals": 1
   }
  ]
 }
