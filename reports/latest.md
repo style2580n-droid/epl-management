@@ -1,6 +1,6 @@
 # ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-11-09
 
-생성(UTC): 2026-11-09 11:10
+생성(UTC): 2026-11-09 23:51
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -18736,6 +18736,13 @@
 | 크리스티안순 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 42.9% |
 | 몰데 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 57.1% |
 
+### 크리스티안순_발레렝가_654033
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 크리스티안순 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 62.5% |
+| 발레렝가 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 37.5% |
+
 ### 크리스티안순_보되글림트_206922
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -23962,6 +23969,7 @@
 - **크리스티안순_KFUM오슬로_207418**: [heatmap(KFUM 오슬로)](viz/크리스티안순_KFUM오슬로_207418_KFUM 오슬로_heatmap.svg) · [network(KFUM 오슬로)](viz/크리스티안순_KFUM오슬로_207418_KFUM 오슬로_network.svg) · [shotmap(KFUM 오슬로)](viz/크리스티안순_KFUM오슬로_207418_KFUM 오슬로_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_KFUM오슬로_207418_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_KFUM오슬로_207418_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_KFUM오슬로_207418_크리스티안순_shotmap.svg)
 - **크리스티안순_로젠보르그_207076**: [heatmap(로젠보르그)](viz/크리스티안순_로젠보르그_207076_로젠보르그_heatmap.svg) · [network(로젠보르그)](viz/크리스티안순_로젠보르그_207076_로젠보르그_network.svg) · [shotmap(로젠보르그)](viz/크리스티안순_로젠보르그_207076_로젠보르그_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_로젠보르그_207076_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_로젠보르그_207076_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_로젠보르그_207076_크리스티안순_shotmap.svg)
 - **크리스티안순_몰데_207039**: [heatmap(몰데)](viz/크리스티안순_몰데_207039_몰데_heatmap.svg) · [network(몰데)](viz/크리스티안순_몰데_207039_몰데_network.svg) · [shotmap(몰데)](viz/크리스티안순_몰데_207039_몰데_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_몰데_207039_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_몰데_207039_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_몰데_207039_크리스티안순_shotmap.svg)
+- **크리스티안순_발레렝가_654033**: [heatmap(발레렝가)](viz/크리스티안순_발레렝가_654033_발레렝가_heatmap.svg) · [network(발레렝가)](viz/크리스티안순_발레렝가_654033_발레렝가_network.svg) · [shotmap(발레렝가)](viz/크리스티안순_발레렝가_654033_발레렝가_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_발레렝가_654033_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_발레렝가_654033_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_발레렝가_654033_크리스티안순_shotmap.svg)
 - **크리스티안순_보되글림트_206922**: [heatmap(보되글림트)](viz/크리스티안순_보되글림트_206922_보되글림트_heatmap.svg) · [network(보되글림트)](viz/크리스티안순_보되글림트_206922_보되글림트_network.svg) · [shotmap(보되글림트)](viz/크리스티안순_보되글림트_206922_보되글림트_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_보되글림트_206922_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_보되글림트_206922_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_보되글림트_206922_크리스티안순_shotmap.svg)
 - **크리스티안순_브란_206904**: [heatmap(브란)](viz/크리스티안순_브란_206904_브란_heatmap.svg) · [network(브란)](viz/크리스티안순_브란_206904_브란_network.svg) · [shotmap(브란)](viz/크리스티안순_브란_206904_브란_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_브란_206904_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_브란_206904_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_브란_206904_크리스티안순_shotmap.svg)
 - **크리스티안순_비킹_206980**: [heatmap(비킹)](viz/크리스티안순_비킹_206980_비킹_heatmap.svg) · [network(비킹)](viz/크리스티안순_비킹_206980_비킹_network.svg) · [shotmap(비킹)](viz/크리스티안순_비킹_206980_비킹_shotmap.svg) · [heatmap(크리스티안순)](viz/크리스티안순_비킹_206980_크리스티안순_heatmap.svg) · [network(크리스티안순)](viz/크리스티안순_비킹_206980_크리스티안순_network.svg) · [shotmap(크리스티안순)](viz/크리스티안순_비킹_206980_크리스티안순_shotmap.svg)
