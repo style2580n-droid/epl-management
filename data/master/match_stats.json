@@ -281464,5 +281464,1105 @@
             }
         ],
         "collected_at": "2026-11-15T20:12:41.029977+00:00"
+    },
+    "1403766983": {
+        "match": {
+            "id": 1403766983,
+            "round": "Friendly International",
+            "date": "2026-11-16T23:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 13789537,
+                "logo": null,
+                "name": "Peru U20"
+            },
+            "homeTeam": {
+                "id": 13786984,
+                "logo": "https://highlightly.net/soccer/images/teams/13786984.png",
+                "name": "Brazil U20"
+            },
+            "league": {
+                "id": 9294,
+                "logo": "https://highlightly.net/soccer/images/leagues/9294.png",
+                "name": "Friendlies",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13786984,
+                    "logo": "https://highlightly.net/soccer/images/teams/13786984.png",
+                    "name": "Brazil U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13789537,
+                    "logo": null,
+                    "name": "Peru U20"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:30.195398+00:00"
+    },
+    "1403353397": {
+        "match": {
+            "id": 1403353397,
+            "round": "Clausura - 14",
+            "date": "2026-11-16T23:00:00.000Z",
+            "country": {
+                "code": "UY",
+                "name": "Uruguay",
+                "logo": "https://highlightly.net/soccer/images/countries/UY.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2003187,
+                "logo": "https://highlightly.net/soccer/images/teams/2003187.png",
+                "name": "Juventud"
+            },
+            "homeTeam": {
+                "id": 2009144,
+                "logo": "https://highlightly.net/soccer/images/teams/2009144.png",
+                "name": "Wanderers"
+            },
+            "league": {
+                "id": 228852,
+                "logo": "https://highlightly.net/soccer/images/leagues/228852.png",
+                "name": "Primera División - Apertura",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2009144,
+                    "logo": "https://highlightly.net/soccer/images/teams/2009144.png",
+                    "name": "Wanderers"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2003187,
+                    "logo": "https://highlightly.net/soccer/images/teams/2003187.png",
+                    "name": "Juventud"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:30.522077+00:00"
+    },
+    "1401122075": {
+        "match": {
+            "id": 1401122075,
+            "round": "Group Stage - 5",
+            "date": "2026-11-16T23:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22889280,
+                "logo": null,
+                "name": "Capim"
+            },
+            "homeTeam": {
+                "id": 22894386,
+                "logo": null,
+                "name": "G3X"
+            },
+            "league": {
+                "id": 1026239,
+                "logo": null,
+                "name": "Kings Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22894386,
+                    "logo": null,
+                    "name": "G3X"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22889280,
+                    "logo": null,
+                    "name": "Capim"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:30.698182+00:00"
+    },
+    "1401121224": {
+        "match": {
+            "id": 1401121224,
+            "round": "Group Stage - 5",
+            "date": "2026-11-16T22:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22892684,
+                "logo": null,
+                "name": "Funkbol"
+            },
+            "homeTeam": {
+                "id": 22893535,
+                "logo": null,
+                "name": "Furia"
+            },
+            "league": {
+                "id": 1026239,
+                "logo": null,
+                "name": "Kings Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22893535,
+                    "logo": null,
+                    "name": "Furia"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22892684,
+                    "logo": null,
+                    "name": "Funkbol"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:30.890043+00:00"
+    },
+    "1401119522": {
+        "match": {
+            "id": 1401119522,
+            "round": "Group Stage - 5",
+            "date": "2026-11-16T21:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22891833,
+                "logo": null,
+                "name": "Fluxo"
+            },
+            "homeTeam": {
+                "id": 24301089,
+                "logo": null,
+                "name": "Dibrados Fc"
+            },
+            "league": {
+                "id": 1026239,
+                "logo": null,
+                "name": "Kings Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 24301089,
+                    "logo": null,
+                    "name": "Dibrados Fc"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22891833,
+                    "logo": null,
+                    "name": "Fluxo"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:31.078398+00:00"
+    },
+    "1362193931": {
+        "match": {
+            "id": 1362193931,
+            "round": "Relegation Group - 12",
+            "date": "2026-11-16T20:30:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 4797020,
+                "logo": "https://highlightly.net/soccer/images/teams/4797020.png",
+                "name": "Deportes Rengo"
+            },
+            "homeTeam": {
+                "id": 1987869,
+                "logo": "https://highlightly.net/soccer/images/teams/1987869.png",
+                "name": "Santiago Morning"
+            },
+            "league": {
+                "id": 605845,
+                "logo": "https://highlightly.net/soccer/images/leagues/605845.png",
+                "name": "Segunda División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1987869,
+                    "logo": "https://highlightly.net/soccer/images/teams/1987869.png",
+                    "name": "Santiago Morning"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4797020,
+                    "logo": "https://highlightly.net/soccer/images/teams/4797020.png",
+                    "name": "Deportes Rengo"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:31.279183+00:00"
+    },
+    "1318676344": {
+        "match": {
+            "id": 1318676344,
+            "round": "Clausura - 17",
+            "date": "2026-11-16T20:15:00.000Z",
+            "country": {
+                "code": "PE",
+                "name": "Peru",
+                "logo": "https://highlightly.net/soccer/images/countries/PE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2182748,
+                "logo": "https://highlightly.net/soccer/images/teams/2182748.png",
+                "name": "Atletico Grau"
+            },
+            "homeTeam": {
+                "id": 19138923,
+                "logo": null,
+                "name": "UCV Moquegua"
+            },
+            "league": {
+                "id": 239915,
+                "logo": "https://highlightly.net/soccer/images/leagues/239915.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 19138923,
+                    "logo": null,
+                    "name": "UCV Moquegua"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2182748,
+                    "logo": "https://highlightly.net/soccer/images/teams/2182748.png",
+                    "name": "Atletico Grau"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:31.463544+00:00"
+    },
+    "1318674642": {
+        "match": {
+            "id": 1318674642,
+            "round": "Clausura - 17",
+            "date": "2026-11-16T20:15:00.000Z",
+            "country": {
+                "code": "PE",
+                "name": "Peru",
+                "logo": "https://highlightly.net/soccer/images/countries/PE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 8929476,
+                "logo": "https://highlightly.net/soccer/images/teams/8929476.png",
+                "name": "ADT"
+            },
+            "homeTeam": {
+                "id": 8521847,
+                "logo": "https://highlightly.net/soccer/images/teams/8521847.png",
+                "name": "Cusco"
+            },
+            "league": {
+                "id": 239915,
+                "logo": "https://highlightly.net/soccer/images/leagues/239915.png",
+                "name": "Primera División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8521847,
+                    "logo": "https://highlightly.net/soccer/images/teams/8521847.png",
+                    "name": "Cusco"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8929476,
+                    "logo": "https://highlightly.net/soccer/images/teams/8929476.png",
+                    "name": "ADT"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:31.640523+00:00"
+    },
+    "1401120373": {
+        "match": {
+            "id": 1401120373,
+            "round": "Group Stage - 5",
+            "date": "2026-11-16T20:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 22896088,
+                "logo": null,
+                "name": "Nyvelados"
+            },
+            "homeTeam": {
+                "id": 22890982,
+                "logo": null,
+                "name": "Desimpedidos Goti"
+            },
+            "league": {
+                "id": 1026239,
+                "logo": null,
+                "name": "Kings Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22890982,
+                    "logo": null,
+                    "name": "Desimpedidos Goti"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22896088,
+                    "logo": null,
+                    "name": "Nyvelados"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:31.832140+00:00"
+    },
+    "1315359146": {
+        "match": {
+            "id": 1315359146,
+            "round": "League B - 6",
+            "date": "2026-11-16T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 929225,
+                "logo": "https://highlightly.net/soccer/images/teams/929225.png",
+                "name": "Slovenia"
+            },
+            "homeTeam": {
+                "id": 941139,
+                "logo": "https://highlightly.net/soccer/images/teams/941139.png",
+                "name": "North Macedonia"
+            },
+            "league": {
+                "id": 5039,
+                "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+                "name": "UEFA Nations League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 941139,
+                    "logo": "https://highlightly.net/soccer/images/teams/941139.png",
+                    "name": "North Macedonia"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 929225,
+                    "logo": "https://highlightly.net/soccer/images/teams/929225.png",
+                    "name": "Slovenia"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.010749+00:00"
+    },
+    "1315350636": {
+        "match": {
+            "id": 1315350636,
+            "round": "League B - 6",
+            "date": "2026-11-16T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 943692,
+                "logo": "https://highlightly.net/soccer/images/teams/943692.png",
+                "name": "Scotland"
+            },
+            "homeTeam": {
+                "id": 13549,
+                "logo": "https://highlightly.net/soccer/images/teams/13549.png",
+                "name": "Switzerland"
+            },
+            "league": {
+                "id": 5039,
+                "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+                "name": "UEFA Nations League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13549,
+                    "logo": "https://highlightly.net/soccer/images/teams/13549.png",
+                    "name": "Switzerland"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 943692,
+                    "logo": "https://highlightly.net/soccer/images/teams/943692.png",
+                    "name": "Scotland"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.194285+00:00"
+    },
+    "1315321702": {
+        "match": {
+            "id": 1315321702,
+            "round": "League D - 6",
+            "date": "2026-11-16T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 947096,
+                "logo": "https://highlightly.net/soccer/images/teams/947096.png",
+                "name": "Malta"
+            },
+            "homeTeam": {
+                "id": 930927,
+                "logo": "https://highlightly.net/soccer/images/teams/930927.png",
+                "name": "Gibraltar"
+            },
+            "league": {
+                "id": 5039,
+                "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+                "name": "UEFA Nations League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 930927,
+                    "logo": "https://highlightly.net/soccer/images/teams/930927.png",
+                    "name": "Gibraltar"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 947096,
+                    "logo": "https://highlightly.net/soccer/images/teams/947096.png",
+                    "name": "Malta"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.393868+00:00"
+    },
+    "1301172125": {
+        "match": {
+            "id": 1301172125,
+            "round": "League A - 6",
+            "date": "2026-11-16T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 12698,
+                "logo": "https://highlightly.net/soccer/images/teams/12698.png",
+                "name": "Serbia"
+            },
+            "homeTeam": {
+                "id": 951351,
+                "logo": "https://highlightly.net/soccer/images/teams/951351.png",
+                "name": "Greece"
+            },
+            "league": {
+                "id": 5039,
+                "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+                "name": "UEFA Nations League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 951351,
+                    "logo": "https://highlightly.net/soccer/images/teams/951351.png",
+                    "name": "Greece"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 12698,
+                    "logo": "https://highlightly.net/soccer/images/teams/12698.png",
+                    "name": "Serbia"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.572251+00:00"
+    },
+    "1301171274": {
+        "match": {
+            "id": 1301171274,
+            "round": "League A - 6",
+            "date": "2026-11-16T19:45:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 952202,
+                "logo": "https://highlightly.net/soccer/images/teams/952202.png",
+                "name": "Netherlands"
+            },
+            "homeTeam": {
+                "id": 22059,
+                "logo": "https://highlightly.net/soccer/images/teams/22059.png",
+                "name": "Germany"
+            },
+            "league": {
+                "id": 5039,
+                "logo": "https://highlightly.net/soccer/images/leagues/5039.png",
+                "name": "UEFA Nations League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22059,
+                    "logo": "https://highlightly.net/soccer/images/teams/22059.png",
+                    "name": "Germany"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 952202,
+                    "logo": "https://highlightly.net/soccer/images/teams/952202.png",
+                    "name": "Netherlands"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.761985+00:00"
+    },
+    "1404296305": {
+        "match": {
+            "id": 1404296305,
+            "round": "Semi-finals",
+            "date": "2026-11-16T19:30:00.000Z",
+            "country": {
+                "code": "VE",
+                "name": "Venezuela",
+                "logo": "https://highlightly.net/soccer/images/countries/VE.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 2393796,
+                "logo": "https://highlightly.net/soccer/images/teams/2393796.png",
+                "name": "Deportivo Lara"
+            },
+            "homeTeam": {
+                "id": 2398051,
+                "logo": "https://highlightly.net/soccer/images/teams/2398051.png",
+                "name": "Aragua FC"
+            },
+            "league": {
+                "id": 256084,
+                "logo": "https://highlightly.net/soccer/images/leagues/256084.png",
+                "name": "Segunda División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2398051,
+                    "logo": "https://highlightly.net/soccer/images/teams/2398051.png",
+                    "name": "Aragua FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 2393796,
+                    "logo": "https://highlightly.net/soccer/images/teams/2393796.png",
+                    "name": "Deportivo Lara"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:32.932404+00:00"
+    },
+    "1400849755": {
+        "match": {
+            "id": 1400849755,
+            "round": "Friendly International",
+            "date": "2026-11-16T19:30:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 6973878,
+                "logo": "https://highlightly.net/soccer/images/teams/6973878.png",
+                "name": "France U21"
+            },
+            "homeTeam": {
+                "id": 6970474,
+                "logo": "https://highlightly.net/soccer/images/teams/6970474.png",
+                "name": "England U21"
+            },
+            "league": {
+                "id": 9294,
+                "logo": "https://highlightly.net/soccer/images/leagues/9294.png",
+                "name": "Friendlies",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6970474,
+                    "logo": "https://highlightly.net/soccer/images/teams/6970474.png",
+                    "name": "England U21"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 6973878,
+                    "logo": "https://highlightly.net/soccer/images/teams/6973878.png",
+                    "name": "France U21"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:33.108207+00:00"
+    },
+    "1336082698": {
+        "match": {
+            "id": 1336082698,
+            "round": "Regular Season - 14",
+            "date": "2026-11-16T19:30:00.000Z",
+            "country": {
+                "code": "ES",
+                "name": "Spain",
+                "logo": "https://highlightly.net/soccer/images/countries/ES.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 8145705,
+                "logo": "https://highlightly.net/soccer/images/teams/8145705.png",
+                "name": "Celta de Vigo II"
+            },
+            "homeTeam": {
+                "id": 615206,
+                "logo": "https://highlightly.net/soccer/images/teams/615206.png",
+                "name": "Albacete"
+            },
+            "league": {
+                "id": 120775,
+                "logo": "https://highlightly.net/soccer/images/leagues/120775.png",
+                "name": "Segunda División",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 615206,
+                    "logo": "https://highlightly.net/soccer/images/teams/615206.png",
+                    "name": "Albacete"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8145705,
+                    "logo": "https://highlightly.net/soccer/images/teams/8145705.png",
+                    "name": "Celta de Vigo II"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:33.305975+00:00"
+    },
+    "1403318506": {
+        "match": {
+            "id": 1403318506,
+            "round": "Friendly International",
+            "date": "2026-11-16T19:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 8760127,
+                "logo": "https://highlightly.net/soccer/images/teams/8760127.png",
+                "name": "Mexico U20"
+            },
+            "homeTeam": {
+                "id": 13787835,
+                "logo": null,
+                "name": "Chile U20"
+            },
+            "league": {
+                "id": 9294,
+                "logo": "https://highlightly.net/soccer/images/leagues/9294.png",
+                "name": "Friendlies",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 13787835,
+                    "logo": null,
+                    "name": "Chile U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 8760127,
+                    "logo": "https://highlightly.net/soccer/images/teams/8760127.png",
+                    "name": "Mexico U20"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:33.506770+00:00"
+    },
+    "1395652698": {
+        "match": {
+            "id": 1395652698,
+            "round": "League B - 1",
+            "date": "2026-11-16T19:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 4714473,
+                "logo": "https://highlightly.net/soccer/images/teams/4714473.png",
+                "name": "Puerto Rico"
+            },
+            "homeTeam": {
+                "id": 4393646,
+                "logo": "https://highlightly.net/soccer/images/teams/4393646.png",
+                "name": "Guyana"
+            },
+            "league": {
+                "id": 456920,
+                "logo": "https://highlightly.net/soccer/images/leagues/456920.png",
+                "name": "CONCACAF Nations League",
+                "season": 2025
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4393646,
+                    "logo": "https://highlightly.net/soccer/images/teams/4393646.png",
+                    "name": "Guyana"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4714473,
+                    "logo": "https://highlightly.net/soccer/images/teams/4714473.png",
+                    "name": "Puerto Rico"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:33.689776+00:00"
+    },
+    "1395651847": {
+        "match": {
+            "id": 1395651847,
+            "round": "League B - 2",
+            "date": "2026-11-16T19:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 4390242,
+                "logo": "https://highlightly.net/soccer/images/teams/4390242.png",
+                "name": "Bermuda"
+            },
+            "homeTeam": {
+                "id": 9347317,
+                "logo": null,
+                "name": "Guadeloupe"
+            },
+            "league": {
+                "id": 456920,
+                "logo": "https://highlightly.net/soccer/images/leagues/456920.png",
+                "name": "CONCACAF Nations League",
+                "season": 2025
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 9347317,
+                    "logo": null,
+                    "name": "Guadeloupe"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 4390242,
+                    "logo": "https://highlightly.net/soccer/images/teams/4390242.png",
+                    "name": "Bermuda"
+                }
+            }
+        ],
+        "collected_at": "2026-11-16T00:49:33.867613+00:00"
     }
 }
