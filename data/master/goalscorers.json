@@ -58736,6 +58736,76 @@
  ],
  "mls": [
   {
+   "home": "시애틀 사운더스",
+   "away": "리얼 솔트레이크",
+   "date": "2026-11-20",
+   "eid": 654065,
+   "goals": [
+    {
+     "scorer": "M. Guilavogui",
+     "assist": "S. Solans",
+     "team": null,
+     "is_home": false,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Rusnák",
+     "assist": "S. Gomez",
+     "team": null,
+     "is_home": true,
+     "minute": 36,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "올랜도 시티",
+   "away": "FC 신시내티",
+   "date": "2026-11-20",
+   "eid": 654064,
+   "goals": [
+    {
+     "scorer": "S. Gidi",
+     "assist": "Evander",
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Evander",
+     "assist": "T. Barlow",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Evander",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 43,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": "I. Angulo",
+     "team": null,
+     "is_home": true,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "휴스턴 다이나모",
    "away": "세인트루이스 시티",
    "date": "2026-11-08",
