@@ -31909,6 +31909,50 @@
  ],
  "ligue1": [
   {
+   "home": "ESTAC 트루아",
+   "away": "르아브르AC",
+   "date": "2026-11-21",
+   "eid": 210535,
+   "goals": [
+    {
+     "scorer": "R. Ripart",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Mille",
+     "assist": "A. Ouzenadji",
+     "team": null,
+     "is_home": true,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Mille",
+     "assist": "K. Diawara",
+     "team": null,
+     "is_home": true,
+     "minute": 19,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Maja",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "RC 랑스",
    "away": "올랭피크 마르세유",
    "date": "2026-11-09",
@@ -35024,6 +35068,32 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "바이에른 뮌헨",
+   "away": "1.FC 쾰른",
+   "date": "2026-11-21",
+   "eid": 213754,
+   "goals": [
+    {
+     "scorer": "N. Brown",
+     "assist": "T. Bischof",
+     "team": null,
+     "is_home": true,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Moore",
+     "assist": "S. El Mala",
+     "team": null,
+     "is_home": false,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "TSG 호펜하임",
    "away": "샬케04",
@@ -46819,6 +46889,68 @@
  ],
  "eliteserien": [
   {
+   "home": "몰데",
+   "away": "보되글림트",
+   "date": "2026-11-21",
+   "eid": 207120,
+   "goals": [
+    {
+     "scorer": "N. Odegard",
+     "assist": "O. Spiten-Nysæter",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Helmersen",
+     "assist": "S. Auklend",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Spiten-Nysæter",
+     "assist": "S. M. Granaas",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Blomberg",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "O. Brynhildsen",
+     "assist": "S. Fet",
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "O. Blomberg",
+     "assist": "S. Fet",
+     "team": null,
+     "is_home": false,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "크리스티안순",
    "away": "발레렝가",
    "date": "2026-11-10",
@@ -54676,6 +54808,23 @@
   }
  ],
  "laliga": [
+  {
+   "home": "아틀레틱 빌바오",
+   "away": "에스파뇰",
+   "date": "2026-11-21",
+   "eid": 213640,
+   "goals": [
+    {
+     "scorer": "R. Fernández",
+     "assist": "T. Dolan",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "아틀레티코 마드리드",
    "away": "바르셀로나",
