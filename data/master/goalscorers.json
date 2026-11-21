@@ -59418,6 +59418,68 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "샬럿 FC",
+   "date": "2026-11-08",
+   "eid": 5408,
+   "goals": [
+    {
+     "scorer": "R. Aloko",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Abada",
+     "assist": "P. Biel",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Abada",
+     "assist": "T. Smalls",
+     "team": null,
+     "is_home": false,
+     "minute": 50,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. De Paul",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Fray",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 14,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "휴스턴 다이나모",
    "date": "2026-11-02",
@@ -59502,6 +59564,41 @@
      "minute": 29,
      "goal_type": "regular",
      "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴잉글랜드 레볼루션",
+   "away": "인터 마이애미",
+   "date": "2026-11-02",
+   "eid": 5406,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "D. Gazdag",
+     "assist": "I. Feingold",
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
     }
    ]
   },
@@ -60471,6 +60568,50 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "FC 신시내티",
+   "date": "2026-10-29",
+   "eid": 5379,
+   "goals": [
+    {
+     "scorer": "Riquelme",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Gidi",
+     "assist": "T. Barlow",
+     "team": null,
+     "is_home": false,
+     "minute": 86,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. M. Dem",
+     "assist": "Evander",
+     "team": null,
+     "is_home": false,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "Casemiro",
+     "team": null,
+     "is_home": true,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "로스앤젤레스 FC",
    "away": "LA 갤럭시",
    "date": "2026-10-26",
@@ -60895,6 +61036,32 @@
      "is_home": false,
      "minute": 18,
      "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 레드불스",
+   "away": "인터 마이애미",
+   "date": "2026-10-25",
+   "eid": 5366,
+   "goals": [
+    {
+     "scorer": "E. Forsberg",
+     "assist": "C. Harper",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Casemiro",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 7,
+     "goal_type": "ownGoal",
      "body": "left-foot"
     }
    ]
@@ -61394,6 +61561,50 @@
      "minute": 3,
      "goal_type": "ownGoal",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "애틀랜타 유나이티드",
+   "away": "인터 마이애미",
+   "date": "2026-10-18",
+   "eid": 5351,
+   "goals": [
+    {
+     "scorer": "F. Picault",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": false,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
     }
    ]
   },
@@ -62039,6 +62250,32 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "뉴욕 시티 FC",
+   "date": "2026-10-15",
+   "eid": 5334,
+   "goals": [
+    {
+     "scorer": "R. De Paul",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "세인트루이스 시티",
    "away": "LA 갤럭시",
    "date": "2026-10-12",
@@ -62603,6 +62840,50 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "DC 유나이티드",
+   "date": "2026-10-11",
+   "eid": 5321,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 60,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "시카고 파이어",
    "away": "뉴욕 시티 FC",
    "date": "2026-10-11",
@@ -62783,6 +63064,41 @@
      "minute": 5,
      "goal_type": "regular",
      "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "콜럼버스 크루",
+   "away": "인터 마이애미",
+   "date": "2026-09-28",
+   "eid": 5318,
+   "goals": [
+    {
+     "scorer": "J. Thiaré",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Martínez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 28,
+     "goal_type": "penalty",
+     "body": "right-foot"
     }
    ]
   },
@@ -63345,6 +63661,50 @@
      "minute": 48,
      "goal_type": "regular",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "샌디에이고 FC",
+   "date": "2026-09-21",
+   "eid": 5303,
+   "goals": [
+    {
+     "scorer": "A. Dreyer",
+     "assist": "J. Tverskov",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Dreyer",
+     "assist": "J. Tverskov",
+     "team": null,
+     "is_home": false,
+     "minute": 12,
+     "goal_type": "regular",
+     "body": "left-foot"
     }
    ]
   },
@@ -64374,6 +64734,50 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "내슈빌 SC",
+   "date": "2026-09-13",
+   "eid": 5274,
+   "goals": [
+    {
+     "scorer": "S. Surridge",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Baker-Whiting",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 19,
+     "goal_type": "ownGoal",
+     "body": "head"
+    },
+    {
+     "scorer": "S. Surridge",
+     "assist": "A. Najar",
+     "team": null,
+     "is_home": false,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "세인트루이스 시티",
    "date": "2026-09-10",
@@ -64622,6 +65026,32 @@
      "team": null,
      "is_home": false,
      "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "시카고 파이어",
+   "away": "인터 마이애미",
+   "date": "2026-09-10",
+   "eid": 5265,
+   "goals": [
+    {
+     "scorer": "Casemiro",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "R. Lewandowski",
+     "assist": "A. Gutman",
+     "team": null,
+     "is_home": true,
+     "minute": 10,
      "goal_type": "regular",
      "body": "right-foot"
     }
@@ -65082,6 +65512,50 @@
      "minute": 14,
      "goal_type": "regular",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "애틀랜타 유나이티드",
+   "date": "2026-09-06",
+   "eid": 5245,
+   "goals": [
+    {
+     "scorer": "B. Embolo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 87,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Almirón",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Casemiro",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "head"
     }
    ]
   },
@@ -65829,6 +66303,86 @@
    "nil": true
   },
   {
+   "home": "인터 마이애미",
+   "away": "CF 몬트리올",
+   "date": "2026-08-30",
+   "eid": 5230,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Shaw",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Petrasso",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Herbers",
+     "assist": "N. Streit",
+     "team": null,
+     "is_home": false,
+     "minute": 37,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Casemiro",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": true,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
    "home": "시애틀 사운더스",
    "away": "시카고 파이어",
    "date": "2026-08-30",
@@ -66399,6 +66953,41 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "토론토 FC",
+   "date": "2026-08-23",
+   "eid": 5214,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Etienne",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Sargent",
+     "assist": "D. Sallói",
+     "team": null,
+     "is_home": false,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "샌디에이고 FC",
    "date": "2026-08-20",
@@ -66880,6 +67469,50 @@
    ]
   },
   {
+   "home": "필라델피아 유니온",
+   "away": "인터 마이애미",
+   "date": "2026-08-20",
+   "eid": 5199,
+   "goals": [
+    {
+     "scorer": "N. Pierre",
+     "assist": "M. Iloski",
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "I. Fray",
+     "team": null,
+     "is_home": false,
+     "minute": 26,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Pinter",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": false,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Vassilev",
+     "assist": "F. Westfield",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "시애틀 사운더스",
    "away": "밴쿠버 화이트캡스",
    "date": "2026-08-17",
@@ -67155,6 +67788,59 @@
      "minute": 21,
      "goal_type": "penalty",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "내슈빌 SC",
+   "away": "인터 마이애미",
+   "date": "2026-08-16",
+   "eid": 5189,
+   "goals": [
+    {
+     "scorer": "H. Mukhtar",
+     "assist": "B. Schwake",
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Surridge",
+     "assist": "C. Espinoza",
+     "team": null,
+     "is_home": true,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Mukhtar",
+     "assist": "E. Saad",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Segovia",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Najar",
+     "assist": "E. Saad",
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "head"
     }
    ]
   },
@@ -67580,6 +68266,50 @@
      "team": null,
      "is_home": false,
      "minute": 18,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "콜럼버스 크루",
+   "date": "2026-08-02",
+   "eid": 5170,
+   "goals": [
+    {
+     "scorer": "B. Méndez",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Allen",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "Casemiro",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 34,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "Y. Bright",
+     "team": null,
+     "is_home": true,
+     "minute": 16,
      "goal_type": "regular",
      "body": "right-foot"
     }
@@ -68180,6 +68910,23 @@
    ]
   },
   {
+   "home": "CF 몬트리올",
+   "away": "인터 마이애미",
+   "date": "2026-07-26",
+   "eid": 5155,
+   "goals": [
+    {
+     "scorer": "L. Suárez",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "콜럼버스 크루",
    "away": "FC 신시내티",
    "date": "2026-07-26",
@@ -68758,6 +69505,59 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "시카고 파이어",
+   "date": "2026-07-23",
+   "eid": 5139,
+   "goals": [
+    {
+     "scorer": "P. Plambeck",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 87,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Dithejane",
+     "assist": "M. Haile-Selassie",
+     "team": null,
+     "is_home": false,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 27,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Ríos Novo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "LA 갤럭시",
    "away": "로스앤젤레스 FC",
    "date": "2026-07-18",
@@ -68946,6 +69746,104 @@
      "minute": 86,
      "goal_type": "regular",
      "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "필라델피아 유니온",
+   "date": "2026-05-25",
+   "eid": 5131,
+   "goals": [
+    {
+     "scorer": "R. De Paul",
+     "assist": "M. Silvetti",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Iloski",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "I. Fray",
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "B. Damiani",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 20,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Iloski",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Iloski",
+     "assist": "F. Westfield",
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
     }
    ]
   },
@@ -69535,6 +70433,32 @@
      "minute": 13,
      "goal_type": "regular",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "포틀랜드 팀버스",
+   "date": "2026-05-18",
+   "eid": 5116,
+   "goals": [
+    {
+     "scorer": "G. Berterame",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "left-foot"
     }
    ]
   },
@@ -70513,6 +71437,86 @@
    ]
   },
   {
+   "home": "FC 신시내티",
+   "away": "인터 마이애미",
+   "date": "2026-05-14",
+   "eid": 5090,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "M. Silvetti",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Silvetti",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Evander",
+     "assist": "K. Denkey",
+     "team": null,
+     "is_home": true,
+     "minute": 64,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": false,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Bucha",
+     "assist": "B. Ramírez",
+     "team": null,
+     "is_home": true,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Denkey",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 41,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "샬럿 FC",
    "away": "뉴욕 시티 FC",
    "date": "2026-05-14",
@@ -71065,6 +72069,68 @@
    ]
   },
   {
+   "home": "토론토 FC",
+   "away": "인터 마이애미",
+   "date": "2026-05-10",
+   "eid": 5075,
+   "goals": [
+    {
+     "scorer": "E. Aristizábal",
+     "assist": "K. Franklin",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Aristizábal",
+     "assist": "D. Sallói",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": false,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Reguilón",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Suárez",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. De Paul",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "오스틴 FC",
    "away": "세인트루이스 시티",
    "date": "2026-05-04",
@@ -71403,6 +72469,77 @@
    "eid": 5063,
    "goals": [],
    "nil": true
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "올랜도 시티",
+   "date": "2026-05-03",
+   "eid": 5062,
+   "goals": [
+    {
+     "scorer": "T. Spicer",
+     "assist": "B. Ojeda",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": "A. Marín",
+     "team": null,
+     "is_home": false,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": "J. Ellis",
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "L. Suárez",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Segovia",
+     "assist": "L. Messi",
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Fray",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": true,
+     "minute": 4,
+     "goal_type": "regular",
+     "body": "other"
+    }
+   ]
   },
   {
    "home": "리얼 솔트레이크",
@@ -71931,6 +73068,32 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "뉴잉글랜드 레볼루션",
+   "date": "2026-04-26",
+   "eid": 5047,
+   "goals": [
+    {
+     "scorer": "G. Berterame",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. Gil",
+     "assist": "D. Turgeman",
+     "team": null,
+     "is_home": false,
+     "minute": 56,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "미네소타 유나이티드",
    "away": "로스앤젤레스 FC",
    "date": "2026-04-26",
@@ -72068,6 +73231,32 @@
    "eid": 5042,
    "goals": [],
    "nil": true
+  },
+  {
+   "home": "리얼 솔트레이크",
+   "away": "인터 마이애미",
+   "date": "2026-04-23",
+   "eid": 5041,
+   "goals": [
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. De Paul",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
   },
   {
    "home": "휴스턴 다이나모",
@@ -72870,6 +74059,59 @@
    ]
   },
   {
+   "home": "콜로라도 래피즈",
+   "away": "인터 마이애미",
+   "date": "2026-04-19",
+   "eid": 5021,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": false,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Yapi",
+     "assist": "L. Herrington",
+     "team": null,
+     "is_home": true,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Navarro",
+     "assist": "W. Frederick",
+     "team": null,
+     "is_home": true,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": "M. Silvetti",
+     "team": null,
+     "is_home": false,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 18,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "CF 몬트리올",
    "away": "뉴욕 레드불스",
    "date": "2026-04-19",
@@ -73326,6 +74568,50 @@
    ]
   },
   {
+   "home": "인터 마이애미",
+   "away": "뉴욕 레드불스",
+   "date": "2026-04-12",
+   "eid": 5007,
+   "goals": [
+    {
+     "scorer": "A. Mehmeti",
+     "assist": "J. Hall",
+     "team": null,
+     "is_home": false,
+     "minute": 77,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Berterame",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Silvetti",
+     "assist": "R. De Paul",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Ruvalcaba",
+     "assist": "J. Hall",
+     "team": null,
+     "is_home": false,
+     "minute": 15,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "포틀랜드 팀버스",
    "away": "로스앤젤레스 FC",
    "date": "2026-04-12",
@@ -73672,6 +74958,50 @@
      "minute": 1,
      "goal_type": "regular",
      "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "인터 마이애미",
+   "away": "오스틴 FC",
+   "date": "2026-04-05",
+   "eid": 4991,
+   "goals": [
+    {
+     "scorer": "L. Suárez",
+     "assist": "G. Berterame",
+     "team": null,
+     "is_home": true,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Nelson",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "Guilherme Biro",
+     "assist": "F. Torres",
+     "team": null,
+     "is_home": false,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "head"
     }
    ]
   },
@@ -74164,6 +75494,59 @@
      "minute": 6,
      "goal_type": "regular",
      "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴욕 시티 FC",
+   "away": "인터 마이애미",
+   "date": "2026-03-23",
+   "eid": 4983,
+   "goals": [
+    {
+     "scorer": "Micael",
+     "assist": "N. Allen",
+     "team": null,
+     "is_home": false,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 61,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Ojeda",
+     "assist": "M. Moralez",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "N. Fernández",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Luján",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 3,
+     "goal_type": "regular",
+     "body": "right-foot"
     }
    ]
   },
@@ -75038,6 +76421,14 @@
    ]
   },
   {
+   "home": "샬럿 FC",
+   "away": "인터 마이애미",
+   "date": "2026-03-15",
+   "eid": 4961,
+   "goals": [],
+   "nil": true
+  },
+  {
    "home": "콜럼버스 크루",
    "away": "내슈빌 SC",
    "date": "2026-03-15",
@@ -75500,6 +76891,41 @@
    "nil": true
   },
   {
+   "home": "DC 유나이티드",
+   "away": "인터 마이애미",
+   "date": "2026-03-08",
+   "eid": 4945,
+   "goals": [
+    {
+     "scorer": "T. Baribo",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "M. Silvetti",
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. de Paul",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 17,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "뉴욕 시티 FC",
    "away": "올랜도 시티",
    "date": "2026-03-08",
@@ -75573,6 +76999,68 @@
      "team": null,
      "is_home": true,
      "minute": 3,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "올랜도 시티",
+   "away": "인터 마이애미",
+   "date": "2026-03-02",
+   "eid": 4941,
+   "goals": [
+    {
+     "scorer": "L. Messi",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "T. Segovia",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Messi",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Silvetti",
+     "assist": "T. Segovia",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Ojeda",
+     "assist": "G. Dorsey",
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Pašalić",
+     "assist": "I. Angulo",
+     "team": null,
+     "is_home": true,
+     "minute": 18,
      "goal_type": "regular",
      "body": "left-foot"
     }
@@ -76122,6 +77610,41 @@
      "team": null,
      "is_home": false,
      "minute": 6,
+     "goal_type": "regular",
+     "body": null
+    }
+   ]
+  },
+  {
+   "home": "로스앤젤레스 FC",
+   "away": "인터 마이애미",
+   "date": "2026-02-22",
+   "eid": 4922,
+   "goals": [
+    {
+     "scorer": "N. Ordaz",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": null
+    },
+    {
+     "scorer": "D. Bouanga",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": null
+    },
+    {
+     "scorer": "D. M. Morales",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 37,
      "goal_type": "regular",
      "body": null
     }
