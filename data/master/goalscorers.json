@@ -32458,6 +32458,92 @@
  ],
  "ligue1": [
   {
+   "home": "라싱 스트라스부르",
+   "away": "스타드 브레스투아29",
+   "date": "2026-11-22",
+   "eid": 210534,
+   "goals": [
+    {
+     "scorer": "N. Edjouma",
+     "assist": "J. Nonge",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "RC 랑스",
+   "away": "툴루즈",
+   "date": "2026-11-22",
+   "eid": 210533,
+   "goals": [
+    {
+     "scorer": "M. Cuisance",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 47,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Russell Rowe",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 39,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "릴OSC",
+   "away": "올랭피크 리옹",
+   "date": "2026-11-22",
+   "eid": 210528,
+   "goals": [
+    {
+     "scorer": "M. Bidstrup",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "AS 모나코",
+   "away": "AJ 오세르",
+   "date": "2026-11-22",
+   "eid": 210527,
+   "goals": [
+    {
+     "scorer": "E. Diop",
+     "assist": "Vanderson",
+     "team": null,
+     "is_home": true,
+     "minute": 82,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Faivre",
+     "assist": "M. Senaya",
+     "team": null,
+     "is_home": false,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "OGC 니스",
    "away": "파리 생제르맹",
    "date": "2026-11-22",
@@ -39050,6 +39136,23 @@
  ],
  "seriea": [
   {
+   "home": "나폴리",
+   "away": "토리노",
+   "date": "2026-11-22",
+   "eid": 210175,
+   "goals": [
+    {
+     "scorer": "S. McTominay",
+     "assist": "N. Lang",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "파르마",
    "away": "AS로마",
    "date": "2026-11-22",
@@ -43132,6 +43235,94 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "텔스타르",
+   "away": "PEC 즈볼레",
+   "date": "2026-11-22",
+   "eid": 210914,
+   "goals": [
+    {
+     "scorer": "I. Cissoko",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Mbayo",
+     "assist": "S. v. Hooijdonk",
+     "team": null,
+     "is_home": false,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Mbayo",
+     "assist": "S. Graves",
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "S. Graves",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 16,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 흐로닝언",
+   "away": "sc 헤렌베인",
+   "date": "2026-11-22",
+   "eid": 210908,
+   "goals": [
+    {
+     "scorer": "D. Proper",
+     "assist": "R. Meerveld",
+     "team": null,
+     "is_home": false,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "D. Vente",
+     "assist": "J. Trenskow",
+     "team": null,
+     "is_home": false,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "T. v. Bergen",
+     "assist": "P. Clement",
+     "team": null,
+     "is_home": true,
+     "minute": 57,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Vente",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "페예노르트",
    "away": "엑셀시오르 로테르담",
@@ -55954,6 +56145,41 @@
  ],
  "laliga": [
   {
+   "home": "레알 마드리드",
+   "away": "셀타 비고",
+   "date": "2026-11-22",
+   "eid": 213647,
+   "goals": [
+    {
+     "scorer": "C. Espí",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Bellingham",
+     "assist": "K. Mbappé",
+     "team": null,
+     "is_home": true,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "P. Durán",
+     "assist": "W. Swedberg",
+     "team": null,
+     "is_home": false,
+     "minute": 6,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "세비야",
    "away": "레알 베티스",
    "date": "2026-11-22",
@@ -60116,6 +60342,102 @@
   }
  ],
  "mls": [
+  {
+   "home": "인터 마이애미",
+   "away": "콜럼버스 크루",
+   "date": "2026-11-22",
+   "eid": 654252,
+   "goals": [
+    {
+     "scorer": "G. Tapia",
+     "assist": "S. Moreira",
+     "team": null,
+     "is_home": false,
+     "minute": 58,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Habroune",
+     "assist": "B. Méndez",
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Tapia",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 9,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "FC 댈러스",
+   "away": "포틀랜드 팀버스",
+   "date": "2026-11-22",
+   "eid": 654251,
+   "goals": [
+    {
+     "scorer": "S. Sarver",
+     "assist": "L. Farrington",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Valiente",
+     "assist": "D. Job",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Valiente",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 53,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "뉴잉글랜드 레볼루션",
+   "away": "필라델피아 유니온",
+   "date": "2026-11-22",
+   "eid": 654250,
+   "goals": [
+    {
+     "scorer": "P. Miller",
+     "assist": "J. Harrison",
+     "team": null,
+     "is_home": true,
+     "minute": 73,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "N. Harriel",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 10,
+     "goal_type": "ownGoal",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "시애틀 사운더스",
    "away": "리얼 솔트레이크",
