@@ -48867,50 +48867,6 @@
    ]
   },
   {
-   "home": "크리스티안순",
-   "away": "산네피오르",
-   "date": "2026-11-23",
-   "eid": 207119,
-   "goals": [
-    {
-     "scorer": "S. Mork",
-     "assist": "J. M. Dunsby",
-     "team": null,
-     "is_home": false,
-     "minute": 49,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "Z. Bytyqi",
-     "assist": "L. Alvheim",
-     "team": null,
-     "is_home": true,
-     "minute": 45,
-     "goal_type": "regular",
-     "body": "right-foot"
-    },
-    {
-     "scorer": "L. Alvheim",
-     "assist": "Z. Bytyqi",
-     "team": null,
-     "is_home": true,
-     "minute": 45,
-     "goal_type": "regular",
-     "body": "head"
-    },
-    {
-     "scorer": "V. W. Egeli",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 8,
-     "goal_type": "regular",
-     "body": "left-foot"
-    }
-   ]
-  },
-  {
    "home": "KFUM 오슬로",
    "away": "브란",
    "date": "2026-11-23",
@@ -48978,6 +48934,50 @@
      "minute": 9,
      "goal_type": "regular",
      "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "크리스티안순",
+   "away": "산네피오르",
+   "date": "2026-11-23",
+   "eid": 207119,
+   "goals": [
+    {
+     "scorer": "S. Mork",
+     "assist": "J. M. Dunsby",
+     "team": null,
+     "is_home": false,
+     "minute": 49,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "Z. Bytyqi",
+     "assist": "L. Alvheim",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Alvheim",
+     "assist": "Z. Bytyqi",
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "V. W. Egeli",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "left-foot"
     }
    ]
   },
@@ -61397,6 +61397,32 @@
   }
  ],
  "mls": [
+  {
+   "home": "밴쿠버 화이트캡스",
+   "away": "리얼 솔트레이크",
+   "date": "2026-11-23",
+   "eid": 655473,
+   "goals": [
+    {
+     "scorer": "B. Quiñonez",
+     "assist": "É. Ocampo",
+     "team": null,
+     "is_home": true,
+     "minute": 55,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "É. Ocampo",
+     "assist": "E. Sabbi",
+     "team": null,
+     "is_home": true,
+     "minute": 44,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "시카고 파이어",
    "away": "샬럿 FC",
