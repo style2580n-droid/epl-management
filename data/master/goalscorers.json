@@ -32572,6 +32572,59 @@
  ],
  "ligue1": [
   {
+   "home": "올랭피크 마르세유",
+   "away": "르망FC",
+   "date": "2026-11-23",
+   "eid": 210531,
+   "goals": [
+    {
+     "scorer": "J. Vercruysse",
+     "assist": "R. Bamba",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "E. Colas",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 84,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "L. Mafouta",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 70,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Paixão",
+     "assist": "A. Gouiri",
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Gouiri",
+     "assist": "C. Egan-Riley",
+     "team": null,
+     "is_home": true,
+     "minute": 33,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "FC 로리앙",
    "away": "스타드 렌",
    "date": "2026-11-23",
@@ -39407,6 +39460,86 @@
   }
  ],
  "seriea": [
+  {
+   "home": "아탈란타",
+   "away": "인테르",
+   "date": "2026-11-23",
+   "eid": 210168,
+   "goals": [
+    {
+     "scorer": "F. Kessié",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. De Ketelaere",
+     "assist": "J. Rowe",
+     "team": null,
+     "is_home": true,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. Sučić",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 76,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "C. De Ketelaere",
+     "assist": "N. Zalewski",
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. P. Esposito",
+     "assist": "M. Thuram",
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Elmas",
+     "assist": "N. Zalewski",
+     "team": null,
+     "is_home": true,
+     "minute": 35,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. P. Esposito",
+     "assist": "F. Dimarco",
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "F. P. Esposito",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 16,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "AC밀란",
    "away": "프로시노네",
@@ -56909,6 +57042,41 @@
  ],
  "laliga": [
   {
+   "home": "헤타페",
+   "away": "아틀레티코 마드리드",
+   "date": "2026-11-23",
+   "eid": 213643,
+   "goals": [
+    {
+     "scorer": "A. Grimaldo",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Cardoso",
+     "assist": "J. Álvarez",
+     "team": null,
+     "is_home": false,
+     "minute": 30,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Baena",
+     "assist": "J. Álvarez",
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "오사수나",
    "away": "말라가",
    "date": "2026-11-23",
@@ -61229,6 +61397,58 @@
   }
  ],
  "mls": [
+  {
+   "home": "시카고 파이어",
+   "away": "샬럿 FC",
+   "date": "2026-11-23",
+   "eid": 654253,
+   "goals": [
+    {
+     "scorer": "P. Biel",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Lewandowski",
+     "assist": "J. Dean",
+     "team": null,
+     "is_home": true,
+     "minute": 68,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "L. Abada",
+     "assist": "H. Kessler",
+     "team": null,
+     "is_home": false,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
+  {
+   "home": "내슈빌 SC",
+   "away": "FC 신시내티",
+   "date": "2026-11-23",
+   "eid": 655472,
+   "goals": [
+    {
+     "scorer": "P. Yazbek",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 7,
+     "goal_type": "ownGoal",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "인터 마이애미",
    "away": "콜럼버스 크루",
