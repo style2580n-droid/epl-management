@@ -26029,6 +26029,259 @@
  ],
  "championship": [
   {
+   "home": "울버햄튼 원더러스",
+   "away": "더비 카운티",
+   "date": "2026-11-25",
+   "eid": 214173,
+   "goals": [
+    {
+     "scorer": "A. Armstrong",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 76,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Mané",
+     "assist": "R. Gomes",
+     "team": null,
+     "is_home": true,
+     "minute": 74,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "A. Armstrong",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 29,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "셰필드 유나이티드",
+   "away": "사우샘프턴",
+   "date": "2026-11-25",
+   "eid": 214172,
+   "goals": [
+    {
+     "scorer": "S. Peck",
+     "assist": "J. Ayew",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "L. Dobbin",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 10,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "포츠머스",
+   "away": "웨스트햄 유나이티드",
+   "date": "2026-11-25",
+   "eid": 214171,
+   "goals": [
+    {
+     "scorer": "O. Bailey",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 31,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "노리치 시티",
+   "away": "QPR",
+   "date": "2026-11-25",
+   "eid": 214170,
+   "goals": [
+    {
+     "scorer": "A. Musaba",
+     "assist": "M. Kvistgaarden",
+     "team": null,
+     "is_home": true,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "H. Vale",
+     "assist": "K. Adamson",
+     "team": null,
+     "is_home": false,
+     "minute": 41,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "미들즈브러",
+   "away": "스완지 시티",
+   "date": "2026-11-25",
+   "eid": 214169,
+   "goals": [
+    {
+     "scorer": "W. Lankshear",
+     "assist": "M. Peart-Harris",
+     "team": null,
+     "is_home": true,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Opoku",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 22,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "M. Peart-Harris",
+     "assist": "N. Borges",
+     "team": null,
+     "is_home": true,
+     "minute": 9,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "찰턴 애슬레틱",
+   "away": "링컨 시티",
+   "date": "2026-11-25",
+   "eid": 214168,
+   "goals": [
+    {
+     "scorer": "M. Leaburn",
+     "assist": "J. Edwards",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Campbell",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 48,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Mesík",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "J. Rankin-Costello",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 8,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "카디프 시티",
+   "away": "프레스턴 노스엔드",
+   "date": "2026-11-25",
+   "eid": 214167,
+   "goals": [
+    {
+     "scorer": "A. Hughes",
+     "assist": "A. Devine",
+     "team": null,
+     "is_home": false,
+     "minute": 69,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Moran",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 63,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. Devine",
+     "assist": "A. Moran",
+     "team": null,
+     "is_home": false,
+     "minute": 32,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "T. Small",
+     "assist": "S. Mills",
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "브리스톨 시티",
+   "away": "렉섬",
+   "date": "2026-11-25",
+   "eid": 214166,
+   "goals": [
+    {
+     "scorer": "C. Pring",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "J. Worrall",
+     "assist": "B. Whiteman",
+     "team": null,
+     "is_home": false,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "번리",
    "away": "블랙번 로버스",
    "date": "2026-11-22",
