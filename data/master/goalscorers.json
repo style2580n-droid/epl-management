@@ -61503,6 +61503,59 @@
  ],
  "mls": [
   {
+   "home": "세인트루이스 시티",
+   "away": "로스앤젤레스 FC",
+   "date": "2026-11-24",
+   "eid": 654254,
+   "goals": [
+    {
+     "scorer": "D. Bouanga",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 85,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Becher",
+     "assist": "C. Durkin",
+     "team": null,
+     "is_home": true,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "S. Palencia",
+     "assist": "R. Porteous",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "J. Sang-bin",
+     "assist": "C. Durkin",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "D. Edelman",
+     "assist": "R. Navarro",
+     "team": null,
+     "is_home": true,
+     "minute": 34,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "밴쿠버 화이트캡스",
    "away": "리얼 솔트레이크",
    "date": "2026-11-23",
