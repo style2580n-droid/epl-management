@@ -1,6 +1,50 @@
 {
  "epl": [
   {
+   "home": "브렌트포드",
+   "away": "에버튼",
+   "date": "2026-11-24",
+   "eid": 209637,
+   "goals": [
+    {
+     "scorer": "F. Carvalho",
+     "assist": "M. Jensen",
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "V. Janelt",
+     "assist": "J. Anthony",
+     "team": null,
+     "is_home": true,
+     "minute": 67,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Lewis-Potter",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 25,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "K. Lewis-Potter",
+     "assist": "J. Anthony",
+     "team": null,
+     "is_home": true,
+     "minute": 23,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "리버풀",
    "away": "맨체스터 유나이티드",
    "date": "2026-11-23",
@@ -39461,6 +39505,41 @@
  ],
  "seriea": [
   {
+   "home": "몬차",
+   "away": "피오렌티나",
+   "date": "2026-11-24",
+   "eid": 210173,
+   "goals": [
+    {
+     "scorer": "J. Robinson",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": "M. Pessina",
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Varela",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 45,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "아탈란타",
    "away": "인테르",
    "date": "2026-11-23",
@@ -57041,6 +57120,32 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레반테",
+   "away": "엘체",
+   "date": "2026-11-24",
+   "eid": 213644,
+   "goals": [
+    {
+     "scorer": "D. Requena",
+     "assist": "J. A. Olasagasti",
+     "team": null,
+     "is_home": true,
+     "minute": 88,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Revivo",
+     "assist": "G. Valera",
+     "team": null,
+     "is_home": false,
+     "minute": 62,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "헤타페",
    "away": "아틀레티코 마드리드",

@@ -11292,7 +11292,9 @@
    "date": "2026-11-24",
    "time": "04:45",
    "id": 210173,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 3,
+   "awayGoals": 0
   },
   {
    "home": "베네치아",
@@ -19860,7 +19862,9 @@
    "date": "2026-11-24",
    "time": "05:00",
    "id": 213644,
-   "friendly": false
+   "friendly": false,
+   "homeGoals": 1,
+   "awayGoals": 1
   },
   {
    "home": "레반테",
@@ -20047,11 +20051,51 @@
    "friendly": false
   },
   {
+   "home": "엘체",
+   "away": "세비야",
+   "date": "2026-12-12",
+   "time": "05:00",
+   "id": 215672,
+   "friendly": false
+  },
+  {
+   "home": "레반테",
+   "away": "알라베스",
+   "date": "2026-12-12",
+   "time": "22:00",
+   "id": 215674,
+   "friendly": false
+  },
+  {
    "home": "비야레알",
    "away": "라요 바예카노",
    "date": "2026-12-13",
    "time": "00:15",
    "id": 215679,
+   "friendly": false
+  },
+  {
+   "home": "말라가",
+   "away": "바르셀로나",
+   "date": "2026-12-13",
+   "time": "02:30",
+   "id": 215675,
+   "friendly": false
+  },
+  {
+   "home": "레알 베티스",
+   "away": "라싱 산탄데르",
+   "date": "2026-12-13",
+   "time": "05:00",
+   "id": 215676,
+   "friendly": false
+  },
+  {
+   "home": "아틀레티코 마드리드",
+   "away": "발렌시아",
+   "date": "2026-12-13",
+   "time": "22:00",
+   "id": 215670,
    "friendly": false
   },
   {
@@ -20066,7 +20110,7 @@
    "home": "레알 소시에다드",
    "away": "헤타페",
    "date": "2026-12-14",
-   "time": "04:00",
+   "time": "02:30",
    "id": 215678,
    "friendly": false
   },
@@ -20074,56 +20118,16 @@
    "home": "레알 마드리드",
    "away": "오사수나",
    "date": "2026-12-14",
-   "time": "04:00",
+   "time": "05:00",
    "id": 215677,
-   "friendly": false
-  },
-  {
-   "home": "레알 베티스",
-   "away": "라싱 산탄데르",
-   "date": "2026-12-14",
-   "time": "04:00",
-   "id": 215676,
-   "friendly": false
-  },
-  {
-   "home": "말라가",
-   "away": "바르셀로나",
-   "date": "2026-12-14",
-   "time": "04:00",
-   "id": 215675,
-   "friendly": false
-  },
-  {
-   "home": "레반테",
-   "away": "알라베스",
-   "date": "2026-12-14",
-   "time": "04:00",
-   "id": 215674,
    "friendly": false
   },
   {
    "home": "에스파뇰",
    "away": "셀타 비고",
-   "date": "2026-12-14",
-   "time": "04:00",
+   "date": "2026-12-15",
+   "time": "05:00",
    "id": 215673,
-   "friendly": false
-  },
-  {
-   "home": "엘체",
-   "away": "세비야",
-   "date": "2026-12-14",
-   "time": "04:00",
-   "id": 215672,
-   "friendly": false
-  },
-  {
-   "home": "아틀레티코 마드리드",
-   "away": "발렌시아",
-   "date": "2026-12-14",
-   "time": "04:00",
-   "id": 215670,
    "friendly": false
   },
   {

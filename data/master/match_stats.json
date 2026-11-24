@@ -279874,7 +279874,7 @@
         "match": {
             "id": 1325206918,
             "round": "Group Stage",
-            "date": "2026-11-15T22:00:00.000Z",
+            "date": "2026-11-24T23:00:00.000Z",
             "country": {
                 "code": "US",
                 "name": "USA",
@@ -279886,7 +279886,7 @@
                     "current": null,
                     "penalties": null
                 },
-                "description": "Postponed"
+                "description": "Not started"
             },
             "awayTeam": {
                 "id": 20986444,
@@ -279923,7 +279923,7 @@
                 }
             }
         ],
-        "collected_at": "2026-11-15T20:12:41.866366+00:00"
+        "collected_at": "2026-11-24T02:02:57.113634+00:00"
     },
     "1403423179": {
         "match": {
@@ -301802,5 +301802,1050 @@
             }
         ],
         "collected_at": "2026-11-23T11:57:32.498457+00:00"
+    },
+    "1404587347": {
+        "match": {
+            "id": 1404587347,
+            "round": "Clausura - Quadrangular - 2",
+            "date": "2026-11-24T23:20:00.000Z",
+            "country": {
+                "code": "CO",
+                "name": "Colombia",
+                "logo": "https://highlightly.net/soccer/images/countries/CO.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 963265,
+                "logo": "https://highlightly.net/soccer/images/teams/963265.png",
+                "name": "Bucaramanga"
+            },
+            "homeTeam": {
+                "id": 958159,
+                "logo": "https://highlightly.net/soccer/images/teams/958159.png",
+                "name": "Millonarios"
+            },
+            "league": {
+                "id": 204173,
+                "logo": "https://highlightly.net/soccer/images/leagues/204173.png",
+                "name": "Primera A",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 958159,
+                    "logo": "https://highlightly.net/soccer/images/teams/958159.png",
+                    "name": "Millonarios"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 963265,
+                    "logo": "https://highlightly.net/soccer/images/teams/963265.png",
+                    "name": "Bucaramanga"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:56.816108+00:00"
+    },
+    "1400220015": {
+        "match": {
+            "id": 1400220015,
+            "round": "Quarter-finals",
+            "date": "2026-11-24T22:00:00.000Z",
+            "country": {
+                "code": "CL",
+                "name": "Chile",
+                "logo": "https://highlightly.net/soccer/images/countries/CL.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 1980210,
+                "logo": "https://highlightly.net/soccer/images/teams/1980210.png",
+                "name": "Union La Calera"
+            },
+            "homeTeam": {
+                "id": 1983614,
+                "logo": "https://highlightly.net/soccer/images/teams/1983614.png",
+                "name": "Coquimbo Unido"
+            },
+            "league": {
+                "id": 228001,
+                "logo": "https://highlightly.net/soccer/images/leagues/228001.png",
+                "name": "Copa Chile",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1983614,
+                    "logo": "https://highlightly.net/soccer/images/teams/1983614.png",
+                    "name": "Coquimbo Unido"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1980210,
+                    "logo": "https://highlightly.net/soccer/images/teams/1980210.png",
+                    "name": "Union La Calera"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:57.375423+00:00"
+    },
+    "1405207726": {
+        "match": {
+            "id": 1405207726,
+            "round": "Round of 16",
+            "date": "2026-11-24T21:30:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 21464706,
+                "logo": null,
+                "name": "Águia de Marabá U20"
+            },
+            "homeTeam": {
+                "id": 22602493,
+                "logo": null,
+                "name": "Mec Maraba U20"
+            },
+            "league": {
+                "id": 985391,
+                "logo": null,
+                "name": "Paraense U20",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 22602493,
+                    "logo": null,
+                    "name": "Mec Maraba U20"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 21464706,
+                    "logo": null,
+                    "name": "Águia de Marabá U20"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:57.673990+00:00"
+    },
+    "1270094456": {
+        "match": {
+            "id": 1270094456,
+            "round": "Regular Season - 37",
+            "date": "2026-11-24T21:00:00.000Z",
+            "country": {
+                "code": "BR",
+                "name": "Brazil",
+                "logo": "https://highlightly.net/soccer/images/countries/BR.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 103755,
+                "logo": "https://highlightly.net/soccer/images/teams/103755.png",
+                "name": "Palmeiras"
+            },
+            "homeTeam": {
+                "id": 113116,
+                "logo": "https://highlightly.net/soccer/images/teams/113116.png",
+                "name": "Chapecoense"
+            },
+            "league": {
+                "id": 61205,
+                "logo": "https://highlightly.net/soccer/images/leagues/61205.png",
+                "name": "Serie A",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 113116,
+                    "logo": "https://highlightly.net/soccer/images/teams/113116.png",
+                    "name": "Chapecoense"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 103755,
+                    "logo": "https://highlightly.net/soccer/images/teams/103755.png",
+                    "name": "Palmeiras"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:57.984616+00:00"
+    },
+    "1401886273": {
+        "match": {
+            "id": 1401886273,
+            "round": "Regular Season - 12",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 215236,
+                "logo": "https://highlightly.net/soccer/images/teams/215236.png",
+                "name": "Aberdeen"
+            },
+            "homeTeam": {
+                "id": 219491,
+                "logo": "https://highlightly.net/soccer/images/teams/219491.png",
+                "name": "Rangers FC"
+            },
+            "league": {
+                "id": 153113,
+                "logo": "https://highlightly.net/soccer/images/leagues/153113.png",
+                "name": "Premiership",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 219491,
+                    "logo": "https://highlightly.net/soccer/images/teams/219491.png",
+                    "name": "Rangers FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 215236,
+                    "logo": "https://highlightly.net/soccer/images/teams/215236.png",
+                    "name": "Aberdeen"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:58.242644+00:00"
+    },
+    "1392007865": {
+        "match": {
+            "id": 1392007865,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 462877,
+                "logo": "https://highlightly.net/soccer/images/teams/462877.png",
+                "name": "Real Betis"
+            },
+            "homeTeam": {
+                "id": 559040,
+                "logo": "https://highlightly.net/soccer/images/teams/559040.png",
+                "name": "Slovan Bratislava"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 559040,
+                    "logo": "https://highlightly.net/soccer/images/teams/559040.png",
+                    "name": "Slovan Bratislava"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 462877,
+                    "logo": "https://highlightly.net/soccer/images/teams/462877.png",
+                    "name": "Real Betis"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:58.529515+00:00"
+    },
+    "1391994249": {
+        "match": {
+            "id": 1391994249,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 168431,
+                "logo": "https://highlightly.net/soccer/images/teams/168431.png",
+                "name": "PSV Eindhoven"
+            },
+            "homeTeam": {
+                "id": 461175,
+                "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                "name": "Real Madrid"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 461175,
+                    "logo": "https://highlightly.net/soccer/images/teams/461175.png",
+                    "name": "Real Madrid"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 168431,
+                    "logo": "https://highlightly.net/soccer/images/teams/168431.png",
+                    "name": "PSV Eindhoven"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:58.865908+00:00"
+    },
+    "1391992547": {
+        "match": {
+            "id": 1391992547,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 99500,
+                "logo": "https://highlightly.net/soccer/images/teams/99500.png",
+                "name": "Lens"
+            },
+            "homeTeam": {
+                "id": 148007,
+                "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+                "name": "RB Leipzig"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 148007,
+                    "logo": "https://highlightly.net/soccer/images/teams/148007.png",
+                    "name": "RB Leipzig"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 99500,
+                    "logo": "https://highlightly.net/soccer/images/teams/99500.png",
+                    "name": "Lens"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:59.490267+00:00"
+    },
+    "1391974676": {
+        "match": {
+            "id": 1391974676,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 419476,
+                "logo": "https://highlightly.net/soccer/images/teams/419476.png",
+                "name": "Napoli"
+            },
+            "homeTeam": {
+                "id": 43334,
+                "logo": "https://highlightly.net/soccer/images/teams/43334.png",
+                "name": "Manchester City"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 43334,
+                    "logo": "https://highlightly.net/soccer/images/teams/43334.png",
+                    "name": "Manchester City"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 419476,
+                    "logo": "https://highlightly.net/soccer/images/teams/419476.png",
+                    "name": "Napoli"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:02:59.802705+00:00"
+    },
+    "1391949997": {
+        "match": {
+            "id": 1391949997,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 181196,
+                "logo": "https://highlightly.net/soccer/images/teams/181196.png",
+                "name": "FC Porto"
+            },
+            "homeTeam": {
+                "id": 178643,
+                "logo": "https://highlightly.net/soccer/images/teams/178643.png",
+                "name": "Feyenoord"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 178643,
+                    "logo": "https://highlightly.net/soccer/images/teams/178643.png",
+                    "name": "Feyenoord"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 181196,
+                    "logo": "https://highlightly.net/soccer/images/teams/181196.png",
+                    "name": "FC Porto"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:00.270839+00:00"
+    },
+    "1391938083": {
+        "match": {
+            "id": 1391938083,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 490109,
+                "logo": "https://highlightly.net/soccer/images/teams/490109.png",
+                "name": "AEK Athens FC"
+            },
+            "homeTeam": {
+                "id": 762429,
+                "logo": "https://highlightly.net/soccer/images/teams/762429.png",
+                "name": "Como"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 762429,
+                    "logo": "https://highlightly.net/soccer/images/teams/762429.png",
+                    "name": "Como"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 490109,
+                    "logo": "https://highlightly.net/soccer/images/teams/490109.png",
+                    "name": "AEK Athens FC"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:00.824047+00:00"
+    },
+    "1391905745": {
+        "match": {
+            "id": 1391905745,
+            "round": "League Stage - 5",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "World",
+                "name": "World",
+                "logo": "https://highlightly.net/soccer/images/countries/World.png"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 141199,
+                "logo": "https://highlightly.net/soccer/images/teams/141199.png",
+                "name": "Borussia Dortmund"
+            },
+            "homeTeam": {
+                "id": 36526,
+                "logo": "https://highlightly.net/soccer/images/teams/36526.png",
+                "name": "Arsenal"
+            },
+            "league": {
+                "id": 2486,
+                "logo": "https://highlightly.net/soccer/images/leagues/2486.png",
+                "name": "UEFA Champions League",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 36526,
+                    "logo": "https://highlightly.net/soccer/images/teams/36526.png",
+                    "name": "Arsenal"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 141199,
+                    "logo": "https://highlightly.net/soccer/images/teams/141199.png",
+                    "name": "Borussia Dortmund"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:01.197556+00:00"
+    },
+    "1330353766": {
+        "match": {
+            "id": 1330353766,
+            "round": "Regular Season - 17",
+            "date": "2026-11-24T20:00:00.000Z",
+            "country": {
+                "code": "GB-ENG",
+                "name": "England",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-ENG.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 59503,
+                "logo": "https://highlightly.net/soccer/images/teams/59503.png",
+                "name": "Derby"
+            },
+            "homeTeam": {
+                "id": 33973,
+                "logo": "https://highlightly.net/soccer/images/teams/33973.png",
+                "name": "Wolves"
+            },
+            "league": {
+                "id": 34824,
+                "logo": "https://highlightly.net/soccer/images/leagues/34824.png",
+                "name": "Championship",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 33973,
+                    "logo": "https://highlightly.net/soccer/images/teams/33973.png",
+                    "name": "Wolves"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 59503,
+                    "logo": "https://highlightly.net/soccer/images/teams/59503.png",
+                    "name": "Derby"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:01.661015+00:00"
+    },
+    "1403436795": {
+        "match": {
+            "id": 1403436795,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5773968,
+                "logo": "https://highlightly.net/soccer/images/teams/5773968.png",
+                "name": "Stenhousemuir"
+            },
+            "homeTeam": {
+                "id": 768386,
+                "logo": "https://highlightly.net/soccer/images/teams/768386.png",
+                "name": "Ross County FC"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 768386,
+                    "logo": "https://highlightly.net/soccer/images/teams/768386.png",
+                    "name": "Ross County FC"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5773968,
+                    "logo": "https://highlightly.net/soccer/images/teams/5773968.png",
+                    "name": "Stenhousemuir"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:02.565930+00:00"
+    },
+    "1403435944": {
+        "match": {
+            "id": 1403435944,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5768011,
+                "logo": "https://highlightly.net/soccer/images/teams/5768011.png",
+                "name": "Peterhead"
+            },
+            "homeTeam": {
+                "id": 217789,
+                "logo": "https://highlightly.net/soccer/images/teams/217789.png",
+                "name": "Livingston"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 217789,
+                    "logo": "https://highlightly.net/soccer/images/teams/217789.png",
+                    "name": "Livingston"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5768011,
+                    "logo": "https://highlightly.net/soccer/images/teams/5768011.png",
+                    "name": "Peterhead"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:03.204399+00:00"
+    },
+    "1403435093": {
+        "match": {
+            "id": 1403435093,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5756097,
+                "logo": "https://highlightly.net/soccer/images/teams/5756097.png",
+                "name": "Cove Rangers"
+            },
+            "homeTeam": {
+                "id": 211832,
+                "logo": "https://highlightly.net/soccer/images/teams/211832.png",
+                "name": "Hamilton Academical"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 211832,
+                    "logo": "https://highlightly.net/soccer/images/teams/211832.png",
+                    "name": "Hamilton Academical"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5756097,
+                    "logo": "https://highlightly.net/soccer/images/teams/5756097.png",
+                    "name": "Cove Rangers"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:03.714231+00:00"
+    },
+    "1403434242": {
+        "match": {
+            "id": 1403434242,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 767535,
+                "logo": "https://highlightly.net/soccer/images/teams/767535.png",
+                "name": "Partick"
+            },
+            "homeTeam": {
+                "id": 5757799,
+                "logo": "https://highlightly.net/soccer/images/teams/5757799.png",
+                "name": "East Kilbride"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5757799,
+                    "logo": "https://highlightly.net/soccer/images/teams/5757799.png",
+                    "name": "East Kilbride"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 767535,
+                    "logo": "https://highlightly.net/soccer/images/teams/767535.png",
+                    "name": "Partick"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:04.192564+00:00"
+    },
+    "1403433391": {
+        "match": {
+            "id": 1403433391,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5764607,
+                "logo": "https://highlightly.net/soccer/images/teams/5764607.png",
+                "name": "Kelty Hearts"
+            },
+            "homeTeam": {
+                "id": 1181972,
+                "logo": "https://highlightly.net/soccer/images/teams/1181972.png",
+                "name": "Dunfermline"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 1181972,
+                    "logo": "https://highlightly.net/soccer/images/teams/1181972.png",
+                    "name": "Dunfermline"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5764607,
+                    "logo": "https://highlightly.net/soccer/images/teams/5764607.png",
+                    "name": "Kelty Hearts"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:04.742047+00:00"
+    },
+    "1403432540": {
+        "match": {
+            "id": 1403432540,
+            "round": "Round of 16",
+            "date": "2026-11-24T19:45:00.000Z",
+            "country": {
+                "code": "GB-SCT",
+                "name": "Scotland",
+                "logo": "https://highlightly.net/soccer/images/countries/GB-SCT.svg"
+            },
+            "state": {
+                "clock": null,
+                "score": {
+                    "current": null,
+                    "penalties": null
+                },
+                "description": "Not started"
+            },
+            "awayTeam": {
+                "id": 5768862,
+                "logo": "https://highlightly.net/soccer/images/teams/5768862.png",
+                "name": "Queen's Park"
+            },
+            "homeTeam": {
+                "id": 14489059,
+                "logo": null,
+                "name": "Clydebank"
+            },
+            "league": {
+                "id": 155666,
+                "logo": "https://highlightly.net/soccer/images/leagues/155666.png",
+                "name": "Challenge Cup",
+                "season": 2026
+            }
+        },
+        "statistics": [
+            {
+                "statistics": [],
+                "team": {
+                    "id": 14489059,
+                    "logo": null,
+                    "name": "Clydebank"
+                }
+            },
+            {
+                "statistics": [],
+                "team": {
+                    "id": 5768862,
+                    "logo": "https://highlightly.net/soccer/images/teams/5768862.png",
+                    "name": "Queen's Park"
+                }
+            }
+        ],
+        "collected_at": "2026-11-24T02:03:05.054938+00:00"
     }
 }
