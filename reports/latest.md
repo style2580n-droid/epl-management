@@ -1,6 +1,6 @@
-# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-11-24
+# ⚽ 유럽 축구 데이터 센터 — 데일리 리포트 2026-11-25
 
-생성(UTC): 2026-11-24 23:59
+생성(UTC): 2026-11-25 12:27
 
 ## 🏆 리그 순위 (상위 4팀)
 
@@ -12870,6 +12870,13 @@
 | 산호세 어스퀘이크스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 64.3% |
 | 휴스턴 다이나모 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 35.7% |
 
+### 산호세어스퀘이크스_휴스턴다이나모_654255
+
+| 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
+|---|---|---|---|---|---|---|---|---|---|
+| 산호세 어스퀘이크스 | 0 | 0 | 0 | 0 | 0 | 0 | - | - | 52.6% |
+| 휴스턴 다이나모 | 0 | 0.0 | 0 | 0 | 0 | 0 | - | - | 47.4% |
+
 ### 샌디에이고FC_CF몬트리올_4924
 
 | 팀 | 득점 | xG | npxG | xA | xT | VAEP | PPDA | Field Tilt | 점유율 |
@@ -23796,6 +23803,7 @@
 - **산호세어스퀘이크스_콜로라도래피즈_5392**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_산호세 어스퀘이크스_shotmap.svg) · [heatmap(콜로라도 래피즈)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_콜로라도 래피즈_heatmap.svg) · [network(콜로라도 래피즈)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_콜로라도 래피즈_network.svg) · [shotmap(콜로라도 래피즈)](viz/산호세어스퀘이크스_콜로라도래피즈_5392_콜로라도 래피즈_shotmap.svg)
 - **산호세어스퀘이크스_포틀랜드팀버스_5317**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_산호세 어스퀘이크스_shotmap.svg) · [heatmap(포틀랜드 팀버스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_포틀랜드 팀버스_heatmap.svg) · [network(포틀랜드 팀버스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_포틀랜드 팀버스_network.svg) · [shotmap(포틀랜드 팀버스)](viz/산호세어스퀘이크스_포틀랜드팀버스_5317_포틀랜드 팀버스_shotmap.svg)
 - **산호세어스퀘이크스_휴스턴다이나모_5285**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_산호세 어스퀘이크스_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_5285_휴스턴 다이나모_shotmap.svg)
+- **산호세어스퀘이크스_휴스턴다이나모_654255**: [heatmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_산호세 어스퀘이크스_heatmap.svg) · [network(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_산호세 어스퀘이크스_network.svg) · [shotmap(산호세 어스퀘이크스)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_산호세 어스퀘이크스_shotmap.svg) · [heatmap(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_휴스턴 다이나모_heatmap.svg) · [network(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_휴스턴 다이나모_network.svg) · [shotmap(휴스턴 다이나모)](viz/산호세어스퀘이크스_휴스턴다이나모_654255_휴스턴 다이나모_shotmap.svg)
 - **샌디에이고FC_CF몬트리올_4924**: [heatmap(CF 몬트리올)](viz/샌디에이고FC_CF몬트리올_4924_CF 몬트리올_heatmap.svg) · [network(CF 몬트리올)](viz/샌디에이고FC_CF몬트리올_4924_CF 몬트리올_network.svg) · [shotmap(CF 몬트리올)](viz/샌디에이고FC_CF몬트리올_4924_CF 몬트리올_shotmap.svg) · [heatmap(샌디에이고 FC)](viz/샌디에이고FC_CF몬트리올_4924_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_CF몬트리올_4924_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_CF몬트리올_4924_샌디에이고 FC_shotmap.svg)
 - **샌디에이고FC_FC댈러스_5165**: [heatmap(FC 댈러스)](viz/샌디에이고FC_FC댈러스_5165_FC 댈러스_heatmap.svg) · [network(FC 댈러스)](viz/샌디에이고FC_FC댈러스_5165_FC 댈러스_network.svg) · [shotmap(FC 댈러스)](viz/샌디에이고FC_FC댈러스_5165_FC 댈러스_shotmap.svg) · [heatmap(샌디에이고 FC)](viz/샌디에이고FC_FC댈러스_5165_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_FC댈러스_5165_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_FC댈러스_5165_샌디에이고 FC_shotmap.svg)
 - **샌디에이고FC_FC신시내티_5114**: [heatmap(FC 신시내티)](viz/샌디에이고FC_FC신시내티_5114_FC 신시내티_heatmap.svg) · [network(FC 신시내티)](viz/샌디에이고FC_FC신시내티_5114_FC 신시내티_network.svg) · [shotmap(FC 신시내티)](viz/샌디에이고FC_FC신시내티_5114_FC 신시내티_shotmap.svg) · [heatmap(샌디에이고 FC)](viz/샌디에이고FC_FC신시내티_5114_샌디에이고 FC_heatmap.svg) · [network(샌디에이고 FC)](viz/샌디에이고FC_FC신시내티_5114_샌디에이고 FC_network.svg) · [shotmap(샌디에이고 FC)](viz/샌디에이고FC_FC신시내티_5114_샌디에이고 FC_shotmap.svg)

@@ -25876,155 +25876,6 @@
      "body": null
     }
    ]
-  },
-  {
-   "home": "브렌트포드",
-   "away": "아스날",
-   "date": "2023-11-26",
-   "eid": 312249,
-   "goals": [
-    {
-     "scorer": "K. Havertz",
-     "assist": "B. Saka",
-     "team": null,
-     "is_home": false,
-     "minute": 89,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "노팅엄 포레스트",
-   "away": "브라이튼",
-   "date": "2023-11-26",
-   "eid": 312247,
-   "goals": [
-    {
-     "scorer": "M. Gibbs-White",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 76,
-     "goal_type": "penalty",
-     "body": null
-    },
-    {
-     "scorer": "J. Pedro",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 58,
-     "goal_type": "penalty",
-     "body": null
-    },
-    {
-     "scorer": "J. Pedro",
-     "assist": "P. Groß",
-     "team": null,
-     "is_home": false,
-     "minute": 45,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Ferguson",
-     "assist": "P. Groß",
-     "team": null,
-     "is_home": false,
-     "minute": 26,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "A. Elanga",
-     "assist": "M. Gibbs-White",
-     "team": null,
-     "is_home": true,
-     "minute": 3,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "뉴캐슬",
-   "away": "첼시",
-   "date": "2023-11-26",
-   "eid": 312246,
-   "goals": [
-    {
-     "scorer": "A. Gordon",
-     "assist": "M. Almirón",
-     "team": null,
-     "is_home": true,
-     "minute": 83,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "Joelinton",
-     "assist": null,
-     "team": null,
-     "is_home": true,
-     "minute": 61,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "J. Lascelles",
-     "assist": "A. Gordon",
-     "team": null,
-     "is_home": true,
-     "minute": 60,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "R. Sterling",
-     "assist": null,
-     "team": null,
-     "is_home": false,
-     "minute": 23,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "A. Isak",
-     "assist": "L. Miley",
-     "team": null,
-     "is_home": true,
-     "minute": 13,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
-  },
-  {
-   "home": "맨체스터 시티",
-   "away": "리버풀",
-   "date": "2023-11-25",
-   "eid": 312243,
-   "goals": [
-    {
-     "scorer": "T. Alexander-Arnold",
-     "assist": "M. Salah",
-     "team": null,
-     "is_home": false,
-     "minute": 80,
-     "goal_type": "regular",
-     "body": null
-    },
-    {
-     "scorer": "E. Haaland",
-     "assist": "N. Aké",
-     "team": null,
-     "is_home": true,
-     "minute": 27,
-     "goal_type": "regular",
-     "body": null
-    }
-   ]
   }
  ],
  "championship": [
@@ -61755,6 +61606,41 @@
   }
  ],
  "mls": [
+  {
+   "home": "산호세 어스퀘이크스",
+   "away": "휴스턴 다이나모",
+   "date": "2026-11-25",
+   "eid": 654255,
+   "goals": [
+    {
+     "scorer": "D. McGuire",
+     "assist": "M. Bogusz",
+     "team": null,
+     "is_home": false,
+     "minute": 80,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "E. Löwen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 24,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Vieira",
+     "assist": "T. Werner",
+     "team": null,
+     "is_home": true,
+     "minute": 11,
+     "goal_type": "regular",
+     "body": "head"
+    }
+   ]
+  },
   {
    "home": "세인트루이스 시티",
    "away": "로스앤젤레스 FC",
