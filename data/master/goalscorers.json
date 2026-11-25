@@ -25880,6 +25880,128 @@
  ],
  "championship": [
   {
+   "home": "스토크 시티",
+   "away": "밀월",
+   "date": "2026-11-26",
+   "eid": 214176,
+   "goals": [
+    {
+     "scorer": "M. Sykes",
+     "assist": "J. Cooper",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "G. Hirst",
+     "assist": "M. Manhoef",
+     "team": null,
+     "is_home": true,
+     "minute": 40,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "G. Hirst",
+     "assist": "J. McGlynn",
+     "team": null,
+     "is_home": true,
+     "minute": 13,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "왓포드",
+   "away": "블랙번 로버스",
+   "date": "2026-11-26",
+   "eid": 214177,
+   "goals": [
+    {
+     "scorer": "T. Cantwell",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 57,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
+   "home": "번리",
+   "away": "버밍엄 시티",
+   "date": "2026-11-26",
+   "eid": 214175,
+   "goals": [
+    {
+     "scorer": "J. Banel",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 52,
+     "goal_type": "ownGoal",
+     "body": "head"
+    },
+    {
+     "scorer": "A. Priske",
+     "assist": "J. Stansfield",
+     "team": null,
+     "is_home": false,
+     "minute": 7,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
+   "home": "볼턴 원더러스",
+   "away": "웨스트브롬위치 알비온",
+   "date": "2026-11-26",
+   "eid": 214174,
+   "goals": [
+    {
+     "scorer": "A. S. Heggebø",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 83,
+     "goal_type": "penalty",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "F. Myhre",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 75,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "R. Rodrigues",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 63,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "A. S. Heggebø",
+     "assist": "C. Styles",
+     "team": null,
+     "is_home": false,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "울버햄튼 원더러스",
    "away": "더비 카운티",
    "date": "2026-11-25",
