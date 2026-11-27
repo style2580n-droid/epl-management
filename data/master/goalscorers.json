@@ -1,6 +1,59 @@
 {
  "epl": [
   {
+   "home": "노팅엄 포레스트",
+   "away": "첼시",
+   "date": "2026-11-28",
+   "eid": 209653,
+   "goals": [
+    {
+     "scorer": "E. Emegha",
+     "assist": "P. Neto",
+     "team": null,
+     "is_home": false,
+     "minute": 89,
+     "goal_type": "regular",
+     "body": "head"
+    },
+    {
+     "scorer": "M. Gibbs-White",
+     "assist": "X. Schlager",
+     "team": null,
+     "is_home": true,
+     "minute": 72,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Emegha",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 54,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "M. Gibbs-White",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 51,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "I. Jesus",
+     "assist": "D. Muñoz",
+     "team": null,
+     "is_home": true,
+     "minute": 5,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "브렌트포드",
    "away": "에버튼",
    "date": "2026-11-24",
@@ -25810,6 +25863,32 @@
  ],
  "championship": [
   {
+   "home": "사우샘프턴",
+   "away": "미들즈브러",
+   "date": "2026-11-28",
+   "eid": 214185,
+   "goals": [
+    {
+     "scorer": "F. Azaz",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 79,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "R. Manning",
+     "assist": "J. Bree",
+     "team": null,
+     "is_home": true,
+     "minute": 59,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
+  {
    "home": "스토크 시티",
    "away": "밀월",
    "date": "2026-11-26",
@@ -32772,6 +32851,23 @@
  ],
  "ligue1": [
   {
+   "home": "스타드 브레스투아29",
+   "away": "파리 FC",
+   "date": "2026-11-28",
+   "eid": 210543,
+   "goals": [
+    {
+     "scorer": "L. Zogbé",
+     "assist": "K. Doumbia",
+     "team": null,
+     "is_home": true,
+     "minute": 21,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
+  {
    "home": "올랭피크 마르세유",
    "away": "르망FC",
    "date": "2026-11-23",
@@ -36193,6 +36289,68 @@
   }
  ],
  "bundesliga": [
+  {
+   "home": "베르더 브레멘",
+   "away": "보루시아 묀헨글라드바흐",
+   "date": "2026-11-28",
+   "eid": 213764,
+   "goals": [
+    {
+     "scorer": "N. Füllkrug",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Dinkçi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 85,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Honorat",
+     "assist": "W. Mohya",
+     "team": null,
+     "is_home": false,
+     "minute": 78,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "F. Honorat",
+     "assist": "Z. Uno",
+     "team": null,
+     "is_home": false,
+     "minute": 46,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "E. Dinkçi",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "right-foot"
+    },
+    {
+     "scorer": "K. Diks",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 27,
+     "goal_type": "penalty",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "베르더 브레멘",
    "away": "함부르크SV",
@@ -39660,6 +39818,14 @@
   }
  ],
  "seriea": [
+  {
+   "home": "베네치아",
+   "away": "볼로냐",
+   "date": "2026-11-28",
+   "eid": 210186,
+   "goals": [],
+   "nil": true
+  },
   {
    "home": "몬차",
    "away": "피오렌티나",
@@ -44033,6 +44199,32 @@
   }
  ],
  "eredivisie": [
+  {
+   "home": "FC 흐로닝언",
+   "away": "빌럼II",
+   "date": "2026-11-28",
+   "eid": 210918,
+   "goals": [
+    {
+     "scorer": "T. v. Bergen",
+     "assist": null,
+     "team": null,
+     "is_home": true,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "C. Twigt",
+     "assist": null,
+     "team": null,
+     "is_home": false,
+     "minute": 38,
+     "goal_type": "regular",
+     "body": "left-foot"
+    }
+   ]
+  },
   {
    "home": "호 어헤드 이글스",
    "away": "포르투나 시타르드",
@@ -57276,6 +57468,50 @@
   }
  ],
  "laliga": [
+  {
+   "home": "레반테",
+   "away": "라싱 산탄데르",
+   "date": "2026-11-28",
+   "eid": 213654,
+   "goals": [
+    {
+     "scorer": "P. García",
+     "assist": "J. Salinas",
+     "team": null,
+     "is_home": false,
+     "minute": 90,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "Y. Zabiri",
+     "assist": "I. Vicente",
+     "team": null,
+     "is_home": false,
+     "minute": 81,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "P. García",
+     "assist": "A. Almeida",
+     "team": null,
+     "is_home": false,
+     "minute": 66,
+     "goal_type": "regular",
+     "body": "left-foot"
+    },
+    {
+     "scorer": "I. Romero",
+     "assist": "O. Rey",
+     "team": null,
+     "is_home": true,
+     "minute": 42,
+     "goal_type": "regular",
+     "body": "right-foot"
+    }
+   ]
+  },
   {
    "home": "레반테",
    "away": "엘체",
